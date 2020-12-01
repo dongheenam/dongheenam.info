@@ -33,7 +33,7 @@ jobs:
           ###### End of Repository/Build Configurations ######
           app_build_command: hugo --minify 
         env: # Add environment variables here
-          HUGO_VERSION: "latest"
+          HUGO_VERSION: "0.79.0"
           extended: True
 
   close_pull_request_job:
