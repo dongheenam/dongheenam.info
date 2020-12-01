@@ -5,9 +5,9 @@
 */}}
 
 {{- if (.Get 1) -}}
-<label for="{{ .Get 0 }}" class="margin-toggle toggle-with-word">{{ .Get 1 | humanize }}</label>
+<label for="mn-{{ .Get 0 }}" class="margin-toggle toggle-with-word">{{ .Get 1 | humanize }}</label>
 {{- else -}}
-<label for="{{ .Get 0 }}" class="margin-toggle">&#8853;</label>
+<label for="mn-{{ .Get 0 }}" class="margin-toggle">&#8853;</label>
 {{- end -}}
 <input type="checkbox" id="{{ .Get 0 }}" class="margin-toggle" />
 <span class="marginnote">
