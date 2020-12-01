@@ -1,0 +1,10 @@
+{{ $rellink := "" }}
+<ul class="breadcrumb">
+  <li><a href="/">Home</a></li>
+{{ range (split .RelPermalink "/") }}
+{{ if gt (len . ) 0 }}
+{{ $rellink = printf "%s/%s" $rellink . }}
+  <li><a href="{{ $rellink }}">{{ humanize . }}</a></li>
+{{ end }}
+{{ end }}
+</ul>

@@ -1,0 +1,8 @@
+{{- $summary := (.Get "title") | default "" -}}
+{{- $is_open := eq (.Get "open") "true" | default "false" -}}
+<details {{ if $is_open }}open{{ end }}>
+  {{ with $summary }}<summary>{{ . }}</summary>{{ end }}
+  <div class="details-content">
+    {{ .Inner | markdownify }}
+  </div>
+</details>

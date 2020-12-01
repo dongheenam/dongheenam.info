@@ -1,0 +1,19 @@
+{{- define "main" -}}
+{{ $banner_img := resources.Get "img/home/banner.jpg" }}
+{{ $avatar_img := resources.Get "img/home/avatar.jpg" }}
+<div class="front-container">
+    <div class="front-title"
+    style="background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('{{ $banner_img.RelPermalink }}');
+    background-size:cover;background-position:50%"
+    >
+        {{ .Title }}
+    </div>
+    <div class="front-article">
+        <div class="front-content">
+            {{ .Content }}
+        </div>
+        <img class="profile-image" src="{{ $avatar_img.RelPermalink }}" />
+    </div>
+</div>
+{{- end -}}
+

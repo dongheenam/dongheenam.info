@@ -1,0 +1,9 @@
+{{/* main JavaScript */}}
+{{ $main_js := resources.Get "js/main.js" | resources.Minify }}
+<script src="{{ $main_js.Permalink }}"></script>
+
+{{/* highlight.js */}}
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.0/highlight.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>

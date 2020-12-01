@@ -1,0 +1,53 @@
+/* site-wide configurations */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --primary-color: #e60073;
+  --background-color: #fffff8;
+  --text-color: #111;
+  --hypertext-color: #00008c;
+  --hr-color: #ccc;
+  --details-background: #f3f3e6;
+
+  --mainnav-background: #111;
+  --mainnav-text: #fffff8;
+  --mainnav-logo: #ff66b3;
+
+  font-size: 15px;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+html.dark-theme {
+  --primary-color: #ff66b3;
+  --background-color: #111;
+  --text-color: #fffff8;
+  --hypertext-color: #9999ff;
+  --hr-color: #666;
+  --details-background: #1d1f21;
+
+  --mainnav-background: #111;
+  --mainnav-text: #fffff8;
+  --mainnav-logo: #ff66b3;
+
+  img {
+    filter: brightness(0.8) contrast(1.2);
+  }
+}
+
+body {
+  position: relative;
+  max-width: 100%;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  overflow-x: hidden;
+}
+
+main {
+  padding-top: 3rem; // Allow space for mainnav
+}

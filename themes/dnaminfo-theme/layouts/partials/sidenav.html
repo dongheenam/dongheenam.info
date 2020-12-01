@@ -1,0 +1,43 @@
+{{- $current_page := . }}
+{{ $toc_required := .Params.toc | default true }}
+{{ $menu_id := "" }}
+{{ $menu_required := and (eq .Type "docs") .Params.menu }}
+{{ if $menu_required }}
+  {{ range $key, $value := .Params.menu }}
+    {{ $menu_id = $key }}
+  {{ end }}
+{{ end -}}
+{{ if or $toc_required $menu_required }}
+<aside class="sidenav">
+    {{ if $toc_required }}
+    <div class="toc-title {{ if not (eq $.Type "docs") }}toc-title--expanded{{ end }}">Table of Contents</div>
+    <div class="toc {{ if not (eq $.Type "docs") }}toc--expanded{{ end }}">
+      {{ .TableOfContents }}
+    </div>
+    {{ end }}
+    {{ if and $toc_required $menu_required }}<hr>{{ end }}
+    {{ if $menu_required }}
+    <div class="sidenav-title">Lessons</div>
+    <ul class="sidenav-menu">
+      {{ range (index .Site.Menus $menu_id) }}
+      <li{{ if $current_page.IsMenuCurrent $menu_id . }} class="current"{{ end }}>
+        {{- if .URL -}}
+          <a href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+        {{- else -}}
+          {{ .Name }}
+        {{- end -}}
+      </li>
+      {{- if .HasChildren -}}
+      <ul>
+      {{- range .Children -}}
+        <li{{ if $current_page.IsMenuCurrent $menu_id . }} class="current"{{ end }}>
+          <a href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+        </li>
+      {{- end -}}
+      </ul>
+      {{- end -}}
+      {{- end }}
+    </ul>
+    {{ end }}
+  </aside>
+  {{ end }}

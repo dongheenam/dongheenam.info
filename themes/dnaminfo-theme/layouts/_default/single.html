@@ -1,0 +1,20 @@
+{{- define "datedisplay" -}}
+   <p class="subtitle">{{ .Date.Format "2 Jan 2006" }}
+      {{ if ne .Date .Lastmod }}
+      | Updated on {{ .Lastmod.Format "2 Jan 2006" }}
+      {{ end }}
+   </p>
+{{- end -}}
+
+{{- define "main" -}}
+{{ partial "sidenav" . }}
+<article class="tufte-container">
+   {{ partial "breadcrumb" . }}
+   <h1>{{ .Title }}</h1>
+   {{ if ne .Type "docs" }}{{ template "datedisplay" . }}{{ end }}
+   <ul class="tags">{{ range (.GetTerms "tags") }}<li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>{{ end }}</ul>
+   {{ .Content }}
+   {{ if eq .Type "docs" }}{{ template "datedisplay" . }}{{ end }}
+   {{ partial "pager" . }}
+</article>
+{{- end -}}

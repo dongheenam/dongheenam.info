@@ -1,0 +1,15 @@
+<header>
+    <nav class="mainnav">
+      <div class="mainnav-logo"><a href="/">donghee<span class="logo-colored">NAM</span></a></div>
+      <ul class="mainnav-menu">
+        {{ range .Site.Menus.main }}
+        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+      <div class="mainnav-icons">
+        <div class="mainnav-search"></div>
+        <div class="mainnav-toggle"></div>
+        <div class="mainnav-hamburger"></div>
+      </div>
+    </nav>
+  </header>

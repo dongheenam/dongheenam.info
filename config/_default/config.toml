@@ -1,0 +1,25 @@
+
+# Site definitions
+title = "dongheenam"
+baseURL = "https://dongheenam.info/"
+languageCode = "en-au"
+theme = "dnaminfo-theme"
+
+# site infos
+[params]
+  author = "Donghee Nam"
+  description = "Giving insight on the world's most commonly used language"
+
+# flatten posts directory structure
+[permalinks]
+  posts = "/posts/:title/"
+
+# Goldmark Markup settings
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = true
+      xhtml = false
+  [markup.highlight]
+    codeFences = false  # Disable Hugo's code highlighter

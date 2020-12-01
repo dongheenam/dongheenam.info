@@ -1,0 +1,25 @@
+{{- $previous_item := "" }}
+{{ $next_item := "" }}
+{{ if eq .Type "docs" }}
+    {{ $previous_item = .NextInSection }}
+    {{ $next_item = .PrevInSection }}
+{{ else }}
+    {{ $previous_item = .PrevInSection }}
+    {{ $next_item = .NextInSection }}
+{{ end -}}
+<hr>
+<div class="pager">
+    {{ with $previous_item }}
+    <div class="pager-item">
+        <div class="title-prev">Previous</div>
+        <a href="{{ .RelPermalink }}" class="pager-link">{{ .Title }}</a>
+    </div>
+    {{- end }}
+    <div class="pager-filler"></div>
+    {{ with $next_item -}}
+    <div class="pager-item">
+        <div class="title-next">Next</div>
+        <a href="{{ .RelPermalink }}" class="pager-link">{{ .Title }}</a>
+    </div>
+    {{ end }}
+</div>

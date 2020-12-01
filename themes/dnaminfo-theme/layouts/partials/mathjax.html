@@ -1,0 +1,28 @@
+{{/* load MathJax */}}
+<script type="text/javascript"
+    src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+{{/* MathJax configuration */}}
+<script id="MathJax-configure">
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[','\\]']],
+      macros: {
+        hl: ["\\class{mathjax-highlight}{#1}", 1]
+      }
+    },
+
+    chtml: {
+      matchFontHeight: false,
+      displayAlign: 'left',
+      displayIndent: '1em'
+    },
+
+    options: {
+      enableMenu: false
+    }
+  };
+</script>

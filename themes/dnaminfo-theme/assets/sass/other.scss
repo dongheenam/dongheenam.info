@@ -1,0 +1,163 @@
+/* front page */
+.front-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: calc(100vh - 8rem);
+
+  .front-title {
+    display: block;
+    background-color: rgb(178, 161, 118);
+    padding: 9rem 15% 3rem 15%;
+
+    font-family: "Exo", sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    color: #fffff8;
+  }
+
+  .front-article {
+    flex-grow: 1;
+    width: 80%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    .front-content {
+      width: 55%;
+
+      font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD",
+        "Book Antiqua", Georgia, serif;
+      font-size: 1.4rem;
+
+      h2 {
+        padding-top: 0.5em;
+        margin-bottom: 0.5em;
+
+        font-weight: normal;
+        font-style: italic;
+      }
+      p {
+        margin-bottom: 0.5em;
+      }
+    }
+
+    .profile-image {
+      max-width: 25%;
+      border-radius: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .front-container {
+    .front-title {
+      background-position: bottom center;
+
+      padding: 8rem 5% 2rem 5%;
+      font-size: 3rem;
+      text-align: center;
+    }
+
+    .front-article {
+      flex-direction: column-reverse;
+      width: 95%;
+
+      margin-top: 2rem;
+      margin-bottom: 5rem;
+
+      .profile-image {
+        max-width: 50%;
+      }
+
+      .front-content {
+        width: 70%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .front-container .front-article {
+    .front-content {
+      width: 100%;
+    }
+
+    .profile-image {
+      max-width: 100%;
+    }
+  }
+}
+
+/* page footer */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 3rem auto 1rem auto;
+
+  text-align: center;
+  font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD",
+    "Book Antiqua", Georgia, serif;
+  font-style: italic;
+  font-size: 1.2rem;
+
+  a:link,
+  a:visited {
+    color: var(--hypertext-color);
+  }
+}
+
+/* Shortcode - details */
+details {
+  margin-bottom: 1.4rem;
+
+  summary {
+    color: var(--hypertext-color);
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  div.details-content {
+    background-color: var(--details-background);
+    position: relative;
+    padding: 1rem 0 1px 0;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      bottom: 0;
+      left: -22rem;
+      right: -22rem;
+      background-color: var(--details-background);
+      z-index: -1;
+    }
+  }
+}
+
+/* MathJax styling */
+mjx-container {
+  &[display="true"] {
+    font-size: 1.1em !important;
+  }
+
+  .mathjax-highlight {
+    color: var(--primary-color) !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  /* enable scrolling for labelled equations */
+  mjx-container {
+    &[display="true"] {
+      min-width: 0 !important;
+      overflow-x: auto;
+    }
+  }
+}

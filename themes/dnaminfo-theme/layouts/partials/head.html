@@ -1,0 +1,32 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ if not .IsHome }}{{ with .Title }}{{ . }} | {{ end }}{{ end }}{{ .Site.Title }}</title>
+    
+    <meta name="author" content="{{ with .Site.Params.author }}{{ . }}{{ end }}" />
+    <meta name="description" content="{{if .IsHome }}{{ $.Site.Params.description }}{{ else }}{{ .Description }}{{ end }}" />
+    <meta name="theme-color" content="#111111" />
+
+    {{/* stylesheets */}}
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500;700&family=Exo:wght@600;800&display=swap" rel="stylesheet"> 
+    
+    {{ $style_options := (dict "targetPath" "main.min.css" "outputStyle" "compressed" "enableSourceMap" true) }}
+    {{ $style := resources.Get "sass/main.scss" | resources.ToCSS $style_options }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" />
+    
+    {{/* canonical link and title */}}
+    <link rel="canonical" href="{{ .Permalink }}" />
+
+    {{- template "_internal/twitter_cards.html" . -}}
+    {{- template "_internal/opengraph.html" . -}}
+
+    {{/* handle dark theme */}}
+    {{ $dark_theme_js := resources.Get "js/dark-theme.js" | resources.Minify }}
+    <script src="{{ $dark_theme_js.Permalink }}"></script>
+
+    {{/* load MathJax */}}
+    {{- if .Params.math -}}
+      {{ partial "mathjax" . }}
+    {{- end }}
+  </head>
