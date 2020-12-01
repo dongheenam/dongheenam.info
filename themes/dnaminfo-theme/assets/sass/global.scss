@@ -17,6 +17,15 @@ html {
   --mainnav-text: #fffff8;
   --mainnav-logo: #ff66b3;
 
+  --hljs-color: #4d4d4c;
+  --hl-comment: #8e908c;
+  --hl-name: #c82829;
+  --hl-meta: #f5871f;
+  --hl-attribute: #eab700;
+  --hl-string: #718c00;
+  --hl-title: #4271ae;
+  --hl-keyword: #8959a8;
+
   font-size: 15px;
   max-width: 100%;
   overflow-x: hidden;
@@ -33,6 +42,15 @@ html.dark-theme {
   --mainnav-background: #111;
   --mainnav-text: #fffff8;
   --mainnav-logo: #ff66b3;
+
+  --hljs-color: #4d4d4c;
+  --hl-comment: #969896;
+  --hl-name: #cc6666;
+  --hl-meta: #de935f;
+  --hl-attribute: #f0c674;
+  --hl-string: #b5bd68;
+  --hl-title: #81a2be;
+  --hl-keyword: #b294bb;
 
   img {
     filter: brightness(0.8) contrast(1.2);
