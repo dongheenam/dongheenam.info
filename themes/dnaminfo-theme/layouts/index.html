@@ -12,7 +12,7 @@
         <div class="front-content">
             {{ .Content }}
         </div>
-        <img class="profile-image" src="{{ $avatar_img.RelPermalink }}" />
+        <img class="profile-image" src="{{ $avatar_img.RelPermalink }}" width="{{ $avatar_img.Width }}" height="{{ $avatar_img.Height }}" />
     </div>
 </div>
 {{- end -}}

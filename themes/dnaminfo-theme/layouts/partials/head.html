@@ -22,8 +22,7 @@
     {{- template "_internal/opengraph.html" . -}}
 
     {{/* handle dark theme */}}
-    {{ $dark_theme_js := resources.Get "js/dark-theme.js" | resources.Minify }}
-    <script src="{{ $dark_theme_js.Permalink }}"></script>
+    {{ partial "dark-theme" . }}
 
     {{/* load MathJax */}}
     {{- if .Params.math -}}
