@@ -6,7 +6,7 @@
 {{- $img := resources.Get (.Get "src") -}}
 <figure>
 {{- if (.Get "caption") -}}
-{{- $fig_id := .Get "id" | default (path.Base $img_src) -}}
+{{- $fig_id := .Get "id" | default (path.Base $img.RelPermalink) -}}
 <label for="fig-{{ $fig_id }}" class="margin-toggle">&#8853;</label>
 <input type="checkbox" id="fig-{{ $fig_id }}" class="margin-toggle" />
 <span class="marginnote">
@@ -14,5 +14,5 @@
 </span>
 {{- end -}}
 <img{{ with (.Get "class") }}class="{{ . }}"{{ end }}
-  src="{{ $img_src.RelPermalink }}" alt='{{ .Get "alt" }}' loading="lazy" />
+  src="{{ $img.RelPermalink }}" alt='{{ .Get "alt" }}' loading="lazy" />
 </figure>
