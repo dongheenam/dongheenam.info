@@ -24,10 +24,12 @@ window.addEventListener("scroll", () => {
 /* Expand TOC */
 const tocTitle = document.querySelector(".toc-title");
 const tocMenu = document.querySelector(".toc");
-tocTitle.addEventListener("click", () => {
-  tocTitle.classList.toggle("toc-title--expanded");
-  tocMenu.classList.toggle("toc--expanded");
-});
+if (tocTitle) {
+  tocTitle.addEventListener("click", () => {
+    tocTitle.classList.toggle("toc-title--expanded");
+    tocMenu.classList.toggle("toc--expanded");
+  });
+}
 
 /* Expand sidebar for mobile */
 const sidenavTitle = document.querySelector(".sidenav-title");

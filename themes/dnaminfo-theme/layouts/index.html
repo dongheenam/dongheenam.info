@@ -1,6 +1,6 @@
 {{- define "main" -}}
-{{ $banner_img := resources.Get "img/home/banner.jpg" }}
-{{ $avatar_img := resources.Get "img/home/avatar.jpg" }}
+{{ $banner_img := (resources.Get "img/home/banner.jpg").Fill "2000x400 Smart jpeg" }}
+{{ $avatar_img := (resources.Get "img/home/avatar.jpg").Fill "500x500 Center jpeg" }}
 <div class="front-container">
     <div class="front-title"
     style="background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('{{ $banner_img.RelPermalink }}');
@@ -12,8 +12,8 @@
         <div class="front-content">
             {{ .Content }}
         </div>
-        <img class="profile-image" src="{{ $avatar_img.RelPermalink }}" width="{{ $avatar_img.Width }}" height="{{ $avatar_img.Height }}" />
+        {{- $image_options := dict "class" "profile-image" "image" $avatar_img "alt" "banner image" "nolink" true -}}
+        {{- partial "resp-image" $image_options -}}
     </div>
 </div>
 {{- end -}}
-

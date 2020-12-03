@@ -7,12 +7,15 @@
     <meta name="description" content="{{if .IsHome }}{{ $.Site.Params.description }}{{ else }}{{ .Description }}{{ end }}" />
     <meta name="theme-color" content="#111111" />
 
-    {{/* stylesheets */}}
+    {{/* Google Fonts */}}
+    {{- $gfonts_href := "https://fonts.googleapis.com/css2?family=Inconsolata:wght@500;700&family=Exo:wght@600;800&display=swap" -}}
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500;700&family=Exo:wght@600;800&display=swap" rel="stylesheet"> 
+    <link rel="preload" as="style" href="{{ $gfonts_href }}">
+    <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="{{ $gfonts_href }}">
     
-    {{ $style_options := (dict "targetPath" "main.min.css" "outputStyle" "compressed" "enableSourceMap" true) }}
-    {{ $style := resources.Get "sass/main.scss" | resources.ToCSS $style_options }}
+    {{/* stylesheets */}}
+    {{- $style_options := (dict "targetPath" "main.min.css" "outputStyle" "compressed" "enableSourceMap" true) -}}
+    {{- $style := resources.Get "sass/main.scss" | resources.ToCSS $style_options -}}
     <link rel="stylesheet" href="{{ $style.Permalink }}" />
     
     {{/* canonical link and title */}}

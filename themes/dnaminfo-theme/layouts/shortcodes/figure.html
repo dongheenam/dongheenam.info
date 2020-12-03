@@ -4,15 +4,15 @@
     %}} 
 */}}
 {{- $img := resources.Get (.Get "src") -}}
-<figure>
+<figure class='{{ .Get "class" }}'>
 {{- if (.Get "caption") -}}
 {{- $fig_id := .Get "id" | default (path.Base $img.RelPermalink) -}}
-<label for="fig-{{ $fig_id }}" class="margin-toggle">&#8853;</label>
+<label for="fig-{{ $fig_id }}" class="margin-toggle toggle-with-word">caption</label>
 <input type="checkbox" id="fig-{{ $fig_id }}" class="margin-toggle" />
-<span class="marginnote">
+<figcaption class="marginnote">
     {{ .Get "caption" | markdownify }}
-</span>
+</figcaption>
 {{- end -}}
-<img{{ with (.Get "class") }}class="{{ . }}"{{ end }}
-  src="{{ $img.RelPermalink }}" alt='{{ .Get "alt" }}' loading="lazy" />
+{{- $image_options := dict "image" $img "alt" (.Get "alt") -}}
+{{- partial "resp-image" $image_options -}}
 </figure>

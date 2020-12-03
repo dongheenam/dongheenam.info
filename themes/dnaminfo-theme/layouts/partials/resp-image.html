@@ -1,0 +1,28 @@
+{{/* Automatically resizes images and generates an srcset of images */}}
+{{- $small := "" -}}
+{{- $medium := "" -}}
+{{- $large := "" -}}
+{{- if ge .image.Width "500" -}}
+    {{- $small = .image.Resize "500x" -}}
+{{- if ge .image.Width "850" -}}
+    {{- $medium = .image.Resize "850x" -}}
+{{- if ge .image.Width "1200" -}}
+    {{- $large = .image.Resize "1200x" -}}
+{{- end -}}
+{{- end -}}
+{{- end -}}
+{{- if not .nolink -}}<a href="{{ .image.RelPermalink }}">{{- end -}}
+<img class="{{ .class }}" width="100%" height="auto"
+    alt="{{ .alt }}" loading="lazy"
+    sizes="
+		(min-width: 1600px) 75vw,
+		100vw
+	"
+    src="{{ .image.RelPermalink }}"
+    srcset="
+    {{with $small }}{{ .RelPermalink }} 500w, {{ end }}
+    {{with $medium }}{{ .RelPermalink }} 850w, {{ end }}
+    {{with $large }}{{ .RelPermalink }} 1200w {{ end }}
+    "
+/>
+{{- if not .nolink -}}</a>{{- end -}}

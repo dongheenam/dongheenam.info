@@ -244,10 +244,14 @@
   .fullwidth {
     max-width: 85rem;
     clear: both;
-  }
 
-  figure.fullwidth figcaption {
-    margin-right: 24rem;
+    display: flex;
+    flex-flow: column-reverse nowrap;
+
+    .marginnote {
+      align-self: flex-end;
+      margin-right: 0;
+    }
   }
 
   div.fullwidth,
@@ -405,6 +409,10 @@
     .fullwidth {
       max-width: 59rem;
       clear: both;
+
+      .marginnote {
+        margin-right: 1rem;
+      }
     }
   }
 }
@@ -445,6 +453,10 @@
     figure.fullwidth figcaption {
       margin-right: 0%;
       max-width: none;
+    }
+
+    .fullwidth {
+      display: block;
     }
 
     blockquote {
@@ -497,6 +509,7 @@
 
     img {
       width: 100%;
+      height: auto;
     }
   }
 }
