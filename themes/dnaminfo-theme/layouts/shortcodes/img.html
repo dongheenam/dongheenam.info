@@ -1,19 +1,7 @@
 {{/* Usage: 
-    {{% figure src="fig-link" id="fig-id" class="fullwidth" alt="alt-text"
-        caption="figure caption"
-    %}} 
+    {{% img src="fig-link" alt="alt-text" %}} 
 */}}
-{{- $img := resources.Get (.Get "src") -}}
-<figure class='{{ .Get "class" }}'>
-{{- if (.Get "caption") -}}
-{{- $fig_id := .Get "id" | default (path.Base $img.RelPermalink) -}}
-<label for="fig-{{ $fig_id }}" class="margin-toggle toggle-with-word">caption</label>
-<input type="checkbox" id="fig-{{ $fig_id }}" class="margin-toggle" />
-<figcaption class="marginnote">
-    {{ .Get "caption" | markdownify }}
-</figcaption>
-{{- end -}}
-
+{{/* if src is an external link, attach it as is */}}
 {{- if in (.Get "src") "http" -}}
   <a href='{{ .Get "src" }}'><img src='{{ .Get "src" }}' alt='{{ .Get "alt" }}' width="100%" height="auto" /></a>
 {{- else -}}
@@ -28,4 +16,3 @@
     {{- partial "resp-image" $img_options -}}
   {{- end -}}
 {{- end -}}
-</figure>

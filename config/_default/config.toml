@@ -1,7 +1,7 @@
 
 # Site definitions
 title = "dongheenam"
-baseURL = "https://green-sky-0fc556700.azurestaticapps.net/"
+baseURL = "https://www.dongheenam.info/"
 languageCode = "en-au"
 theme = "dnaminfo-theme"
 
