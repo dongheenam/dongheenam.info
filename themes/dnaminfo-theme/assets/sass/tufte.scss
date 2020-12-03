@@ -308,6 +308,29 @@
     }
   }
 
+  /* Table */
+  table {
+    border-collapse: collapse;
+
+    th,
+    td {
+      padding: 0.1rem 0.2rem;
+      text-align: right;
+
+      &:first-child {
+        text-align: left;
+      }
+    }
+
+    thead th {
+      border-top: 2px solid var(--text-color);
+      border-bottom: 1px solid var(--text-color);
+    }
+    tbody tr:last-child td {
+      border-bottom: 2px solid var(--text-color);
+    }
+  }
+
   /* Other stuff */
   div.table-wrapper {
     overflow-x: auto;
@@ -446,7 +469,7 @@
     }
 
     figure {
-      max-width: 90%;
+      max-width: 100%;
     }
 
     figcaption,

@@ -1,0 +1,18 @@
+{{/* Usage: 
+    {{% gallery id="gallery ID" class="gallery-(no of columns)" caption="gallery caption" %}} 
+      {{% img ... %}}
+      {{% img ... %}}
+    {{% /gallery %}} 
+*/}}
+<figure>
+    {{- if (.Get "caption") -}}
+    <label for='gal-{{ .Get "id" }}' class="margin-toggle toggle-with-word">caption</label>
+    <input type="checkbox" id='gal-{{ .Get "id" }}' class="margin-toggle" />
+    <figcaption class="marginnote">
+        {{ .Get "caption" | markdownify }}
+    </figcaption>
+    {{- end -}}
+    <div class='gallery-container {{ .Get "class" }}'>
+    {{- .Inner -}}
+    </div>
+</figure>

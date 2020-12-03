@@ -1,14 +1,10 @@
 {{/* Usage: 
     {{% img src="fig-link" alt="alt-text" %}} 
 */}}
-{{/* if src is an external link, attach it as is */}}
 {{- if in (.Get "src") "http" -}}
   <a href='{{ .Get "src" }}'><img src='{{ .Get "src" }}' alt='{{ .Get "alt" }}' width="100%" height="auto" /></a>
 {{- else -}}
-  {{/* src should point to a resource */}}
   {{- $img := resources.Get (.Get "src") -}}
-
-  {{/* if vector graphics then attach it as is */}}
   {{- if in $img.RelPermalink "svg" -}}
     <a href='{{ $img.RelPermalink }}'><img src='{{ $img.RelPermalink }}' alt='{{ .Get "alt" }}' width="100%" height="auto" /></a>
   {{- else -}}

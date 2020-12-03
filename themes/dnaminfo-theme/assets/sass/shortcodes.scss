@@ -1,0 +1,16 @@
+// Gallery for figures
+.gallery-container {
+  display: grid;
+  grid-gap: 0.5rem;
+
+  align-items: center;
+}
+.gallery-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.gallery-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.gallery-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
