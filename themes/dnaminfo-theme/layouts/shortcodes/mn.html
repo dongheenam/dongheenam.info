@@ -9,7 +9,7 @@
 {{- else -}}
 <label for="mn-{{ .Get 0 }}" class="margin-toggle">&#8853;</label>
 {{- end -}}
-<input type="checkbox" id="{{ .Get 0 }}" class="margin-toggle" />
+<input type="checkbox" id="mn-{{ .Get 0 }}" class="margin-toggle" />
 <span class="marginnote">
     {{ .Inner | markdownify }}
 </span>

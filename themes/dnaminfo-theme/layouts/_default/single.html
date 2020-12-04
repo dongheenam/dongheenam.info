@@ -1,5 +1,5 @@
 {{- define "datedisplay" -}}
-   <p class="subtitle">{{ .Date.Format "2 Jan 2006" }}
+   <p class="subtitle" {{ if eq .Type "docs" }}style="margin-top:3rem"{{end}}>{{ .Date.Format "2 Jan 2006" }}
       {{ if ne .Date .Lastmod }}
       | Updated on {{ .Lastmod.Format "2 Jan 2006" }}
       {{ end }}

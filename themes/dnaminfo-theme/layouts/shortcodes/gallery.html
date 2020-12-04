@@ -1,5 +1,5 @@
 {{/* Usage: 
-    {{% gallery id="gallery ID" class="gallery-(no of columns)" caption="gallery caption" %}} 
+    {{% gallery id="gallery ID" ncols="2" caption="gallery caption" %}} 
       {{% img ... %}}
       {{% img ... %}}
     {{% /gallery %}} 
@@ -9,10 +9,10 @@
     <label for='gal-{{ .Get "id" }}' class="margin-toggle toggle-with-word">caption</label>
     <input type="checkbox" id='gal-{{ .Get "id" }}' class="margin-toggle" />
     <figcaption class="marginnote">
-        {{ .Get "caption" | markdownify }}
+        {{ .Get "caption" | safeHTML | markdownify }}
     </figcaption>
     {{- end -}}
-    <div class='gallery-container {{ .Get "class" }}'>
+    <div class='gallery-container gallery-{{ .Get "ncols" }}'>
     {{- .Inner -}}
     </div>
 </figure>

@@ -1,0 +1,7 @@
+{{- $pdf_src := resources.Get (.Get "src") -}}
+<object class='pdf{{ with (.Get "class") }} {{ . }}{{ end }}'
+  data="{{$pdf_src.RelPermalink}}" type="application/pdf" width="100%" height="700px">
+    <embed src="{{$pdf_src.RelPermalink}}">
+        <p>PDF failed to load! Click to download the PDF instead: <a href="{{$pdf_src.RelPermalink}}">Download PDF</a>.</p>
+    </embed>
+</object>
