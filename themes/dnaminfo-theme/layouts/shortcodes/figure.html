@@ -10,21 +10,20 @@
 <label for="fig-{{ $fig_id }}" class="margin-toggle toggle-with-word">caption</label>
 <input type="checkbox" id="fig-{{ $fig_id }}" class="margin-toggle" />
 <figcaption class="marginnote">
-    {{ .Get "caption" | markdownify }}
+    {{ .Get "caption" | markdownify | safeHTML }}
 </figcaption>
 {{- end -}}
-
 {{- if in (.Get "src") "http" -}}
   <a href='{{ .Get "src" }}'><img src='{{ .Get "src" }}' alt='{{ .Get "alt" }}' width="100%" height="auto" /></a>
 {{- else -}}
   {{/* src should point to a resource */}}
   {{- $img := resources.Get (.Get "src") -}}
-
   {{/* if vector graphics then attach it as is */}}
-  {{- if in $img.RelPermalink "svg" -}}
+  {{- if or (in $img.RelPermalink "svg") (.Get "noresize") -}}
     <a href='{{ $img.RelPermalink }}'><img src='{{ $img.RelPermalink }}' alt='{{ .Get "alt" }}' width="100%" height="auto" /></a>
   {{- else -}}
-    {{- $img_options := dict "image" $img "alt" (.Get "alt") -}}
+    {{- $alt_text := (.Get "alt" | default (.Get "caption") | default "") -}}
+    {{- $img_options := dict "image" $img "alt" $alt_text -}}
     {{- partial "resp-image" $img_options -}}
   {{- end -}}
 {{- end -}}

@@ -107,6 +107,7 @@
 
   hr {
     display: block;
+    clear: both;
     height: 1px;
     width: 55rem;
     border: 0;
@@ -127,7 +128,7 @@
       margin-bottom: 0.5rem;
       font-size: 1.3rem;
       display: block;
-      line-height: 1;
+      line-height: 1.1;
     }
   }
 
@@ -208,7 +209,7 @@
     margin-right: -30rem;
     width: 25rem;
     margin-top: 0.3rem;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
     font-size: 1.1rem;
     line-height: 1.3;
     vertical-align: baseline;
@@ -241,7 +242,7 @@
   }
 
   /* Fullwidth */
-  .fullwidth {
+  figure.fullwidth {
     max-width: 85rem;
     clear: both;
 
@@ -254,8 +255,7 @@
     }
   }
 
-  div.fullwidth,
-  table.fullwidth {
+  .fullwidth {
     width: 85rem;
   }
 
@@ -430,7 +430,7 @@
     }
 
     .fullwidth {
-      max-width: 59rem;
+      width: 59rem;
       clear: both;
 
       .marginnote {
@@ -445,6 +445,7 @@
     width: 100%;
     padding: 1rem 8% 0 8%;
     margin: 0;
+    margin-bottom: 5rem;
 
     hr,
     p,
@@ -479,6 +480,10 @@
     }
 
     .fullwidth {
+      width: 100%;
+    }
+
+    figure.fullwidth {
       display: block;
     }
 
@@ -508,6 +513,7 @@
     .sidenote,
     .marginnote {
       display: none;
+      margin-bottom: 0;
     }
 
     .margin-toggle:checked + .sidenote,
@@ -527,7 +533,7 @@
 
     div.table-wrapper,
     table {
-      width: 85%;
+      width: 100%;
     }
 
     img {

@@ -11,18 +11,16 @@
 {{- end -}}
 {{- end -}}
 {{- end -}}
+{{ $sizes := .sizes | default "(min-width: 1600px) 75vw, 100vw" }}
 {{- if not .nolink -}}<a href="{{ .image.RelPermalink }}">{{- end -}}
 <img class="{{ .class }}" width="100%" height="auto"
     alt="{{ .alt }}" loading="lazy"
-    sizes="
-		(min-width: 1600px) 75vw,
-		100vw
-	"
+    sizes="{{ $sizes }}"
     src="{{ .image.RelPermalink }}"
     srcset="
-    {{with $small }}{{ .RelPermalink }} 500w, {{ end }}
-    {{with $medium }}{{ .RelPermalink }} 850w, {{ end }}
-    {{with $large }}{{ .RelPermalink }} 1200w {{ end }}
+    {{- with $small }}{{ .RelPermalink }} 600w{{ end -}}
+    {{- with $medium -}}, {{ .RelPermalink }} 850w{{ end -}}
+    {{- with $large -}}, {{ .RelPermalink }} 1200w{{ end -}}
     "
 />
 {{- if not .nolink -}}</a>{{- end -}}

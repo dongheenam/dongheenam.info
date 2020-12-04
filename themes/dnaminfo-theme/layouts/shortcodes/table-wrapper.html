@@ -1,0 +1,8 @@
+<div class='table-wrapper {{ .Get "class" }}'>
+    {{ .Inner | markdownify }}
+    {{- with (.Get "class") -}}
+    <script>
+        document.currentScript.parentNode.querySelector("table").classList.add({{ . }});
+    </script>
+    {{- end -}}
+</div>
