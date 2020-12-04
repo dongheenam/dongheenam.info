@@ -312,6 +312,10 @@
   table {
     border-collapse: collapse;
 
+    tr:hover {
+      background-color: var(--details-background);
+    }
+
     th,
     td {
       padding: 0.1rem 0.2rem;
