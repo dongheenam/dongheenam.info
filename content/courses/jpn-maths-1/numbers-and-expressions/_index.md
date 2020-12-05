@@ -8,7 +8,7 @@ lastMod: 2020-12-04 19:57:15.201 +1100
 type: docs
 section: false
 math: true
-draft: true
+draft: false
 
 menu:
   math1:
