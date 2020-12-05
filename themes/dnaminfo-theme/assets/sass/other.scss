@@ -118,36 +118,6 @@
   }
 }
 
-/* Shortcode - details */
-details {
-  margin-bottom: 1.4rem;
-
-  summary {
-    color: var(--hypertext-color);
-    font-variant: small-caps;
-    font-weight: bold;
-    font-size: 1.2rem;
-    cursor: pointer;
-  }
-
-  div.details-content {
-    background-color: var(--details-background);
-    position: relative;
-    padding: 1rem 0 1px 0;
-
-    &::before {
-      position: absolute;
-      content: "";
-      top: 0;
-      bottom: 0;
-      left: -22rem;
-      right: -22rem;
-      background-color: var(--details-background);
-      z-index: -1;
-    }
-  }
-}
-
 /* MathJax styling */
 mjx-container {
   &[display="true"] {
@@ -165,6 +135,7 @@ mjx-container {
     &[display="true"] {
       min-width: 0 !important;
       overflow-x: auto;
+      overflow-y: hidden;
     }
   }
 }

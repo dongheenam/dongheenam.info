@@ -14,3 +14,69 @@
 .gallery-4 {
   grid-template-columns: repeat(4, 1fr);
 }
+
+// Boxed content
+.box {
+  border: 1.5px solid var(--hr-color);
+  padding: 1rem 0.5rem 0 0.5rem;
+  width: 55rem;
+
+  p,
+  hr,
+  ol,
+  ul,
+  table,
+  blockquote,
+  figure {
+    width: 100%;
+  }
+
+  p:first-child {
+    margin-top: 0;
+  }
+}
+@media (max-width: 1600px) {
+  .box {
+    width: 42rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .box {
+    width: 100%;
+  }
+}
+
+/* Shortcode - details */
+details {
+  margin-bottom: 1.4rem;
+
+  summary {
+    color: var(--hypertext-color);
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  div.details-content {
+    background-color: var(--details-background);
+    position: relative;
+    padding: 1px 0;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      bottom: 0;
+      left: -22rem;
+      right: -22rem;
+      background-color: var(--details-background);
+      z-index: -1;
+    }
+
+    & > ol:first-child,
+    & > ul:first-child {
+      margin-top: 1.4rem;
+    }
+  }
+}

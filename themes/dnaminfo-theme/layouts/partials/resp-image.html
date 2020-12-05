@@ -2,12 +2,12 @@
 {{- $small := "" -}}
 {{- $medium := "" -}}
 {{- $large := "" -}}
-{{- if ge .image.Width "500" -}}
-    {{- $small = .image.Resize "500x" -}}
-{{- if ge .image.Width "850" -}}
-    {{- $medium = .image.Resize "850x" -}}
-{{- if ge .image.Width "1200" -}}
-    {{- $large = .image.Resize "1200x" -}}
+{{- if ge .image.Width "600" -}}
+    {{- $small = .image.Resize "600x q100" -}}
+{{- if ge .image.Width "820" -}}
+    {{- $medium = .image.Resize "820x q100" -}}
+{{- if ge .image.Width "1250" -}}
+    {{- $large = .image.Resize "1250x q100" -}}
 {{- end -}}
 {{- end -}}
 {{- end -}}
@@ -19,8 +19,8 @@
     src="{{ .image.RelPermalink }}"
     srcset="
     {{- with $small }}{{ .RelPermalink }} 600w{{ end -}}
-    {{- with $medium -}}, {{ .RelPermalink }} 850w{{ end -}}
-    {{- with $large -}}, {{ .RelPermalink }} 1200w{{ end -}}
+    {{- with $medium -}}, {{ .RelPermalink }} 820w{{ end -}}
+    {{- with $large -}}, {{ .RelPermalink }} 1250w{{ end -}}
     "
 />
 {{- if not .nolink -}}</a>{{- end -}}

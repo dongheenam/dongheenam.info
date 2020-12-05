@@ -143,9 +143,20 @@
   ol,
   ul {
     margin-left: 1.5rem;
+    margin-bottom: 1.4rem;
     width: 50.5rem;
     padding-left: 1.5rem;
     -webkit-padding-start: 1.5rem;
+  }
+
+  ol {
+    li::marker {
+      font-family: et-book-roman-old-style;
+    }
+  }
+  ul ol,
+  ol ol {
+    list-style-type: lower-alpha;
   }
 
   dt:not(:first-child),
@@ -342,9 +353,11 @@
   }
 
   span.newthought {
+    font-size: 0.9em !important;
     font-variant: small-caps;
     border: 1px solid var(--text-color);
     padding: 0 0.2rem;
+    margin-right: 1rem;
   }
 
   input.margin-toggle {
@@ -384,6 +397,7 @@
 
     li {
       display: inline;
+      white-space: nowrap;
     }
 
     li + li:before {

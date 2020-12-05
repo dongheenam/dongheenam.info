@@ -1,21 +1,22 @@
 {{- define "main" -}}
+{{ partial "sidenav" . }}
 <article class="tufte-container">
     {{ partial "breadcrumb" . }}
     <h1>{{ .Title }}</h1>
     {{ .Content }}
-
-    <section class="section-pages">
-    {{ range (.Paginator 10).Pages }}
+    {{- $requires_section := .Page.Params.section | default "true" -}}
+    {{ if $requires_section }}
+    <section class="section-pages{{ if eq .Type "posts" }} section-pages-post{{ end }}">
+    {{- range (.Paginate .Pages 10).Pages -}}
         <h2>
             {{- if eq .Type "posts" -}}<p class="date">{{ .Date.Format "2 Jan 2006" }}</p>{{- end -}}
             <a href="{{ .RelPermalink }}">{{ .Name }}</a>
         </h2>
         {{ with .Description }}<p class="subtitle">{{ . }}</p>{{ end }}
-    {{ end }}
-
-    <hr>
+    {{- end -}}
     {{ template "_internal/pagination.html" . }}
     </section>
-
+    {{- end -}}
+    {{ partial "pager" . }}
 </article>
 {{- end -}}
