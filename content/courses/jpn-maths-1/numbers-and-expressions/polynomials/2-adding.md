@@ -8,7 +8,7 @@ lastMod: 2020-12-05 10:06:41.073 +1100
 
 type: docs
 math: true
-draft: true
+draft: false
 
 tags:
   - algebra
