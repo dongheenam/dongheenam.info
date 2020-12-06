@@ -20,7 +20,7 @@
   {{- $img := resources.Get (.Get "src") -}}
   {{/* if vector graphics then attach it as is */}}
   {{- if or (in $img.RelPermalink "svg") (.Get "noresize") -}}
-    <a href='{{ $img.RelPermalink }}'><img src='{{ $img.RelPermalink }}' alt='{{ .Get "alt" }}' width="100%" height="auto" /></a>
+    <a href='{{ $img.RelPermalink }}'><img src='{{ $img.RelPermalink }}' alt='{{ .Get "alt" }}' /></a>
   {{- else -}}
     {{- $alt_text := (.Get "alt" | default (.Get "caption") | default "") -}}
     {{- $img_options := dict "image" $img "alt" $alt_text -}}

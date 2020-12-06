@@ -28,7 +28,7 @@ weight: 11
 
 ## Introduction
 
-***Poly-*** means many: ***poly***gons have many angles and sides, ***poly***morphic animals go through many different forms, and ***poly***glot people can speak many languages. Similarly, a ***poly***nomial is an expression with many terms. So we need to know what an expression is and what a term is before understanding what a polynomial is.
+*Poly-* means many: *poly*gons have many angles and sides, *poly*morphic animals go through many different forms, and *poly*glot people can speak many languages. Similarly, a *poly*nomial is an expression with many terms. So we need to know what an expression is and what a term is before understanding what a polynomial is.
 
 In this lesson, we will study:
 
@@ -48,7 +48,7 @@ In this lesson, we will study:
 
 {{% box %}}
 {{% note Definition %}}
-A ***term*** is a number, a variable, or numbers or variables multiplied each other.
+A *term* is a number, a variable, or numbers or variables multiplied each other.
 
 {{% note Example %}}
 Below are all terms.
@@ -64,7 +64,7 @@ The definition of terms brings us two important properties: coefficient and degr
 
 {{% box %}}
 {{% note Definition %}}
-The ***coefficient*** of a term is the number part. The ***degree*** of a term is the number of variables.
+The *coefficient* of a term is the number part. The *degree* of a term is the number of variables.
 
 {{% note Example %}}
 For the term $-42xy^2$,
@@ -95,28 +95,8 @@ For a term $ 24xy^2z$,
   - when you focus on $y$, $24xy^2z = (24xz)y^2$. \
     $\implies$ Its coefficient in terms of $y$ is $24xz$, and its degree is $2$.
 
-{{% box %}}
 {{% note Questions %}}
-1. Find the coefficients and the orders of the following term.
-    1. $3x^4y^5$
-    2. $-2a^3bc^2$
-
-2. Find the coefficients and the orders of $7p^2q^3$,
-    1. in terms of $p$;
-    2. in terms of $q$.
-{{% /box %}}
-
-{{% details title="Answer" %}}
-
-1. 
-    1. Coefficient is $3$, order is $9$.
-    2. Coefficient is $-2$, order is $7$.
-2. 
-    1. Coefficient in $p$ is $7q^3$, order in $p$ is $2$.
-    2. Coefficient in $q$ is $7p^2$, order in $q$ is $3$.
-
-{{% /details %}}
-
+Try [Practice Questions](#practice-questions) 1 and 2 before moving on.
 
 ## Expressions and Polynomials
 
@@ -124,7 +104,7 @@ We can think of many ways of combining two or more terms together. Adding, subtr
 
 {{% box %}}
 {{% note Definition %}}
-An ***expression*** is a term, or many terms combined together.
+An *expression* is a term, or many terms combined together.
 
 {{% note Example %}}
 Below are all expressions.
@@ -139,7 +119,7 @@ A polynomial is a special case, when you only use addition and subtraction when 
 
 {{% box %}}
 {{% note Definition %}}
-A ***polynomial*** expression is a term, or many terms added or subtracted together.
+A *polynomial* expression is a term, or many terms added or subtracted together.
 
 {{% note Example %}}
 Below are all polynomials.
@@ -171,14 +151,14 @@ It is often useful to simplify this polynomial. The basic technique is combining
 
 {{% box %}}
 {{% note Definition %}}
-In a polynomial, ***like terms*** have the same variable part.
+In a polynomial, *like terms* have the same variable part.
 
 {{% note Example %}}
 For the polynomial $ x^2 - xy + 2 + 7x - 3xy - 6y + 4 - 3x, $
   - $-xy$ and $-3xy$ are like terms.
   - $7x$ and $-3x$ are like terms.
   - $2$ and $4$ are like terms.
-  - However, $x^2$ and $7x$ are ***not*** like terms.
+  - However, $x^2$ and $7x$ are *not* like terms.
 
 {{% /box %}}
 
@@ -204,7 +184,7 @@ We defined the degree of a term before. How do we define the degree of a polynom
 
 {{% box %}}
 {{% note Definition %}}
-The ***degree*** of a polynomial equals the highest degree of all terms.
+The *degree* of a polynomial equals the highest degree of all terms.
 
 {{% note Example %}}
   - $\underline{x^2} - 2x + 1$ has degree $2$.
@@ -235,10 +215,10 @@ Polynomial $3x^2y - 7xy + 6$ has:
 There are special categories for polynomials with specific degrees:
 
 {{% note Definition %}}
-  - ***Linear*** polynomials have degree $1$.
-  - ***Quadratic*** polynomials have degree $2$.
-  - ***Cubic*** polynomials have degree $3$.
-  - ***Quartic*** polynomials have degree $4$.
+  - *Linear* polynomials have degree $1$.
+  - *Quadratic* polynomials have degree $2$.
+  - *Cubic* polynomials have degree $3$.
+  - *Quartic* polynomials have degree $4$.
 
 Polynomials with degrees higher than $4$ do have names, for example, *septic* for degree $7$. However, they are less common, so let's not worry about their names for now.
 
@@ -246,7 +226,7 @@ Polynomials with degrees higher than $4$ do have names, for example, *septic* fo
 
 {{% box %}}
 {{% note Definition %}}
-The ***constant terms*** of a polynomial are the terms with only numbers. In other words, any terms with degree $0$ are constant terms.
+The *constant terms* of a polynomial are the terms with only numbers. In other words, any terms with degree $0$ are constant terms.
 
 {{% note Example %}}
   - $a^2 -3ab+6b-4$ has a constant term $-4$.
@@ -261,15 +241,33 @@ For the polynomial $b^3 + 7a^2 - 3ab - 6$,
 
 ### Arranging polynomials
 
-It is often convenient to sort a polynomial in a neat way. Arranging a polynomial in ***ascending*** (increasing) order means listing the terms from the lowest to the highest in degree. On the other hand, arranging a polynomial in ***descending*** (decreasing) order means listing the terms from the highest to the lowest in degree. Many mathematicians arrange polynomials in descending order before working on them, but it is up to you.
+It is often convenient to sort a polynomial in a neat way. Arranging a polynomial in *ascending* (increasing) order means listing the terms from the lowest to the highest in degree. On the other hand, arranging a polynomial in *descending* (decreasing) order means listing the terms from the highest to the lowest in degree. Many mathematicians arrange polynomials in descending order before working on them, but it is up to you.
 
 {{% note Example %}}
 Polynomial $-3+x^2-6x+x^3$ can be arranged as:
   - $-3-6x+x^2+x^3$ (ascending)
   - $x^3+x^2-6x-3$ (descending)
 
-{{% box %}}
-{{% note Questions %}}
+## Practice Questions
+
+1. Find the coefficients and the orders of the following term.
+    1. $3x^4y^5$
+    2. $-2a^3bc^2$
+
+2. Find the coefficients and the orders of $7p^2q^3$,
+    1. in terms of $p$;
+    2. in terms of $q$.
+
+{{% details title="Answer" %}}
+
+1. 
+    1. Coefficient is $3$, order is $9$.
+    2. Coefficient is $-2$, order is $7$.
+2. 
+    1. Coefficient in $p$ is $7q^3$, order in $p$ is $2$.
+    2. Coefficient in $q$ is $7p^2$, order in $q$ is $3$.
+
+{{% /details %}}
 
 3. Find the constant term and degree in $x$.
     1. $-x^2+5x-4$
@@ -281,8 +279,6 @@ Polynomial $-3+x^2-6x+x^3$ can be arranged as:
 5. Simplify and arrange the polynomials in descending order.
     1. $3x^2 - 12xy + 4 + 3x^2 - 2x + 5$
     2. $2x^2 + 2y^2 - 3xy + 4y^2 + 2xy - x^2$
-
-{{% /box %}}
 
 {{% details title="Answer" %}}
 

@@ -120,22 +120,23 @@
 
 /* MathJax styling */
 mjx-container {
+  box-sizing: default;
+  overflow-y: hidden;
+  padding: 1px 0 !important;
+
+  mjx-math {
+    padding: 1px 0 !important;
+  }
+
   &[display="true"] {
-    font-size: 1.1em !important;
+    overflow-x: auto;
+
+    * {
+      line-height: 0.2em;
+    }
   }
 
   .mathjax-highlight {
     color: var(--primary-color) !important;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  /* enable scrolling for labelled equations */
-  mjx-container {
-    &[display="true"] {
-      min-width: 0 !important;
-      overflow-x: auto;
-      overflow-y: hidden;
-    }
   }
 }

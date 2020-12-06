@@ -4,7 +4,7 @@ description: "How to add and subtract polynomials. How to simplify polynomials u
 slug: "adding-polynomials"
 
 date: 2020-05-14 16:24:18 +1000
-lastMod: 2020-12-05 10:06:41.073 +1100
+lastMod: 2020-12-06 15:21:17.556 +1100
 
 type: docs
 math: true
@@ -23,7 +23,6 @@ menu:
     name: Adding and Subtracting
     weight: 12
 
-# Previous/next pager order (if `docs_section_pager` enabled in `params.toml`)
 weight: 12
 ---
 
@@ -45,9 +44,9 @@ In this lesson, we will learn:
 These are the three laws of arithmetic that you may remember from earlier years:
 
 {{% note Definition %}}
-- The ***commutative law*** tells you can swap the order of adding or multiplying.
-- The ***associative law*** tells you can group however we want when adding or multiplying.
-- The ***distributive law*** tells multiplying the sum is the same as summing the multiplied.
+- The *commutative law* tells you can swap the order of adding or multiplying.
+- The *associative law* tells you can group however we want when adding or multiplying.
+- The *distributive law* tells multiplying the sum is the same as summing the multiplied.
 
 We can describe the three laws in a more mathematical way. For every polynomial $A$, $B$, and $C$,
 
@@ -85,8 +84,6 @@ $$
 
 {{% /box %}}
 
-The distributive law, on the other hand, might need some revision and training. For the rest of this lesson, I marked where we use the distributive law!
-
 {{% details title="Swapping terms" %}}
 In the example above, when I swapped the order of $6b^2 - 3ab$, I carried the sign of the term with it. Be aware that associative and commutative laws *do not work for subtraction or division*: $6b^2 - 3ab$ is not equal to $3ab - 6b^2$ in general. Instead, think of them as the *sum* of $6b^2$ and $-3ab$:
 
@@ -97,6 +94,10 @@ Likewise, you can use the laws to divisions like this way:
 $$ 6b^2 \div 3ab = 6b^2 \times \dfrac{1}{3ab} = \dfrac{1}{3ab} \times 6b^2. $$
 
 {{% /details %}}
+
+The distributive law, on the other hand, might need some revision and training.
+
+{{% figure src="courses/jpn-maths-1/numbers-and-expressions/poly-dist-law.jpg" id="dist-law" caption="Visual explanation of the distributive law" %}}
 
 ## Simple Addition and Subtraction
 
@@ -137,36 +138,8 @@ In general, when you take off $-(...)$, *the signs of the terms inside the brack
 
 {{% /details %}}
 
-{{% box %}}
 {{% note Questions %}}
-1. If $A=x^2 + 3y^2 - 2xy$ and $B=y^2+3xy-2x^2$, calculate:
-    1. $A+B$
-    2. $A-B$
-
-{{% /box %}}
-
-{{% details title="Answer" %}}
-1. 
-    1. $-x^2 + xy + 4y^2$
-    2. $3x^2 - 5xy + 2y^2$
-
-{{% note "Solution 1" %}}
-\begin{align}
-\text{a.} \quad & A+B \\\\
-  &= (x^2 + 3y^2 - 2xy) + (y^2+3xy-2x^2) \\\\
-  &= (x^2 - 2x^2) + (-2xy + 3xy) + (3y^2 + y^2) \\\\
-  &= \boldsymbol{-x^2+xy+4y^2.}
-\end{align}
-
-\begin{align}
-\text{b.} \quad & A-B \\\\
-  &= (x^2 + 3y^2 - 2xy) - (y^2+3xy-2x^2) \\\\
-  &= x^2 + 3y^2 - 2xy \hl{-y^2-3xy+2x^2} \\\\
-  &= (x^2 + 2x^2) + (-2xy - 3xy) + (3y^2 - y^2) \\\\
-  &= \boldsymbol{3x^2-5xy+2y^2.}
-\end{align}
-
-{{% /details %}}
+Try [Practice Question](#practice-questions) 1 before moving on.
 
 ## Advanced Addition and Subtraction
 
@@ -174,13 +147,13 @@ Sometimes, you need to simplify much more complicated expressions, like below.
 
 {{% box %}}
 {{% note Example %}}
-- When $A=x^2+3y^2-2xy$, $B=y^2+3xy-2x^2$, and $C=-3x^2+xy-4y^2$, calculate the following:
-    1. $-3A+2B-C$
-    2. $3(2A+C)-2 \\{ 2(A+C) - (B-C) \\}$
+When $A=x^2+3y^2-2xy$, $B=y^2+3xy-2x^2$, and $C=-3x^2+xy-4y^2$, calculate the following:
+1. $-3A+2B-C$
+2. $3(2A+C)-2 \\{ 2(A+C) - (B-C) \\}$
 
 {{% note Solution %}}
 
-$\text{a.} \quad$ The first step is substitution, which is pretty straightforward:
+{{% roman "1." %}} The first step is substitution, which is pretty straightforward:
 
 \begin{align}
   -3A+2B-C
@@ -205,20 +178,20 @@ Finally, combine the results and collect the like terms to simplify the answer.
   &= \boldsymbol{-4x^2+11xy-3y^2.}
 \end{align}
 
-$\text{b.} \quad$ You can substitute the expressions $A$, $B$, and $C$ straight in, but that will make things horribly complicated and long. It is much better to simplify the given expression first, and then substitute.
+{{% roman "2." %}} You can substitute the expressions $A$, $B$, and $C$ straight in, but that will make things horribly complicated and long. It is much better to simplify the given expression first, and then substitute.
 
 \begin{align}
   & 3(2A+C)-2 \left\\{ 2(A+C) - (B-C) \right\\} \\\\
-  &= 3(2A+C) - 2( 2A+2C -B + C ) \\\\
+  &= 3(2A+C) - 2( 2A+2C \hl{-} B \hl{+} C ) \\\\
   &= 3(2A+C) - 2(2A-B+3C) \\\\
   &= 6A+3C \hl{-}4A \hl{+}2B \hl{-}6C \\\\
-  &= 2A + 2B - 3C. && \cdots \tcirc{1}
+  &= 2A + 2B - 3C.
 \end{align}
 
 It looks much simpler now. Let's substitute and simplify.
 
 \begin{align}
-  \tcirc{1} &= 2A + 2B - 3C \\\\
+  & 2A + 2B - 3C \\\\
   &= 2(x^2+3y^2-2xy) + 2(y^2+3xy-2x^2) - 3(-3x^2+xy-4y^2) \\\\
   &= 2x^2+6y^2-4xy + 2y^2+6xy-4x^2 \hl{+}9x^2 \hl{-}3xy \hl{+}12y^2 \\\\
   &= (2-4+9)x^2 + (-4+6-3)xy + (6+2+12)y^2 \\\\
@@ -226,3 +199,133 @@ It looks much simpler now. Let's substitute and simplify.
 \end{align}
 
 {{% /box %}}
+
+{{% details title="Order of the brackets" %}}
+When you have multiple brackets, like:
+$$ 1 \times [ 2 + \\{ 3 \times ( 4 + 5 ) \\} ], $$
+
+make sure you remove the *innermost* bracket first. For this example, you calculate $(...)$ first, then $\\{...\\}$, and finally $[...]$.
+\begin{align}
+  &1 \times [ 2 + \{ 3 \times \red{( 4 + 5 )} \} ] \\
+  &= 1 \times \{2 + \red{(3 \times 9)} \} \\
+  &= 1 \times \red{(2 + 27)} \\
+  &= 1 \times 29 \\
+  &= 29.
+\end{align}
+
+Note how the brackets change their shapes, depending on the number of brackets inside them! It will help you keep track of the order because you only remove $(...)$ this way.
+
+{{% /details %}}
+
+## Practice Questions
+
+1. If $A=x^2 + 3y^2 - 2xy$ and $B=y^2+3xy-2x^2$, calculate:
+    1. $A+B$
+    2. $A-B$
+2. If $A=−2x^3+4x^2y+5y^3$, $B=x^2y−3xy^2+2y^3$, and $C=3x^3−2x^2y$, show the following in terms of $x$ and $y$.
+    1. $3(A-2B) - 2(A-2B-C)$
+    2. $3A - 2\\{(2A-B)-(A-3B) \\} - 3C$
+
+{{% details title="Answer" %}}
+1. 
+    1. $-x^2 + xy + 4y^2$
+    2. $3x^2 - 5xy + 2y^2$
+2. 
+    1. $4x^3 - 2x^2y + 6xy^2 + y^3$
+    2. $-11x^3 + 6x^2y + 12xy^2 -3y^3$
+
+{{% note "Solution" %}}
+1. We can directly substitute the polynomials.
+
+\begin{align}
+\text{a.} \quad & A+B \\\\
+  &= (x^2 + 3y^2 - 2xy) + (y^2+3xy-2x^2) \\\\
+  &= (1-2)x^2 + (-2+3)xy + (3+1)y^2 \\\\
+  &= \boldsymbol{-x^2+xy+4y^2.}
+\end{align}
+
+\begin{align}
+\text{b.} \quad & A-B \\\\
+  &= (x^2 + 3y^2 - 2xy) - (y^2+3xy-2x^2) \\\\
+  &= x^2 + 3y^2 - 2xy \hl{-y^2-3xy+2x^2} \\\\
+  &= (x^2 + 2x^2) + (-2xy - 3xy) + (3y^2 - y^2) \\\\
+  &= \boldsymbol{3x^2-5xy+2y^2.}
+\end{align}
+
+2. We will simplify both expressions first before substitution.
+
+\begin{align}
+\text{a.} \quad &3(A-2B) - 2(A-2B-C) \\\\
+  &= 3A - 6B \hl{-2A+4B+2C} \\\\
+  &= A - 2B + 2C \\\\
+  &= (−2x^3+4x^2y+5y^3) - 2(x^2y−3xy^2+2y^3) + 2(3x^3−2x^2y) \\\\
+  &= -2x^3 + 4x^2y + 5y^3 \hl{-2x^2y + 6xy^2 - 4y^3} + 6x^3 - 4x^2y \\\\
+  &= (-2+6)x^3 + (4-2-4)x^2y + 6xy^2 + (5-4)y^3 \\\\
+  &= \boldsymbol{4x^3 - 2x^2y + 6xy^2 + y^3.}
+\end{align}
+
+\begin{align}
+\text{b.} \quad  &3A - 2\\{(2A-B)-(A-3B) \\} - 3C \\\\
+  &= 3A - 2( 2A-B \hl{-A+3B} ) - 3C \\\\
+  &= 3A - 2(A+2B) - 3C \\\\
+  &= 3A - 2A - 4B - 3C \\\\
+  &= A - 4B - 3C \\\\
+  &= (−2x^3+4x^2y+5y^3) - 4(x^2y−3xy^2+2y^3) - 3(3x^3−2x^2y) \\\\
+  &= −2x^3+4x^2y+5y^3 \hl{- 4x^2y + 12xy^2 - 8y^3} \hl{- 9x^3 + 6x^2y} \\\\
+  &= (-2-9)x^3 + (4-4+6)x^2y + 12xy^2 + (5-8)y^3 \\\\
+  &= \boldsymbol{-11x^3 + 6x^2y + 12xy^2 - 3y^3.}
+\end{align}
+
+{{% /details %}}
+
+3. When you add $3x^2 - 2x + 1$ to a polynomial, it becomes $x^2 - x$. Find this polynomial.
+4. Nina attempts to solve a question by adding $a^3 + 2a^2b - 5ab^2 + 5b^3$ to a polynomial, but she instead subtracts $a^3 + 2a^2b - 5ab^2 + 5b^3$ from the polynomial and gets $-a^3 - 4a^2b + 10ab^2 - 9b^3$. Find the correct answer.
+
+{{% details title="Answer" %}}
+3. $- 2x^2 + x - 1$
+4. $a^3 + b^3$
+
+{{% note "Solution" %}}
+
+3. Let's call the polynomial $P$. $P$ add $3x^2 - 2x + 1$ equals $x^2 - x$, so
+$$P + (3x^2 - 2x + 1) = x^2 - x.$$
+
+You can solve the equation for $P$:
+\begin{alignat}{2}
+  & P + (3x^2 - 2x + 1) &&= x^2 - x \\\\
+  \implies & P &&= x^2 -x \hl{ -(3x^2 - 2x + 1) } \\\\
+  \implies & P &&\boldsymbol{= -2x^2 + x - 1.}
+\end{alignat}
+So the polynomial is $-2x^2 + x - 1$.
+
+<br>
+
+4. Let's call the polynomial $Q$. Nina originally wanted to calculate
+
+$$Q + (a^3 + 2a^2b - 5ab^2 + 5b^3).$$
+
+Instead, she calculated
+
+$$Q - (a^3 + 2a^2b - 5ab^2 + 5b^3)$$
+
+and got $-a^3 - 4a^2b + 10ab^2 - 9b^3$. In other words,
+
+$$Q - (a^3 + 2a^2b - 5ab^2 + 5b^3) = -a^3 - 4a^2b + 10ab^2 - 9b^3.$$
+
+We can solve this equation to get $Q$.
+
+\begin{align}
+  Q &- (a^3 + 2a^2b - 5ab^2 + 5b^3) = -a^3 - 4a^2b + 10ab^2 - 9b^3 \\\\
+  \implies Q &= -a^3 - 4a^2b + 10ab^2 - 9b^3 \hl{+(a^3 + 2a^2b - 5ab^2 + 5b^3)} \\\\
+  &= -2a^2b + 5ab^2 - 4b^3.
+\end{align}
+
+Therefore what Nina originally wanted to calculate was:
+
+\begin{align}
+  &Q + (a^3 + 2a^2b - 5ab^2 + 5b^3) \\\\
+  &= (-2a^2b + 5ab^2 - 4b^3) + (a^3 + 2a^2b - 5ab^2 + 5b^3) \\\\
+  &= \boldsymbol{a^3 + b^3.}
+\end{align}
+
+{{% /details %}}

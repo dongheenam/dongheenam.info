@@ -209,7 +209,6 @@
   a:link,
   a:visited {
     color: var(--hypertext-color);
-    font-weight: bold;
   }
 
   /* Sidenotes, margin notes */
@@ -299,6 +298,7 @@
     margin-left: 0;
     padding-left: 0;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     list-style: none;
     align-items: baseline;
@@ -353,8 +353,11 @@
   }
 
   span.newthought {
-    font-size: 0.9em !important;
     font-variant: small-caps;
+  }
+
+  .bordered {
+    font-size: 0.9em !important;
     border: 1px solid var(--text-color);
     padding: 0 0.2rem;
     margin-right: 1rem;

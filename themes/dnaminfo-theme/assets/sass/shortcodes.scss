@@ -28,6 +28,7 @@
   table,
   blockquote,
   figure {
+    box-sizing: default;
     width: 100%;
   }
 
@@ -79,4 +80,9 @@ details {
       margin-top: 1.4rem;
     }
   }
+}
+
+/* Shortcode - roman style */
+.roman {
+  font-family: et-book-roman-old-style !important;
 }
