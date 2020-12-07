@@ -30,5 +30,8 @@
     {{/* load MathJax */}}
     {{- if .Params.math -}}
       {{ partial "mathjax" . }}
-    {{- end }}
+    {{- end -}}
+
+    {{/* Fabicon stuff - realfavicongenerator.net */}}
+    {{- partial "fabicon" . -}}
   </head>

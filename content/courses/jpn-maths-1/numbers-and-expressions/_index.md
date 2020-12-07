@@ -5,6 +5,7 @@ description: "Learn about expanding and factorising polynomials, real numbers an
 date: 2020-05-12 20:52:56 +1000
 lastMod: 2020-12-04 19:57:15.201 +1100
 
+toc: false
 type: docs
 section: false
 math: true
