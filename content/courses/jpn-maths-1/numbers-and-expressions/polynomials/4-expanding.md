@@ -1,14 +1,14 @@
 ---
 title: "Expanding Polynomials with Identities"
-summary: "How to expand expressions with quadratic identities. How to expand expressions with cubic identities."
+description: "How to expand expressions with quadratic identities. How to expand expressions with cubic identities."
 slug: "expanding-with-identities"
 
 date: 2020-05-22 17:28:25 +1000
-lastMod: 2020-12-06 20:32:22.033 +1100
+lastMod: 2020-12-07 20:52:26.727 +1100
 
 type: docs
 math: true
-draft: true
+draft: false
 
 tags:
   - algebra
@@ -269,6 +269,29 @@ $(4)$ Identity 4
 
 {{% /box %}}
 
+{{% details title="Signs!" %}}
+
+The signs in the identities can be quite confusing!
+
+{{% figure src="courses/jpn-maths-1/numbers-and-expressions/poly-cubic.jpg" caption="Signs in the cubic identities" %}}
+
+Another convenient method to remember them is to use $\pm$ ("plus-minus") and $\mp$ ("minus-plus") signs:
+
+{{% note Definition %}}
+
+4. Identity 4: Perfect cubes
+
+$$ (a\pm b)^3 = a^3 \pm 3a^2b + 3ab^2 \pm b^3 $$
+
+5. Identity 5: Sums and differences of cubes
+
+$$ (a \pm b)(a^2 \mp ab + b^2) = a^3 \pm b^3 $$
+
+You can see that the plus-minus signs share the signs, so when one is positive, all the others are positive. The minus-plus signs are like the opposite: when the $\pm$s are positive, $\mp$s are all negative!
+
+{{% figure src="courses/jpn-maths-1/numbers-and-expressions/poly-pm.jpg" alt="Plus-minus symbol" caption="Cubic identities rewritten with plus-minus and minus-plus symbols" %}}
+
+{{% /details %}}
 
 ## Practice Questions
 
@@ -359,6 +382,51 @@ $(1)$ Rearrange the terms to $(x+a)(x+b)$ form
   \text{d.} \quad & (2p-3q)(4p+2q) \\\\
   &= 8p^2 + (4q-12q)p -3q\cdot 2q \\\\
   &= \boldsymbol{ 8p^2 - 8pq - 6q^2 .}
+\end{align}
+
+{{% /details %}}
+
+3. Expand the following expressions.
+    1. $(2x+1)^3$
+    2. $(x-4y)^3$
+    3. $(2p-q)(4p^2+2pq+q^2)$
+    4. $(d+5)(d^2-5d+25)$
+
+{{% details title="Answer" %}}
+3. 
+    1. $8x^3 + 12x^2 + 6x + 1$
+    2. $x^3 - 12x^2y + 48xy^2 - 64y^3$
+    3. $8p^3 - q^3$
+    4. $d^3 + 125$
+
+{{% note Solution %}}
+
+Parts (a) and (b) use the fourth identity.
+
+\begin{align}
+  \text{a.} \quad & (2x+1)^3 \\\\
+  &= (2x)^3 + 3(2x)^2 + 3(2x) + 1 \\\\
+  &= \boldsymbol{ 8x^3 + 12x^2 + 6x + 1. }
+\end{align}
+\begin{align}
+  \text{b.} \quad & (x-4y)^3 \\\\
+  &= x^3 - 3x^2\cdot 4y + 3x (4y)^2 - (4y)^3 \\\\
+  &= \boldsymbol{ x^3 - 12x^2y + 48xy^2 - 64y^3 .}
+\end{align}
+
+Parts (c) and (d) use the fifth identity.
+
+\begin{align}
+  \text{c.} \quad & (2p-q)(4p^2+2pq+q^2) \\\\
+  &= (2p - q)\left\\{ (2p)^2 + 2p\cdot q + q^2 \right\\} \\\\
+  &= (2p)^3 - q^3 \\\\
+  &= \boldsymbol{ 8p^3 - q^3 .}
+\end{align}
+\begin{align}
+  \text{d.} \quad & (d+5)(d^2-5d+25) \\\\
+  &= (d+5)(d^2 - d\cdot 5 + 5^2 ) \\\\
+  &= d^3 + 5^3 \\\\
+  &= \boldsymbol{ d^3 + 125. }
 \end{align}
 
 {{% /details %}}

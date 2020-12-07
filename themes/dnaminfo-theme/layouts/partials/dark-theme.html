@@ -14,11 +14,9 @@
     if (storedTheme === "dark" || prefersDark) {
       html.classList.add("dark-theme");
       themeButton.style.background = toLightIcon;
-      window.localStorage.setItem("theme", "dark");
     } else {
       html.classList.remove("dark-theme");
       themeButton.style.background = toDarkIcon;
-      window.localStorage.setItem("theme", "light");
     }
 
     /* Let users toggle the theme */
