@@ -153,7 +153,7 @@ When $A=x^2+3y^2-2xy$, $B=y^2+3xy-2x^2$, and $C=-3x^2+xy-4y^2$, calculate the fo
 
 {{% note Solution %}}
 
-{{% roman "1." %}} The first step is substitution, which is pretty straightforward:
+1. The first step is substitution, which is pretty straightforward:
 
 \begin{align}
   -3A+2B-C
@@ -178,7 +178,9 @@ Finally, combine the results and collect the like terms to simplify the answer.
   &= \boldsymbol{-4x^2+11xy-3y^2.}
 \end{align}
 
-{{% roman "2." %}} You can substitute the expressions $A$, $B$, and $C$ straight in, but that will make things horribly complicated and long. It is much better to simplify the given expression first, and then substitute.
+---
+
+2. You can substitute the expressions $A$, $B$, and $C$ straight in, but that will make things horribly complicated and long. It is much better to simplify the given expression first, and then substitute.
 
 \begin{align}
   & 3(2A+C)-2 \left\\{ 2(A+C) - (B-C) \right\\} \\\\
@@ -298,7 +300,7 @@ You can solve the equation for $P$:
 \end{alignat}
 So the polynomial is $-2x^2 + x - 1$.
 
-<br>
+---
 
 4. Let's call the polynomial $Q$. Nina originally wanted to calculate
 

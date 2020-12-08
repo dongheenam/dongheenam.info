@@ -136,8 +136,8 @@ Expand:
 
 {{% note Solution %}}
 {{% mn ex1 tips %}}
-$(1)$ Identity 1-1<br>
-$(2)$ Identity 1-2<br>
+$(1)$ Identity 1-1<br><br>
+$(2)$ Identity 1-2<br><br>
 $(3)$ Identity 2
 {{% /mn %}}
 \begin{align}
@@ -152,8 +152,8 @@ $(3)$ Identity 2
   &= \boldsymbol{ 4p^2 - q^2. }
 \end{align}
 {{% mn ex2 tips %}}
-$(4)$ Identity 3-1<br>
-$(5)$ Rearrange polynomials to $(ax+b)(cx+d)$ form<br>
+$(4)$ Identity 3-1<br><br>
+$(5)$ Rearrange polynomials to $(ax+b)(cx+d)$ form<br><br>
 $(6)$ Identity 3-2
 {{% /mn %}}
 \begin{align}
@@ -244,9 +244,9 @@ Expand:
 {{% note Solution %}}
 
 {{% mn ex-cubic tips %}}
-$(1)$ Identity 4<br>
-$(2)$ Identity 5<br>
-$(3)$ Identity 5<br>
+$(1)$ Identity 4<br><br>
+$(2)$ Identity 5<br><br>
+$(3)$ Identity 5<br><br>
 $(4)$ Identity 4
 {{% /mn %}}
 \begin{align}
@@ -355,7 +355,7 @@ Parts (d) and (e) use the second identity.
   &= \boldsymbol{ 9c^4 - 4d^2 }.
 \end{align}
 
-<br>
+---
 
 2. We use the third identity for all parts.
 

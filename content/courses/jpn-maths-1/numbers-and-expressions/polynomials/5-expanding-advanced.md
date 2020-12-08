@@ -8,7 +8,7 @@ lastMod: 2020-12-07 20:55:23.168 +1100
 
 type: docs
 math: true
-draft: true
+draft: false
 
 tags:
   - algebra
@@ -20,7 +20,7 @@ tags:
 menu:
   math1-numbers:
     parent: Polynomials
-    name: "Advanced Expanding"
+    name: Advanced Expanding
     weight: 15
 
 # previous/next pager order (if `docs_section_pager` enabled in `params.toml`)
@@ -124,7 +124,7 @@ Expand $(x^2-x+3)(x^2-x-4)$.
 {{% note Solution %}}
 
 {{% mn ex3 tips %}}
-$(3)$ Identity 3: $(x+a)(x+b)$ $=x^2+(a+b)x+ab$<br>
+$(3)$ Identity 3: $(x+a)(x+b)$ $=x^2+(a+b)x+ab$<br><br>
 $(4)$ Identity 1: $(a-b)^2$ $=a^2-2ab+b^2$
 {{% /mn %}}
 \begin{align}
@@ -215,6 +215,181 @@ What happens if you multiply them from the left? See the brute force solution:
 
 {{% /details %}}
 
+Below are more examples. Remember, think smart!
+
+{{% box %}}
+{{% note Example %}}
+Expand
+1. $ (x+1)(x-2)(x^2-x+1)(x^2+2x+4) $
+2. $ (p + 2q)^2(p-2q)^2 $
+
+{{% note Solution %}}
+
+1. This is similar to the previous example. If you swap the second and third brackets, you should be able to recognise the cubic identities.
+
+{{% mn ex229 tips %}}
+$(1)$ Identity 5: $(a\pm b)(a^2\mp ab + b^2)$ $=a^3\pm b^3$<br><br>
+$(2)$ Identity 4: $(x+a)(x+b)$ $=x^2+(a+b)x+ab$
+{{% /mn %}}
+\begin{align}
+  & (x+1)(x-2)(x^2-x+1)(x^2+2x+4) \\\\
+  &= \hl{ (x+1)(x^2-x+1) \times (x-2)(x^2+2x+4) } \\\\
+  &= (x^3 + 1) \times (x^3 - 8) \tag{1} \\\\
+  &= \left( x^3 \right)^2 - 7x^3 - 8 \tag{2} \\\\
+  &= \boldsymbol{ x^6 - 7x^3 - 8 .}
+\end{align}
+
+---
+
+2. Make use of the third index law $(ab)^m = a^m b^m$, to group them as
+
+$$ (p + 2q)^2(p-2q)^2 = \hl{ \left\\{ (p+2q)(p-2q) \right\\}^2 }. $$
+
+Then we can use the second identity $ (x+y)(x-y) = x^2-y^2 $:
+
+\begin{align}
+  & \left\\{ (p+2q)(p-2q) \right\\}^2 \\\\
+  &= ( p^2 - 4q^2 )^2 \\\\
+  &= \boldsymbol{ p^4 - 8p^2q^2 + 16q^4 }.
+\end{align}
+
+{{% /box %}}
+
+{{% details title="Don't like my solutions?" %}}
+
+<p></p>
+
+You may find the solutions contain unnecessary steps -- that is completely fine! These are the tricks I found quite useful, but the aim of this lesson is to help you discover what suit the best for you. Have a read and only note what you think work well.
+
+{{% /details %}}
+
+{{% note Questions %}}
+Try [Practice Question](#practice-questions) 2 before moving on.
+
+
+## Create Patterns for the Identities
+
+At first sight, the expressions below don't look like we can use the identities. However, we can change them a little bit so that the polynomial identities can be applied.
+
+{{% box %}}
+{{% note Example %}}
+Expand:
+1. $(x-1)(x-2)(x-3)(x-4)$
+2. $(x+y+z)^2 + (x+y-z)^2$
+3. $(a+b+c)(a^2+b^2+c^2 - ab - bc - ca)$
+
+{{% note Solution %}}
+
+1. Because $(-1)+(-4)=(-2)+(-3)=-5$, if we multiply $(x-1)(x-4)$ together and $(x-2)(x-3)$ together, the results will have $x^2-5x$ in common:
+
+{{% mn ex284 tips %}}
+$(1)$ Identity 3: $(x+a)(x+b)$ $=x^2+(a+b)x+ab$
+{{% /mn %}}
+\begin{align}
+  & (x-1)(x-2)(x-3)(x-4) \\\\
+  &= \hl{ (x-1)(x-4) \times (x-2)(x-3) } \\\\
+  &= (\underline{x^2-5x}+4)\times(\underline{x^2-5x}+6). \tag{1}
+\end{align}
+
+We can now use the substitution technique and Identity 3: $$ (x+a)(x+b) = x^2 + (a+b)x + ab $$ to finish the expansion.
+
+{{% mn ex294 tips %}}
+$(2)$ Identity 3: $(x+a)(x+b)$ $=x^2+(a+b)x+ab$<br><br>
+$(3)$ Identity 1: $(a-b)^2$ $=a^2-2ab+b^2$
+{{% /mn %}}
+\begin{align}
+  & \left\\{ (\underline{x^2-5x})+4 \right\\}\left\\{ (\underline{x^2-5x})+6\right\\} \\\\
+  &= (\underline{x^2-5x})^2 + 10(x^2-5x) + 24 \tag{2} \\\\
+  &= (x^4 - 10x^3 + 25x^2) + 10x^2 - 50x + 24 \tag{3} \\\\
+  &= \boldsymbol{ x^4 - 10x^3 + 35x^2 - 50x + 24 .}
+\end{align}
+
+---
+
+2. We will use the following identity to expand this expression:
+
+\begin{align}
+  (a+b)^2 + (a-b)^2 = 2a^2 + 2b^2. \tag{$\blacklozenge$}
+\end{align}
+
+Then,
+
+{{% mn ex315 tips %}}
+$(4)$ Identity 1: $(a+b)^2$ $=a^2+2ab+b^2$
+{{% /mn %}}
+\begin{align}
+  & (x+y+z)^2 + (x+y-z)^2 \\\\
+  &= \left\\{ (\underline{x+y}) + z \right\\}^2 + \left\\{ (\underline{x+y}) - z \right\\}^2 \\\\
+  &= 2(\underline{x+y})^2 + 2z^2 \tag{$\blacklozenge$}\\\\
+  &= 2(x^2 + 2xy + y^2) + 2z^2 \tag{4} \\\\
+  &= \boldsymbol{ 2x^2 + 2y^2 + 2z^2 + 4xy .}
+\end{align}
+
+---
+
+3. There does not seem to be any patterns, so we will try rearranging the expressions in terms of $a$:
+
+\begin{align}
+  & (a+b+c)(a^2+b^2+c^2 - ab - bc - ca) \\\\
+  &= \left\\{ \hl{a} + (b+c) \right\\} \left\\{ \hl{a^2} - (b+c) \hl{a} + (b^2 - bc + c^2) \right\\}.
+\end{align}
+
+This has the form $$ (\hl{a} + \square)(\hl{a^2} - \square \hl{a} + \triangle^2). $$
+
+Expanding it gives
+
+\begin{align}
+  & \hl{a^3} + (b+c) \hl{a^2} - (b+c) \hl{a^2} \\\\
+  & + (b^2 - bc + c^2) \hl{a} - (b+c)^2 \hl{a} + (b+c)(b^2-bc+c^2).
+\end{align}
+
+Now, you realise the $a^2$ term disappears. Also, the coefficient for $a$ is:
+{{% mn ex348 tips %}}
+$(5)$ Identity 1: $(a+b)^2$ $=a^2+2ab+b^2$
+{{% /mn %}}
+\begin{align}
+  & (b^2 - bc + c^2) - (b+c)^2 \\\\
+  &= b^2 - bc + c^2 - (b^2 + 2bc + c^2) \tag{5} \\\\
+  &= b^2 - bc + c^2 - b^2 - 2bc - c^2 \\\\
+  &= -3bc,
+\end{align}
+
+and the constant term is
+{{% mn ex360 tips %}}
+$(6)$ Identity 5: $(a+b)(a^2-ab+b^2)$ $=a^3+b^3$
+{{% /mn %}}
+\begin{align}
+  (b+c)(b^2-bc+c^2) = b^3 + c^3. \tag{6}
+\end{align}
+
+Putting everything together, we have
+
+\begin{align}
+  & \hl{a^3} - 3bc\cdot \hl{a} + (b^3 + c^3) \\\\
+  &= \boldsymbol{ a^3 + b^3 + c^3 - 3abc .}
+\end{align}
+
+{{% /box %}}
+
+{{% details title="Proof of $(\blacklozenge)$" %}}
+From the two identities
+
+\begin{align}
+  (x+y)^2 &= x^2 + 2xy + y^2, \\\\
+  (x-y)^2 &= x^2 - 2xy + y^2,
+\end{align}
+
+you can pull out two more useful identities. If you add them together, the $xy$ term will disappear, and if you subtract one from the other, the squared terms will disappear. You will get:
+
+\begin{align}
+  (x+y)^2 + (x-y)^2 &= 2x^2 + 2y^2, \tag{$\blacklozenge$} \\\\
+  (x+y)^2 - (x-y)^2 &= 4xy. \tag{$\lozenge$}
+\end{align}
+
+You will find these results very useful later on.
+
+{{% /details %}}
+
 
 ## Practice Questions
 
@@ -234,9 +409,9 @@ What happens if you multiply them from the left? See the brute force solution:
 {{% note Solution %}}
 
 {{% mn q1a tips %}}
-$(1)$ Identity 2: $(a+b)(a-b)$ $=a^2-b^2$<br>
-$(2)$ Identity 1: $(a+b)^2$ $=a^2+2ab+b^2$<br>
-$(3)$ Identity 2: $(a+b)(a-b)$ $=a^2-b^2$<br>
+$(1)$ Identity 2: $(a+b)(a-b)$ $=a^2-b^2$<br><br>
+$(2)$ Identity 1: $(a+b)^2$ $=a^2+2ab+b^2$<br><br>
+$(3)$ Identity 2: $(a+b)(a-b)$ $=a^2-b^2$<br><br>
 $(4)$ Identity 1: $(a-b)^2$ $=a^2-2ab+b^2$
 {{% /mn %}}
 \begin{align}
@@ -254,9 +429,9 @@ $(4)$ Identity 1: $(a-b)^2$ $=a^2-2ab+b^2$
 \end{align}
 
 {{% mn q1c tips %}}
-$(5)$ Identity 3: $(x+a)(x+b)$ $=x^2+(a+b)x+ab$<br>
-$(6)$ Identity 1: $(a-b)^2$ $=a^2-2ab+b^2$<br>
-$(7)$ Identity 1: $(a-b)^2$ $=a^2-2ab+b^2$<br>
+$(5)$ Identity 3: $(x+a)(x+b)$ $=x^2+(a+b)x+ab$<br><br>
+$(6)$ Identity 1: $(a-b)^2$ $=a^2-2ab+b^2$<br><br>
+$(7)$ Identity 1: $(a-b)^2$ $=a^2-2ab+b^2$<br><br>
 $(8)$ Identity 1: $(a+b)^2$ $=a^2+2ab+b^2$
 {{% /mn %}}
 \begin{align}
@@ -284,5 +459,144 @@ You can also solve (d) with the identity $$ (a + b + c)^2 = a^2 + b^2 + c^2 + 2a
   &= \boldsymbol{ a^2 + 4b^2 + c^2 + 4ab - 4bc - 2ca .}
 \end{align}
 
+{{% /details %}}
+
+2. Expand the following.
+    1. $(x+3)(x-3)(x^2+9)$
+    2. $(x-1)(x-2)(x+1)(x+2)$
+    3. $(a+b)^3(a-b)^3$
+    4. $(x+2)(x^3+8)(x^2-2x+4)$
+
+{{% details title="Answer" %}}
+2. 
+    1. $x^4 - 81$
+    2. $x^4 - 5x^2 + 4$
+    3. $a^6 - 3a^4b^2 + 3a^2b^4 - b^6$
+    4. $x^6 + 16x^3 + 64$
+
+{{% note Solution %}}
+
+{{% mn q2a tips %}}
+$(1)$-$(3)$ Identity 2: $(a+b)(a-b)$ $=a^2-b^2$<br><br>
+$(4)$ Identity 3: $(x+a)(x+b)$ $=x^2+(a+b)x+ab$
+{{% /mn %}}
+\begin{align}
+  \text{a.} \quad & (x+3)(x-3)(x^2+9) \\\\
+  &= (x+3)(x-3)\times (x^2+9) \\\\
+  &= (x^2 - 9) \times (x^2 + 9) \tag{1} \\\\
+  &= \left( x^2 \right)^2 - 81 \tag{2} \\\\
+  &= \boldsymbol{ x^4 - 81 .}
+\end{align}
+\begin{align}
+  \text{b.} \quad & (x-1)(x-2)(x+1)(x+2) \\\\
+  &= \hl{(x-1)(x+1) \times (x-2)(x+2)} \\\\
+  &= (x^2 - 1 ) \times (x^2 - 4) \tag{3} \\\\
+  &= \left( x^2 \right)^2 - 5x^2 + 4 \tag{4} \\\\
+  &= \boldsymbol{ x^4 - 5x^2 + 4 .}
+\end{align}
+
+{{% mn q2c tips %}}
+$(5)$ Index law 3: $(ab)^n$ $=a^n b^n$<br><br>
+$(6)$ Identity 2: $(a+b)(a-b)$ $=a^2-b^2$<br><br>
+$(7)$ Identity 4: $(a-b)^3$ $=a^3 -3a^2b + 3ab^2 - b^3$
+{{% /mn %}}
+\begin{align}
+  \text{c.} \quad & (a+b)^3(a-b)^3 \\\\
+  &= \hl{\left\\{ (a+b)(a-b) \right\\}^3 } \tag{5} \\\\
+  &= (a^2 - b^2)^3 \tag{6} \\\\
+  &= \left( a^2 \right)^3 - 3\left( a^2 \right)^2 b^2 + 3 a^2 \left( b^2 \right)^2 - \left( b^2 \right)^3 \tag{7} \\\\
+  &= \boldsymbol{ a^6 - 3a^4b^2 + 3a^2b^4 - b^6 .}
+\end{align}
+
+{{% mn q2d tips %}}
+$(8)$ Identity 5: $(a+b)(a^2-ab+b^2)$ $=a^3-b^3$<br><br>
+$(9)$ Identity 4: $(a+b)^3$ $=a^3 +3a^2b + 3ab^2 +b^3$
+{{% /mn %}}
+\begin{align}
+  \text{d.} \quad & (x+2)(x^3+8)(x^2-2x+4) \\\\
+  &= (x+2)\hl{(x^2-2x+4) \times (x^3 + 8)} \\\\
+  &= (x^3 + 8) \times (x^3 + 8) \tag{8} \\\\
+  &= (x^3 + 8)^2 \\\\
+  &= \left( x^3 \right)^2 + 16x^3 + 64 \tag{9} \\\\
+  &= \boldsymbol{ x^6 + 16x^3 + 64 .}
+\end{align}
+
+{{% /details %}}
+
+3. Expand the following expressions.
+    1. $(x+2)(x-3)(x+1)(x-4)$
+    2. $(x-2)(x+1)(x^2-x)$
+    3. $(a+b+c)^2 - (a+b-c)^2$ $+$ $(a-b+c)^2 - (a+b-c)^2$
+    4. $(x+y+z)(-x+y+z)$$(x-y+z)(x+y-z)$
+
+{{% details title="Answer" %}}
+3. 
+    1. $x^4 - 4x^3 - 7x^2 + 22x + 24$
+    2. $x^4 - 2x^3 - x^2 + 2x$
+    3. $-4ab + 4bc + 8ca$
+    4. $-x^4 -y^4 -z^4 + 2x^2y^2 + 2y^2z^2 + 2z^2x^2$
+
+{{% note Solution %}}
+
+{{% mn q3a tips %}}
+$(1)$-$(2)$ Identity 3: $(x+a)(x+b)$ $=x^2+(a+b)x+ab$<br><br>
+$(3)$ Identity 1: $(a-b)^2$ $=a^2-2ab+b^2$
+{{% /mn %}}
+\begin{align}
+  \text{a.} \quad & (x+2)(x-3)(x+1)(x-4) \\\\
+  &= \hl{(x+2)(x-4) \times (x-3)(x+1)} \\\\
+  &= (\underline{x^2 - 2x} - 8) \times (\underline{x^2 - 2x} - 3 ) \tag{1} \\\\
+  &= (\underline{x^2 - 2x})^2 - 11(\underline{x^2 - 2x}) + 24 \tag{2} \\\\
+  &= x^4 - 4x^3 + 4x^2 - 11x^2 + 22x + 24 && \tag{3} \\\\
+  &= \boldsymbol{ x^4 - 4x^3 - 7x^2 + 22x + 24 .}
+\end{align}
+
+{{% mn q3b tips %}}
+$(4)$ If we set $x^2-x = A$, $(A-2)A$ $=A^2 - 2A$<br><br>
+$(5)$ Identity 1: $(a-b)^2$ $=a^2-2ab+b^2$
+{{% /mn %}}
+\begin{align}
+  \text{b.} \quad & (x-2)(x+1)(x^2-x) \\\\
+  &= (x-2)(x+1) \times (x^2-x) \\\\
+  &= (\underline{x^2 - x} - 2) \times (\underline{x^2-x}) \\\\
+  &= (x^2-x)^2 - 2(x^2 -x) \tag{4} \\\\
+  &= x^4 - 2x^3 + x^2 - 2x^2 + 2x && \tag{5} \\\\
+  &= \boldsymbol{ x^4 - 2x^3 - x^2 + 2x .}
+\end{align}
+
+{{% mn q3c tips %}}
+$(\lozenge)$ $(A+B)^2 - (A-B)^2$ $=4AB$
+{{% /mn %}}
+\begin{align}
+  \text{c.} \quad & (a+b+c)^2 - (a+b-c)^2 + (a-b+c)^2 - (a+b-c)^2 \\\\
+  &= \left\\{(\underline{a+b})+c \right\\}^2 - \left\\{(\underline{a+b}) -c \right\\}^2 \\\\
+  &\phantom{=}+ \left\\{ a + (\underline{-b+c}) \right\\}^2 - \left\\{ a - (\underline{-b+c}) \right\\}^2 \\\\
+  &= 4(\underline{a+b})c \\\\
+  &\phantom{=}+ 4a(\underline{-b+c}) \tag{$\lozenge$} \\\\
+  &= 4ac + 4bc - 4ab + 4ac \\\\
+  &= \boldsymbol{ -4ab + 4bc + 8ca .}
+\end{align}
+
+{{% mn q3d tips %}}
+$(6)$ $(a+b)(a-b)$ $=a^2-b^2$<br><br>
+$(7)$ $(-\hl{x^2}+\square)$ $\times$ $(\hl{x^2}+\triangle)$ form<br><br>
+$(\blacklozenge)$ $(a+b)^2+(a-b)^2$ $=2(a^2+b^2)$<br><br>
+$(8)$ Index law 3: $a^n b^n$ $=(ab)^n$<br><br>
+$(9)$ Identity 1: $(a-b)^2$ $=a^2-2ab+b^2$
+{{% /mn %}}
+\begin{align}
+  \text{d.} \quad & (x+y+z)(-x+y+z)(x-y+z)(x+y-z) \\\\
+  &= \left\\{ (\underline{y+z})+x \right\\}\left\\{ (\underline{y+z})-x \right\\} \\\\
+  &\phantom{=} \times \left\\{ x - (\underline{y-z}) \right\\}\left\\{ x + (\underline{y-z}) \right\\} \\\\
+  &= \left\\{ (\underline{y+z}) - x^2 \right\\} \times \left\\{ x^2 - (\underline{y-z})^2 \right\\} \tag{6} \\\\
+  &= \left\\{ -\hl{x^2} + (y+z)^2 \right\\} \times \left\\{ \hl{x^2} - (y-z)^2 \right\\}  \tag{7} \\\\
+  &= -\hl{x^4} + \left\\{ (y-z)^2 + (y+z)^2 \right\\} \hl{x^2} - (y+z)^2(y-z)^2 \\\\
+  &= -x^4 + (\hl{2y^2 + 2z^2}) x^2 - (y+z)^2(y-z)^2 \tag{$\blacklozenge$} \\\\
+  &= -x^4 + (2y^2 + 2z^2)x^2 - \left\\{ (y+z)(y-z) \right\\}^2 \tag{8} \\\\
+  &= -x^4 + 2x^2y^2 + 2x^2z^2 - (y^2-z^2)^2 \tag{9} \\\\
+  &= -x^4 + 2x^2y^2 + 2x^2z^2 - (y^4 - 2y^2z^2 + z^4) \\\\
+  &= -x^4 + 2x^2y^2 + 2x^2z^2 - y^4 + 2y^2z^2 - z^4 \\\\
+  &= \boldsymbol{ -x^4 -y^4 -z^4 + 2x^2y^2 + 2y^2z^2 + 2z^2x^2 .}
+\end{align}
 
 {{% /details %}}

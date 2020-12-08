@@ -148,7 +148,7 @@ Simplify $-a^2b \\left( -3a^2 b c^2 \\right)^3$.
 
 {{% note Solution %}}
 {{% mn "ex1" "tips" %}}
-$(1)$ $(ab)^n = a^n b^n$<br>
+$(1)$ $(ab)^n = a^n b^n$<br><br>
 $(2)$ $a^m a^n = a^{m+n}$
 {{% /mn %}}
 \begin{align}
@@ -217,7 +217,7 @@ Expand $(-xy)^2(3x^2-2y-4)$.
 
 {{% note Solution %}}
 {{% mn "ex2" "tips" %}}
-$(1)$ $(ab)^n = a^n b^n$<br>
+$(1)$ $(ab)^n = a^n b^n$<br><br>
 $(2)$ $A(B+C+D)=$ $ AB+AC+AD$
 {{% /mn %}}
 \begin{align}
@@ -259,7 +259,7 @@ Then, we can remove the brackets to finish the expansion.
   &= \boldsymbol{2a^2 + 5ab - 3b^2.}
 \end{align}
 
-<br>
+---
 
 {{% note Example %}}
 Expand $(3x+2)(1+4x^2-3x)$.
