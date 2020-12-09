@@ -53,9 +53,9 @@ An *identity* is an equation that is always true.
 
 For example, $ x - 2 = 0 $ is an equation. We know that there is a specific value of $x$ that satisfies the equation, that is, $x=2$. Finding the values of $x$ that make the equation true is called *solving for* $x$.
 
-This is an example of an identity: $ x^1 \times x^2 = x^3 $ (this is in fact the power law!). Whatever number you set the value of $x$ to be, this identity is *always* true.
+This is an example of an identity: $ x^1 \times x^2 = x^3 $ (this is in fact the power law!). Regardless of the value of $x$, this identity is *always* true.
 
-An identity is a mathematical argument. Like in conversation and writing, to make sure an argument is true, you need to *prove* it. Same in mathematics: if we want to say a mathematical argument is true, we need to *mathematically* prove it!
+An identity is a mathematical argument. Like in conversation and writing, to make sure an argument is true, you need to prove it. Same in mathematics: if we want to say a mathematical argument is true, we need to *mathematically* prove it!
 
 {{% note Definition %}}
 A *mathematical proof* is a set of logic that shows a mathematical argument (identity, law, theorem, ...) is true.
@@ -86,7 +86,7 @@ $$ (a+b)(a-b) = a^2 - b^2. \tag{2} $$
 \end{align}
 
 {{% details title="Proofs" %}}
-We will expand the left hand sides to see if we arrive on the other side. Once we get to the other side, put a little box symbol{{% sn "box" %}}Mathematicians often use a box symbol $\Box$ to indicate the end of a proof. Pretty cool, isn't it!{{% /sn %}} to indicate the proof is finished!
+We will expand the left hand sides to see if we arrive on the other side. Once we get to the other side, put a little box symbol{{% sn box %}}Mathematicians often use a box symbol $\Box$ to indicate the end of a proof. Pretty cool, isn't it!{{% /sn %}} to indicate the proof is finished!
 
 1. Identity 1
 
