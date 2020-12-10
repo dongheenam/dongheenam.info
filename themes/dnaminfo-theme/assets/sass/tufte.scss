@@ -363,6 +363,7 @@
 
   .bordered {
     font-size: 0.9em !important;
+    text-transform: capitalize;
     border: 1px solid var(--text-color);
     padding: 0 0.2rem;
     margin-right: 1rem;

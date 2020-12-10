@@ -30,7 +30,7 @@ menu:
   - [Adding and Subtracting Polynomials](polynomials/adding-polynomials)
   - [Multiplying Polynomials](polynomials/multiplying-polynomials)
 - Expanding Polynomials
-  - [Expanding Polynomials with Identities](polynomials/expanding-with-identities)
+  - [Expanding Polynomials with Identities](polynomials/expanding-identities)
   - [Advanced Techniques for Expanding](polynomials/advanced-expanding)
 - [Review Set 1](polynomials/review-1)
 - Factorising Polynomials

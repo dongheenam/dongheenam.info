@@ -1,7 +1,7 @@
 ---
 title: "Expanding Polynomials with Identities"
 description: "How to expand expressions with quadratic identities. How to expand expressions with cubic identities."
-slug: "expanding-with-identities"
+slug: "expanding-identities"
 
 date: 2020-05-22 17:28:25 +1000
 lastMod: 2020-12-07 20:52:26.727 +1100

@@ -264,6 +264,7 @@ Therefore the coefficient of $xyz$ is $$ 8 + 6 + 6 + 27 + 1 + 6 = \boldsymbol{ 5
 
 {{% note Solution %}}
 
+{{% mn sol7 %}}Refer to [Advanced Techniques for Expanding](../advanced-expanding) for more help.{{% /mn %}}
 a. You can see that there are exactly two brackets with $x$ in it for each expression. Let's only expand those first. 
 \begin{align}
   & (x-b)(x-c)(b-c) \\\\
@@ -316,7 +317,7 @@ Then, using the cubic identity:
   &= 6xP^2 - 6xQ^2.
 \end{align}
 
-Now, we would like to use [basic factorisation](../factorising-using-common-factor/) to help simplify things a little bit:
+Now, we would like to use [basic factorisation](../factorising-common-factor/) to help simplify things a little bit:
 \begin{align}
   & 6xP^2 - 6xQ^2 \\\\
   &= 6x(P^2 - Q^2) \\\\

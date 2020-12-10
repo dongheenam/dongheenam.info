@@ -1,6 +1,6 @@
 ---
 title: "Multiplying Polynomials"
-summary: "How to use the distributive law to multiply polynomials with terms and other polynomials."
+description: "How to use the distributive law to multiply polynomials with terms and other polynomials."
 slug: "multiplying-polynomials"
 
 date: 2020-05-16 17:25:30 +1000
