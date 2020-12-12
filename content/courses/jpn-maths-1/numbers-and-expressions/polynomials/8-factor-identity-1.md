@@ -1,10 +1,10 @@
 ---
-title: "Factorising with Polynomial Identities"
-description: "How to factorise a polynomial with quadratic and cubic identities."
-slug: "factorising-identities"
+title: "Factorising with Polynomial Identities 1"
+description: "How to factorise a polynomial with quadratic identities."
+slug: "factorising-identities-1"
 
 date: 2020-05-27 16:30:27 +1000
-lastMod: 2020-12-10 11:15:26.059 +1100
+lastMod: 2020-12-13 08:02:37.087 +1100
 
 type: docs
 math: true
@@ -21,7 +21,7 @@ tags:
 menu:
   math1-numbers:
     parent: Polynomials
-    name: Factorising with Identities
+    name: Factorising with Identities 1
     weight: 18
 
 # previous/next pager order (if `docs_section_pager` enabled in `params.toml`)
@@ -31,7 +31,7 @@ weight: 18
 ## Introduction
 
 We reviewed the basic principle of factorisation. Now it is time to use the polynomial identities to start factorising the polynomials! In this lesson, we will learn:
-  - How to factorise a polynomial with quadratic and cubic identities.
+  - How to factorise a polynomial with quadratic identities.
 
 ### Links to Australian Curriculum
 
@@ -127,11 +127,12 @@ Part {{% roman 3 %}} does not look that obvious because $3$ and $27$ are not squ
 {{% note Questions %}}
 Try [Practice Questions](#practice-questions) 1 and 2 before moving on.
 
-## Factorising into Two Linear Polynomials
 
-Here comes my favourite! In general, quadratic polynomials have the following form $$ px^2 + qx + r, $$ and a lot of them can be factorised into two linear polynomials using the third identity. We will start with polynomials with $p=1$ (*monic* polynomials) and then move on to more general cases.
+## Quadratic Trinomials
 
-### Monic quadratics
+Here comes my favourite! A quadratic *trinomial* is a quadratic polynomial with exactly three terms, so it has the form $$ px^2 + qx + r. $$ A lot of these can be factorised into two linear polynomials using the third identity. We will start with trinomials with $p=1$ (*monic* trinomials) and then move on to more general cases where $p\ne 1$.
+
+### Monic trinomials
 
 We use this polynomial identity:
 
@@ -191,7 +192,7 @@ Which of these number pairs add up to $-1$? It is $(2,-3)$. Therefore $$ y^2 - y
 {{% note Questions %}}
 Try [Practice Question](#practice-questions) 3 before moving on.
 
-### General cases
+### Non-monic trinomials
 
 For the quadratics with $p\ne 1$, we have to use this identity instead:
 
@@ -216,7 +217,7 @@ Suppose we want to factorise $6x^2 + 5x - 4 $. The *cross-multiplication method*
 
   <li>Find all combinations of factors that multiply to $r$: $(1,-4), (4,-1), (2,-2)$.</li>
 
-  <li>Choose one pair each from step 1 and 2. Cross-multiply them to see whether the sum equals $q$. For example, if we choose $(1,6)$ and $(1,-4)$:
+  <li>Choose one pair from each of steps 1 and 2. Cross-multiply them to see whether the sum equals $q$. For example, if we choose $(1,6)$ and $(1,-4)$:
   $$
   \rlap{\phantom{6\;} \raise{0.8em}{\huge \times}}
   \begin{array}{rcrcrr}
@@ -350,89 +351,6 @@ Factorise the following quadratic polynomials.
 \end{align}
 
 {{% /box %}}
-
-{{% note Questions %}}
-Try [Practice Question](#practice-questions) 4 before moving on.
-
-
-## Factorising with Cubic Identities
-
-Now, we will talk about cubic identities. We don't have to do the guessing games to factorise with them, but they can be trickier than the quadratic identities.
-
-### Sums and differences of cubes
-
-This is an easy one to spot: once you see two cubes and apply the formula. Just be careful with the signs!
-
-{{% box %}}
-{{% note theorem %}} Polynomial identity 4:
-\begin{align}
-  a^3 + b^3 &= (a+b)(a^2 - ab + b^2) \\\\
-  a^3 - b^3 &= (a+b)(a^2 + ab + b^2)
-\end{align}
-
-{{% note example %}}
-Factorise the following expressions.
-  1. $x^3 - 27$
-  2. $64a^3 + 125b^6$
-
-{{% note solution %}}
-
-\begin{align}
-  \text{1.} \quad & x^3 - 27 \\\\
-  &= x^3 - 3^3 \\\\
-  &= (x-3)(x^2 + 3x + 3^2) \\\\
-  &= \boldsymbol{ (x-3)(x^2 + 3x + 9) .}
-\end{align}
-\begin{align}
-  \text{2.} \quad & 64a^3 + 125b^6 \\\\
-  &= (4a)^3 + \left(5b^2\right)^3 \\\\
-  &= (4a+5b^2)\left\\{ 4a - 4a\cdot 5b^2 + \left(5b^2\right)^2 \right\\} \\\\
-  &= \boldsymbol{ (4a+5b^2)(4a - 20ab^2 + 25b^4) .}
-\end{align}
-
-{{% /box %}}
-
-### Perfect cubes
-
-If there are two extra specific terms besides the cubes, they can all be grouped to a single cube! Note there is a factor of $3$ in the middle two terms. This can be very useful to find whether the set of terms form a perfect cube or not!
-
-{{% box %}}
-{{% note theorem %}} Polynomial identity 5:
-\begin{align}
-  a^3 + 3a^2b + 3ab^2 + b^3 &= (a+b)^3 \\\\
-  a^3 - 3a^2b + 3ab^2 - b^3 &= (a-b)^3
-\end{align}
-
-{{% note example %}}
-Factorise the following.
-  1. $x^3 + 6x^2 + 12x + 8$
-  2. $y^3 - 3y^2 + 3y - 1$
-  3. $x^3 + x^2 - 4x - 4$
-
-{{% note solution %}}
-
-\begin{align}
-  \text{1.} \quad & x^3 + 6x^2 + 12x + 8 \\\\
-  &= x^3 + 3\cdot 2x^2 + 3\cdot 2^2 x + 2^3 \\\\
-  &= \boldsymbol{ (x+2)^3 .}
-\end{align}
-\begin{align}
-  \text{2.} \quad & y^3 - 3y^2 + 3y - 1 \\\\
-  &= y^3 - 3\cdot 1y^2 + 3\cdot 1^2 y - 1^3 \\\\
-  &= \boldsymbol{ (y-1)^3 .}
-\end{align}
-
-For part {{% roman 3 %}}, we cannot apply the formula. We will instead try to find the common factor by grouping the terms two by two.
-
-\begin{align}
-  \text{3.} \quad & x^3 + x^2 - 4x - 4 \\\\
-  &= (x^3 + x^2) + (-4x - 4) \\\\
-  &= x^2\underline{(x+1)} -4\underline{(x+1)} \\\\
-  &= (x^2-4)\underline{(x+1)} \\\\
-  &= \boldsymbol{ (x+2)(x-2)(x+1) .}
-\end{align}
-
-{{% /note %}}
 
 
 ## Practice Questions
@@ -652,51 +570,5 @@ For part {{% roman 3 %}}, we cannot apply the formula. We will instead try to fi
     \hline &&&& \boldsymbol{ -b }
   \end{array}
 \end{align}
-
-{{% /details %}}
-
-5. Factorise the following expressions.
-    1. $8a^3 + 27b^3$
-    2. $64x^3 - 1$
-    3. $8x^3 - 36x^2 + 54x - 27$
-    4. $4x^3 - 8x^2 - 9x + 18$
-
-{{% details title="Answer" %}}
-5. 
-    1. $(2a+3b)(4a^2-6ab+9b^2)$
-    2. $(4x-1)(16x^2+4x+1)$
-    3. $(2x-3)^3$
-    4. $(2x+3)(2x-3)(x-2)$
-
-{{% note solution %}}
-
-\begin{align}
-  \text{a.} \quad & 8a^3 + 27b^3 \\\\
-  &= (2a)^3 + (3b)^3 \\\\
-  &= (2a + 3b)\left\\{ (2a)^2 - 2a\cdot 3b + (3b)^2 \right\\} \\\\
-  &= \boldsymbol{ (2a+3b)(4a^2-6ab+9b^2) .}
-\end{align}
-\begin{align}
-  \text{b.} \quad & 64x^3 - 1 \\\\
-  &= (4x)^3 - 1^3 \\\\
-  &= (4x-1)\left\\{ (4x)^2 + 4x + 1 \right\\} \\\\
-  &= \boldsymbol{ (4x-1)(16x^2+4x+1) .}
-\end{align}
-\begin{align}
-  \text{c.} \quad & 8x^3 - 36x^2 + 54x - 27 \\\\
-  &= (2x)^3 - 3(2x)^2\cdot 3 + 3\cdot 2x \cdot 3^2 - 3^3 \\\\
-  &= \boldsymbol{ (2x-3)^3 .}
-\end{align}
-
-Part (d) cannot use any of the cubic identities. Note the coefficient of $x^2$ is not a multiple of $3$!
-
-\begin{align}
-  \text{d.} \quad & 4x^3 - 8x^2 - 9x + 18 \\\\
-  &= 4x^2(\underline{x - 2}) - 9(\underline{x - 2}) \\\\
-  &= (4x^2-9)(\underline{x - 2}) \\\\
-  &= \left\\{ (2x)^2 - 3^2 \right\\} (x-2) \\\\
-  &= \boldsymbol{ (2x+3)(2x-3)(x-2) .}
-\end{align}
-
 
 {{% /details %}}

@@ -36,7 +36,8 @@ menu:
 - Factorising Polynomials
   - [Factorising with the Common Factor](polynomials/factorising-common-factor/)
   - [Factorising with Polynomial Identities](polynomials/factorising-identities/)
-  - [Advanced Techniques for Factorisation](polynomials/advanced-factorising)
+  - [Advanced Techniques for Factorisation 1](polynomials/advanced-factorising-1/)
+  - [Advanced Techniques for Factorisation 2](polynomials/advanced-factorising-2/)
 - [Review Set 2](polynomials/review-2)
 
 ### Real Numbers
@@ -76,7 +77,8 @@ menu:
 | ├ Advanced Expanding | 9^, 10^ | |
 | ├ Factorising with Common Factor | 8, 10 | |
 | ├ Factorising with Polynomial Identities | 10, 10A | |
-| └ Advanced Factorisation | | |
+| ├ Advanced Factorisation 1 | | |
+| └ Advanced Factorisation 2 | | |
 | **[Real Numbers](numbers/)** | | |
 | ├ Types of Numbers | 8, 10A | |
 | ├ Number Line and Absolute Value | 7^ | Specialist 3 |
