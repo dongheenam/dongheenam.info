@@ -1,0 +1,5 @@
+{{/* Usage: 
+    {{% img src="fig-link" alt="alt-text" %}} 
+*/}}
+{{- $img := resources.Get (.Get "src") -}}
+<a href='{{ $img.RelPermalink }}'><img src='{{ $img.RelPermalink }}' alt='{{ .Get "alt" }}' width="{{ $img.Width }}" height="auto" /></a>
