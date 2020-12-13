@@ -312,7 +312,7 @@ From here, we will substitute $x+y$ back and see if we can factorise any further
 
 {{% details title="Answer" %}}
 2. 
-    1. $(2x+3y+7)(2x-3y+7 $
+    1. $(2x+3y+7)(2x-3y+7) $
     2. $(a-b)(a-b+c)$
     3. $(x-2)^2(x^2-4x-3)$
     4. $(x^2-8x+10)(x-2)(x-6)$

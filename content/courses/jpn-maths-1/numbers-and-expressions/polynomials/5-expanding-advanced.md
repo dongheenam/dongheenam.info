@@ -267,7 +267,7 @@ You may find the solutions contain unnecessary steps -- that is completely fine!
 Try [Practice Question](#practice-questions) 2 before moving on.
 
 
-## Create Patterns for the Identities
+## Creating Patterns for the Identities
 
 At first sight, the expressions below don't look like we can use the identities. However, we can change them a little bit so that the polynomial identities can be applied.
 
