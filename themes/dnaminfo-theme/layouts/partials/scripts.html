@@ -3,7 +3,9 @@
 <script src="{{ $main_js.Permalink }}"></script>
 
 {{/* highlight.js */}}
+{{- if .Params.highlight -}}
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.0/highlight.min.js"></script>
 <script>
     hljs.initHighlightingOnLoad();
 </script>
+{{- end -}}

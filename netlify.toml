@@ -1,6 +1,6 @@
 [build]
     publish = "public"
-    command = "hugo --gc --minify --baseURL=https://dongheenam.netlify.app/"
+    command = "hugo --gc --minify --templateMetrics --baseURL=https://dongheenam.netlify.app/"
 
 [context.production.environment]
     HUGO_VERSION = "0.78.2"

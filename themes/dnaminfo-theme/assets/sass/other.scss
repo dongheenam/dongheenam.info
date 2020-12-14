@@ -125,7 +125,7 @@ mjx-container {
   padding: 1px 0 !important;
 
   mjx-math {
-    padding: 1px 0 !important;
+    overflow-y: visible;
   }
 
   &[display="true"] {
