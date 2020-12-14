@@ -68,10 +68,10 @@ menu:
 ## Comparison Table
 
 {{% table-wrapper %}}
-| Topic | AC 7-10 | AC Senior | HSC Stage 6 | IB DP |
+| Topic | AC 7-10 | AC Senior | HSC S6 | IB DP |
 | ----- | ---------- | ------------ | --- | --- |
 | **[Polynomial Algebra](polynomials/)** | | |
-| ├ Terms and Polynomials | 10A | Methods 1 |
+| ├ Terms and Polynomials | 10A | Met1 |
 | ├ Adding and Subtracting Polynomials | 7, 8 | |
 | ├ Multiplying Polynomials | 7^, 8, 10 | |
 | ├ Expanding with Identities | 8^, 9^, 10 | |
@@ -83,7 +83,7 @@ menu:
 | └ Advanced Factorisation 2 | | |
 | **[Real Numbers](numbers/)** | | |
 | ├ Types of Numbers | 8, 10A | |
-| ├ Number Line and Absolute Value | 7^ | Specialist 3 |
+| ├ Number Line and Absolute Value | 7^ | Spec3 |
 | ├ Properties of Square Roots | 10A | |
 | ├ Simplifying Irrational Expressions | 10A | |
 | └ Evaluating Expressions on Irrationals | 10A | |

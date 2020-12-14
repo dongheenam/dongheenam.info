@@ -1,6 +1,6 @@
 ---
 title: "Review Set 2"
-summary: "Review questions for polynomial factorisation."
+description: "Review questions for polynomial factorisation."
 slug: "review-2"
 
 date: 2020-06-11 09:48:27 +1000
