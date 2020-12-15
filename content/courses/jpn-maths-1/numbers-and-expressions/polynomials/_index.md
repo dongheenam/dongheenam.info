@@ -10,6 +10,7 @@ menu:
     name: Polynomials
     weight: 20
 
+toc: false
 type: docs
 ---
 

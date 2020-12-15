@@ -10,6 +10,7 @@ menu:
     name: Real Numbers
     weight: 30
 
+toc: false
 type: docs
 ---
 

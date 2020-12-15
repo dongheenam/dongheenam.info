@@ -1,5 +1,5 @@
 {{- $current_page := . }}
-{{ $toc_required := .Params.toc | default true }}
+{{ $toc_required := .Params.toc | default false }}
 {{ $menu_id := "" }}
 {{ $menu_required := and (eq .Type "docs") .Params.menu }}
 {{ if $menu_required }}

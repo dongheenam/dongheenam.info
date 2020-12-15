@@ -7,6 +7,7 @@ date: 2020-05-27 16:30:27 +1000
 lastMod: 2020-12-13 08:02:37.087 +1100
 
 type: docs
+toc: true
 math: true
 draft: false
 
@@ -16,7 +17,7 @@ tags:
   - factorisation
   - polynomial identity
   - Year 10
-  - Maths Specialist
+  - Specialist Maths
 
 menu:
   math1-numbers:

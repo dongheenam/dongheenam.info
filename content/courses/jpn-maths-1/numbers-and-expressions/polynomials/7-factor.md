@@ -1,5 +1,5 @@
 ---
-title: "Factorising with Common Factor"
+title: "Factorising using the Common Factor"
 description: "Definition of factorisation. How to factorise a polynomial by taking out a common factor."
 slug: "factorising-common-factor"
 
@@ -7,6 +7,7 @@ date: 2020-05-27 10:54:11 +1000
 lastMod: 2020-12-10 09:35:32.365 +1100
 
 type: docs
+toc: true
 math: true
 draft: false
 
@@ -20,7 +21,7 @@ tags:
 menu:
   math1-numbers:
     parent: Polynomials
-    name: "Factorising with Common Factor"
+    name: "Factorising Common Factor"
     weight: 17
 
 # previous/next pager order (if `docs_section_pager` enabled in `params.toml`)
@@ -31,7 +32,7 @@ weight: 17
 
 Until now, we focused on expanding brackets and revealing the polynomials they are representing. We can also find the combination of factors that represent a polynomial -- this is called *factorising*. In this lesson, we will learn:
   - The definition of factorisation.
-  - How to factorise a polynomial by taking out a common factor.
+  - How to factorise a polynomial by finding the common factor.
 
 ### Links to Australian Curriculum
 

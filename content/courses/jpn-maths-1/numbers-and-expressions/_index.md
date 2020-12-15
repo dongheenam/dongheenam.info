@@ -34,7 +34,7 @@ menu:
   - [Advanced Techniques for Expanding](polynomials/advanced-expanding)
 - [Review Set 1](polynomials/review-1)
 - Factorising Polynomials
-  - [Factorising with the Common Factor](polynomials/factorising-common-factor/)
+  - [Factorising using the Common Factor](polynomials/factorising-common-factor/)
   - [Factorising with Polynomial Identities 1](polynomials/factorising-identities-1/)
   - [Factorising with Polynomial Identities 2](polynomials/factorising-identities-2/)
   - [Advanced Techniques for Factorisation 1](polynomials/advanced-factorising-1/)
@@ -76,7 +76,7 @@ menu:
 | ├ Multiplying Polynomials | 7^, 8, 10 | |
 | ├ Expanding with Identities | 8^, 9^, 10 | |
 | ├ Advanced Expanding | 9^, 10^ | |
-| ├ Factorising with Common Factor | 8, 10 | |
+| ├ Factorising using Common Factor | 8, 10 | |
 | ├ Factorising with Polynomial Identities 1 | 10, 10A | |
 | ├ Factorising with Polynomial Identities 2 |  | |
 | ├ Advanced Factorisation 1 | | |

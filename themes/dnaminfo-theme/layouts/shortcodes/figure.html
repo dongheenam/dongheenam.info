@@ -4,7 +4,7 @@
     %}} 
 */}}
 {{- $img := resources.Get (.Get "src") -}}
-<figure class='{{ .Get "class" }}'>
+<figure {{ with (.Get "style") }} class="{{ . }}"{{ end }}{{ with (.Get "style") }} style="{{ . }}"{{ end }}>
 {{- if (.Get "caption") -}}
 {{- $fig_id := .Get "id" | default (path.Base $img.RelPermalink) -}}
 <label for="fig-{{ $fig_id }}" class="margin-toggle toggle-with-word">caption</label>

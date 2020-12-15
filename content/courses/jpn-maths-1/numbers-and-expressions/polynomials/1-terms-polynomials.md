@@ -7,6 +7,7 @@ date: 2020-05-12 20:52:56 +10:00
 lastMod: 2020-12-05 20:48:22.517 +1100
 
 type: docs
+toc: true
 math: true
 draft: false
 
@@ -14,7 +15,7 @@ tags:
   - algebra
   - polynomial
   - Year 10A
-  - Methods
+  - Maths Methods
 
 menu:
   math1-numbers:

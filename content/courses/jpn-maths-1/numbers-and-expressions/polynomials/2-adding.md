@@ -7,6 +7,7 @@ date: 2020-05-14 16:24:18 +1000
 lastMod: 2020-12-06 15:21:17.556 +1100
 
 type: docs
+toc: true
 math: true
 draft: false
 

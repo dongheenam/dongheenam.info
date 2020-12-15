@@ -5,6 +5,7 @@ description: "The record of my discussions and lesson observations during the tw
 date: 2020-05-10
 lastMod: 2020-12-04 15:13:26.788 +1100
 
+toc: true
 draft: false
 
 ---
