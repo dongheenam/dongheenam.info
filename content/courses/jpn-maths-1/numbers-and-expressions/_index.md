@@ -45,7 +45,7 @@ menu:
 
 - Introduction
   - [Different Types of Numbers](numbers/types-of-numbers)
-  - [Number Line and Absolute Values](numbers/absolute-value)
+  - [Number Line and Absolute Values](numbers/absolute-values)
 - Irrational expressions
   - [Properties of Square Roots](numbers/square-roots/)
   - [Simplifying Irrational Expressions](numbers/simplifying-irrationals/)
