@@ -221,15 +221,15 @@ Expand and simplify the following expressions.
 
 1. It is *not* equal to $\sqrt{8}\sqrt{14}=\sqrt{112}$! Instead, we will use the [polynomial identities](../../polynomials/expanding-identities/#quadratic-identities) to expand the brackets.
 \begin{align}
-  \left(\sqrt{11}-\sqrt{3}\right)\left(\sqrt{11}+\sqrt{3}\right) &= \left(\sqrt{11}\right)^2 - \left(\sqrt{3}\right)^2 \\\\
+  \big(\sqrt{11}-\sqrt{3}\big)\big(\sqrt{11}+\sqrt{3}\big) &= \big(\sqrt{11}\big)^2 - \big(\sqrt{3}\big)^2 \\\\
   &= 11 - 3 \\\\
   &= \boldsymbol{ 8 }.
 \end{align}
 
 2. First note $\sqrt{27}=\sqrt{3^2\cdot 3}=3\sqrt{3}$. Then we can use the perfect square identity to expand the expression.
 \begin{align}
-  \left(2\sqrt{2}-\sqrt{27}\right)^2 &= \left(2\sqrt{2}-3\sqrt{3}\right)^2 \\\\
-  &= \left(2\sqrt{2}\right)^2 - 2\cdot 2\sqrt{2} \cdot 3\sqrt{3} + \left(3\sqrt{3}\right)^2 \\\\
+  \big(2\sqrt{2}-\sqrt{27}\big)^2 &= \big(2\sqrt{2}-3\sqrt{3}\big)^2 \\\\
+  &= \big(2\sqrt{2}\big)^2 - 2\cdot 2\sqrt{2} \cdot 3\sqrt{3} + \big(3\sqrt{3}\big)^2 \\\\
   &= 8 - 12\sqrt{6} + 27 \\\\
   &= \boldsymbol{ 35 - 12\sqrt{6} }.
 \end{align}
@@ -237,10 +237,10 @@ Expand and simplify the following expressions.
 $\text{c.} \quad$ Do you remember the [substitution technique](../../polynomials/advanced-expanding/#expanding-by-substitution)? You can see $\sqrt{2}+\sqrt{3}$ is common in both brackets, so let's substitute it as $A$ and expand with the identity.
 {{% mn 238 tips %}}$(1)$ $\sqrt{2}+\sqrt{3}=A${{% /mn %}}
 \begin{align}
-  & \left(\sqrt{2}+\sqrt{3}+\sqrt{5}\right)\left(\sqrt{2}+\sqrt{3}-\sqrt{5}\right) \\\\
-  &= \left(A + \sqrt{5} \right)\left(A - \sqrt{5} \right) \tag{1} \\\\
-  &= A^2 - \left(\sqrt{5}\right)^2 \\\\
-  &= \left(\sqrt{2}+\sqrt{3}\right)^2 - 5 \\\\
+  & \big(\sqrt{2}+\sqrt{3}+\sqrt{5}\big)\big(\sqrt{2}+\sqrt{3}-\sqrt{5}\big) \\\\
+  &= \big(A + \sqrt{5} \big)\big(A - \sqrt{5} \big) \tag{1} \\\\
+  &= A^2 - \big(\sqrt{5}\big)^2 \\\\
+  &= \big(\sqrt{2}+\sqrt{3}\big)^2 - 5 \\\\
   &= 2 + 2\sqrt{6} + 3 - 5 \\\\
   &= \boldsymbol{ 2\sqrt{6}. }
 \end{align}
@@ -306,7 +306,7 @@ $\text{a.} \quad$ We will try to make the radicands (numbers inside the root sym
 $\text{b.} \quad$ Expand the perfect square.
 
 \begin{align}
-  \left(2\sqrt{3} - 3\sqrt{2}\right)^2 &= \left(2\sqrt{3}\right)^2 - 2\cdot 2\sqrt{3} \cdot 3\sqrt{2} + \left(3\sqrt{2}\right)^2 \\\\
+  \big(2\sqrt{3} - 3\sqrt{2}\big)^2 &= \big(2\sqrt{3}\big)^2 - 2\cdot 2\sqrt{3} \cdot 3\sqrt{2} + \big(3\sqrt{2}\big)^2 \\\\
   &= 12 - 12\sqrt{6} + 18 \\\\
   &= \boldsymbol{ 30 - 12\sqrt{6} }.
 \end{align}
@@ -314,8 +314,8 @@ $\text{b.} \quad$ Expand the perfect square.
 $\text{c.} \quad$ If you look carefully, it is in the $(ax+by)(cx+dy)$ form!
 
 \begin{align}
-  & \left(2\hl{\sqrt{5}}-3\sqrt{3}\right)\left(3\hl{\sqrt{5}}+2\sqrt{3}\right) \\\\
-  &= 6\left(\hl{\sqrt{5}}\right)^2 + (4 - 9)\hl{\sqrt{5}}\sqrt{3} - 6\left(\sqrt{3}\right)^2 \\\\
+  & \big(2\hl{\sqrt{5}}-3\sqrt{3}\big)\big(3\hl{\sqrt{5}}+2\sqrt{3}\big) \\\\
+  &= 6\big(\hl{\sqrt{5}}\big)^2 + (4 - 9)\hl{\sqrt{5}}\sqrt{3} - 6\big(\sqrt{3}\big)^2 \\\\
   &= 6\cdot 5 - 5\sqrt{15} - 18 \\\\
   &= \boldsymbol{ 12 - 5\sqrt{15} }.
 \end{align}
@@ -323,9 +323,9 @@ $\text{c.} \quad$ If you look carefully, it is in the $(ax+by)(cx+dy)$ form!
 $\text{d.} \quad$ This is a slightly different version of the last example question. This time, let's expand it without actually substituting the common terms.
 
 \begin{align}
-  & \left(\sqrt{5}+\sqrt{3}+\sqrt{2}\right)\left(\sqrt{5}-\sqrt{3}+\sqrt{2}\right) \\\\
-  &= \left\\{ \left(\underline{\sqrt{5}+\sqrt{2}}\right) + \sqrt{3} \right\\}\left\\{ \left(\underline{\sqrt{5}+\sqrt{2}}\right) - \sqrt{3} \right\\} \\\\
-  &= \left(\underline{\sqrt{5}+\sqrt{2}} \right)^2 - 3 \\\\
+  & \big(\sqrt{5}+\sqrt{3}+\sqrt{2}\big)\big(\sqrt{5}-\sqrt{3}+\sqrt{2}\big) \\\\
+  &= \big\\{ \big(\underline{\sqrt{5}+\sqrt{2}}\big) + \sqrt{3} \big\\}\big\\{ \big(\underline{\sqrt{5}+\sqrt{2}}\big) - \sqrt{3} \big\\} \\\\
+  &= \big(\underline{\sqrt{5}+\sqrt{2}} \big)^2 - 3 \\\\
   &= 5 + 2\sqrt{10} + 2 - 3 \\\\
   &= \boldsymbol{ 4 + 2\sqrt{10} }.
 \end{align}

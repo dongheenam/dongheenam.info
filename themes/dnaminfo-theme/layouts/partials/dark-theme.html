@@ -11,12 +11,23 @@
     /* load system preference */
     let prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
     /* toggle dark theme */
-    if (storedTheme === "dark" || prefersDark) {
-      html.classList.add("dark-theme");
-      themeButton.style.background = toLightIcon;
-    } else {
-      html.classList.remove("dark-theme");
-      themeButton.style.background = toDarkIcon;
+    switch (storedTheme) {
+      case "dark" :
+        html.classList.add("dark-theme");
+        themeButton.style.background = toLightIcon;
+        break;
+      case "light" :
+        html.classList.remove("dark-theme");
+        themeButton.style.background = toDarkIcon;
+        break;
+      default :
+        if (prefersDark) {
+          html.classList.add("dark-theme");
+          themeButton.style.background = toLightIcon;
+        } else {
+          html.classList.remove("dark-theme");
+          themeButton.style.background = toDarkIcon;
+        }
     }
 
     /* Let users toggle the theme */
