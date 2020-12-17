@@ -209,9 +209,9 @@ The collection of rational numbers and finite and infinite decimals is called *r
 
 ### Converting fractions to decimals
 
-We could close up this lesson here, but there are a lot of overlapping part between rationals and decimals. For example, $1.0$ (decimal) is obviously the same as $1$ (natural), and $\frac{1}{2}$ (rational) is $0.5$ (decimal). In order to better classify the real numbers, we need to try converting decimals and rationals and finding some patterns. Here we are not going to spend too much time practising the conversion because you should have had a few exercises throughout high school. For example, 
+We could close up this lesson here, but there are a lot of overlapping part between rationals and decimals. For example, $1.0$ (decimal) is obviously the same as $1$ (natural), and $\frac{1}{2}$ (rational) is $0.5$ (decimal). In order to better classify the real numbers, we need to try converting decimals and rationals and finding some patterns. Here we are not going to spend too much time practising the conversion because you should have had a few exercises throughout high school. For example, {{% mn logdiv1 %}}{{% img src="courses/jpn-maths-1/numbers-and-expressions/num-longdiv_1.svg" alt="Long division workout for 1 divide 8." %}}{{% /mn %}}
 
-$$\dfrac{5}{8} = 5\div 8 = 0.625$$ {{% mn logdiv1 %}}{{% img src="courses/jpn-maths-1/numbers-and-expressions/num-longdiv_1.svg" alt="Long division workout for 1 divide 8." %}}{{% /mn %}} and $$0.85 = \dfrac{\bcancel{85}^{13}}{\bcancel{100}^{20}} = \dfrac{13}{20}.$$
+$$\dfrac{5}{8} = 5\div 8 = 0.625$$ and $$0.85 = \dfrac{\bcancel{85}^{13}}{\bcancel{100}^{20}} = \dfrac{13}{20}.$$
 
 For the example above, the division ends and you can express the fraction as a finite decimal. However, not all fractions behave this way -- the division never ends for some fractions! Have a look at the long division for $\dfrac{1}{6}$, for example. {{% mn logdiv2 %}}{{% img src="courses/jpn-maths-1/numbers-and-expressions/num-longdiv_2.svg" alt="Long division workout for 1 divide 6." %}}{{% /mn %}}
 

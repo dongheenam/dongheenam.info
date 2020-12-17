@@ -48,8 +48,7 @@ menu:
   - [Number Line and Absolute Values](numbers/absolute-values)
 - Irrational expressions
   - [Properties of Square Roots](numbers/square-roots/)
-  - [Simplifying Irrational Expressions](numbers/simplifying-irrationals/)
-  - [Evaluating Expressions on Irrationals](numbers/evaluating-expressions-irrationals)
+  - [Rationalising Denominators](numbers/rationalising-denominators)
 - [Review Set 3](numbers/review-3/)
 
 ### Linear Inequalities
@@ -77,16 +76,14 @@ menu:
 | ├ Expanding with Identities | 8^, 9^, 10 | |
 | ├ Advanced Expanding | 9^, 10^ | |
 | ├ Factorising using Common Factor | 8, 10 | |
-| ├ Factorising with Polynomial Identities 1 | 10, 10A | |
-| ├ Factorising with Polynomial Identities 2 |  | |
-| ├ Advanced Factorisation 1 | | |
-| └ Advanced Factorisation 2 | | |
+| ├ Factorising with Polynomial Identities | 10, 10A | |
+| ├ Advanced Factorisation | | |
 | **[Real Numbers](numbers/)** | | |
 | ├ Types of Numbers | 8, 10A | |
 | ├ Number Line and Absolute Value | 7^ | Spec3 |
 | ├ Properties of Square Roots | 10A | |
-| ├ Simplifying Irrational Expressions | 10A | |
-| └ Evaluating Expressions on Irrationals | 10A | |
+| ├ Rationalising Denominators | 10A | |
+| └ ... | 10A | |
 | **[Linear Inequalities](inequalities/)** | | |
 | ├ Properties of Inequalities | 10A | |
 | ├ Solving Linear Inequalities | 10A | |
