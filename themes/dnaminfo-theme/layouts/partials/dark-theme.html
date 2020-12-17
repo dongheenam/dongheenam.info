@@ -1,45 +1,53 @@
 <script>
+  function changeTheme(html, newTheme, button, newIcon, storage=null) {
+    if (newTheme === "dark") {
+      html.classList.remove("dark-theme");
+      html.classList.add("light-theme");
+      if (storage) {
+        storage.setItem("theme", "dark");
+      }
+    } else if (newTheme === "light") {
+      html.classList.remove("light-theme");
+      html.classList.add("dark-theme");
+      if (storage) {
+        storage.setItem("theme", "light");
+      }
+    }
+    button.style.background = newIcon;
+  }
+
   /* decide if dark mode needs to be set */
   document.addEventListener("DOMContentLoaded", () => {
     const html = document.documentElement;
     const themeButton = document.querySelector(".mainnav-toggle");
-    const toDarkIcon = "url(/img/icons/brightness_3-white-24dp.svg)";
-    const toLightIcon = "url(/img/icons/brightness_6-white-24dp.svg)";
+    const darkIcon = "url(/img/icons/brightness_3-white-24dp.svg)";
+    const lightIcon = "url(/img/icons/brightness_6-white-24dp.svg)";
 
-    /* load localStorage */
-    let storedTheme = window.localStorage.getItem("theme");
-    /* load system preference */
-    let prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    /* toggle dark theme */
-    switch (storedTheme) {
+    /* check the localStorage first */
+    let storage = window.localStorage.getItem("theme");
+    switch (storage) {
       case "dark" :
-        html.classList.add("dark-theme");
-        themeButton.style.background = toLightIcon;
+        changeTheme(html, "dark", themeButton, lightIcon);
         break;
       case "light" :
-        html.classList.remove("dark-theme");
-        themeButton.style.background = toDarkIcon;
+        changeTheme(html, "light", themeButton, darkIcon);
         break;
       default :
+        /* then check the system preference */
+        let prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         if (prefersDark) {
-          html.classList.add("dark-theme");
-          themeButton.style.background = toLightIcon;
+          changeTheme(html, "dark", themeButton, lightIcon);
         } else {
-          html.classList.remove("dark-theme");
-          themeButton.style.background = toDarkIcon;
+          changeTheme(html, "light", themeButton, darkIcon);
         }
     }
 
     /* Let users toggle the theme */
     themeButton.addEventListener("click", () => {
       if (html.classList.contains("dark-theme")) {
-        html.classList.remove("dark-theme"); // switches to light theme
-        themeButton.style.background = toDarkIcon; // change the icon
-        window.localStorage.setItem("theme", "light"); // store the change
+        changeTheme(html, "dark", themeButton, lightIcon, window.localStorage);
       } else {
-        html.classList.add("dark-theme"); // switches to dark theme
-        themeButton.style.background = toLightIcon; // change the icon
-        window.localStorage.setItem("theme", "dark"); // store the change
+        changeTheme(html, "light", themeButton, darkIcon, window.localStorage);
       }
     });
   });

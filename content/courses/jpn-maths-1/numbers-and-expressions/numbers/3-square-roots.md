@@ -57,7 +57,7 @@ If $x^2=a$ and $a>0$, we define $x$ as the *square root* of $a$.
 
 {{% /box %}}
 
-The famous root symbol $\sqrt{}$ refer to the positive square root.
+The famous root symbol $\sqrt{}$ refers to the positive square root.
 
 {{% note definition %}}
 The two square roots of a positive real number $a$ are $\sqrt{a}$ and $-\sqrt{a}$, where $\sqrt{a}>0$.
@@ -69,10 +69,13 @@ Note that we can only calculate the square root of a *positive number or zero*. 
 
 From the definition of the square root symbol, we get
 
+{{% box %}}
 {{% note theorem %}}
 For every positive real number $a$,
   - $\left( \sqrt{a} \right)^2 = a$,
   - $\left( -\sqrt{a} \right)^2 = a$.
+
+{{% /box %}}
 
 Now, from the first definition, a lot of students tend to think $\sqrt{x^2} = x$. Although it looks pretty convincing, *this is not always true.* Let's say $x=-2$. Then
 
@@ -114,11 +117,14 @@ We know $\sqrt{p^2q^2} = \sqrt{(pq)^2} = |pq|$. Because $p$ is positive and $q$ 
 
 What do you think $\sqrt{a}\sqrt{b}$ is equal to? Not very surprisingly, it is $\sqrt{ab}$. Likewise, simplifying expressions that have square roots is pretty straightforward most of the time. We will instead focus on how we can prove the basic identities like $\sqrt{a}\sqrt{b}=\sqrt{ab}$, and what we *cannot* do with square roots.
 
+{{% box %}}
 {{% note theorem %}}
 If $a>0$, $b>0$, and $x>0$,
   - $\sqrt{a}\sqrt{b}=\sqrt{ab},$
   - $\dfrac{\sqrt{a}}{\sqrt{b}}=\sqrt{\dfrac{a}{b}},$
   - $\sqrt{x^2a} = x\sqrt{a}.$
+
+{{% /box %}}
 
 {{% details title="Proof" %}}
 
@@ -234,7 +240,7 @@ Expand and simplify the following expressions.
   &= \boldsymbol{ 35 - 12\sqrt{6} }.
 \end{align}
 
-$\text{c.} \quad$ Do you remember the [substitution technique](../../polynomials/advanced-expanding/#expanding-by-substitution)? You can see $\sqrt{2}+\sqrt{3}$ is common in both brackets, so let's substitute it as $A$ and expand with the identity.
+3. Do you remember the [substitution technique](../../polynomials/advanced-expanding/#expanding-by-substitution)? You can see $\sqrt{2}+\sqrt{3}$ is common in both brackets, so let's rename it as $A$ and expand the expression with the polynomial identity.
 {{% mn 238 tips %}}$(1)$ $\sqrt{2}+\sqrt{3}=A${{% /mn %}}
 \begin{align}
   & \big(\sqrt{2}+\sqrt{3}+\sqrt{5}\big)\big(\sqrt{2}+\sqrt{3}-\sqrt{5}\big) \\\\
