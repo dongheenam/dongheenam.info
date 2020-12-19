@@ -27,7 +27,7 @@
           {{ .Name }}
         {{- end -}}
       </li>
-      {{- if .HasChildren -}}
+      {{- if and .HasChildren (or ($current_page.IsMenuCurrent $menu_id . ) ($current_page.HasMenuCurrent $menu_id . )) -}}
       <ul>
       {{- range .Children -}}
         <li{{ if $current_page.IsMenuCurrent $menu_id . }} class="current"{{ end }}>
