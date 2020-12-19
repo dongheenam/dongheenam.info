@@ -28,6 +28,17 @@ menu:
 weight: 14
 ---
 
+{{% details title="Links to Australian Curriculum" %}}
+
+- Mathematics Year 8
+  - Extend and apply the distributive law to the expansion of algebraic expressions [(ACMNA190)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&strand=Measurement+and+Geometry&strand=Statistics+and+Probability&capability=ignore&priority=ignore&year=11759&elaborations=true&cd=ACMNA190&searchTerm=ACMNA190#dimension-content)
+- Mathematics Year 9
+  - Apply the distributive law to the expansion of algebraic expressions, including binomials, and collect like terms where appropriate [(ACMNA213)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&strand=Measurement+and+Geometry&strand=Statistics+and+Probability&capability=ignore&priority=ignore&year=11760&elaborations=true&cd=ACMNA213).
+- Mathematics Year 10
+  - Expand binomial products and factorise monic quadratic expressions using a variety of strategies [(ACMNA233)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&year=11761&elaborations=true&cd=ACMNA233).
+
+{{% /details %}}
+
 ## Introduction
 
 Expanding expressions is fun but can be horribly painful. There are useful formulae we can use to speed up the process.
@@ -36,14 +47,6 @@ In this lesson, we will learn:
   - How to expand expressions with quadratic identities.
   - How to expand expressions with cubic identities.
 
-### Links to Australian Curriculum
-
-  - Mathematics Year 8
-    - Extend and apply the distributive law to the expansion of algebraic expressions [(ACMNA190)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&strand=Measurement+and+Geometry&strand=Statistics+and+Probability&capability=ignore&priority=ignore&year=11759&elaborations=true&cd=ACMNA190&searchTerm=ACMNA190#dimension-content)
-  - Mathematics Year 9
-    - Apply the distributive law to the expansion of algebraic expressions, including binomials, and collect like terms where appropriate [(ACMNA213)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&strand=Measurement+and+Geometry&strand=Statistics+and+Probability&capability=ignore&priority=ignore&year=11760&elaborations=true&cd=ACMNA213).
-  - Mathematics Year 10
-    - Expand binomial products and factorise monic quadratic expressions using a variety of strategies [(ACMNA233)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&year=11761&elaborations=true&cd=ACMNA233).
 
 ## Identities and Proofs
 

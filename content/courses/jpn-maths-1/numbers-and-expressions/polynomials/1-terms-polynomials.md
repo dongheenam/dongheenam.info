@@ -27,6 +27,15 @@ menu:
 weight: 11
 ---
 
+{{% details title="Links to Australian Curriculum" %}}
+
+- Mathematics Year 10A
+  - Investigate the concept of a polynomial and apply the factor and remainder theorems to solve problems [(ACMNA266)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&strand=Measurement+and+Geometry&strand=Statistics+and+Probability&capability=ignore&priority=ignore&year=11762&elaborations=true&cd=ACMNA266&searchTerm=acmna266#dimension-content)
+- Mathematical Methods Unit 1
+  - Identify the coefficients and the degree of a polynomial [(ACMMM015)](https://www.australiancurriculum.edu.au/senior-secondary-curriculum/mathematics/mathematical-methods/?unit=Unit+1&cd=ACMMM015)
+
+{{% /details %}}
+
 ## Introduction
 
 *Poly-* means many: *poly*gons have many angles and sides, *poly*morphic animals go through many different forms, and *poly*glot people can speak many languages. Similarly, a *poly*nomial is an expression with many terms. So we need to know what an expression is and what a term is before understanding what a polynomial is.
@@ -38,12 +47,6 @@ In this lesson, we will study:
 - How to arrange a polynomial.
 - What is the degree of a polynomial.
 
-### Links to Australian Curriculum
-
-- Mathematics Year 10A
-  - Investigate the concept of a polynomial and apply the factor and remainder theorems to solve problems [(ACMNA266)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&strand=Measurement+and+Geometry&strand=Statistics+and+Probability&capability=ignore&priority=ignore&year=11762&elaborations=true&cd=ACMNA266&searchTerm=acmna266#dimension-content)
-- Mathematical Methods Unit 1
-  - Identify the coefficients and the degree of a polynomial [(ACMMM015)](https://www.australiancurriculum.edu.au/senior-secondary-curriculum/mathematics/mathematical-methods/?unit=Unit+1&cd=ACMMM015)
 
 ## Terms
 

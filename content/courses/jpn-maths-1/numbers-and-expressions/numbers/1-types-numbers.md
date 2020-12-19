@@ -28,6 +28,15 @@ menu:
 weight: 11
 ---
 
+{{% details title="Links to Australian Curriculum" %}}
+
+- Mathematics Year 8
+  - Investigate the concept of irrational numbers, including $\pi$ [(ACMNA186)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&year=11759&elaborations=true&cd=ACMNA186&searchTerm=ACMNA186#dimension-content).
+- Mathematics Year 10A
+  - Define rational and irrational numbers and perform operations with surds and fractional indices [(ACMNA264)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&year=11762&elaborations=true&cd=ACMNA264&searchTerm=ACMNA264#dimension-content).
+
+{{% /details %}}
+
 ## Introduction
 
 What is a number? It is difficult to tell what a number exactly is. What we can do at least is to think of *examples* of numbers. For example, I spent *one and a half* hours to solve *4* maths questions today, and ate *0.2* litres of ice cream, kept frozen at *-18* degrees. All of these numbers sound so natural to us and it is difficult to imagine a world without numbers. However, we now know that all numbers have been invented from time to time, and some numbers became available a lot earlier than the others!
@@ -38,12 +47,6 @@ We will learn:
 - the different representations of rational numbers: decimals and fractions.
 - how to convert between decimals and fractions.
 
-### Links to Australian Curriculum
-
-- Mathematics Year 8
-  - Investigate the concept of irrational numbers, including $\pi$ [(ACMNA186)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&year=11759&elaborations=true&cd=ACMNA186&searchTerm=ACMNA186#dimension-content).
-- Mathematics Year 10A
-  - Define rational and irrational numbers and perform operations with surds and fractional indices [(ACMNA264)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&year=11762&elaborations=true&cd=ACMNA264&searchTerm=ACMNA264#dimension-content).
 
 ## Natural Numbers
 

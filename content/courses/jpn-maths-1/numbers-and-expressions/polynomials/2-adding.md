@@ -27,18 +27,21 @@ menu:
 weight: 12
 ---
 
+{{% details title="Links to Australian Curriculum" %}}
+
+- Mathematics Year 7
+  - Extend and apply the laws and properties of arithmetic to algebraic terms and expressions [(ACMNA117)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&strand=Measurement+and+Geometry&strand=Statistics+and+Probability&capability=ignore&priority=ignore&year=11758&elaborations=true&cd=ACMNA177&searchTerm=ACMNA177#dimension-content).
+- Mathematics Year 8
+  - Simplify algebraic expressions involving the four operations[(ACMNA192)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&strand=Measurement+and+Geometry&strand=Statistics+and+Probability&capability=ignore&priority=ignore&year=11759&elaborations=true&cd=ACMNA192&searchTerm=ACMNA192#dimension-content).
+
+{{% /details %}}
+
 ## Introduction
 
 In this lesson, we will learn:
   - How to add and subtract polynomials.
   - How to simplify polynomials using the three laws of arithmetic.
 
-### Links to Australian Curriculum
-
-  - Mathematics Year 7
-    - Extend and apply the laws and properties of arithmetic to algebraic terms and expressions [(ACMNA117)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&strand=Measurement+and+Geometry&strand=Statistics+and+Probability&capability=ignore&priority=ignore&year=11758&elaborations=true&cd=ACMNA177&searchTerm=ACMNA177#dimension-content).
-  - Mathematics Year 8
-    - Simplify algebraic expressions involving the four operations[(ACMNA192)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&strand=Measurement+and+Geometry&strand=Statistics+and+Probability&capability=ignore&priority=ignore&year=11759&elaborations=true&cd=ACMNA192&searchTerm=ACMNA192#dimension-content).
 
 ## The Laws of Arithmetic
 

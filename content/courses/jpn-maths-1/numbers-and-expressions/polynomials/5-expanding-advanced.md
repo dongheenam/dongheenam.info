@@ -28,6 +28,15 @@ menu:
 weight: 15
 ---
 
+{{% details title="Links to Australian Curriculum" %}}
+
+- Mathematics Year 9
+  - Apply the distributive law to the expansion of algebraic expressions, including binomials, and collect like terms where appropriate [(ACMNA213)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&strand=Measurement+and+Geometry&strand=Statistics+and+Probability&capability=ignore&priority=ignore&year=11760&elaborations=true&cd=ACMNA213).
+- Mathematics Year 10
+  - Expand binomial products and factorise monic quadratic expressions using a variety of strategies [(ACMNA233)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&year=11761&elaborations=true&cd=ACMNA233).
+
+{{% /details %}}
+
 ## Introduction
 
 You have familiarised yourself with polynomial identities in the [previous lesson](../expanding-with-identities). We will now practise how to use the identities to expand more complicated expressions!
@@ -35,13 +44,6 @@ You have familiarised yourself with polynomial identities in the [previous lesso
 In this lesson, you will learn:
   - How to use substitution to help expand an expression.
   - How to swap the order of multiplication to easily expand an expression.
-
-### Links to Australian Curriculum
-
-- Mathematics Year 9
-  - Apply the distributive law to the expansion of algebraic expressions, including binomials, and collect like terms where appropriate [(ACMNA213)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&strand=Measurement+and+Geometry&strand=Statistics+and+Probability&capability=ignore&priority=ignore&year=11760&elaborations=true&cd=ACMNA213).
-- Mathematics Year 10
-  - Expand binomial products and factorise monic quadratic expressions using a variety of strategies [(ACMNA233)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&year=11761&elaborations=true&cd=ACMNA233).
 
 
 ## Expanding by Substitution

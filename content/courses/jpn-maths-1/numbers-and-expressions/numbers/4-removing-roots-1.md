@@ -1,6 +1,7 @@
 ---
-title: "Rationalising Denominators"
-slug: "rationalising-denominators"
+title: "Removing Square Roots 1"
+slug: "removing-roots-1"
+description: How to rationalise the denominator of a fraction.
 
 date: 2020-08-04 08:53:19.702 +1000
 lastMod: 2020-12-18 08:20:05.895 +1100
@@ -20,29 +21,30 @@ tags:
 menu:
   math1-numbers:
     parent: Real Numbers
-    name: Rationalising Denominators
+    name: Removing Square Roots 1
     weight: 14
 
 # previous/next pager order (if `docs_section_pager` enabled in `params.toml`)
 weight: 14
 ---
 
-## Introduction
-
-What do you think is the value of $\dfrac{1}{\sqrt{2}}$? Well, from the last lesson, [we now know](../square-roots/) that it equals the square root of $\dfrac{1}{2}$, so we need to find a (positive) number whose square is a half. You can estimate the value by trial-and-error, the [fancy Babylonian method](https://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Babylonian_method), or just use a calculator. Anyways, you will get $$ \frac{1}{\sqrt{2}} = 0.70710678 \cdots. $$ Let's compare this number with $$ \sqrt{2} = 1.41421356 \cdots. $$ What do you notice? Did you also find two times the square root of a half is equal to the square root of two, or $\dfrac{2}{\sqrt{2}} = \sqrt{2}$?
-
-Dealing with roots is full of surprise. That is why we need to talk about some tips and tricks on how to deal with numbers that have square roots on it. In this lesson, we will learn:
-
-- How to rationalise the denominator of a fraction that involves square roots to help simplify it.
-
-
-### Links to Australian Curriculum
+{{% details title="Links to Australian Curriculum" %}}
 
 - Mathematics Year 10A
   - Define rational and irrational numbers and perform operations with surds and fractional indices [(ACMNA264)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&year=11762&elaborations=true&cd=ACMNA264&searchTerm=ACMNA264#dimension-content).
 
+{{% /details %}}
 
-## Rationalising the Denominator
+## Introduction
+
+What do you think is the value of $\dfrac{1}{\sqrt{2}}$? Well, from the last lesson, [we now know](../square-roots/) that it equals the square root of $\dfrac{1}{2}$, so we need to find a (positive) number whose square is a half. You can estimate the value by trial-and-error, the [fancy Babylonian method](https://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Babylonian_method), or just use a calculator. Anyways, you will get $$ \frac{1}{\sqrt{2}} = 0.70710678 \cdots. $$ Let's compare this number with $$ \sqrt{2} = 1.41421356 \cdots. $$ What do you notice? Did you also find two times the square root of a half is equal to the square root of two, or $\dfrac{2}{\sqrt{2}} = \sqrt{2}$?
+
+Dealing with roots is full of surprise. That is why we need to talk about some tips and tricks on how to deal with square roots. In this lesson, we will learn:
+
+- How to rationalise the denominator of a fraction to help simplify it.
+
+
+## Rationalising the Denominators
 
 So, we can start from $\dfrac{1}{\sqrt{2}}$. What is the number we can multiply $\sqrt{2}$ to get rid of the root? Well, quite obviously, it is another $\sqrt{2}$, because $(\sqrt{2})^2 = 2$. Because we are trying to multiply the denominator by $\sqrt{2}$, we also need to multiply the numerator by $\sqrt{2}$ to keep the value same. Therefore, we have:
 

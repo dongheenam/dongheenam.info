@@ -48,7 +48,10 @@ menu:
   - [Number Line and Absolute Values](numbers/absolute-values)
 - Irrational expressions
   - [Properties of Square Roots](numbers/square-roots/)
-  - [Rationalising Denominators](numbers/rationalising-denominators)
+  - [Removing Square Roots 1](numbers/removing-roots-1)
+  - [Removing Square Roots 2](numbers/removing-roots-2)
+  - [Evaluating Expressions with Square Roots 1](expressions-square-roots-1)
+  - [Evaluating Expressions with Square Roots 2](expressions-square-roots-2)
 - [Review Set 3](numbers/review-3/)
 
 ### Linear Inequalities
@@ -83,7 +86,7 @@ menu:
 | ├ Number Line and Absolute Value | 7^ | Spec3 |
 | ├ Properties of Square Roots | 10A | |
 | ├ Rationalising Denominators | 10A | |
-| └ ... | 10A | |
+| └ Expressions with Square Roots | 10A | |
 | **[Linear Inequalities](inequalities/)** | | |
 | ├ Properties of Inequalities | 10A | |
 | ├ Solving Linear Inequalities | 10A | |

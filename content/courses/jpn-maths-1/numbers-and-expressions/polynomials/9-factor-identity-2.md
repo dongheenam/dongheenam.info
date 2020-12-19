@@ -29,15 +29,17 @@ menu:
 weight: 19
 ---
 
+{{% details title="Links to Australian Curriculum" %}}
+
+- Mathematics Year 10
+  - Expand binomial products and factorise monic quadratic expressions using a variety of strategies [(ACMNA233)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&year=11761&elaborations=true&cd=ACMNA233).
+
+{{% /details %}}
+
 ## Introduction
 
 Now that you mastered quadratic identities, in this lesson, we will learn:
   - How to factorise a polynomial with cubic identities.
-
-### Links to Australian Curriculum
-
-  - Mathematics Year 10
-    - Expand binomial products and factorise monic quadratic expressions using a variety of strategies [(ACMNA233)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&year=11761&elaborations=true&cd=ACMNA233).
 
 
 ## Factorising with Cubic Identities

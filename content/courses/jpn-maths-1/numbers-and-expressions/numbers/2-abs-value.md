@@ -27,19 +27,21 @@ menu:
 weight: 12
 ---
 
+{{% details title="Links to Australian Curriculum" %}}
+
+- Mathematics Year 7
+  - Compare, order, add and subtract integers [(ACMNA280)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&strand=Measurement+and+Geometry&strand=Statistics+and+Probability&capability=ignore&priority=ignore&year=11758&elaborations=true&cd=ACMNA280&searchTerm=ACMNA280#dimension-content).
+- Specialist Mathematics Unit 3
+  - Use and apply the notation $|x|$ for the absolute value for the real number $x$ and the graph of $y=|x|$ [(ACMSM098)](https://www.australiancurriculum.edu.au/senior-secondary-curriculum/mathematics/specialist-mathematics/?unit=Unit+3&cd=ACMSM098&searchTerm=ACMSM098#dimension-content).
+
+{{% /details %}}
+
 ## Introduction
 
 In the [previous lesson](../types-of-numbers) we discussed numbers for counting and numbers for measuring, and we realised that they form **real numbers** ($\mathbb{R}$) altogether. This is not the end of the story because we have not talked about the number lines yet! In this lesson, we will learn:
 
 - the coordinate representation of numbers: the number line.
 - the definition and properties of the absolute value of a real number.
-
-### Links to Australian Curriculum
-
-- Mathematics Year 7
-  - Compare, order, add and subtract integers [(ACMNA280)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&strand=Measurement+and+Geometry&strand=Statistics+and+Probability&capability=ignore&priority=ignore&year=11758&elaborations=true&cd=ACMNA280&searchTerm=ACMNA280#dimension-content).
-- Specialist Mathematics Unit 3
-  - Use and apply the notation $|x|$ for the absolute value for the real number $x$ and the graph of $y=|x|$ [(ACMSM098)](https://www.australiancurriculum.edu.au/senior-secondary-curriculum/mathematics/specialist-mathematics/?unit=Unit+3&cd=ACMSM098&searchTerm=ACMSM098#dimension-content).
 
 
 ## The Number Line

@@ -28,20 +28,23 @@ menu:
 weight: 13
 ---
 
+{{% details title="Links to Australian Curriculum" %}}
+
+- Mathematics Year 7
+  - Extend and apply the laws and properties of arithmetic to algebraic terms and expressions [(ACMNA117)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&strand=Measurement+and+Geometry&strand=Statistics+and+Probability&capability=ignore&priority=ignore&year=11758&elaborations=true&cd=ACMNA177&searchTerm=ACMNA177#dimension-content).
+- Mathematics Year 8
+  - Simplify algebraic expressions involving the four operations[(ACMNA192)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&strand=Measurement+and+Geometry&strand=Statistics+and+Probability&capability=ignore&priority=ignore&year=11759&elaborations=true&cd=ACMNA192&searchTerm=ACMNA192#dimension-content).
+- Mathematics Year 10
+  - Simplify algebraic products and quotients using index laws [(ACMNA231)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&year=11761&elaborations=true&cd=ACMNA231).
+  - Expand binomial products and factorise monic quadratic expressions using a variety of strategies [(ACMNA233)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&year=11761&elaborations=true&cd=ACMNA233).
+
+{{% /details %}}
+
 ## Introduction
 
 In this lesson, we will learn:
   - How to use the distributive law to multiply polynomials with terms and other polynomials.
 
-### Links to Australian Curriculum
-
-  - Mathematics Year 7
-    - Extend and apply the laws and properties of arithmetic to algebraic terms and expressions [(ACMNA117)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&strand=Measurement+and+Geometry&strand=Statistics+and+Probability&capability=ignore&priority=ignore&year=11758&elaborations=true&cd=ACMNA177&searchTerm=ACMNA177#dimension-content).
-  - Mathematics Year 8
-    - Simplify algebraic expressions involving the four operations[(ACMNA192)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&strand=Measurement+and+Geometry&strand=Statistics+and+Probability&capability=ignore&priority=ignore&year=11759&elaborations=true&cd=ACMNA192&searchTerm=ACMNA192#dimension-content).
-  - Mathematics Year 10
-    - Simplify algebraic products and quotients using index laws [(ACMNA231)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&year=11761&elaborations=true&cd=ACMNA231).
-    - Expand binomial products and factorise monic quadratic expressions using a variety of strategies [(ACMNA233)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&year=11761&elaborations=true&cd=ACMNA233).
 
 ## Indices and Index Laws
 

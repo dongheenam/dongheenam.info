@@ -28,18 +28,21 @@ menu:
 weight: 17
 ---
 
+{{% details title="Links to Australian Curriculum" %}}
+
+- Mathematics Year 8
+  - Factorise algebraic expressions by identifying numerical factors [(ACMNA191)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&strand=Measurement+and+Geometry&strand=Statistics+and+Probability&capability=ignore&priority=ignore&year=11759&elaborations=true&cd=ACMNA191&searchTerm=ACMNA191#dimension-content).
+- Mathematics Year 10
+  - Factorise algebraic expressions by taking out a common algebraic factor [(ACMNA230)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&year=11761&elaborations=true&cd=ACMNA230).
+
+{{% /details %}}
+
 ## Introduction
 
 Until now, we focused on expanding brackets and revealing the polynomials they are representing. We can also find the combination of factors that represent a polynomial -- this is called *factorising*. In this lesson, we will learn:
   - The definition of factorisation.
   - How to factorise a polynomial by finding the common factor.
 
-### Links to Australian Curriculum
-
-  - Mathematics Year 8
-    - Factorise algebraic expressions by identifying numerical factors [(ACMNA191)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&strand=Measurement+and+Geometry&strand=Statistics+and+Probability&capability=ignore&priority=ignore&year=11759&elaborations=true&cd=ACMNA191&searchTerm=ACMNA191#dimension-content).
-  - Mathematics Year 10
-    - Factorise algebraic expressions by taking out a common algebraic factor [(ACMNA230)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&year=11761&elaborations=true&cd=ACMNA230).
 
 ## Factors and Factorisation
 

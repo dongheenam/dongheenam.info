@@ -27,17 +27,19 @@ menu:
 weight: 13
 ---
 
+{{% details title="Links to Australian Curriculum" %}}
+
+- Mathematics Year 10A
+  - Define rational and irrational numbers and perform operations with surds and fractional indices [(ACMNA264)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&year=11762&elaborations=true&cd=ACMNA264&searchTerm=ACMNA264#dimension-content).
+
+{{% /details %}}
+
 ## Introduction
 
 For the rest of the section, we will investigate the most familiar type of irrational numbers -- the square roots. As always, let's start from what we know about square roots first. In this lesson, we will learn:
 
   - the definition and basic properties of square roots.
   - how to properly remove the root symbol.
-
-### Links to Australian Curriculum
-
-- Mathematics Year 10A
-  - Define rational and irrational numbers and perform operations with surds and fractional indices [(ACMNA264)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&year=11762&elaborations=true&cd=ACMNA264&searchTerm=ACMNA264#dimension-content).
 
 
 ## Square Roots
