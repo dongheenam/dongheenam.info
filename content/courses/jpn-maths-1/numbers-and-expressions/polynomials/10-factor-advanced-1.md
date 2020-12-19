@@ -22,7 +22,6 @@ menu:
     name: "Advanced Factorising 1"
     weight: 20
 
-# previous/next pager order (if `docs_section_pager` enabled in `params.toml`)
 weight: 20
 ---
 

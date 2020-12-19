@@ -24,7 +24,6 @@ menu:
     name: Removing Square Roots 2
     weight: 15
 
-# previous/next pager order (if `docs_section_pager` enabled in `params.toml`)
 weight: 15
 ---
 

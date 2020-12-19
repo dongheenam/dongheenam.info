@@ -23,7 +23,6 @@ menu:
     name: Terms and Polynomials
     weight: 11
 
-# previous/next pager order (if `docs_section_pager` enabled in `params.toml`)
 weight: 11
 ---
 

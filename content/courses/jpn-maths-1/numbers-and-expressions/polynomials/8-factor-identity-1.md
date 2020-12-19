@@ -25,7 +25,6 @@ menu:
     name: Factorising with Identities 1
     weight: 18
 
-# previous/next pager order (if `docs_section_pager` enabled in `params.toml`)
 weight: 18
 ---
 

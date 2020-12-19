@@ -21,7 +21,6 @@ menu:
     name: "✏️ Review 1"
     weight: 16
 
-# previous/next pager order (if `docs_section_pager` enabled in `params.toml`)
 weight: 16
 ---
 

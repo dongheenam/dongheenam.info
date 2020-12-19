@@ -16,6 +16,7 @@ tags:
   - square root
   - polynomial identity
   - fraction
+  - algebra
   - Year 10A
 
 menu:
@@ -24,8 +25,7 @@ menu:
     name: Expressions with Square Roots 1
     weight: 16
 
-# previous/next pager order (if `docs_section_pager` enabled in `params.toml`)
-weight: 26
+weight: 16
 ---
 
 {{% details title="Getting Ready" %}}
@@ -320,7 +320,7 @@ $\phantom{(1)}$ $=\dfrac{\sqrt{3}+1}{2}$<br>
 
 {{% /details %}}
 
-2. When $x=\dfrac{\sqrt{5}+\sqrt{3}}{\sqrt{5}-\sqrt{3}}$ and $y=\dfrac{\sqrt{5}-\sqrt{3}}{\sqrt{5}+\sqrt{3}}$, calculate
+2. When $x=\dfrac{\sqrt{5}+\sqrt{3}}{\sqrt{5}-\sqrt{3}}$ and $y=\dfrac{\sqrt{5}-\sqrt{3}}{\sqrt{5}+\sqrt{3}}$, calculate {{% mn ref2 refs %}}From Juntendo Univ.{{% /mn %}}
     1. $x^2+y^2$
     2. $x^3+y^3$
     3. $x^3-y^3$

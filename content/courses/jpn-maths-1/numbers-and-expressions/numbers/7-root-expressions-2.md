@@ -16,6 +16,7 @@ tags:
   - square root
   - polynomial identity
   - fraction
+  - algebra
   - Year 10A
 
 menu:
@@ -24,8 +25,7 @@ menu:
     name: Expressions with Square Roots 2
     weight: 17
 
-# previous/next pager order (if `docs_section_pager` enabled in `params.toml`)
-weight: 27
+weight: 17
 ---
 
 ## Introduction

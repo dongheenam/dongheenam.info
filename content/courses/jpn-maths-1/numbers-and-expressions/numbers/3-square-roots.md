@@ -23,7 +23,6 @@ menu:
     name: Square Roots
     weight: 13
 
-# previous/next pager order (if `docs_section_pager` enabled in `params.toml`)
 weight: 13
 ---
 
