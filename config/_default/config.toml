@@ -5,6 +5,9 @@ baseURL = "https://www.dongheenam.info/"
 languageCode = "en-au"
 theme = "dnaminfo-theme"
 
+# set timeout to 2 minutes
+timeout = 120000
+
 # site infos
 [params]
   author = "Donghee Nam"
