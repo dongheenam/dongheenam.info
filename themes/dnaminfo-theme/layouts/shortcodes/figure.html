@@ -4,7 +4,7 @@
     %}} 
 */}}
 {{- $img := resources.Get (.Get "src") -}}
-<figure {{ with (.Get "style") }} class="{{ . }}"{{ end }}{{ with (.Get "style") }} style="{{ . }}"{{ end }}>
+<figure {{ with (.Get "class") }} class="{{ . }}"{{ end }}{{ with (.Get "style") }} style="{{ . }}"{{ end }}>
 {{- if (.Get "caption") -}}
 {{- $fig_id := .Get "id" | default (path.Base $img.RelPermalink) -}}
 <label for="fig-{{ $fig_id }}" class="margin-toggle toggle-with-word">caption</label>
@@ -23,7 +23,8 @@
     <a href='{{ $img.RelPermalink }}'><img src='{{ $img.RelPermalink }}' alt='{{ .Get "alt" }}' /></a>
   {{- else -}}
     {{- $alt_text := (.Get "alt" | default (.Get "caption") | default "") -}}
-    {{- $img_options := dict "image" $img "alt" $alt_text -}}
+    {{- $loc := (.Get "loc" | default (.Get "class") | default "main")}}
+    {{- $img_options := dict "image" $img "alt" $alt_text "loc" $loc -}}
     {{- partial "resp-image" $img_options -}}
   {{- end -}}
 {{- end -}}

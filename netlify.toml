@@ -2,8 +2,5 @@
     publish = "public"
     command = "hugo --gc --minify --templateMetrics --baseURL=https://dongheenam.netlify.app/"
 
-[[plugins]]
-    package = "netlify-plugin-hugo-cache-resources"
-
 [context.production.environment]
     HUGO_VERSION = "0.78.2"

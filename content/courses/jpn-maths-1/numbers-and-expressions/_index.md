@@ -14,7 +14,8 @@ draft: false
 menu:
   math1:
     name: Numbers and Expressions
-    weight: 12
+    parent: Japanese Maths 1
+    weight: 11
   math1-numbers:
     name: 📙 Numbers and Expressions
     weight: 10
@@ -50,8 +51,8 @@ menu:
   - [Properties of Square Roots](numbers/square-roots/)
   - [Removing Square Roots 1](numbers/removing-roots-1)
   - [Removing Square Roots 2](numbers/removing-roots-2)
-  - [Evaluating Expressions with Square Roots 1](expressions-square-roots-1)
-  - [Evaluating Expressions with Square Roots 2](expressions-square-roots-2)
+  - [Evaluating Expressions with Square Roots 1](numbers/expressions-square-roots-1)
+  - [Evaluating Expressions with Square Roots 2](numbers/expressions-square-roots-2)
 - [Review Set 3](numbers/review-3/)
 
 ### Linear Inequalities

@@ -1,26 +1,32 @@
 {{/* Automatically resizes images and generates an srcset of images */}}
-{{- $small := "" -}}
-{{- $medium := "" -}}
-{{- $large := "" -}}
-{{- if ge .image.Width "600" -}}
-    {{- $small = .image.Resize "600x q100" -}}
-{{- if ge .image.Width "820" -}}
-    {{- $medium = .image.Resize "820x q100" -}}
-{{- if ge .image.Width "1250" -}}
-    {{- $large = .image.Resize "1250x q100" -}}
+{{- $tiny := "" -}}{{- $small := "" -}}{{- $medium := "" -}}{{- $large := "" -}}
+{{- if ge .image.Width "375" -}}
+    {{- $tiny = .image.Resize "375x q100" -}}
+{{- if ge .image.Width "630" -}}
+    {{- $small = .image.Resize "630x q100" -}}
+{{- if ge .image.Width "885" -}}
+    {{- $medium = .image.Resize "885x q100" -}}
+{{- if ge .image.Width "1275" -}}
+    {{- $large = .image.Resize "1275x q100" -}}
+{{- end -}}{{- end -}}{{- end -}}{{- end -}}
+{{- $sizes := "" -}}
+{{- if eq .loc "fullwidth" -}}
+    {{ $sizes = "(min-width: 1600px) 1275px, (min-width: 1200px) 885px, (min-width: 780px) 85vw, 95vw" }}
+{{- else if eq .loc "sidenote" -}}
+    {{ $sizes = "(min-width: 1600px) 375px, (min-width: 1200px) 225px, (min-width: 780px) 85vw, 95vw" }}
+{{- else -}}
+    {{ $sizes = "(min-width: 1600px) 825px, (min-width: 1200px) 630px, (min-width: 780px) 85vw, 95vw" }}
 {{- end -}}
-{{- end -}}
-{{- end -}}
-{{ $sizes := .sizes | default "(min-width: 1600px) 75vw, 100vw" }}
 {{- if not .nolink -}}<a href="{{ .image.RelPermalink }}">{{- end -}}
-<img class="{{ .class }}" width="100%" height="auto"
+<img class="{{ .class }}" style="{{ .style }}" width="100%" height="auto"
     alt="{{ .alt }}" loading="lazy"
     sizes="{{ $sizes }}"
     src="{{ .image.RelPermalink }}"
     srcset="
-    {{- with $small }}{{ .RelPermalink }} 600w{{ end -}}
-    {{- with $medium -}}, {{ .RelPermalink }} 820w{{ end -}}
-    {{- with $large -}}, {{ .RelPermalink }} 1250w{{ end -}}
+    {{- with $tiny }}{{ .RelPermalink }} 375w{{ end -}}
+    {{- with $small }},{{ .RelPermalink }} 630w{{ end -}}
+    {{- with $medium -}}, {{ .RelPermalink }} 885w{{ end -}}
+    {{- with $large -}}, {{ .RelPermalink }} 1275w{{ end -}}
     "
 />
 {{- if not .nolink -}}</a>{{- end -}}

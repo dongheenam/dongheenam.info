@@ -8,7 +8,7 @@ menu:
     weight: 12
   math1-numbers:
     name: Real Numbers
-    weight: 30
+    weight: 20
 
 toc: false
 type: docs

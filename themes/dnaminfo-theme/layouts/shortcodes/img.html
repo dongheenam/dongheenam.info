@@ -2,13 +2,13 @@
     {{% img src="fig-link" alt="alt-text" %}} 
 */}}
 {{- if in (.Get "src") "http" -}}
-  <a href='{{ .Get "src" }}'><img src='{{ .Get "src" }}' alt='{{ .Get "alt" }}' width="100%" height="auto" /></a>
+  <a href='{{ .Get "src" }}'><img{{with (.Get "class") }} class="{{ . }}"{{ end }}{{with (.Get "style") }} style="{{ . }}"{{ end }} src='{{ .Get "src" }}' alt='{{ .Get "alt" }}' width="100%" height="auto" /></a>
 {{- else -}}
   {{- $img := resources.Get (.Get "src") -}}
   {{- if in $img.RelPermalink "svg" -}}
-    <a href='{{ $img.RelPermalink }}'><img src='{{ $img.RelPermalink }}' alt='{{ .Get "alt" }}' width="100%" height="auto" /></a>
+    <a href='{{ $img.RelPermalink }}'><img{{with (.Get "class") }} class="{{ . }}"{{ end }}{{with (.Get "style") }} style="{{ . }}"{{ end }} src='{{ $img.RelPermalink }}' alt='{{ .Get "alt" }}' width="100%" height="auto" /></a>
   {{- else -}}
-    {{- $img_options := dict "image" $img "alt" (.Get "alt") -}}
+    {{- $img_options := dict "image" $img "alt" (.Get "alt") "class" (.Get "class") "style" (.Get "style") "loc" (.Get "loc") -}}
     {{- partial "resp-image" $img_options -}}
   {{- end -}}
 {{- end -}}

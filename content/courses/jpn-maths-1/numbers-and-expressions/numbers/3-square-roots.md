@@ -44,7 +44,7 @@ For the rest of the section, we will investigate the most familiar type of irrat
 ## Square Roots
 
 {{% mn pyth fig %}}
-{{% img src="courses/jpn-maths-1/numbers-and-expressions/num-pythagoras.jpg" alt="Drawing of Pythagoras." %}}
+{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/num-pythagoras.jpg" alt="Drawing of Pythagoras." %}}
 Drawing of Pythagoras. Image by [Raphael](https://commons.wikimedia.org/wiki/File:Pythagoras_with_tablet_of_ratios.jpg) via Wikimedia Commons.
 {{% /mn %}}
 The definition of square roots comes from this question: what is the number whose square equals $2$? Pythagoras, the Ancient Greek mathematician famous for Pythagoras' Law, and his students named this number the *square root of two*. They desperately tried to find a fraction that equals this mysterious number because they believed every single number can be expressed as a ratio of two natural numbers. Of course, we know this is impossible because $\sqrt{2}$ is [irrational](../types-of-numbers/#decimal-representation-of-numbers). Legends say they threw the student who found this number into the ocean, after they realised there are no ratios that equal $\sqrt{2}$!

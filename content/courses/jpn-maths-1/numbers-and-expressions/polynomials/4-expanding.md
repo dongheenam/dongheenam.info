@@ -70,6 +70,7 @@ So how do we prove an identity? The most straightforward way is to manipulate th
 
 Here are the some of the useful identities for expanding brackets. Note that the results are all quadratic polynomials. That is why they are called, well, *quadratic* identities.
 
+{{% box %}}
 {{% note Theorem %}}
 1. Identity 1: Perfect squares
 
@@ -88,6 +89,8 @@ $$ (a+b)(a-b) = a^2 - b^2. \tag{2} $$
   (x+a)(x+b) &= x^2 + (a+b)x + ab, \tag{3-1} \\\\
   (ax+b)(cx+d) &= acx^2 + (ad+bc)x + bd. \tag{3-2}
 \end{align}
+
+{{% /box %}}
 
 {{% details title="Proofs" %}}
 We will expand the left hand sides to see if we arrive on the other side. Once we get to the other side, put a little box symbol{{% sn box %}}Mathematicians often use a box symbol $\Box$ to indicate the end of a proof. Pretty cool, isn't it!{{% /sn %}} to indicate the proof is finished!
@@ -190,6 +193,7 @@ Try [Practice Questions](#practice-questions) 1 and 2 before moving on.
 
 This is another set of identities that involve cubic polynomials. They are in fact a part of the Mathematics II curriculum but we will put them together with quadratic identities. They are not that much more difficult!
 
+{{% box %}}
 {{% note Theorem %}}
 
 4. Identity 4: Perfect cubes
@@ -205,6 +209,8 @@ This is another set of identities that involve cubic polynomials. They are in fa
   (a\hl{+}b)(a\hl{-}ab+b^2) &= a^3 \hl{+} b^3, \tag{5-1} \\\\
   (a\hl{-}b)(a\hl{+}ab+b^2) &= a^3 \hl{-} b^3. \tag{5-2}
 \end{align}
+
+{{% /box %}}
 
 {{% details title="Proofs" %}}
 

@@ -212,10 +212,10 @@ $$ 1 \times [ 2 + \\{ 3 \times ( 4 + 5 ) \\} ], $$
 
 make sure you remove the *innermost* bracket first. For this example, you calculate $(...)$ first, then $\\{...\\}$, and finally $[...]$.
 \begin{align}
-  &1 \times [ 2 + \{ 3 \times \red{( 4 + 5 )} \} ] \\
-  &= 1 \times \{2 + \red{(3 \times 9)} \} \\
-  &= 1 \times \red{(2 + 27)} \\
-  &= 1 \times 29 \\
+  &1 \times [ 2 + \\{ 3 \times \hl{( 4 + 5 )} \\} ] \\\\
+  &= 1 \times \\{2 + \hl{(3 \times 9)} \\} \\\\
+  &= 1 \times \hl{(2 + 27)} \\\\
+  &= 1 \times 29 \\\\
   &= 29.
 \end{align}
 

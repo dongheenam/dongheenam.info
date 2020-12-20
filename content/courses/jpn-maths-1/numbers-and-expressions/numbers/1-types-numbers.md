@@ -92,6 +92,8 @@ Integers are closed under addition, multiplication, and *subtraction*.
 {{% details title="Why Z?" %}}
 While the symbol for natural numbers, $\mathbb{N}$, is pretty straightforward, $\mathbb{Z}$ for integers is not as obvious. This symbol comes from the German word *Zahlen*, which means *numbers*. In fact, the popular language for mathematics and physics was Latin originally (*vinculum*, for example) as well as Arabic (*algebra*, *algorithm*, ...), then moved to German. That's why we still see a lot of German influence in science and mathematics!
 
+<p></p>
+
 {{% /details %}}
 
 
@@ -108,6 +110,8 @@ Any number in a form $\dfrac{a}{b}$, where $a$, $b$ are integers and $b$ is not 
 
 {{% details title="Q for ..." %}}
 Now you must be looking for a word that start with *Q* and has the meaning of ratio. While the symbol $\mathbb{Q}$ did come from a German word, the matching English word also starts with Q: *quotients*.
+
+<p></p>
 
 {{% /details %}}
 
@@ -211,11 +215,11 @@ The collection of rational numbers and finite and infinite decimals is called *r
 
 ### Converting fractions to decimals
 
-We could close up this lesson here, but there are a lot of overlapping part between rationals and decimals. For example, $1.0$ (decimal) is obviously the same as $1$ (natural), and $\frac{1}{2}$ (rational) is $0.5$ (decimal). In order to better classify the real numbers, we need to try converting decimals and rationals and finding some patterns. Here we are not going to spend too much time practising the conversion because you should have had a few exercises throughout high school. For example, {{% mn logdiv1 %}}{{% img src="courses/jpn-maths-1/numbers-and-expressions/num-longdiv_1.svg" alt="Long division workout for 1 divide 8." %}}{{% /mn %}}
+We could close up this lesson here, but there are a lot of overlapping part between rationals and decimals. For example, $1.0$ (decimal) is obviously the same as $1$ (natural), and $\frac{1}{2}$ (rational) is $0.5$ (decimal). In order to better classify the real numbers, we need to try converting decimals and rationals and finding some patterns. Here we are not going to spend too much time practising the conversion because you should have had a few exercises throughout high school. For example, {{% mn logdiv1 %}}{{% img src="courses/jpn-maths-1/numbers-and-expressions/num-longdiv_1.svg" alt="Long division workout for 1 divide 8." style="max-width: 50%" %}}{{% /mn %}}
 
 $$\dfrac{5}{8} = 5\div 8 = 0.625$$ and $$0.85 = \dfrac{\bcancel{85}^{13}}{\bcancel{100}^{20}} = \dfrac{13}{20}.$$
 
-For the example above, the division ends and you can express the fraction as a finite decimal. However, not all fractions behave this way -- the division never ends for some fractions! Have a look at the long division for $\dfrac{1}{6}$, for example. {{% mn logdiv2 %}}{{% img src="courses/jpn-maths-1/numbers-and-expressions/num-longdiv_2.svg" alt="Long division workout for 1 divide 6." %}}{{% /mn %}}
+For the example above, the division ends and you can express the fraction as a finite decimal. However, not all fractions behave this way -- the division never ends for some fractions! Have a look at the long division for $\dfrac{1}{6}$, for example. {{% mn logdiv2 %}}{{% img src="courses/jpn-maths-1/numbers-and-expressions/num-longdiv_2.svg" alt="Long division workout for 1 divide 6." style="max-width: 50%" %}}{{% /mn %}}
 
 We get $$\dfrac{1}{6} = 0.1\dot{6}. $$ 
 
