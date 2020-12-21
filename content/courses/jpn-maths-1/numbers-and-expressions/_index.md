@@ -60,7 +60,8 @@ menu:
 - Introduction
   - [Properties of Inequalities](inequalities/properties)
 - Solving Inequalities
-  - [Solving Linear Inequalities](inequalities/solving_inequalities/)
+  - [Solving Linear Inequalities](inequalities/solving-inequalities/)
+  - [Simultaneous Inequalities](inequalities/simultaneous-inequalities/)
   - [Finding Integer Solutions for Inequalities](inequalities/integer-solutions)
   - [Applications of Linear Inequalities]
 - Equations and Inequalities with Absolute Values

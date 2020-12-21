@@ -18,7 +18,7 @@ tags:
 
 menu:
   math1-numbers:
-    parent: Inequalities
+    parent: Linear Inequalities
     name: Solving Inequalities
     weight: 12
 

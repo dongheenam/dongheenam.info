@@ -17,7 +17,7 @@ tags:
 
 menu:
   math1-numbers:
-    parent: Inequalities
+    parent: Linear Inequalities
     name: Simultaneous Inequalities
     weight: 13
 
