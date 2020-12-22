@@ -4,7 +4,7 @@ slug: "removing-roots-1"
 description: How to rationalise the denominator of a fraction.
 
 date: 2020-08-04 08:53:19.702 +1000
-lastMod: 2020-12-18 08:20:05.895 +1100
+lastMod: 2020-12-22 19:07:21.314 +1100
 
 type: docs
 toc: true
@@ -248,5 +248,54 @@ $(6)$ Rationalising the denominator again
   &= \dfrac{2\sqrt{6} + 2\sqrt{15}}{6} \\\\
   &= \boldsymbol{ \dfrac{\sqrt{6}+\sqrt{15}}{2} . }
 \end{align}
+
+{{% /details %}}
+
+2. Simplify the following expressions. {{% mn ref2 refs %}}a. From Daido Univ.<br>b. From Jichi Medical Univ.<br>c. From Kochi Univ. of Tech.{{% /mn %}}
+    1. $\dfrac{8}{3+\sqrt{5}} + \dfrac{9}{\sqrt{7}+2}$
+    2. $\dfrac{1}{2}\left( \dfrac{2-\sqrt{3}}{2+\sqrt{3}} + \dfrac{2+\sqrt{3}}{2-\sqrt{3}}\right)$
+    3. $\dfrac{\big(\sqrt{11}-\sqrt{2}+3\big)\big(\sqrt{11}+\sqrt{2}-3\big)}{3\sqrt{2}}$
+
+{{% details title="Answer" %}}
+
+2. 
+    1. $3\sqrt{7}-2\sqrt{5}$
+    2. $7$
+    3. $2$
+
+{{% note solution %}}
+
+\begin{align}
+  \text{a.} \quad & \dfrac{8}{3+\sqrt{5}} + \dfrac{9}{\sqrt{7}+2} \\\\
+  &= \dfrac{8\big(3-\sqrt{5}\big)}{\big(3+\sqrt{5}\big)\big(3-\sqrt{5}\big)} + \dfrac{9\big(\sqrt{7}-2\big)}{\big(\sqrt{7}+2\big)\big(\sqrt{7}-2\big)} \\\\
+  &= \dfrac{8\big(3-\sqrt{5}\big)}{9 - 5} + \dfrac{9\big(\sqrt{7}-2\big)}{7 - 4} \\\\
+  &= 2\big(3-\sqrt{5}\big) + 3\big(\sqrt{7}-2\big) \\\\
+  &= 6 - 2\sqrt{5} + 3\sqrt{7} - 6 \\\\
+  &= \boldsymbol{ 3\sqrt{7}-2\sqrt{5} . }
+\end{align}
+
+{{% mn q2b tips %}}
+$(1)$ $(A+B)^2 + (A-B)^2$ $=2(A^2 + B^2)$, where $A=2$ and $B=\sqrt{3}$.
+{{% /mn %}}
+\begin{align}
+  \text{b.} \quad & \dfrac{1}{2}\left( \dfrac{2-\sqrt{3}}{2+\sqrt{3}} + \dfrac{2+\sqrt{3}}{2-\sqrt{3}}\right) \\\\
+  &= \dfrac{1}{2}\left\\{ \dfrac{\big(2-\sqrt{3}\big)^2 + \big(2+\sqrt{3}\big)^2}{\big(2+\sqrt{3}\big)\big(2-\sqrt{3}\big)}\right\\} \\\\
+  &= \dfrac{1}{2}\left\\{ \dfrac{2(4 + 3)}{4 - 3}\right\\} \tag{1} \\\\
+  &= \dfrac{1}{2} \times 14 \\\\[0.5em]
+  &= \boldsymbol{ 7 }.
+\end{align}
+
+{{% mn q2c tips %}}
+$(2)$ $(A+B)(A-B)$ $=A^2-B^2$, where $A=\sqrt{11}$ and $B=(3-\sqrt{2})$.
+{{% /mn %}}
+\begin{align}
+  \text{c.} \quad & \dfrac{\big(\sqrt{11}-\sqrt{2}+3\big)\big(\sqrt{11}+\sqrt{2}-3\big)}{3\sqrt{2}} \\\\
+  &= \dfrac{\big\\{ \sqrt{11} + \big(3-\sqrt{2}\big) \big\\}\big\\{ \sqrt{11} - \big(3-\sqrt{2}\big) \big\\}}{3\sqrt{2}} \\\\
+  &= \dfrac{ 11 - \big(3-\sqrt{2}\big)^2}{3\sqrt{2}} \tag{2} \\\\
+  &= \dfrac{ 11 - 9 + 6\sqrt{2} - 2}{3\sqrt{2}} \\\\
+  &= \dfrac{ 6\sqrt{2} }{3\sqrt{2}} \\\\[0.5em]
+  &= \boldsymbol{ 2 }.
+\end{align}
+
 
 {{% /details %}}

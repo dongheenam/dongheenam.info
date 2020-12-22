@@ -187,7 +187,7 @@ and from the second inequality,
 {{% /details %}}
 
 3. The smallest possible integer $x$ that satisfies the inequality $$ 3x+1>2a $$ is $4$. Find all possible values of $a$, if $a$ is also an integer.
-4. If there are exactly five integer solutions to the simultaneous inequality (in terms of $x$) $$ \\begin{cases} 6x-4>3x+5, \\\\ 2x-1\\le x+a, \\end{cases} $$ what is the range of $a$?
+4. If there are exactly five integer solutions to the simultaneous inequality (in terms of $x$) $$ \\begin{cases} 6x-4>3x+5, \\\\ 2x-1\\le x+a, \\end{cases} $$ what is the range of $a$?{{% mn ref4 refs %}}From Setsunan Univ.{{% /mn %}}
 
 {{% details title="Answer" %}}
 
@@ -205,7 +205,7 @@ and from the second inequality,
 \end{align}
 
 {{% mn q3 %}}
-{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-int-q3.png" %}} The diagram representing the range of $\dfrac{3a-2}{4}$.
+{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-int-q3.png" %}} The diagram representing the range of $\dfrac{2a-1}{3}$.
 {{% /mn %}} Because the smallest integer solution is $4$, the range of $\dfrac{2a-1}{3}$ should be $$ 3 \le \dfrac{2a-1}{3} \lt 4. $$ Thus,
 
 \begin{align}

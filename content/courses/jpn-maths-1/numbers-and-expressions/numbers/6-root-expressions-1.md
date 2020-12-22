@@ -320,13 +320,41 @@ $\phantom{(1)}$ $=\dfrac{\sqrt{3}+1}{2}$<br>
 
 {{% /details %}}
 
-2. When $x=\dfrac{\sqrt{5}+\sqrt{3}}{\sqrt{5}-\sqrt{3}}$ and $y=\dfrac{\sqrt{5}-\sqrt{3}}{\sqrt{5}+\sqrt{3}}$, calculate {{% mn ref2 refs %}}From Juntendo Univ.{{% /mn %}}
+2. When the decimal part of $4+\sqrt{15}$ is $x$, find the value of $x^2+6x+10$.{{% mn ref2 refs %}}From Kurashiki Univ. of Sci. and the Arts.{{% /mn %}}
+
+{{% details title="Answer" %}}
+2. 
+
+{{% note solution %}}
+Because $\sqrt{9}<\sqrt{15}<\sqrt{16}$,
+\begin{align}
+  & \sqrt{9}<\sqrt{15}<\sqrt{16} \\\\
+  \implies & 3 < \sqrt{15} < 4 \\\\
+  \implies & 7 < 4+\sqrt{15} < 8.
+\end{align}
+Hence the integer part of $4+\sqrt{15}$ is $7$, and $$ x = 4+\sqrt{15} - 7 = \sqrt{15} - 3. $$
+
+Note $x + 3 = \sqrt{15}$. Then,
+
+{{% mn q2 tips %}}
+$(1)$ Complete the square, so that we can use $x + 3 = \sqrt{15}$.
+{{% /mn %}}
+\begin{align}
+  x^2+6x+10 &= x^2 + 6x + 9 + 1 \\\\
+  &= (x+3)^2 + 1 \tag{1} \\\\
+  &= \sqrt{15}^2 + 1 \\\\
+  &= \boldsymbol{ 16 }.
+\end{align}
+
+{{% /details %}}
+
+3. When $x=\dfrac{\sqrt{5}+\sqrt{3}}{\sqrt{5}-\sqrt{3}}$ and $y=\dfrac{\sqrt{5}-\sqrt{3}}{\sqrt{5}+\sqrt{3}}$, calculate {{% mn ref3 refs %}}From Juntendo Univ.{{% /mn %}}
     1. $x^2+y^2$
     2. $x^3+y^3$
     3. $x^3-y^3$
 
 {{% details title="Answer" %}}
-2. 
+3. 
     1. $62$
     2. $488$
     3. $126\sqrt{15}$
@@ -383,13 +411,13 @@ Therefore
 
 {{% /details %}}
 
-3. When $2x+\dfrac{1}{2x} = \sqrt{7}$, evaluate the following.
+4. When $2x+\dfrac{1}{2x} = \sqrt{7}$, evaluate the following.
     1. $4x^2 + \dfrac{1}{4x^2}$
     2. $8x^3 + \dfrac{1}{8x^3}$
     3. $64x^6 + \dfrac{1}{64x^6}$
 
 {{% details title="Answer" %}}
-3. 
+4. 
     1. $5$
     2. $4\sqrt{7}$
     3. $110$

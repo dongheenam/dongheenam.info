@@ -4,7 +4,7 @@ slug: removing-roots-2
 description: How to remove double square roots. How to evaluate the square root of a polynomial expression.
 
 date: 2020-08-04 08:53:19.702 +1000
-lastMod: 2020-12-18 13:24:43.675 +1100
+lastMod: 2020-12-22 19:07:21.314 +1100
 
 type: docs
 toc: true
@@ -232,23 +232,63 @@ $(2)$ Rationalising the denominator
 
 {{% /details %}}
 
-2. Evaluate the value of $\sqrt{(a+2)^2}+\sqrt{a^2}$, for the following conditions.
+2. Simplify the following expressions. {{% mn ref2 refs %}}a. From Tokyo Univ. of Marine Sci. and Tech.<br>b. From Kokugakuin Univ.{{% /mn %}}
+    1. $\sqrt{11+4\sqrt{6}}$
+    2. $\dfrac{1}{\sqrt{4-\sqrt{15}}}$
+
+{{% details title="Answer" %}}
+
+2. 
+    1. $2\sqrt{2} + \sqrt{3}$
+    2. $\dfrac{\sqrt{10} - \sqrt{6}}{2}$
+
+{{% note solution %}}
+
+{{% mn q2a tips %}}
+$(1)$ $4\sqrt{6}$ $=2\cdot 2\sqrt{6}$ $=2\cdot\sqrt{2^2\cdot 6}$ $=2\sqrt{24}$.
+{{% /mn %}}
+\begin{align}
+  \text{a.} \quad \textstyle\sqrt{11+4\sqrt{6}} &= \textstyle\sqrt{11 + \hl{2\sqrt{24}}} \tag{1} \\\\
+  &= \textstyle\sqrt{3 + 8 + 2\sqrt{3\cdot 8}} \\\\
+  &= \sqrt{3} + \sqrt{8} \\\\
+  &= \boldsymbol{ \sqrt{3} + 2\sqrt{2} }.
+\end{align}
+
+{{% mn q2b tips %}}
+$(2)$ Multiplying the numerator and denominator by $\sqrt{2}$ to create $2\sqrt{ab}$.<br><br>
+$(3)$ $\sqrt{3} - \sqrt{5}$ is wrong!<br><br>
+$(4)$ Rationalising the denominator.
+{{% /mn %}}
+\begin{align}
+  \text{b.} \quad \dfrac{1}{\sqrt{4-\sqrt{15}}} &= \dfrac{\hl{\sqrt{2}}}{\hl{\sqrt{2}}\sqrt{4-\sqrt{15}}} \tag{2} \\\\
+  &= \dfrac{\sqrt{2}}{\sqrt{8 - 2\sqrt{15}}} \\\\
+  &= \dfrac{\sqrt{2}}{\sqrt{3 + 5 - 2\sqrt{3\cdot 5}}} \\\\
+  &= \dfrac{\sqrt{2}}{\sqrt{5} - \sqrt{3}} \tag{3} \\\\
+  &= \dfrac{\sqrt{2}\big(\sqrt{5} + \sqrt{3}\big)}{\big(\sqrt{5} - \sqrt{3}\big)\big(\sqrt{5} + \sqrt{3}\big)} \tag{4} \\\\
+  &= \dfrac{\sqrt{10} - \sqrt{6}}{5 - 3} \\\\
+  &= \boldsymbol{ \dfrac{\sqrt{10} - \sqrt{6}}{2} }.
+\end{align}
+
+
+{{% /details %}}
+
+3. Evaluate the value of $\sqrt{(a+2)^2}+\sqrt{a^2}$, for the following conditions.
     1. $a\ge 0$
     2. $-2\le a \lt 0$
     3. $a\lt -2$
 
-3. When $-2\lt y\lt \dfrac{3}{4}$, simplify $\sqrt{y^2+4y+4}-\sqrt{16y^2-24y+9}$. {{% mn ref3 refs %}}From Tohoku Inst. of Tech.{{% /mn %}}
+4. When $-2\lt y\lt \dfrac{3}{4}$, simplify $\sqrt{y^2+4y+4}-\sqrt{16y^2-24y+9}$. {{% mn ref3 refs %}}From Tohoku Inst. of Tech.{{% /mn %}}
 
 {{% details title="Answer" %}}
-2. 
+3. 
     1. $2a + 2$
     2. $2$
     3. $-2a - 2$
-3. $5y - 1$
+4. $5y - 1$
 
 {{% note solution %}}
 
-2. 
+3. 
 
 $\text{a.} \quad$ When $a\ge 0$, $a+2\ge 0$, hence
 
@@ -272,9 +312,9 @@ $\text{c.} \quad$ When $a\lt -2$, $a+2\lt 0$, hence
   &= \boldsymbol{ -2a - 2. }
 \end{align}
 
----
+<br>
 
-3. 
+4. 
 
 {{% mn q3 tips %}}
 $(1)$ $-2\lt y\lt \dfrac{3}{4}$, so $y+2\gt 0$ but $4y-3\lt 0$.
