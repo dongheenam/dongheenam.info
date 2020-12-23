@@ -1,0 +1,24 @@
+// Media queries
+$sdesktop: 1600px;
+$lmobile: 1200px;
+$smobile: 768px;
+
+// Widths
+$ldesktop-width: 55rem;
+$ldesktop-snwidth: 25rem;
+$ldesktop-fullwidth: 85rem;
+$sdesktop-width: 42rem;
+$sdesktop-snwidth: 15rem;
+$sdesktop-fullwidth: 59rem;
+
+// Set width consistent with tufte elements
+@mixin set-tufte-width {
+  width: $ldesktop-width;
+
+  @media (max-width: $sdesktop) {
+    width: $sdesktop-width;
+  }
+  @media screen and (max-width: $lmobile) {
+    width: 100%;
+  }
+}

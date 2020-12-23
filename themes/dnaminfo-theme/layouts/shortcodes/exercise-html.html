@@ -1,0 +1,107 @@
+<div class="qna-box" id="qna-setting">
+  <div id="params">
+    {{ .Inner | safeHTML }}
+    <label for="nq">Number of questions [1-10]:</label>
+    <input type="number" id="nq" min="1" max="10" value="5" />
+  </div>
+  <button id="gen" onclick="genQs();">Generate</button>
+  <button id="reset" onclick="resetQs();">Reset</button>
+</div>
+
+<div class="qna-box" id="qna-container">
+  <div id="instruction">
+    <em>Click the question to reveal the answer.</em>
+    <div id="answer-control">
+      <button id="reveal-all" onclick="openCloseDetails(true);">
+        Reveal All Answers
+      </button>
+      <button id="hide-all" onclick="openCloseDetails(false);">
+        Hide All Answers
+      </button>
+    </div>
+  </div>
+  <p id="instructions">Questions will appear here.</p>
+  <ol id="questions"></ol>
+</div>
+
+<script>
+  function chked(id) {
+    return document.getElementById(id).checked;
+  }
+  function arange(min, max) {
+    const array = [];
+    for (var i = min; i < max + 1; i++) {
+      array.push(i);
+    }
+    return array;
+  }
+  function choice(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
+  }
+  function num(n, op = "") {
+    let out =
+      (/s/.test(op) && n > 0 ? "+" : "") + (/c/.test(op) && n == 1 ? "" : n);
+    return /b/.test(op) && n < 0 ? "(" + out + ")" : out;
+  }
+  async function render(q, a, o) {
+    const qna = document.createElement("li");
+    const qP = MathJax.tex2chtmlPromise(q, o);
+    const aP = MathJax.tex2chtmlPromise(a, o);
+    let ns = await Promise.all([qP, aP]);
+    qna.innerHTML = `<details><summary>${ns[0].outerHTML}</summary>${ns[1].outerHTML}</details>`;
+    return qna;
+  }
+  function resetQs() {
+    const qbox = document.getElementById("questions");
+    const qinst = document.getElementById("instructions");
+    qinst.innerHTML = "Questions will appear here.";
+    qbox.innerHTML = "";
+  }
+  function openCloseDetails(newState) {
+    // Find all details
+    const details = document
+      .getElementById("questions")
+      .getElementsByTagName("details");
+    [...details].forEach((d) => {
+      d.open = newState;
+    });
+  }
+  class Frac {
+    constructor(n, d) {
+      this.n = n;
+      this.d = d;
+    }
+    reduce() {
+      function gcd(a, b) {
+        return b ? gcd(b, a % b) : a;
+      }
+      let n = this.n;
+      let d = this.d;
+      return new Frac(n / gcd(n, d), d / gcd(n, d));
+    }
+    add(f2) {
+      return new Frac(this.n * f2.d + this.d * f2.n, this.d * f2.d).reduce();
+    }
+    mult(f2) {
+      return new Frac(this.n * f2.n, this.d * f2.d).reduce();
+    }
+    reci() {
+      return new Frac(this.d, this.n);
+    }
+    tex(op="") {
+      let isNeg = this.n * this.d < 0;
+      let wholeNum = this.n % this.d === 0;
+      let base = "";
+      if (wholeNum) {
+        base = `${this.n / this.d}`;
+      } else {
+        base = (
+          (isNeg ? "-" : "") +
+          `\\dfrac\{${Math.abs(this.n)}\}\{${Math.abs(this.d)}\}`
+        );
+      }
+      let out = (/s/.test(op) && !isNeg ? "+" : "") + (/c/.test(op) && base == "1" ? "" : base);
+      return /b/.test(op) && isNeg ? "(" + out + ")" : out;
+    }
+  }
+</script>
