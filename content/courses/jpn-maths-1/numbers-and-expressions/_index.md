@@ -63,7 +63,7 @@ menu:
   - [Solving Linear Inequalities](inequalities/solving-inequalities/)
   - [Simultaneous Inequalities](inequalities/simultaneous-inequalities/)
   - [Finding Integer Solutions for Inequalities](inequalities/integer-solutions)
-  - [Applications of Linear Inequalities]
+  - [Applications of Linear Inequalities](inequalities/applications)
 - Equations and Inequalities with Absolute Values
   - [Solving Equations with Absolute Values]
   - [Solving Inequalities with Absolute Values]
@@ -82,7 +82,7 @@ menu:
 | ├ Advanced Expanding | 9^, 10^ | |
 | ├ Factorising using Common Factor | 8, 10 | |
 | ├ Factorising with Polynomial Identities | 10, 10A | |
-| ├ Advanced Factorisation | | |
+| └ Advanced Factorisation | | |
 | **[Real Numbers](numbers/)** | | |
 | ├ Types of Numbers | 8, 10A | |
 | ├ Number Line and Absolute Value | 7^ | Spec3 |
