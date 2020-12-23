@@ -1,10 +1,11 @@
 @charset "UTF-8";
 
 @import "global";
-@import "navbar";
 @import "tufte";
-@import "pager";
 @import "shortcodes";
+@import "navbar";
+@import "pager";
+@import "frontpage";
 @import "other";
 
 @import "hljs";

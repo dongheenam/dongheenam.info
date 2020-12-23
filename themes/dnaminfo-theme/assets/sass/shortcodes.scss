@@ -1,3 +1,5 @@
+@import "variables";
+
 // Gallery for figures
 .gallery-container {
   display: grid;
@@ -19,7 +21,7 @@
 .box {
   border: 1.5px solid var(--hr-color);
   padding: 1rem 0.5rem 0 0.5rem;
-  width: 55rem;
+  @include set-tufte-width;
 
   p,
   hr,
@@ -33,16 +35,6 @@
 
   p:first-child {
     margin-top: 0;
-  }
-}
-@media (max-width: 1600px) {
-  .box {
-    width: 42rem;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .box {
-    width: 100%;
   }
 }
 

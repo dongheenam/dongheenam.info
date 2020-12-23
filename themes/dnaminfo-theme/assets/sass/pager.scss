@@ -1,6 +1,12 @@
+@import "variables";
+
 /* style for the bottom pager */
 .pager {
-  width: 55rem;
+  width: $ldesktop-width;
+
+  @media (max-width: 1600px) {
+    width: $sdesktop-width;
+  }
 
   display: flex;
   flex-direction: row;
@@ -53,13 +59,7 @@
   }
 }
 
-@media (max-width: 1600px) {
-  .pager {
-    width: 42rem;
-  }
-}
-
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: $lmobile) {
   .pager {
     width: 100%;
   }

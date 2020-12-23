@@ -1,104 +1,3 @@
-/* front page */
-.front-container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  min-height: calc(100vh - 8rem);
-
-  .front-title {
-    display: block;
-    background-color: rgb(178, 161, 118);
-    padding: 9rem 15% 3rem 15%;
-
-    font-family: "Exo", sans-serif;
-    font-weight: bold;
-    font-size: 4rem;
-    color: #fffff8;
-  }
-
-  .front-article {
-    flex-grow: 1;
-    width: 80%;
-    margin: auto;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-
-    .front-content {
-      width: 55%;
-
-      font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD",
-        "Book Antiqua", Georgia, serif;
-      font-size: 1.4rem;
-
-      h2 {
-        padding-top: 0.5em;
-        margin-bottom: 0.5em;
-
-        font-weight: normal;
-        font-style: italic;
-      }
-      p {
-        margin-bottom: 0.5em;
-      }
-    }
-
-    .profile-image {
-      width: calc(min(25%, 20rem));
-      height: 100%;
-      border-radius: 50%;
-    }
-  }
-}
-
-.dark-theme {
-  .front-title {
-    border-bottom: 2px solid var(--text-color);
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .front-container {
-    .front-title {
-      background-position: bottom center;
-
-      padding: 8rem 5% 2rem 5%;
-      font-size: 3rem;
-      text-align: center;
-    }
-
-    .front-article {
-      flex-direction: column-reverse;
-      width: 95%;
-
-      margin-top: 2rem;
-      margin-bottom: 5rem;
-
-      .profile-image {
-        width: calc(min(50%, 20rem));
-      }
-
-      .front-content {
-        width: 70%;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .front-container .front-article {
-    .front-content {
-      width: 100%;
-    }
-
-    .profile-image {
-      width: calc(min(75%, 20rem));
-    }
-  }
-}
-
 /* page footer */
 .footer {
   position: absolute;
@@ -135,5 +34,68 @@ mjx-container {
 
   .mathjax-highlight {
     color: var(--primary-color) !important;
+  }
+}
+
+/* Exercise pages */
+.qna-box {
+  @include set-tufte-width;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid var(--text-color);
+
+  #answer-control {
+    display: inline-block;
+  }
+
+  #params {
+    line-height: 1.75;
+  }
+
+  #instruction {
+    margin-bottom: 1.5rem;
+  }
+
+  input[type="number"] {
+    -webkit-appearance: none;
+    font-size: 0.85em;
+    padding: 0 0.5rem;
+    width: 4rem;
+    text-align: right;
+  }
+
+  input[type="checkbox"] {
+    margin: 0 0.5rem;
+    transform: scale(1.4);
+    vertical-align: middle;
+  }
+
+  button {
+    padding: 0 0.5rem;
+    background: var(--details-background);
+    border: 1px solid var(--text-color);
+    border-radius: 0.25rem;
+    cursor: pointer;
+
+    font-family: "Trebuchet MS", "Gill Sans", "Gill Sans MT", sans-serif;
+    font-size: 0.85em;
+    color: var(--text-color);
+  }
+
+  details {
+    vertical-align: text-top;
+
+    summary {
+      margin-bottom: 0.2em;
+      color: var(--text-color);
+      font-variant: normal;
+      font-size: 1.3rem;
+      font-weight: 400;
+
+      list-style: none;
+      &::-webkit-details-marker {
+        display: none;
+      }
+    }
   }
 }
