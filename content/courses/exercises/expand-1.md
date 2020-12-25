@@ -20,9 +20,9 @@ menu:
   exc:
     name: Expanding 1
     parent: Algebra
-    weight: 21
+    weight: 31
 
-weight: 21
+weight: 31
 ---
 
 In this exercise, you will practise how to multiply a linear polynomial by a number; for example, $$ 3(2x-4) = 6x - 12. $$

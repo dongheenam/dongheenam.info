@@ -153,7 +153,7 @@
   }
   function num(n, op = "") {
     let out =
-      (/s/.test(op) && n > 0 ? "+" : "") +
+      (/s/.test(op) && n >= 0 ? "+" : "") +
       (/c/.test(op) && n == 1 ? "" : n == -1 ? "-" : n);
     return /b/.test(op) && n < 0 ? "(" + out + ")" : out;
   }
@@ -218,6 +218,24 @@
     return [...new Set([...Object.keys(coeffs1), ...Object.keys(coeffs2)])]
       .map(parseFloat)
       .sort((a, b) => b - a);
+  }
+  function genCoeffs(order, generator, polyOrderEqualsGiven=false) {
+    let coeffs = Array(order+1);
+    
+    while (true) {
+      let nTerms = 0;
+      for (let i=0;i<order+1;i++) {
+        let temp = Array.isArray(generator) ? generator[i]() : generator();
+        coeffs[i] = temp;
+        if (temp != 0) {
+          nTerms++;
+        }
+      }
+      if (nTerms != 0 && (!polyOrderEqualsGiven || coeffs[0] != 0)) {
+        break;
+      }
+    }
+    return coeffs;
   }
   class Poly {
     constructor(coeffs, x = "x") {
@@ -315,7 +333,13 @@
         let op = "";
         op += (k !== 0 ? "c" : "");
         op += (out === "" ? "" : "s");
+        if (op1 !== "" && out === "") {
+          op = op1;
+        }
         out += printX(coeffs[k], this.x, k, op);
+      }
+      if (out === "") {
+        out = num(0, op1);
       }
       return out;
     }
