@@ -7,11 +7,10 @@
   <button id="gen" onclick="genQs();">Generate</button>
   <button id="reset" onclick="resetQs();">Reset</button>
 </div>
-
 <div class="qna-box" id="qna-container">
-  <div id="instruction">
+  <div id="answer-control">
     <em>Click the question to reveal the answer.</em>
-    <div id="answer-control">
+    <div id="answer-buttons">
       <button id="reveal-all" onclick="openCloseDetails(true);">
         Reveal All Answers
       </button>
@@ -23,7 +22,6 @@
   <p id="instructions">Questions will appear here.</p>
   <ol id="questions"></ol>
 </div>
-
 <script>
   function chked(id) {
     return document.getElementById(id).checked;
@@ -35,12 +33,17 @@
     }
     return array;
   }
-  function choice(arr) {
-    return arr[Math.floor(Math.random() * arr.length)];
+  function choice(arr, op = "") {
+    const arr2 = /z/.test(op) ? arr.filter((i) => i !== 0) : arr;
+    return arr2[Math.floor(Math.random() * arr2.length)];
+  }
+  function yn() {
+    return Math.random() > 0.5;
   }
   function num(n, op = "") {
     let out =
-      (/s/.test(op) && n > 0 ? "+" : "") + (/c/.test(op) && n == 1 ? "" : n);
+      (/s/.test(op) && n > 0 ? "+" : "") +
+      (/c/.test(op) && n == 1 ? "" : n == -1 ? "-" : n);
     return /b/.test(op) && n < 0 ? "(" + out + ")" : out;
   }
   async function render(q, a, o) {
@@ -58,7 +61,6 @@
     qbox.innerHTML = "";
   }
   function openCloseDetails(newState) {
-    // Find all details
     const details = document
       .getElementById("questions")
       .getElementsByTagName("details");
@@ -67,41 +69,255 @@
     });
   }
   class Frac {
-    constructor(n, d) {
+    constructor(n, d = 1) {
       this.n = n;
       this.d = d;
+    }
+    valueOf() {
+      return this.n / this.d;
     }
     reduce() {
       function gcd(a, b) {
         return b ? gcd(b, a % b) : a;
       }
-      let n = this.n;
-      let d = this.d;
-      return new Frac(n / gcd(n, d), d / gcd(n, d));
+      if (Number.isInteger(this.n) && Number.isInteger(this.d)) {
+        let n = this.n;
+        let d = this.d;
+        return new Frac(n / gcd(n, d), d / gcd(n, d));
+      } else {
+        return new Frac(this.n * 10, this.d * 10).reduce();
+      }
     }
-    add(f2) {
-      return new Frac(this.n * f2.d + this.d * f2.n, this.d * f2.d).reduce();
+    add(other) {
+      if (other.constructor === this.constructor) {
+        return new Frac(
+          this.n * other.d + this.d * other.n,
+          this.d * other.d
+        ).reduce();
+      } else {
+        return new Frac(this.n + other * this.d, this.d).reduce();
+      }
     }
-    mult(f2) {
-      return new Frac(this.n * f2.n, this.d * f2.d).reduce();
+    mult(other) {
+      if (other.constructor === this.constructor) {
+        return new Frac(this.n * other.n, this.d * other.d).reduce();
+      } else {
+        return new Frac(this.n * other, this.d).reduce();
+      }
     }
     reci() {
       return new Frac(this.d, this.n);
     }
-    tex(op="") {
-      let isNeg = this.n * this.d < 0;
+    sub(other) {
+      if (other.constructor === this.constructor) {
+        return this.add(other.mult(-1));
+      } else {
+        return this.add(-other);
+      }
+    }
+    div(other) {
+      if (other.constructor === this.constructor) {
+        return this.mult(other.reci());
+      } else {
+        return this.mult(new Frac(1, other));
+      }
+    }
+    pow(n) {
+      if (n < 0) {
+        return this.reci().pow(-n);
+      }
+      if (n === 0) {
+        return new Frac(1, 1);
+      } else if (n === 1) {
+        return this;
+      } else {
+        return this.mult(this.pow(n - 1));
+      }
+    }
+    tex(op = "") {
+      let isNeg = this.valueOf() < 0;
       let wholeNum = this.n % this.d === 0;
       let base = "";
       if (wholeNum) {
         base = `${this.n / this.d}`;
       } else {
-        base = (
+        base =
           (isNeg ? "-" : "") +
-          `\\dfrac\{${Math.abs(this.n)}\}\{${Math.abs(this.d)}\}`
+          `\\dfrac\{${Math.abs(this.n)}\}\{${Math.abs(this.d)}\}`;
+      }
+      let out =
+        (/s/.test(op) && !isNeg ? "+" : "") +
+        (/c/.test(op) ? (base == "1" ? "" : base == "-1" ? "-" : base) : base);
+      return /b/.test(op) && isNeg ? "(" + out + ")" : out;
+    }
+  }
+  function num(n, op = "") {
+    let out =
+      (/s/.test(op) && n > 0 ? "+" : "") +
+      (/c/.test(op) && n == 1 ? "" : n == -1 ? "-" : n);
+    return /b/.test(op) && n < 0 ? "(" + out + ")" : out;
+  }
+  function ifFrac(n, ifTrue, ifFalse) {
+    if (n) {
+      if (n.constructor === Frac.prototype.constructor) {
+        return ifTrue();
+      }
+    }
+    return ifFalse();
+  }
+  function printX(c, x, i, op = "") {
+    let cTex = ifFrac(
+      c,
+      () => c.tex(op),
+      () => num(c, op)
+    );
+    if (c == 0) {
+      return "";
+    } else if (i == 0) {
+      return `${cTex}`;
+    } else if (i == 1) {
+      return `${cTex}${x}`;
+    } else {
+      return `${cTex}${x}^${i}`;
+    }
+  }
+  function addTerms(t1, t2) {
+    return ifFrac(
+      t1,
+      () => t1.add(t2 ? t2 : 0),
+      () => {
+        return ifFrac(
+          t2,
+          () => t2.add(t1 ? t1 : 0),
+          () => (t1 ? t1 : 0) + (t2 ? t2 : 0)
         );
       }
-      let out = (/s/.test(op) && !isNeg ? "+" : "") + (/c/.test(op) && base == "1" ? "" : base);
-      return /b/.test(op) && isNeg ? "(" + out + ")" : out;
+    );
+  }
+  function multTerms(t1, t2) {
+    return ifFrac(
+      t1,
+      () => t1.mult(t2 ? t2 : 0),
+      () => {
+        return ifFrac(
+          t2,
+          () => t2.mult(t1 ? t1 : 0),
+          () => (t1 ? t1 : 0) * (t2 ? t2 : 0)
+        );
+      }
+    );
+  }
+  function powTerms(t, i) {
+    return ifFrac(
+      t,
+      () => t.pow(i),
+      () => t ** i
+    );
+  }
+  function findKeys(coeffs1, coeffs2 = {}) {
+    return [...new Set([...Object.keys(coeffs1), ...Object.keys(coeffs2)])]
+      .map(parseFloat)
+      .sort((a, b) => b - a);
+  }
+  class Poly {
+    constructor(coeffs, x = "x") {
+      this.x = x;
+      this.coeffs = {};
+      if (Array.isArray(coeffs)) {
+        coeffs.reverse().map((e, i) => {
+          if (e !== 0) {
+            this.coeffs[i] = e;
+          }
+        });
+      } else if (typeof coeffs === "object") {
+        const keys = findKeys(coeffs);
+        for (let k of keys) {
+          if (coeffs[k] !== 0) {
+            this.coeffs[k] = coeffs[k];
+          }
+        }
+      }
+      this.order = findKeys(this.coeffs)[0];
+    }
+    eval(x) {
+      const coeffs = this.coeffs;
+      let out = ifFrac(
+        x,
+        () => new Frac(0),
+        () => 0
+      );
+      for (let i in coeffs) {
+        out = addTerms(out, multTerms(coeffs[i], powTerms(x, i)));
+      }
+      return out;
+    }
+    add(other) {
+      if (this.constructor === other.constructor) {
+        if (this.x === other.x || other.order === 0) {
+          const coeffs1 = this.coeffs;
+          const coeffs2 = other.coeffs;
+          const newCoeffs = {};
+          for (let k of findKeys(coeffs1, coeffs2)) {
+            const temp = addTerms(coeffs1[k], coeffs2[k]);
+            if (temp !== 0) {
+              newCoeffs[k] = temp;
+            }
+          }
+          const newVar = this.order > other.order ? this.x : other.x;
+          return new Poly(newCoeffs, newVar);
+        } else {
+          console.log(
+            "adding polynomials with different variables is not yet supported."
+          );
+        }
+      } else {
+        return this.add(new Poly([other]), this.x);
+      }
+    }
+    mult(other) {
+      if (this.constructor === other.constructor) {
+        if (this.x === other.x || this.order * other.order === 0) {
+          const coeffs1 = this.coeffs;
+          const coeffs2 = other.coeffs;
+          const newCoeffs = {};
+          for (let k of findKeys(coeffs1)) {
+            for (let j of findKeys(coeffs2)) {
+              newCoeffs[k + j] = addTerms(
+                multTerms(coeffs1[k], coeffs2[j]),
+                newCoeffs[k + j]
+              );
+            }
+          }
+          const newVar = this.order > other.order ? this.x : other.x;
+          return new Poly(newCoeffs, newVar);
+        } else {
+          console.log(
+            "adding polynomials with different variables is not yet supported."
+          );
+        }
+      } else {
+        return this.mult(new Poly([other]), this.x);
+      }
+    }
+    neg() {
+      const coeffs = this.coeffs;
+      const newCoeffs = {};
+      for (let k of findKeys(coeffs)) {
+        newCoeffs[k] = -coeffs[k];
+      }
+      return new Poly(newCoeffs, this.x);
+    }
+    tex(op1 = "") {
+      const coeffs = this.coeffs;
+      const keys = findKeys(coeffs);
+      let out = "";
+      for (let k of keys) {
+        let op = "";
+        op += (k !== 0 ? "c" : "");
+        op += (out === "" ? "" : "s");
+        out += printX(coeffs[k], this.x, k, op);
+      }
+      return out;
     }
   }
 </script>
