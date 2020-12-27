@@ -7,7 +7,7 @@ lastMod: 2020-12-27 19:41:07.822 +1100
 
 toc: true
 math: true
-draft: true
+draft: false
 highlight: true
 
 tags:
