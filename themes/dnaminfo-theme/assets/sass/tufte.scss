@@ -107,6 +107,17 @@
     line-height: 1;
   }
 
+  h1,
+  h2,
+  h3 {
+    code {
+      font-style: normal;
+      color: inherit;
+      background-color: inherit;
+      -webkit-text-size-adjust: 100%;
+    }
+  }
+
   hr {
     display: block;
     clear: both;
@@ -442,11 +453,11 @@
     }
 
     pre {
-      width: $sdesktop-fullwidth;
+      width: $sdesktop-width;
 
       &:hover,
       &:focus {
-        min-width: $sdesktop-fullwidth;
+        max-width: $sdesktop-fullwidth;
       }
     }
 
@@ -495,6 +506,7 @@
       &:hover,
       &:focus {
         min-width: 100%;
+        max-width: 100%;
       }
     }
 

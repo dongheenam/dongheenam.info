@@ -1,10 +1,10 @@
 ---
 title: Substitution 1
-description: Substituting a number into a simple linear polynomial.
+description: Substituting a number into a polynomial.
 slug: substitution-1
 
 date: 2020-12-23 20:16:36.801 +1100
-lastmod: 2020-12-23 22:10:39.377 +1100
+lastmod: 2020-12-24 20:27:17.384 +1100
 
 toc: false
 type: docs
@@ -13,8 +13,8 @@ math: true
 tags:
   - algebra
   - polynomial
-  - Year 7
   - Year 8
+  - Year 9
 
 menu:
   exc:
@@ -25,27 +25,29 @@ menu:
 weight: 11
 ---
 
-In this exercise, you will practise how to substitute a variable with a number, for example, $$ \text{find}~2x-3~\text{when}~x=7. $$
+In this exercise, you will practise how to substitute a variable with a number, for example, $$ \text{find}~x+8~\text{when}~x=2. $$
 
 Use the panel below to create randomised questions. You can click each question to reveal its answer, or click "Reveal All Answers" button to see all answers.
 
 {{< exercise-html >}}
-<input type="checkbox" id="lg" />
-<label for="lg">Bigger numbers [ex. $x=18$] </label><br />
+<input type="checkbox" id="lim" />
+<label for="lim">Limit the answer to be less than 100 (Warning - unstable) </label><br />
 <input type="checkbox" id="neg0" />
 <label for="neg0">Variable - negative [ex. $x=-3$] </label><br />
 <input type="checkbox" id="frac0" />
 <label for="frac0">Variable - fraction [ex. $x=\frac{2}{3}$] </label><br />
 <input type="checkbox" id="neg1" />
-<label for="neg1">Coefficient - negative [ex. find $-3x+2$] </label><br />
-<input type="checkbox" id="frac1" />
-<label for="frac1">Coefficient - fraction [ex. find $\frac{1}{4}x+2$] </label><br />
-<input type="checkbox" id="neg2" />
-<label for="neg2">Constant - negative [ex. find $2x-7$] </label><br />
-<input type="checkbox" id="frac2" />
-<label for="frac2">Constant - fraction [ex. find $x + \frac{2}{5}$] </label><br />
+<label for="neg1">Coefficients - negative [ex. find $-3x - 7$] </label><br />
+<input type="checkbox" id="deg0" />
+<label for="deg0">Quadratic term [ex. find $x^2 - 4$] </label><br />
+<input type="checkbox" id="deg1" />
+<label for="deg1">Cubic term [ex. find $x^3 - 2$] </label><br />
+<input type="checkbox" id="deg2" />
+<label for="deg2">Quartic term [ex. find $2x^4 + 3x^2 - 6x$] </label><br />
 <br>
 {{< /exercise-html >}}
+
+{{< exercise-script >}}
 
 <script>
   function genQs() {
@@ -54,9 +56,9 @@ Use the panel below to create randomised questions. You can click each question 
     const qinst = document.getElementById("instructions");
     // Read value from the form
     const nq = document.getElementById("nq").value;
-    let lg,neg0,neg1,neg2,frac0,frac1,frac2;
-    [lg,neg0,neg1,neg2,frac0,frac1,frac2] = 
-      ["lg", "neg0", "neg1", "neg2", "frac0", "frac1", "frac2"].map(chked);
+    let lim,neg0,neg1,frac0,deg0,deg1,deg2;
+    [lim,neg0,neg1,frac0,deg0,deg1,deg2] = 
+      ["lim","neg0","neg1","frac0","deg0","deg1","deg2"].map(chked);
     // Sanity check
     nqIsNumber = /[\d+]/.test(nq);
     if (!nqIsNumber || nq<1 || nq>10 ) {
@@ -64,15 +66,9 @@ Use the panel below to create randomised questions. You can click each question 
       return;
     }
     // Coefficients
-    const max = lg? 19 : 9;
-    let c0 = [...arange(0, max)];
-    let c1 = [...arange(1, max)];
-    let c2 = [...arange(1, max)];
-    const neg_nos = [...arange(-max, -1)];
-    if (neg0) { c0.push(...neg_nos); }
-    if (neg1) { c1.push(...neg_nos); }
-    if (neg2) { c2.push(...neg_nos); }
-    const letter = 'abcdefghijklmnpqrstuvwxyz'.split('');
+    const poolX = [...arange(neg0? -9 : 1, 9)];
+    const poolCoeff = [...arange(neg1? -9 : 1, 9)];
+    const poolLett = 'abcdefghijklmnpqrstuvwxyz'.split('');
     // Make questions
     qinst.innerHTML = "Evaluate the following expressions.";
     qbox.innerHTML = "";
@@ -80,17 +76,20 @@ Use the panel below to create randomised questions. You can click each question 
     options.display = false;
     MathJax.texReset();
     for (let i = 0; i < nq; i++) {
-      const c = [
-        new Frac(choice(c0), frac0? choice(c0, "z") : 1).reduce(),
-        new Frac(choice(c1), frac1? choice(c1) : 1).reduce(),
-        new Frac(choice(c2), frac2? choice(c2) : 1).reduce()
-      ];
-      const v = choice(letter);
-      const cq = [c[0].tex(), c[1].tex("c"), c[2].tex("s")];
-      const ca = c[1].mult(c[0]).add(c[2]).tex();
-      const q = `${cq[1]}${v} ${cq[2]},~\\text{when}~${v}=${cq[0]}`;
-      const a = `=\\boldsymbol{${ca}}`;
-      render(q, a, options).then((li) => {
+      const lett = choice(poolLett);
+      const order = deg2? 4 : deg1? 3 : deg0? 2 : 1;
+      const generator = () => yn()? new Frac(choice(poolCoeff)) : 0;
+      let x, coeffs, poly, ans;
+      while (true) {
+        x = new Frac(choice(poolX), frac0? choice(poolX, "z") : 1).reduce();
+        coeffs = genCoeffs(order, generator, order, 2);
+        poly = new Poly(coeffs, lett);
+        ans = poly.eval(x);
+        if (!lim || Math.abs(ans)<100) {break;}
+      }
+      const qTex = `${poly.tex()},~\\text{when}~${lett}=${x.tex()}`;
+      const aTex = `=\\boldsymbol{${ans.tex()}}`;
+      render(qTex, aTex, options).then((li) => {
         qbox.appendChild(li);
         MathJax.startup.document.clear();
         MathJax.startup.document.updateDocument();

@@ -40,6 +40,8 @@ Use the panel below to create randomised questions. You can click each question 
 <br>
 {{< /exercise-html >}}
 
+{{< exercise-script >}}
+
 <script>
   function genQs() {
     // Question area
@@ -77,7 +79,7 @@ Use the panel below to create randomised questions. You can click each question 
       let qTex = "";
       let ans = new Poly([0], lett);
       for (let i=0; i<nPoly; i++) {
-        const coeffs = genCoeffs(order, generator, false);
+        const coeffs = genCoeffs(order, generator, 0);
         const poly = new Poly(coeffs, lett);
         const op = qTex === "" ? "" : (poly.order === 0 ? "s" : "sc");
         qTex += poly.tex(op);

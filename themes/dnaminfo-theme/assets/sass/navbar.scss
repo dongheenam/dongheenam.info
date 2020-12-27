@@ -148,6 +148,12 @@ aside.sidenav {
   font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD",
     "Book Antiqua", Georgia, serif;
 
+  code {
+    font-family: "Inconsolata", monospace;
+    font-size: 0.9em;
+    -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS. See https://github.com/edwardtufte/tufte-css/issues/81#issuecomment-261953409 */
+  }
+
   .sidenav-title,
   .toc-title {
     font-size: 1.3rem;
