@@ -11,7 +11,7 @@ math: false
 
 menu:
   exc:
-    name: Exercises
+    name: Top
     weight: 10
 
 weight: 11

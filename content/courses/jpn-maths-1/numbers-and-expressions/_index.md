@@ -93,7 +93,7 @@ menu:
 | ├ Properties of Inequalities | 10A | |
 | ├ Solving Linear Inequalities | 10A | |
 | ├ Finding Integer Solutions for Inequalities | 10A^ | |
-| ├ Applications of Linear Inequalities | 10A^ | |
+| ├ Applications of Linear Inequalities | 10A | |
 {{% /table-wrapper %}}
 
 ^ indicates the topic may be used for extension.
