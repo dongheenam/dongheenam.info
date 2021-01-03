@@ -1,0 +1,3 @@
+[submodule "themes/dnaminfo-theme/assets/js/nerdamer"]
+	path = themes/dnaminfo-theme/assets/js/nerdamer
+	url = https://github.com/dongheenam/nerdamer.git
