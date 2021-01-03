@@ -32,6 +32,11 @@
       {{ partial "mathjax" . }}
     {{- end -}}
 
+    {{/* load nerdamer */}}
+    {{- if .Params.nerdamer -}}
+      {{ partial "nerdamer" . }}
+    {{- end -}}
+
     {{/* Fabicon stuff - realfavicongenerator.net */}}
     {{- partial "fabicon" . -}}
   </head>

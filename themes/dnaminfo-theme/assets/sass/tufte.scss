@@ -356,12 +356,12 @@
       }
     }
 
-    thead th {
-      border-top: 2px solid var(--text-color);
-      border-bottom: 1px solid var(--text-color);
+    thead {
+      border-top: 3px solid var(--text-color);
+      border-bottom: 1.5px solid var(--text-color);
     }
-    tbody tr:last-child td {
-      border-bottom: 2px solid var(--text-color);
+    tbody {
+      border-bottom: 3px solid var(--text-color);
     }
   }
 

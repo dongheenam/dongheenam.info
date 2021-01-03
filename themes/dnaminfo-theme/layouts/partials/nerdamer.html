@@ -1,0 +1,8 @@
+{{- $nerdamer_loc := "js/nerdamer-1.1.6" -}}
+{{- $nerdamer_files := slice "nerdamer.core.js" "Algebra.js" "Calculus.js" "Extra.js" "Solve.js" -}}
+{{- range $nerdamer_files }}
+{{- $minified_js := resources.Get (printf "%s/%s" $nerdamer_loc .) | resources.Minify }}
+<script src="{{ $minified_js.Permalink }}"></script>
+{{- end }}
+
+
