@@ -139,54 +139,27 @@
       }
       return ifFalse();
     }
-    function printX(c, x, i, op = "") {
-      let cTex = ifFrac(
-        c,
-        () => c.tex(op),
-        () => num(c, op)
-      );
-      if (c == 0) {
+    function printTerm(coeff, x, ind, op = "") {
+      let base = coeff.tex(op); 
+      if (coeff == 0) {
         return "";
-      } else if (i == 0) {
-        return `${cTex}`;
-      } else if (i == 1) {
-        return `${cTex}${x}`;
+      } else if (ind == 0) {
+        return `${base}`;
+      } else if (ind == 1) {
+        return `${base}${x}`;
       } else {
-        return `${cTex}${x}^${i}`;
+        return `${base}${x}^${ind}`;
       }
     }
     function addTerms(t1, t2) {
-      return ifFrac(
-        t1,
-        () => t1.add(t2 ? t2 : 0),
-        () => {
-          return ifFrac(
-            t2,
-            () => t2.add(t1 ? t1 : 0),
-            () => (t1 ? t1 : 0) + (t2 ? t2 : 0)
-          );
-        }
-      );
+      return new Frac(0)
+        .add(t1? t1 : 0)
+        .add(t2? t2 : 0);
     }
     function multTerms(t1, t2) {
-      return ifFrac(
-        t1,
-        () => t1.mult(t2 ? t2 : 0),
-        () => {
-          return ifFrac(
-            t2,
-            () => t2.mult(t1 ? t1 : 0),
-            () => (t1 ? t1 : 0) * (t2 ? t2 : 0)
-          );
-        }
-      );
-    }
-    function powTerms(t, i) {
-      return ifFrac(
-        t,
-        () => t.pow(i),
-        () => t ** i
-      );
+      return new Frac(1)
+        .mult(t1? t1 : 0)
+        .mult(t2? t2 : 0);
     }
     function findKeys(coeffs1, coeffs2 = {}) {
       return [...new Set([...Object.keys(coeffs1), ...Object.keys(coeffs2)])]
@@ -224,14 +197,15 @@
         if (Array.isArray(coeffs)) {
           coeffs.map((e, i) => {
             if (e != 0) {
-              this.coeffs[i] = e;
+              this.coeffs[i] = (e instanceof Frac)? e : new Frac(e);
             }
           });
         } else if (typeof coeffs === "object") {
           const keys = findKeys(coeffs);
           for (let k of keys) {
-            if (coeffs[k] != 0) {
-              this.coeffs[k] = coeffs[k];
+            const e = coeffs[k];
+            if (e != 0) {
+              this.coeffs[k] = (e instanceof Frac)? e : new Frac(e);
             }
           }
         }
@@ -239,33 +213,30 @@
       }
       eval(x) {
         const coeffs = this.coeffs;
-        let out = ifFrac(
-          x,
-          () => new Frac(0),
-          () => 0
-        );
+        const xFrac = (x instanceof Frac)? x : new Frac(x);
+        let out = new Frac(0);
         for (let i in coeffs) {
-          out = addTerms(out, multTerms(coeffs[i], powTerms(x, i)));
+          out = out.add(coeffs[i].mult(xFrac.pow(i)));
         }
         return out;
       }
       add(other) {
-        if (this.constructor === other.constructor) {
-          if (this.x === other.x || other.order === 0) {
+        if (other instanceof Poly) {
+          if (this.x == other.x || other.order == 0) {
             const coeffs1 = this.coeffs;
             const coeffs2 = other.coeffs;
             const newCoeffs = {};
             for (let k of findKeys(coeffs1, coeffs2)) {
               const temp = addTerms(coeffs1[k], coeffs2[k]);
-              if (temp !== 0) {
+              if (temp != 0) {
                 newCoeffs[k] = temp;
               }
             }
-            const newVar = this.order > other.order ? this.x : other.x;
+            const newVar = (this.order > other.order) ? this.x : other.x;
             return new Poly(newCoeffs, newVar);
           } else {
-            console.log(
-              "adding polynomials with different variables is not yet supported."
+            throw new Error(
+              "adding polynomials in different variables is not yet supported."
             );
           }
         } else {
@@ -273,8 +244,8 @@
         }
       }
       mult(other) {
-        if (this.constructor === other.constructor) {
-          if (this.x === other.x || this.order * other.order === 0) {
+        if (other instanceof Poly) {
+          if (this.x == other.x || other.order == 0) {
             const coeffs1 = this.coeffs;
             const coeffs2 = other.coeffs;
             const newCoeffs = {};
@@ -289,8 +260,8 @@
             const newVar = this.order > other.order ? this.x : other.x;
             return new Poly(newCoeffs, newVar);
           } else {
-            console.log(
-              "adding polynomials with different variables is not yet supported."
+            throw new Error(
+              "multiplying polynomials in different variables is not yet supported."
             );
           }
         } else {
@@ -305,21 +276,21 @@
         }
         return new Poly(newCoeffs, this.x);
       }
-      tex(op1 = "") {
+      tex(opFirst = "") {
         const coeffs = this.coeffs;
         const keys = findKeys(coeffs);
         let out = "";
         for (let k of keys) {
           let op = "";
-          op += (k !== 0 ? "c" : "");
-          op += (out === "" ? "" : "s");
-          if (op1 !== "" && out === "") {
-            op = op1;
+          op += (k != 0 ? "c" : "");
+          op += (out == "" ? "" : "s");
+          if (opFirst != "" && out == "") {
+            op = opFirst;
           }
-          out += printX(coeffs[k], this.x, k, op);
+          out += printTerm(coeffs[k], this.x, k, op);
         }
-        if (out === "") {
-          out = num(0, op1);
+        if (out == "") {
+          out = new Frac(0).tex(opFirst);
         }
         return out;
       }
