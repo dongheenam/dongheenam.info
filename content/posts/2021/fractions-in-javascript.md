@@ -1,6 +1,6 @@
 ---
 title: "Fractions in JavaScript"
-description: "How the rational arithmetic is implemented in this site."
+description: "How to implement fractional arithmetic with JavaScript."
 
 date: 2020-12-26 15:10:03.222 +1100
 lastMod: 2021-01-03 16:33:26.443 +1100
@@ -18,7 +18,7 @@ tags:
 
 ## Introduction
 
-In the world of programming, hardly anyone cares about the difference between $\dfrac{1}{3}$ and `1.0/3.0 = 0.333333`. However, in Maths class, you need to learn how to deal with fractions as-is; for example, what is $\dfrac{2}{3} x - \dfrac{1}{2}$ equal to when $x = \dfrac{1}{6}$? The answer is
+In the world of programming, hardly anyone cares about the differences between $\dfrac{1}{3}$ and `1.0/3.0 = 0.333333`. However, in Maths class, you need to learn how to deal with fractions as-is; for example, what is $\dfrac{2}{3} x - \dfrac{1}{2}$ equal to when $x = \dfrac{1}{6}$? The answer is
 \begin{align}
   \dfrac{2}{3} x - \dfrac{1}{2} &= \dfrac{2}{3} \cdot \dfrac{1}{6} - \dfrac{1}{2} \\\\
   &= \dfrac{2}{18} - \dfrac{1}{2} \\\\
@@ -371,7 +371,7 @@ Note that this does allow `exp` to be rational as well, but we cannot deal with 
 new Frac(1, 2).pow(0.5).reduce() // 125000000000000/176776695296637
 ```
 
-### Printing to LaTeX
+### Printing as LaTeX
 
 Finally, we need a function that returns the LaTeX code.
 
@@ -390,10 +390,10 @@ Below is the code that reflects these issues.
 class Frac {
   ...
   function tex() {
-    let isNeg = this.valueOf() < 0;       // this is negative
-    let wholeNum = this.n % this.d == 0; // this is a whole number
+    let isNeg = this.valueOf() < 0;      // fraction is negative
+    let isInt = this.n % this.d == 0; // fraction is a whole number
     let base = "";
-    if (wholeNum) {
+    if (isInt) {
       base = `${this.n / this.d}`;
     } else {
       // attach its sign in front of the fraction

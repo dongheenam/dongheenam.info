@@ -7,7 +7,7 @@ nerdamer: true
 ---
 
 <script>
-    let text = nerdamer.convertFromLaTeX('\\dfrac{2}{3} x \\times (-7)');
+    let text = nerdamer.convertFromLaTeX('(x+1)(x-3)(x-5)').expand();
     var e = nerdamer(text);
-    console.log(e.toTeX());
+    console.log(e.toTeX().replace(/ \\cdot /gm, ""));
 </script>
