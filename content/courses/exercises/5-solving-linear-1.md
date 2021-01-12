@@ -36,7 +36,7 @@ Use the panel below to create randomised questions. You can click each question 
 <input type="checkbox" id="frac0" />
 <label for="frac0">Coefficients and numbers - fraction [ex. $\frac{1}{3} x + \frac{1}{2} = 1$] </label><br />
 <input type="checkbox" id="both" />
-<label for="both">Allow unknown to be on both sides [ex. $2x+3 = x+5$] </label><br />
+<label for="both">Allow the unknown to be on both sides [ex. $2x+3 = x+5$] </label><br />
 <br>
 {{< /exercise-html >}}
 
@@ -66,7 +66,7 @@ Use the panel below to create randomised questions. You can click each question 
       poolCoeff.push(...arange(-maxCoeff, -1));
       poolNum.push(...arange(-maxCoeff, -1));
     }
-    const poolLett = 'abcdefghijklmnpqrstuvwxyz'.split('');
+    const poolLett = 'abcdefghijkmnpqrstuvwxyz'.split('');
     // Make questions
     qinst.innerHTML = "Solve the following linear equations.";
     qbox.innerHTML = "";

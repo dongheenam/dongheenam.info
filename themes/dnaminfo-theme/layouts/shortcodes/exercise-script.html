@@ -25,6 +25,9 @@
         (/c/.test(op) && n == 1 ? "" : n == -1 ? "-" : n);
       return /b/.test(op) && n < 0 ? "(" + out + ")" : out;
     }
+    function nerdamerToTex(nerObj) {
+      return nerObj.toTeX().replace(/ \\cdot /gm, "");
+    }
     async function render(q, a, o) {
       const qna = document.createElement("li");
       const qP = MathJax.tex2chtmlPromise(q, o);
@@ -275,6 +278,15 @@
           newCoeffs[k] = -coeffs[k];
         }
         return new Poly(newCoeffs, this.x);
+      }
+      sub(other) {
+        if (other instanceof Poly) {
+          return this.add(other.neg());
+        } else if (other instanceof Frac) {
+          return this.add(other.mult(-1));
+        } else {
+          return this.add(-other);
+        }
       }
       tex(opFirst = "") {
         const coeffs = this.coeffs;

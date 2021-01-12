@@ -7,7 +7,7 @@ nerdamer: true
 ---
 
 <script>
-    let text = nerdamer.convertFromLaTeX('(x+1)(x-3)(x-5)').expand();
-    var e = nerdamer(text);
-    console.log(e.toTeX().replace(/ \\cdot /gm, ""));
+    let text = nerdamer("0.5 * (2 + sqrt(8))")
+    var e = nerdamer(`0.5 * (2 + sqrt(32))`).expand();
+    console.log(e.toTeX());
 </script>
