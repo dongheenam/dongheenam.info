@@ -34,11 +34,11 @@ Use the panel below to create randomised questions. You can click each question 
 <input type="checkbox" id="lg" />
 <label for="lg">Bigger numbers [ex. $11x - 14x + 9$] </label><br />
 <input type="checkbox" id="neg0" />
-<label for="neg0">Coefficients and constants - negative [ex. $-3x + 4 + 7x - 9$] </label><br />
+<label for="neg0">Allow negative coefficients and constants [ex. $-3x + 4 + 7x - 9$] </label><br />
 <input type="checkbox" id="frac0" />
-<label for="frac0">Coefficients and constants - fraction [ex. $\frac{1}{2}x + \frac{3}{4} +\frac{1}{3}x$] </label><br />
+<label for="frac0">Allow fractional coefficients and constants [ex. $\frac{1}{2}x + \frac{3}{4} +\frac{1}{3}x$] </label><br />
 <input type="checkbox" id="deg0" />
-<label for="deg0">Quadratic and cubic terms [ex. $x^2 + 4 + x^3 + 2x$] </label><br />
+<label for="deg0">Allow up to quadratic and cubic terms [ex. $x^2 + 4 + x^3 + 2x$] </label><br />
 <br>
 {{< /exercise-html >}}
 

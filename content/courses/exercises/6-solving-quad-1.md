@@ -25,7 +25,7 @@ menu:
 weight: 25
 ---
 
-In this exercise, you will practise how to solve simple quadratic equations; for example, $$ \text{solve}~x^2 - 2x + 8 = 0. $$
+In this exercise, you will practise how to solve simple quadratic equations; for example, $$ \text{solve}~x^2 - 2x - 8 = 0. $$
 
 Use the panel below to create randomised questions. You can click each question to reveal its answer, or click "Reveal All Answers" button to see all answers.
 
@@ -71,8 +71,8 @@ Use the panel below to create randomised questions. You can click each question 
     for (let i = 0; i < nq; i++) {
       const lett = choice(poolLett);
       let poly;
-      soln1 = new Frac(choice(poolNum), frac0? choice(poolNum, "z") : 1);
-      soln2 = new Frac(choice(poolNum), frac0? choice(poolNum, "z") : 1);
+      soln1 = new Frac(choice(poolNum), frac0? choice(poolNum, "z") : 1).reduce();
+      soln2 = new Frac(choice(poolNum), frac0? choice(poolNum, "z") : 1).reduce();
       if (co0) {
         const polyTemp = new Poly([-soln1.n, soln1.d], lett).mult(new Poly([-soln2.n, soln2.d], lett));
         poly = polyTemp.mult(yn()? 1 : choice(poolMult));

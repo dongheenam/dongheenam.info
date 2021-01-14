@@ -32,9 +32,11 @@ Use the panel below to create randomised questions. You can click each question 
 
 {{< exercise-html >}}
 <input type="checkbox" id="neg0" />
-<label for="neg0">Coefficients and numbers - negative [ex. $-2x - 3 = 7$] </label><br />
+<label for="neg0">Allow negative numbers and roots [ex. $x - 5 = -7$] </label><br />
 <input type="checkbox" id="frac0" />
-<label for="frac0">Coefficients and numbers - fraction [ex. $\frac{1}{3} x + \frac{1}{2} = 1$] </label><br />
+<label for="frac0">Allow fractional roots [ex. $3x + 1 = 2$] </label><br />
+<input type="checkbox" id="frac1" />
+<label for="frac1">Allow fractional numbers and coefficients [ex. $\frac{1}{2}x + 1 = \frac{5}{2}$] </label><br />
 <input type="checkbox" id="both" />
 <label for="both">Allow the unknown to be on both sides [ex. $2x+3 = x+5$] </label><br />
 <br>
@@ -49,9 +51,9 @@ Use the panel below to create randomised questions. You can click each question 
     const qinst = document.getElementById("instructions");
     // Read value from the form
     const nq = document.getElementById("nq").value;
-    let neg0,frac0,both;
-    [neg0,frac0,both] = 
-      ["neg0","frac0","both"].map(chked);
+    let neg0,frac0,frac1,both;
+    [neg0,frac0,frac1,both] = 
+      ["neg0","frac0","frac1","both"].map(chked);
     // Sanity check
     nqIsNumber = /[\d+]/.test(nq);
     if (!nqIsNumber || nq<1 || nq>10 ) {
@@ -61,10 +63,10 @@ Use the panel below to create randomised questions. You can click each question 
     // Coefficients
     const maxCoeff = 9;
     const poolCoeff = arange(1, maxCoeff);
-    const poolNum = arange(0, maxCoeff);
+    const poolAns = arange(0, maxCoeff);
     if (neg0) {
       poolCoeff.push(...arange(-maxCoeff, -1));
-      poolNum.push(...arange(-maxCoeff, -1));
+      poolAns.push(...arange(-maxCoeff, -1));
     }
     const poolLett = 'abcdefghijkmnpqrstuvwxyz'.split('');
     // Make questions
@@ -75,20 +77,24 @@ Use the panel below to create randomised questions. You can click each question 
     MathJax.texReset();
     for (let i = 0; i < nq; i++) {
       const lett = choice(poolLett);
-      const generator = () => yn()? 
-        new Frac(choice(poolCoeff), frac0? choice(poolCoeff,"z") : 1) : 0;
-      const coeffs = genCoeffs(1, generator, 1, 1);
-      const lhs = new Poly(coeffs, lett);
-      let rhs;
+      const ans = new Frac(choice(poolAns), frac0? choice(poolAns,"z") : 1);
+      let lhs = new Poly([0, ans.d], lett);
+      let rhs = ans.mult(ans.d);
+      const op1 = new Frac(choice(poolAns, "z"), frac1? choice(poolAns, "z") : 1);
+      const op2 = new Frac(choice(poolAns), frac1? choice(poolAns, "z") : 1);
+
+      lhs = lhs.mult(op1).add(op2);
+      rhs = rhs.mult(op1).add(op2);
+
       if (both) {
-        const coeffs2 = genCoeffs(1, generator, 1, 1);
-        rhs = new Poly(coeffs2, lett);
-      } else {
-        rhs = new Frac(choice(poolNum), frac0? choice(poolNum,"z") : 1);
+        const generator = () => new Frac(choice(poolAns), frac1? choice(poolAns, "z") : 1);
+        const poly2 = new Poly(genCoeffs(1, generator, 1), lett);
+        lhs = lhs.add(poly2);
+        rhs = poly2.add(rhs);
       }
+      
       const qTex = `${lhs.tex()} = ${rhs.tex()}`;
-      const ans = nerdamer.convertFromLaTeX(qTex).solveFor(lhs.x);
-      const aTex = `\\boldsymbol{\\implies ${lhs.x}=${nerdamer.convertToLaTeX(ans.toString())}}`;
+      const aTex = `\\boldsymbol{\\implies ${lett}=${ans.tex()}}`;
       render(qTex, aTex, options).then((li) => {
         qbox.appendChild(li);
         MathJax.startup.document.clear();

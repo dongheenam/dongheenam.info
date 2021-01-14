@@ -33,9 +33,9 @@ Use the panel below to create randomised questions. You can click each question 
 <input type="checkbox" id="co0" />
 <label for="co0">Only allow monic polynomials [ex. $(x+3)(x+7)$] </label><br />
 <input type="checkbox" id="neg0" />
-<label for="neg0">Coefficients and numbers - negative [ex. $(x-2)(-2x+1)$] </label><br />
+<label for="neg0">Allow negative coefficients and numbers [ex. $(x-2)(-2x+1)$] </label><br />
 <input type="checkbox" id="frac0" />
-<label for="frac0">Coefficients and numbers - fraction [ex. $(x+\frac{1}{2})(\frac{1}{3}x+4)$] </label><br />
+<label for="frac0">Allow fractional coefficients and numbers [ex. $(x+\frac{1}{2})(\frac{1}{3}x+4)$] </label><br />
 <input type="checkbox" id="deg0" />
 <label for="deg0">Allow quadratic terms [ex. $(x+2)(x^2 + 3x + 4)$] </label><br />
 <br>

@@ -33,11 +33,11 @@ Use the panel below to create randomised questions. You can click each question 
 <input type="checkbox" id="lg" />
 <label for="lg">Bigger numbers [ex. $14(x+11)$] </label><br />
 <input type="checkbox" id="neg0" />
-<label for="neg0">Coefficients and numbers - negative [ex. $-3(2x-1)$] </label><br />
+<label for="neg0">Allow ngetaive coefficients and numbers [ex. $-3(2x-1)$] </label><br />
 <input type="checkbox" id="frac0" />
-<label for="frac0">Coefficients and numbers - fraction [ex. $\frac{1}{4}(\frac{2}{3}x+6)$] </label><br />
+<label for="frac0">Allow fractional coefficients and numbers [ex. $\frac{1}{4}(\frac{2}{3}x+6)$] </label><br />
 <input type="checkbox" id="deg0" />
-<label for="deg0">Quadratic and cubic terms [ex. $4(x^2+3x+1)$] </label><br />
+<label for="deg0">Allow up to quadratic and cubic terms [ex. $4(x^2+3x+1)$] </label><br />
 <br>
 {{< /exercise-html >}}
 

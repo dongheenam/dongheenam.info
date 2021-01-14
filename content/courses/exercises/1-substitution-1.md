@@ -34,17 +34,17 @@ Use the panel below to create randomised questions. You can click each question 
 <input type="checkbox" id="lim" />
 <label for="lim">Limit the answer to be less than 100 (Warning - unstable) </label><br />
 <input type="checkbox" id="neg0" />
-<label for="neg0">Variable - negative [ex. $x=-3$] </label><br />
+<label for="neg0">Allow negative variables [ex. $x=-3$] </label><br />
 <input type="checkbox" id="frac0" />
-<label for="frac0">Variable - fraction [ex. $x=\frac{2}{3}$] </label><br />
+<label for="frac0">Allow fractional variables [ex. $x=\frac{2}{3}$] </label><br />
 <input type="checkbox" id="neg1" />
-<label for="neg1">Coefficients - negative [ex. find $-3x - 7$] </label><br />
+<label for="neg1">Allow negative coefficients [ex. find $-3x - 7$] </label><br />
 <input type="checkbox" id="deg0" />
-<label for="deg0">Quadratic term [ex. find $x^2 - 4$] </label><br />
+<label for="deg0">Include up to quadratic term [ex. find $x^2 - 4$] </label><br />
 <input type="checkbox" id="deg1" />
-<label for="deg1">Cubic term [ex. find $x^3 - 2$] </label><br />
+<label for="deg1">Include up to cubic term [ex. find $x^3 - 2$] </label><br />
 <input type="checkbox" id="deg2" />
-<label for="deg2">Quartic term [ex. find $2x^4 + 3x^2 - 6x$] </label><br />
+<label for="deg2">Include up to quartic term [ex. find $2x^4 + 3x^2 - 6x$] </label><br />
 <br>
 {{< /exercise-html >}}
 
