@@ -239,11 +239,11 @@
             return new Poly(newCoeffs, newVar);
           } else {
             throw new Error(
-              "adding polynomials in different variables is not yet supported."
+              `multiplying polynomials in different variables is not yet supported: ${this.x} and ${other.x}`
             );
           }
         } else {
-          return this.add(new Poly([other]), this.x);
+          return this.add(new Poly([other], this.x));
         }
       }
       mult(other) {
@@ -264,11 +264,11 @@
             return new Poly(newCoeffs, newVar);
           } else {
             throw new Error(
-              "multiplying polynomials in different variables is not yet supported."
+              `multiplying polynomials in different variables is not yet supported: ${this.x} and ${other.x}`
             );
           }
         } else {
-          return this.mult(new Poly([other]), this.x);
+          return this.mult(new Poly([other], this.x));
         }
       }
       neg() {

@@ -187,7 +187,7 @@ class Poly {
       }
     // if other is not a polynomial
     } else {
-      return this.add(new Poly([other]), this.x);
+      return this.add(new Poly([other], this.x));
     }
   }
 }
@@ -270,7 +270,7 @@ class Poly {
       }
     // if the input is not a polynomial
     } else {
-      return this.mult(new Poly([other]), this.x);
+      return this.mult(new Poly([other], this.x));
     }
   }
 }
