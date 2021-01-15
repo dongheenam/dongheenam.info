@@ -20,9 +20,9 @@ menu:
   exc:
     name: Quadratic Equations 2
     parent: Algebra
-    weight: 25
+    weight: 62
 
-weight: 25
+weight: 62
 ---
 
 In this exercise, you will practise how to use the quadratic formula $ x = \dfrac{-b \pm \sqrt{b^2-4ac}}{2a} $ to solve quadratic equations; for example, $$ \text{solve}~x^2 + x - 1 = 0. $$

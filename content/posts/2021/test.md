@@ -6,8 +6,9 @@ date: 2020-12-04 23:24:05.919 +1100
 nerdamer: true
 ---
 
+<span id="nerdamer-test-result"></span>
+
 <script>
-    let text = nerdamer("0.5 * (2 + sqrt(8))")
-    var e = nerdamer(`0.5 * (2 + sqrt(32))`).expand();
-    console.log(e.toTeX());
+    let a = nerdamer("4 + (x+7)/2 + 11");
+    document.getElementById("nerdamer-test-result").innerHTML = a.toString();
 </script>

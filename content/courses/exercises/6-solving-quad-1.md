@@ -20,9 +20,9 @@ menu:
   exc:
     name: Quadratic Equations 1
     parent: Algebra
-    weight: 25
+    weight: 61
 
-weight: 25
+weight: 61
 ---
 
 In this exercise, you will practise how to solve simple quadratic equations; for example, $$ \text{solve}~x^2 - 2x - 8 = 0. $$

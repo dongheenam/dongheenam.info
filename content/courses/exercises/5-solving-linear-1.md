@@ -9,7 +9,6 @@ lastmod: 2021-01-12 16:19:44.120 +0800
 toc: false
 type: docs
 math: true
-nerdamer: true
 
 tags:
   - algebra
@@ -21,9 +20,9 @@ menu:
   exc:
     name: Linear Equations 1
     parent: Algebra
-    weight: 24
+    weight: 51
 
-weight: 24
+weight: 51
 ---
 
 In this exercise, you will practise how to solve simple linear equations; for example, $$ \text{solve}~2x + 1 = 9. $$

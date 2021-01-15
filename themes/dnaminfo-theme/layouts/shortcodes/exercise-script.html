@@ -19,6 +19,9 @@
     function findGcd(a, b) {
       return b ? findGcd(b, a % b) : a;
     }
+    function isFactorOf(a, b) {
+      return Math.abs(a) == Math.abs(findGcd(a, b));
+    }
     function tex(n, op = "") {
       let out =
         (/s/.test(op) && n > 0 ? "+" : "") +
