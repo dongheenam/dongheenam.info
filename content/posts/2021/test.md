@@ -6,9 +6,15 @@ date: 2020-12-04 23:24:05.919 +1100
 nerdamer: true
 ---
 
-<span id="nerdamer-test-result"></span>
+<p>
+Input: <span id="nerdamer-input"></span><br>
+Result: <span id="nerdamer-result"></span>
+</p>
 
 <script>
-    let a = nerdamer("4 + (x+7)/2 + 11");
-    document.getElementById("nerdamer-test-result").innerHTML = a.toString();
+    const input = "4 + (x+7)/2 + 11";
+    const a = nerdamer(input);
+
+    document.getElementById("nerdamer-input").innerHTML = input;
+    document.getElementById("nerdamer-result").innerHTML = a.toTeX();
 </script>

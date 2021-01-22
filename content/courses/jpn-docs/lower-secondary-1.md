@@ -1,6 +1,6 @@
 ---
 title: Lower Secondary 1
-description: Mathematics for Year 7
+description: Mathematics for Year 7.
 
 date: 2021-01-02 19:06:16.438 +1100
 lastmod: 2021-01-02 19:06:16.438 +1100
