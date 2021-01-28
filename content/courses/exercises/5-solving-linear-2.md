@@ -10,7 +10,7 @@ toc: false
 type: docs
 math: true
 nerdamer: true 
-draft: true
+draft: false
 
 tags:
   - algebra
