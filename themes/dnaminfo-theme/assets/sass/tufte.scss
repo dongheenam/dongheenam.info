@@ -301,6 +301,7 @@
   pre {
     width: $ldesktop-width;
     overflow-x: auto;
+    overflow-y: hidden;
 
     & > code {
       color: inherit;
