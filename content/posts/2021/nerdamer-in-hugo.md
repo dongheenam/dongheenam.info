@@ -52,8 +52,10 @@ to attach the [Nerdamer depository](https://github.com/jiggzson/nerdamer) to `as
 
 `nerdamer.core.js` contains the core functionality of Nerdamer, and the four other 'add-ons' provide some extra features (the full list of functions each add-on provides on [the documentation page](https://nerdamer.com/documentation.html)). Create a partial that minifies and loads the necessary files:
 
+```filename
+> layouts/partials/nerdamer.html
+```
 ```golang
-{{/* layouts/partials/nerdamer.html */}}
 {{- $nerdamer_loc := "js/nerdamer" -}}
 {{- $nerdamer_files := slice "nerdamer.core.js" "Algebra.js" "Calculus.js" "Extra.js" "Solve.js" -}}
 {{- range $nerdamer_files }}
@@ -64,6 +66,9 @@ to attach the [Nerdamer depository](https://github.com/jiggzson/nerdamer) to `as
 
 and attach it to the site's head:
 
+```filename
+> layouts/_default/baseof.html
+```
 ```html
 <head>
   ...

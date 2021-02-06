@@ -56,3 +56,9 @@
 .hljs-strong {
   font-weight: 700;
 }
+
+pre > code.language-filename {
+  color: var(--primary-color);
+  font-style: italic;
+  text-decoration: underline;
+}
