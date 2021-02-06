@@ -1,6 +1,6 @@
 {{- define "main" -}}
 {{ $banner_img := (resources.Get "home/banner.jpg").Fill "2000x400 Smart jpeg" }}
-{{ $avatar_img := (resources.Get "home/avatar.jpg").Fill "500x500 Center jpeg" }}
+{{ $avatar_img := (resources.Get "home/avatar.png").Fill "500x500 Center jpeg" }}
 <div class="front-container">
     <div class="front-title"
     style="background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('{{ $banner_img.RelPermalink }}');

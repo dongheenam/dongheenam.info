@@ -73,6 +73,6 @@ and attach it to the site's head:
 </head>
 ```
 
-If you want to load Nerdamer to a specific page, simply set `nerdamer: true` in the page's YAML.
+If you want to load Nerdamer in a specific page, simply set `nerdamer: true` in the page's YAML.
 
 

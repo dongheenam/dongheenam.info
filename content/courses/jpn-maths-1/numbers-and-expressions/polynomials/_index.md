@@ -1,5 +1,5 @@
 ---
-Title: Polynomials
+Title: Expansion and Factorisation of Polynomials
 
 menu:
   math1-numbers:

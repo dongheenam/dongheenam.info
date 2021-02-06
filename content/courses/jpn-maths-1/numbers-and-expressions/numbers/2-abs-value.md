@@ -40,7 +40,7 @@ weight: 12
 In the [previous lesson](../types-of-numbers) we discussed numbers for counting and numbers for measuring, and we realised that they form **real numbers** ($\mathbb{R}$) altogether. This is not the end of the story because we have not talked about the number lines yet! In this lesson, we will learn:
 
 - the coordinate representation of numbers: the number line.
-- the definition and properties of the absolute value of a real number.
+- the definition and properties of the absolute value of a real number.{{% sn abs1 %}}Working with absolute values is in fact part of the Mathematics II course, but the majority of textbooks and online tutorials introduce the concept here.{{% /sn %}}
 
 
 ## The Number Line

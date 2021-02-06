@@ -45,7 +45,7 @@ Expanding expressions is fun but can be horribly painful. There are useful formu
 
 In this lesson, we will learn:
   - How to expand expressions with quadratic identities.
-  - How to expand expressions with cubic identities.
+  - How to expand expressions with cubic identities.{{% sn cubic %}}Cubic identities are part of the Mathematics II course, we will introduce them here along with quadratic identities.{{% /sn %}}
 
 
 ## Identities and Proofs

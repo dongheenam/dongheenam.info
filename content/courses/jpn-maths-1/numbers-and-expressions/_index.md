@@ -23,7 +23,7 @@ menu:
 
 ## List of Topics
 
-### Polynomial Algebra
+### Expansion and Factorisation of Polynomials
 
 - Introduction
   - [Terms and Polynomials](polynomials/terms-and-polynomials)
@@ -65,7 +65,7 @@ menu:
   - [Finding Integer Solutions for Inequalities](inequalities/integer-solutions)
   - [Applications of Linear Inequalities](inequalities/applications)
 - Equations and Inequalities with Absolute Values
-  - [Solving Equations with Absolute Values]
+  - [Linear Equations with Absolute Values]
   - [Solving Inequalities with Absolute Values]
 - [Review Set 4]
 
@@ -94,6 +94,7 @@ menu:
 | ├ Solving Linear Inequalities | 10A | |
 | ├ Finding Integer Solutions for Inequalities | 10A^ | |
 | ├ Applications of Linear Inequalities | 10A | |
+| ├ Linear Equations with Absolute Values |  | Spec3^ |
 {{% /table-wrapper %}}
 
 ^ indicates the topic may be used for extension.
