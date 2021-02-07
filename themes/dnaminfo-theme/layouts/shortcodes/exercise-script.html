@@ -10,7 +10,8 @@
       return array;
     }
     function choice(arr, op = "") {
-      const arr2 = /z/.test(op) ? arr.filter((i) => i != 0) : arr;
+      let arr2 = /z/.test(op) ? arr.filter((i) => i != 0) : arr;
+      arr2 = /1/.test(op) ? arr2.filter((i) => i != 1) : arr2;
       return arr2[Math.floor(Math.random() * arr2.length)];
     }
     function yn() {
@@ -21,6 +22,25 @@
     }
     function isFactorOf(a, b) {
       return Math.abs(a) == Math.abs(findGcd(a, b));
+    }
+    function factorsOf(a, op = "") {
+      factors = [];
+      const start = /p/.test(op)? 2 : 1;
+      for (let i = start; i <= Math.sqrt(Math.abs(a)); i++) {
+        if (isFactorOf(i, a)) {
+          factors.push(i);
+          if (/n/.test(op)) {
+            factors.push(-i);
+          }
+          if (a/i != i) {
+            factors.push(a/i);
+            if (/n/.test(op)) {
+              factors.push(-a/i);
+            }
+          }
+        }
+      }
+      return factors;
     }
     function tex(n, op = "") {
       let out =

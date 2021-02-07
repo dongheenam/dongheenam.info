@@ -4,13 +4,11 @@ description: Solving linear equations with brackets and fractions
 slug: linear-equation-2
 
 date: 2021-01-15 08:45:06.783 +0800
-lastmod: 2021-01-15 08:45:06.783 +0800
+lastmod: 2021-02-07 15:17:30.563 +1100
 
 toc: false
 type: docs
 math: true
-nerdamer: true 
-draft: true
 
 tags:
   - algebra
@@ -37,11 +35,11 @@ Use the panel below to create randomised questions. You can click each question 
 <input type="checkbox" id="frac0" />
 <label for="frac0">Allow fractional answers [ex. $2(x+3) = 7$] </label><br />
 <input type="checkbox" id="frac1" />
-<label for="frac1">Fractional terms [ex. $\frac{x+4}{2} = 3$] </label><br />
+<label for="frac1">Algebraic fractions [ex. $\frac{x+4}{2} = 3$] </label><br />
 <input type="checkbox" id="two" />
 <label for="two">Allow up to two expressions [ex. $2(3x+2) + 3(x+1) = 16$] </label><br />
 <input type="checkbox" id="both" />
-<label for="both">Allow the unknown to be on both sides [ex. $2x = \frac{x+10}{3}$] </label><br />
+<label for="both">└─ Allow the unknown to be on both sides [ex. $2x = \frac{x+10}{3}$] </label><br />
 <br>
 {{< /exercise-html >}}
 
@@ -57,6 +55,7 @@ Use the panel below to create randomised questions. You can click each question 
     let neg,frac0,frac1,two,both;
     [neg,frac0,frac1,two,both] = 
       ["neg","frac0","frac1","two","both"].map(chked);
+    both = two? both : false; // both depends on two
     // Sanity check
     nqIsNumber = /[\d+]/.test(nq);
     if ( !nqIsNumber || nq<1 || nq>10 ) {
@@ -64,11 +63,11 @@ Use the panel below to create randomised questions. You can click each question 
       return;
     }
     // Coefficients
-    const pool4 = arange(2, 4);
+    const pool5 = arange(2, 5);
     const pool9 = arange(0, 9);
     const poolDenom = arange(2, 9);
     if (neg) {
-      pool4.push(...arange(-4, -1));
+      pool5.push(...arange(-5, -1));
       pool9.push(...arange(-9, -1));
       poolDenom.push(...arange(-9, -2));
     }
@@ -82,89 +81,113 @@ Use the panel below to create randomised questions. You can click each question 
     for (let i = 0; i < nq; i++) {
       const lett = choice(poolLett);
       const ans = new Frac(choice(pool9), frac0? choice(pool9,"z") : 1);
-      let lhs = new Poly([-ans.n, ans.d], lett);
-      let rhs = new Frac(0);
+      let lhs, rhs;
       let lhsTex, rhsTex;
-      // either put a fraction or bracket
-      if (frac1) {
-        const num0 = choice(pool9,"z");
-        const num1 = choice(poolDenom);
-        lhs = lhs.add(num0 * num1);
-        lhsTex = `\\dfrac{${lhs.tex()}}{${Math.abs(num1)}}`;
-        lhsTex = (num1<0? "-" : "") + lhsTex;
-        rhs = rhs.add(num0);
+      lhs = new Poly([0, ans.d], lett);
+      rhs = new Frac(ans.n);
+      // if the coefficient of x is not 1, -1, for 50% of chance,
+      if (!frac1 && Math.abs(ans.d)!=1 && yn()) { 
+        // factorise the coefficient of x to make a bracket
+        const op = neg? "n" : "";
+        const num0 = new Frac(choice(factorsOf(ans.d, op), "1"));
+        const num1 = choice(pool5);
+        lhs = lhs.mult(num0.reci()).add(num1);
+        lhsTex = `${num0.tex("c")}\\left(${lhs.tex()}\\right)`;
+        rhs = rhs.add(num0.mult(num1))
+        rhsTex = rhs.tex();
+      } else if (!frac1) {
+        // multiply the lhs by a number to make a bracket
+        const num0 = new Frac(choice(pool5));
+        const num1 = choice(pool5);
+        const num2 = choice(pool9);
+        lhs = lhs.mult(num1).add(num2);
+        lhsTex = `${num0.tex("c")}\\left(${lhs.tex()}\\right)`;
+        rhs = rhs.mult(num1).add(num2).mult(num0)
         rhsTex = rhs.tex();
       } else {
-        const num0 = choice(pool9,"z");
-        const num1 = choice(poolDenom);
-        lhsTex = `${num1}\\left(${lhs.add(num0).tex()}\\right)`
-        rhs = rhs.add(num0).mult(num1);
+        // make a fraction
+        // choose coefficients so that the rhs has at least one proper factor
+        let num0, num1, num2, factors = [];
+        while (factors.length < 1) {
+          num1 = choice(pool5);
+          num2 = choice(pool9);
+          factors = factorsOf(num1*rhs+num2, "p");
+        }
+        num0 = choice(factors);
+        lhs = lhs.mult(num1).add(num2);
+        lhsTex = `\\dfrac{${lhs.tex()}}{${Math.abs(num0)}}`;
+        lhsTex = (num0<0? "-" : "") + lhsTex;
+        rhs = rhs.mult(num1).add(num2).mult(new Frac(1, num0));
         rhsTex = rhs.tex();
       }
-      // second bracket if necessary
-      if (two) {
+      if (two) { // add a second expression
         const gen = () => yn()? new Frac(choice(pool9)) : 0;
-        let newPoly = new Poly(genCoeffs(1, gen, 1, 2), lett);
-        let newPolyVal = newPoly.eval(ans);
-        let num2;
-        switch (choice(arange(1, frac1? 4 : 3))) {
+        let newPoly, newPolyVal = new Frac(1, 2);
+        let num11;
+        switch (choice(arange(1, frac1? 3 : 2))) {
           case 1 : // add another bracket
-            console.log("case 1");
-            num2 = new Frac(choice(pool4));
-            if (both && yn()) {
-              // add bracket on the rhs
-              rhsTex += `${num2.tex("sc")}\\left(${newPoly.tex()}\\right)`
-              lhsTex += `${num2.mult(newPolyVal).tex("s")}`
-            } else {
-              // add bracket on the lhs
-              lhsTex += `${num2.tex("sc")}\\left(${newPoly.tex()}\\right)`
-              rhs = rhs.add(num2.mult(newPolyVal));
-              rhsTex = rhs.tex();
+            num11 = new Frac(choice(pool5));
+            while (newPolyVal.d != 1) { // ensure the value is an integer
+              newPoly = new Poly(genCoeffs(1, gen, 1, 2), lett);
+              newPolyVal = newPoly.eval(ans).mult(num11);
             }
-            break;
-          case 2 : // add polynomial (without bracket)
-            console.log("case 2");
-            if (both && yn()) {
-              // add the polynomial on the rhs
-              rhsTex += newPoly.tex("sc");
-              lhsTex += newPolyVal.tex("s");
-            } else {
-              // add the polynomial on the lhs
-              lhsTex += newPoly.tex("sc");
+            if (both && yn()) { // add on the rhs
+              rhs = rhs.sub(newPolyVal);
+              if (yn()) {
+                rhsTex = `${num11.mult(-1).tex("c")}\\left(${newPoly.tex()}\\right)` + rhs.tex("s");
+              } else {
+                rhsTex = rhs.tex() + `${num11.mult(-1).tex("sc")}\\left(${newPoly.tex()}\\right)`;
+              }
+            } else { // add on the lhs
+              lhsTex += `${num11.tex("sc")}\\left(${newPoly.tex()}\\right)`
               rhs = rhs.add(newPolyVal);
               rhsTex = rhs.tex();
             }
             break;
-          case 3 : // add a number
-            console.log("case 3");
-            num2 = new Frac(choice(pool9));
-            lhsTex += num2.tex("s");
-            rhs = rhs.add(num2);
-            rhsTex = rhs.tex();
-            break;
-          case 4 : // add a fraction
-            console.log("case 4");
-            while (typeof num2 === "undefined") {
-              newPoly = new Poly(genCoeffs(1, gen, 1, 2), lett);
+          case 2 : // add polynomial (without bracket)
+            while (newPolyVal.d != 1) { // ensure the value is an integer
+              newPoly = new Poly(genCoeffs(1, gen, 0, 1), lett);
               newPolyVal = newPoly.eval(ans);
-              num2 = choice(poolDenom.filter(i => isFactorOf(i, newPolyVal)));
             }
-            const sign = num2 > 0 ? "+" : "-";
-            if (both && yn()) {
-              // add the fraction on the rhs
-              rhsTex += `${sign} \\dfrac{${newPoly.tex()}}{${Math.abs(num2)}}`;
-              lhsTex += newPolyVal.div(num2).tex("s");
-            } else {
-              // add the fraction on the lhs
-              lhsTex += `${sign} \\dfrac{${newPoly.tex()}}{${Math.abs(num2)}}`;
-              rhs = rhs.add(newPolyVal.div(num2));
+            if (both && yn()) { // add on the rhs
+              rhs = rhs.sub(newPolyVal);
+              rhsTex = newPoly.add(rhs).tex();
+            } else { // add on the lhs
+              const op2 = newPoly.order == 1? "sc" : "s";
+              lhsTex += newPoly.tex(op2);
+              rhs = rhs.add(newPolyVal);
               rhsTex = rhs.tex();
             }
-        }
-      }
+            break;
+          case 3 : // add a fraction
+            // choose the denominator from a factor
+            while (typeof num11 === "undefined") {
+              newPoly = new Poly(genCoeffs(1, gen, 1, 2), lett);
+              newPolyVal = newPoly.eval(ans);
+              num11 = choice(factorsOf(newPolyVal, neg? "np" : "p"));
+            }
+            let sign;
+            if (both && yn()) { // add on the rhs
+              rhs = rhs.sub(newPolyVal.div(num11));
+              if (yn()) {
+                sign = num11 > 0 ? "" : "-";
+                rhsTex = `${sign} \\dfrac{${newPoly.tex()}}{${Math.abs(num11)}}` + rhs.tex("s");
+              } else {
+                sign = num11 > 0 ? "+" : "-";
+                rhsTex = rhs.tex() + `${sign} \\dfrac{${newPoly.tex()}}{${Math.abs(num11)}}`;
+              }
+            } else { // add on the lhs
+              sign = num11 > 0 ? "+" : "-";
+              lhsTex += `${sign} \\dfrac{${newPoly.tex()}}{${Math.abs(num11)}}`;
+              rhs = rhs.add(newPolyVal.div(num11));
+              rhsTex = rhs.tex();
+            }
+        } // end switch
+
+      } // endif (two)
 
       const qTex = `${lhsTex} = ${rhsTex}`;
-      const aTex = `\\boldsymbol{\\implies ${lett} = ${ans.tex()}}`;
+      const aTex = `\\boldsymbol{\\implies ${lett} = ${ans.reduce().tex()}}`;
       render(qTex, aTex, options).then((li) => {
         qbox.appendChild(li);
         MathJax.startup.document.clear();
