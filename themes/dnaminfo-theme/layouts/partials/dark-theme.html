@@ -1,14 +1,14 @@
 <script>
   function changeTheme(html, newTheme, button, newIcon, storage=null) {
     if (newTheme === "dark") {
-      html.classList.remove("dark-theme");
-      html.classList.add("light-theme");
+      html.classList.remove("light-theme");
+      html.classList.add("dark-theme");
       if (storage) {
         storage.setItem("theme", "dark");
       }
     } else if (newTheme === "light") {
-      html.classList.remove("light-theme");
-      html.classList.add("dark-theme");
+      html.classList.remove("dark-theme");
+      html.classList.add("light-theme");
       if (storage) {
         storage.setItem("theme", "light");
       }
@@ -45,9 +45,9 @@
     /* Let users toggle the theme */
     themeButton.addEventListener("click", () => {
       if (html.classList.contains("dark-theme")) {
-        changeTheme(html, "dark", themeButton, lightIcon, window.localStorage);
-      } else {
         changeTheme(html, "light", themeButton, darkIcon, window.localStorage);
+      } else {
+        changeTheme(html, "dark", themeButton, lightIcon, window.localStorage);
       }
     });
   });
