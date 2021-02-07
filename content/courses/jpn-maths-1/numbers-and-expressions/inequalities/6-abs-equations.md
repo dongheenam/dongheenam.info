@@ -3,13 +3,13 @@ title: Linear Equations with Absolute Values
 slug: absolute-value-equations
 description: Solving linear equations with variables inside an absolute value symbol.
 
-date: 2021-01-23 21:53:15.779 +1100
-lastMod: 2021-01-23 21:53:15.779 +1100
+date: 2021-02-07 16:54:29.540 +1100
+lastMod: 2021-02-07 16:54:29.540 +1100
 
 type: docs
 toc: true
 math: true
-draft: true
+draft: false
 
 tags:
   - inequality
@@ -156,6 +156,60 @@ From cases $\text{(i)}$ to $\text{(iii)}$, the solutions are $\boldsymbol{ x = \
 
 {{% /box %}}
 
+Below is a slightly different example. The principle is still the same: divide the cases!
+
+{{% box %}}
+{{% note Question %}} Solve $\\left| |x-4| - 3\\right| = 2$.{{% mn refex2 %}}From Tokyo Univ. of Pharm. and Life Sci.{{% /mn %}}
+
+{{% note Solution %}} We will first remove the inner absolute symbol.
+
+$\text{(i). }$ When $x\ge 4$, the equation becomes $| \hl{(x-4)} -3 | = 2$. Then
+\begin{align}
+  &|x-7| = 2 \\\\
+  \implies & x-7 = \pm 2 \\\\
+  \implies & x = 7 \pm 2,
+\end{align}
+which implies $x = 9$ or $5$. Note that both solutions satisfy our assumption of $x\ge 4$.
+
+$\text{(ii). }$ When $x< 4$, the equation becomes $| \hl{-(x-4)} -3 | = 2$. Then
+\begin{align}
+  &|-x + 4 - 3| = 2 \\\\
+  \implies & |-x+1| = 2 \\\\
+  \implies & -x+1 = \pm 2 \\\\
+  \implies & x = 1 \mp 2,
+\end{align}
+which implies $ x = -1$ or $3$. Note that both solutions satisfy $x<4$.
+
+From $\text{(i)}$ and $\text{(ii)}$, the solutions are $\\boldsymbol{ x = -1,~ 3,~ 5,~ 9 }.$
+
+<br>
+
+{{% note "Alt. Solution" %}} We can also remove the outer absolute symbol first:
+
+\begin{align}
+  & \\left| |x-4| - 3\\right| = 2 \\\\
+  \implies & |x-4| - 3 = \pm 2 \\\\
+  \implies & |x-4| = 3 \pm 2 \\\\
+  \implies & |x-4| = \text{$5$ or $1$}.
+\end{align}
+Now, if $|x-4|=5$,
+\begin{align}
+  & x - 4 = \pm 5 \\\\
+  \implies & x = 4 \pm 5 \\\\
+  \implies & x = \text{$9$ or $-1$},
+\end{align}
+and if $|x-4|=1$,
+\begin{align}
+  & x - 4 = \pm 1 \\\\
+  \implies & x = 4 \pm 1 \\\\
+  \implies & x = \text{$5$ or $3$}.
+\end{align}
+
+Therefore, the solutions are $\boldsymbol{ x = -1,~ 3,~ 5,~ 9 }.$
+
+
+{{% /box %}}
+
 ## Practice Questions
 
 1. Solve the following equations.
@@ -164,7 +218,6 @@ From cases $\text{(i)}$ to $\text{(iii)}$, the solutions are $\boldsymbol{ x = \
     3. $2|x-1| = 3x$
 
 {{% details title="Answer" %}}
-
 
 1. 
     1. $x = -8,~-2$
@@ -206,5 +259,90 @@ $\text{(ii). }$ When $x< 1$, $-2(x-1) = 3x$, then
 \end{align}
 
 Therefore, from $\text{(i)}$ and $\text{(ii)}$, $\boldsymbol{ x = \dfrac{2}{5}. }$
+
+{{% /details %}}
+
+2. Solve the following equations.
+    1. $2|x+1|-|x-3| = 2x$
+    2. $||x-1|-2|-3 = 0$
+
+{{% details title="Answer" %}}
+2. 
+    1. $ x = -\dfrac{5}{3},~1,~5 $
+    2. $ x = -4,~6 $
+
+{{% note Solution %}} 
+
+$\hspace{0.5em} \text{a.} \quad$ The expressions inside the absolute symbols change their signs at $x=-1$ and $x=3$.
+
+$\text{(i). }$ When $x < -1$, $ \hl{-2(x+1)+(x-3)} = 2x $,
+\begin{align}
+  & -2x - 2 + x - 3 = 2x \\\\
+  \implies & 3x = -5 \\\\
+  \implies & x = -\dfrac{5}{3}.
+\end{align}
+This solution satisfies the condition $x < -1$.
+
+$\text{(ii). }$ When $-1 \le x < 3$, $ 2(x+1)\hl{+(x-3)} = 2x $,
+\begin{align}
+  & 2x + 2 + x - 3 = 2x \\\\
+  \implies & x = 1.
+\end{align}
+This solution satisfies the condition $-1 \le x < 3$.
+
+$\text{(iii). }$ When $x \ge 3$, $ 2(x+1)-(x-3) = 2x $,
+\begin{align}
+  & 2x + 2 -x + 3 = 2x \\\\
+  \implies & x = 5.
+\end{align}
+This solution satisfies the condition $x \ge 3$.
+
+Therefore, the solutions are $\boldsymbol{ x = -\dfrac{5}{3},~1,~5 }.$
+
+---
+
+$\hspace{0.5em} \text{b.} \quad$ If we remove the outer absolute symbol first,
+
+\begin{align}
+  & ||x-1|-2|-3 = 0 \\\\
+  \implies & ||x-1|-2| = 3 \\\\
+  \implies & |x-1| -2 = \pm 3 \\\\
+  \implies & |x-1| = 2 \pm 3 \\\\
+  \implies & |x-1| = \text{$5$ or $-1$}.
+\end{align}
+
+Because the absolute value of a number cannot be less than zero, the only possibility is $|x-1| = 5$. Then
+
+\begin{align}
+  & x-1 = \pm 5 \\\\
+  \implies & x = 1 \pm 5 \\\\
+  \implies & x = \text{$6$ or $-4$}.
+\end{align}
+
+Therefore, the solutions are $\boldsymbol{ x = -4,~6 }.$
+
+{{% note "Alt. Solution" %}} We can also remove the inner absolute value symbol first:
+
+$\text{(i). }$ When $x < 1$, $ | \hl{-(x-1)} - 2 | -3 = 0 $, then
+\begin{align}
+  & | -x+1 -2 | = 3 \\\\
+  \implies & | -x -1 | = 3 \\\\
+  \implies & -x -1 = \pm 3 \\\\
+  \implies & x = -1 \mp -3 \\\\
+  \implies & x = \text{$2$ or $-4$.}
+\end{align}
+Because we assumed $x<1$, the only valid solution is $x=-4$.
+
+$\text{(ii). }$ When $x \ge 1$, $ | \hl{(x-1)} - 2 | -3 = 0 $, then
+\begin{align}
+  & | x-1 -2 | = 3 \\\\
+  \implies & |x-3| = 3 \\\\
+  \implies & x-3 = \pm 3 \\\\
+  \implies & x = 3 \pm 3 \\\\
+  \implies & x = \text{$6$ or $0$.}
+\end{align}
+Because we assumed $x\ge 1$, the only valid solution is $x=6$.
+
+Therefore, from $\text{(i)}$ and $\text{(ii)}$, the solutions are $\boldsymbol{ x = -4,~6 }.$
 
 {{% /details %}}
