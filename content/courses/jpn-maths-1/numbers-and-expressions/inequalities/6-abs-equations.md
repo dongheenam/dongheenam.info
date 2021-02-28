@@ -12,7 +12,7 @@ math: true
 draft: false
 
 tags:
-  - inequality
+  - linear equation
   - absolute value
   - algebra
 

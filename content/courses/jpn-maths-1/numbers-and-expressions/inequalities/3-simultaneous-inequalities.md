@@ -70,7 +70,7 @@ And from the second inequality,
 \end{align}
 
 {{% mn 72 %}}
-{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-sim-ex2.png" %}} The diagram representing the ranges.
+{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-sim-ex2.png" %}} The diagram representing $x\ge -5$ and $x<3$.
 {{% /mn %}} The range of $x$ that satisfies both $\tcirc{1}$ and $\tcirc{2}$ is $\boldsymbol{ -5\le x \lt 3 }$.
 
 <br>
@@ -92,7 +92,7 @@ And from the second inequality,
 \end{align}
 
 {{% mn 92 %}}
-{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-sim-ex3.png" %}} The diagram representing the ranges.
+{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-sim-ex3.png" %}} The diagram representing $x \lt -2$ and $x\ge 0$.
 {{% /mn %}} From the diagram, we can see that there do not exist values of $x$ that both satisfy $\tcirc{3}$ and $\tcirc{4}$. Therefore, *there are no solutions*.
 
 {{% /box %}}
@@ -129,7 +129,7 @@ And from the second inequality,
 \end{align}
 
 {{% mn 131 %}}
-{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-sim-ex4.png" %}} The diagram representing the ranges.
+{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-sim-ex4.png" %}} The diagram representing $x > -\dfrac{3}{5}$ and $x>4$.
 {{% /mn %}} Therefore, the range of $x$ that satisfies both $\tcirc{1}$ and $\tcirc{2}$ is $\boldsymbol{ x \gt 4 }$.
 
 <hr style="visibility: hidden" />
@@ -175,7 +175,7 @@ And from the second inequality,
 \end{align}
 
 {{% mn q1a %}}
-{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-sim-q1a.png" %}} The diagram representing the ranges.
+{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-sim-q1a.png" %}} The diagram representing $x \lt 8$ and $x \gt -3$.
 {{% /mn %}} Therefore, the range of $x$ that satisfies both inequalities is $\boldsymbol{ -3 \lt x \lt 8 }$.
 
 <br>
@@ -200,7 +200,7 @@ And from the second inequality,
 \end{align}
 
 {{% mn q1b %}}
-{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-sim-q1b.png" %}} The diagram representing the ranges.
+{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-sim-q1b.png" %}} The diagram representing $x\le\dfrac{9}{2}$ and $x\lt 3$.
 {{% /mn %}} Therefore, the range of $x$ that satisfies both inequalities is $\boldsymbol{ x\lt 3 }$.
 
 <hr style="visibility: hidden" />
@@ -239,7 +239,7 @@ and from $3-5x\le2(x-2)$,
 \end{align}
 
 {{% mn q2a %}}
-{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-sim-q2a.png" %}} The diagram representing the ranges.
+{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-sim-q2a.png" %}} The diagram representing $x\le -1$ and $x\ge 1$.
 {{% /mn %}} Therefore, there are *no solutions*.
 
 <br>
@@ -273,7 +273,7 @@ $(2)$ Multiplying both sides by $2$
 \end{align}
 
 {{% mn q2b3 %}}
-{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-sim-q2b.png" %}} Therefore, the range of $x$ that satisfies both inequalities is $\boldsymbol{ x\ge 10 }$.
+{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-sim-q2b.png" %}} Diagram representing $x>-4$ and $x\ge 10$.{{% /mn %}} Therefore, the range of $x$ that satisfies both inequalities is $\boldsymbol{ x\ge 10 }$.
 
 <hr style="visibility: hidden" />
 

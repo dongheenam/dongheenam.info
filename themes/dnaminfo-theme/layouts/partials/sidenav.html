@@ -10,8 +10,8 @@
 {{ if or $toc_required $menu_required }}
 <aside class="sidenav">
     {{ if $toc_required }}
-    <div class="toc-title {{ if not (eq $.Type "docs") }}toc-title--expanded{{ end }}">Table of Contents</div>
-    <div class="toc {{ if not (eq $.Type "docs") }}toc--expanded{{ end }}">
+    <div class="toc-title toc-title--expanded">Table of Contents</div>
+    <div class="toc toc--expanded">
       {{ .TableOfContents }}
     </div>
     {{ end }}

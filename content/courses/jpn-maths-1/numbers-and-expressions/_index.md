@@ -65,7 +65,7 @@ menu:
   - [Finding Integer Solutions for Inequalities](inequalities/integer-solutions)
   - [Applications of Linear Inequalities](inequalities/applications)
 - Equations and Inequalities with Absolute Values
-  - [Linear Equations with Absolute Values]
+  - [Linear Equations with Absolute Values](inequalities/absolute-value-equations)
   - [Solving Inequalities with Absolute Values]
 - [Review Set 4]
 
