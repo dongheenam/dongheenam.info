@@ -66,7 +66,7 @@ menu:
   - [Applications of Linear Inequalities](inequalities/applications)
 - Equations and Inequalities with Absolute Values
   - [Linear Equations with Absolute Values](inequalities/absolute-value-equations)
-  - [Solving Inequalities with Absolute Values]
+  - [Solving Inequalities with Absolute Values](inequalities/absolute-value-inequalities)
 - [Review Set 4]
 
 ## Comparison Table
