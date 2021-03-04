@@ -259,7 +259,7 @@ $\hspace{0.5em} \text{a.} \quad$ Because $x-5=0$ when $x=5$, we will divide the 
 
 $(\text{i})$ When $x<0$,
 \begin{align}
-  |x-5| \le \dfrac{2}{3} |x| + 1 \implies & hl{-(x-5)} \le \hl{ -\dfrac{2}{3} x} + 1 \\\\
+  |x-5| \le \dfrac{2}{3} |x| + 1 \implies & \hl{-(x-5)} \le \hl{ -\dfrac{2}{3} x} + 1 \\\\
   \implies & -x + 5 \le - \dfrac{2}{3}x + 1 \\\\
   \implies & 4 \le \dfrac{1}{3} x \\\\
   \implies & x \ge 12.
@@ -268,7 +268,7 @@ Because this does not satisfy our assumption $x<0$, we find *there are no values
 
 $(\text{ii})$ When $0\le x < 5$,
 \begin{align}
-  |x-5| \le \dfrac{2}{3} |x| + 1 \implies & hl{-(x-5)} \le \dfrac{2}{3} x + 1 \\\\
+  |x-5| \le \dfrac{2}{3} |x| + 1 \implies & \hl{-(x-5)} \le \dfrac{2}{3} x + 1 \\\\
   \implies & -x + 5 \le + \dfrac{2}{3}x + 1 \\\\
   \implies & 4 \le \dfrac{5}{3} x \\\\
   \implies & x \ge \dfrac{12}{5}.
