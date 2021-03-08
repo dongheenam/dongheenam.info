@@ -67,7 +67,7 @@ menu:
 - Equations and Inequalities with Absolute Values
   - [Linear Equations with Absolute Values](inequalities/absolute-value-equations)
   - [Solving Inequalities with Absolute Values](inequalities/absolute-value-inequalities)
-- [Review Set 4]
+- [Review Set 4](inequalities/review-4)
 
 ## Comparison Table
 
@@ -95,6 +95,7 @@ menu:
 | ├ Finding Integer Solutions for Inequalities | 10A^ | |
 | ├ Applications of Linear Inequalities | 10A | |
 | ├ Linear Equations with Absolute Values |  | Spec3^ |
+| └ Linear Inequalities with Absolute Values |  |  |
 {{% /table-wrapper %}}
 
 ^ indicates the topic may be used for extension.
