@@ -159,7 +159,7 @@ From cases $\text{(i)}$ to $\text{(iii)}$, the solutions are $\boldsymbol{ x = \
 Below is a slightly different example. The principle is still the same: divide the cases!
 
 {{% box %}}
-{{% note Question %}} Solve $\\left| |x-4| - 3\\right| = 2$.{{% mn refex2 %}}From Tokyo Univ. of Pharm. and Life Sci.{{% /mn %}}
+{{% note Question %}} Solve $\\left| |x-4| - 3\\right| = 2$.{{% mn refex2 refs %}}From Tokyo Univ. of Pharm. and Life Sci.{{% /mn %}}
 
 {{% note Solution %}} We will first remove the inner absolute symbol.
 

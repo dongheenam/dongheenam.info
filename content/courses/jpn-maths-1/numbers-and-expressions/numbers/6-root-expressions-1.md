@@ -348,13 +348,83 @@ $(1)$ Complete the square, so that we can use $x + 3 = \sqrt{15}$.
 
 {{% /details %}}
 
-3. When $x=\dfrac{\sqrt{5}+\sqrt{3}}{\sqrt{5}-\sqrt{3}}$ and $y=\dfrac{\sqrt{5}-\sqrt{3}}{\sqrt{5}+\sqrt{3}}$, calculate {{% mn ref3 refs %}}From Juntendo Univ.{{% /mn %}}
+3. Let the integer part of $\dfrac{\sqrt{3}+1}{\sqrt{3}-1}$ be $a$ and its decimal part $b$. Find: {{% mn ref3 refs %}}From Nippon Dental Univ.{{% /mn %}}
+    1. $a$ and $b$
+    2. $a^2 + 6ab + 9b^2$
+
+{{% details title="Answer" %}}
+
+3. 
+    1. $a=3,$ $b=\sqrt{3}-1$
+    2. $27$
+
+{{% note Solution %}} The number of interest can be simplified to
+
+\begin{align}
+  \dfrac{\sqrt{3}+1}{\sqrt{3}-1} &= \dfrac{\big(\sqrt{3}+1 \big)^2}{\big(\sqrt{3}-1\big)\big(\sqrt{3}+1 \big)} \\\\
+  &= \dfrac{3 + 1 + 2\sqrt{3}}{3-1} \\\\
+  &= 2 + \sqrt{3}.
+\end{align}
+
+$\hspace{0.5em} \text{a.} \quad$ Because $1\le \sqrt{3} < 2$, $a = \boldsymbol{ 3 }$, and $b= 2 + \sqrt{3} - a = \boldsymbol{ \sqrt{3} - 1 }.$
+
+{{% mn q3 tips %}}
+$(1)$ $a^2+6ab+9b^2$ $=a^2 + 2\cdot a\cdot 3b + (3b)^2$ $=(a+3b)^2$.
+{{% /mn %}}
+\begin{align}
+  \text{b.} \quad a^2 + 6ab + 9b^2 &= (a+3b)^2 \tag{1} \\\\
+  &= \big\\{ 3 + 3\big(\sqrt{3} - 1\big) \big\\}^2 \\\\
+  &= \big( 3 + 3\sqrt{3} - 3 \big)^2 \\\\
+  &= \big(3\sqrt{3}\big)^2 \\\\
+  &= \boldsymbol{ 27 }.
+\end{align}
+
+{{% /details %}}
+
+4. When $x=3+2\sqrt{2}$ and $y=3-2\sqrt{2}$, evaluate {{% mn ref4 refs %}}From Kyoto Sangyo Univ.{{% /mn %}}
+    1. $x^2+y^2$
+    2. $\dfrac{y^2}{x} + \dfrac{x^2}{y}$
+
+{{% details title="Answer" %}}
+
+4.  
+    1. $34$
+    2. $198$
+
+{{% note Solution %}} We will first find the values of $x+y$ and $xy$:
+
+\begin{align}
+  x + y &= \big(3 + 2\sqrt{2} \big) + \big(3 - 2\sqrt{2} \big) = \boldsymbol{ 6 }, \\\\
+  xy &= \big(3 + 2\sqrt{2} \big) \big(3 - 2\sqrt{2} \big) = 9 - 8 = \boldsymbol{ 1 }.
+\end{align}
+
+Then,
+
+\begin{align}
+  \text{a.} \quad x^2+y^2 &= (x+y)^2 - 2xy \\\\
+  &= 6^2 - 2\cdot 1 \\\\
+  &= 36 -2 \\\\
+  \boldsymbol{ 34 }.
+\end{align}
+
+\begin{align}
+  \text{b.} \quad \dfrac{y^2}{x} + \dfrac{x^2}{y} &= \dfrac{y^3 + x^3}{xy} \\\\
+  &= \dfrac{(x+y)^3 - 3xy(x+y)}{xy} \\\\
+  &= \dfrac{6^3 - 3\cdot 1 \cdot 6}{1} \\\\
+  &= 216 - 18 \\\\
+  &= \boldsymbol{ 198 }.
+
+\end{align}
+
+{{% /details %}}
+
+5. When $x=\dfrac{\sqrt{5}+\sqrt{3}}{\sqrt{5}-\sqrt{3}}$ and $y=\dfrac{\sqrt{5}-\sqrt{3}}{\sqrt{5}+\sqrt{3}}$, calculate {{% mn ref5 refs %}}From Juntendo Univ.{{% /mn %}}
     1. $x^2+y^2$
     2. $x^3+y^3$
     3. $x^3-y^3$
 
 {{% details title="Answer" %}}
-3. 
+5. 
     1. $62$
     2. $488$
     3. $126\sqrt{15}$
@@ -411,13 +481,13 @@ Therefore
 
 {{% /details %}}
 
-4. When $2x+\dfrac{1}{2x} = \sqrt{7}$, evaluate the following.
+6. When $2x+\dfrac{1}{2x} = \sqrt{7}$, evaluate the following.
     1. $4x^2 + \dfrac{1}{4x^2}$
     2. $8x^3 + \dfrac{1}{8x^3}$
     3. $64x^6 + \dfrac{1}{64x^6}$
 
 {{% details title="Answer" %}}
-4. 
+6. 
     1. $5$
     2. $4\sqrt{7}$
     3. $110$

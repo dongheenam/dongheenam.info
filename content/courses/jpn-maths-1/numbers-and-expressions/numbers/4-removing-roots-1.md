@@ -4,7 +4,7 @@ slug: "removing-roots-1"
 description: How to rationalise the denominator of a fraction.
 
 date: 2020-08-04 08:53:19.702 +1000
-lastMod: 2020-12-22 19:07:21.314 +1100
+lastMod: 2021-03-07 09:27:54.862 +1100
 
 type: docs
 toc: true
@@ -38,7 +38,7 @@ weight: 14
 
 What do you think is the value of $\dfrac{1}{\sqrt{2}}$? Well, from the last lesson, [we now know](../square-roots/) that it equals the square root of $\dfrac{1}{2}$, so we need to find a (positive) number whose square is a half. You can estimate the value by trial-and-error, the [fancy Babylonian method](https://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Babylonian_method), or just use a calculator. Anyways, you will get $$ \frac{1}{\sqrt{2}} = 0.70710678 \cdots. $$ Let's compare this number with $$ \sqrt{2} = 1.41421356 \cdots. $$ What do you notice? Did you also find two times the square root of a half is equal to the square root of two, or $\dfrac{2}{\sqrt{2}} = \sqrt{2}$?
 
-Dealing with roots is full of surprise. That is why we need to talk about some tips and tricks on how to deal with square roots. In this lesson, we will learn:
+Dealing with roots is full of surprise, which is why we need to talk about some tips and tricks on how to deal with square roots. In this lesson, we will learn:
 
 - How to rationalise the denominator of a fraction to help simplify it.
 
@@ -251,14 +251,47 @@ $(6)$ Rationalising the denominator again
 
 {{% /details %}}
 
-2. Simplify the following expressions. {{% mn ref2 refs %}}a. From Daido Univ.<br>b. From Jichi Medical Univ.<br>c. From Kochi Univ. of Tech.{{% /mn %}}
+2. Simplify the following. {{% mn ref2 refs %}}a. From Shizuoka Inst. of Sci. and Tech.<br>b. From Hokkaido Coll. of Pharm.{{% /mn %}}  
+    1. $\dfrac{1}{\sqrt{3}} - \dfrac{1}{\sqrt{27}}$
+    2. $\dfrac{4}{3+\sqrt{5}} + \dfrac{1}{2+\sqrt{5}}$
+
+{{% details title="Answer" %}}
+
+2. 
+    1. $\dfrac{2\sqrt{3}}{9}$
+    2. $1$
+
+{{% note Solution %}}
+
+{{% mn q1 tips %}}
+$(1)$ Multiply both fractions by $\sqrt{3}/\sqrt{3}$.
+{{% /mn %}}
+\begin{align}
+  \text{a.} \quad \dfrac{1}{\sqrt{3}} - \dfrac{1}{\sqrt{27}} &=
+  \dfrac{1}{\sqrt{3}} - \dfrac{1}{3\sqrt{3}} \tag{1} \\\\
+  &= \dfrac{\sqrt{3}}{3} - \dfrac{\sqrt{3}}{9} \\\\
+  &= \dfrac{3\sqrt{3}}{9} - \dfrac{\sqrt{3}}{9} \\\\
+  &= \boldsymbol{ \dfrac{2\sqrt{3}}{9} }.
+\end{align}
+
+\begin{align}
+  \text{b.} \quad &\dfrac{4}{3+\sqrt{5}} + \dfrac{1}{2+\sqrt{5}} \\\\
+  &= \dfrac{4\big(3-\sqrt{5}\big)}{\big(3+\sqrt{5}\big)\big(3-\sqrt{5}\big)} + \dfrac{\sqrt{5}-2}{\big(2+\sqrt{5}\big)\big(\sqrt{5}-2\big)} \\\\
+  &= \dfrac{4\big(3-\sqrt{5}\big)}{9-5} + \dfrac{\sqrt{5}-2}{5-4} \\\\
+  &= 3-\sqrt{5} + \sqrt{5}-2 \\\\
+  &= \boldsymbol{ 1 }.
+\end{align}
+
+{{% /details %}}
+
+3. Simplify the following expressions. {{% mn ref2 refs %}}a. From Daido Univ.<br>b. From Jichi Medical Univ.<br>c. From Kochi Univ. of Tech.{{% /mn %}}
     1. $\dfrac{8}{3+\sqrt{5}} + \dfrac{9}{\sqrt{7}+2}$
     2. $\dfrac{1}{2}\left( \dfrac{2-\sqrt{3}}{2+\sqrt{3}} + \dfrac{2+\sqrt{3}}{2-\sqrt{3}}\right)$
     3. $\dfrac{\big(\sqrt{11}-\sqrt{2}+3\big)\big(\sqrt{11}+\sqrt{2}-3\big)}{3\sqrt{2}}$
 
 {{% details title="Answer" %}}
 
-2. 
+3. 
     1. $3\sqrt{7}-2\sqrt{5}$
     2. $7$
     3. $2$

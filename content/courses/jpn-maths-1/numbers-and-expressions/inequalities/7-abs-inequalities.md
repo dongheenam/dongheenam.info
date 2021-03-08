@@ -71,7 +71,7 @@ In the [previous lesson](../absolute-value-equations), we found that $$ |x| = c 
   -3 \le 2x+1 \le 3 \implies & -4 \le 2x \le 2 \\\\
   \implies & \boldsymbol{ -2 \le x \le 1 }.
 \end{align}
-4. {{% mn 90 %}}
+4. {{% mn 90 tips %}}
 {{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-abs-ex1a.png" %}}{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-abs-ex1b.png" %}} The diagram representing the possible ranges of $x$ for Q4.
 {{% /mn %}} When $x\ge 4$, the equality becomes
 \begin{align}
@@ -117,13 +117,13 @@ Just like [for equations with multiple absolute values](../absolute-value-equati
 
 {{% box %}}
 
-{{% note Example %}} Solve the following inequalities. {{% mn ref120 %}}Q1. From Seinan Gakuin Univ.<br>Q2. From Osaka Univ. of Econ.{{% /mn %}}
+{{% note Example %}} Solve the following inequalities. {{% mn ref120 refs %}}Q1. From Seinan Gakuin Univ.<br>Q2. From Osaka Univ. of Econ.{{% /mn %}}
 1. $ |x-1| + 2|x-3| \le 11 $
 2. $ |x-7| + |x-8| < 3 $
 
 {{% note Solution %}}
 
-1. Since the signs of $x-1$ and $x-3$ change at $x=1$ and $x=3$ respectively, our choice of cases are $(\text{i})~x<1$, $(\text{ii})~1\le x < 3$, and $(\text{iii})~x \ge 3$. {{% mn 126 %}}
+1. Since the signs of $x-1$ and $x-3$ change at $x=1$ and $x=3$ respectively, our choice of cases are $(\text{i})~x<1$, $(\text{ii})~1\le x < 3$, and $(\text{iii})~x \ge 3$. {{% mn 126 tips %}}
 {{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-abs-ex2a.png" %}}{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-abs-ex2b.png" %}}{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-abs-ex2c.png" %}} The diagram representing the possible ranges of $x$ for Q1.
 {{% /mn %}} <br><br>
 $(\text{i})$ When $x<1$,
@@ -154,7 +154,7 @@ Therefore, our solution is the union of $\tcirc{1}$, $\tcirc{2}$, and $\tcirc{3}
 
 ---
 
-2. Likewise, we will solve the inequality when $(\text{i})~x<7$, $(\text{ii})~7\le x < 8$, and $(\text{iii})~x \ge 8$. {{% mn 158 %}}
+2. Likewise, we will solve the inequality when $(\text{i})~x<7$, $(\text{ii})~7\le x < 8$, and $(\text{iii})~x \ge 8$. {{% mn 158 tips %}}
 {{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-abs-ex3a.png" %}}{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-abs-ex3b.png" %}}{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-abs-ex3c.png" %}} The diagram representing the possible ranges of $x$ for Q2.
 {{% /mn %}} <br><br>
 $(\text{i})$ When $x<7$,
@@ -188,7 +188,7 @@ Our solution is the union of $\tcirc{4}$, $\tcirc{5}$, and $\tcirc{6}$, which is
 
 ## Practice Questions
 
-1. Solve the following inequalities. {{% mn ref1 %}}d. From Nara Univ. {{% /mn %}}
+1. Solve the following inequalities. {{% mn ref1 refs %}}d. From Nara Univ. {{% /mn %}}
     1. $ |x+3| \le 2 $
     2. $ |x-4| > 3 $
     3. $ |4x-5| > 1 $
@@ -243,7 +243,7 @@ From $\tcirc{1}$ and $\tcirc{2}$, the possible range of $x$ is $\boldsymbol{ -2 
 {{% /details %}}
 
 
-2. Solve the following inequalities.{{% mn ref2 %}}a. From Osaka Sangyo Univ.<br>b. From Hiroshima Inst. of Tech.{{% /mn %}}
+2. Solve the following inequalities.{{% mn ref2 refs %}}a. From Osaka Sangyo Univ.<br>b. From Hiroshima Inst. of Tech.{{% /mn %}}
     1. $|x-5| \le \dfrac{2}{3} |x| + 1$
     2. $|x+2|-|x-1|>x$
 

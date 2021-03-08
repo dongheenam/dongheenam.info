@@ -119,7 +119,7 @@ and $x^3$ as follows:
 
 \begin{align}
   x^3 &= x \cdot x^2 \\\\
-  &= x \cdot (\hl{-3x -1 }) \\\\
+  &= x \hl{( -3x -1 )} \\\\
   &= -3x^2 - x \\\\
   &= -3\hl{(-3x-1)} - x \\\\
   &= 9x + 3 - x \\\\

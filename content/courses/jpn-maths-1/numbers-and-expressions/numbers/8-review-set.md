@@ -474,7 +474,7 @@ $(8)$ $\sqrt{5}-1>0$
 \begin{align}
   \text{b.} \quad \textstyle\sqrt{7-\sqrt{21+\sqrt{80}}} 
   &= \textstyle\sqrt{7-\sqrt{21+2\sqrt{20}}} \\\\
-  &= \textstyle\sqrt{7-\sqrt{1+20+\sqrt{1}\sqrt{20}}} \\\\
+  &= \textstyle\sqrt{7-\sqrt{1+20+2\sqrt{1}\sqrt{20}}} \\\\
   &= \textstyle\sqrt{7-\sqrt{(1+\sqrt{20})^2}} \\\\
   &= \textstyle\sqrt{7-(1+\sqrt{20})} \\\\
   &= \textstyle\sqrt{6-\sqrt{20}} \\\\
