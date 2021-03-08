@@ -5,7 +5,7 @@ description: Mathematics for Grade 1 of Upper Secondary (Year 10).
 date: 2021-01-22 18:39:41.365 +1100
 lastmod: 2021-01-22 18:39:41.365 +1100
 
-toc: false
+toc: true
 type: docs
 math: true
 
@@ -29,7 +29,7 @@ weight: 15
 ### Level Objectives
 
 
-### 1. Numbers and Expressions (Comments p. 34)
+### A. Numbers and Expressions (Comments p. 34)
 
 1. *Knowledge and skills.* Students will be able to:
     1. Expand the range of numbers to real numbers, and perform arithmetic operations with irrational numbers.{{% sn irr %}}With regards to irrational numbers, students work with square roots only.{{% /sn %}}{{% sn extra2 %}}Include the finite and recurring decimal represenations of fractions.{{% /sn %}}
@@ -51,7 +51,7 @@ weight: 15
 {{% /details %}}
 
 
-### 2. Shapes and Measurement (Comments p. 37)
+### B. Shapes and Measurement (Comments p. 37)
 
 1. *Knowledge and skills.* Students will be able to:
     1. Understand the definition of trigonometric ratios of acute angles and the relationship between the ratios.{{% sn trig %}}The Comments specifies the following identities as examples: $\sin A = \cos(90^\circ - A),$ $\cos A = \sin(90^\circ - A),$ $\tan A = \dfrac{\sin A}{\cos A}, $ $\sin^2 A + \cos^2 A = 1,$ $1+\tan^2 A = \dfrac{1}{\cos^2 A}.$ {{% /sn %}}
@@ -72,7 +72,7 @@ In Grade 3 of lower secondary mathematics, students learn the properties of simi
 {{% /details %}}
 
 
-### 3. Quadratic Functions (Comments p. 41)
+### C. Functions (Comments p. 41)
 
 1. *Knowledge and skills.* Students will be able to:
     1. Understand the characteristics of quadratic functions and their graphs.
@@ -91,7 +91,7 @@ In lower secondary mathematics, students build their knowledge of directly propo
 {{% /details %}}
 
 
-### 4. Analysis of Data (Comments p. 43)
+### D. Analysis of Data (Comments p. 43)
 
 1. *Knowledge and skills.* Students will be able to:
     1. Understand the definition and use of variance, standard deviation, scatter plot, and correlation coefficient.

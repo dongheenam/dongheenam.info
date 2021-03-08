@@ -6,4 +6,5 @@
     package = "netlify-plugin-hugo-cache-resources"
 
 [context.production.environment]
-    HUGO_VERSION = "0.78.2"
+    HUGO_VERSION = "0.81.0"
+    HUGO_ENABLEGITINFO = "true"
