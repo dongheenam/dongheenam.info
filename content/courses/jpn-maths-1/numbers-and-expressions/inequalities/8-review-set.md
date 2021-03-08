@@ -215,8 +215,8 @@ $\hspace{0.5em} \text{c.} \quad$ Because $2 < \dfrac{11}{4} < 3$, the largest in
 {{% details title="Answer" %}}
 
 5. $\begin{cases} 
-x > \dfrac{b}{a-3} & \text{if $a>3$}, \\\\
-x < \dfrac{b}{a-3} & \text{if $a<3$}, \\\\
+x > \dfrac{b}{3-a} & \text{if $a>3$}, \\\\
+x < \dfrac{b}{3-a} & \text{if $a<3$}, \\\\
 \text{any real number} & \text{if $a=3$ and $b>0$}, \\\\
 \text{no solution} & \text{if $a=3$ and $b<0$}.
 \end{cases}$
@@ -230,8 +230,8 @@ x < \dfrac{b}{a-3} & \text{if $a<3$}, \\\\
 Combining the above, we conclude
 
 \begin{cases} 
-\boldsymbol{ x > \dfrac{b}{a-3} } & \textbf{if $\boldsymbol{ a>3 }$}, \\\\
-\boldsymbol{ x < \dfrac{b}{a-3} } & \textbf{if $\boldsymbol{ a<3 }$}, \\\\
+\boldsymbol{ x > \dfrac{b}{3-a} } & \textbf{if $\boldsymbol{ a>3 }$}, \\\\
+\boldsymbol{ x < \dfrac{b}{3-a} } & \textbf{if $\boldsymbol{ a<3 }$}, \\\\
 \textbf{any real number} & \textbf{if $\boldsymbol{ a=3 }$ and $\boldsymbol{ b>0 }$}, \\\\
 \textbf{no solution} & \textbf{if $\boldsymbol{ a=3 }$ and $\boldsymbol{ b<0 }$}.
 \end{cases}
