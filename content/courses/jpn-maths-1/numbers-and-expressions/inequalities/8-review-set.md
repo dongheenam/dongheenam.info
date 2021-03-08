@@ -9,7 +9,7 @@ lastMod: 2021-03-08 10:33:10.000 +1100
 type: docs
 toc: false
 math: true
-draft: true
+draft: false
 
 tags:
   - inequality
