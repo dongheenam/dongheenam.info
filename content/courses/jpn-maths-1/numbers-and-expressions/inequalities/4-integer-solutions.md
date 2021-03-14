@@ -27,7 +27,7 @@ weight: 14
 
 ## Introduction
 
-Previously we discussed how to [solve inequalities](../solving-inequalities) without any conditions, which means, to solve it for all real numbers. However, what would be different if the domain of the variable is a smaller set, for example, the set of integers or natural numbers? In this lesson, we will learn:
+Previously we discussed how to [solve inequalities](../solving-inequalities) without any conditions, which means solving them for all real numbers. However, what would be different if the domain is a smaller set, for example, the set of integers or natural numbers? In this lesson, we will learn:
 
 - How to solve linear inequalities in the integer domain.
 - Problem-solving techniques that involve solving integer inequalities.
@@ -35,7 +35,7 @@ Previously we discussed how to [solve inequalities](../solving-inequalities) wit
 
 ## Finding Integer Solutions
 
-To solve an inequality for integers, we need to first find the solution of an inequality like usual, and then count the integers that lie inside the solution. The second step is pretty straightforward -- for example, can you list all integers that are greater than $-2$ but less than $3$?  $$ \\text{$x$ is an integer and $-2<x<3$} \quad \implies \quad x = -1,\\, 0,\\, 1,\\, \\text{or }\\, 2. $$
+To solve an inequality for integers, we need first to find the solution of an inequality like usual, and then count the integers that lie inside the solution. The second step is pretty straightforward -- for example, can you list all integers greater than $-2$ but less than $3$?  $$ \\text{$x$ is an integer and $-2<x<3$} \quad \implies \quad x = -1,\\, 0,\\, 1,\\, \\text{or }\\, 2. $$
 
 {{% details title="Inequality signs" %}}
 
@@ -66,7 +66,7 @@ Because $n$ is a natural number, the values of $n$ that satisfy $n<4$ are $\\tex
 
 ## Using the Integer Solutions
 
-In the previous example, we found there are three natural numbers that satisfy $x<4$. Now, let's flip this around: which inequalities have exactly three natural number solutions?
+In the previous example, we found three natural numbers that satisfy $x<4$. Now, let's flip this around: which inequalities have exactly three natural number solutions?
 
 {{% mn 71 %}}
 {{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-int-ex1.png" %}} The possible range of $k$.
@@ -180,7 +180,7 @@ and from the second inequality,
 
 {{% mn q2 %}}
 {{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-int-q2.png" %}} The diagram representing the ranges of $x\ge 1$ and $x\gt 2$.
-{{% /mn %}} In the figure right we drew the ranges $\tcirc{1}$ and $\tcirc{2}$ on the number line. You can see that $0$, $1$ and $2$ are included inside both of the ranges but $3$ is not. Therefore the answer is $\boldsymbol{x=0}\textbf{, 1, or 2}$.
+{{% /mn %}} In the figure right, we drew the ranges $\tcirc{1}$ and $\tcirc{2}$ on the number line. You can see that $0$, $1$ and $2$ are included inside both ranges but $3$ is not. Therefore the answer is $\boldsymbol{x=0}\textbf{, 1, or 2}$.
 
 <hr style="visibility: hidden" />
 

@@ -93,7 +93,7 @@ And from the second inequality,
 
 {{% mn 92 %}}
 {{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-sim-ex3.png" %}} The diagram representing $x \lt -2$ and $x\ge 0$.
-{{% /mn %}} From the diagram, we can see that there do not exist values of $x$ that both satisfy $\tcirc{3}$ and $\tcirc{4}$. Therefore, *there are no solutions*.
+{{% /mn %}} From the diagram, we can see that there are no values of $x$ that both satisfy $\tcirc{3}$ and $\tcirc{4}$. Therefore, *there are no solutions*.
 
 {{% /box %}}
 
@@ -137,7 +137,7 @@ And from the second inequality,
 {{% /box %}}
 
 {{% details title="No solutions?" %}}
-When you are solving inequalities, you sometimes end up two contradicting conditions, just like the previous example question. In this case, simply state there are *no solutions*. This is one of the few moments in mathematics when you can say I cannot answer the question and you are actually correct!
+When you solve inequalities, you sometimes end up with two contradicting conditions, just like the previous example question. In this case, simply state there are *no solutions*. This is one of the few moments in mathematics when you can say I cannot answer the question, and you are actually correct!
 
 <p></p>
 

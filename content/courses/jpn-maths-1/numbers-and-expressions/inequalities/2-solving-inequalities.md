@@ -44,7 +44,7 @@ In this lesson, we will learn:
 
 ## Solving Inequalities
 
-From the [previous lesson](../properties/#properties), we learnt that the properties of inequalities are almost identical to that of equalities. This means we can use most of the equation-solving techniques here too. Just remember one thing: *the signs flip* when you multiply or divide by a *negative number*.
+From the [previous lesson](../properties/#properties), we learned the properties of inequalities are almost identical to that of equalities. This means we can use most of the equation-solving techniques here too. Just remember one thing: *the signs flip* when you multiply or divide by a *negative number*.
 
 
 {{% box %}}
@@ -121,7 +121,7 @@ $(7)$ Dividing both sides by $-7$ (change of signs)
   \implies & x \le -\frac{11}{7}. \tag{7}
 \end{align}
 
-$\hspace{0.5em} \text{4.} \quad$ We would like to remove the fractions first. We can do that by multiplying both sides by the least common multiple of the denominators: $12$.
+$\hspace{0.5em} \text{4.} \quad$ We want to remove the fractions first. We can do that by multiplying both sides by the least common multiple of the denominators: $12$.
 
 {{% mn 110 tips %}}
 $(8)$ Expanding the bracket<br><br>
@@ -150,7 +150,7 @@ $(10)$ Dividing both sides by $25$
 Diagrams of the possible values of $x$. Click to enlarge.
 {{% /mn %}}
 
-We can also draw the range on the number line. The trick is, we use filled circles ($\bullet$) when you want to include the value, and use empty circles ($\circ$) to exclude that value. For example, the inequality $$ x\le -\frac{1}{2} $$ needs a filled circle at $x=-\dfrac{1}{2}$, and the inequality $$ x\lt 2 $$ needs an empty circle at $x=2$.
+We can also draw the range on the number line. The trick is, we use filled circles ($\bullet$) when you want to include the value and use empty circles ($\circ$) to exclude that value. For example, the inequality $$ x\le -\frac{1}{2} $$ needs a filled circle at $x=-\dfrac{1}{2}$, and the inequality $$ x\lt 2 $$ needs an empty circle at $x=2$.
 
 {{% note question %}} Try [Practice Question](#practice-questions) 1 before moving on.
 

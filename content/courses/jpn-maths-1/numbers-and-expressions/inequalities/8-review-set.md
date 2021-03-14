@@ -1,7 +1,7 @@
 ---
 title: Review Set 4
 slug: review-4
-description: Review of inequalities and their applications
+description: Review of inequalities and their applications.
 
 date: 2021-03-08 10:33:10.000 +1100
 lastMod: 2021-03-08 10:33:10.000 +1100
@@ -238,11 +238,11 @@ Combining the above, we conclude
 
 {{% /details %}}
 
-6. Sarah needs to get to the station that is 1.5 km away from her house within 12 minutes. If she can walk at 60 m/min and run at 180 m/min, at least how many metres does she run for?
+6. Sarah needs to get to the station 1.5 km away from her house within 12 minutes. If she can walk at 60 m/min and run at 180 m/min, at least how many metres does she run for?
 
 *Hint:* $\text{(distance)} = \text{(speed)} \times \text{(time)}$.
 
-7. Kim mixes 8% salt water with 800 g of 5% salt water. If she wants to make salt water with concentration in between 6% and 6.5% (inclusive), how much 8% salt water does she need to add?
+7. Kim mixes 8% saltwater with 800 g of 5% saltwater. If she wants to set the concentration in between 6% and 6.5% (inclusive), how much 8% saltwater does she need to add?
 
 *Hint:* $\text{concentration(\%)} = \dfrac{\text{(amount of salt)}}{\text{(amount of salt water)}}\times 100 \\% $
 
@@ -268,7 +268,7 @@ Therefore, she needs to run at least $\textbf{1170 m}.$
 
 <br>
 
-7. Let the mass of 8% salt water be $m$ g. The amount of salt in 500 g of 5% salt water is $$ \text{800 g} \times 0.05 = \text{40 g}, $$ and the amount of salt in $m$ g of 8% salt water is $$ \text{$m$ g} \times 0.08 = \text{$0.08m$ g}. $$ Then the total amount of salt is $ (40 + 0.08m)$ g, and the total mass of the salt water is $ (800 + m) $ g. Because the concentration needs to be in between 6% and 6.5%,
+7. Let the mass of 8% salt water be $m$ g. The amount of salt in 500 g of 5% saltwater is $$ \text{800 g} \times 0.05 = \text{40 g}, $$ and the amount of salt in $m$ g of 8% saltwater is $$ \text{$m$ g} \times 0.08 = \text{$0.08m$ g}. $$ Then the total amount of salt is $ (40 + 0.08m)$ g, and the total mass of the saltwater is $ (800 + m) $ g. Because the concentration needs to be in between 6% and 6.5%,
 \begin{align}
   & 6 \le \dfrac{40 + 0.08 m}{800 + m} \times 100 \le 6.5 \\\\
   \implies & 6(800+m) \le 100(40+0.08m) \le 6.5(800+m) \\\\
@@ -285,7 +285,7 @@ and from the second inequality,
   &\implies m \le 1200 \times \dfrac{2}{3} \\\\
   &\implies m \le 800.
 \end{align}
-Therefore, Kim needs to add $\textbf{no less than 400 g and no more than 800 g}$ of 8% salt water.
+Therefore, Kim needs to add $\textbf{no less than 400 g and no more than 800 g}$ of 8% saltwater.
 
 {{% /details %}}
 

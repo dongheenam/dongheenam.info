@@ -113,7 +113,7 @@ The range of $x$ that satisfies both $\tcirc{3}$ and $\tcirc{4}$ is also $\bolds
 
 ## Multiple Absolute Values
 
-Just like [for equations with multiple absolute values](../absolute-value-equations/#equations-with-multiple-absolute-values), we need to divide the cases at when the expressions inside absolute values change their signs.
+Like [for equations with multiple absolute values](../absolute-value-equations/#equations-with-multiple-absolute-values), we need to divide the cases when the expressions inside absolute values change their signs.
 
 {{% box %}}
 

@@ -34,7 +34,7 @@ weight: 15
 
 ## Introduction
 
-Now that we are fairly familiar with linear inequalities, we will take a next step and look at some advanced questions on inequalities. In this lesson, we will learn:
+Now that we are fairly familiar with linear inequalities, we will take the next step and look at some advanced questions on inequalities. In this lesson, we will learn:
 
   - How to solve inequalities with more than one variables.
   - Strategies for solving word problems using linear inequalities.
@@ -49,7 +49,7 @@ The equation $$ ax + 1 = -3a -2 $$ has two variables ($a$ and $x$) and hence can
   \implies && x &= \frac{-3a-3}{a}.
 \end{alignat}
 
-What is the problem with this work? Well, it should be fine for most of the time, but you cannot determine the value of $\dfrac{-3a-3}{a}$ when $a=0$, hence the value of $x$ is not set for this case! This is because when we divided both sides by $a$, we *assumed* that $a$ is not equal to zero. Now, what happens when $a=0?$ Have a look at the complete solution below.
+What is the problem with this work? It should be fine for most of the time, but you cannot determine the value of $\dfrac{-3a-3}{a}$ when $a=0$, hence the value of $x$ is not set for this case! When we divided both sides by $a$, we *assumed* that $a$ is not equal to zero. Now, what happens when $a=0?$ Have a look at the complete solution below.
 
 {{% box %}}
 {{% note example %}}
@@ -78,7 +78,7 @@ Therefore, when $a$ is nonzero, $\boldsymbol{ x=\dfrac{-3a-3}{a} = -3 - \dfrac{3
 
 {{% /box %}}
 
-You can clearly see the solution changes as the value of $a$ changes. This is also true for inequalities, but you should also take into account that the inequality sign changes when you multiply or divide by a negative number!
+You can clearly see the solution changes as the value of $a$ changes. This is also true for inequalities, but you should also consider the inequality sign changes when you multiply or divide by a negative number!
 
 {{% box %}}
 {{% note example %}}
@@ -108,7 +108,7 @@ $\text{(ii)} \quad$ When $a-1=0 \implies a=1$, we *cannot divide* both sides by 
   \implies & 0 > 0.
 \end{align}
 
-Because this inequality is always false, there are no solutions of $x$ in this case.
+Because this inequality is always false, there are no solutions for $x$ in this case.
 
 $\text{(iii)} \quad$ When $a-1<0 \implies a<1$, we are dividing both sides by a negative number, so *the inequality sign changes*.
 
@@ -189,7 +189,7 @@ You would like to share the apples you have with a group of children. If you giv
 {{% note solution %}}
 
 1. Let's set the number of children as $x$.
-2. Because you have 19 apples left if you share four apples per child, the total number of apples is $$ 4x + 19. $$
+2. Because you have 19 apples left, if you share four apples per child, the total number of apples is $$ 4x + 19. $$
 3. With the $4x+19$ apples, you can give 7 apples to every child except the last one. In other words, you can give 7 apples to $(x-1)$ children. At this point, the number of apples you have would be $$ 4x+19 - 7(x-1). \quad \cdots \tcirc{1} $$
 4. Because every child except the last one does receive 7 apples, the number of apples you had should not be smaller than $7(x-1)$, and hence $\tcirc{1}$ is greater or equal to zero. Also, $\tcirc{1}$ is equal to the number of apples the last child would get, so it would also be less than four.
 5. Putting everything together, we find $$ 0 \le 4x+19 - 7(x-1) \lt 4. $$
@@ -213,7 +213,7 @@ If you are still not so sure, follow the tips below.
 {{% note tips %}}
 Basics of solving word problems:
 
-1. Set what you need to solve for as a variable ($x$).
+1. Set what you need to solve as a variable ($x$).
 2. Translate the condition on the variable to an inequality.
 3. Solve the inequality.
 4. Review the condition on the variable and deduce the solution.
@@ -306,7 +306,7 @@ We can also confirm this solution matches the previous assumption ($b-2<0$) we m
 {{% /details %}}
 
 
-3. Alice and Tom own 52 pencils together. Alice hands over one third of her pencils to Tom, but she still has more pencils. Tom then takes three extra pencils from Alice, and he finally has more pencils than she does. Find the number of pencils Alice had originally.
+3. Alice and Tom own 52 pencils together. Alice hands over a third of her pencils to Tom, but she still has more pencils. Tom then takes three extra pencils from Alice, and he finally has more pencils than she does. Find the number of pencils Alice had originally.
 
 {{% details title="Answer" %}}
 

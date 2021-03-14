@@ -34,18 +34,18 @@ weight: 11
 
 ## Introduction
 
-We use *equations* to find the value of an unknown. For example, to find the side length of a square with area of $4~\text{cm}^2$,
+We use *equations* to find the value of an unknown. For example, to find the side length of a square with an area of $4~\text{cm}^2$,
 
-  - set the length of the square as $x$,
-  - then from the given information, we know $x^2=4$,
-  - and finally, we solve this equation and get $x=2$ (because length cannot be negative),
+  - set the length of the square to be $x$,
+  - then, from the given information, we know $x^2=4$,
+  - and finally, we solve this equation and get $x=2$ (because the length cannot be negative),
   - to realise the side length is $2~\text{cm}$.
 
-Sometimes, the information we have on an unknown is insufficient to find its exact value, but only the *possible range of its values*. That's right, we will practise how to manipulate *inequalities*.
+Sometimes, the information we have on an unknown is insufficient to find its exact value, but only the *possible range of its values*. That's right; we will practise how to manipulate *inequalities*.
 
 In this lesson, we will learn:
 
-  - The definition of inequalities, and their properties that are useful for solving the inequalities.
+  - The definition of inequalities and their properties useful for solving the inequalities.
   - Find the range of possible values of an expression, given the range of values of the variables that make up the expression.
 
 
@@ -65,12 +65,12 @@ A short-hand way of saying, for example, $a<b$ and $b<c$ is $\boldsymbol{a<b<c}$
 
 {{% /box %}}
 
-Also note that some people prefer $\geqq$ instead of $\ge$, and $\leqq$ instead of $\le$. They have the same meaning.
+Also, note that some people prefer $\geqq$ instead of $\ge$, and $\leqq$ instead of $\le$. They have the same meaning.
 
 
 ### Properties
 
-Now, let's say, $1<4$. It is obvious that if I add $7$ to both $1$ and $4$, it will not change the inequality sign. In other words, $$ 1<4 \implies 1+7<4+7. $$ Likewise, if I take $5$ from both $1$ and $4$, the relationship will not change: $$ 1<4 \implies 1-5<4-5. $$
+Now, let's say, $1<4$. Obviously, if I add $7$ to both $1$ and $4$, it will not change the inequality sign. In other words, $$ 1<4 \implies 1+7<4+7. $$ Likewise, if I take $5$ from both $1$ and $4$, the relationship will not change: $$ 1<4 \implies 1-5<4-5. $$
 
 {{% box %}}
 {{% note theorem %}}
@@ -91,7 +91,7 @@ Then what about multiplying or dividing? First of all, it is obvious that multip
   1<4 &\implies \frac{1}{3} < \frac{4}{3}.
 \end{align}
 
-However, when we multiply $1$ and $4$ by say, $-1$, they become $-1$ and $-4$: $$ 1 < 4 \implies -1 > -4. $$ This means that, multiplying or dividing by a negative number *flips* the inequality sign.
+However, when we multiply $1$ and $4$ by say, $-1$, they become $-1$ and $-4$: $$ 1 < 4 \implies -1 > -4. $$ This means multiplying or dividing by a negative number *flips* the inequality sign.
 
 {{% box %}}
 {{% note theorem %}}
@@ -207,7 +207,7 @@ You might say, for the solution of Part (e), you could subtract the range of $3y
   \implies & \boldsymbol{ -3 \lt 2x-3y \lt -2 } \quad (?)
 \end{align}
 
-You can see this method is wrong, but why is it wrong? Think this way: if you pic a number from each group and subtract one from another, how can you make the answer the largest? It is when you subtract the smallest possible number from the largest possible number, so
+You can see this method is wrong, but why is it wrong? Think this way: if you pick a number from each group and subtract one from another, how can you make the answer the largest? It is when you subtract the smallest possible number from the largest possible number, so
 
 \begin{align}
   & 2x-3y \lt 10 - (-3) \\\\
@@ -221,7 +221,7 @@ Likewise, you hit the lower bound of the possible answers when you subtract the 
   \implies & 2x-3y \gt -18.
 \end{align}
 
-Therefore, $-18 \lt 2x-3y \lt 13$! I find this method much less straightforward than adding $-3y$ to $2x$, so in the rest of the solutions, whenever we have to subtract a variable from another, I will add its negative instead.
+Therefore, $-18 \lt 2x-3y \lt 13$! I find this method much less straightforward than adding $-3y$ to $2x$. I will add its negative instead whenever we have to subtract a variable from another.
 
 {{% /details %}}
 
@@ -230,7 +230,7 @@ Therefore, $-18 \lt 2x-3y \lt 13$! I find this method much less straightforward 
 
 ## Rounding and Inequalities
 
-When we round a number, we usually round down when the digit is less than $5$, and we round up when it is greater than or equal to $5$. For example, the nearest integer to $1.46$ is $1$, and the nearest integer to $1.504$ is $2$. With this roule, you should be able to tell the range of numbers $x$ which are rounded to $2$ is $$ 1.5 \le x \lt 2.5. $$ Note the difference in the inequality signs, because $1.5$ rounds to $2$ but $2.5$ does not. In other words, when you round a number to its nearest integer and the result is $2$, the possible range of the original value is $$ 4.5 \le x \lt 5.5. $$
+When we round a number, we usually round down when the digit is less than $5$, and we round up when it is greater than or equal to $5$. For example, the nearest integer to $1.46$ is $1$, and the nearest integer to $1.504$ is $2$. With this rule, you can tell the range of numbers $x$, which are rounded to $2$ is $$ 1.5 \le x \lt 2.5. $$ Note the difference in the inequality signs because $1.5$ rounds to $2$ but $2.5$ does not. In other words, when you round a number to its nearest integer and the result is $2$, the possible range of the original value is $$ 4.5 \le x \lt 5.5. $$
 
 
 {{% note theorem %}}
@@ -245,7 +245,7 @@ When you round $x$ and $y$ to the nearest integer, they become $6$ and $4$, resp
 {{% note solution %}}
 The range of $x$ is $$ 5.5\le x \lt 6.5, \qquad \cdots \tcirc{1} $$ and the range of $y$ is $$ 3.5 \le y \lt 4.5. \qquad \cdots \tcirc{2} $$
 
-1. If we multiply all sides in $\tcirc{1}$ by $3$, $$ 16.5 \le 3x \lt 19.5. \qquad \cdots \tcirc{3} $$ Likewise, if we multiply all sides in $\tcirc{2}$ by $-4$,
+1. If we multiply all sides in $\tcirc{1}$ by $3$, $$ 16.5 \le 3x \lt 19.5. \qquad \cdots \tcirc{3} $$ Likewise, if we multiply all sides of $\tcirc{2}$ by $-4$,
 
 \begin{align}
   & -14 \ge -4y \gt -18 \\\\
@@ -273,7 +273,7 @@ Now, what is the smallest possible value for $5.5y$? Because $y\ge 3.5$, $$ 5.5y
 
 When $x<1$ and $y\le 2$, then $xy$ cannot be $2$ because $y$ is strictly less than $2$. Thus $$ x<1, \\; y\le 2 \implies xy < 2. $$
 
-In general, the result for combining two inequalities has an equal sign *only when both inequalities have equal signs*.
+In general, combining two inequalities results in an equal sign *only when both inequalities have equal signs*.
 
 {{% /details %}}
 

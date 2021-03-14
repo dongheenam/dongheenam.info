@@ -36,7 +36,7 @@ The following topics are useful for understanding this lesson.
 
 ## Introduction
 
-Now that we are pretty familiar with the concept of inequalities, we will look into solving linear equations and inequalities with absolute values! In this lesson, we will learn:
+Now that we are pretty familiar with inequalities, we will look into solving linear equations and inequalities with absolute values! In this lesson, we will learn:
 - How to solve linear equations with single or multiple absolute value symbols.
 
 
@@ -52,7 +52,7 @@ Let's remember the definition of absolute values:{{% sn abs %}}Please refer to [
 
 {{% /box %}}
 
-So, when removing the absolute value symbol, we need to think about two possible cases: when the inside expression is positive, and when the inside expression is negative.
+So, when removing the absolute value symbol, we need to think about two possible cases: when the inside expression is positive, and the inside expression is negative.
 
 {{% box %}}
 
@@ -119,7 +119,7 @@ This is yet another solution. The definition of $|a-b|$ is the *distance* betwee
 
 ## Equations with Multiple Absolute Values
 
-If there are more than one absolute values, you need to separate the cases for each break point where one of the inside expressions change its sign.{{% sn mult %}}Also have a look at [Removing Square Roots](../../numbers/removing-roots-2/#square-root-of-a-polynomial).{{% /sn %}}
+If there are more than one absolute values, you need to separate the cases for each breakpoint where one of the inside expressions change its sign.{{% sn mult %}}Also have a look at [Removing Square Roots](../../numbers/removing-roots-2/#square-root-of-a-polynomial).{{% /sn %}}
 
 {{% figure src="courses/jpn-maths-1/numbers-and-expressions/ineq-abs-1.jpg" caption="Three possible ranges of $x$ for the equation $|x+2| + |x-1| = 4$" %}}
 
