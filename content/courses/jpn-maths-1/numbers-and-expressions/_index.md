@@ -19,6 +19,8 @@ menu:
   math1-numbers:
     name: 📙 Numbers and Expressions
     weight: 10
+
+weight: 11
 ---
 
 ## List of Topics
@@ -94,8 +96,8 @@ menu:
 | ├ Solving Linear Inequalities | 10A | |
 | ├ Finding Integer Solutions for Inequalities | 10A^ | |
 | ├ Applications of Linear Inequalities | 10A | |
-| ├ Linear Equations with Absolute Values |  | Spec3^ |
-| └ Linear Inequalities with Absolute Values |  |  |
+| ├ Linear Equations with Absolute Values | | Spec3^ |
+| └ Linear Inequalities with Absolute Values | | |
 {{% /table-wrapper %}}
 
 ^ indicates the topic may be used for extension.
