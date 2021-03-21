@@ -37,10 +37,10 @@ weight: 12
 
 ## Introduction
 
-In the [previous lesson](../types-of-numbers) we discussed numbers for counting and numbers for measuring, and we realised that they form **real numbers** ($\mathbb{R}$) altogether. This is not the end of the story because we have not talked about the number lines yet! In this lesson, we will learn:
+In the [previous lesson](../types-of-numbers), we discussed numbers for counting and numbers for measuring, and we realised that they form **real numbers** ($\mathbb{R}$) altogether. This is not the end of the story because we have not talked about the number lines yet! In this lesson, we will learn:
 
 - the coordinate representation of numbers: the number line.
-- the definition and properties of the absolute value of a real number.{{% sn abs1 %}}Working with absolute values is in fact part of the Mathematics II course, but the majority of textbooks and online tutorials introduce the concept here.{{% /sn %}}
+- the definition and properties of the absolute value of a real number.
 
 
 ## The Number Line
@@ -49,18 +49,18 @@ Bring your memory back to primary school and draw a number line in your mind! It
 
 {{% figure src="courses/jpn-maths-1/numbers-and-expressions/num-nl.svg" style="background: #fffff8" caption="The number line. Image by [Hakunamenta](https://commons.wikimedia.org/wiki/File:Number-line.svg) via Wikimedia Commons / [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/deed.en) / Cropped" %}}
 
-Zero in the middle, positive numbers in the right, and negative numbers in the left, right? Then we can start placing numbers on the line -- integers, rational numbers, and even irrational numbers!
+Zero in the middle, positive numbers on the right, and negative numbers on the left, right? Then we can start placing numbers on the line -- integers, rational numbers, and even irrational numbers!
 
 {{% figure src="courses/jpn-maths-1/numbers-and-expressions/num-nl-2.jpg" caption="Rational and irrational numbers on the number line" %}}
 
 
 ### Distance and absolute value
 
-How can you find the distance between two numbers on the number line? For example, how far are $2$ and $5$ apart? It is pretty straightforward: $5$ is five units right from zero and $3$ is three units right from zero, so the distance between $2$ and $5$ is $$ 5-2=3. $$ Likewise, the distance between $13$ and $6$ is the same as the difference between the two: $7$. What about the distance from $-1$ to $4$? Surprisingly, $4$ take $-1$ is $5$, so is the distance! We found a new rule here: to find out how far two real numbers are apart, we need to subtract one from another.
+How can you find the distance between two numbers on the number line? For example, how far are $2$ and $5$ apart? It is pretty straightforward: $5$ is five units right from zero, and $3$ is three units right from zero, so the distance between $2$ and $5$ is $$ 5-2=3. $$ Likewise, the distance between $13$ and $6$ is the same as the difference between the two: $7$. What about the distance from $-1$ to $4$? Surprisingly, $4$ take $-1$ is $5$, so is the distance! We found a new rule here: to find out how far two real numbers are apart, we need to subtract one from another.
 
 {{% figure src="courses/jpn-maths-1/numbers-and-expressions/num-distance.jpg" caption="calculating the distance between two numbers" %}}
 
-How can we generalise this result to the distance between any two real numbers, $a$ and $b$? Some might say $a-b$, but it is not true when $b$ is greater than $a$: if $a=3$ and $b=4$, then $a-b=-1$. Distance cannot be negative, so we have to take $a$ from $b$ this case. In summary, we get the following property.
+How can we generalise this result to the distance between any two real numbers, $a$ and $b$? Some might say $a-b$, but it is not true when $b$ is greater than $a$: if $a=3$ and $b=4$, then $a-b=-1$. The distance cannot be negative, so we have to take $a$ from $b$ in this case. In summary, we get the following property.
 
 {{% note theorem %}}
 For real numbers $a$ and $b$, the distance between $a$ and $b$ is:
@@ -106,7 +106,7 @@ If the number is positive, it equals its absolute value. If the number is negati
 
 {{% /box %}}
 
-You should be able to see what taking the absolute value of a number means -- it just removes the negative sign if there is one.
+You should see what taking the absolute value of a number means -- it just removes the negative sign if there is one.
 
 
 ### Properties of absolute value
@@ -127,7 +127,7 @@ For any real numbers $a$ and $b$,
 
 $ \boldsymbol{ |a|^2 = a^2 }$
 
-$a$ has to be either positive, negative, or zero. The identity is obviously true when $a=0$ (both side equals zero), so we can consider for the first two cases.
+$a$ has to be either positive, negative, or zero. The identity is obviously true when $a=0$ (both sides equal zero), so we can consider the first two cases.
 
 1. If $a$ is positive, then
 \begin{align}
@@ -149,7 +149,7 @@ Therefore, for every case, $|a|^2 = a^2$. $\quad \square$
 
 $\boldsymbol{ |ab| = |a|\cdot|b| }$
 
-Likewise, we will divide it into four cases and see if the identity holds true.
+Likewise, we will divide it into four cases and see if the identity holds.
 
 1. When both $a$ and $b$ are positive, $ab$ is also positive. Then $|a|=a$, $|b|=b$, and $|ab|=ab$. Thus
 \begin{align}

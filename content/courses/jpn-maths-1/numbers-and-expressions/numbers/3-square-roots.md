@@ -35,7 +35,7 @@ weight: 13
 
 ## Introduction
 
-For the rest of the section, we will investigate the most familiar type of irrational numbers -- the square roots. As always, let's start from what we know about square roots first. In this lesson, we will learn:
+We will investigate the most familiar type of irrational numbers for the rest of the section -- square roots. As always, let's start with what we know about square roots first. In this lesson, we will learn:
 
   - the definition and basic properties of square roots.
   - how to properly remove the root symbol.
@@ -47,7 +47,7 @@ For the rest of the section, we will investigate the most familiar type of irrat
 {{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/num-pythagoras.jpg" alt="Drawing of Pythagoras." %}}
 Drawing of Pythagoras. Image by [Raphael](https://commons.wikimedia.org/wiki/File:Pythagoras_with_tablet_of_ratios.jpg) via Wikimedia Commons.
 {{% /mn %}}
-The definition of square roots comes from this question: what is the number whose square equals $2$? Pythagoras, the Ancient Greek mathematician famous for Pythagoras' Law, and his students named this number the *square root of two*. They desperately tried to find a fraction that equals this mysterious number because they believed every single number can be expressed as a ratio of two natural numbers. Of course, we know this is impossible because $\sqrt{2}$ is [irrational](../types-of-numbers/#decimal-representation-of-numbers). Legends say they threw the student who found this number into the ocean, after they realised there are no ratios that equal $\sqrt{2}$!
+The definition of square roots comes from this question: what is the number whose square equals $2$? Pythagoras, the Ancient Greek mathematician famous for Pythagoras' Law, and his students named this number the *square root of two*. They desperately tried to find a fraction that equals this mysterious number because they believed every single number could be expressed as a ratio of two natural numbers. Of course, we know this is impossible because $\sqrt{2}$ is [irrational](../types-of-numbers/#decimal-representation-of-numbers). Legends say they threw the student who found this number into the ocean after they realised there are no ratios that equal $\sqrt{2}$!
 
 {{% box %}}
 {{% note definition %}}
@@ -86,7 +86,7 @@ Now, from the first definition, a lot of students tend to think $\sqrt{x^2} = x$
   &= 2,
 \end{align}
 
-which means $\sqrt{x^2} = -x$! So we need to be careful with the sign of $x$ when we are simplifying $\sqrt{x^2}$. In general, it is equal to the *absolute value* of $x$.
+which means $\sqrt{x^2} = -x$! We need to be careful with the sign of $x$ when we are simplifying $\sqrt{x^2}$. In general, it is equal to the *absolute value* of $x$.
 
 {{% note theorem %}}
 For a real number $x$, $\sqrt{x^2} = |x|$.
@@ -131,7 +131,7 @@ If $a>0$, $b>0$, and $x>0$,
 
 $\boldsymbol{ \sqrt{a}\sqrt{b}=\sqrt{ab} }$
 
-Lets go back to the definition of the square roots: if the left-hand side is positive, and its square is $ab$, then it is eqaul to $\sqrt{ab}$.
+Let's go back to the definition: if the left-hand side is positive, and its square is $ab$, then it is equal to $\sqrt{ab}$.
 
 - $\sqrt{a}\sqrt{b}$ is positive
 
@@ -183,7 +183,7 @@ Obviously, this is not true, because
   &= 1,
 \end{align}
 
-but it is really confusing, especially when you deal with variables. So make sure you are always aware of this when you take a square out of a root!
+but it is confusing, especially when you deal with variables. So make sure you are always aware of this when you take a square out of a root!
 
 {{% /details %}}
 
