@@ -17,7 +17,7 @@
 {{- else -}}
     {{ $sizes = "(min-width: 1620px) 825px, (min-width: 1220px) 630px, (min-width: 780px) 85vw, 95vw" }}
 {{- end -}}
-{{- if not .nolink -}}<a href="{{ .image.RelPermalink }}">{{- end -}}
+{{- if not .nolink -}}<a href="{{ .image.RelPermalink }}" target="_blank">{{- end -}}
 <img class="{{ .class }}" style="{{ .style }}" width="100%" height="auto"
     alt="{{ .alt }}" loading="lazy"
     sizes="{{ $sizes }}"
