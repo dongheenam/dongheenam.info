@@ -28,6 +28,8 @@ weight: 13
 ### Functions and Graphs
 
 - [Introduction](functions-and-graphs/introduction)
+- [Graph of a Function](functions-and-graphs/graph)
+- Transformations of a graph
 
 ### Quadratic Graphs
 
@@ -41,5 +43,6 @@ weight: 13
 | Topic | AC 7-10 | AC Senior | HSC S6 | IB DP |
 | ----- | ---------- | ------------ | --- | --- |
 |**[Functions and Graphs](functions-and-graphs)** | | | | |
-| ├ Introduction | 10A | Met1 |
+| ├ Introduction |  | Met1 |
+| ├ Graph of a Function |  | Met1 |
 {{% /table-wrapper %}}

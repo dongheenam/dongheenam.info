@@ -12,7 +12,7 @@ math: true
 draft: false
 
 tags:
-  - functions
+  - function
   - domain
   - range
 
@@ -25,6 +25,14 @@ menu:
 weight: 11
 ---
 
+{{% details title="Links to Australian Curriculum" %}}
+
+- Mathematical Methods Unit 1
+  - Understand the concept of a function as a mapping between sets, and as a rule or a formula that defines one variable quantity in terms of another [(ACMMM022)](https://www.australiancurriculum.edu.au/senior-secondary-curriculum/mathematics/mathematical-methods/?unit=Unit+1&cd=ACMMM022&searchTerm=ACMMM022).
+  - Use function notation, domain and range, independent and dependent variables [(ACMMM023)](https://www.australiancurriculum.edu.au/senior-secondary-curriculum/mathematics/mathematical-methods/?unit=Unit+1&cd=ACMMM023&searchTerm=ACMMM023).
+
+{{% /details %}}
+
 ## Introduction
 
 In this lesson, we will:
@@ -34,10 +42,9 @@ In this lesson, we will:
 - Find the domain of a function.
 - Derive the range of a function given its domain.
 
-
 ## Functions
 
-{{% mn %}}{{% img loc="sidenote" src="courses/jpn-maths-1/functions/function_machine2.svg" %}} The function acting as a 'black box'. Figure by [Wvbailey](https://en.wikipedia.org/wiki/Function_(mathematics)#/media/File:Function_machine2.svg) via Wikipedia. {{% /mn %}}
+{{% mn %}}{{% img loc="sidenote" src="courses/jpn-maths-1/functions/functions-and-graphs/function_machine2.svg" %}} The function acting as a 'black box'. Figure by [Wvbailey](https://en.wikipedia.org/wiki/Function_(mathematics)#/media/File:Function_machine2.svg) via Wikipedia. {{% /mn %}}
 The word *function* comes from the Latin word meaning *to perform*. Following its name, a mathematical function *acts on* a number to do certain calculations. {{% sn 35 %}}Also, the traditional Chinese/Japanese translation of functions is "函数", which means *box numbers*. I think this translation encapsulates the nature of a function as a 'black box' so well!{{% /sn %}}
 
 {{% box %}}
@@ -130,7 +137,7 @@ Do you remember I said a function must give an output? For some functions it is 
 
 {{% box %}}
 
-{{% note Definition %}} The *domain* of a function $f$ is the set of $x$ at which $f(x)$ is defined.
+{{% note Definition %}} The *domain* of a function $f$ is the set of $x$ for which $f(x)$ is defined.
 
 {{% note Example %}}
 - The domain of $f(x) = x^2$ is the set of real numbers $\mathbb{R}$.
@@ -139,7 +146,7 @@ Do you remember I said a function must give an output? For some functions it is 
 
 {{% /box %}}
 
-The domains we listed above naturally follow from the nature of the functions. We call these domains as *natural domains*. We can also artificially limit the domain to be smaller than the function's natural domain.
+The domains above are the *largest set of numbers* each function can be defined for. We call these domains as *natural domains*. We can also artificially limit the domain to be smaller than the function's natural domain.
 
 {{% box %}}
 
