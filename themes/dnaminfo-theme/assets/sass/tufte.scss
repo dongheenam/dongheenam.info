@@ -563,6 +563,13 @@
     .marginnote {
       display: none;
       margin-bottom: 0;
+
+      img {
+        max-width: 60%;
+        margin: auto;
+        margin-bottom: 0.5em;
+        display: block;
+      }
     }
 
     .margin-toggle:checked + .sidenote,
