@@ -46,7 +46,7 @@ Graphs are convenient ways of visualising functions. In this lesson, we will:
 
 Let's recall the definition of a function: a function *relates* a certain value of $x$ with the corresponding value of $y$. {{% mn %}}{{% img loc="sidenote" src="courses/jpn-maths-1/functions/functions-and-graphs/graph-ex1.png" %}} The graph of $y=x+2$. {{% /mn %}} For example, a function $$ y = x+2 $$ relates $x=0$ with $y=2$, $1$ with $3$, $\sqrt{5}$ with $\sqrt{5}+2$, and so on. You can see these values form a *pair* of numbers: $(0, 2)$, $(1, 3)$ and $\big(\sqrt{5}, \sqrt{5}+2\big)$. If we collect all of these pairs on the coordinate plane, we get the *graph* of $y=x+2$!
 
-{{% note Definition %}} The *graph* of a function $y=f(x)$ is the set of all possible points $(x, y)$.
+{{% note Definition %}} The *graph* of a function $y=f(x)$ is the set of all pairs of numbers $(x, y)$ given $x$ is an element of its domain.
 
 
 ### Graph of a Linear Function

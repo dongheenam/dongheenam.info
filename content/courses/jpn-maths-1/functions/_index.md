@@ -29,7 +29,7 @@ weight: 13
 
 - [Introduction](functions-and-graphs/introduction)
 - [Graph of a Function](functions-and-graphs/graph)
-- Transformations of a graph
+- [Transformations of a graph](functions-and-graphs/transformations)
 
 ### Quadratic Graphs
 
@@ -45,4 +45,5 @@ weight: 13
 |**[Functions and Graphs](functions-and-graphs)** | | | | |
 | ├ Introduction |  | Met1 |
 | ├ Graph of a Function |  | Met1 |
+| ├ Transformations of a Graph |  | Met1 |
 {{% /table-wrapper %}}
