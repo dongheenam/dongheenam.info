@@ -1,9 +1,8 @@
 {{/* Usage: 
-    {{% mn "marginnote-id" "tips" %}}
+    {{% mn "unique ID for toggle" "text for the toggle (omit for a + sign)" %}}
       Marginnote content
     {{% /mn %}}
 */}}
-
 {{- if (.Get 1) -}}
 <label for="mn-{{ .Get 0 }}" class="margin-toggle toggle-with-word">{{ .Get 1 | humanize }}</label>
 {{- else -}}

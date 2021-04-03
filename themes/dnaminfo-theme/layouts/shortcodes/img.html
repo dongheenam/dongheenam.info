@@ -1,5 +1,7 @@
 {{/* Usage: 
-    {{% img src="fig-link" alt="alt-text" %}} 
+    {{% img src="path" alt="alt-text" 
+        style="optional css style" class="optional css class" location="main|fullwidth|sidenote"
+    %}} 
 */}}
 {{- if in (.Get "src") "http" -}}
   <a href='{{ .Get "src" }}' target="_blank"><img{{with (.Get "class") }} class="{{ . }}"{{ end }}{{with (.Get "style") }} style="{{ . }}"{{ end }} src='{{ .Get "src" }}' alt='{{ .Get "alt" }}' width="100%" height="auto" /></a>

@@ -1,4 +1,9 @@
 {{/* Automatically resizes images and generates an srcset of images */}}
+{{/* Usage: 
+    {{% resp-image image="path" alt="alt text"
+        style="optional css style" class="optional css class" location="main|fullwidth|sidenote"
+    %}} 
+*/}}
 {{- $tiny := "" -}}{{- $small := "" -}}{{- $medium := "" -}}{{- $large := "" -}}
 {{- if ge .image.Width "375" -}}
     {{- $tiny = .image.Resize "375x q100" -}}
@@ -18,7 +23,7 @@
     {{ $sizes = "(min-width: 1620px) 825px, (min-width: 1220px) 630px, (min-width: 780px) 85vw, 95vw" }}
 {{- end -}}
 {{- if not .nolink -}}<a href="{{ .image.RelPermalink }}" target="_blank">{{- end -}}
-<img class="{{ .class }}" style="{{ .style }}" width="100%" height="auto"
+<img{{with .class }} class="{{ . }}"{{ end }}{{with .style }} style="{{ . }}"{{ end }} width="100%" height="auto"
     alt="{{ .alt }}" loading="lazy"
     sizes="{{ $sizes }}"
     src="{{ .image.RelPermalink }}"

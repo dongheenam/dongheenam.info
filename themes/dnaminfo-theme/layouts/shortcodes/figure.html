@@ -1,9 +1,11 @@
 {{/* Usage: 
-    {{% figure src="fig-link" id="fig-id" class="fullwidth" alt="alt-text"
-        caption="figure caption"
+    {{% figure src="path" id="unique ID for figcaption" caption="figure caption" alt="alt-text"
+        style="optional css style" class="optional css class" noresize="turn off auto resizing"
     %}} 
 */}}
-{{- $img := resources.Get (.Get "src") -}}
+{{- $path := .Get "src" }}
+{{- $img := resources.Get $path -}}
+{{- $alt_text := (.Get "alt" | default (.Get "caption") | default "") -}}
 <figure {{ with (.Get "class") }} class="{{ . }}"{{ end }}{{ with (.Get "style") }} style="{{ . }}"{{ end }}>
 {{- if (.Get "caption") -}}
 {{- $fig_id := .Get "id" | default (path.Base $img.RelPermalink) -}}
@@ -13,16 +15,16 @@
     {{ .Get "caption" | markdownify | safeHTML }}
 </figcaption>
 {{- end -}}
-{{- if in (.Get "src") "http" -}}
-  <a href='{{ .Get "src" }}'><img src='{{ .Get "src" }}' alt='{{ .Get "alt" }}' width="100%" height="auto" /></a>
+{{/* if src is an external URL */}}
+{{- if in $path "http" -}}
+  <a href='{{ $path }}'><img src='{{ $path }}' alt='{{ $alt_text }}' width="100%" height="auto" /></a>
+{{/* if src points to a resource */}}
 {{- else -}}
-  {{/* src should point to a resource */}}
-  {{- $img := resources.Get (.Get "src") -}}
-  {{/* if vector graphics then attach it as is */}}
+  {{/* if resizing is not necessary */}}
   {{- if or (in $img.RelPermalink "svg") (.Get "noresize") -}}
-    <a href='{{ $img.RelPermalink }}'><img src='{{ $img.RelPermalink }}' alt='{{ .Get "alt" }}' /></a>
+    <a href='{{ $img.RelPermalink }}'><img src='{{ $img.RelPermalink }}' alt='{{ $alt_text }}' /></a>
+  {{/* if resizing is necessary */}}
   {{- else -}}
-    {{- $alt_text := (.Get "alt" | default (.Get "caption") | default "") -}}
     {{- $loc := (.Get "loc" | default (.Get "class") | default "main")}}
     {{- $img_options := dict "image" $img "alt" $alt_text "loc" $loc -}}
     {{- partial "resp-image" $img_options -}}

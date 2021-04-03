@@ -1,3 +1,6 @@
+{{/* Usage: 
+    {{% details title="title" %}} Hidden content {{% /details %}} 
+*/}}
 {{- $summary := (.Get "title") | default "" -}}
 {{- $is_open := eq (.Get "open") "true" | default "false" -}}
 <details {{ if $is_open }}open{{ end }}>
