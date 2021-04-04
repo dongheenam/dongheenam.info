@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Functions"
+title: "Functions, Domain and Range"
 slug: introduction
 description: "Definition of functions, domain and range."
 
@@ -18,7 +18,7 @@ tags:
 
 menu:
   math1-func:
-    name: Introduction
+    name: Functions, Domain and Range
     parent: Functions and Graphs
     weight: 11
 
@@ -45,7 +45,7 @@ In this lesson, we will:
 ## Functions
 
 {{% mn %}}{{% img loc="sidenote" src="courses/jpn-maths-1/functions/functions-and-graphs/function_machine2.svg" %}} The function acting as a 'black box'. Figure by [Wvbailey](https://en.wikipedia.org/wiki/Function_(mathematics)#/media/File:Function_machine2.svg) via Wikipedia. {{% /mn %}}
-The word *function* comes from the Latin word meaning *to perform*. Following its name, a mathematical function *acts on* a number to do certain calculations. {{% sn 35 %}}Also, the traditional Chinese/Japanese translation of functions is "函数", which means *box numbers*. I think this translation encapsulates the nature of a function as a 'black box' so well!{{% /sn %}}
+The word *function* comes from the Latin word meaning *to perform*. Following its name, a mathematical function *acts on* a number to do pre-defined calculations. {{% sn 35 %}}Also, the traditional Chinese/Japanese translation of functions is "函数", which means *box numbers*. I think this translation encapsulates the nature of a function as a 'black box' so well!{{% /sn %}}
 
 {{% box %}}
 
@@ -55,7 +55,7 @@ The word *function* comes from the Latin word meaning *to perform*. Following it
 
 {{% /box %}}
 
-Let me elaborate the above sentence a little more. Think a function as a hard-working robot. Each time you give the robot a number, it will return a number. Here are the two important properties it must have:
+Let me elaborate on the above sentence a little more. Think of a hard-working robot. Each time you give the robot a number, it will return a number. Here are the two essential properties it must have:
 
 - it must not return more than one outputs for a single input.
 - it must always return some output when given an input.
@@ -133,7 +133,7 @@ With $\text{(c)}$, substitute $x=a+2$ into $f(x)$:
 
 ### Domain
 
-Do you remember I said a function must give an output? For some functions it is not a problem. For example, we can always calculate the square of any real numbers, so functions like $ f(x) = x^2 $ can easily satisfy this rule. However, functions like $$ g(x) = \sqrt{x} $$ cannot take negative numbers. This is why we need to *specify the set of inputs* for each function, which we call the *domain* of the function.
+Do you remember I said a function must give an output? It is not a problem for some functions. For example, we can always calculate the square of any real numbers, so functions like $ f(x) = x^2 $ can easily satisfy this rule. However, functions like $$ g(x) = \sqrt{x} $$ cannot take negative numbers. This is why we need to *specify the set of inputs* for each function, which we call the *domain* of the function.
 
 {{% box %}}
 
@@ -146,7 +146,7 @@ Do you remember I said a function must give an output? For some functions it is 
 
 {{% /box %}}
 
-The domains above are the *largest set of numbers* each function can be defined for. We call these domains as *natural domains*. We can also artificially limit the domain to be smaller than the function's natural domain.
+The domains above are the *largest set of numbers* each function can be defined for. We call these domains *natural domains*. We can also artificially limit the domain to be smaller than the function's natural domain.
 
 {{% box %}}
 
@@ -158,11 +158,11 @@ The domains above are the *largest set of numbers* each function can be defined 
 
 ### Range
 
-The *range* of the function is the set of all outputs from a function, and the range depends on the choice of your domain!
+Because a function always comes with its domain (natural or not), you can calculate the entire set of outputs as well. This set is called the *range* of the function.
 
 {{% box %}}
 
-{{% note Definition %}} The *range* of a function $f$ is the set of all $f(x)$.
+{{% note Definition %}} The *range* of a function $f$ is the set of all $f(x)$. In other words, if the domain of $f$ is $X$, the range is $\\{ y \\, | \\, y = f(x), x\in X \\}$.
 
 {{% note Example %}}
 

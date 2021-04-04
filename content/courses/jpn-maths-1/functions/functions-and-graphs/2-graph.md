@@ -36,20 +36,21 @@ weight: 12
 
 ## Introduction
 
-Graphs are convenient ways of visualising functions. In this lesson, we will:
+Graphs are a convenient way of visualising functions. In this lesson, we will:
 
 - Revise the definition of the graph of a function.
 - Draw the graph of a function when its domain is given.
+- Evaluate the minimum and maximum values of a function.
 
 
 ## Graph
 
-Let's recall the definition of a function: a function *relates* a certain value of $x$ with the corresponding value of $y$. {{% mn %}}{{% img loc="sidenote" src="courses/jpn-maths-1/functions/functions-and-graphs/graph-ex1.png" %}} The graph of $y=x+2$. {{% /mn %}} For example, a function $$ y = x+2 $$ relates $x=0$ with $y=2$, $1$ with $3$, $\sqrt{5}$ with $\sqrt{5}+2$, and so on. You can see these values form a *pair* of numbers: $(0, 2)$, $(1, 3)$ and $\big(\sqrt{5}, \sqrt{5}+2\big)$. If we collect all of these pairs on the coordinate plane, we get the *graph* of $y=x+2$!
+Let's recall the definition of a function: a function *relates* a certain value of $x$ with the corresponding value of $y$. {{% mn %}}{{% img loc="sidenote" src="courses/jpn-maths-1/functions/functions-and-graphs/graph-ex1.png" %}} The graph of $y=x+2$. {{% /mn %}} For example, a function $$ y = x+2 $$ pairs $x=0$ with $y=2$, $1$ with $3$, $\sqrt{5}$ with $\sqrt{5}+2$, and so on. You can see these values form a *combination* of numbers: $(0, 2)$, $(1, 3)$ and $\big(\sqrt{5}, \sqrt{5}+2\big)$. If we collect these coordinates on the coordinate plane, we get the *graph* of $y=x+2$!
 
 {{% note Definition %}} The *graph* of a function $y=f(x)$ is the set of all pairs of numbers $(x, y)$ given $x$ is an element of its domain.
 
 
-### Graph of a Linear Function
+### Graph of a linear function
 
 Before moving on, we will review the basic properties of a linear function and its graph.
 
@@ -136,13 +137,28 @@ When the domain of a function is smaller than its natural domain, you need to dr
 
 {{% /box %}}
 
-### Maximum and Minimum Values
 
-What is the smallest value you can get by squaring a real number? It is $0^2 = 0$. Likewise, some functions have a smallest or largest value in their range. They are called *maximum* and *minimum* values.
+### Guessing the function from its domain and range
+
+Let's say a function $f(x)=ax+b$ has a domain of $\\{ x \\, | \\, 1\le x \le 2 \\}$ and range of $\\{ y \\, | \\, 3\le y \le 5 \\}$. How can we specify this function?
+
+Well, because its graph is a line, there are only two possibilities:
+
+- $f(1)=3$ and $f(2)=5$, or
+- $f(1)=5$ and $f(2)=3$.
+
+{{< figure src="courses/jpn-maths-1/functions/functions-and-graphs/graph-ex6.png" alt="Illustration of the two possible scenarios." >}}
+
+In the first case, the equation would be $y=2x+1$. In the second case, the equation would be $y=-2x+7$.
+
+
+### Maximum and minimum values
+
+What is the smallest value you can get by squaring a real number? It is $0^2 = 0$. Likewise, some functions have the smallest or largest value in their range. They are called *maximum* and *minimum* values.
 
 {{% box %}}
 
-{{% note Definition %}} The *maximum value* of a function is the largest number in its range, and the *minimum value* is the smallest number in its range.
+{{% note Definition %}} The *maximum value* of a function is the largest number in its range. The *minimum value* is the smallest number in its range.
 
 {{% note Example %}}
 
@@ -163,7 +179,7 @@ Let's find the minimum and maximum values of the functions from the previous exa
 {{% note Solution %}}
 
 1. From the graph above, it is easy to tell the range is $-3 \le y \le 3$. Hence the minimum value is $\boldsymbol{ -3 }$, and the maximum value is $\boldsymbol{ 3 }$.
-2. From the graph above, the range is $-4 \le y < 2$. Note that this set does not include $2$ but any numbers that are up to $2$. Hence the minimum value is $\boldsymbol{ -4 }$, but *the maximum value does not exist*.
+2. From the graph above, the range is $-4 \le y < 2$. Note that this set does not include $2$ but any numbers that are up to $2$. Hence the minimum value is $\boldsymbol{ -4 }$ but *the maximum value does not exist*.
 
 {{% /box %}}
 
@@ -193,5 +209,33 @@ $\hspace{0.5em} \text{b.} \quad$ When $x=-1$, $y=3+1=4$, and when $x=2$, $y=-6+1
 {{< figure src="courses/jpn-maths-1/functions/functions-and-graphs/graph-q1b.png" alt="Graph of y=-3x+1" >}}
 
 Thus, the range is $\boldsymbol{ -5\le y < 4 }$. The minimum is $\boldsymbol{ -5 }$, and the maximum $\textbf{does not exist}$.
+
+{{% /details %}}
+
+
+2. When the function $y=ax+b$, $2\le x \le 5$, has the range of $-1\le y\le 5$, find the values of $a$ and $b$.
+
+{{% details title="Answer" %}}
+
+2. $a=2, \\, b=-5$, or $a=-2, \\, b=9.$
+
+{{% note Solution %}} Say $f(x) = ax+b$. The two possibilities are:
+
+- $f(2)=-1$ and $f(5)=5$, or
+- $f(2)=5$ and $f(5)=-1$.
+
+In the first case, the gradient is $\dfrac{5+1}{5-2} = 2$, so $a=2$. Then
+\begin{align}
+  f(2) = -1 \implies & 2a + b = -1 \\\\
+  & 4 + b = -1 \\\\
+  & b = -5.
+\end{align}
+In the second case, the gradient is $\dfrac{-5-1}{5-2}=-2$, so $a=-2$. Then
+\begin{align}
+  f(2) = 5 \implies & 2a+b = 5 \\\\
+  & -4 + b = 5 \\\\
+  & b = 9. 
+\end{align}
+Therefore, we conclude $\boldsymbol{ a=2, \\, b=-5 }$, or $\boldsymbol{ a=-2, \\, b=9 }.$
 
 {{% /details %}}
