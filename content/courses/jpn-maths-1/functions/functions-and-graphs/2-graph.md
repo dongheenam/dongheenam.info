@@ -1,7 +1,7 @@
 ---
-title: "Graph of a Function"
+title: "Graph of Linear Function"
 slug: graph
-description: "Drawing graph of a function with natural or limited domain."
+description: "Drawing the graph of a function with natural or limited domain."
 
 date: 2021-04-02 19:19:45.554 +1100
 lastMod: 2021-04-02 19:19:45.554 +1100
@@ -19,7 +19,7 @@ tags:
 
 menu:
   math1-func:
-    name: Graph of a Function
+    name: Graph of Linear Function
     parent: Functions and Graphs
     weight: 12
 
@@ -39,7 +39,7 @@ weight: 12
 Graphs are a convenient way of visualising functions. In this lesson, we will:
 
 - Revise the definition of the graph of a function.
-- Draw the graph of a function when its domain is given.
+- Draw the graph of a linear function when its domain is given.
 - Evaluate the minimum and maximum values of a function.
 
 

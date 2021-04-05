@@ -1,5 +1,5 @@
 ---
-title: "Transformations of a Graph"
+title: "Transformations of Graph"
 slug: transformations
 description: "Revision of horizontal and vertical translation, dilation, and reflection of a graph."
 
@@ -18,7 +18,7 @@ tags:
 
 menu:
   math1-func:
-    name: Transformations of a Graph
+    name: Transformations of Graph
     parent: Functions and Graphs
     weight: 13
 

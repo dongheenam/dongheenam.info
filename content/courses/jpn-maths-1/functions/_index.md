@@ -27,9 +27,10 @@ weight: 13
 
 ### Functions and Graphs
 
-- [Introduction](functions-and-graphs/introduction)
+- [Functions, Domain and Range](functions-and-graphs/introduction)
 - [Graph of a Function](functions-and-graphs/graph)
 - [Transformations of a graph](functions-and-graphs/transformations)
+- [Graphing Linear Functions with Absolute Values](functions-and-graphs/absolute-values)
 
 ### Quadratic Graphs
 
@@ -44,6 +45,9 @@ weight: 13
 | ----- | ---------- | ------------ | --- | --- |
 |**[Functions and Graphs](functions-and-graphs)** | | | | |
 | ├ Introduction |  | Met1 |
-| ├ Graph of a Function |  | Met1 |
-| ├ Transformations of a Graph |  | Met1 |
+| ├ Graph of Linear Function | 9^, 10^ | Met1 |
+| ├ Transformations of Graph | 9^, 10A^ | Met1 |
+| ├ Graphing with Absolute Values |  | Spec3 |
 {{% /table-wrapper %}}
+
+^ indicates the topic may be used for extension.
