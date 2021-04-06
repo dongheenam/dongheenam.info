@@ -1,5 +1,5 @@
 ---
-title: "Transformations of Graph"
+title: "Transformations of Graphs"
 slug: transformations
 description: "Revision of horizontal and vertical translation, dilation, and reflection of a graph."
 

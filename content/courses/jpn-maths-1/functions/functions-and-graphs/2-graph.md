@@ -1,6 +1,6 @@
 ---
-title: "Graph of Linear Function"
-slug: graph
+title: "Graphs of Linear Functions"
+slug: linear-graphs
 description: "Drawing the graph of a function with natural or limited domain."
 
 date: 2021-04-02 19:19:45.554 +1100

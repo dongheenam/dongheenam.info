@@ -28,9 +28,11 @@ weight: 13
 ### Functions and Graphs
 
 - [Functions, Domain and Range](functions-and-graphs/introduction)
-- [Graph of a Function](functions-and-graphs/graph)
-- [Transformations of a graph](functions-and-graphs/transformations)
+- [Graphs of Linear Functions](functions-and-graphs/linear-graphs)
+- [Transformations of Graphs](functions-and-graphs/transformations)
 - [Graphing Linear Functions with Absolute Values](functions-and-graphs/absolute-values)
+- [Solving Inequalities using Graphs](functions-and-graphs/inequalities-and-graphs)
+- [Graphing Piecewise Functions](functions-and-graphs/piecewise-functions)
 
 ### Quadratic Graphs
 
@@ -44,10 +46,12 @@ weight: 13
 | Topic | AC 7-10 | AC Senior | HSC S6 | IB DP |
 | ----- | ---------- | ------------ | --- | --- |
 |**[Functions and Graphs](functions-and-graphs)** | | | | |
-| ├ Introduction |  | Met1 |
-| ├ Graph of Linear Function | 9^, 10^ | Met1 |
-| ├ Transformations of Graph | 9^, 10A^ | Met1 |
+| ├ Functions, Domain and Range |  | Met1 |
+| ├ Graphs of Linear Functions | 9^, 10^ | Met1 |
+| ├ Transformations of Graphs | 9^, 10A^ | Met1 |
 | ├ Graphing with Absolute Values |  | Spec3 |
+| ├ Inequalities and Graphs |  |  |
+| └ Graphing Piecewise Functions |  | Gen2 |
 {{% /table-wrapper %}}
 
 ^ indicates the topic may be used for extension.
