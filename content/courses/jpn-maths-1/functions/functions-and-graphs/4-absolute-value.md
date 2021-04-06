@@ -90,11 +90,38 @@ There is one more method of drawing the graph of $y=|f(x)|$ using the [transform
 
 {{% /details %}}
 
-{{% note Question %}} Try [Practice Questions](#practice-questions) 1 before moving on.
+{{% note Question %}} Try [Practice Question](#practice-questions) 1 before moving on.
 
 ## Multiple Absolute Value Symbols
 
+Just like [solving equations with multiple absolute values](../../../numbers-and-expressions/inequalities/absolute-value-equations/#equations-with-multiple-absolute-values), we need to separate the cases at every value of $x$ where an absolute value is equal to zero.
 
+{{% box %}}
+
+{{% note Example %}} Draw the graph of $y=|x+1| + |x-3|$.
+
+{{% note Solution %}} Because $x+1=0$ at $x=-1$ and $x-3=0$ at $x=3$, we need to draw three separate graphs where $x<-1$, $-1\le x < 3$, and $x\ge 3$.
+
+When $x<-1$, $x+1<0$ and $x-3<0$,
+\begin{align}
+  y &= -(x+1) -(x-3) \\\\
+  &= -2x + 2.
+\end{align}
+When $-1\le x < 3$, $x+1>0$ and $x-3<0$,
+\begin{align}
+  y &= (x+1) - (x-3) \\\\
+  &= 4.
+\end{align}
+When $x\ge 3$, $x+1>0$ and $x-3>0$,
+\begin{align}
+  y &= (x+1) + (x+3) \\\\
+  &= 2x + 4.
+\end{align}
+Therefore, the graph of $y=|x+1| + |x-3|$ looks like below:
+
+{{< figure src="courses/jpn-maths-1/functions/functions-and-graphs/abs-ex3.png" alt="Graph of y = |x+1| + |x-3|." >}}
+
+{{% /box %}}
 
 ## Practice Questions
 
@@ -146,3 +173,54 @@ Therefore, the function is equivalent to
 
 {{% /details %}}
 
+2. Sketch the graph of the following functions.
+    1. $y = |x+1| - |x|$
+    2. $y = |x+1| + 2|x-1|$
+
+{{% details title="Answer" %}}
+
+{{% note Solution %}}
+
+$\hspace{0.5em} \text{a.} \quad$ The breakpoints are $x=-1$ and $0$.
+
+When $x<-1$, $x+1<0$ and $x<0$,
+\begin{align}
+  y &= -(x+1) + x \\\\
+  &= -1.
+\end{align}
+When $-1 \le x < 0$, $x+1>0$ and $x<0$,
+\begin{align}
+  y &= (x+1) + x \\\\
+  &= 2x+1.
+\end{align}
+When $x\ge 0$, $x+1>0$,
+\begin{align}
+  y &= (x+1) - x \\\\
+  &= 1.
+\end{align}
+Therefore, the graph of $y = |x+1| - |x|$ is
+
+{{< figure src="courses/jpn-maths-1/functions/functions-and-graphs/abs-q2a.png" alt="Graph of y=|x+1| - |x|." >}}
+
+$\hspace{0.5em} \text{b.} \quad$ The breakpoints are $x=-1$ and $1$.
+
+When $x<-1$, $x+1<0$ and $x-1<0$,
+\begin{align}
+  y &= -(x+1) - 2(x-1) \\\\
+  &= -3x + 1.
+\end{align}
+When $-1\le x < 1$, $x+1>0$ and $x-1<0$,
+\begin{align}
+  y &= (x+1) - 2(x-1) \\\\
+  &= -x + 3.
+\end{align}
+When $x \ge 1$, $x+1>0$ and $x-1>0$,
+\begin{align}
+  y &= (x+1) + 2(x-1) \\\\
+  &= 3x - 1.
+\end{align}
+Therefore, the graph of $y = |x+1| + 2|x-1|$ is
+
+{{< figure src="courses/jpn-maths-1/functions/functions-and-graphs/abs-q2b.png" alt="Graph of y = |x+1| + 2|x-1|." >}}
+
+{{% /details %}}
