@@ -3,12 +3,12 @@ title: "Graphing Linear Functions with Absolute Values"
 slug: absolute-values
 description: "Graphing a linear function with one or multiple absolute value symbols."
 
-date: 2021-04-05 12:49:33.068 +1000
+date: 2021-04-06 10:19:02.752 +1000
 
 toc: true
 type: docs
 math: true
-draft: true
+draft: false
 
 tags:
   - function
