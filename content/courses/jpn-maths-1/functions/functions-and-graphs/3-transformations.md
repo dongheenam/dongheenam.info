@@ -35,7 +35,7 @@ weight: 13
 
 ## Introduction
 
-While it is always possible to draw a function by finding a few points that are part of its graph, it is often easier to draw it by using the principles of transformation. This is why we need to understand how we can transform graphs! In this lesson, we will learn:
+While it is always possible to draw a function by finding a few points that are part of its graph, it is often easier to draw it by using the principles of transformation. This is why we need to understand how we can transform graphs! In this lesson, we will learn how to:
 
 - Translate a linear graph horizontally or vertically.
 - Dilate a linear graph horizontally or vertically.
