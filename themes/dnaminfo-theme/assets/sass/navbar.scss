@@ -133,12 +133,13 @@
 aside.sidenav {
   position: fixed;
   left: 0;
-  width: 18rem;
-  margin: 3rem 0 0 2rem;
-  padding-right: 1rem;
+  width: 20rem;
+  margin: 3rem 0 0 0;
+  padding: 0.5rem 1rem 0 2rem;
   max-height: calc(0.9 * (100vh - 6rem));
   overflow-y: auto;
 
+  background-color: var(--background-color);
   border-right: 1.5px solid var(--text-color);
   border-bottom: 1.5px solid var(--text-color);
 
