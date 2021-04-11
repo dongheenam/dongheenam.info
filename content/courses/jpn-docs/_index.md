@@ -14,7 +14,7 @@ menu:
     name: Japanese Documents
     weight: 10
 
-weight: 21
+weight: 99
 ---
 
 ## Introduction

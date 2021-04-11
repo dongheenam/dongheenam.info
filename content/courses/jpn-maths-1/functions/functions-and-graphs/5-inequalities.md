@@ -27,6 +27,14 @@ weight: 15
 
 ## Introduction
 
+{{% details title="Getting Ready" %}}
+
+The following topics are useful for understanding this lesson.
+- Mathematics 1
+    - [Solving Linear Inequalities](../../../numbers-and-expressions/inequalities/solving-inequalities/)
+
+{{% /details %}}
+
 In this lesson, we will:
 
 - Derive the solution of an inequality from the graphs of its parts.

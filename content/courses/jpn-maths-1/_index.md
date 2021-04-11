@@ -14,7 +14,7 @@ menu:
     name: Japanese Maths 1
     weight: 10
 
-weight: 31
+weight: 21
 ---
 
 One of the educational projects I have always dreamed about is providing a way for teachers and students to have a peek at how mathematics is learnt in another country. I regularly tell students how people from a different culture do mathematics differently (well, that includes, how I do maths too!) and this page is an extension to my effort of spreading rich maths culture in a classroom.
