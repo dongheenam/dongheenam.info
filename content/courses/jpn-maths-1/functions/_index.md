@@ -25,7 +25,7 @@ weight: 13
 
 ## List of Topics
 
-### Functions and Graphs
+### Functions and Graphs [#](functions-and-graphs)
 
 - [Functions, Domain and Range](functions-and-graphs/introduction)
 - [Graphs of Linear Functions](functions-and-graphs/linear-graphs)
@@ -34,7 +34,9 @@ weight: 13
 - [Solving Inequalities using Graphs](functions-and-graphs/inequalities-and-graphs)
 - [Graphing Piecewise Functions](functions-and-graphs/piecewise-functions)
 
-### Quadratic Graphs
+### Quadratic Graphs [#](quadratic-graphs)
+
+- [Quadratic Functions and Graphs](quadratic-graphs/quadratic-functions)
 
 ### Quadratic Equations
 
@@ -52,6 +54,8 @@ weight: 13
 | ├ Graphing with Absolute Values |  | Spec3 |
 | ├ Inequalities and Graphs |  |  |
 | └ Graphing Piecewise Functions |  | Gen2 |
+|**[Quadratic Graphs](quadratic-graphs)** | | |
+| ├ Quadratic Functions and Graphs | 10, 10A | Met1 |
 {{% /table-wrapper %}}
 
 ^ indicates the topic may be used for extension.

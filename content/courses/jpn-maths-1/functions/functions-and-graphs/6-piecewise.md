@@ -8,7 +8,7 @@ date: 2021-04-11 16:17:45.774 +1000
 toc: true
 type: docs
 math: true
-draft: true
+draft: false
 
 tags:
   - function
