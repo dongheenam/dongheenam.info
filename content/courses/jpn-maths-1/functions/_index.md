@@ -37,6 +37,7 @@ weight: 13
 ### Quadratic Graphs [#](quadratic-graphs)
 
 - [Quadratic Functions and Graphs](quadratic-graphs/quadratic-functions)
+- [Quadratic Functions in General Form](quadratic-graphs/general-form)
 
 ### Quadratic Equations
 
@@ -56,6 +57,7 @@ weight: 13
 | └ Graphing Piecewise Functions |  | Gen2 |
 |**[Quadratic Graphs](quadratic-graphs)** | | |
 | ├ Quadratic Functions and Graphs | 10, 10A | Met1 |
+| ├ Graphing General Form | 10, 10A | Met1 |
 {{% /table-wrapper %}}
 
 ^ indicates the topic may be used for extension.
