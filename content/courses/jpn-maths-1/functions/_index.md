@@ -38,6 +38,7 @@ weight: 13
 
 - [Quadratic Functions and Graphs](quadratic-graphs/quadratic-functions)
 - [Quadratic Functions in General Form](quadratic-graphs/general-form)
+- [Transformations of Quadratic Functions 1](quadratic-graphs/transformations-1)
 
 ### Quadratic Equations
 
