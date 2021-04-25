@@ -1,5 +1,5 @@
 ---
-title: "Transformations of Quadratic Functions 1"
+title: "Translations of Quadratic Functions"
 slug: transformations-1
 description: "Translating a quadratic function given their expressions."
 
@@ -13,10 +13,11 @@ draft: false
 tags:
   - function
   - quadratic function
+  - transformation
 
 menu:
   math1-func:
-    name: Transformations 1
+    name: Translations
     parent: Quadratic Graphs
     weight: 13
 
@@ -24,6 +25,7 @@ weight: 23
 ---
 
 ## Introduction 
+
 {{% details title="Links to Australian Curriculum" %}}
 
 - Mathematics Year 10A
@@ -41,8 +43,9 @@ We have [already discussed](../quadratic-functions) transformations of $y=ax^2$,
 ## Translating Quadratic Graphs
 
 To translate a graph, we perform the following operations.
-- The graph of $y = f(x-p)$ is the graph of $y=f(x)$ translated horizontally by $p$ units.
-- The graph of $y-q = f(x)$ (or $y = f(x)+q$) is the graph of $y=f(x)$ translated vertically by $q$ units.
+- If you translate the graph of the function $y = f(x)$:
+    - horizontally by $p$ units, it becomes $y = f(x-p)$.
+    - vertically by $q$ units, it becomes $y-q = f(x)$ (or $y = f(x)+q$).
 
 Let's apply this idea to quadratic functions in general form.
 

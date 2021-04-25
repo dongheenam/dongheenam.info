@@ -38,7 +38,8 @@ weight: 13
 
 - [Quadratic Functions and Graphs](quadratic-graphs/quadratic-functions)
 - [Quadratic Functions in General Form](quadratic-graphs/general-form)
-- [Transformations of Quadratic Functions 1](quadratic-graphs/transformations-1)
+- [Translations of Quadratic Functions](quadratic-graphs/transformations-1)
+- [Reflections of Quadratic Functions](quadratic-graphs/transformations-2)
 
 ### Quadratic Equations
 
@@ -59,6 +60,8 @@ weight: 13
 |**[Quadratic Graphs](quadratic-graphs)** | | |
 | ├ Quadratic Functions and Graphs | 10, 10A | Met1 |
 | ├ Graphing General Form | 10, 10A | Met1 |
+| ├ Translations of Quadratics | 10A | Met1 |
+| ├ Reflections of Quadratics | 10A | Met1 |
 {{% /table-wrapper %}}
 
 ^ indicates the topic may be used for extension.
