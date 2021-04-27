@@ -525,7 +525,13 @@ $(9)$ Identity 4: $(a+b)^3$ $=a^3 +3a^2b + 3ab^2 +b^3$
    3. $(a+b+c)^2 - (a+b-c)^2$ $+$ $(a-b+c)^2 - (a+b-c)^2$
    4. $(x+y+z)(-x+y+z)$$(x-y+z)(x+y-z)$
 
-{{% details title="Answer" %}} 3. 1. $x^4 - 4x^3 - 7x^2 + 22x + 24$ 2. $x^4 - 2x^3 - x^2 + 2x$ 3. $-4ab + 4bc + 8ca$ 4. $-x^4 -y^4 -z^4 + 2x^2y^2 + 2y^2z^2 + 2z^2x^2$
+{{% details title="Answer" %}}
+
+3. 
+   1. $x^4 - 4x^3 - 7x^2 + 22x + 24$
+   2. $x^4 - 2x^3 - x^2 + 2x$
+   3. $-4ab + 4bc + 8ca$
+   4. $-x^4 -y^4 -z^4 + 2x^2y^2 + 2y^2z^2 + 2z^2x^2$
 
 {{% note Solution %}}
 
