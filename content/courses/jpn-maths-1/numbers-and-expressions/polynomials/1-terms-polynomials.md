@@ -266,42 +266,46 @@ Polynomial $-3+x^2-6x+x^3$ can be arranged as:
 ## Practice Questions
 
 1. Find the coefficients and the orders of the following term.
-
-   1. $3x^4y^5$
-   2. $-2a^3bc^2$
+    1. $3x^4y^5$
+    2. $-2a^3bc^2$
 
 2. Find the coefficients and the orders of $7p^2q^3$,
-   1. in terms of $p$;
-   2. in terms of $q$.
+    1. in terms of $p$;
+    2. in terms of $q$.
 
 {{% details title="Answer" %}}
 
-1.  1. Coefficient is $3$, order is $9$.
+1.  
+    1. Coefficient is $3$, order is $9$.
     2. Coefficient is $-2$, order is $7$.
-2.  1. Coefficient in $p$ is $7q^3$, order in $p$ is $2$.
+2.  
+    1. Coefficient in $p$ is $7q^3$, order in $p$ is $2$.
     2. Coefficient in $q$ is $7p^2$, order in $q$ is $3$.
 
 {{% /details %}}
 
 3. Find the constant term and degree in $x$.
-   1. $-x^2+5x-4$
-   2. $5x^2+3xy^2+y^2$
-   3. $y^2-2ay+6xy+x^3+4a$
+    1. $-x^2+5x-4$
+    2. $5x^2+3xy^2+y^2$
+    3. $y^2-2ay+6xy+x^3+4a$
 4. Simplify the following polynomials and find their degrees.
-   1. $x^4 + ax^3y + 2bxy^2 - 4bxy^2 + 3x^4$
-   2. $3p^2 - 2pq + q - 2p^2 + p - p^2$
+    1. $x^4 + ax^3y + 2bxy^2 - 4bxy^2 + 3x^4$
+    2. $3p^2 - 2pq + q - 2p^2 + p - p^2$
 5. Simplify and arrange the polynomials in descending order.
-   1. $3x^2 - 12xy + 4 + 3x^2 - 2x + 5$
-   2. $2x^2 + 2y^2 - 3xy + 4y^2 + 2xy - x^2$
+    1. $3x^2 - 12xy + 4 + 3x^2 - 2x + 5$
+    2. $2x^2 + 2y^2 - 3xy + 4y^2 + 2xy - x^2$
 
 {{% details title="Answer" %}}
 
-3.  1. Constant term is $-4$, degree is $2$.
+3.  
+    1. Constant term is $-4$, degree is $2$.
     2. Constant term is $y^2$, degree is $2$.
     3. Constant term is $y^2-2ay+4a$, degree is $3$.
-4.  1. $4x^4 + ax^3y - 2bxy^2$, degree is $5$.
+4.  
+    1. $4x^4 + ax^3y - 2bxy^2$, degree is $5$.
     2. $ -2pq + p + q $, degree is $2$.
-5.  1. $6x^2 - 12xy - 2x + 9$.
+5.  
+    1. $6x^2 - 12xy - 2x + 9$.
     2. $x^2 + 6y^2 - xy$.
 
 {{% /details %}}

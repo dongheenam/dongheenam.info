@@ -132,63 +132,65 @@ Factorise the following expressions.
 ### Practice Questions
 
 1. Factorise the following expressions.
-
-   1. $a^4 - 2a$
-   2. $6a^2b + 4ab^2 - 2ab$
-   3. $24c^2d - 36c^3d^2 + 12c^4$
-   4. $9a^3x^2y - 45ax^3y^2 + 18a^2xy^3$
+    1. $a^4 - 2a$
+    2. $6a^2b + 4ab^2 - 2ab$
+    3. $24c^2d - 36c^3d^2 + 12c^4$
+    4. $9a^3x^2y - 45ax^3y^2 + 18a^2xy^3$
 
 2. Factorise the following.
-   1. $(a+b)x - (a+b)y$
-   2. $p(3x-y) + 2q(y-3x)$
-   3. $(a-b)x^2 - (b-a)xy$
-   4. $3a(x-y) + 6b(x-y) + 9c(y-x)$
+    1. $(a+b)x - (a+b)y$
+    2. $p(3x-y) + 2q(y-3x)$
+    3. $(a-b)x^2 - (b-a)xy$
+    4. $3a(x-y) + 6b(x-y) + 9c(y-x)$
 
 {{% details title="Answer" %}}
 
-1.  1. $a (a^3 - 2)$
+1.  
+    1. $a (a^3 - 2)$
     2. $2ab(3a + 2b - 1)$
     3. $12c^2(2d - 3cd^2 + c^2)$
     4. $9axy(a^2x - 5x^2y + 2ay^2)$
-2.  1. $(a+b)(x-y)$
+2.  
+    1. $(a+b)(x-y)$
     2. $(p-2q)(3x-y)$
     3. $x(a-b)(x+y)$
     4. $3(x-y)(a+2b-3c)$
 
 {{% note solution %}}
 
-1.  \begin{align}
-    \text{b.} \quad & 6a^2b + 4ab^2 - 2ab \\\\
-    &= 2(3a^2b + 2ab^2 - ab) \\\\
+1.  <br>
+    \begin{align}
+    \text{b.} \quad & 6a^2b + 4ab^2 - 2ab \\
+    &= 2(3a^2b + 2ab^2 - ab) \\
     &= \boldsymbol{ 2ab(3a + 2b - 1) .}
     \end{align}
     \begin{align}
-    \text{c.} \quad & 24c^2d - 36c^3d^2 + 12c^4 \\\\
-    &= 12(2c^2d - 3c^3d^2 + c^4 ) \\\\
+    \text{c.} \quad & 24c^2d - 36c^3d^2 + 12c^4 \\
+    &= 12(2c^2d - 3c^3d^2 + c^4 ) \\
     &= \boldsymbol{ 12c^2(2d - 3cd^2 + c^2) .}
     \end{align}
     \begin{align}
-    \text{d.} \quad & 9a^3x^2y - 45ax^3y^2 + 18a^2xy^3 \\\\
-    &= 9(a^3x^2y - 5ax^3y^2 + 2a^2xy^3) \\\\
+    \text{d.} \quad & 9a^3x^2y - 45ax^3y^2 + 18a^2xy^3 \\
+    &= 9(a^3x^2y - 5ax^3y^2 + 2a^2xy^3) \\
     &= \boldsymbol{ 9axy(a^2x - 5x^2y + 2ay^2) .}
     \end{align}
-
-2.  \begin{align}
-    \text{b.} \quad & p(3x-y) + 2q(y-3x) \\\\
-    &= p(x-y) - 2q(3x-y) \\\\
+2.  <br>
+    \begin{align}
+    \text{b.} \quad & p(3x-y) + 2q(y-3x) \\
+    &= p(x-y) - 2q(3x-y) \\
     &= \boldsymbol{ (p-2q)(3x-y) .}
     \end{align}
     \begin{align}
-    \text{c.} \quad & (a-b)x^2 - (b-a)xy \\\\
-    &= (a-b)x^2 + (a-b)xy \\\\
-    &= \underline{(a-b)x} \cdot x + \underline{(a-b)x}\cdot y \\\\
-    &= (a-b)x(x+y) \\\\
+    \text{c.} \quad & (a-b)x^2 - (b-a)xy \\
+    &= (a-b)x^2 + (a-b)xy \\
+    &= \underline{(a-b)x} \cdot x + \underline{(a-b)x}\cdot y \\
+    &= (a-b)x(x+y) \\
     &= \boldsymbol{ x(a-b)(x+y) .}
     \end{align}
     \begin{align}
-    \text{d.} \quad & 3a(x-y) + 6b(x-y) + 9c(y-x) \\\\
-    &= 3a(\underline{x-y}) + 6b(\underline{x-y}) - 9c(\underline{x-y}) \\\\
-    &= (\underline{x-y})(3a + 6b - 9c) \\\\
+    \text{d.} \quad & 3a(x-y) + 6b(x-y) + 9c(y-x) \\
+    &= 3a(\underline{x-y}) + 6b(\underline{x-y}) - 9c(\underline{x-y}) \\
+    &= (\underline{x-y})(3a + 6b - 9c) \\
     &= \boldsymbol{ 3(x-y)(a+2b-3c) .}
     \end{align}
 

@@ -395,14 +395,15 @@ You will find these results very useful later on.
 ## Practice Questions
 
 1. Expand the following expressions.
-   1. $(x+y+3)(x+y-3)$
-   2. $(a-2b+c)(a+2b-c)$
-   3. $(x^2-3x-1)(x^2-x-1)$
-   4. $(a+2b-c)^2$
+    1. $(x+y+3)(x+y-3)$
+    2. $(a-2b+c)(a+2b-c)$
+    3. $(x^2-3x-1)(x^2-x-1)$
+    4. $(a+2b-c)^2$
 
 {{% details title="Answer" %}}
 
-1.  1. $x^2 + 2xy + y^2 - 9$
+1.  
+    1. $x^2 + 2xy + y^2 - 9$
     2. $a^2 - 4b^2 - c^2 + 4bc$
     3. $x^4 - 4x^3 + x^2 + 4x + 1$
     4. $a^2 + 4b^2 + c^2 + 4ab - 4bc - 2ca$
@@ -463,12 +464,18 @@ You can also solve (d) with the identity $$ (a + b + c)^2 = a^2 + b^2 + c^2 + 2a
 {{% /details %}}
 
 2. Expand the following.
-   1. $(x+3)(x-3)(x^2+9)$
-   2. $(x-1)(x-2)(x+1)(x+2)$
-   3. $(a+b)^3(a-b)^3$
-   4. $(x+2)(x^3+8)(x^2-2x+4)$
+    1. $(x+3)(x-3)(x^2+9)$
+    2. $(x-1)(x-2)(x+1)(x+2)$
+    3. $(a+b)^3(a-b)^3$
+    4. $(x+2)(x^3+8)(x^2-2x+4)$
 
-{{% details title="Answer" %}} 2. 1. $x^4 - 81$ 2. $x^4 - 5x^2 + 4$ 3. $a^6 - 3a^4b^2 + 3a^2b^4 - b^6$ 4. $x^6 + 16x^3 + 64$
+{{% details title="Answer" %}}
+
+2. 
+    1. $x^4 - 81$
+    2. $x^4 - 5x^2 + 4$
+    3. $a^6 - 3a^4b^2 + 3a^2b^4 - b^6$
+    4. $x^6 + 16x^3 + 64$
 
 {{% note Solution %}}
 
@@ -520,18 +527,18 @@ $(9)$ Identity 4: $(a+b)^3$ $=a^3 +3a^2b + 3ab^2 +b^3$
 {{% /details %}}
 
 3. Expand the following expressions.
-   1. $(x+2)(x-3)(x+1)(x-4)$
-   2. $(x-2)(x+1)(x^2-x)$
-   3. $(a+b+c)^2 - (a+b-c)^2$ $+$ $(a-b+c)^2 - (a+b-c)^2$
-   4. $(x+y+z)(-x+y+z)$$(x-y+z)(x+y-z)$
+    1. $(x+2)(x-3)(x+1)(x-4)$
+    2. $(x-2)(x+1)(x^2-x)$
+    3. $(a+b+c)^2 - (a+b-c)^2$ $+$ $(a-b+c)^2 - (a+b-c)^2$
+    4. $(x+y+z)(-x+y+z)$$(x-y+z)(x+y-z)$
 
 {{% details title="Answer" %}}
 
 3. 
-   1. $x^4 - 4x^3 - 7x^2 + 22x + 24$
-   2. $x^4 - 2x^3 - x^2 + 2x$
-   3. $-4ab + 4bc + 8ca$
-   4. $-x^4 -y^4 -z^4 + 2x^2y^2 + 2y^2z^2 + 2z^2x^2$
+    1. $x^4 - 4x^3 - 7x^2 + 22x + 24$
+    2. $x^4 - 2x^3 - x^2 + 2x$
+    3. $-4ab + 4bc + 8ca$
+    4. $-x^4 -y^4 -z^4 + 2x^2y^2 + 2y^2z^2 + 2z^2x^2$
 
 {{% note Solution %}}
 

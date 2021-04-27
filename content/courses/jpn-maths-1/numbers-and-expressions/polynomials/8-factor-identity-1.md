@@ -362,80 +362,91 @@ Factorise the following quadratic polynomials.
 ## Practice Questions
 
 1. Factorise the following expressions.
-
-   1. $x^2 + 14x + 49$
-   2. $y^2 - 4y + 4$
-   3. $4x^2 - 20xy + 25y^2$
-   4. $b^4 + 6b^2 + 9$
+    1. $x^2 + 14x + 49$
+    2. $y^2 - 4y + 4$
+    3. $4x^2 - 20xy + 25y^2$
+    4. $b^4 + 6b^2 + 9$
 
 2. Factorise the following expressions.
-   1. $r^2 - 25$
-   2. $4x^2 - 9y^2$
-   3. $t^4 - 1$
-   4. $(m-n)^2 - p^2$
+    1. $r^2 - 25$
+    2. $4x^2 - 9y^2$
+    3. $t^4 - 1$
+    4. $(m-n)^2 - p^2$
 
 {{% details title="Answer" %}}
 
-1.  1. $(x+7)^2$
+1.  
+    1. $(x+7)^2$
     2. $(y-2)^2$
     3. $(2x-5y)^2$
     4. $(b^2 + 3)^2$
-2.  1. $(r+5)(r-5)$
+2.  
+    1. $(r+5)(r-5)$
     2. $(2x+3y)(2x-3y)$
     3. $(t^2 + t)(t+1)(t-1)$
     4. $(m-n+p)(m-n-p)$
 
 {{% note solution %}}
 
-1.  \begin{align}
-    \text{a.} \quad & x^2 + 14x + 49 \\\\
-    &= x^2 + 2\cdot7\cdot x + 7^2 \\\\
+1.  <br>
+    \begin{align}
+    \text{a.} \quad & x^2 + 14x + 49 \\
+    &= x^2 + 2\cdot7\cdot x + 7^2 \\
     &= \boldsymbol{ (x+7)^2 .}
     \end{align}
     \begin{align}
-    \text{b.} \quad & y^2 - 4y + 4 \\\\
-    &= y^2 - 2\cdot 2\cdot y + 2^2 \\\\
+    \text{b.} \quad & y^2 - 4y + 4 \\
+    &= y^2 - 2\cdot 2\cdot y + 2^2 \\
     &= \boldsymbol{ (y-2)^2 .}
     \end{align}
     \begin{align}
-    \text{c.} \quad & 4x^2 - 20xy + 25y^2 \\\\
-    &= (2x)^2 - 2\cdot 2x \cdot 5y + (5y)^2 \\\\
+    \text{c.} \quad & 4x^2 - 20xy + 25y^2 \\
+    &= (2x)^2 - 2\cdot 2x \cdot 5y + (5y)^2 \\
     &= \boldsymbol{ (2x-5y)^2 .}
     \end{align}
     \begin{align}
-    \text{d.} \quad & b^4 + 6b^2 + 9 \\\\
-    &= \left( b^2 \right)^2 + 2\cdot 3 \cdot b^2 + 3^2 \\\\
+    \text{d.} \quad & b^4 + 6b^2 + 9 \\
+    &= \left( b^2 \right)^2 + 2\cdot 3 \cdot b^2 + 3^2 \\
     &= \boldsymbol{ (b^2 + 3)^2 .}
     \end{align}
 
-2.  \begin{align}
-    \text{a. } \quad & r^2 - 25 \\\\
-    &= r^2 - 5^2 \\\\
+2.  <br>
+    \begin{align}
+    \text{a. } \quad & r^2 - 25 \\
+    &= r^2 - 5^2 \\
     &= \boldsymbol{ (r+5)(r-5) .}
     \end{align}
     \begin{align}
-    \text{b. } \quad & 4x^2 - 9y^2 \\\\
-    &= (2x)^2 - (3y)^2 \\\\
+    \text{b. } \quad & 4x^2 - 9y^2 \\
+    &= (2x)^2 - (3y)^2 \\
     &= \boldsymbol{ (2x+3y)(2x-3y) .}
     \end{align}
     \begin{align}
-    \text{c.} \quad & t^4 - 1 \\\\
-    &= \left( t^2 \right)^2 - 1^2 \\\\
-    &= (t^2 + 1)(t^2 - 1) \\\\
+    \text{c.} \quad & t^4 - 1 \\
+    &= \left( t^2 \right)^2 - 1^2 \\
+    &= (t^2 + 1)(t^2 - 1) \\
     &= \boldsymbol{ (t^2+1)(t+1)(t-1) .}
     \end{align}
 
 {{% /details %}}
 
 3. Factorise the following expressions.
-   1. $x^2 - 3x + 2$
-   2. $y^2 + 4y - 12$
-   3. $t^2 + 5t - 36$
-   4. $a^2 + 10a + 21$
-   5. $x^2 - xy - 12y^2$
-   6. $a^2 + 3ab - 18b^2$
+    1. $x^2 - 3x + 2$
+    2. $y^2 + 4y - 12$
+    3. $t^2 + 5t - 36$
+    4. $a^2 + 10a + 21$
+    5. $x^2 - xy - 12y^2$
+    6. $a^2 + 3ab - 18b^2$
 
-{{% details title="Answer" %}} 3. 1. $(x-1)(x-2)$ 2. $(y-2)(y+6)$ 3. $(t-4)(t+9)$ 4. $(a+3)(a+7)$ 5. $(x-4y)(x+3y)$ 6. $(a+6b)(a-3b)$
+{{% details title="Answer" %}}
+
+3. 
+    1. $(x-1)(x-2)$
+    2. $(y-2)(y+6)$
+    3. $(t-4)(t+9)$
+    4. $(a+3)(a+7)$
+    5. $(x-4y)(x+3y)$
+    6. $(a+6b)(a-3b)$
 
 {{% note Solution %}}
 
@@ -473,16 +484,26 @@ Factorise the following quadratic polynomials.
 {{% /details %}}
 
 4. Factorise the following.
-   1. $2x^2 + 3x + 1$
-   2. $3x^2 + 10x + 3$
-   3. $2x^2 - 9x + 4$
-   4. $6x^2 + x - 1$
-   5. $12a^2 - 7a - 12$
-   6. $8x^2 - 2xy - 3y^2$
-   7. $10p^2 - 19pq + 6q^2$
-   8. $6a^2 - ab - 12b^2$
+    1. $2x^2 + 3x + 1$
+    2. $3x^2 + 10x + 3$
+    3. $2x^2 - 9x + 4$
+    4. $6x^2 + x - 1$
+    5. $12a^2 - 7a - 12$
+    6. $8x^2 - 2xy - 3y^2$
+    7. $10p^2 - 19pq + 6q^2$
+    8. $6a^2 - ab - 12b^2$
 
-{{% details title="Answer" %}} 4. 1. $(2x+1)(x+1)$ 2. $(3x+1)(x+3)$ 3. $(2x-1)(x-4)$ 4. $(2x+1)(3x-1)$ 5. $(3a-4)(4a+3)$ 6. $(2x+y)(4x-3y)$ 7. $(2p-3q)(5p-2q)$ 8. $(2a-3b)(3a+4b)$
+{{% details title="Answer" %}}
+
+4. 
+    1. $(2x+1)(x+1)$
+    2. $(3x+1)(x+3)$
+    3. $(2x-1)(x-4)$
+    4. $(2x+1)(3x-1)$
+    5. $(3a-4)(4a+3)$
+    6. $(2x+y)(4x-3y)$
+    7. $(2p-3q)(5p-2q)$
+    8. $(2a-3b)(3a+4b)$
 
 {{% note solution %}}
 

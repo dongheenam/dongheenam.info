@@ -55,12 +55,18 @@ P+Q+R &= (-2x^2+2x-5) + (3x^2-x) + (-x^2-x+5) \\\\
 {{% /details %}}
 
 2. Calculate the following. {{% mn ref2 ref %}}a. From Jobu Univ.{{% /mn %}}
-   1. $5xy^2 \times (-2x^2y)^3$
-   2. $2a^2b \times (-3ab)^2 \times (-a^2b^2)^3$
-   3. $(-2a^2b)^3 (3a^3b^2)^2$
-   4. $(-2ax^3y)^2(-3ab^2xy^3)$
+    1. $5xy^2 \times (-2x^2y)^3$
+    2. $2a^2b \times (-3ab)^2 \times (-a^2b^2)^3$
+    3. $(-2a^2b)^3 (3a^3b^2)^2$
+    4. $(-2ax^3y)^2(-3ab^2xy^3)$
 
-{{% details title="Answer" %}} 2. 1. $-40x^7y^5$ 2. $-18a^{10}b^9$ 3. $-72a^{12}b^7$ 4. $-12a^3b^2x^7y^5$
+{{% details title="Answer" %}}
+
+2. 
+    1. $-40x^7y^5$
+    2. $-18a^{10}b^9$
+    3. $-72a^{12}b^7$
+    4. $-12a^3b^2x^7y^5$
 
 {{% note Solution %}}
 
@@ -104,21 +110,26 @@ to simplify the expressions.
 {{% /details %}}
 
 3. Expand the following expressions.{{% mn ref3 ref %}}a. From Hakodate Univ.<br>b. From Kinki Univ.<br>d. From Hakodate Univ.{{% /mn %}}
-
-   1. $(a-b+c)(a-b-c)$
-   2. $(2x^2-x+1)(x^2+3x-3)$
-   3. $(3a-4b)^3$
-   4. $(x^3+x-3)(x^2-2x+2)$
+    1. $(a-b+c)(a-b-c)$
+    2. $(2x^2-x+1)(x^2+3x-3)$
+    3. $(3a-4b)^3$
+    4. $(x^3+x-3)(x^2-2x+2)$
 
 4. Expand the following.
-   1. $(x^2 - 2xy + 4y^2)(x^2 + 2xy + 4y^2)$
-   2. $(x+y)(x-y)(x^2+y^2)(x^4+y^4)$
-   3. $(1+a)(1-a^3+a^6)(1-a+a^2)$
-   4. $t(t-1)(t-2)(t-3)$
+    1. $(x^2 - 2xy + 4y^2)(x^2 + 2xy + 4y^2)$
+    2. $(x+y)(x-y)(x^2+y^2)(x^4+y^4)$
+    3. $(1+a)(1-a^3+a^6)(1-a+a^2)$
+    4. $t(t-1)(t-2)(t-3)$
 
-{{% details title="Answer" %}} 3. 1. $a^2 + b^2 - c^2 - 2ab$ 2. $2x^4 + 5x^3 - 8x^2 + 6x - 3$ 3. $27a^3 - 108a^2b + 144ab^2 - 64b^3$ 4. $x^5 - 2x^4 + 3x^3 - 5x^2 + 8x - 6$
+{{% details title="Answer" %}}
 
-4.  1. $x^4 + 4x^2y^2 + 16y^4$
+3. 
+    1. $a^2 + b^2 - c^2 - 2ab$
+    2. $2x^4 + 5x^3 - 8x^2 + 6x - 3$
+    3. $27a^3 - 108a^2b + 144ab^2 - 64b^3$
+    4. $x^5 - 2x^4 + 3x^3 - 5x^2 + 8x - 6$
+4.  
+    1. $x^4 + 4x^2y^2 + 16y^4$
     2. $x^8 - y^8$
     3. $1 + a^9$
     4. $t^4 - 6t^3 + 11t^2 - 6t$
@@ -241,10 +252,14 @@ $(13)$ Identity 1: $(A-B)^2$ $=A^2-2AB+B^2$
 {{% /details %}}
 
 7. Calculate the following expressions.
-   1. $(x-b)(x-c)(b-c)$ $+$ $(x-c)(x-a)(c-a)$ $+$ $(x-a)(x-b)(a-b)$
-   2. $(x+y+2z)^3$ $-$ $(y+2z-x)^3$ $-$ $(2z+x-y)^3$ $-$ $(x+y-2z)^3$
+    1. $(x-b)(x-c)(b-c)$ $+$ $(x-c)(x-a)(c-a)$ $+$ $(x-a)(x-b)(a-b)$
+    2. $(x+y+2z)^3$ $-$ $(y+2z-x)^3$ $-$ $(2z+x-y)^3$ $-$ $(x+y-2z)^3$
 
-{{% details title="Answer" %}} 7. 1. $a^2b - ab^2 + b^2c - bc^2 + c^2a - ca^2$ 2. $48xyz$
+{{% details title="Answer" %}}
+
+7. 
+    1. $a^2b - ab^2 + b^2c - bc^2 + c^2a - ca^2$
+    2. $48xyz$
 
 {{% note Solution %}}
 

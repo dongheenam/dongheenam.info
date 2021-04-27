@@ -125,14 +125,15 @@ For part {{% roman 3 %}}, we cannot apply the formula. We will instead try to fi
 ## Practice Questions
 
 1. Factorise the following expressions.
-   1. $8a^3 + 27b^3$
-   2. $64x^3 - 1$
-   3. $8x^3 - 36x^2 + 54x - 27$
-   4. $4x^3 - 8x^2 - 9x + 18$
+    1. $8a^3 + 27b^3$
+    2. $64x^3 - 1$
+    3. $8x^3 - 36x^2 + 54x - 27$
+    4. $4x^3 - 8x^2 - 9x + 18$
 
 {{% details title="Answer" %}}
 
-1.  1. $(2a+3b)(4a^2-6ab+9b^2)$
+1.  
+    1. $(2a+3b)(4a^2-6ab+9b^2)$
     2. $(4x-1)(16x^2+4x+1)$
     3. $(2x-3)^3$
     4. $(2x+3)(2x-3)(x-2)$

@@ -220,13 +220,14 @@ Factorise the following.
 ## Practice Questions
 
 1. Factorise the following polynomials.
-   1. $2x^2 + 5xy + 3y^2 + 2x + 4y - 4$
-   2. $x^2 - 2xy - 3y^2 + 6x - 10y + 8$
-   3. $6x^2 + 5xy + y^2 + 2x - y - 20$
+    1. $2x^2 + 5xy + 3y^2 + 2x + 4y - 4$
+    2. $x^2 - 2xy - 3y^2 + 6x - 10y + 8$
+    3. $6x^2 + 5xy + y^2 + 2x - y - 20$
 
 {{% details title="Answer" %}}
 
-1.  1. $(2x+3y-2)(x+y+2)$
+1.  
+    1. $(2x+3y-2)(x+y+2)$
     2. $(x-3y+2)(x+y+2)$
     3. $(3x+y-5)(2x+y+4)$
 
@@ -287,12 +288,18 @@ $(6)$<br>
 {{% /details %}}
 
 2. Factorise the following polynomials.
-   1. $2t^4 - 3t^2 + 1$
-   2. $x^4 - 13x^2 + 36$
-   3. $x^4 + 2x^2 + 9$
-   4. $x^4 + 3x^2 + 4$
+    1. $2t^4 - 3t^2 + 1$
+    2. $x^4 - 13x^2 + 36$
+    3. $x^4 + 2x^2 + 9$
+    4. $x^4 + 3x^2 + 4$
 
-{{% details title="Answer" %}} 2. 1. $(t+1)(t-1)(2t^2-1)$ 2. $(x+2)(x-2)(x+3)(x-3)$ 3. $(x^2+2x+3)(x^2-2x+3)$ 4. $(x^2+x+2)(x^2-x+2)$
+{{% details title="Answer" %}} 
+
+2. 
+    1. $(t+1)(t-1)(2t^2-1)$
+    2. $(x+2)(x-2)(x+3)(x-3)$
+    3. $(x^2+2x+3)(x^2-2x+3)$
+    4. $(x^2+x+2)(x^2-x+2)$
 
 {{% note solution %}}
 

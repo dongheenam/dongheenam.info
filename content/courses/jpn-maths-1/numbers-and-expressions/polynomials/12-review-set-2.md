@@ -26,26 +26,26 @@ weight: 22
 ---
 
 1. Factorise the following expressions.
-
-   1. $xy - yz + zw - wx$
-   2. $12x^2y - 27yz^2$
-   3. $x^2 - x + \dfrac{1}{4}$
-   4. $18x^2 + 39x - 7$
+    1. $xy - yz + zw - wx$
+    2. $12x^2y - 27yz^2$
+    3. $x^2 - x + \dfrac{1}{4}$
+    4. $18x^2 + 39x - 7$
 
 2. Factorise the following expressions.
-   1. $3a^3 - 81b^3$
-   2. $125s^4 + 8st^3$
-   3. $t^3 - t^2 + \dfrac{t}{3} - \dfrac{1}{27}$
-   4. $p^3 + 3p^2 - 4p - 12$
+    1. $3a^3 - 81b^3$
+    2. $125s^4 + 8st^3$
+    3. $t^3 - t^2 + \dfrac{t}{3} - \dfrac{1}{27}$
+    4. $p^3 + 3p^2 - 4p - 12$
 
 {{% details title="Answer" %}}
 
-1.  1. $(x-z)(y-w)$
+1.  
+    1. $(x-z)(y-w)$
     2. $3y(2x+3z)(2x-3z)$
     3. $\left( x-\dfrac{1}{2} \right)^2$
     4. $(3x+7)(6x-1)$
-
-2.  1. $3(a-3b)(a^2+3b+9b^2)$
+2.  
+    1. $3(a-3b)(a^2+3b+9b^2)$
     2. $s(5s+2t)(25s^2 - 10st + 4t^2 )$
     3. $(t-\dfrac{1}{3})^3$
     4. $(p+3)(p+2)(p-2)$
@@ -128,14 +128,15 @@ $(5)$ Identity 2: $a^2-b^2$ $=(a+b)(a-b)$
 {{% /details %}}
 
 3. Factorise the following expressions.
-   1. $x^2 - 2xy + y^2 - x + y$
-   2. $81x^4 - y^4$
-   3. $4x^4 - 37x^2y^2 + 9y^4$
-   4. $\left( x^2 - x \right)^2 - 8x^2 + 8x + 12$
+    1. $x^2 - 2xy + y^2 - x + y$
+    2. $81x^4 - y^4$
+    3. $4x^4 - 37x^2y^2 + 9y^4$
+    4. $\left( x^2 - x \right)^2 - 8x^2 + 8x + 12$
 
 {{% details title="Answer" %}}
 
-3.  1. $(x-y)(x-y-1)$
+3.  
+    1. $(x-y)(x-y-1)$
     2. $(9x^2 + y^2)(3x+y)(3x-y)$
     3. $(x+3y)(x-3y)(2x+y)(2x-y)$
     4. $(x-2)(x+1)(x-3)(x+2)$
@@ -191,14 +192,15 @@ $(5)$ $\square^2 -8\square + 12$ $=(\square-2)(\square-6)$
 {{% /details %}}
 
 4. Factorise the following.
-   1. $x^6 - 1$
-   2. $(x+y)^6 - (x-y)^6$
-   3. $x^6 - 19x^3 - 216$
-   4. $x^6 - 2x^3 + 1$
+    1. $x^6 - 1$
+    2. $(x+y)^6 - (x-y)^6$
+    3. $x^6 - 19x^3 - 216$
+    4. $x^6 - 2x^3 + 1$
 
 {{% details title="Answer" %}}
 
-4.  1. $(x+1)(x-1)(x^2+x+1)(x^2-x+1)$
+4.  
+    1. $(x+1)(x-1)(x^2+x+1)(x^2-x+1)$
     2. $4xy(x^2+3y^2)(3x^2+y^2)$
     3. $(x-2)(x+3)(x^2+2x+4)(x^2-3x+9)$
     4. $(x-1)^2(x^2+x+1)^2$
@@ -277,13 +279,20 @@ $(6)$ $A^2-2A+1$ $=(A-1)^2$, where $A = x^3$
 {{% /details %}}
 
 5. Factorise the following. {{% mn ref2 ref %}}a. From Kanazawa Inst. of Tech.<br>b. From Kyoto Sangyo Univ.<br>d. From Yamanashi Gakuin Univ.<br>e. From Kokushikan Univ.{{% /mn %}}
-   1. $(2x+5y)(2x+5y+8)-65$
-   2. $(x+3y-1)(x+3y+3)(x+3y+4)+12$
-   3. $3(2x-3)^2 - 4(2x+1) + 12$
-   4. $2(x+1)^4 +2(x-1)^4 + 5(x^2-1)^2$
-   5. $(x+1)(x+2)(x+3)(x+4)+1$
+    1. $(2x+5y)(2x+5y+8)-65$
+    2. $(x+3y-1)(x+3y+3)(x+3y+4)+12$
+    3. $3(2x-3)^2 - 4(2x+1) + 12$
+    4. $2(x+1)^4 +2(x-1)^4 + 5(x^2-1)^2$
+    5. $(x+1)(x+2)(x+3)(x+4)+1$
 
-{{% details title="Answer" %}} 5. 1. $(2x+5y-5)(2x+5y+13)$ 2. $(x+3y)(x+3y+1)(x+3y+5)$ 3. $(2x-5)(6x-7)$ 4. $(3x^2+2x+3)(3x^2-2x+3)$ 5. $(x^2 + 5x + 5)^2$
+{{% details title="Answer" %}}
+
+5. 
+    1. $(2x+5y-5)(2x+5y+13)$
+    2. $(x+3y)(x+3y+1)(x+3y+5)$
+    3. $(2x-5)(6x-7)$
+    4. $(3x^2+2x+3)(3x^2-2x+3)$
+    5. $(x^2 + 5x + 5)^2$
 
 {{% note solution %}}
 
@@ -377,12 +386,17 @@ $(6)$ $x^2 + 5x = T$
 
 {{% /details %}}
 
-6.  1. Factorise $a^3 + b^3 + c^3 - 3abc$.
+6.  
+    1. Factorise $a^3 + b^3 + c^3 - 3abc$.
     2. Use the result for (a) to factorise $a^3+6ab-8b^3+1$.
 
 _Hint: Complete the cube $(a+b)^3$ first._
 
-{{% details title="Answer" %}} 6. 1. $(a+b+c)(a^2+b^2+c^2 - ab - bc - ca)$ 2. $(a-2b+1)(a^2+4b^2 +2ab - a + 2b + 1)$
+{{% details title="Answer" %}}
+
+6. 
+    1. $(a+b+c)(a^2+b^2+c^2 - ab - bc - ca)$
+    2. $(a-2b+1)(a^2+4b^2 +2ab - a + 2b + 1)$
 
 {{% note solution %}}
 
@@ -440,12 +454,16 @@ we can use the result of (a). Then
 {{% /details %}}
 
 7. Simplify the expressions below. {{% mn ref7 refs %}}a. From Nara Univ.{{% /mn %}}
-   1. $(a+b+c)^2 - (b+c-a)^2 + (c+a-b)^2 - (a+b-c)^2$
-   2. $(a+b+c)(-a+b+c)(a-b+c)$ $+$ $(a+b+c)(a-b+c)(a+b-c)$ $+$ $(a+b+c)(a+b-c)(-a+b+c)$ $-$ $(-a+b+c)(a-b+c)(a+b-c)$
+    1. $(a+b+c)^2 - (b+c-a)^2 + (c+a-b)^2 - (a+b-c)^2$
+    2. $(a+b+c)(-a+b+c)(a-b+c)$ $+$ $(a+b+c)(a-b+c)(a+b-c)$ $+$ $(a+b+c)(a+b-c)(-a+b+c)$ $-$ $(-a+b+c)(a-b+c)(a+b-c)$
 
 _Hint: Substitute $a+b+c=A$, $b+c-a=B$, and so on._
 
-{{% details title="Answer" %}} 7. 1. $8ac$ 2. $8abc$
+{{% details title="Answer" %}}
+
+7. 
+    1. $8ac$
+    2. $8abc$
 
 {{% note solution %}}
 
@@ -490,11 +508,16 @@ $(\lozenge)$ [Proof](../advanced-expanding/#creating-patterns-for-the-identities
 {{% /details %}}
 
 8. Factorise the following expressions. {{% mn ref8 refs %}}a. From Tsukuba Int'l Univ.<br>b. From Hosei Univ.<br>c. From Gifu Women's Univ.{{% /mn %}}
-   1. $x^2y - 2xyz - y - xy^2 + x - 2z$
-   2. $8x^3 + 12x^2y + 4xy^2 + 6x^2 + 9xy + 3y^2$
-   3. $x^3y + x^2y^2 + x^3 + x^2y - xy - y^2 - x - y$
+    1. $x^2y - 2xyz - y - xy^2 + x - 2z$
+    2. $8x^3 + 12x^2y + 4xy^2 + 6x^2 + 9xy + 3y^2$
+    3. $x^3y + x^2y^2 + x^3 + x^2y - xy - y^2 - x - y$
 
-{{% details title="Answer" %}} 8. 1. $(xy+1)(x-y-2z)$ 2. $(4x+3)(y^2 + 4xy + 2x^2)$ 3. $(x+y)(y+1)(x+1)(x-1)$
+{{% details title="Answer" %}}
+
+8. 
+    1. $(xy+1)(x-y-2z)$
+    2. $(4x+3)(y^2 + 4xy + 2x^2)$
+    3. $(x+y)(y+1)(x+1)(x-1)$
 
 {{% note solution %}}
 
@@ -567,14 +590,15 @@ $(6)$ Group the terms inside the bracket to find another common factor of $(y+1)
 {{% /details %}}
 
 9. Factorise the following expressions. {{% mn ref9 refs %}}a. From Tohoku Gakuin Univ.<br>b. From Matsuyama Univ.<br>c. From Hosei Univ.{{% /mn %}}
-   1. $(a+b)x^2 - 2ax + a - b$
-   2. $a^2 + (2b-3)a - (3b^2 + b - 2)$
-   3. $3x^2 - 2y^2 + 5xy + 11x + y + 6$
-   4. $24x^2 -54y^2 - 14x + 141y - 90$
+    1. $(a+b)x^2 - 2ax + a - b$
+    2. $a^2 + (2b-3)a - (3b^2 + b - 2)$
+    3. $3x^2 - 2y^2 + 5xy + 11x + y + 6$
+    4. $24x^2 -54y^2 - 14x + 141y - 90$
 
 {{% details title="Answer" %}}
 
-9.  1. $(x-1)(ax + bx - a + b)$
+9.  
+    1. $(x-1)(ax + bx - a + b)$
     2. $(a+3b-2)(a-b-1)$
     3. $(3x-y+2)(x+2y+3)$
     4. $(4x+6y-9)(6x-9y+10)$
@@ -678,7 +702,12 @@ $(6)$<br>
     2. $a(b+c)^2 + b(c+a)^2 + c(a+b)^2 - 4abc$
     3. $a^2b - ab^2 - b^2c + bc^2 - c^2a - ca^2 + 2abc$
 
-{{% details title="Answer" %}} 10. 1. $(a-b)(a+b+c)(a+b-c)$ 2. $(a+b)(b+c)(c+a)$ 3. $(a-b)(b-c)(c+a)$
+{{% details title="Answer" %}}
+
+10. 
+    1. $(a-b)(a+b+c)(a+b-c)$
+    2. $(a+b)(b+c)(c+a)$
+    3. $(a-b)(b-c)(c+a)$
 
 {{% note solution %}}
 
@@ -743,7 +772,12 @@ $(6)$ Taken out the common factor $(b-c)$
     2. $6a^2b - 5abc - 6a^2c + 5ac^2 - 4bc^2 + 4c^3$
     3. $(a^2 - 1)(b^2 - 1) - 4ab$
 
-{{% details title="Answer" %}} 11. 1. $(xy + yz + zx)(x+y+z)$ 2. $(3a-4c)(2a+c)(b-c)$ 3. $( ab + a + b - 1 )( ab - a - b - 1 )$
+{{% details title="Answer" %}}
+
+11. 
+    1. $(xy + yz + zx)(x+y+z)$
+    2. $(3a-4c)(2a+c)(b-c)$
+    3. $( ab + a + b - 1 )( ab - a - b - 1 )$
 
 {{% note solution %}}
 

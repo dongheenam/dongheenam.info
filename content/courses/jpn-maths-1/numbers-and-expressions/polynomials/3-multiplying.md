@@ -31,12 +31,12 @@ weight: 13
 {{% details title="Links to Australian Curriculum" %}}
 
 - Mathematics Year 7
-  - Extend and apply the laws and properties of arithmetic to algebraic terms and expressions [(ACMNA117)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&strand=Measurement+and+Geometry&strand=Statistics+and+Probability&capability=ignore&priority=ignore&year=11758&elaborations=true&cd=ACMNA177&searchTerm=ACMNA177#dimension-content).
+    - Extend and apply the laws and properties of arithmetic to algebraic terms and expressions [(ACMNA117)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&strand=Measurement+and+Geometry&strand=Statistics+and+Probability&capability=ignore&priority=ignore&year=11758&elaborations=true&cd=ACMNA177&searchTerm=ACMNA177#dimension-content).
 - Mathematics Year 8
-  - Simplify algebraic expressions involving the four operations[(ACMNA192)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&strand=Measurement+and+Geometry&strand=Statistics+and+Probability&capability=ignore&priority=ignore&year=11759&elaborations=true&cd=ACMNA192&searchTerm=ACMNA192#dimension-content).
+    - Simplify algebraic expressions involving the four operations[(ACMNA192)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&strand=Measurement+and+Geometry&strand=Statistics+and+Probability&capability=ignore&priority=ignore&year=11759&elaborations=true&cd=ACMNA192&searchTerm=ACMNA192#dimension-content).
 - Mathematics Year 10
-  - Simplify algebraic products and quotients using index laws [(ACMNA231)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&year=11761&elaborations=true&cd=ACMNA231).
-  - Expand binomial products and factorise monic quadratic expressions using a variety of strategies [(ACMNA233)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&year=11761&elaborations=true&cd=ACMNA233).
+    - Simplify algebraic products and quotients using index laws [(ACMNA231)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&year=11761&elaborations=true&cd=ACMNA231).
+    - Expand binomial products and factorise monic quadratic expressions using a variety of strategies [(ACMNA233)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&year=11761&elaborations=true&cd=ACMNA233).
 
 {{% /details %}}
 
@@ -302,10 +302,10 @@ Once you are used to expanding, you can save some time by expanding both bracket
 ## Practice Questions
 
 1. Calculate the following.
-   1. $4pqr^2 \left(-2p^2q \right)^3$
-   2. $\left( 6c^2 \right)^2 (-2cd^3)$
-   3. $(-ab)^2 (-2a^3b)$
-   4. $(-2x^4y^2z^3) (-3x^2y^2z^4)$
+    1. $4pqr^2 \left(-2p^2q \right)^3$
+    2. $\left( 6c^2 \right)^2 (-2cd^3)$
+    3. $(-ab)^2 (-2a^3b)$
+    4. $(-2x^4y^2z^3) (-3x^2y^2z^4)$
 
 {{% details title="Answer" %}}
 
@@ -346,12 +346,18 @@ Once you are used to expanding, you can save some time by expanding both bracket
 {{% /details %}}
 
 2. Expand the following.
-   1. $-s^2t (t^2 + 1)$
-   2. $2a^2bc(a-3b^2+2c)$
-   3. $(-2x)^3 (3x^2 - 2x + 4)$
-   4. $(-3x)(4y)(x^2-y^2)$
+    1. $-s^2t (t^2 + 1)$
+    2. $2a^2bc(a-3b^2+2c)$
+    3. $(-2x)^3 (3x^2 - 2x + 4)$
+    4. $(-3x)(4y)(x^2-y^2)$
 
-{{% details title="Answer" %}} 2. 1. $-s^2t^3 - s^2t$ 2. $2a^3bc - 6a^2b^3c + 4a^2bc^2$ 3. $-24x^5 + 16x^4 - 32x^3$ 4. $-12x^3y + 12xy^3$
+{{% details title="Answer" %}} 
+
+2. 
+    1. $-s^2t^3 - s^2t$ 
+    2. $2a^3bc - 6a^2b^3c + 4a^2bc^2$ 
+    3. $-24x^5 + 16x^4 - 32x^3$ 
+    4. $-12x^3y + 12xy^3$
 
 {{% note Solution %}}
 
@@ -386,21 +392,29 @@ Once you are used to expanding, you can save some time by expanding both bracket
 {{% /details %}}
 
 3. Expand the following expressions.
-
-   1. $(x+3)(2x+1)$
-   2. $(2a-1)(a^2+3a)$
-   3. $(6-x)(x^2+y^2)$
-   4. $(x^2+x+1)(2x-3)$
+    1. $(x+3)(2x+1)$
+    2. $(2a-1)(a^2+3a)$
+    3. $(6-x)(x^2+y^2)$
+    4. $(x^2+x+1)(2x-3)$
 
 4. Expand the following expressions.
-   1. $(2x-3y-1)(2x-y-3)$
-   2. $(3x+x^3-1)(2x^2-x-6)$
+    1. $(2x-3y-1)(2x-y-3)$
+    2. $(3x+x^3-1)(2x^2-x-6)$
 
-{{% details title="Answer" %}} 3. 1. $2x^2 + 7x + 3$ 2. $2a^3 + 5a^2 - 3a$ 3. $-x^3 + 6x^2 - xy^2 + 6y^2$ 4. $2x^3 - x^2 - x - 3$ 4. 1. $4x^2 -8xy + 3y^2 -8x + 10y + 3$ 2. $2x^5 - x^4 - 5x^2 - 17x + 6$
+{{% details title="Answer" %}} 
+
+3. 
+    1. $2x^2 + 7x + 3$
+    2. $2a^3 + 5a^2 - 3a$
+    3. $-x^3 + 6x^2 - xy^2 + 6y^2$
+    4. $2x^3 - x^2 - x - 3$
+
+4.  1. $4x^2 -8xy + 3y^2 -8x + 10y + 3$
+    2. $2x^5 - x^4 - 5x^2 - 17x + 6$
 
 {{% note Solution %}}
 
-3.
+3. 
 
 \begin{align}
 \text{a.} \quad & (\underline{x+3})(2x+1) \\\\
@@ -430,7 +444,7 @@ Once you are used to expanding, you can save some time by expanding both bracket
 &= \boldsymbol{ 2x^3 - x^2 - x - 3 .}
 \end{align}
 
-4.
+4. 
 
 \begin{align}
 \text{a.} \quad & (\underline{2x-3y-1})(2x-y-3) \\\\

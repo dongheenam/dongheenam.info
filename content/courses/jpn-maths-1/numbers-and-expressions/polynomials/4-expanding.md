@@ -311,27 +311,28 @@ You can see that the plus-minus signs share the signs, so when one is positive, 
 {{% note Question %}}
 
 1. Expand the following expressions using the quadratic identities.
-
-   1. $(3x+5y)^2$
-   2. $(7f-2g)^2$
-   3. $(2xy-3)^2$
-   4. $(x+5y)(x-5y)$
-   5. $(3c^2 - 2d)(3c^2 + 2d)$
+    1. $(3x+5y)^2$
+    2. $(7f-2g)^2$
+    3. $(2xy-3)^2$
+    4. $(x+5y)(x-5y)$
+    5. $(3c^2 - 2d)(3c^2 + 2d)$
 
 2. Expand the following expressions using the quadratic identities.
-   1. $(x-2y)(3y+x)$
-   2. $(x^2 - 4)(x^2 + 3)$
-   3. $(3a-2)(4a+1)$
-   4. $(2p-3q)(4p+2q)$
+    1. $(x-2y)(3y+x)$
+    2. $(x^2 - 4)(x^2 + 3)$
+    3. $(3a-2)(4a+1)$
+    4. $(2p-3q)(4p+2q)$
 
 {{% details title="Answer" %}}
 
-1.  1. $9x^2 + 30xy + 25y^2$
+1.  
+    1. $9x^2 + 30xy + 25y^2$
     2. $49f^2 - 28fg + 4g^2$
     3. $4x^2y^2 - 12xy + 9$
     4. $x^2 - 25y^2$
     5. $9c^4 - 4d^2$
-2.  1. $x^2 + xy - 6y^2$
+2.  
+    1. $x^2 + xy - 6y^2$
     2. $x^4 - x^2 - 12$
     3. $12a^2 - 5a - 2$
     4. $8p^2 - 8pq - 6q^2$
@@ -401,12 +402,18 @@ $(1)$ Rearrange the terms to $(x+a)(x+b)$ form
 {{% /details %}}
 
 3. Expand the following expressions.
-   1. $(2x+1)^3$
-   2. $(x-4y)^3$
-   3. $(2p-q)(4p^2+2pq+q^2)$
-   4. $(d+5)(d^2-5d+25)$
+    1. $(2x+1)^3$
+    2. $(x-4y)^3$
+    3. $(2p-q)(4p^2+2pq+q^2)$
+    4. $(d+5)(d^2-5d+25)$
 
-{{% details title="Answer" %}} 3. 1. $8x^3 + 12x^2 + 6x + 1$ 2. $x^3 - 12x^2y + 48xy^2 - 64y^3$ 3. $8p^3 - q^3$ 4. $d^3 + 125$
+{{% details title="Answer" %}}
+
+3. 
+    1. $8x^3 + 12x^2 + 6x + 1$
+    2. $x^3 - 12x^2y + 48xy^2 - 64y^3$
+    3. $8p^3 - q^3$
+    4. $d^3 + 125$
 
 {{% note Solution %}}
 

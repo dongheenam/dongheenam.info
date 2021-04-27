@@ -216,14 +216,15 @@ The polynomial has degree of $1$ in $a$ and $2$ in $b$, so we rearrange it in te
 ## Practice Questions
 
 1. Factorise the following expressions.
-   1. $6(2x+1)^2 + 5(2x+1)-4$
-   2. $(x^2 - 2x)^2 - 11(x^2-2x) + 24$
-   3. $(x^2-2x-16)(x^2-2x-14)+1$
-   4. $(x+y+1)^4 - (x+y)^4$
+    1. $6(2x+1)^2 + 5(2x+1)-4$
+    2. $(x^2 - 2x)^2 - 11(x^2-2x) + 24$
+    3. $(x^2-2x-16)(x^2-2x-14)+1$
+    4. $(x+y+1)^4 - (x+y)^4$
 
 {{% details title="Answer" %}}
 
-1.  1. $(4x+1)(6x+7)$
+1.  
+    1. $(4x+1)(6x+7)$
     2. $(x+1)(x+2)(x-3)(x-4)$
     3. $(x-5)^2(x+3)^2$
     4. $(2x^2 + 4xy + 2y^2 + 2x + 2y + 1)(2x + 2y + 1)$
@@ -303,13 +304,18 @@ From here, we will substitute $x+y$ back and see if we can factorise any further
 {{% /details %}}
 
 2. Factorise the following expressions.
-   1. $4x^2 - 9y^2 + 28x + 49$
-   2. $a^2 + b^2 + ac - bc - 2ab$
-   3. $(x+1)(x-5)(x^2-4x+6)+18$
-   4. $(x-1)(x-3)(x-5)(x-7) - 9$
+    1. $4x^2 - 9y^2 + 28x + 49$
+    2. $a^2 + b^2 + ac - bc - 2ab$
+    3. $(x+1)(x-5)(x^2-4x+6)+18$
+    4. $(x-1)(x-3)(x-5)(x-7) - 9$
 
-{{% details title="Answer" %}} 2. 1. $(2x+3y+7)(2x-3y+7) $
-    2. $(a-b)(a-b+c)$ 3. $(x-2)^2(x^2-4x-3)$ 4. $(x^2-8x+10)(x-2)(x-6)$
+{{% details title="Answer" %}}
+
+2. 
+    1. $(2x+3y+7)(2x-3y+7) $
+    2. $(a-b)(a-b+c)$
+    3. $(x-2)^2(x^2-4x-3)$
+    4. $(x^2-8x+10)(x-2)(x-6)$
 
 {{% note solution %}}
 
@@ -375,12 +381,18 @@ $(6)$ $A=$ $x^2-8x+7$
 {{% /details %}}
 
 3. Factorise the following polynomials.
-   1. $a^2 + ab + bc + ca$
-   2. $x^2 - 2xy + 2y - 1$
-   3. $a^3b + 16 - 4ab - 4a^2$
-   4. $x^3y + x^2 - xyz^2 - z^2$
+    1. $a^2 + ab + bc + ca$
+    2. $x^2 - 2xy + 2y - 1$
+    3. $a^3b + 16 - 4ab - 4a^2$
+    4. $x^3y + x^2 - xyz^2 - z^2$
 
-{{% details title="Answer" %}} 3. 1. $(a+c)(a+b)$ 2. $(x-1)(x-2y+1)$ 3. $(a+2)(a-2)(ab-4)$ 4. $(x+z)(x-z)(xy+1)$
+{{% details title="Answer" %}}
+
+3. 
+    1. $(a+c)(a+b)$
+    2. $(x-1)(x-2y+1)$
+    3. $(a+2)(a-2)(ab-4)$
+    4. $(x+z)(x-z)(xy+1)$
 
 {{% note solution %}}
 
@@ -425,12 +437,18 @@ $\text{d.} \quad$ We sort the polynomial in terms of $y$.
 {{% /details %}}
 
 4. Factorise the following.
-   1. $x^2 + 2xy + 3x + 4y + 2$
-   2. $a^3 + ab^2 + b^2 + 1$
-   3. $6x^2 - yz + 2xz - 3xy$
-   4. $3x^2 - 2z^2 + 4yz + 2xy + 5xz$
+    1. $x^2 + 2xy + 3x + 4y + 2$
+    2. $a^3 + ab^2 + b^2 + 1$
+    3. $6x^2 - yz + 2xz - 3xy$
+    4. $3x^2 - 2z^2 + 4yz + 2xy + 5xz$
 
-{{% details title="Answer" %}} 4. 1. $(x+2)(x+2y+1)$ 2. $(a+1)(a^2 + b^2 - a + 1)$ 3. $(2x-y)(3x+z)$ 4. $(x+2z)(3x+2y-z)$
+{{% details title="Answer" %}}
+
+4. 
+    1. $(x+2)(x+2y+1)$
+    2. $(a+1)(a^2 + b^2 - a + 1)$
+    3. $(2x-y)(3x+z)$
+    4. $(x+2z)(3x+2y-z)$
 
 {{% note solution %}}
 
