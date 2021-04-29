@@ -77,7 +77,7 @@ If we substitute $x^2 + x$ with $A$,
 
 \begin{align}
 & (x^2 + x - 5)(x^2 + x - 7) + 1 \\\\
-&= (A-5)(A-7) + 1. \quad \cdots \tcirc{1}
+&= (A-5)(A-7) + 1. \qdcirc{1}
 \end{align}
 
 We cannot factorise this as is, but what happens if we expand it first?
@@ -86,7 +86,7 @@ We cannot factorise this as is, but what happens if we expand it first?
 \tcirc{1} &= A^2 - 12A + 35 + 1 \\\\
 &= A^2 - 12A + 36 \\\\
 &= (A-6)^2 \\\\
-&= (x^2 + x - 6)^2. \quad \cdots \tcirc{2}
+&= (x^2 + x - 6)^2. \qdcirc{2}
 \end{align}
 
 We found a perfect square! Note that you can factorise $x^2 + x - 6$ further:
@@ -110,7 +110,7 @@ The last three terms look quite like a perfect square, so we factorise them firs
 \begin{align}
 & x^2 - y^2 + 4y - 4 \\\\
 &= x^2 \hl{ -(y^2 - 4y + 4) } \\\\
-&= x^2 - (y-2)^2. \quad \cdots \tcirc{1}
+&= x^2 - (y-2)^2. \qdcirc{1}
 \end{align}
 
 It looks like they are in $\square^2 - \triangle^2$ form, so we can apply one of the identities:
@@ -132,7 +132,7 @@ Do you remember [this example](../advanced-expanding/#create-patterns-for-the-id
 \begin{align}
 & (x+1)(x+2)(x+3)(x+4)-24 \\\\
 &= \hl{ (x+1)(x+4) \times (x+2)(x+3) } - 24 \\\\
-&= (x^2 + 5x + 4) \times (x^2 + 5x + 6) - 24. \quad \cdots \tcirc{2}
+&= (x^2 + 5x + 4) \times (x^2 + 5x + 6) - 24. \qdcirc{2}
 \end{align}
 
 We found a common part! Let's expand them first so that we can re-factorise with the extra constant term.
@@ -291,7 +291,7 @@ $(6)$-$(7)$ Identity 2: $a^2-b^2$ $=(a+b)(a-b)$
 &= \left\\{ (A+1)^2 + A^2 \right\\} \\{ (A+1) + A \\} \\{ (A+1) - A \\} \tag{7} \\\\
 &= \left\\{ (A+1)^2 + A^2 \right\\} (2A+1) \\\\
 &= ( A^2 + 2A + 1 + A^2)(2A + 1) \\\\
-&= ( 2A^2 + 2A + 1)(2A + 1). && \cdots \tcirc{1}
+&= ( 2A^2 + 2A + 1)(2A + 1). && \qdcirc{1}
 \end{align}
 
 From here, we will substitute $x+y$ back and see if we can factorise any further.
@@ -494,5 +494,7 @@ $(2)$<br>
 &= 2y(\underline{x+2z}) + (3x-z)(\underline{x+2z}) \\\\
 &= \boldsymbol{ (x+2z)(3x+2y-z) .}
 \end{align}
+
+<hr style="visibility: hidden" />
 
 {{% /details %}}

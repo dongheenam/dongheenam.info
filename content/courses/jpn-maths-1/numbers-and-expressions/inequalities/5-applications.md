@@ -90,7 +90,7 @@ The inequality simplifies to
 \begin{align}
   & ax + a > x + a^2 \\\\
   \implies & ax - x > a^2 - a \\\\
-  \implies & (a-1)x > a(a-1). \qquad \cdots \tcirc{1}
+  \implies & (a-1)x > a(a-1). \quad \qdcirc{1}
 \end{align}
 
 The next step is to divide both sides by $(a-1)$, so we need to consider the case of $\text{(i) } a-1>0$, $\text{(ii) } a-1=0$, and $\text{(iii) } a-1<0$.
@@ -144,7 +144,7 @@ to see what the solutions are in terms of $a$. From the first inequality,
 
 \begin{align}
   & ax + 2x < 4 \\\\
-  \implies & (a+2)x < 4, \qquad \cdots \tcirc{1}
+  \implies & (a+2)x < 4, \quad \qdcirc{1}
 \end{align}
 
 and from the second inequality,
@@ -152,7 +152,7 @@ and from the second inequality,
 \begin{align}
   & 4-2x < 2x \\\\
   \implies & 4 < 4x \\\\
-  \implies & 1 < x. \qquad \cdots \tcirc{2}
+  \implies & 1 < x. \quad \qdcirc{2}
 \end{align}
 
 By comparing the solution $(1<x<4)$ with $\tcirc{2}$, we can clearly see that $\tcirc{1}$ should lead to $x<4$. Because we need to divide both sides of $\tcirc{1}$ by $(a+2)$ to proceed, it is natural for us to divide the cases by the sign of $(a+2)$.
@@ -190,7 +190,7 @@ You would like to share the apples you have with a group of children. If you giv
 
 1. Let's set the number of children as $x$.
 2. Because you have 19 apples left, if you share four apples per child, the total number of apples is $$ 4x + 19. $$
-3. With the $4x+19$ apples, you can give 7 apples to every child except the last one. In other words, you can give 7 apples to $(x-1)$ children. At this point, the number of apples you have would be $$ 4x+19 - 7(x-1). \quad \cdots \tcirc{1} $$
+3. With the $4x+19$ apples, you can give 7 apples to every child except the last one. In other words, you can give 7 apples to $(x-1)$ children. At this point, the number of apples you have would be $$ 4x+19 - 7(x-1). \qdcirc{1} $$
 4. Because every child except the last one does receive 7 apples, the number of apples you had should not be smaller than $7(x-1)$, and hence $\tcirc{1}$ is greater or equal to zero. Also, $\tcirc{1}$ is equal to the number of apples the last child would get, so it would also be less than four.
 5. Putting everything together, we find $$ 0 \le 4x+19 - 7(x-1) \lt 4. $$
 6. Solving this inequality gives
@@ -243,7 +243,7 @@ Basics of solving word problems:
 \begin{align}
   & mx>x+m^2+m-2 \\\\
   \implies & mx-x>m^2+m-2 \\\\
-  \implies & (m-1)x > (m-1)(m+2). && \cdots \tcirc{1}
+  \implies & (m-1)x > (m-1)(m+2). && \qdcirc{1}
 \end{align}
 
 We need to divide both sides by $(m-1)$, if possible. Hence we will look at the cases when $(m-1)$ is positive, when it equals zero, and when it is negative.
@@ -274,14 +274,14 @@ and solve them separately. From the second inequality,
 \begin{align}
   & 4x+1 \le 5 \\\\
   \implies & 4x \le 4 \\\\
-  \implies & x \le 1. && \quad \cdots \tcirc{1}
+  \implies & x \le 1. && \qdcirc{1}
 \end{align}
 
 Then, from the first inequality,
 \begin{align}
   & 2bx\le 4x+1 \\\\
   \implies & (2b-4)x \le 1 \\\\
-  \implies & (b-2)x \le \frac{1}{2}. \quad \cdots \tcirc{2}
+  \implies & (b-2)x \le \frac{1}{2}. \qdcirc{2}
 \end{align}
 
 If we compare $\tcirc{1}$ with $-5\le x\le 1$, $\tcirc{2}$ should be equivalent to $x\ge -5$. It means that the inequality sign has to flip, which means $(b-2)$ has to be negative:
@@ -316,9 +316,9 @@ We can also confirm this solution matches the previous assumption ($b-2<0$) we m
 
 Because we need to find the number of pencils Alice had, so let's set this number as $n$. The two had 52 pencils together, so the number of Tom's pencils is $$ 52-n. $$
 
-Alice then gives one third of her pencils $(=n/3)$ to Tom. At this point, Alice has $ \dfrac{2}{3} n$, and Tom has $ 52-n + \dfrac{1}{3}n $ pencils. Because Alice still has more pencils, $$ \dfrac{2}{3} n > 52-n + \dfrac{1}{3}n. \quad \cdots \tcirc{1} $$
+Alice then gives one third of her pencils $(=n/3)$ to Tom. At this point, Alice has $ \dfrac{2}{3} n$, and Tom has $ 52-n + \dfrac{1}{3}n $ pencils. Because Alice still has more pencils, $$ \dfrac{2}{3} n > 52-n + \dfrac{1}{3}n. \qdcirc{1} $$
 
-After Alice gives three more pencils to Tom, Alice has $\dfrac{2}{3} n - 3$ pencils, and Tom has $ 52-n + \dfrac{1}{3}n + 3$ pencils. Now, Tom has more pencils, so $$ \dfrac{2}{3} n - 3 < 52-n + \dfrac{1}{3}n + 3. \quad \cdots \tcirc{2} $$
+After Alice gives three more pencils to Tom, Alice has $\dfrac{2}{3} n - 3$ pencils, and Tom has $ 52-n + \dfrac{1}{3}n + 3$ pencils. Now, Tom has more pencils, so $$ \dfrac{2}{3} n - 3 < 52-n + \dfrac{1}{3}n + 3. \qdcirc{2} $$
 
 Now we have two inequalities to solve. Solving $\tcirc{1}$ gives
 \begin{align}

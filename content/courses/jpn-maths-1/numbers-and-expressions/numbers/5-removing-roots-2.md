@@ -279,11 +279,17 @@ $(4)$ Rationalising the denominator.
 
 4. When $-2\lt y\lt \dfrac{3}{4}$, simplify $\sqrt{y^2+4y+4}-\sqrt{16y^2-24y+9}$. {{% mn ref3 refs %}}From Tohoku Inst. of Tech.{{% /mn %}}
 
-{{% details title="Answer" %}} 3. 1. $2a + 2$ 2. $2$ 3. $-2a - 2$ 4. $5y - 1$
+{{% details title="Answer" %}}
+
+3. 
+    1. $2a + 2$
+    2. $2$
+    3. $-2a - 2$
+4. $5y - 1$
 
 {{% note solution %}}
 
-3.
+3. 
 
 $\text{a.} \quad$ When $a\ge 0$, $a+2\ge 0$, hence
 
@@ -309,7 +315,7 @@ $\text{c.} \quad$ When $a\lt -2$, $a+2\lt 0$, hence
 
 <br>
 
-4.
+4. 
 
 {{% mn q3 tips %}}
 $(1)$ $-2\lt y\lt \dfrac{3}{4}$, so $y+2\gt 0$ but $4y-3\lt 0$.

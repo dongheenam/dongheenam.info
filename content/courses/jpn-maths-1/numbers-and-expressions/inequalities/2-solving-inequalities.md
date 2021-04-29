@@ -143,18 +143,13 @@ $(10)$ Dividing both sides by $25$
 
 ### Expressing the answers on the number line
 
-{{% mn range %}}
-{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-range-def1.png" %}}
-{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-range-def2.png" %}}
-{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-range-def3.png" %}}
-Diagrams of the possible values of $x$. Click to enlarge.
+{{% mn range exam %}}
+{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-range-def1.png" %}}{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-range-def2.png" %}}{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-range-def3.png" %}}Diagrams of the possible values of $x$. Click to enlarge.
 {{% /mn %}}
 
 We can also draw the range on the number line. The trick is, we use filled circles ($\bullet$) when you want to include the value and use empty circles ($\circ$) to exclude that value. For example, the inequality $$ x\le -\frac{1}{2} $$ needs a filled circle at $x=-\dfrac{1}{2}$, and the inequality $$ x\lt 2 $$ needs an empty circle at $x=2$.
 
-{{% note question %}} Try [Practice Question](#practice-questions) 1 before moving on.
-
-
+<hr style="visibility:hidden" />
 
 
 ## Practice Questions

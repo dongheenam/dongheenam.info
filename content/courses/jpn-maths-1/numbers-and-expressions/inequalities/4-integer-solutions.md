@@ -114,13 +114,13 @@ and solve the inequalities one by one. The first inequality gives
 \begin{align}
   & 5-x\le 4x \\\\
   \implies & 5 \le 5x \\\\
-  \implies & 1 \le x, && \quad \cdots \tcirc{1}
+  \implies & 1 \le x, && \qdcirc{1}
 \end{align}
 and the second inequality gives
 \begin{align}
   & 4x\lt 2x+k \\\\
   \implies & 2x \lt k \\\\
-  \implies & x \lt \frac{k}{2}, && \quad \cdots \tcirc{2}
+  \implies & x \lt \frac{k}{2}, && \qdcirc{2}
 \end{align}
 {{% mn 129 %}}{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-int-ex3.png" %}} The possible range for $x$, as a function of $k$.{{% /mn %}} Because $k>2$ from the question, $\dfrac{k}{2}>1$. Thus the range of $x$ is $\boldsymbol{ 1 \le x \lt \dfrac{k}{2} }$.
 
@@ -165,7 +165,7 @@ Therefore, the largest integer $x$ that satisfy $x<15$ is $\boldsymbol{14}$.
   & x - 3(x-4) \le 12 \\\\
   \implies & x - 3x + 12 \le 12 \\\\
   \implies & -2x \le 0 \\\\
-  \implies & x \ge 0, && \quad \cdots \tcirc{1}
+  \implies & x \ge 0, && \qdcirc{1}
 \end{align}
 
 and from the second inequality,
@@ -175,7 +175,7 @@ and from the second inequality,
   \implies & 4 + 6 - 2x \gt 5x - 10 \\\\
   \implies & 10 - 2x \gt 5x - 10 \\\\
   \implies & -7x \gt -20 \\\\
-  \implies & x \lt \frac{20}{7}. && \quad \cdots \tcirc{2}
+  \implies & x \lt \frac{20}{7}. && \qdcirc{2}
 \end{align}
 
 {{% mn q2 %}}
@@ -226,14 +226,14 @@ and from the second inequality,
 \begin{align}
   & 6x-4>3x+5 \\\\
   \implies & 3x > 9 \\\\
-  \implies & x > 3, && \quad \cdots \tcirc{1}
+  \implies & x > 3, && \qdcirc{1}
 \end{align}
 
 and if we treat $a$ as a constant and solve the second inequality,
 
 \begin{align}
   & 2x-1\le x+a \\\\
-  \implies & x \le a+1. && \quad \cdots \tcirc{2}
+  \implies & x \le a+1. && \qdcirc{2}
 \end{align}
 
 {{% mn q4 %}}

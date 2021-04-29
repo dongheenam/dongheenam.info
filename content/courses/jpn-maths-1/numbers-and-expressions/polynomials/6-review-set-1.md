@@ -277,7 +277,7 @@ a. You can see that there are exactly two brackets with $x$ in them for each exp
 &\phantom{=} + (a-b) \times \left\\{ \hl{x^2} - (a+b)\hl{x} + ab \right\\} \\\\
 &= (b-c)\hl{x^2} - (b-c)(b+c)\hl{x} + bc(b-c) \\\\
 &\phantom{=} (c-a)\hl{x^2} - (c-a)(c+a)\hl{x} + ca(c-a) \\\\
-&\phantom{=} (a-b)\hl{x^2} - (a-b)(a+b)\hl{x} + ab(a-b). \quad \cdots \tcirc{1}
+&\phantom{=} (a-b)\hl{x^2} - (a-b)(a+b)\hl{x} + ab(a-b). \qdcirc{1}
 \end{align}
 Now, the coefficient of $x^2$ is $$ (b-c)+(c-a)+(a-b) = 0, $$ and the coefficient of $x$ is also
 \begin{align}
@@ -301,7 +301,7 @@ b. To avoid confusion, we substitute $y+2z=P$ and $ y-2z=Q $. Then
 \begin{align}
 & (x+y+2z)^3 - (y+2z-x)^3 - (2z+x-y)^3 - (x+y-2z)^3 \\\\
 &= (x+P)^3 - (P-x)^3 - (x-Q)^3 - (x+Q)^3 \\\\
-&= (x+P)^3 \hl{+ (x-P)^3} - (x-Q)^3 - (x+Q)^3. \quad \cdots \tcirc{2} \tag{1}
+&= (x+P)^3 \hl{+ (x-P)^3} - (x-Q)^3 - (x+Q)^3. \qdcirc{2} \tag{1}
 \end{align}
 Then, using the cubic identity:
 \begin{align}

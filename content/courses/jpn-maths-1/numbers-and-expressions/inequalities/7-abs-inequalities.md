@@ -78,20 +78,20 @@ In the [previous lesson](../absolute-value-equations), we found that $$ |x| = c 
   \hl{ x-4 < 3x } \implies & -4 < 2x \\\\
   \implies & x > -2.
 \end{align}
-Because we already assumed $x \ge 4$, the solution is $x \ge 4. \quad \cdots\tcirc{1}$ <br><br>
+Because we already assumed $x \ge 4$, the solution is $x \ge 4. \qdcirc{1}$ <br><br>
 When $x<4$, the equality becomes
 \begin{align}
   \hl{ -(x-4) < 3x } \implies & -x + 4 < 3x \\\\
   \implies & 4 < 4x \\\\
   \implies & x > 1.
 \end{align}
-Because we assumed $x < 4$, the solution is $ 1 < x < 4. \quad \cdots \tcirc{2}$ <br><br>
+Because we assumed $x < 4$, the solution is $ 1 < x < 4. \qdcirc{2}$ <br><br>
 The complete range of $x$ that satisfies the given inequality is the union of $\tcirc{1}$ and $\tcirc{2}$, which is $\boldsymbol{ x>1 }.$
 
 {{% note "Alt. Solution" %}} We can also try using the theorem above:
 \begin{align}
   |x-4|< 3x \implies & -3x < x-4 < 3x \\\\
-  \implies & \begin{cases} -3x < x-4, & \quad \cdots \tcirc{3} \\\\ x-4 < 3x. & \quad \cdots \tcirc{4} \end{cases}
+  \implies & \begin{cases} -3x < x-4, & \qdcirc{3} \\\\ x-4 < 3x. & \qdcirc{4} \end{cases}
 \end{align}
 
 Then
@@ -133,7 +133,7 @@ $(\text{i})$ When $x<1$,
   \implies & -3x \le 4 \\\\
   \implies & x \ge -\dfrac{4}{3}.
 \end{align}
-The intersection with our assumption, $x<1$, is $ -\dfrac{4}{3} \le x < 1. \quad \cdots \tcirc{1}$ <br><br>
+The intersection with our assumption, $x<1$, is $ -\dfrac{4}{3} \le x < 1. \qdcirc{1}$ <br><br>
 $(\text{ii})$ When $1\le x < 3$,
 \begin{align}
   |x-1| + 2|x-3| \le 11 \implies & (x-1) \hl{ -2(x-3) } \le 11 \\\\
@@ -141,7 +141,7 @@ $(\text{ii})$ When $1\le x < 3$,
   \implies & -x \le 6 \\\\
   \implies & x \ge -6.
 \end{align}
-The intersection with our assumption, $1 \le x < 3$, is $ 1 \le x < 3. \quad \cdots \tcirc{2}$ <br><br>
+The intersection with our assumption, $1 \le x < 3$, is $ 1 \le x < 3. \qdcirc{2}$ <br><br>
 $(\text{iii})$ When $x \ge 3$,
 \begin{align}
   |x-1| + 2|x-3| \le 11 \implies & (x-1) +2(x-3) \le 11 \\\\
@@ -149,7 +149,7 @@ $(\text{iii})$ When $x \ge 3$,
   \implies & 3x \le 18 \\\\
   \implies & x \le 6.
 \end{align}
-The intersection with our assumption, $x\ge 3$, is $ 3 \le x \le 6. \quad \cdots \tcirc{3}$ <br><br>
+The intersection with our assumption, $x\ge 3$, is $ 3 \le x \le 6. \qdcirc{3}$ <br><br>
 Therefore, our solution is the union of $\tcirc{1}$, $\tcirc{2}$, and $\tcirc{3}$, which is $\boldsymbol{ -\dfrac{4}{3} \le x \le 6 }.$
 
 ---
@@ -164,14 +164,14 @@ $(\text{i})$ When $x<7$,
   \implies & -2x < -12 \\\\
   \implies & x > 6.
 \end{align}
-Thus we conclude $6 < x < 7. \quad \cdots \tcirc{4}$ <br><br>
+Thus we conclude $6 < x < 7. \qdcirc{4}$ <br><br>
 $(\text{ii})$ When $7\le x<8$,
 \begin{align}
   |x-7| + |x-8| < 3 \implies & (x-7) \hl{-(x-8) } < 3 \\\\
   \implies & x-7-x+8 < 3 \\\\
   \implies & 1 < 3.
 \end{align}
-This statement is always true regardless of the value of $x$, so we conclude $7\le x < 8. \quad \cdots \tcirc{5}$ <br><br>
+This statement is always true regardless of the value of $x$, so we conclude $7\le x < 8. \qdcirc{5}$ <br><br>
 $(\text{iii})$ When $x \ge 8$,
 \begin{align}
   |x-7| + |x-8| < 3 \implies & (x-7) + (x-8) < 3 \\\\
@@ -179,7 +179,7 @@ $(\text{iii})$ When $x \ge 8$,
   \implies & 2x < 18 \\\\
   \implies & x < 9.
 \end{align}
-Thus we find $8 \le x < 9. \quad \cdots \tcirc{6}$ <br><br>
+Thus we find $8 \le x < 9. \qdcirc{6}$ <br><br>
 Our solution is the union of $\tcirc{4}$, $\tcirc{5}$, and $\tcirc{6}$, which is $\boldsymbol{ 6 < x < 9 }.$
 
 
@@ -227,7 +227,7 @@ $\hspace{0.5em} \text{d.} \quad$ When $x\ge -1$,
   \implies & 2x < 2 \\\\
   \implies & x < 1.
 \end{align}
-Its intersection with the assumption ($x\ge -1$) is $-1 \le x < 1. \quad \cdots \tcirc{1}$
+Its intersection with the assumption ($x\ge -1$) is $-1 \le x < 1. \qdcirc{1}$
 
 When $x < -1$,
 \begin{align}
@@ -236,7 +236,7 @@ When $x < -1$,
   \implies & -4x < 8 \\\\
   \implies & x > -2.
 \end{align}
-Its intersection with the assumption ($x<-1$) is $-2 < x < -1. \quad \cdots \tcirc{2}$
+Its intersection with the assumption ($x<-1$) is $-2 < x < -1. \qdcirc{2}$
 
 From $\tcirc{1}$ and $\tcirc{2}$, the possible range of $x$ is $\boldsymbol{ -2 < x < 1 }.$
 
@@ -273,7 +273,7 @@ $(\text{ii})$ When $0\le x < 5$,
   \implies & 4 \le \dfrac{5}{3} x \\\\
   \implies & x \ge \dfrac{12}{5}.
 \end{align}
-Because we assumed $0\le x < 5$, the range of $x$ that satisfies the inequality is $\dfrac{12}{5}\le x < 5. \quad \cdots \tcirc{1}$
+Because we assumed $0\le x < 5$, the range of $x$ that satisfies the inequality is $\dfrac{12}{5}\le x < 5. \qdcirc{1}$
 
 $(\text{iii})$ When $x\ge 5$,
 \begin{align}
@@ -281,7 +281,7 @@ $(\text{iii})$ When $x\ge 5$,
   \implies & \dfrac{1}{3} x \le 6 \\\\
   \implies & x \le 18.
 \end{align}
-Because we assumed $x\ge 5$, the range of $x$ that satisfies the inequality is $5\le x \le 18. \quad \cdots \tcirc{2}$
+Because we assumed $x\ge 5$, the range of $x$ that satisfies the inequality is $5\le x \le 18. \qdcirc{2}$
 
 From $\tcirc{1}$ and $\tcirc{2}$, the solution is $\boldsymbol{ \dfrac{12}{5}\le x \le 18 }.$
 
@@ -295,7 +295,7 @@ $(\text{i})$ When $x<-2$,
   \implies & -x-2 +x-1 > x \\\\
   \implies & -3 > x.
 \end{align}
-Its intersection with $x<-2$ is $x<-3. \quad \cdots \tcirc{3}$
+Its intersection with $x<-2$ is $x<-3. \qdcirc{3}$
 
 $(\text{ii})$ When $-2 \le x < 1$,
 \begin{align}
@@ -303,7 +303,7 @@ $(\text{ii})$ When $-2 \le x < 1$,
   \implies & 2x + 1 > x \\\\
   \implies & x > -1.
 \end{align}
-Its intersection with $-2 \le x < 1$ is $-1 < x < 1. \quad \cdots \tcirc{4}$
+Its intersection with $-2 \le x < 1$ is $-1 < x < 1. \qdcirc{4}$
 
 $(\text{iii})$ When $x\ge 1$,
 \begin{align}
@@ -311,7 +311,7 @@ $(\text{iii})$ When $x\ge 1$,
   \implies & x+2-x+1>x \\\\
   \implies & 3 > x.
 \end{align}
-Its intersection with $x\ge 1$ is $1\le x < 3. \quad \cdots \tcirc{5}$
+Its intersection with $x\ge 1$ is $1\le x < 3. \qdcirc{5}$
 
 From $\tcirc{3}$, $\tcirc{4}$ and $\tcirc{5}$, the complete solution is $\boldsymbol{ x<-3, \text{ or } -1 < x < 3 }.$
 

@@ -34,8 +34,8 @@ In this lesson, we will learn how to solve simultaneous linear inequalities.
 Let's say we now have two conditions on $x$:
 
 \begin{cases}
-  x\ge 1, && \quad \cdots \tcirc{1} \\\\
-  x\gt 2. && \quad \cdots \tcirc{2}
+  x\ge 1, && \qdcirc{1} \\\\
+  x\gt 2. && \qdcirc{2}
 \end{cases}
 
 What is the range of $x$ that satisfy both $\tcirc{1}$ and $\tcirc{2}$? Well, you can see from the diagram, the correct range is {{% mn 41 %}}
@@ -56,7 +56,7 @@ Solve the following simultaneous inequalities.
   & 5x+1\le 8(x+2) \\\\
   \implies & 5x+1\le 8x+16 \\\\
   \implies & -3x \le 15 \\\\
-  \implies & x \ge -5. && \quad \cdots \tcirc{1}
+  \implies & x \ge -5. && \qdcirc{1}
 \end{align}
 
 And from the second inequality,
@@ -66,7 +66,7 @@ And from the second inequality,
   \implies & 2x-3 \lt 1-x+5 \\\\
   \implies & 2x-3 \lt 6-x \\\\
   \implies & 3x \lt 9 \\\\
-  \implies & x \lt 3. && \quad \cdots \tcirc{2}
+  \implies & x \lt 3. && \qdcirc{2}
 \end{align}
 
 {{% mn 72 %}}
@@ -80,7 +80,7 @@ And from the second inequality,
 \begin{align}
   & x+7\lt 1-2x \\\\
   \implies & 3x\lt -6 \\\\
-  \implies & x\lt -2. && \quad \cdots \tcirc{3}
+  \implies & x\lt -2. && \qdcirc{3}
 \end{align}
 
 And from the second inequality,
@@ -88,7 +88,7 @@ And from the second inequality,
 \begin{align}
   & 6x+2\ge 2 \\\\
   \implies & 6x\ge 0 \\\\
-  \implies & x\ge 0. && \quad \cdots \tcirc{4}
+  \implies & x\ge 0. && \qdcirc{4}
 \end{align}
 
 {{% mn 92 %}}
@@ -116,7 +116,7 @@ From the first inequality,
 \begin{align}
   & -2x+1<3x+4 \\\\
   \implies & -5x < 3 \\\\
-  \implies & x > -\frac{3}{5}. && \quad \cdots \tcirc{1}
+  \implies & x > -\frac{3}{5}. && \qdcirc{1}
 \end{align}
 
 And from the second inequality,
@@ -125,7 +125,7 @@ And from the second inequality,
   & 3x+4<2(3x-4) \\\\
   \implies & 3x+4<6x-8 \\\\
   \implies & 12 < 3x \\\\
-  \implies & x>4. && \quad \cdots \tcirc{2}
+  \implies & x>4. && \qdcirc{2}
 \end{align}
 
 {{% mn 131 %}}
@@ -163,7 +163,7 @@ $\text{a.} \quad$ From the first inequality,
   & 2(1-x)\gt -6-x \\\\
   \implies & 2-2x\gt -6-x \\\\
   \implies & 8\gt x \\\\
-  \implies & \boldsymbol{ x \lt 8 }. && \quad \cdots \tcirc{1}
+  \implies & \boldsymbol{ x \lt 8 }. && \qdcirc{1}
 \end{align}
 
 And from the second inequality,
@@ -171,7 +171,7 @@ And from the second inequality,
 \begin{align}
   & 2x-3\gt-9 \\\\
   \implies & 2x\gt -6 \\\\
-  \implies & \boldsymbol{ x \gt -3 }. && \quad \cdots \tcirc{2}
+  \implies & \boldsymbol{ x \gt -3 }. && \qdcirc{2}
 \end{align}
 
 {{% mn q1a %}}
@@ -186,7 +186,7 @@ $\text{b.} \quad$ From the first inequality,
   & 3(x-4)\le x-3 \\\\
   \implies & 3x-12 \le x-3 \\\\
   \implies & 2x\le 9 \\\\
-  \implies & x\le\frac{9}{2}. && \quad \cdots \tcirc{3}
+  \implies & x\le\frac{9}{2}. && \qdcirc{3}
 \end{align}
 
 And from the second inequality,
@@ -196,7 +196,7 @@ And from the second inequality,
   \implies & 6x-2x-2 \lt 10 \\\\
   \implies & 4x-2\lt 10 \\\\
   \implies & 4x\lt 12 \\\\
-  \implies & x\lt 3. && \quad \cdots \tcirc{4}
+  \implies & x\lt 3. && \qdcirc{4}
 \end{align}
 
 {{% mn q1b %}}
@@ -226,7 +226,7 @@ Then, from $x+9\le3-5x$,
 \begin{align}
   & x+9\le3-5x \\\\
   \implies & 6x\le -6 \\\\
-  \implies & x\le -1, && \quad \cdots \tcirc{1}
+  \implies & x\le -1, && \qdcirc{1}
 \end{align}
 
 and from $3-5x\le2(x-2)$,
@@ -235,7 +235,7 @@ and from $3-5x\le2(x-2)$,
   & 3-5x\le2(x-2) \\\\
   \implies & 3-5x\le 2x-4 \\\\
   \implies & -7x \le -7 \\\\
-  \implies & x \ge 1. && \quad \cdots \tcirc{2}
+  \implies & x \ge 1. && \qdcirc{2}
 \end{align}
 
 {{% mn q2a %}}
@@ -256,7 +256,7 @@ $(1)$ Multiplying both sides by the least common multiple, $6$
   \implies & 8(x-2)< 15x + 12 \tag{1} \\\\
   \implies & 8x - 16 < 15x + 12 \\\\
   \implies & -7x < 28 \\\\
-  \implies & x > -4. && \cdots \tcirc{3}
+  \implies & x > -4. && \qdcirc{3}
 \end{align}
 
 And from the second inequality,
@@ -269,7 +269,7 @@ $(2)$ Multiplying both sides by $2$
   \implies & 5x + 4 \le -6(1-x) \tag{2} \\\\
   \implies & 5x + 4 \le -6 + 6x \\\\
   \implies & 10 \le x \\\\
-  \implies & x \ge 10. && \quad \cdots \tcirc{4}
+  \implies & x \ge 10. && \qdcirc{4}
 \end{align}
 
 {{% mn q2b3 %}}

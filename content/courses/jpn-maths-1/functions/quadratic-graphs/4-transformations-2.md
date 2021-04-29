@@ -67,17 +67,17 @@ To summarise, you can reflect a graph over the x-axis by replacing $y$ with $-y$
 1. Substituting $y$ with $-y$ gives:
 \begin{align}
   \hl{-y} &= 2x^2-5x+4 \\\\
-  \implies \boldsymbol{ y } & \boldsymbol{ = -2x^2 + 5x - 4 }. \quad \cdots ~\enclose{circle}{\\kern .07em 1 \\kern .09em}
+  \implies \boldsymbol{ y } & \boldsymbol{ = -2x^2 + 5x - 4 }. \qdcirc{1}
 \end{align}
 2. Substituting $x$ with $-x$ gives:
 \begin{align}
   y &= 2(\hl{-x})^2 -5(\hl{-x}) + 4 \\\\
-  \implies \boldsymbol{ y } & \boldsymbol{ = 2x^2 + 5x + 4 }. \quad \cdots ~\enclose{circle}{\\kern .07em 2 \\kern .09em}
+  \implies \boldsymbol{ y } & \boldsymbol{ = 2x^2 + 5x + 4 }. \qdcirc{2}
 \end{align}
 3. Substituting $x$ with $-x$ and $y$ with $-y$ gives:
 \begin{align}
   \hl{-y} &= 2(\hl{-x})^2 -5(\hl{-x}) + 4 \\\\
-  \implies \boldsymbol{ y } & \boldsymbol{ = - 2x^2 - 5x - 4 }. \quad \cdots ~\enclose{circle}{\\kern .07em 3 \\kern .09em}
+  \implies \boldsymbol{ y } & \boldsymbol{ = - 2x^2 - 5x - 4 }. \qdcirc{3}
 \end{align}
 
 Because the original function is
@@ -260,8 +260,8 @@ Then, if we flip this graph over the x-axis,
 \end{align}
 Because this equation is identical to $y = -x^2 - 3x + 3$, we find
 \begin{cases}
-  2p = -3, & \quad \cdots ~\enclose{circle}{\\kern .07em 1 \\kern .09em}\\\\
-  -p^2 - q = 3. & \quad \cdots ~\enclose{circle}{\\kern .07em 2 \\kern .09em}
+  2p = -3, & \qdcirc{1}\\\\
+  -p^2 - q = 3. & \qdcirc{2}
 \end{cases}
 From $\tcirc{1}$, $\boldsymbol{ p = -\dfrac{3}{2} }$, and substituting this to $\tcirc{2}$ gives
 \begin{align}

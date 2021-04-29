@@ -46,7 +46,7 @@ We will first rearrange the expression in terms of $x$ and factorise the terms w
 & x^2 - xy - 2y^2 - x - 7y - 6 \\\\
 &= \hl{x^2} + (-y-1)\hl{x} - 2y^2 - 7y - 6 \\\\
 &= \hl{x^2} - (y+1)\hl{x} - \underline{(2y^2 + 7y + 6)} \\\\
-&= \hl{x^2} - (y+1)\hl{x} - \underline{(y+2)(2y+3)}. && \cdots \tcirc{1}
+&= \hl{x^2} - (y+1)\hl{x} - \underline{(y+2)(2y+3)}. && \qdcirc{1}
 \end{align}
 
 Here is how the last step is done:

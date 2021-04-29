@@ -27,19 +27,25 @@ weight: 13
 
 ### Functions and Graphs [#](functions-and-graphs)
 
-- [Functions, Domain and Range](functions-and-graphs/introduction)
-- [Graphs of Linear Functions](functions-and-graphs/linear-graphs)
-- [Transformations of Graphs](functions-and-graphs/transformations)
-- [Graphing Linear Functions with Absolute Values](functions-and-graphs/absolute-values)
-- [Solving Inequalities using Graphs](functions-and-graphs/inequalities-and-graphs)
-- [Graphing Piecewise Functions](functions-and-graphs/piecewise-functions)
+- Functions, graphs, and their transformations
+    - [Functions, Domain and Range](functions-and-graphs/introduction)
+    - [Graphs of Linear Functions](functions-and-graphs/linear-graphs)
+    - [Transformations of Graphs](functions-and-graphs/transformations)
+- Special functions
+    - [Graphing Linear Functions with Absolute Values](functions-and-graphs/absolute-values)
+    - [Solving Inequalities using Graphs](functions-and-graphs/inequalities-and-graphs)
+    - [Graphing Piecewise Functions](functions-and-graphs/piecewise-functions)
 
 ### Quadratic Graphs [#](quadratic-graphs)
 
-- [Quadratic Functions and Graphs](quadratic-graphs/quadratic-functions)
-- [Quadratic Functions in General Form](quadratic-graphs/general-form)
-- [Translations of Quadratic Functions](quadratic-graphs/transformations-1)
-- [Reflections of Quadratic Functions](quadratic-graphs/transformations-2)
+- Quadratic graphs
+    - [Quadratic Functions and Graphs](quadratic-graphs/quadratic-functions)
+    - [Quadratic Functions in General Form](quadratic-graphs/general-form)
+- Transformations of quadratic graphs
+    - [Translations of Quadratic Functions](quadratic-graphs/transformations-1)
+    - [Reflections of Quadratic Functions](quadratic-graphs/transformations-2)
+- Minimum and maximum values
+- Determining the functions from their graphs
 
 ### Quadratic Equations
 

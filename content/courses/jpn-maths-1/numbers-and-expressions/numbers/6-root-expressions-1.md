@@ -320,7 +320,9 @@ $\phantom{(1)}$ $=\dfrac{\sqrt{3}+1}{2}$<br>
 
 2. When the decimal part of $4+\sqrt{15}$ is $x$, find the value of $x^2+6x+10$.{{% mn ref2 refs %}}From Kurashiki Univ. of Sci. and the Arts.{{% /mn %}}
 
-{{% details title="Answer" %}} 2.
+{{% details title="Answer" %}} 
+
+2. $16$
 
 {{% note solution %}}
 Because $\sqrt{9}<\sqrt{15}<\sqrt{16}$,
@@ -401,24 +403,27 @@ Then,
 &= 36 -2 \\\\
 \boldsymbol{ 34 }.
 \end{align}
-
 \begin{align}
 \text{b.} \quad \dfrac{y^2}{x} + \dfrac{x^2}{y} &= \dfrac{y^3 + x^3}{xy} \\\\
 &= \dfrac{(x+y)^3 - 3xy(x+y)}{xy} \\\\
 &= \dfrac{6^3 - 3\cdot 1 \cdot 6}{1} \\\\
 &= 216 - 18 \\\\
 &= \boldsymbol{ 198 }.
-
 \end{align}
 
 {{% /details %}}
 
 5. When $x=\dfrac{\sqrt{5}+\sqrt{3}}{\sqrt{5}-\sqrt{3}}$ and $y=\dfrac{\sqrt{5}-\sqrt{3}}{\sqrt{5}+\sqrt{3}}$, calculate {{% mn ref5 refs %}}From Juntendo Univ.{{% /mn %}}
-   1. $x^2+y^2$
-   2. $x^3+y^3$
-   3. $x^3-y^3$
+    1. $x^2+y^2$
+    2. $x^3+y^3$
+    3. $x^3-y^3$
 
-{{% details title="Answer" %}} 5. 1. $62$ 2. $488$ 3. $126\sqrt{15}$
+{{% details title="Answer" %}}
+
+5. 
+    1. $62$
+    2. $488$
+    3. $126\sqrt{15}$
 
 {{% note solution %}}
 
@@ -449,7 +454,7 @@ $\hspace{0.5em} \text{c.} \quad$ Now, because $(x-y)^3 = \hl{x^3} - 3x^2y + 3xy^
 
 \begin{align}
 x^3 - y^3 &= (x-y)^3 + 3x^2y - 3xy^2 \\\\
-&= (x-y)^3 + 3xy(x-y). \qquad \cdots \tcirc{1}
+&= (x-y)^3 + 3xy(x-y). \quad \qdcirc{1}
 \end{align}
 
 We need to calculate the value of $x-y$:
@@ -473,11 +478,16 @@ Therefore
 {{% /details %}}
 
 6. When $2x+\dfrac{1}{2x} = \sqrt{7}$, evaluate the following.
-   1. $4x^2 + \dfrac{1}{4x^2}$
-   2. $8x^3 + \dfrac{1}{8x^3}$
-   3. $64x^6 + \dfrac{1}{64x^6}$
+    1. $4x^2 + \dfrac{1}{4x^2}$
+    2. $8x^3 + \dfrac{1}{8x^3}$
+    3. $64x^6 + \dfrac{1}{64x^6}$
 
-{{% details title="Answer" %}} 6. 1. $5$ 2. $4\sqrt{7}$ 3. $110$
+{{% details title="Answer" %}}
+
+6. 
+    1. $5$ 
+    2. $4\sqrt{7}$ 
+    3. $110$
 
 {{% note solution %}}
 

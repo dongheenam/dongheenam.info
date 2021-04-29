@@ -168,7 +168,7 @@ A more rigorous approach goes like this:
 
 \begin{align}
   & -3 < x < 5 \\\\
-  \implies & -3+y < x+y < 5+y. \quad \cdots \tcirc{1}
+  \implies & -3+y < x+y < 5+y. \qdcirc{1}
 \end{align}
 
 Then, from $-1<y<4$, $-3-1<-3+y$ and $5+y<5+4$, so
@@ -243,13 +243,13 @@ When you round $x$ and $y$ to the nearest integer, they become $6$ and $4$, resp
   2. $xy$
 
 {{% note solution %}}
-The range of $x$ is $$ 5.5\le x \lt 6.5, \qquad \cdots \tcirc{1} $$ and the range of $y$ is $$ 3.5 \le y \lt 4.5. \qquad \cdots \tcirc{2} $$
+The range of $x$ is $$ 5.5\le x \lt 6.5, \quad \qdcirc{1} $$ and the range of $y$ is $$ 3.5 \le y \lt 4.5. \quad \qdcirc{2} $$
 
-1. If we multiply all sides in $\tcirc{1}$ by $3$, $$ 16.5 \le 3x \lt 19.5. \qquad \cdots \tcirc{3} $$ Likewise, if we multiply all sides of $\tcirc{2}$ by $-4$,
+1. If we multiply all sides in $\tcirc{1}$ by $3$, $$ 16.5 \le 3x \lt 19.5. \quad \qdcirc{3} $$ Likewise, if we multiply all sides of $\tcirc{2}$ by $-4$,
 
 \begin{align}
   & -14 \ge -4y \gt -18 \\\\
-  \implies & -18 \lt -4y \le -14. \qquad \cdots \tcirc{4}
+  \implies & -18 \lt -4y \le -14. \quad \qdcirc{4}
 \end{align}
 
 Therefore, because $3x-4y=3x+(-4y)$, we can add $\tcirc{3}$ and $\tcirc{4}$ side-by-side to get
@@ -343,8 +343,8 @@ Hence, the range of $5x-3y=5x+(-3y)$ is
 The ranges of $x$ and $y$ are:
 
 \begin{alignat}{2}
-  & 2.5 \le x \lt 3.5, &&\qquad \cdots \tcirc{1} \\\\
-  & 6.5 \le y \lt 7.5. &&\qquad \cdots \tcirc{2} 
+  & 2.5 \le x \lt 3.5, &&\quad \qdcirc{1} \\\\
+  & 6.5 \le y \lt 7.5. &&\quad \qdcirc{2} 
 \end{alignat}
 
 $\text{a.} \quad$ Because $x-y=x+(-y)$, we need to find the range of $-y$:
@@ -365,14 +365,14 @@ $\text{b.} \quad$ Dividing $\tcirc{1}$ by $5$, we get
 
 \begin{alignat}{2}
   & \frac{2.5}{5} \le \frac{x}{5} \lt \frac{3.5}{5} \\\\
-  \implies & 0.5 \le \frac{x}{5} \lt 0.7, && \cdots \tcirc{3}
+  \implies & 0.5 \le \frac{x}{5} \lt 0.7, && \qdcirc{3}
 \end{alignat}
 
 and dividing $\tcirc{2}$ by $2$, we get
 
 \begin{alignat}{2}
   & \frac{6.5}{2} \le \frac{y}{2} \lt \frac{7.5}{2} \\\\
-  \implies & 3.25 \le \frac{y}{2} \lt 3.75. && \cdots \tcirc{4}
+  \implies & 3.25 \le \frac{y}{2} \lt 3.75. && \qdcirc{4}
 \end{alignat}
 
 Finally, adding $\tcirc{3}$ and $\tcirc{4}$ gives us the range of $\dfrac{x}{5}+\dfrac{y}{2}$:
@@ -385,7 +385,7 @@ Finally, adding $\tcirc{3}$ and $\tcirc{4}$ gives us the range of $\dfrac{x}{5}+
 $\text{c.} \quad$ Multiplying $2y$ on all sides of $\tcirc{1}$ gives
 
 \begin{align}
-  & 5y \le 2xy \lt 7y. \qquad \cdots \tcirc{5}
+  & 5y \le 2xy \lt 7y. \quad \qdcirc{5}
 \end{align}
 
 Now, because $y \ge 6.5$, the smallest possible value for $5y$ is

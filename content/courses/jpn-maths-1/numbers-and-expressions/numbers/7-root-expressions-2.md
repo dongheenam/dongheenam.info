@@ -228,10 +228,14 @@ $(1)$ $A^2+B^2+C^2$ $= (A+B+C)^2$ $-$ $2(AB+BC+CA)$, where $A=xy$, $B=yz$, and $
 {{% /details %}}
 
 2. When $t=\dfrac{1-\sqrt{3}}{2}$, evaluate the following expressions.
-   1. $2t^2-2t-1$
-   2. $t^8$
+    1. $2t^2-2t-1$
+    2. $t^8$
 
-{{% details title="Answer" %}} 2. 1. $0$ 2. $\dfrac{97 - 56\sqrt{3}}{16}$
+{{% details title="Answer" %}} 
+
+2. 
+    1. $0$
+    2. $\dfrac{97 - 56\sqrt{3}}{16}$
 
 {{% note solution %}}
 
@@ -268,7 +272,7 @@ t^8 &= \left( t^4 \right)^2 \\\\
 &= 4t^2 + 3t + \frac{9}{16} \\\\
 &= 4\hl{\left(t + \frac{1}{2}\right)} + 3t + \frac{9}{16} \\\\
 &= 4t + 2 + 3t + \frac{9}{16} \\\\
-&= 7t + \frac{41}{16}. && \cdots \tcirc{1}
+&= 7t + \frac{41}{16}. && \qdcirc{1}
 \end{alignat}
 
 Because $t=\dfrac{1-\sqrt{3}}{2}$,

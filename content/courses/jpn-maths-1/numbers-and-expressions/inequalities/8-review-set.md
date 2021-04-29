@@ -114,7 +114,7 @@ $\hspace{0.5em} \text{a.} \quad$ From the first inequality,
   & 6(x+1)>2x-5 \\\\
   \implies & 6x + 6 > 2x - 5 \\\\
   \implies & 4x > -11 \\\\
-  \implies & x > -\dfrac{11}{4}, \quad \cdots \tcirc{1}
+  \implies & x > -\dfrac{11}{4}, \qdcirc{1}
 \end{align}
 
 and from the second inequality,
@@ -123,7 +123,7 @@ and from the second inequality,
   \implies & 50 - (6-x) \le 6x \\\\
   \implies & 50 -6 + x \le 6x \\\\
   \implies & 44 \le 5x \\\\
-  \implies & x \ge \dfrac{44}{5}. \quad \cdots \tcirc{2}
+  \implies & x \ge \dfrac{44}{5}. \qdcirc{2}
 \end{align}
 
 The intersection of $\tcirc{1}$ and $\tcirc{2}$ is $\boldsymbol{ x \ge \dfrac{44}{5} }.$
@@ -140,7 +140,7 @@ From the first inequality,
   \implies & 5(x-1) \le 4(2x+1) \\\\
   \implies & 5x-5 \le 8x + 4 \\\\
   \implies & -9 \le 3x \\\\
-  \implies & x \ge -3. \quad \cdots \tcirc{3}
+  \implies & x \ge -3. \qdcirc{3}
 \end{align}
 
 From the second inequality,
@@ -149,7 +149,7 @@ From the second inequality,
   \implies & 8(2x+1) < 7(x-1) \\\\
   \implies & 16x + 8 < 7x - 7 \\\\
   \implies & 9x < -15 \\\\
-  \implies & x < -\dfrac{5}{3}.  \quad \cdots \tcirc{4}
+  \implies & x < -\dfrac{5}{3}.  \qdcirc{4}
 \end{align}
 
 The intersection of $\tcirc{3}$ and $\tcirc{4}$ is $\boldsymbol{ -3 \le x < -\dfrac{5}{3} }.$
@@ -173,7 +173,7 @@ The intersection of $\tcirc{3}$ and $\tcirc{4}$ is $\boldsymbol{ -3 \le x < -\df
   & 2x-1>6(x-2) \\\\
   \implies & 2x-1>6x-12 \\\\
   \implies & 11>4x \\\\
-  \implies & x<\dfrac{11}{4}. \quad \cdots \tcirc{2}
+  \implies & x<\dfrac{11}{4}. \qdcirc{2}
 \end{align}
 
 {{% mn q4a tips %}}
@@ -396,7 +396,7 @@ $\text{(i)}\quad$ When $x < -\dfrac{2}{3}$,
   &\implies 2x-3 \ge 3x+2 \\\\
   &\implies -5 \ge x.
 \end{align}
-The intersection with our assumption $x \le -\dfrac{2}{3}$ is $x \le -5. \quad \cdots \tcirc{1}$
+The intersection with our assumption $x \le -\dfrac{2}{3}$ is $x \le -5. \qdcirc{1}$
 
 $\text{(ii)}\quad$ When $-\dfrac{2}{3} \le x < \dfrac{3}{2}$,
 \begin{align}
@@ -405,7 +405,7 @@ $\text{(ii)}\quad$ When $-\dfrac{2}{3} \le x < \dfrac{3}{2}$,
   &\implies 1 \le 5x \\\\
   &\implies x \ge \dfrac{1}{5}.
 \end{align}
-The intersection with our assumption $-\dfrac{2}{3} < x \le \dfrac{3}{2}$ is $\dfrac{1}{5} \le x < \dfrac{3}{2}. \quad \cdots \tcirc{2}$
+The intersection with our assumption $-\dfrac{2}{3} < x \le \dfrac{3}{2}$ is $\dfrac{1}{5} \le x < \dfrac{3}{2}. \qdcirc{2}$
 
 $\text{(iii)}\quad$ When $x \ge \dfrac{3}{2}$,
 \begin{align}
@@ -427,7 +427,7 @@ $\text{(i)}\quad$ When $x < -2$,
   &\implies -3x < 15 \\\\
   &\implies x > -5.
 \end{align}
-Since we assumed $x<-2$, we find $-5 < x <-2. \quad \cdots \tcirc{1}$
+Since we assumed $x<-2$, we find $-5 < x <-2. \qdcirc{1}$
 
 $\text{(ii)}\quad$ When $-2 \le x < 4$,
 \begin{align}
@@ -435,7 +435,7 @@ $\text{(ii)}\quad$ When $-2 \le x < 4$,
   &\implies 2x + 4 -x + 4 < 15 \\\\
   &\implies x < 7.
 \end{align}
-Since we assumed $-2 \le x < 4$, we find $-2 \le x < 4. \quad \cdots \tcirc{2}$
+Since we assumed $-2 \le x < 4$, we find $-2 \le x < 4. \qdcirc{2}$
 
 $\text{(iii)}\quad$ When $x \ge 4$,
 \begin{align}
@@ -444,7 +444,7 @@ $\text{(iii)}\quad$ When $x \ge 4$,
   &\implies 3x < 15 \\\\
   &\implies x<5.
 \end{align}
-Since we assumed $x \ge 4$, we find $4 \le x < 5. \quad \cdots \tcirc{3}$
+Since we assumed $x \ge 4$, we find $4 \le x < 5. \qdcirc{3}$
 
 From $tcirc{1}$, $tcirc{2}$ and $tcirc{3}$, we conclude that $\boldsymbol{ -5 < x < 5 }.$
 

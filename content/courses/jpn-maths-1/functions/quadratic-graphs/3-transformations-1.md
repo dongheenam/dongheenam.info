@@ -190,13 +190,13 @@ Thus the vertex of $y = x^2 - 4x$ is $(2, -4)$. If we move this point 2 units ri
 \begin{alignat}{2}
   y &= x^2 - 8x - 13 \\\\
   &= x^2 - 8x + 16 - 16 - 13 \\\\
-  &= (x-4)^2 - 29 && \quad \cdots \tcirc{1}
+  &= (x-4)^2 - 29 && \qdcirc{1}
 \end{alignat}
 and
 \begin{alignat}{2}
   y &= x^2 + 4x + 3 \\\\
   &= x^2 + 4x + 4 - 4 + 3 \\\\
-  &= (x+2)^2 - 1. && \quad \cdots \tcirc{2}
+  &= (x+2)^2 - 1. && \qdcirc{2}
 \end{alignat}
 Thus the vertex of $\tcirc{1}$ is $(4, -29)$ and the vertex of $\tcirc{2}$ is $(-2, -1)$. We need to find the translation that moves $(4, -29)$ to $(-2, -1)$, which is $\textbf{ translating 6 units left and 28 units up.}$
 

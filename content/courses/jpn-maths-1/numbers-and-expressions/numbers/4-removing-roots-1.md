@@ -113,7 +113,7 @@ Rationalise the denominator and simplify the following expressions:
    \dfrac{4}{1+\sqrt{2}+\sqrt{3}} &= \dfrac{4\hl{\times \left\\{ (1+\sqrt{2})-\sqrt{3} \right\\} }}{ \left\\{ \big(1+\sqrt{2}\big)+\sqrt{3} \right\\} \hl{\times \left\\{ \big(1+\sqrt{2}\big)-\sqrt{3} \right\\} }} \\\\
    &= \frac{4\big(1 + \sqrt{2} - \sqrt{3}\big)}{\big(1+\sqrt{2}\big)^2 - \big(\sqrt{3}\big)^2} \\\\
    &= \frac{4\big(1 + \sqrt{2} - \sqrt{3}\big)}{1+2\sqrt{2}+2 - 3 } \\\\
-   &= \frac{4\big(1 + \sqrt{2} - \sqrt{3}\big)}{2\sqrt{2}}. \quad \cdots \tcirc{1}
+   &= \frac{4\big(1 + \sqrt{2} - \sqrt{3}\big)}{2\sqrt{2}}. \qdcirc{1}
    \end{align}
    Note there is only one term left on the denominator because $1^2+(\sqrt{2})^2=(\sqrt{3})^2$! We will then multiply the top and bottom by $\sqrt{2}$ to finish the job:
    \begin{align}
@@ -204,7 +204,7 @@ $(4)$ Here we rationalise $\sqrt{6}$ in the denominator again.
 &= \dfrac{1+\sqrt{6}-\sqrt{7}}{1 + 2\sqrt{6} + 6 - 7} \\\\
 &= \dfrac{1+\sqrt{6}-\sqrt{7}}{ 2\sqrt{6}} \tag{4} \\\\
 &= \dfrac{\big(1+\sqrt{6}-\sqrt{7}\big)\cdot \sqrt{6}}{ 2\big(\sqrt{6}\big)^2} \\\\
-&= \dfrac{\sqrt{6} + 6 - \sqrt{42}}{12}. && \cdots \tcirc{1}
+&= \dfrac{\sqrt{6} + 6 - \sqrt{42}}{12}. && \qdcirc{1}
 \end{align}
 
 And the second fraction is pretty straightforward:
@@ -213,7 +213,7 @@ And the second fraction is pretty straightforward:
 \dfrac{1}{5+2\sqrt{6}} &= \dfrac{5-2\sqrt{6}}{\big(5+2\sqrt{6}\big)\big(5-2\sqrt{6}\big)} \\\\
 &= \dfrac{5-2\sqrt{6}}{5^2 - \big(2\sqrt{6}\big)^2} \\\\
 &= \dfrac{5-2\sqrt{6}}{25-24} \\\\
-&= 5-2\sqrt{6}. && \cdots \tcirc{2}
+&= 5-2\sqrt{6}. && \qdcirc{2}
 \end{align}
 
 Therefore, we can combine the fractions and get the answer:

@@ -352,7 +352,7 @@ $(5)$<br>
 &= 2(x+1)^4 + 2(x-1)^4 + 5(x+1)^2(x-1)^2 \\\\
 &= 2A^2 + 2B^2 + 5AB \\\\
 &= 2A^2 + 5AB + 2B^2 \\\\
-&= (2A+B)(A+2B). \quad \cdots \tcirc{1} \tag{5}
+&= (2A+B)(A+2B). \qdcirc{1} \tag{5}
 \end{align}
 
 From here, we will substitute $x$ back and complete the factorisation.
@@ -408,7 +408,7 @@ $\text{a.} \quad$ To make $(a+b)^3$ from $a^3+b^3$, we need two additional terms
 &= \underline{(a+b)^3} - 3a^2b - 3ab^2 + c^3 - 3abc \\\\
 &= (a+b)^3 - 3ab(a+b) + c^3 - 3abc \\\\
 &= (a+b)^3 + c^3 - 3ab(a+b) - 3abc \\\\
-&= \underbrace{(a+b)^3 + c^3}\_\triangle - 3ab(a+b+c). && \cdots \tcirc{1}
+&= \underbrace{(a+b)^3 + c^3}\_\triangle - 3ab(a+b+c). && \qdcirc{1}
 \end{align}
 
 We can use the cubic identity $A^3+B^3 = (A+B)(A^2-AB+B^2)$ for $\triangle$:
@@ -440,7 +440,7 @@ $\text{b.} \quad$ Since
 
 \begin{align}
 & a^3 + 6ab - 8b^3 + 1 \\\\
-&= a^3 + (-2b)^3 + 1^3 - 3\cdot a\cdot (-2b)\cdot 1, \quad \cdots \tcirc{2}
+&= a^3 + (-2b)^3 + 1^3 - 3\cdot a\cdot (-2b)\cdot 1, \qdcirc{2}
 \end{align}
 
 we can use the result of (a). Then
