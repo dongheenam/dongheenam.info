@@ -96,6 +96,8 @@ the coordinates of the vertex is $\left( \dfrac{5}{4}, \dfrac{7}{8} \right)$. We
 
 {{< figure src="courses/jpn-maths-1/functions/quadratic-graphs/refl-ex2.png" alt="Three reflections of the quadratic graph $y=2x^2-5x+4$." >}}
 
+---
+
 {{% note "Alt. Solution" %}} As demonstrated above, you can first find the equation in the vertex form and then work out the reflected equations.
 
 For the quadratic graph $y = 2x^2-5x+4 = 2\left(x-\dfrac{5}{4} \right)^2 + \dfrac{7}{8}$,
@@ -160,6 +162,8 @@ From the first equation, we find $\boldsymbol{ a=7 }$, and substituting this to 
   \implies -b &= -3 \\\\
   \implies \\boldsymbol{ b } & \boldsymbol{ = 3 }.
 \end{align}
+
+---
 
 {{% note "Alt. Solution" %}}
 
@@ -271,6 +275,8 @@ From $\tcirc{1}$, $\boldsymbol{ p = -\dfrac{3}{2} }$, and substituting this to $
   \implies & \boldsymbol{ q = -\dfrac{21}{4} }.
 \end{align}
 
+{{% box %}}
+
 {{% note "Alt. Solution" %}}
 
 The vertex of $y= x^2$ is $(0,0)$, and from the vertex form of $y = -x^2 - 3x + 3$
@@ -293,5 +299,9 @@ If you translate $(0,0)$ as per the instructions, it moves to $(p,q)$. Then, if 
   -q = \dfrac{21}{4}.
 \end{cases}
 Therefore, $\boldsymbol{ p = -\dfrac{3}{2} }$ and $\boldsymbol{ q = -\dfrac{21}{4} }.$
+
+{{% /box %}}
+
+<p></p>
 
 {{% /details %}}
