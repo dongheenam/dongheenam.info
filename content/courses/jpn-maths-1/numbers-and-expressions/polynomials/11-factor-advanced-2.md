@@ -1,6 +1,6 @@
 ---
 title: "Advanced Techniques for Factorising 2"
-description: "How to factorise expressions quadratic in two variables, and bi-quartic polynomials."
+description: "How to factorise expressions quadratic in two variables, and bi-quadratic polynomials."
 slug: "advanced-factorising-2"
 
 date: 2020-06-03 18:09:08 +1000
@@ -131,14 +131,14 @@ We will rearrange in terms of $x$, but if you want, you can do it in $y$.
 {{% note Questions %}}
 Try [Practice Question](#practice-questions) 5 before moving on.
 
-## Biquartic Polynomials
+## Biquadratic Polynomials
 
-_Bi_ means two, and _quartic_ means the polynomial has [a degree](terms-and-polynomials/#degree-of-a-polynomial) of $4$. What is _biquartic_ then? Well, it is a quartic polynomial made only with the second powers!
+_Bi_ means two, so a biquadratic polynomial of $x$ is a polynomial quadratic in $x^2$. 
 
 {{% note definition %}}
-_A biquartic polynomial_ is a quartic polynomial without cubic or linear terms. In other words, biquartic polynomials has the following form: $$ px^4 + qx^2 + r . $$
+_A biquadratic polynomial_ is a quartic polynomial ([degree of 4](../../terms-and-polynomials/#degree-of-a-polynomial)) without cubic or linear terms. In other words, biquadratic polynomials has the following form: $$ px^4 + qx^2 + r . $$
 
-For example, $x^4 + 2x^2 - 3$ is a biquartic polynomial. What is so special about them? Biquartic polynomials can be easily converted to a quadratic polynomial with a simple substitution. If we substitute $x^2=t$ from our example, it becomes $$ x^4 + 2x^2 - 3 = t^2 + 2t - 3, $$ which we can factorise with the quadratic identities.
+For example, $x^4 + 2x^2 - 3$ is a biquadratic polynomial. What is so special about them? Biquadratic polynomials can be easily converted to a quadratic polynomial with a simple substitution. If we substitute $x^2=t$ from our example, it becomes $$ x^4 + 2x^2 - 3 = t^2 + 2t - 3, $$ which we can factorise with the quadratic identities.
 
 {{% box %}}
 {{% note example %}}
@@ -159,7 +159,7 @@ x^4 + 2x^2 - 3 &= t^2 + 2t - 3 \tag{1} \\\\
 
 {{% /box %}}
 
-However not all biquartics can be factorised this way. Have a look at this example:
+However not all biquadratics can be factorised this way. Have a look at this example:
 
 {{% box %}}
 {{% note example %}}
@@ -187,7 +187,7 @@ $(2)$ Identity 2: $\square^2-\triangle^2$ $=(\square+\triangle)(\square-\triangl
 
 You may realise you can also make $(a^2-1)^2$ instead of $(a^2+1)^2$ from the question above. However, you cannot continue with the other square because the leftover term is not itself a perfect square:
 
-{{% figure class="fullwidth" src="courses/jpn-maths-1/numbers-and-expressions/poly-biquartic.png" alt="two possible perfect squares" %}}
+{{% figure class="fullwidth" src="courses/jpn-maths-1/numbers-and-expressions/poly-biquadratic.png" alt="two possible perfect squares" %}}
 
 So make sure you complete the 'right' square!
 
