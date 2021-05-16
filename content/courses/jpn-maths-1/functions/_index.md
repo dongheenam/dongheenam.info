@@ -44,6 +44,7 @@ weight: 13
 - Transformations of quadratic graphs
     - [Translations of Quadratic Functions](quadratic-graphs/transformations-1)
     - [Reflections of Quadratic Functions](quadratic-graphs/transformations-2)
+- [Review Set 1](quadratic-graphs/review-1)
 - Minimum and maximum values
 - Determining the functions from their graphs
 

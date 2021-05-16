@@ -25,7 +25,7 @@ weight: 11
 
 ## List of Topics
 
-### Expansion and Factorisation of Polynomials
+### Expansion and Factorisation of Polynomials [#](polynomials/)
 
 - Introduction
   - [Terms and Polynomials](polynomials/terms-and-polynomials)
@@ -44,7 +44,7 @@ weight: 11
   - [Advanced Techniques for Factorisation 2](polynomials/advanced-factorising-2/)
 - [Review Set 2](polynomials/review-2)
 
-### Real Numbers
+### Real Numbers [#](numbers/)
 
 - Introduction
   - [Different Types of Numbers](numbers/types-of-numbers)
@@ -57,7 +57,7 @@ weight: 11
   - [Evaluating Expressions with Square Roots 2](numbers/expressions-square-roots-2)
 - [Review Set 3](numbers/review-3/)
 
-### Linear Inequalities
+### Linear Inequalities [#](inequalities/)
 
 - Introduction
   - [Properties of Inequalities](inequalities/properties)
