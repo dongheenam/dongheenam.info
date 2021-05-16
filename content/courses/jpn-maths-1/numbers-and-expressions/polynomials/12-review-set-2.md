@@ -224,7 +224,7 @@ $(1)$ $A^2-1$ $=(A+1)(A-1)$, where $A=x^3$
 {{% note "Alt. Solution" %}}
 
 {{% mn q4a2 tips %}}
-$(2)$ See [factorising biquartic polynomials](../advanced-factorising-2#biquartic-polynomials) for more details
+$(2)$ See [factorising biquadratic polynomials](../advanced-factorising-2#biquadratic-polynomials) for more details
 {{% /mn %}}
 \begin{align}
 \text{a.} \quad & x^6 - 1 \\\\
