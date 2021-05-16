@@ -187,7 +187,7 @@ $(2)$ Identity 2: $\square^2-\triangle^2$ $=(\square+\triangle)(\square-\triangl
 
 You may realise you can also make $(a^2-1)^2$ instead of $(a^2+1)^2$ from the question above. However, you cannot continue with the other square because the leftover term is not itself a perfect square:
 
-{{% figure class="fullwidth" src="courses/jpn-maths-1/numbers-and-expressions/poly-biquadratic.png" alt="two possible perfect squares" %}}
+{{% figure class="fullwidth" src="courses/jpn-maths-1/numbers-and-expressions/poly-biquadratic.jpg" alt="two possible perfect squares" %}}
 
 So make sure you complete the 'right' square!
 
