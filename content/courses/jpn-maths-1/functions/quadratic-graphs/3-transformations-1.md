@@ -36,7 +36,7 @@ weight: 23
 
 {{% /details %}}
 
-We have [already discussed](../quadratic-functions) transformations of $y=ax^2$, but we will have a deeper look at the transformations of quadratic graphs in general. In this lesson, we will:
+It is time to build upon [the transformations](../quadratic-functions) of $y=ax^2$ and have a deeper look at the transformations of quadratic graphs in general. In this lesson, we will:
 - Find the translation of a quadratic graph in general form.
 - Solve problems using the translations of quadratic graphs.
 
@@ -85,7 +85,7 @@ Thus we find the vertex is $(1,-2)$. If we move this vertex 3 units left and 1 u
 
 <p>
 
-You may realise that when we translate the graph of $y=f(x)$, we find $$ y\hl{-q} = f(x\hl{-p})$$ but when we translate a point $(x,y)$ we find $$ (x\hl{+p},x\hl{+q}). $$ This is because we can move a point directly but we need to move the [coordinate plane instead](../../functions-and-graphs/transformations/#translations) when we are moving a graph. Yes, this can be quite confusing!
+You may realise that when we translate the graph of $y=f(x)$, we find $$ y\hl{-q} = f(x\hl{-p})$$ but when we translate a point $(x,y)$ we find $$ (x\hl{+p},x\hl{+q}). $$ This is because we can move a point directly but we move a graph by [shifting the coordinate plane instead](../../functions-and-graphs/transformations/#translations). Yes, this can be quite confusing!
 
 </p>
 

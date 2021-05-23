@@ -112,7 +112,7 @@ For the quadratic graph $y = 2x^2-5x+4 = 2\left(x-\dfrac{5}{4} \right)^2 + \dfra
 
 ## Multi-step Transformations
 
-Now that we are used to translate and reflect quadratic graphs, let's try mixing them together. One thing you must be careful is *the order does matter*. For example, for the graph of $y = 3(x-1)^2$,
+We now know how to translate and reflect quadratic graphs, so let's try mixing them together. One thing you must be careful of is *the order matters*. For example, for the graph of $y = 3(x-1)^2$,
 - if you move it right 3 units and reflect the result over the y-axis,
 \begin{alignat}{2}
   y &= 3(x-1)^2 \\\\
@@ -293,7 +293,7 @@ $=-\left(x+\dfrac{3}{2}\right)^2+\dfrac{21}{4}.$
 \end{align}
 its vertex is $\left( -\dfrac{3}{2}, \dfrac{21}{4} \right)$.
 
-If you translate $(0,0)$ as per the instructions, it moves to $(p,q)$. Then, if you reflect the point about the x-axis, it becomes $(p,-q)$. Hence we find
+If you translate $(0,0)$ according to the instructions, it moves to $(p,q)$. Then, if you reflect the point about the x-axis, it becomes $(p,-q)$. Hence we find
 \begin{cases}
   p = -\dfrac{3}{2}, \\\\[0.5em]
   -q = \dfrac{21}{4}.

@@ -46,7 +46,7 @@ The following topics are useful for understanding this lesson.
 
 {{% /details %}}
 
-Up until now, we have been mostly discussing linear functions and their graphs, which are, well, *lines*. Linear functions have degree of $1$, and they are fun to play with but it gets boring pretty quickly. We will take a next step and inquire into functions with degree of $2$: quadratic functions! In this lesson, we will:
+Up until now, we have been mostly discussing linear functions and their graphs, which are, well, *lines*. Linear functions have a degree of $1$, and they are fun to play with, but it gets boring pretty quickly. We will take the next step and inquire into functions with a degree of $2$: quadratic functions! In this lesson, we will:
 - define a quadratic function.
 - define the general and vertex forms of a quadratic function.
 - describe the basic properties of the graph of $y=ax^2$.
@@ -81,7 +81,7 @@ If you repeat this exercise with the numbers in between, you will eventually get
 
 {{< figure src="courses/jpn-maths-1/functions/quadratic-graphs/quad-ex1.png" alt="Graph of y=x^2." >}}
 
-We will use this graph to find the graph of other quadratic functions later. Finally, below are a set of vocabulary useful for describing a quadratic graph.
+We will use this graph to find the graph of other quadratic functions later. Finally, below are a set of helpful vocabulary for describing a quadratic graph.
 
 {{% box %}}
 {{% note Definition %}}
@@ -116,7 +116,7 @@ Below are the properties of the graphs of $y=ax^2$.
 
 ### Graph of $y = a(x-p)^2 + q$ and the vertex form
 
-The vertex of the graph of $y= ax^2$ is always the origin $(0,0)$, so how do we describe a parabola whose vertex is not at the origin? Well, we can certainly [translate the graph](../../functions-and-graphs/transformations/#translation) You might have already guessed that the graph of $y = a(x-p)^2 + q$ is the graph of $y = ax^2$ translated horizontally by $p$ units and vertically by $q$ units.
+The vertex of the graph of $y= ax^2$ is always the origin $(0,0)$. How do we describe a parabola whose vertex is not at the origin? Well, we can certainly [translate the graph](../../functions-and-graphs/transformations/#translation). You might have already guessed that the graph of $y = a(x-p)^2 + q$ is the graph of $y = ax^2$ translated horizontally by $p$ units and vertically by $q$ units.
 \begin{alignat}{2}
   y = ax^2 & \longrightarrow y = a(\hl{x-p})^2 \quad && \text{(moved horizontally by $p$ units)} \\\\
   & \longrightarrow y = a(x-p)^2 \hl{+q} \quad && \text{(moved vertically by $q$ units)}

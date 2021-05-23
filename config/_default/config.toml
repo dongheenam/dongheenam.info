@@ -8,6 +8,9 @@ theme = "dnaminfo-theme"
 # set timeout to 2 minutes
 timeout = 120000
 
+# ignore TeX files
+ignoreFiles = [ "\\.tex$" ]
+
 # site infos
 [params]
   author = "Donghee Nam"

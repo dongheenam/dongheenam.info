@@ -1,0 +1,21 @@
+\documentclass[border=1mm,10pt]{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usepackage{pgfplots}
+
+\pgfplotsset{compat=1.16}
+\usepgfplotslibrary{fillbetween}
+\usetikzlibrary{arrows.meta}
+
+% predefined styles
+\pgfplotsset{with_grid/.append style={axis equal image,axis lines=middle,xlabel=$x$,ylabel=$y$,major tick style={color=black,semithick},minor tick num=4,grid=both,grid style={very thin}}}
+
+\pgfplotsset{without_grid/.append style={axis equal image,axis lines=middle,xlabel=$x$,ylabel=$y$,ticks=none}}
+
+\pgfplotsset{/pgfplots/layers/axis on top/.define layer set={
+        axis background,pre main,axis grid,axis ticks,axis lines,main,axis tick labels, axis descriptions, axis foreground
+    }{/pgfplots/layers/standard}
+}
+
+\definecolor{bg1}{RGB}{255,255,248}
+\definecolor{bg2}{RGB}{243,243,230}
