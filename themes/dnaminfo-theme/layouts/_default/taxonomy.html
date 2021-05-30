@@ -1,15 +1,14 @@
 {{- define "main" -}}
 <article class="tufte-container">
     {{ partial "breadcrumb" . }}
-    <h1>{{ .Title }}</h1>
+    <h1>{{ .Title | title }}</h1>
     {{ .Content }}
     {{- $requires_section := .Page.Params.section | default "true" -}}
     {{ if $requires_section }}
-    <section class="section-pages{{ if eq .Type "posts" }} section-pages-post{{ end }}">
-    {{- range (.Paginate .Pages 10).Pages -}}
+    <section class="section-pages">
+    {{- range (.Paginate .Pages.ByDate.Reverse 10).Pages -}}
         <h2>
-            {{- if eq .Type "posts" -}}<p class="date">{{ .Date.Format "2 Jan 2006" }}</p>{{- end -}}
-            <a href="{{ .RelPermalink }}">{{ .Name }}</a>
+            ({{ .Type }}) <a href="{{ .RelPermalink }}">{{ .Name }}</a>
         </h2>
         {{ with .Description }}<p class="subtitle">{{ . }}</p>{{ end }}
     {{- end -}}

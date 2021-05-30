@@ -59,6 +59,19 @@
   }
 }
 
+.section-pages-tag {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: baseline;
+    line-height: 1.5;
+  }
+  li {
+    margin-right: 1em;
+  }
+}
+
 @media screen and (max-width: $lmobile) {
   .pager {
     width: 100%;
