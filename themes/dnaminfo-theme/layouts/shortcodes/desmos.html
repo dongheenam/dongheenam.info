@@ -1,0 +1,10 @@
+{{/* Usage: 
+    {{% desmos id="div ID" style="height: 450px" options="{keypad: false}" %}} 
+*/}}
+{{- $id := .Get "id" -}}
+{{- $style := .Get "style" | default "height: 400px" -}}
+<div id="calc-{{ $id }}" class="box-desmos" style="{{ $style | safeCSS }}"></div>
+<script>
+  var elt = document.getElementById('calc-{{ $id }}');
+  var calc_{{ $id | safeJS }} = Desmos.GraphingCalculator(elt{{ with .Get "options" }}, {{ . | safeJS }}{{ end }});
+</script>

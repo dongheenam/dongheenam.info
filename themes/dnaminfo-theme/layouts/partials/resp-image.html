@@ -23,7 +23,7 @@
     {{ $sizes = "(min-width: 1620px) 825px, (min-width: 1220px) 630px, (min-width: 780px) 85vw, 95vw" }}
 {{- end -}}
 {{- if not .nolink -}}<a href="{{ .image.RelPermalink }}" target="_blank">{{- end -}}
-<img{{with .class }} class="{{ . }}"{{ end }}{{with .style }} style="{{ . }}"{{ end }} width="100%" height="auto"
+<img{{with .class }} class="{{ . }}"{{ end }}{{with .style }} style="{{ . | safeCSS }}"{{ end }} width="100%" height="auto"
     alt="{{ .alt }}" loading="lazy"
     sizes="{{ $sizes }}"
     src="{{ .image.RelPermalink }}"
