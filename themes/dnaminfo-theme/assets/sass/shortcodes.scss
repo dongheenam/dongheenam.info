@@ -36,6 +36,13 @@
   p:first-child {
     margin-top: 0;
   }
+
+  &-desmos {
+    @extend .box;
+    padding: 0;
+    margin-bottom: 3rem;
+    border: none;
+  }
 }
 
 /* Shortcode - details */
