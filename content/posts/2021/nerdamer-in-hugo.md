@@ -1,6 +1,6 @@
 ---
 title: "Setting up Nerdamer in Hugo"
-description: "How the use the symbolic mathematics library Nerdamer in Hugo."
+description: "How to use the symbolic mathematics library Nerdamer in Hugo."
 
 date: 2021-01-12 15:37:27.321 +0800
 lastMod: 2021-01-12 15:37:27.321 +0800
@@ -30,7 +30,7 @@ $ git submodule add https://github.com/jiggzson/nerdamer assets/js/nerdamer/
 $ git submodule init
 ```
 
-to attach the [Nerdamer depository](https://github.com/jiggzson/nerdamer) to `assets/js/nerdamer/`. Note that we are putting the files under the Assets folder, not the Static folder, because you would want to minify the files first with [Hugo Pipes](https://gohugo.io/hugo-pipes/minification/){{% sn minify %}}The library is delivered without minification. You can reduce its size from 1 MB to about 500 kB by minifying the files.{{% /sn %}}. Inside the folder, you will see five JavaScript files:
+to attach the [Nerdamer depository](https://github.com/jiggzson/nerdamer) to `assets/js/nerdamer/`. Note that we are putting the files under the Assets folder, not the Static folder, because you would want to minify the files first with [Hugo Pipes](https://gohugo.io/hugo-pipes/minification/).{{% sn minify %}}The library is delivered without minification. You can reduce its size from 1 MB to about 500 kB by minifying the files.{{% /sn %}} Inside the folder, you will see five JavaScript files:
 
 ```filename
 > /
@@ -39,14 +39,14 @@ to attach the [Nerdamer depository](https://github.com/jiggzson/nerdamer) to `as
 ├───.github
 ├───archetypes
 ├───assets
-├───js
-│   └───nerdamer
-│       ├───spec
-│       ├───Algebra.js
-│       ├───Calculus.js
-│       ├───Extra.js
-│       ├───nerdamer.core.js
-│       └───Solve.js
+│   └───js
+│       └───nerdamer
+│           ├───spec
+│           ├───Algebra.js
+│           ├───Calculus.js
+│           ├───Extra.js
+│           ├───nerdamer.core.js
+│           └───Solve.js
 ├───config
 ├───content
 ├───static

@@ -30,10 +30,10 @@ The School provided a separated Engagement Program to students who have signific
 
 Finally, I exchanged opinions with the Aboriginal and Islander Education Officer (AIEO) and another colleague who worked closely with the Indigenous students. I learned about how some Aboriginal students find difficult to perform a public speech and developed ideas on how to incorporate this into designing the program (*Descriptors 1.4*).
 
-{{% gallery ncols="2" id="action" caption="(left) Learning program from L school<br> (right) Certificate for the 2017 MAWA Conference" %}}
+{{< gallery ncols="2" id="action" caption="(left) Learning program from L school<br> (right) Certificate for the 2017 MAWA Conference" >}}
     {{% img src="portfolio/img/y7dt_otherschool.png" alt="Learning program from L School" %}}
     {{% img src="portfolio/img/mawa2017.jpg" alt="Certificate of the 2017 MAWA Conference" %}}
-{{% /gallery %}}
+{{< /gallery >}}
 
 ## Outcome
 
@@ -92,12 +92,12 @@ I stated the aim of the projects first and foremost, which clearly states my exp
 
 I also presented a topic myself, as an example work for the students to refer to. I also included counterexamples to teach students what not to do when delivering a speech.
 
-{{% gallery ncols="2" id="ass" caption="Some slides from the Presentation I did to introduce the assessment task" %}}
+{{< gallery ncols="2" id="ass" caption="Some slides from the Presentation I did to introduce the assessment task" >}}
   {{< img src="portfolio/img/y7dt_psins1.png" caption="Aim of the assessment" border="true" >}}
   {{< img src="portfolio/img/y7dt_psins2.png" caption="Description of the assessment" border="true" >}}
   {{< img src="portfolio/img/y7dt_psins3.png" caption="Counterexample 1" border="true" >}}
   {{< img src="portfolio/img/y7dt_psins4.png" caption="Counterexample 2" border="true" >}}
-{{% /gallery %}}
+{{< /gallery >}}
 
 {{< figure src="portfolio/img/y7dt_rubric.png" caption="Assessment rubric" >}}
 

@@ -26,15 +26,15 @@ Next, I delivered a presentation in an all-staff meeting to assist other teacher
 
 I believed that all staff should know that their login profiles, as well as the students' profiles, are stored in the central server, not in the local system. I referred to the Department documents on the Standard Operating Environment to help the staff understand how the drives are structured, and why. Many staff and students complained on the exceptionally long waiting time for students to log into the school computers. Even some staff had the same problems. I provided some solutions during the presentation so that all teachers can contribute to mitigate the problem. After the presentation, I confirmed that not only staff profiles but also student profiles reduced their sizes in average. There was overall a 30 per cent decrease in the usage of the shared network drive. Furthermore, teachers could implement more ICT into their lessons thanks to the reduced network congestion.
 
-{{% gallery id="pd" ncols=2 caption="Description of the School Network" %}}
-  {{% img src="portfolio/img/staff_ps1.png" caption="Presentation on the School Network 1" %}}
-  {{% img src="portfolio/img/staff_ps2.png" caption="Presentation on the School Network 2" %}}
-{{% /gallery %}}
+{{< gallery id="pd" ncols=2 caption="Description of the School Network" >}}
+  {{< img src="portfolio/img/staff_ps1.png" caption="Presentation on the School Network 1" >}}
+  {{< img src="portfolio/img/staff_ps2.png" caption="Presentation on the School Network 2" >}}
+{{< /gallery >}}
 
-{{% gallery id="pd2" ncols=2 caption="Tips and strategies for reducing the load" %}}
+{{< gallery id="pd2" ncols=2 caption="Tips and strategies for reducing the load" >}}
   {{% img src="portfolio/img/staff_ps3.png" caption="Presentation on the School Network 3" %}}
   {{% img src="portfolio/img/staff_ps4.png" caption="Presentation on the School Network 4" %}}
-{{% /gallery %}}
+{{< /gallery >}}
 
 ## Supervision of Club Activities
 

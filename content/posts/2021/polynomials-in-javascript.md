@@ -18,7 +18,7 @@ tags:
 
 ## Introduction
 
-Just like with the [fractions](../fractions-in-javascript), I also wrote a simple library that creates a polynomial (with a single variable). Because most of the advanced calculations will be performed with [Nerdamer](https://nerdamer.com/), I will only implement basic functionalities such as adding and multiplying, and the ability to print polynomials as LaTeX expressions.
+Just like with the [fractions](../fractions-in-javascript), I also wrote a simple library that creates a polynomial (with a single variable). Because most of the advanced calculations will be performed with [Nerdamer](../setting-up-nerdamer-in-hugo), I will only implement basic functionalities such as adding and multiplying, and the ability to print polynomials as LaTeX expressions.
 
 
 ## The `Poly(nomial)` class

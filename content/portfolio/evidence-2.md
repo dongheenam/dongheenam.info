@@ -44,11 +44,11 @@ I planned a lesson on expanding binomials using the strategies we developed:
 
 At first, the PPT slides below are designed for the "I do" part. The students first learns what the FOIL method is and how it is applied to a problem. A wide range of colours are used to help the process. Then I prepared three different questions for guided practising. They were asked to try the questions on their own first, and we checked the answers together. I asked mostly the confident students in the beginning, but also made sure to check other students as well (*Descriptor 4.1*).
 
-{{% gallery ncols="2" id="foil" caption="(top) The *I do* part<br>(bottom) The *We do* part" %}}
+{{< gallery ncols="2" id="foil" caption="(top) The *I do* part<br>(bottom) The *We do* part" >}}
   {{% img src="portfolio/img/obs_foil1.png" alt="presentation slide for FOIL method 1" %}}
   {{% img src="portfolio/img/obs_foil2.png" alt="presentation slide for FOIL method 2" %}}
   {{% img src="portfolio/img/obs_foil3.png" alt="presentation slide for FOIL method 3" %}}
-{{% /gallery %}}
+{{< /gallery >}}
 
 Finally, the students are asked to practise individually using the worksheet. It is divided into two parts with different level and scaffolding. The students can choose which part to work on, and the answer sheets are given to the students when they finish them so they can check their work on their own (*Descriptors 1.5 and 5.2*).
 
@@ -56,10 +56,10 @@ Finally, the students are asked to practise individually using the worksheet. It
 
 The Head of Learning Area was happy to observe the lesson to assist me on the reflection process. Below is his note:
 
-{{% gallery ncols=2 id="feedback" caption="Feedback received from the HoLA" %}}
+{{< gallery ncols=2 id="feedback" caption="Feedback received from the HoLA" >}}
   {{< img src="portfolio/img/obs_ref1.jpg" alt="feedback from the HoLA 1" >}}
   {{< img src="portfolio/img/obs_ref2.jpg" alt="feedback from the HoLA 2" >}}
-{{% /gallery %}}
+{{< /gallery >}}
 
 Overall, his feedback aligned with my reflection: the instructions, set up with the gradual release model, and the differentiated worksheet, helped students keep engaged and learn the topic. He also pointed out a few classroom management skills I implemented well, as well as those I needed to improve on, such as minimising the disturbance.
 

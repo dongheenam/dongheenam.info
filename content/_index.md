@@ -4,7 +4,7 @@ title: "Welcome!"
 
 ## I am...
 
-My name is Donghee and I am a mathematics and physics teacher working at a local high school in Canberra, Australia.
+My name is Donghee and I am a mathematics and physics teacher working at a high school in Canberra, Australia.
 
 ## This site is...
 
