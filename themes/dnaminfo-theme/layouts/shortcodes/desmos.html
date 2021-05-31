@@ -6,5 +6,8 @@
 <div id="calc-{{ $id }}" class="box-desmos" style="{{ $style | safeCSS }}"></div>
 <script>
   const elt_{{ $id | safeJS }} = document.getElementById('calc-{{ $id }}');
-  const calc_{{ $id | safeJS }} = Desmos.GraphingCalculator(elt_{{ $id | safeJS }}{{ with .Get "options" }}, {{ . | safeJS }}{{ end }});
+  const calc_{{ $id | safeJS }} = Desmos.GraphingCalculator(
+    elt_{{ $id | safeJS }}
+    {{- with .Get "options" -}}, {{ . | safeJS }}{{ end -}}
+  );
 </script>

@@ -185,7 +185,7 @@ Another cool features is the draggable point. Instead of using the sliders, one 
 </script>
 ```
 
-Note the `{expressions: false}` option to remove the expressions panel, so the sliders are invisible now. However, you can still move the blue and red points around to change the values of $a,~p,~q.$
+Note the `{expressions: false}` option to remove the expressions panel, so the sliders are invisible now. However, you can still move the points around to change the values of $a,~p,~q.$
 
 {{% desmos id="ex3" options="{keypad: false, expressions: false}" %}}
 <script>
