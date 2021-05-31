@@ -5,6 +5,6 @@
 {{- $style := .Get "style" | default "height: 400px" -}}
 <div id="calc-{{ $id }}" class="box-desmos" style="{{ $style | safeCSS }}"></div>
 <script>
-  var elt = document.getElementById('calc-{{ $id }}');
-  var calc_{{ $id | safeJS }} = Desmos.GraphingCalculator(elt{{ with .Get "options" }}, {{ . | safeJS }}{{ end }});
+  const elt_{{ $id | safeJS }} = document.getElementById('calc-{{ $id }}');
+  const calc_{{ $id | safeJS }} = Desmos.GraphingCalculator(elt_{{ $id | safeJS }}{{ with .Get "options" }}, {{ . | safeJS }}{{ end }});
 </script>

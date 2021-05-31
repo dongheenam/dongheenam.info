@@ -1,20 +1,36 @@
 {{- define "main" -}}
+{{- $letters := split "ABCDEFGHIJKLMNOPQRSTUVWXYZ" "" -}}
+{{- $pages := .Pages.ByTitle -}}
+{{- $pages_by_letters := dict -}}
+{{ range $pages }}
+  {{- $page := . -}}
+  {{- $first_letter := upper ( substr .Name 0 1 ) -}}
+  {{- if not (in $letters $first_letter) }}
+    {{ $first_letter = "#" }}
+  {{ end }}
+  {{- $new_list := "" -}}
+  {{ with index $pages_by_letters $first_letter }}
+    {{- $new_list = . | append $page -}}
+  {{ else }}
+    {{- $new_list = slice $page -}}
+  {{ end }}
+  {{- $pages_by_letters = merge $pages_by_letters (dict $first_letter $new_list) -}}
+{{ end }}
 <article class="tufte-container">
     {{ partial "breadcrumb" . }}
-    <h1>{{ .Title }}</h1>
+    <h1 style="margin-bottom: 3rem">{{ .Title }}</h1>
     {{ .Content }}
-    {{- $requires_section := .Page.Params.section | default "true" -}}
-    {{ if $requires_section }}
     <section class="section-pages section-pages-tag">
+    {{ range $key, $value := $pages_by_letters }}
+    <span class="key">{{ $key }}</span>
     <ul>
-    {{- range .Pages.ByTitle -}}
+    {{- range $value -}}
         <li>
             <a href="{{ .RelPermalink }}">{{ .Name }}</a><sup>{{ len .Pages }}</sup>
         </li>
     {{- end -}}
     </ul>
+    {{ end }}
     </section>
-    {{- end -}}
-    {{ partial "pager" . }}
 </article>
 {{- end -}}
