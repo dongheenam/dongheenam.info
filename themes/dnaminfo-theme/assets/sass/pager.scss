@@ -60,6 +60,10 @@
 }
 
 .section-pages-tag {
+  display: grid;
+  grid-template-columns: 3rem auto;
+  align-items: baseline;
+
   ul {
     display: flex;
     flex-wrap: wrap;
@@ -69,6 +73,10 @@
   }
   li {
     margin-right: 1em;
+  }
+  .key {
+    @extend h3;
+    margin: 0 !important;
   }
 }
 
