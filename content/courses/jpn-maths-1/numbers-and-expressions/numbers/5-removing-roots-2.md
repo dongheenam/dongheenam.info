@@ -16,7 +16,7 @@ tags:
   - square root
   - polynomial identity
   - fraction
-  - Year 10A
+  - AC Year 10A
 
 menu:
   math1-numbers:

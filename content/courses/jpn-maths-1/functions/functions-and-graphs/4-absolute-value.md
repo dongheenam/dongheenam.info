@@ -14,6 +14,7 @@ tags:
   - function
   - linear function
   - absolute value
+  - AC Specialist
 
 menu:
   math1-func:

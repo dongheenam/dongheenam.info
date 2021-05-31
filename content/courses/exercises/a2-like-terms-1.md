@@ -13,9 +13,9 @@ math: true
 tags:
   - algebra
   - polynomial
-  - Year 7
-  - Year 8
-  - Year 9
+  - AC Year 7
+  - AC Year 8
+  - AC Year 9
 
 menu:
   exc:

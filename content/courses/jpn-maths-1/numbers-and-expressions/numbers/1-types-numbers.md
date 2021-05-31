@@ -15,8 +15,8 @@ tags:
   - real number
   - fraction
   - decimal
-  - Year 8
-  - Year 10A
+  - AC Year 8
+  - AC Year 10A
 
 menu:
   math1-numbers:

@@ -16,8 +16,8 @@ tags:
   - polynomial
   - factorisation
   - polynomial identity
-  - Year 10
-  - Specialist Maths
+  - AC Year 10
+  - AC Specialist
 
 menu:
   math1-numbers:

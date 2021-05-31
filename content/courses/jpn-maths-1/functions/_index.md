@@ -46,7 +46,8 @@ weight: 13
     - [Reflections of Quadratic Functions](quadratic-graphs/transformations-2)
 - [Review Set 1](quadratic-graphs/review-1)
 - Minimum and maximum points
-    - [Minima and Maxima of Quadratic Functions](quadratic-graphs/extrema-1)
+    - [Minima and Maxima of Quadratic Functions 1](quadratic-graphs/extrema-1)
+    - [Minima and Maxima of Quadratic Functions 2](quadratic-graphs/extrema-2)
 - Determining the functions from their graphs
 
 ### Quadratic Equations

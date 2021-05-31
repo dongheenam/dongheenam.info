@@ -13,8 +13,8 @@ math: true
 tags:
   - algebra
   - polynomial
-  - Year 10
-  - Year 10A
+  - AC Year 10
+  - AC Year 10A
 
 menu:
   exc:

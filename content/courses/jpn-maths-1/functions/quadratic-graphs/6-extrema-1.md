@@ -14,6 +14,7 @@ tags:
   - function
   - quadratic function
   - minimum and maximum
+  - AC Methods
 
 menu:
   math1-func:
@@ -106,7 +107,7 @@ The coordinates of the vertex is $\left(-\dfrac{2}{3}, -\dfrac{7}{3} \right).$ B
 2. Converting to the vertex form gives
 {{% mn %}}
 $(2)$ $-2x^2+x$<br>
-$=-2\left(x^2 - \dfrac{1}{2}x \right) - 1$<br>
+$=-2\left(x^2 - \dfrac{1}{2}x \right)$<br>
 $=-2\left\\\\{ x^2 - \dfrac{1}{2}x + \left( \dfrac{1}{4} \right)^2 \right\\\\}$ $\phantom{.} +2 \left( \dfrac{1}{4} \right)^2$<br>
 $=-2\left( x - \dfrac{1}{4} \right)^2 + \dfrac{1}{8}$.
 {{% /mn %}}

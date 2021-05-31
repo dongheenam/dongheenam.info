@@ -13,6 +13,9 @@ draft: false
 tags:
   - function
   - quadratic function
+  - AC Year 10
+  - AC Year 10A
+  - AC Methods
 
 menu:
   math1-func:

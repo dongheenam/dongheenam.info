@@ -17,7 +17,7 @@ tags:
   - polynomial identity
   - fraction
   - algebra
-  - Year 10A
+  - AC Year 10A
 
 menu:
   math1-numbers:

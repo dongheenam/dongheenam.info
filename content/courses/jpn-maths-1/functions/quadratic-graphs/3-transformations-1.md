@@ -14,6 +14,8 @@ tags:
   - function
   - quadratic function
   - transformation
+  - AC Year 10A
+  - AC Methods
 
 menu:
   math1-func:

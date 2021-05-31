@@ -14,8 +14,8 @@ draft: false
 tags:
   - algebra
   - polynomial
-  - Year 10A
-  - Maths Methods
+  - AC Year 10A
+  - AC Methods
 
 menu:
   math1-numbers:

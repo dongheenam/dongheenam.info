@@ -15,6 +15,7 @@ tags:
   - linear function
   - piecewise function
   - floor function
+  - AC General
 
 menu:
   math1-func:

@@ -14,7 +14,7 @@ draft: false
 tags:
   - inequality
   - algebra
-  - Year 10
+  - AC Year 10
 
 menu:
   math1-numbers:

@@ -17,7 +17,7 @@ tags:
   - index notation
   - index law
   - distributive law
-  - Year 10
+  - AC Year 10
 
 menu:
   math1-numbers:

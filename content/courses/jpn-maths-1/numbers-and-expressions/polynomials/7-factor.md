@@ -16,7 +16,7 @@ tags:
   - polynomial
   - factorisation
   - distributive law
-  - Year 10
+  - AC Year 10
 
 menu:
   math1-numbers:

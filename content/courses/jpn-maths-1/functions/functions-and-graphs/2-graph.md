@@ -16,6 +16,8 @@ tags:
   - linear function
   - domain
   - range
+  - AC Methods
+  
 
 menu:
   math1-func:

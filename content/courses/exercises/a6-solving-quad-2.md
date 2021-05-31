@@ -14,7 +14,7 @@ nerdamer: true
 tags:
   - algebra
   - polynomial
-  - Year 10A
+  - AC Year 10A
 
 menu:
   exc:

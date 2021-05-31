@@ -15,9 +15,9 @@ tags:
   - algebra
   - polynomial
   - polynomial identity
-  - Year 8
-  - Year 9
-  - Year 10
+  - AC Year 8
+  - AC Year 9
+  - AC Year 10
 
 menu:
   math1-numbers:

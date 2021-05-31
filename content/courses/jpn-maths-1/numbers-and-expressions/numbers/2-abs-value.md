@@ -14,8 +14,8 @@ draft: false
 tags:
   - number line
   - absolute value
-  - Year 7
-  - Specialist Maths
+  - AC Year 7
+  - AC Specialist
 
 menu:
   math1-numbers:
