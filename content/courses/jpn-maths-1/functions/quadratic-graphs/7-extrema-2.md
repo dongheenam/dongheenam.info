@@ -3,7 +3,7 @@ title: "Minima and Maxima of Quadratic Functions 2"
 slug: extrema-2
 description: "Finding the minima and maxima of quadratic functions in a general case."
 
-date: 2021-05-23 09:56:17.111 +1000
+date: 2021-06-05 20:19:12.169 +1000
 
 toc: true
 type: docs
@@ -142,8 +142,54 @@ Therefore, the minimum value of $f(x)$ is
 
 In this case, we will try moving the graph itself and see what happens!
 
-{{% mn 122 %}}Extremum points of $y = x^2 - 2ax + 3a$. Drag the vertex to change the value of $a$.{{% /mn %}}
-{{% desmos id="vd2" height="450px" options="{keypad: false, expressions: false}" %}}
+{{% box %}}
+
+{{% note Example %}} When $a$ is a constant and the domain of the function $f(x) = x^2 - 2ax + 3a$ is $0\le x \le 4,$ find:
+1. The minimum of $f$.
+2. The maximum of $f$.
+
+{{% note Solution %}} If we convert $f(x)$ to vertex form,
+\begin{align}
+  f(x) &= x^2 - 2ax + 3a \\\\
+  &= x^2 - 2ax + a^2 - a^2 + 3a \\\\
+  &= (x-a)^2 - a^2 + 3a.
+\end{align}
+Thus the vertex of $y=f(x)$ is $(a, -a^2+3a).$
+
+1. Because the graph is concave up, the vertex is the minimum point as long as it is included in the domain.
+
+$\tcirc{1} \quad $ When $a<0$, the vertex is left of the domain. $x=0$ is closer to the vertex than $x=4$, so the minimum is $f(0) = 3a.$
+
+$\tcirc{2} \quad$ When $0\le a \le 4$, the vertex is the minimum: $f(a) = -a^2 + 3a.$
+
+$\tcirc{3} \quad$ When $a>4$, the vertex is right of the domain. $x=4$ is closer to the vertex than $x=0$, so the minimum is $f(4) = 16 - 8a + 3a = 16 - 5a.$
+
+Therefore, the minimum of $f$ is
+\begin{cases}
+\textbf{when $\boldsymbol{a<0}$,} & \boldsymbol{ 3a } && \textbf{at $\boldsymbol{ x=0 }$} \\\\
+\textbf{when $\boldsymbol{0\le a \le 4}$,} & \boldsymbol{ -a^2+3a } && \textbf{at $\boldsymbol{ x=a }$} \\\\
+\textbf{when $\boldsymbol{a>4}$,} & \boldsymbol{ 16-5a } && \textbf{at $\boldsymbol{ x=4 }$}
+\end{cases}
+
+2. The maximum occurs the farthest point from the vertex. We can think of the following possibilities.
+
+$\tcirc{1} \quad $ When $a<2$, $x=4$ is farther away from $x=0$. The maximum is $f(4) = 16-5a.$
+
+$\tcirc{2} \quad$ When $a=2$, both $x=0$ and $x=4$ are the farthest from the vertex. The maximum is $f(0) = f(4) = 6.$
+
+$\tcirc{3} \quad$ When $a>2$, $x=0$ is farther away from $x=4$. The maximum is $f(0) = 3a.$
+
+Therefore, the maximum of $f$ is
+\begin{cases}
+\textbf{when $\boldsymbol{a<2}$,} & \boldsymbol{ 16-5a } && \textbf{at $\boldsymbol{ x=4 }$} \\\\
+\textbf{when $\boldsymbol{a=2}$,} & \boldsymbol{ 6 } && \textbf{at $\boldsymbol{ x=0,~2 }$} \\\\
+\textbf{when $\boldsymbol{a>2}$,} & \boldsymbol{ 3a } && \textbf{at $\boldsymbol{ x=0 }$}
+\end{cases}
+
+Below is the visualisation of $y=f(x).$ Note how the maximum and minimum points change depending on the value of $a$!
+
+{{% mn 191 %}}Extremum points of $y = x^2 - 2ax + 3a$. Drag the vertex to change the value of $a$.{{% /mn %}}
+{{% desmos id="vd2" style="height: 450px; margin-bottom: 0.5rem" options="{keypad: false, expressions: false}" %}}
 <script>
   calc_vd2.setMathBounds({
     left: -3,
@@ -187,6 +233,9 @@ In this case, we will try moving the graph itself and see what happens!
     }
   }
 </script>
+
+{{% /box %}}
+
 
 ## Practice Questions
 
@@ -289,3 +338,94 @@ Therefore, the minimum of $y = -2x^2 + 6x + 1$ is
 
 {{% /details %}}
 
+3. Suppose $a$ is a constant. For the function $y = x^2 + 2(a-1)x,$ with domain $-1 \le x \le 1,$ find:
+    1. the maximum
+    2. the minimum
+
+{{% details title="Answer" %}}
+
+{{% note Solution %}} Let $f(x) = x^2 + 2(a-1)x.$ We can find the vertex of the graph by completing the square:
+\begin{align}
+  f(x) &= \\{ x + (a-1) \\}^2 - (a-1)^2. 
+\end{align}
+The vertex is $( -(a-1), -(a-1)^2).$
+
+$\hspace{0.5em} \text{a.} \quad$ Because the graph is concave up, the point farthest from the axis of symmetry $(x=a-1)$ becomes the maximum. Note there are three possibilities:
+
+$\tcirc{1} \quad$ When $-(a-1) < 0$, or $a>1$, $x=1$ is the farthest point from the axis of symmetry. Hence the maximum is $f(1) = 1 + 2(a-1) = 2a - 1.$
+
+$\tcirc{2} \quad$ When $-(a-1) = 0$, or $a=1$, both $x=-1$ and $x=1$ become the farthest points. Hence the maximum is $f(1)=f(-1) = 1.$
+
+$\tcirc{3} \quad$ When $-(a-1) > 0$, or $a < 1$, $x=-1$ is the farthest point. Hence the maximum is $f(-1) = 1 - 2(a-1) = -2a + 3.$
+
+Therefore, the maximum of $y=f(x)$ is
+
+\begin{cases}
+\textbf{when $\boldsymbol{a>1}$,} & \boldsymbol{ 2a - 1 } && \textbf{at $\boldsymbol{ x=1 }$} \\\\
+\textbf{when $\boldsymbol{a=1}$,} & \boldsymbol{ 1 } && \textbf{at $\boldsymbol{ x=-1,~1 }$} \\\\
+\textbf{when $\boldsymbol{a<1}$,} & \boldsymbol{ -2a + 3 } && \textbf{at $\boldsymbol{ x=-1 }$}
+\end{cases}
+
+$\hspace{0.5em} \text{b.} \quad$ Because the graph is concave up, the point closest to the vertex, or the vertex itself, is the minimum.
+
+$\tcirc{1} \quad$ When $-(a-1) < -1$, or $a > 2$, $x=-1$ is the closest point to the vertex. Hence the minimum is $f(-1) = -2a + 3.$
+
+$\tcirc{2} \quad$ When $-1 \le -(a-1) \le 1$, or $0 \le a \le 2$, the vertex is the minimum.
+
+$\tcirc{3} \quad$ When $-(a-1) > 1$, or $a < 0$, $x=1$ is the closest point to the vertex. Hence the minimum is $f(1) = 2a - 1.$
+
+Therefore, the minimum of $y=f(x)$ is
+
+\begin{cases}
+\textbf{when $\boldsymbol{a>2}$,} & \boldsymbol{ -2a + 3 } && \textbf{at $\boldsymbol{ x=-1 }$} \\\\
+\textbf{when $\boldsymbol{0\le a \le 2}$,} & \boldsymbol{ -(a-1)^2 } && \textbf{at $\boldsymbol{ x=a }$} \\\\
+\textbf{when $\boldsymbol{a<0}$,} & \boldsymbol{ 2a - 1 } && \textbf{at $\boldsymbol{ x=1 }$}
+\end{cases}
+
+{{% mn q3 %}}Extremum points of $y = x^2 + 2(a-1)x$. Drag the vertex to change the value of $a$.{{% /mn %}}
+{{% desmos id="q3" style="height: 450px; margin-bottom: 0.5rem" options="{keypad: false, expressions: false}" %}}
+<script>
+  calc_q3.setMathBounds({
+    left: -5,
+    right: 5,
+    bottom: -4.5,
+    top: 5.5
+  });
+  calc_q3.setExpressions([
+    { id: 'slider', latex: 'a=1.5', sliderBounds: {min:-1, max: 3, step: 0.1} },
+    { id: 'dom', latex: "-1 \\le x \\le 1",  color: "blue", lineWidth: 2, lineOpacity: 0.5, fillOpacity: 0.1},
+    { id: 'f', latex: "y=x^2 + 2(a-1)x", color: "black", lineStyle: Desmos.Styles.DASHED},
+    { id: 'f2', latex: "y=x^2 + 2(a-1)x \\{ -1 \\le x \\le 1 \\}", color: "black", lineWidth: 3.5},
+    { id: 'ver', latex: "(-a+1, -(a-1)^2)", color: 'black', showLabel: true, label:"a-1 = 0.5", labelSize: Desmos.LabelSizes.LARGE},
+    { id: 'min', latex: minLocQ3(3), color: 'green', pointSize: 15, showLabel: true, label:"Min", labelSize: Desmos.LabelSizes.LARGE },
+    { id: 'max', latex: maxLocQ3(3), color: 'red', pointSize: 15, showLabel: true, label:"Max", labelSize: Desmos.LabelSizes.LARGE }
+  ]);
+  let q3_slider = calc_q3.HelperExpression({ latex: 'a' });
+  q3_slider.observe('numericValue', function() {
+      calc_q3.setExpressions([
+        {id: 'min', latex: minLocQ3(q3_slider.numericValue)},
+        {id: 'max', latex: maxLocQ3(q3_slider.numericValue)},
+        {id: 'ver', label: `-(a-1) = ${(-q3_slider.numericValue+1).toFixed(1)}`}
+      ]);
+    });
+  function minLocQ3(a) {
+    if (a > 2) {
+      return `(-1, ${-2*a+3})`;
+    } else if (a >= 0) {
+      return `(${-a+1}, ${-1*(a-1)**2})`;
+    } else {
+      return`(1, ${2*a-1})`;
+    }
+  }
+  function maxLocQ3(a) {
+    if (a > 1) {
+      return  `(1, ${2*a-1})`;
+    } else if (a == 1) {
+      return "(-1,1), (1,1)";
+    } else {
+      return`(-1, ${-2*a+3})`;
+    }
+  }
+</script>
+
+{{% /details %}}

@@ -180,7 +180,7 @@ Another cool features is the draggable point. Instead of using the sliders, one 
     { label: "slider-c", latex: "q = -1" },
     { label: "xcept-1", latex: "(p, 0)", color: calc_ex3.colors.BLUE },
     { label: "xcept-2", latex: "(q, 0)", color: calc_ex3.colors.BLUE },
-    { label: "dilation", latex: "(0, 2a)", color: calc_ex3.colors.RED }
+    { label: "dilation", latex: "(0, pqa)", color: calc_ex3.colors.RED }
   ]);
 </script>
 ```
@@ -196,7 +196,7 @@ Note the `{expressions: false}` option to remove the expressions panel, so the s
     { label: "slider-c", latex: "q = -1" },
     { label: "xcept-1", latex: "(p, 0)", color: calc_ex3.colors.BLUE },
     { label: "xcept-2", latex: "(q, 0)", color: calc_ex3.colors.BLUE },
-    { label: "dilation", latex: "(0, 2a)", color: calc_ex3.colors.RED }
+    { label: "dilation", latex: "(0, pqa)", color: calc_ex3.colors.RED }
   ]);
 </script>
 
