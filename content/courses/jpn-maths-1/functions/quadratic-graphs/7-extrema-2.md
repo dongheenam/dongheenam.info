@@ -9,7 +9,7 @@ toc: true
 type: docs
 math: true
 desmos: true
-draft: true
+draft: false
 
 tags:   
   - function
