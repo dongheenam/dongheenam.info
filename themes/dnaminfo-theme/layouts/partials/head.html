@@ -7,6 +7,10 @@
     <meta name="description" content="{{if .IsHome }}{{ $.Site.Params.description }}{{ else }}{{ .Description }}{{ end }}" />
     <meta name="theme-color" content="#111111" />
 
+    {{- if .Params.noindex -}}
+    <meta name="robots" content="noindex">
+    {{- end -}}
+
     {{/* Google Fonts */}}
     {{- $gfonts_href := "https://fonts.googleapis.com/css2?family=Inconsolata:wght@500;700&family=Exo:wght@600;800&display=swap" -}}
     <link rel="preconnect" href="https://fonts.gstatic.com">

@@ -3,6 +3,7 @@ title: Teaching Portfolio
 
 date: 2020-04-28
 lastmod: 2020-12-03 21:35:09.703 +1100
+noindex: True
 ---
 
 Here I present you the collection of my teaching practice, which I submitted to [AITSL](https://www.aitsl.edu.au/).

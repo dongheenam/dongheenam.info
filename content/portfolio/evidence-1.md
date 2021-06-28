@@ -7,7 +7,7 @@ lastMod: 2020-12-04 15:35:26.766 +1100
 
 toc: true
 draft: false
-
+noindex: True
 ---
 
 The teaching program, activities, and assessments developed for the [Digital Technologies subject](https://k10outline.scsa.wa.edu.au/home/teaching/curriculum-browser/technologies/digital-technologies2) of the WA curriculum.
