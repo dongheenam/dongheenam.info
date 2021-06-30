@@ -3,13 +3,13 @@ title: "Determining Functions from Minima and Maxima"
 slug: determining-from-extrema
 description: "Finding the coefficients of quadratic functions from their extrema."
 
-date: 2021-06-20 12:15:12.299 +1000
+date: 2021-06-30 21:43:30.561 +1000
 
 toc: true
 type: docs
 math: true
 desmos: true
-draft: true
+draft: false
 
 tags:
   - function
@@ -26,7 +26,7 @@ weight: 34
 ---
 
 ## Introduction
-
+ 
 We have been doing exercises to find the minimum and maximum from a quadratic functions, including some general cases where the coefficients are functions of another variable. In this lesson, we will flip the process and determine the coefficients of a quadratic function with given minimum and/or maximum.
 
 ## Determining the Coefficients
