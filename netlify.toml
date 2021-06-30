@@ -2,9 +2,14 @@
     publish = "public"
     command = "hugo --gc --minify --templateMetrics"
 
-[[plugins]]
-    package = "netlify-plugin-hugo-cache-resources"
-
 [context.production.environment]
     HUGO_VERSION = "0.81.0"
     HUGO_ENABLEGITINFO = "true"
+
+[[plugins]]
+    package = "netlify-plugin-hugo-cache-resources"
+
+[[headers]]
+    for = "/portfolio/*"
+    [headers.values]
+        X-Robots-Tag = "noindex"
