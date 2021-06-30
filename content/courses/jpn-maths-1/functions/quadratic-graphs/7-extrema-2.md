@@ -11,7 +11,7 @@ math: true
 desmos: true
 draft: false
 
-tags:   
+tags:
   - function
   - quadratic function
   - minimum and maximum
@@ -68,6 +68,7 @@ the graph of $y=f(x)$ is as below.
       ]);
     });
 </script>
+
 
 Because $x=2$ is the axis of symmetry, $f(0) = f(4) = 1$. We can think of four possible scenarios:
 

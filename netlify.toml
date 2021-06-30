@@ -3,7 +3,7 @@
     command = "hugo --gc --minify --templateMetrics"
 
 [context.production.environment]
-    HUGO_VERSION = "0.81.0"
+    HUGO_VERSION = "0.84.3"
     HUGO_ENABLEGITINFO = "true"
 
 [[plugins]]
