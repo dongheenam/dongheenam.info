@@ -1,6 +1,6 @@
 [build]
     publish = "public"
-    command = "hugo --gc --minify --templateMetrics --baseURL=https://dongheenam.netlify.app/"
+    command = "hugo --gc --minify --templateMetrics"
 
 [[plugins]]
     package = "netlify-plugin-hugo-cache-resources"
