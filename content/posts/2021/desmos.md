@@ -168,7 +168,7 @@ Result:
   ]);
 </script>
 
-Another cool features is the draggable point. Instead of using the sliders, one can directly move the points in the plot to change the values of the variables. Have a look at the example below.
+Another cool feature is draggable points. Instead of using the sliders, one can directly move the points in the plot to change the values of the variables. Have a look at the example below.
 
 ```html
 {{% print "{{% desmos id=\"ex3\" options=\"{keypad: false, expressions: false}\" %}}" %}}
@@ -225,7 +225,7 @@ You can access the value of the variable with the `numericValue` property, and t
 </script>
 ```
 
-You can confirm when you change the value of $a$, the content of the following sentence also changes: the value of a is <span id="display-a"></span>.
+When you change $a$, the following sentence also changes: a is equal to <span id="display-a"></span>.
 
 {{% desmos id="ex4" style="height: 200px" options="{keypad: false}" %}}
 <script>
@@ -257,10 +257,10 @@ The code below shows the minimum and maximum points of $ y = x^2-2ax+3a $ with d
   // draw the expressions
   calc_ext.setExpressions([
     { id: 'slider', latex: 'a=3', sliderBounds: {min:-1, max: 5, step: 0.1} },
-    { id: 'dom', latex: "0 \\le x \\le 4",  color: "blue", lineWidth: 2, lineOpacity: 0.5, fillOpacity: 0.1},
+    { id: 'domain', latex: "0 \\le x \\le 4",  color: "blue", lineWidth: 2, lineOpacity: 0.5, fillOpacity: 0.1},
     { id: 'f', latex: "y=x^2-2ax+3a", color: "black"},
-    { id: 'f2', latex: "y=x^2-2ax+3a \\{ 0 \\le x \\le 4 \\}", color: "black", lineWidth: 3.5},
-    { id: 'ver', latex: "(a, -a^2+3a)", color: 'black', showLabel: true, label: "a = 3"},
+    { id: 'f-active', latex: "y=x^2-2ax+3a \\{ 0 \\le x \\le 4 \\}", color: "black", lineWidth: 4},
+    { id: 'vertex', latex: "(a, -a^2+3a)", color: 'black', showLabel: true, label: "a = 3"},
     { id: 'min', latex: minLoc(3), color: 'green', showLabel: true, label: "Min"},
     { id: 'max', latex: maxLoc(3), color: 'red', showLabel: true, label: "Max"}
   ]);
@@ -268,12 +268,12 @@ The code below shows the minimum and maximum points of $ y = x^2-2ax+3a $ with d
   const slider = calc_ext.HelperExpression({ latex: 'a' });
   // update the locations of the extrema when a changes
   slider.observe('numericValue', function() {
-      calc_ext.setExpressions([
-        {id: 'min', latex: minLoc(slider.numericValue)},
-        {id: 'max', latex: maxLoc(slider.numericValue)},
-        {id: 'ver', label: `a = ${slider.numericValue}`}
-      ]);
-    });
+    calc_ext.setExpressions([
+      {id: 'min', latex: minLoc(slider.numericValue)},
+      {id: 'max', latex: maxLoc(slider.numericValue)},
+      {id: 'vertex', label: `a = ${slider.numericValue}`}
+    ]);
+  });
   // returns the coordinates of the minimum based on a
   function minLoc(a) {
     if (a < 0) {
@@ -281,7 +281,7 @@ The code below shows the minimum and maximum points of $ y = x^2-2ax+3a $ with d
     } else if (a <= 4) {
       return `(${a}, ${-(a**2) + 3*a})`;
     } else {
-      return`(4, ${16-5*a})`;
+      return `(4, ${16-5*a})`;
     }
   }
   // returns the coordinates of the maximum based on a
@@ -291,7 +291,7 @@ The code below shows the minimum and maximum points of $ y = x^2-2ax+3a $ with d
     } else if (a == 2) {
       return "(0,6), (4,6)";
     } else {
-      return`(0, ${3*a})`;
+      return `(0, ${3*a})`;
     }
   }
 </script>
@@ -311,23 +311,23 @@ Below is the code.
   // draw the expressions
   calc_ext.setExpressions([
     { id: 'slider', latex: 'a=3', sliderBounds: {min:-1, max: 5, step: 0.1} },
-    { id: 'dom', latex: "0 \\le x \\le 4",  color: "blue", lineWidth: 2, lineOpacity: 0.5, fillOpacity: 0.1},
+    { id: 'domain', latex: "0 \\le x \\le 4",  color: "blue", lineWidth: 2, lineOpacity: 0.5, fillOpacity: 0.1},
     { id: 'f', latex: "y=x^2-2ax+3a", color: "black"},
-    { id: 'f2', latex: "y=x^2-2ax+3a \\{ 0 \\le x \\le 4 \\}", color: "black", lineWidth: 3.5},
-    { id: 'ver', latex: "(a, -a^2+3a)", color: 'black', showLabel: true, label:"a = 3"},
-    { id: 'min', latex: minLoc(3), color: 'green', showLabel: true, label:"Min"},
-    { id: 'max', latex: maxLoc(3), color: 'red', showLabel: true, label:"Max"}
+    { id: 'f-active', latex: "y=x^2-2ax+3a \\{ 0 \\le x \\le 4 \\}", color: "black", lineWidth: 4},
+    { id: 'vertex', latex: "(a, -a^2+3a)", color: 'black', showLabel: true, label: "a = 3"},
+    { id: 'min', latex: minLoc(3), color: 'green', showLabel: true, label: "Min"},
+    { id: 'max', latex: maxLoc(3), color: 'red', showLabel: true, label: "Max"}
   ]);
   // add a HelperExpression for a
   const slider = calc_ext.HelperExpression({ latex: 'a' });
   // update the locations of the extrema when a changes
   slider.observe('numericValue', function() {
-      calc_ext.setExpressions([
-        {id: 'min', latex: minLoc(slider.numericValue)},
-        {id: 'max', latex: maxLoc(slider.numericValue)},
-        {id: 'ver', label: `a = ${slider.numericValue}`}
-      ]);
-    });
+    calc_ext.setExpressions([
+      {id: 'min', latex: minLoc(slider.numericValue)},
+      {id: 'max', latex: maxLoc(slider.numericValue)},
+      {id: 'vertex', label: `a = ${slider.numericValue}`}
+    ]);
+  });
   // returns the coordinates of the minimum based on a
   function minLoc(a) {
     if (a < 0) {
@@ -335,7 +335,7 @@ Below is the code.
     } else if (a <= 4) {
       return `(${a}, ${-(a**2) + 3*a})`;
     } else {
-      return`(4, ${16-5*a})`;
+      return `(4, ${16-5*a})`;
     }
   }
   // returns the coordinates of the maximum based on a
@@ -345,7 +345,7 @@ Below is the code.
     } else if (a == 2) {
       return "(0,6), (4,6)";
     } else {
-      return`(0, ${3*a})`;
+      return `(0, ${3*a})`;
     }
   }
 </script>
