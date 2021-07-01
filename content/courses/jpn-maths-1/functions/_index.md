@@ -48,7 +48,7 @@ weight: 13
 - Minimum and maximum points
     - [Minima and Maxima of Quadratic Functions 1](quadratic-graphs/extrema-1)
     - [Minima and Maxima of Quadratic Functions 2](quadratic-graphs/extrema-2)
-    - Minima and Maxima as a Function 18
+    - [Minima and Maxima as Functions](quadratic-graphs/extrema-as-functions)
     - Optimisation Problems 19
     - Functions of Two Variables 20
     - Biquadratic Functions 21

@@ -274,7 +274,7 @@ The code below shows the minimum and maximum points of $ y = x^2-2ax+3a $ with d
       {id: 'vertex', label: `a = ${slider.numericValue}`}
     ]);
   });
-  // returns the coordinates of the minimum based on a
+  // return the coordinates of the minimum based on a
   function minLoc(a) {
     if (a < 0) {
       return `(0, ${3*a})`;
@@ -284,7 +284,7 @@ The code below shows the minimum and maximum points of $ y = x^2-2ax+3a $ with d
       return `(4, ${16-5*a})`;
     }
   }
-  // returns the coordinates of the maximum based on a
+  // return the coordinates of the maximum based on a
   function maxLoc(a) {
     if (a < 2) {
       return  `(4, ${16-5*a})`;
@@ -328,7 +328,7 @@ Below is the code.
       {id: 'vertex', label: `a = ${slider.numericValue}`}
     ]);
   });
-  // returns the coordinates of the minimum based on a
+  // return the coordinates of the minimum based on a
   function minLoc(a) {
     if (a < 0) {
       return `(0, ${3*a})`;
@@ -338,7 +338,7 @@ Below is the code.
       return `(4, ${16-5*a})`;
     }
   }
-  // returns the coordinates of the maximum based on a
+  // return the coordinates of the maximum based on a
   function maxLoc(a) {
     if (a < 2) {
       return  `(4, ${16-5*a})`;
@@ -350,3 +350,139 @@ Below is the code.
   }
 </script>
 ```
+
+### Tracing the points
+
+Desmos does have a "trace" feature, but turning it on enables users to inspect the individual points of a curve. This is quite the opposite behaviour of what one would expect, i.e., [showing the trace](https://wiki.geogebra.org/en/Tracing) of a dynamically moving points. One simple solution to this problem is to continually add the points to the plot whenever the point moves. 
+
+The snippet below shows the trace of points on a half-circle $y = \sqrt{5^2 - x^2}.$
+
+{{% desmos id="tr" style="height: 450px; margin-bottom: 0.5rem" options="{keypad: false}" %}}
+<script>
+  // returns the coordinates of the point on the circle with radius 5
+  function return_coords(a) {
+    return `(${a}, ${Math.sqrt(5**2 - a**2)})`;
+  }
+  // define a variable for the coordinates
+  let coords = return_coords(0);
+  // add a slider and a point
+  calc_tr.setExpressions([
+    { id: 'x-coord', latex: 'a=0', sliderBounds: {min:-5, max: 5, step: 0.25} },
+    { id: 'point', latex: coords, color: calc_tr.colors.RED,
+      pointOpacity: 0.3, secret: true }
+  ]);
+  // initialise HelperExpression for a
+  const slider_tr = calc_tr.HelperExpression({ latex: 'a' });
+  slider_tr.observe('numericValue', function() {
+    // when the value of a changes, plot another point 
+    coords = return_coords(slider_tr.numericValue);
+    calc_tr.setExpression(
+      { latex: coords, color: calc_tr.colors.RED, pointOpacity: 0.3, secret: true }
+    );
+  });
+</script>
+
+This is the code. Note that we do not specify the `id` when we call `setExpression()` function to update the points. This makes Desmos to add a point every time it is executed, instead of amending a single point.
+
+```html
+{{% print "{{% desmos id=\"tr\" options=\"{keypad: false}\" %}}" %}}
+<script>
+  // returns the coordinates of the point on the circle with radius 5
+  function return_coords(a) {
+    return `(${a}, ${Math.sqrt(5**2 - a**2)})`;
+  }
+  // define a variable for the coordinates
+  let coords = return_coords(0);
+  // add a slider and a point
+  calc_tr.setExpressions([
+    { id: 'x-coord', latex: 'a=0', sliderBounds: {min:-5, max: 5, step: 0.25} },
+    { id: 'point', latex: coords, color: calc_tr.colors.RED,
+      pointOpacity: 0.3, secret: true }
+  ]);
+  // initialise HelperExpression for a
+  const slider_tr = calc_tr.HelperExpression({ latex: 'a' });
+  slider_tr.observe('numericValue', function() {
+    // when the value of a changes, plot another point 
+    coords = return_coords(slider_tr.numericValue);
+    calc_tr.setExpression(
+      { latex: coords, color: calc_tr.colors.RED, pointOpacity: 0.3, secret: true }
+    );
+  });
+</script>
+```
+
+<br>
+
+Below is an alternative approach that manages an array of previous coordinates of the moving points. Note that Desmos redraws *every* trace point when updating the traces in this approach, so it is important to introduce an upper limit to the length of the array.
+
+```html
+{{% print "{{% desmos id=\"tr2\" options=\"{keypad: false}\" %}}" %}}
+<script>
+  // returns the coordinates of the point on the circle with radius 5
+  function return_coords2(a) {
+    return `(${a}, ${Math.sqrt(5**2 - a**2)})`;
+  }
+  // define a variable for the coordinates
+  // and an array to store the past coordinates
+  let coords2 = return_coords2(0);
+  let traces = [coords2];
+  // add a slider, a point, and traces of the point to the graph
+  calc_tr2.setExpressions([
+    { id: 'x-coord', latex: 'a=0', sliderBounds: {min:-5, max: 5, step: 0.25} },
+    { id: 'point', latex: coords2, color: calc_tr.colors.RED },
+    { id: 'traces', latex: traces.join(), color: calc_tr.colors.RED, pointOpacity: 0.3, secret: true }
+  ]);
+  // initialise HelperExpression for a
+  const slider_tr2 = calc_tr2.HelperExpression({ latex: 'a' });
+  slider_tr2.observe('numericValue', function() {
+    // when the value of a changes
+    // update the traces array
+    coords2 = return_coords2(slider_tr2.numericValue);
+    traces.push(coords2);
+    if (traces.length > 100 ) {
+      // if there are too many points in the array already, truncate it
+      traces.shift();
+    }
+    // update the graphs
+    calc_tr2.setExpressions([
+      { id: 'point', latex: coords2 },
+      { id: 'traces', latex: traces.join() }
+    ]);
+  });
+</script>
+```
+
+{{% desmos id="tr2" style="height: 450px; margin-bottom: 0.5rem" options="{keypad: false}" %}}
+<script>
+  // returns the coordinates of the point on the circle with radius 5
+  function return_coords2(a) {
+    return `(${a}, ${Math.sqrt(5**2 - a**2)})`;
+  }
+  // define a variable for the coordinates
+  // and an array to store the past coordinates
+  let coords2 = return_coords2(0);
+  let traces = [coords2];
+  // add a slider, a point, and traces of the point to the graph
+  calc_tr2.setExpressions([
+    { id: 'x-coord', latex: 'a=0', sliderBounds: {min:-5, max: 5, step: 0.25} },
+    { id: 'point', latex: coords2, color: calc_tr.colors.RED },
+    { id: 'traces', latex: traces.join(), color: calc_tr.colors.RED, pointOpacity: 0.3, secret: true }
+  ]);
+  // initialise HelperExpression for a
+  const slider_tr2 = calc_tr2.HelperExpression({ latex: 'a' });
+  slider_tr2.observe('numericValue', function() {
+    // when the value of a changes
+    // update the traces array
+    coords2 = return_coords2(slider_tr2.numericValue);
+    traces.push(coords2);
+    if (traces.length > 100 ) {
+      // if there are too many points in the array already, truncate it
+      traces.shift();
+    }
+    // update the graphs
+    calc_tr2.setExpressions([
+      { id: 'point', latex: coords2 },
+      { id: 'traces', latex: traces.join() }
+    ]);
+  });
+</script>
