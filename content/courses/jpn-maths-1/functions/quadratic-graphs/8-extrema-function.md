@@ -3,13 +3,13 @@ title: "Minima and Maxima as Functions"
 slug: extrema-as-functions
 description: "Treating the maximum or minimum values as functions and solving problems."
 
-date: 2021-06-30 21:48:52.274 +1000
+date: 2021-07-01 14:07:22.667 +1000
 
 toc: true
 type: docs
 math: true
 desmos: true
-draft: true
+draft: false
 
 tags:
   - function
@@ -120,7 +120,7 @@ The vertex is $(1,1),$ so the maximum is $\boldsymbol{ 1 }$ at $\boldsymbol{ a=1
 
 1. $-5$ at $-1 \le a \le 3$
 
-{{% note Solution %}} Because
+{{% note Solution %}} From
 \begin{align}
   f(x) &= x^2 - 6x + 9 - 9 + 4 \\\\
   &= (x-3)^2 - 5,

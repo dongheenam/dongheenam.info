@@ -8,7 +8,7 @@
     <section class="section-pages{{ if eq .Type "posts" }} section-pages-post{{ end }}">
     {{- range (.Paginate .Pages 10).Pages -}}
         <h2>
-            {{- if eq .Type "posts" -}}<p class="date">{{ .Date.Format "2 Jan 2006" }}</p>{{- end -}}
+            {{- if eq .Type "posts" -}}<div class="date">{{ .Date.Format "2 Jan 2006" }}</div>{{- end -}}
             <a href="{{ .RelPermalink }}">{{ .Name }}</a>
         </h2>
         {{ with .Description }}<p class="subtitle">{{ . }}</p>{{ end }}

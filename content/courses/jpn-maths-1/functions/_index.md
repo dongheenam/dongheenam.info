@@ -49,7 +49,7 @@ weight: 13
     - [Minima and Maxima of Quadratic Functions 1](quadratic-graphs/extrema-1)
     - [Minima and Maxima of Quadratic Functions 2](quadratic-graphs/extrema-2)
     - [Minima and Maxima as Functions](quadratic-graphs/extrema-as-functions)
-    - Optimisation Problems 19
+    - [Optimisation Problems](quadratic-graphs/optimisations)
     - Functions of Two Variables 20
     - Biquadratic Functions 21
 - Determining quadratic functions
@@ -80,7 +80,7 @@ weight: 13
 | ├ Reflections of Quadratics | 10A | Met1 |
 | ├ Extrema of Quadratics |  | Met1 |
 | ├ Extrema as Functions |  |  |
-| ├ Optimisation |  |  |
+| ├ Optimisation |  | Met1 |
 | ├ Two-Variable Functions |  |  |
 | ├ Biquartic Functions |  |  |
 | ├ Determining the Vertex Form |  |  |

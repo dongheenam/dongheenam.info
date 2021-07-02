@@ -5,10 +5,11 @@
     {{ .Content }}
     {{- $requires_section := .Page.Params.section | default "true" -}}
     {{ if $requires_section }}
-    <section class="section-pages">
+    <section class="section-pages section-pages-post">
     {{- range (.Paginate .Pages.ByDate.Reverse 10).Pages -}}
         <h2>
-            ({{ .Type }}) <a href="{{ .RelPermalink }}">{{ .Name }}</a>
+            <div class="date">({{ .Section }})</div>
+            <a href="{{ .RelPermalink }}">{{ .Name }}</a>
         </h2>
         {{ with .Description }}<p class="subtitle">{{ . }}</p>{{ end }}
     {{- end -}}

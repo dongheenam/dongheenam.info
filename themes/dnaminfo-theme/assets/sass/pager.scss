@@ -76,6 +76,7 @@
   }
   .key {
     @extend h3;
+    text-decoration: none !important;
     margin: 0 !important;
   }
 }

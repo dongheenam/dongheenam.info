@@ -29,3 +29,13 @@ ignoreFiles = [ "\\.tex$" ]
       xhtml = false
   [markup.highlight]
     codeFences = false  # Disable Hugo's code highlighter
+
+# Algolia indexing
+[outputs]
+home = ["HTML","Algolia"]
+
+[outputFormats.Algolia]
+  mediaType = "application/json"
+  baseName = "algolia"
+  isPlainText = true
+  notAlternative = true

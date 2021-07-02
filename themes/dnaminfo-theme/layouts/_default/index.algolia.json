@@ -1,0 +1,12 @@
+{{- $index := slice -}}
+{{- range $page := $.Site.RegularPages -}}
+    {{- $page_info := dict "objectID" .File.UniqueID -}}
+    {{- $page_info = merge $page_info (dict "title" .Title) }}
+    {{- $page_info = merge $page_info (dict "date" .Date) }} 
+    {{- $page_info = merge $page_info (dict "href" .Permalink) }} 
+    {{- $page_info = merge $page_info (dict "section" .Section) }}
+    {{- $page_info = merge $page_info (dict "description" .Description) }} 
+    {{- $page_info = merge $page_info (dict "tags" .Params.tags) }}
+    {{- $index = $index | append $page_info -}}
+{{- end -}}
+{{- $index | jsonify -}}
