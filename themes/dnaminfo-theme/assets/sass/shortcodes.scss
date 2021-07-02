@@ -21,7 +21,7 @@
 .box {
   border: 1.5px solid var(--hr-color);
   padding: 1rem 0.5rem 0 0.5rem;
-  @include set-tufte-width;
+  width: var(--p-width);
 
   p,
   hr,

@@ -23,15 +23,6 @@ html {
     --mainnav-background: #111;
     --mainnav-text: #fffff8;
     --mainnav-logo: #ff66b3;
-
-    --hljs-color: #4d4d4c;
-    --hljs-comment: #8e908c;
-    --hljs-name: #c82829;
-    --hljs-meta: #f5871f;
-    --hljs-attribute: #eab700;
-    --hljs-string: #718c00;
-    --hljs-title: #4271ae;
-    --hljs-keyword: #8959a8;
   }
 
   &.dark-theme {
@@ -45,15 +36,6 @@ html {
     --mainnav-background: #111;
     --mainnav-text: #fffff8;
     --mainnav-logo: #ff66b3;
-
-    --hljs-color: #4d4d4c;
-    --hljs-comment: #969896;
-    --hljs-name: #cc6666;
-    --hljs-meta: #de935f;
-    --hljs-attribute: #f0c674;
-    --hljs-string: #b5bd68;
-    --hljs-title: #81a2be;
-    --hljs-keyword: #b294bb;
 
     img {
       filter: brightness(0.8) contrast(1.2);

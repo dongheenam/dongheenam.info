@@ -265,7 +265,7 @@ Suppose we want to factorise $6x^2 + 5x - 4 $. The _cross-multiplication method_
 {{% details title="How does this work?" %}}
 The method helps you find the value of $ad+bc$ once you choose $a$, $b$, $c$, and $d$. Here is the visualisation of the cross-multiplication method.
 
-{{% figure class="fullwidth" src="courses/jpn-maths-1/numbers-and-expressions/poly-cross-mult.png" alt="why the cross-multiplication method works" %}}
+{{% figure class="fullwidth" src="courses/jpn-maths-1/numbers-and-expressions/poly-cross-mult.png" caption="Theory behind the cross-multiplication method works" %}}
 
 {{% /details %}}
 

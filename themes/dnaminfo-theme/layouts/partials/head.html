@@ -18,6 +18,9 @@
     <link rel="preload" as="style" href="{{ $gfonts_href }}">
     <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="{{ $gfonts_href }}">
     
+    {{/* Tufte Fonts */}}
+    {{- partial "preload" . -}}
+
     {{/* stylesheets */}}
     {{- $style_options := (dict "targetPath" "main.min.css" "outputStyle" "compressed" "enableSourceMap" true) -}}
     {{- $style := resources.Get "sass/main.scss" | resources.ToCSS $style_options -}}
@@ -31,21 +34,6 @@
 
     {{/* handle dark theme */}}
     {{ partial "dark-theme" . }}
-
-    {{/* load MathJax */}}
-    {{- if .Params.math -}}
-      {{ partial "mathjax" . }}
-    {{- end -}}
-
-    {{/* load nerdamer */}}
-    {{- if .Params.nerdamer -}}
-      {{ partial "nerdamer" . }}
-    {{- end -}}
-
-    {{/* load Desmos */}}
-    {{- if .Params.desmos -}}
-    <script src="https://www.desmos.com/api/v1.6/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
-    {{- end -}}
 
     {{/* Fabicon stuff - realfavicongenerator.net */}}
     {{- partial "fabicon" . -}}

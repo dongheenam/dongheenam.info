@@ -1,16 +1,22 @@
 {{- define "main" -}}
+{{- $style_options := (dict "targetPath" "section.min.css" "outputStyle" "compressed" "enableSourceMap" true) -}}
+{{- $pg_style := resources.Get "sass/section.scss" | resources.ToCSS $style_options -}}
+<link rel="stylesheet" href="{{ $pg_style.Permalink }}" />
+{{ partial "sidenav" . }}
 <article class="tufte-container">
     {{ partial "breadcrumb" . }}
     <h1>{{ .Title }}</h1>
     {{ .Content }}
     {{- $requires_section := .Page.Params.section | default "true" -}}
     {{ if $requires_section }}
-    <section class="section-pages{{ if eq .Type "posts" }} section-pages-post{{ end }}">
+    <section class="section-pages">
     {{- range (.Paginate .Pages 10).Pages -}}
+        {{ if eq .Type "posts" }}<div class="section-page-post">{{ end }}
         <h2>
             {{- if eq .Type "posts" -}}<div class="date">{{ .Date.Format "2 Jan 2006" }}</div>{{- end -}}
             <a href="{{ .RelPermalink }}">{{ .Name }}</a>
         </h2>
+        {{ if eq .Type "posts" }}</div>{{ end }}
         {{ with .Description }}<p class="subtitle">{{ . }}</p>{{ end }}
     {{- end -}}
     {{ template "_internal/pagination.html" . }}

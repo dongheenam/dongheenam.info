@@ -16,6 +16,9 @@
   {{ end }}
   {{- $pages_by_letters = merge $pages_by_letters (dict $first_letter $new_list) -}}
 {{ end }}
+{{- $style_options := (dict "targetPath" "section.min.css" "outputStyle" "compressed" "enableSourceMap" true) -}}
+{{- $pg_style := resources.Get "sass/section.scss" | resources.ToCSS $style_options -}}
+<link rel="stylesheet" href="{{ $pg_style.Permalink }}" />
 <article class="tufte-container">
     {{ partial "breadcrumb" . }}
     <h1 style="margin-bottom: 3rem">{{ .Title }}</h1>

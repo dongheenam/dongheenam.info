@@ -5,14 +5,13 @@
 
 @font-face {
   font-family: "et-book";
-  src: url("../fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot");
-  src: url("../fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot?#iefix")
+  src: url("../fonts/et-book/et-book-roman-line-figures.eot");
+  src: url("../fonts/et-book/et-book-roman-line-figures.eot?#iefix")
       format("embedded-opentype"),
-    url("../fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff")
-      format("woff"),
-    url("../fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf")
-      format("truetype"),
-    url("../fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.svg#etbookromanosf")
+    url("../fonts/et-book/et-book-roman-line-figures.woff2") format("woff2"),
+    url("../fonts/et-book/et-book-roman-line-figures.woff") format("woff"),
+    url("../fonts/et-book/et-book-roman-line-figures.ttf") format("truetype"),
+    url("../fonts/et-book/et-book-roman-line-figures.svg#etbookromanosf")
       format("svg");
   font-weight: normal;
   font-style: normal;
@@ -21,14 +20,16 @@
 
 @font-face {
   font-family: "et-book";
-  src: url("../fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot");
-  src: url("../fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot?#iefix")
+  src: url("../fonts/et-book/et-book-display-italic-old-style-figures.eot");
+  src: url("../fonts/et-book/et-book-display-italic-old-style-figures.eot?#iefix")
       format("embedded-opentype"),
-    url("../fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff")
+    url("../fonts/et-book/et-book-display-italic-old-style-figures.woff2")
+      format("woff2"),
+    url("../fonts/et-book/et-book-display-italic-old-style-figures.woff")
       format("woff"),
-    url("../fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.ttf")
+    url("../fonts/et-book/et-book-display-italic-old-style-figures.ttf")
       format("truetype"),
-    url("../fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.svg#etbookromanosf")
+    url("../fonts/et-book/et-book-display-italic-old-style-figures.svg#etbookromanosf")
       format("svg");
   font-weight: normal;
   font-style: italic;
@@ -37,14 +38,13 @@
 
 @font-face {
   font-family: "et-book";
-  src: url("../fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot");
-  src: url("../fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot?#iefix")
+  src: url("../fonts/et-book/et-book-bold-line-figures.eot");
+  src: url("../fonts/et-book/et-book-bold-line-figures.eot?#iefix")
       format("embedded-opentype"),
-    url("../fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff")
-      format("woff"),
-    url("../fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.ttf")
-      format("truetype"),
-    url("../fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.svg#etbookromanosf")
+    url("../fonts/et-book/et-book-bold-line-figures.woff2") format("woff2"),
+    url("../fonts/et-book/et-book-bold-line-figures.woff") format("woff"),
+    url("../fonts/et-book/et-book-bold-line-figures.ttf") format("truetype"),
+    url("../fonts/et-book/et-book-bold-line-figures.svg#etbookromanosf")
       format("svg");
   font-weight: bold;
   font-style: normal;
@@ -53,14 +53,15 @@
 
 @font-face {
   font-family: "et-book-roman-old-style";
-  src: url("../fonts/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot");
-  src: url("../fonts/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot?#iefix")
+  src: url("../fonts/et-book/et-book-roman-old-style-figures.eot");
+  src: url("../fonts/et-book/et-book-roman-old-style-figures.eot?#iefix")
       format("embedded-opentype"),
-    url("../fonts/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.woff")
-      format("woff"),
-    url("../fonts/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.ttf")
+    url("../fonts/et-book/et-book-roman-old-style-figures.woff2")
+      format("woff2"),
+    url("../fonts/et-book/et-book-roman-old-style-figures.woff") format("woff"),
+    url("../fonts/et-book/et-book-roman-old-style-figures.ttf")
       format("truetype"),
-    url("../fonts/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.svg#etbookromanosf")
+    url("../fonts/et-book/et-book-roman-old-style-figures.svg#etbookromanosf")
       format("svg");
   font-weight: normal;
   font-style: normal;
@@ -123,7 +124,7 @@
     display: block;
     clear: both;
     height: 1px;
-    width: $ldesktop-width;
+    width: var(--p-width);
     border: 0;
     border-top: 1px solid var(--hr-color);
     margin: 1em 0;
@@ -149,14 +150,14 @@
   p,
   footer,
   table {
-    width: $ldesktop-width;
+    width: var(--p-width);
   }
 
   dl,
   ol,
   ul {
     margin-bottom: 1.4rem;
-    width: $ldesktop-width;
+    width: var(--p-width);
     padding-left: 2rem;
     -webkit-padding-start: 2rem;
 
@@ -202,7 +203,7 @@
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    max-width: $ldesktop-width;
+    max-width: var(--p-width);
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
     margin: 0 0 3em 0;
@@ -217,7 +218,7 @@
     line-height: 1.6;
     vertical-align: baseline;
     position: relative;
-    max-width: $ldesktop-snwidth;
+    max-width: var(--sidenote-width);
   }
 
   img {
@@ -236,8 +237,10 @@
   .marginnote {
     float: right;
     clear: right;
-    margin-right: -($ldesktop-snwidth + 5rem);
-    width: $ldesktop-snwidth;
+    margin-right: calc(
+      (-1 * var(--sidenote-width)) + (-1 * var(--sidenote-margin))
+    );
+    width: var(--sidenote-width);
     margin-top: 0.3rem;
     margin-bottom: 1rem;
     font-size: 1.1rem;
@@ -273,7 +276,7 @@
 
   /* Fullwidth */
   figure.fullwidth {
-    max-width: $ldesktop-fullwidth;
+    max-width: var(--full-width);
     clear: both;
 
     display: flex;
@@ -286,7 +289,8 @@
   }
 
   .fullwidth {
-    width: $ldesktop-fullwidth;
+    width: var(--full-width);
+    clear: both;
   }
 
   /* Codes */
@@ -300,7 +304,7 @@
   }
 
   pre {
-    width: $ldesktop-width;
+    width: var(--p-width);
     overflow-x: auto;
     overflow-y: hidden;
 
@@ -433,79 +437,13 @@
   }
 }
 
-@media (max-width: $sdesktop) {
-  .tufte-container {
-    hr,
-    p,
-    footer,
-    table {
-      width: $sdesktop-width;
-    }
-
-    dl,
-    ol,
-    ul {
-      width: $sdesktop-width;
-
-      dl,
-      ol,
-      ul,
-      p {
-        width: 100%;
-      }
-    }
-
-    pre {
-      width: $sdesktop-width;
-
-      &:hover,
-      &:focus {
-        max-width: $sdesktop-fullwidth;
-      }
-    }
-
-    figure {
-      max-width: $sdesktop-width;
-    }
-
-    figcaption {
-      max-width: $sdesktop-snwidth;
-    }
-
-    .sidenote,
-    .marginnote {
-      margin-right: -($sdesktop-snwidth + 1rem);
-      width: $sdesktop-snwidth;
-    }
-
-    .fullwidth {
-      width: $sdesktop-fullwidth;
-      clear: both;
-
-      .marginnote {
-        margin-right: 1rem;
-      }
-    }
-  }
-}
-
 @media screen and (max-width: $lmobile) {
   .tufte-container {
-    width: 100%;
     padding: 1rem 8% 0 8%;
     margin: 0;
     margin-bottom: 5rem;
 
-    hr,
-    p,
-    footer,
-    table {
-      width: 100%;
-    }
-
     pre {
-      width: 100%;
-
       &:hover,
       &:focus {
         min-width: 100%;
@@ -519,18 +457,10 @@
       width: 90%;
     }
 
-    figure {
-      max-width: 100%;
-    }
-
     figcaption,
     figure.fullwidth figcaption {
       margin-right: 0%;
       max-width: none;
-    }
-
-    .fullwidth {
-      width: 100%;
     }
 
     figure.fullwidth {

@@ -1,5 +1,29 @@
 // highlight.js css setup
 // style "Tomorrow" for the light theme, "Tomorrow Night" for the dark theme
+html {
+  &.light-theme {
+    --hljs-color: #4d4d4c;
+    --hljs-comment: #8e908c;
+    --hljs-name: #c82829;
+    --hljs-meta: #f5871f;
+    --hljs-attribute: #eab700;
+    --hljs-string: #718c00;
+    --hljs-title: #4271ae;
+    --hljs-keyword: #8959a8;
+  }
+
+  &.dark-theme {
+    --hljs-color: #4d4d4c;
+    --hljs-comment: #969896;
+    --hljs-name: #cc6666;
+    --hljs-meta: #de935f;
+    --hljs-attribute: #f0c674;
+    --hljs-string: #b5bd68;
+    --hljs-title: #81a2be;
+    --hljs-keyword: #b294bb;
+  }
+}
+
 .hljs-comment,
 .hljs-quote {
   color: var(--hljs-comment);

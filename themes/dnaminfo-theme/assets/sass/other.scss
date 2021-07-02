@@ -1,3 +1,21 @@
+@import "variables";
+
+/* style for the bottom pager */
+.pager {
+  width: var(--p-width);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  font-size: 1.2rem;
+  line-height: 1.3;
+
+  .next {
+    text-align: right;
+  }
+}
+
 /* page footer */
 .footer {
   position: absolute;
@@ -34,68 +52,5 @@ mjx-container {
 
   .mathjax-highlight {
     color: var(--primary-color) !important;
-  }
-}
-
-/* Exercise pages */
-.qna-box {
-  @include set-tufte-width;
-  padding: 0.5rem 1rem;
-  margin-bottom: 0.5rem;
-  border: 1px solid var(--text-color);
-
-  #answer-buttons {
-    display: inline-block;
-  }
-
-  #params {
-    line-height: 1.75;
-  }
-
-  #answer-control {
-    margin-bottom: 1.5rem;
-  }
-
-  input[type="number"] {
-    -webkit-appearance: none;
-    font-size: 0.85em;
-    padding: 0 0.5rem;
-    width: 4rem;
-    text-align: right;
-  }
-
-  input[type="checkbox"] {
-    margin: 0 0.5rem;
-    transform: scale(1.4);
-    vertical-align: middle;
-  }
-
-  button {
-    padding: 0 0.5rem;
-    background: var(--details-background);
-    border: 1px solid var(--text-color);
-    border-radius: 0.25rem;
-    cursor: pointer;
-
-    font-family: "Trebuchet MS", "Gill Sans", "Gill Sans MT", sans-serif;
-    font-size: 0.85em;
-    color: var(--text-color);
-  }
-
-  details {
-    vertical-align: text-top;
-
-    summary {
-      margin-bottom: 0.2em;
-      color: var(--text-color);
-      font-variant: normal;
-      font-size: 1.3rem;
-      font-weight: 400;
-
-      list-style: none;
-      &::-webkit-details-marker {
-        display: none;
-      }
-    }
   }
 }

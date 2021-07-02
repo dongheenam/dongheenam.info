@@ -1,3 +1,6 @@
+{{- $style_options := (dict "targetPath" "qna.min.css" "outputStyle" "compressed" "enableSourceMap" true) -}}
+{{- $qna_style := resources.Get "sass/qna.scss" | resources.ToCSS $style_options -}}
+<link rel="stylesheet" href="{{ $qna_style.Permalink }}" />
 <div class="qna-box" id="qna-setting">
   <div id="params">
     {{ .Inner | safeHTML }}

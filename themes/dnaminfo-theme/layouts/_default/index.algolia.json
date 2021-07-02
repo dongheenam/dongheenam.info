@@ -1,5 +1,5 @@
 {{- $index := slice -}}
-{{- range where $.Site.RegularPages "Section" "!=" "portfolio" -}}
+{{- range where $.Site.RegularPages "Section" "not in" (slice "portfolio" "search") -}}
     {{- $page_info := dict "objectID" .File.UniqueID -}}
     {{- $page_info = merge $page_info (dict "title" .Title) }}
     {{- $page_info = merge $page_info (dict "date" .Date) }} 

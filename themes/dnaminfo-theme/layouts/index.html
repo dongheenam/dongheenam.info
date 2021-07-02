@@ -1,4 +1,7 @@
 {{- define "main" -}}
+{{- $style_options := (dict "targetPath" "frontpage.min.css" "outputStyle" "compressed" "enableSourceMap" true) -}}
+{{- $fp_style := resources.Get "sass/frontpage.scss" | resources.ToCSS $style_options -}}
+<link rel="stylesheet" href="{{ $fp_style.Permalink }}" />
 {{ $banner_img := (resources.Get "home/banner.jpg").Fill "2000x400 Smart jpeg" }}
 {{ $avatar_img := (resources.Get "home/avatar.png").Fill "500x500 Center jpeg" }}
 <div class="front-container">
