@@ -423,6 +423,10 @@
     list-style: none;
     margin-left: 0;
 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+
     font-size: 1.2rem;
 
     li {
