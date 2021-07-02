@@ -76,7 +76,7 @@
 
   font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD",
     "Book Antiqua", Georgia, serif;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   line-height: 1.85rem;
 
   counter-reset: sidenote-counter;
@@ -95,7 +95,7 @@
     padding-top: 2rem;
     margin-top: 2.1rem;
     margin-bottom: 1.3rem;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     line-height: 1;
   }
 
@@ -141,7 +141,7 @@
       font-style: italic;
       margin-top: 1rem;
       margin-bottom: 0.5rem;
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       display: block;
       line-height: 1.1;
     }
@@ -191,7 +191,7 @@
     }
 
     footer {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       text-align: right;
     }
   }
@@ -214,7 +214,7 @@
     clear: right;
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.6;
     vertical-align: baseline;
     position: relative;
@@ -243,7 +243,7 @@
     width: var(--sidenote-width);
     margin-top: 0.3rem;
     margin-bottom: 1rem;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.3;
     vertical-align: baseline;
     position: relative;
@@ -259,7 +259,7 @@
     color: var(--primary-color);
     position: relative;
     vertical-align: baseline;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: bold;
   }
 
@@ -331,7 +331,7 @@
 
     li {
       margin-right: 1rem;
-      font-size: 1.1rem;
+      font-size: 1.15rem;
       font-style: italic;
 
       a {
@@ -422,12 +422,6 @@
     padding: 0.5rem 0;
     list-style: none;
     margin-left: 0;
-
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-
-    font-size: 1.2rem;
 
     li {
       display: inline;

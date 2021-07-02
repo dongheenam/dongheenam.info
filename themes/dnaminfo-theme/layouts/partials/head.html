@@ -17,9 +17,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preload" as="style" href="{{ $gfonts_href }}">
     <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="{{ $gfonts_href }}">
-    
-    {{/* Tufte Fonts */}}
-    {{- partial "preload" . -}}
 
     {{/* stylesheets */}}
     {{- $style_options := (dict "targetPath" "main.min.css" "outputStyle" "compressed" "enableSourceMap" true) -}}
