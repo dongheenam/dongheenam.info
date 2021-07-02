@@ -1,6 +1,6 @@
 [build]
     publish = "public"
-    command = "hugo --gc --minify --templateMetrics && npm run algolia"
+    command = "hugo --gc --minify --templateMetrics && npm run atomic-algolia"
 
 [context.production.environment]
     HUGO_VERSION = "0.84.3"
