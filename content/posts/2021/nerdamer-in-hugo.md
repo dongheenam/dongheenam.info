@@ -14,6 +14,7 @@ nerdamer: true
 tags:
   - JavaScript
   - Nerdamer
+  - Hugo
 
 ---
 

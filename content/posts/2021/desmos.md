@@ -14,7 +14,8 @@ desmos: true
 tags:
   - JavaScript
   - Desmos
-
+  - Hugo
+  
 ---
 
 ## Introduction
