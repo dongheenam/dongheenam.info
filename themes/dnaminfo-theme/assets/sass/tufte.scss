@@ -420,8 +420,12 @@
   /* Breadcrumbs */
   ul.breadcrumb {
     padding: 0.5rem 0;
-    list-style: none;
     margin-left: 0;
+
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: baseline;
 
     li {
       display: inline;
