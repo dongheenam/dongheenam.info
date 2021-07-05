@@ -1,5 +1,5 @@
 {{- $rellink := "" -}}
-<ul class="breadcrumb fullwidth">
+<ol class="breadcrumb fullwidth">
   <li><a href="/">Home</a></li>
 {{- range (split .RelPermalink "/") -}}
 {{- if gt (len . ) 0 -}}
@@ -7,4 +7,4 @@
   <li><a href="{{ $rellink }}">{{ humanize . }}</a></li>
 {{- end -}}
 {{- end -}}
-</ul>
+</ol>

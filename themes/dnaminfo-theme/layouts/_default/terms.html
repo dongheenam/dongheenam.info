@@ -4,11 +4,11 @@
 {{- $pages_by_letters := dict -}}
 {{ range $pages }}
   {{- $page := . -}}
-  {{- $first_letter := upper ( substr .Name 0 1 ) -}}
+  {{- $first_letter := upper ( substr $page.Name 0 1 ) -}}
   {{- if not (in $letters $first_letter) }}
     {{ $first_letter = "#" }}
   {{ end }}
-  {{- $new_list := "" -}}
+  {{- $new_list := slice -}}
   {{ with index $pages_by_letters $first_letter }}
     {{- $new_list = . | append $page -}}
   {{ else }}
