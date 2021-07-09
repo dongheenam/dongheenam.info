@@ -78,9 +78,9 @@ weight: 13
 | ├ Graphing General Form | 10, 10A | Met1 |
 | ├ Translations of Quadratics | 10A | Met1 |
 | ├ Reflections of Quadratics | 10A | Met1 |
-| ├ Extrema of Quadratics |  | Met1 |
+| ├ Extrema of Quadratics | 10A^ | Met1 |
 | ├ Extrema as Functions |  |  |
-| ├ Optimisation |  | Met1 |
+| ├ Optimisation | 10, 10A | Met1 |
 | ├ Two-Variable Functions |  |  |
 | ├ Biquartic Functions |  |  |
 | ├ Determining the Vertex Form |  |  |

@@ -37,6 +37,8 @@ The following topics are useful for understanding this lesson.
 
 {{% details title="Links to Australian Curriculum" %}}
 
+- Mathematics Year 10A
+    - Describe, interpret and sketch parabolas, hyperbolas, circles and exponential functions and their transformations [(ACMNA267)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&strand=Measurement+and+Geometry&strand=Statistics+and+Probability&capability=ignore&priority=ignore&year=11762&elaborations=true&cd=ACMNA267&searchTerm=ACMNA267#dimension-content).
 - Mathematical Methods Unit 1
     - Use function notation, domain and range, independent and dependent variables [(ACMMM023)](https://www.australiancurriculum.edu.au/senior-secondary-curriculum/mathematics/mathematical-methods/?unit=Unit+1&cd=ACMMM023&searchTerm=ACMMM023).
 
