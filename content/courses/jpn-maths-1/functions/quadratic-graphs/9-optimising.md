@@ -1,6 +1,6 @@
 ---
 title: "Optimisation Problems"
-slug: optimisations
+slug: optimisation
 description: "Solving word problems finding the minimum or maximum."
 
 date: 2021-07-09 18:43:48.851 +1000
@@ -69,6 +69,8 @@ Let's dive straight into some problems now.
   &= -(x-3)^2 + 9.
 \end{align}
 The maximum of $A(x)$ is hence 9 at $x=3.$ This point is inside the domain $(0< x < 6).$ Therefore, the enclosed area can be maximised **if the fence is folded in the exact middle**. 
+
+---
 
 {{% note "Alt. Solution" %}} The type of quadrilaterals with the maximum area for a fixed perimeter is a square, so the fences must form a square. Therefore, the fence needs to be folded in the middle.
 

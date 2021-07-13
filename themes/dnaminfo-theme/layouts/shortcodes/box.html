@@ -1,6 +1,6 @@
 {{/* Usage: 
     {{% box %}} Content {{% /box %}}
 */}}
-<div class="box">
+<div class="box"{{ with .Get "style" }}style="{{ . }}"{{ end }}>
     {{ .Inner | markdownify }}
 </div>

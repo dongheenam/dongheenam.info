@@ -64,11 +64,11 @@
 % right angles
 \def\ralen{.7em}
 \newcommand{\drawRightAngle}[3] {
-    \draw   let \p1 = ($#2!\ralen!#1$),
-            \p2 = ($#2!\ralen!#3$),
-            \p3 = ($(\p1)+(\p2)-#2$)
-        in
-            (\p1) -- (\p3) -- (\p2);
+    \draw let \p1 = ($#2!\ralen!#1$),
+        \p2 = ($#2!\ralen!#3$),
+        \p3 = ($(\p1)+(\p2)-#2$)
+    in
+        (\p1) -- (\p3) -- (\p2);
 }
 
 % background colors
@@ -96,11 +96,11 @@
 % lengths
 \def\lsep{0.2}
 \begin{scope}[on behind layer]
-    \draw [dashed, out=-110, in=110] (A) to node [fill=white] {5} (B);
-    \draw [dashed, out=-15, in=195] (B) to node [fill=white] {10} (C);
-    \draw [red, dashed, out=-60, in=60] (P) to node [fill=white] {$t$} (B);
-    \draw [red, dashed, out=20, in=160] (Q) to node [fill=white] {$2t$} (C);
-    \draw [red, dashed, out=5, in=140] (P) to node [fill=white] {$d(t)$} (Q);
+    \draw [dashed, out=-110, in=110] (A) to node [fill=bg2] {5} (B);
+    \draw [dashed, out=-15, in=195] (B) to node [fill=bg2] {10} (C);
+    \draw [red, dashed, out=-60, in=60] (P) to node [fill=bg2] {$t$} (B);
+    \draw [red, dashed, out=20, in=160] (Q) to node [fill=bg2] {$2t$} (C);
+    \draw [red, dashed, out=5, in=140] (P) to node [fill=bg2] {$d(t)$} (Q);
 \end{scope}
 
 \end{tikzpicture}
