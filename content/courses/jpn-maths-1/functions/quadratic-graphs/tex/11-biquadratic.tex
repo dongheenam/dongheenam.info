@@ -1,0 +1,179 @@
+%%% extbiq-ex1.png
+\newcommand{\xmin}{ -2 }
+\newcommand{\xmax}{  7 }
+\newcommand{\ymin}{ -2 }
+\newcommand{\ymax}{ 10 }
+
+\begin{document}
+\begin{tikzpicture}
+
+\begin{axis}[without_grid,
+    set layers=axis on top,
+    xmin=\xmin,
+    xmax=\xmax,
+    ymin=\ymin,
+    ymax=\ymax,
+    height=6.5cm]
+
+% origin
+\node [anchor=north east] at (0,0) {$O$};
+
+% top and bottom lines (for filling)
+\path[name path=top] (\xmin, \ymax) -- (\xmax, \ymax);
+\path[name path=bot] (\xmin, \ymin) -- (\xmax, \ymin);
+\addplot[blue!20] fill between[of=top and bot, soft clip={domain=0:7}];
+
+% graph
+\addplot [domain=-1:7, samples=100, thick, dotted] {0.8*(x^2-6*x+10)};
+\addplot [domain=0:7, samples=100, thick] {0.8*(x^2-6*x+10)};
+
+% coordinates
+\addplot [dashed] coordinates {(0,0.8)(3,0.8)} node[pos=0, anchor=east] {$1$};
+\addplot [mark=*] coordinates {(0,8)} node[pos=0, anchor=east] {$10$};
+\addplot [dashed] coordinates {(3,0)(3,0.8)} node[pos=0, anchor=north] {$3$};
+
+\addplot [red, mark=*] coordinates {(3,0.8)} node[anchor=160] {min};
+
+\node [circle,inner sep=0pt,minimum size=12pt,draw,fill=white,semithick] at (-1.3, 9.3) {$1$};
+
+\end{axis}
+\end{tikzpicture}
+
+\end{document}
+
+
+%%% extbiq-ex2.png
+% plotting parameters
+\newcommand{\xmin}{ -3 }
+\newcommand{\xmax}{  4 }
+\newcommand{\ymin}{ -4 }
+\newcommand{\ymax}{ 4 }
+
+\begin{document}
+\begin{tikzpicture}
+
+\begin{axis}[without_grid,
+    set layers=axis on top,
+    xmin=\xmin,
+    xmax=\xmax,
+    ymin=\ymin,
+    ymax=\ymax,
+    clip=false,
+    xlabel=$x$,ylabel=$t$,
+    height=6.5cm]
+
+% origin
+\node [anchor=south west] at (0,0) {$O$};
+
+% top and bottom lines (for filling)
+\path[name path=top] (\xmin, \ymax) -- (\xmax, \ymax);
+\path[name path=bot] (\xmin, \ymin) -- (\xmax, \ymin);
+\addplot[blue!20] fill between[of=top and bot, soft clip={domain=-1:1}];
+
+% graph
+\addplot [domain=-1.44:3.44, samples=100, thick, dotted] {x^2-2*x-1};
+\addplot [domain=-1:1, samples=100, thick] {x^2-2*x-1};
+
+% coordinates
+\addplot [dashed] coordinates {(0,2)(-1,2)} node[pos=0, anchor=west] {$2$};
+\addplot [dashed] coordinates {(0,-2)(1,-2)} node[pos=0, anchor=east] {$-2$};
+\addplot [dashed] coordinates {(-1,0)(-1,2)} node[pos=0, anchor=north] {$-1$};
+\addplot [dashed] coordinates {(1,0)(1,-2)} node[pos=0, anchor=south] {$1$};
+
+\addplot [red, mark=*] coordinates {(-1,2)} node[anchor=east] {max};
+\addplot [red, mark=*] coordinates {(1,-2)} node[anchor=north west] {min};
+
+\node [circle,inner sep=0pt,minimum size=12pt,draw,fill=white,semithick] at (\xmin+0.5, {(\ymax-\ymin)*0.06 + \ymax}) {$1$};
+
+\end{axis}
+\end{tikzpicture}
+\vspace{0.5cm}
+\begin{tikzpicture}
+
+\begin{axis}[without_grid,
+    set layers=axis on top,
+    xmin=-4.5,
+    xmax=7,
+    ymin=-3,
+    ymax=12,
+    clip=false,
+    xlabel=$t$,ylabel=$y$,
+    height=6.5cm]
+
+% origin
+\node [anchor=south east] at (0,0) {$O$};
+
+% top and bottom lines (for filling)
+\path[name path=top] (\xmin, 12) -- (\xmax, 12);
+\path[name path=bot] (\xmin, -3) -- (\xmax, -3);
+\addplot[blue!20] fill between[of=top and bot, soft clip={domain=-2:2}];
+
+% graph
+\addplot [domain=-2.29:7, samples=100, thick, dotted] {0.5*(x^2-6*x+5)};
+\addplot [domain=-2:2, samples=100, thick] {0.5*(x^2-6*x+5)};
+
+% coordinates
+\addplot [dashed] coordinates {(0,10.5)(-2,10.5)} node[pos=0, anchor=160] {$21$};
+\addplot [dashed] coordinates {(0,2.5)} node[pos=0, anchor=west] {$5$};
+\addplot [dashed] coordinates {(0,-1.5)(2,-1.5)} node[pos=0, anchor=10] {$-3$};
+
+\addplot [dashed] coordinates {(-2,0)(-2,10.5)} node[pos=0, anchor=80] {$-2$};
+\addplot [dashed] coordinates {(2,0)(2,-1.5)} node[pos=0, anchor=south] {$2$};
+\addplot [dashed] coordinates {(3,0)(3,-2)} node[pos=0, anchor=south] {$3$};
+
+\node [circle,inner sep=0pt,minimum size=12pt,draw,fill=white,semithick] at (-4.5+0.8,  15*0.06+12) {$2$};
+\addplot [red, mark=*] coordinates {(-2,10.5)} node[anchor=20] {max};
+\addplot [red, mark=*] coordinates {(2,-1.5)} node[below=1] {min};
+
+\end{axis}
+\end{tikzpicture}
+
+\end{document}
+
+
+%%% extbiq-q1.png
+% plotting parameters
+\newcommand{\xmin}{ -5 }
+\newcommand{\xmax}{  3 }
+\newcommand{\ymin}{ -2 }
+\newcommand{\ymax}{ 10 }
+
+\begin{document}
+\begin{tikzpicture}
+
+\begin{axis}[without_grid,
+    set layers=axis on top,
+    xmin=\xmin,
+    xmax=\xmax,
+    ymin=\ymin,
+    ymax=\ymax,
+    xlabel=$t$,
+    height=6.5cm]
+
+% origin
+\node [anchor=south east] at (0,0) {$O$};
+
+% top and bottom lines (for filling)
+\path[name path=top] (\xmin, \ymax) -- (\xmax, \ymax);
+\path[name path=bot] (\xmin, \ymin) -- (\xmax, \ymin);
+\addplot[red!20] fill between[of=top and bot, soft clip={domain=0:3}];
+
+% graph
+\addplot [domain=-5:2, samples=100, thick, dotted] {-2*x^2 - 8*x};
+\addplot [domain=0:2, samples=100, thick] {-2*x^2 - 8*x};
+
+% coordinates
+\addplot [dashed] coordinates {(0,8)(-2,8)} node[pos=0, anchor=west] {$8$};
+\addplot [dashed] coordinates {(-2,0)(-2,8)} node[pos=0, anchor=north] {$3$};
+
+\addplot [blue, mark=*] coordinates {(0,0)} node[anchor=north west] {max};
+
+\node [circle,inner sep=0pt,minimum size=12pt,draw,fill=white,semithick] at (-4.3, 9.3) {$1$};
+
+\end{axis}
+\end{tikzpicture}
+
+\end{document}
+
+
+%%% extbiq-q2.png
