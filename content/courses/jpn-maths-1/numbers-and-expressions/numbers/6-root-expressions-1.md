@@ -22,7 +22,7 @@ tags:
 menu:
   math1-numbers:
     parent: Real Numbers
-    name: Expressions with Square Roots 1
+    name: Expressions with Roots 1
     weight: 16
 
 weight: 16
@@ -67,7 +67,7 @@ For $\sqrt{23}$, say its integer part is $a$ and its decimal part $b$, and $$ \s
 
 {{% details title="More on finding the integer part" %}}
 
-If the integer part of $x$ is $a$, then $a\le x \lt a+1$.{{% sn int %}}One example is $4\le 4.73 \lt 5$.{{% /sn %}} So to find the integer part of an irrational number, we need to find two integers $a$ and $a+1$ that the number sits in between. For the example above, we know that $23$ is in between two square numbers, $4^2=16$ and $5^2=25$: $$ 4^2 \lt 23 \lt 5^2. $$ Therefore $$ \sqrt{4^2} \lt \sqrt{23} \lt \sqrt{5^2} \implies 4 \lt \sqrt{23} \lt 5, $$ and the integer part of $\sqrt{23}$ is $4$.
+If the integer part of $x$ is $a$, then $a\le x \lt a+1$.{{% sn int %}}One example is $4\le 4.73 \lt 5$.{{% /sn %}} So to find the integer part of an irrational number, we need to find two integers $a$ and $a+1$ that the number sits in between. For the example above, we know that $23$ is in between two square numbers, $4^2=16$ and $5^2=25$: $$ 4^2 \lt 23 \lt 5^2. $$ Therefore $$ \sqrt{4^2} \lt \sqrt{23} \lt \sqrt{5^2} \iff 4 \lt \sqrt{23} \lt 5, $$ and the integer part of $\sqrt{23}$ is $4$.
 
 <p></p>
 
@@ -213,10 +213,10 @@ x^4 + y^4 &= \left(x^2 + y^2 \right)^2 - 2x^2y^2 \\\\
 We can also repeat the process to calculate $x^2+\dfrac{1}{x^2}$, $x^3+\dfrac{1}{x^3}$, and so on. For example,
 
 \begin{align}
-\left(x + \frac{1}{x} \right)^2 &= \hl{x^2} + 2\cdot x \cdot \frac{1}{x} \hl{+ \frac{1}{x^2}} \\\\
-&= \hl{x^2 + \frac{1}{x^2}} + 2, \\\\
-\left(x + \frac{1}{x} \right)^3 &= \hl{x^3} + 3\cdot x^2 \cdot \frac{1}{x} + 3\cdot x \cdot \frac{1}{x^2} + \hl{\frac{1}{x^3}} \\\\
-&= \hl{x^3 + \frac{1}{x^3}} + 3\left( x + \frac{1}{x} \right).
+\left(x + \frac{1}{x} \right)^2 &= x^2 + 2\cdot x \cdot \frac{1}{x} + \frac{1}{x^2} \\\\
+&= \underline{ x^2 + \frac{1}{x^2} } + 2, \\\\
+\left(x + \frac{1}{x} \right)^3 &= x^3 + 3\cdot x^2 \cdot \frac{1}{x} + 3\cdot x \cdot \frac{1}{x^2} + \frac{1}{x^3} \\\\
+&= \underline{ x^3 + \frac{1}{x^3} } + 3\left( x + \frac{1}{x} \right).
 \end{align}
 
 Therefore, the following holds.
@@ -328,8 +328,8 @@ $\phantom{(1)}$ $=\dfrac{\sqrt{3}+1}{2}$<br>
 Because $\sqrt{9}<\sqrt{15}<\sqrt{16}$,
 \begin{align}
 & \sqrt{9}<\sqrt{15}<\sqrt{16} \\\\
-\implies & 3 < \sqrt{15} < 4 \\\\
-\implies & 7 < 4+\sqrt{15} < 8.
+\iff & 3 < \sqrt{15} < 4 \\\\
+\iff & 7 < 4+\sqrt{15} < 8.
 \end{align}
 Hence the integer part of $4+\sqrt{15}$ is $7$, and $$ x = 4+\sqrt{15} - 7 = \sqrt{15} - 3. $$
 

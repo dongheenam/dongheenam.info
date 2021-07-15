@@ -187,7 +187,7 @@ Use the panel below to create randomised questions. You can click each question 
       } // endif (two)
 
       const qTex = `${lhsTex} = ${rhsTex}`;
-      const aTex = `\\boldsymbol{\\implies ${lett} = ${ans.reduce().tex()}}`;
+      const aTex = `\\boldsymbol{\\iff ${lett} = ${ans.reduce().tex()}}`;
       render(qTex, aTex, options).then((li) => {
         qbox.appendChild(li);
         MathJax.startup.document.clear();

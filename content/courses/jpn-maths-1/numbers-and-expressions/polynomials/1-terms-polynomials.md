@@ -96,9 +96,9 @@ Sometimes, you need to work on only one variable, and you want to find the degre
 For a term $ 24xy^2z$,
 
 - when you focus on $x$, $24xy^2z = (24y^2z)x$. \
-  $\implies$ Its coefficient in terms of $x$ is $24y^2z$, and its degree is $1$.
+  $\iff$ Its coefficient in terms of $x$ is $24y^2z$, and its degree is $1$.
 - when you focus on $y$, $24xy^2z = (24xz)y^2$. \
-  $\implies$ Its coefficient in terms of $y$ is $24xz$, and its degree is $2$.
+  $\iff$ Its coefficient in terms of $y$ is $24xz$, and its degree is $2$.
 
 {{% note Questions %}}
 Try [Practice Questions](#practice-questions) 1 and 2 before moving on.

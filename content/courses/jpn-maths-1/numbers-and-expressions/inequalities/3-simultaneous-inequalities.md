@@ -54,19 +54,19 @@ Solve the following simultaneous inequalities.
 
 \begin{align}
   & 5x+1\le 8(x+2) \\\\
-  \implies & 5x+1\le 8x+16 \\\\
-  \implies & -3x \le 15 \\\\
-  \implies & x \ge -5. && \qdcirc{1}
+  \iff & 5x+1\le 8x+16 \\\\
+  \iff & -3x \le 15 \\\\
+  \iff & x \ge -5. && \qdcirc{1}
 \end{align}
 
 And from the second inequality,
 
 \begin{align}
   & 2x-3\lt 1-(x-5) \\\\
-  \implies & 2x-3 \lt 1-x+5 \\\\
-  \implies & 2x-3 \lt 6-x \\\\
-  \implies & 3x \lt 9 \\\\
-  \implies & x \lt 3. && \qdcirc{2}
+  \iff & 2x-3 \lt 1-x+5 \\\\
+  \iff & 2x-3 \lt 6-x \\\\
+  \iff & 3x \lt 9 \\\\
+  \iff & x \lt 3. && \qdcirc{2}
 \end{align}
 
 {{% mn 72 %}}
@@ -79,16 +79,16 @@ And from the second inequality,
 
 \begin{align}
   & x+7\lt 1-2x \\\\
-  \implies & 3x\lt -6 \\\\
-  \implies & x\lt -2. && \qdcirc{3}
+  \iff & 3x\lt -6 \\\\
+  \iff & x\lt -2. && \qdcirc{3}
 \end{align}
 
 And from the second inequality,
 
 \begin{align}
   & 6x+2\ge 2 \\\\
-  \implies & 6x\ge 0 \\\\
-  \implies & x\ge 0. && \qdcirc{4}
+  \iff & 6x\ge 0 \\\\
+  \iff & x\ge 0. && \qdcirc{4}
 \end{align}
 
 {{% mn 92 %}}
@@ -115,17 +115,17 @@ From the first inequality,
 
 \begin{align}
   & -2x+1<3x+4 \\\\
-  \implies & -5x < 3 \\\\
-  \implies & x > -\frac{3}{5}. && \qdcirc{1}
+  \iff & -5x < 3 \\\\
+  \iff & x > -\frac{3}{5}. && \qdcirc{1}
 \end{align}
 
 And from the second inequality,
 
 \begin{align}
   & 3x+4<2(3x-4) \\\\
-  \implies & 3x+4<6x-8 \\\\
-  \implies & 12 < 3x \\\\
-  \implies & x>4. && \qdcirc{2}
+  \iff & 3x+4<6x-8 \\\\
+  \iff & 12 < 3x \\\\
+  \iff & x>4. && \qdcirc{2}
 \end{align}
 
 {{% mn 131 %}}
@@ -161,17 +161,17 @@ $\text{a.} \quad$ From the first inequality,
 
 \begin{align}
   & 2(1-x)\gt -6-x \\\\
-  \implies & 2-2x\gt -6-x \\\\
-  \implies & 8\gt x \\\\
-  \implies & \boldsymbol{ x \lt 8 }. && \qdcirc{1}
+  \iff & 2-2x\gt -6-x \\\\
+  \iff & 8\gt x \\\\
+  \iff & \boldsymbol{ x \lt 8 }. && \qdcirc{1}
 \end{align}
 
 And from the second inequality,
 
 \begin{align}
   & 2x-3\gt-9 \\\\
-  \implies & 2x\gt -6 \\\\
-  \implies & \boldsymbol{ x \gt -3 }. && \qdcirc{2}
+  \iff & 2x\gt -6 \\\\
+  \iff & \boldsymbol{ x \gt -3 }. && \qdcirc{2}
 \end{align}
 
 {{% mn q1a %}}
@@ -184,19 +184,19 @@ $\text{b.} \quad$ From the first inequality,
 
 \begin{align}
   & 3(x-4)\le x-3 \\\\
-  \implies & 3x-12 \le x-3 \\\\
-  \implies & 2x\le 9 \\\\
-  \implies & x\le\frac{9}{2}. && \qdcirc{3}
+  \iff & 3x-12 \le x-3 \\\\
+  \iff & 2x\le 9 \\\\
+  \iff & x\le\frac{9}{2}. && \qdcirc{3}
 \end{align}
 
 And from the second inequality,
 
 \begin{align}
   & 6x-2(x+1)\lt 10 \\\\
-  \implies & 6x-2x-2 \lt 10 \\\\
-  \implies & 4x-2\lt 10 \\\\
-  \implies & 4x\lt 12 \\\\
-  \implies & x\lt 3. && \qdcirc{4}
+  \iff & 6x-2x-2 \lt 10 \\\\
+  \iff & 4x-2\lt 10 \\\\
+  \iff & 4x\lt 12 \\\\
+  \iff & x\lt 3. && \qdcirc{4}
 \end{align}
 
 {{% mn q1b %}}
@@ -225,17 +225,17 @@ Then, from $x+9\le3-5x$,
 
 \begin{align}
   & x+9\le3-5x \\\\
-  \implies & 6x\le -6 \\\\
-  \implies & x\le -1, && \qdcirc{1}
+  \iff & 6x\le -6 \\\\
+  \iff & x\le -1, && \qdcirc{1}
 \end{align}
 
 and from $3-5x\le2(x-2)$,
 
 \begin{align}
   & 3-5x\le2(x-2) \\\\
-  \implies & 3-5x\le 2x-4 \\\\
-  \implies & -7x \le -7 \\\\
-  \implies & x \ge 1. && \qdcirc{2}
+  \iff & 3-5x\le 2x-4 \\\\
+  \iff & -7x \le -7 \\\\
+  \iff & x \ge 1. && \qdcirc{2}
 \end{align}
 
 {{% mn q2a %}}
@@ -253,10 +253,10 @@ $(1)$ Multiplying both sides by the least common multiple, $6$
 {{% /mn %}}
 \begin{align}
   & \dfrac{4(x-2)}{3}<\dfrac{5}{2}x+2 \\\\
-  \implies & 8(x-2)< 15x + 12 \tag{1} \\\\
-  \implies & 8x - 16 < 15x + 12 \\\\
-  \implies & -7x < 28 \\\\
-  \implies & x > -4. && \qdcirc{3}
+  \iff & 8(x-2)< 15x + 12 \tag{1} \\\\
+  \iff & 8x - 16 < 15x + 12 \\\\
+  \iff & -7x < 28 \\\\
+  \iff & x > -4. && \qdcirc{3}
 \end{align}
 
 And from the second inequality,
@@ -266,10 +266,10 @@ $(2)$ Multiplying both sides by $2$
 {{% /mn %}}
 \begin{align}
   & \dfrac{5}{2}x+2\le-3(1-x) \\\\
-  \implies & 5x + 4 \le -6(1-x) \tag{2} \\\\
-  \implies & 5x + 4 \le -6 + 6x \\\\
-  \implies & 10 \le x \\\\
-  \implies & x \ge 10. && \qdcirc{4}
+  \iff & 5x + 4 \le -6(1-x) \tag{2} \\\\
+  \iff & 5x + 4 \le -6 + 6x \\\\
+  \iff & 10 \le x \\\\
+  \iff & x \ge 10. && \qdcirc{4}
 \end{align}
 
 {{% mn q2b3 %}}

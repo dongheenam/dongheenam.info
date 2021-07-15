@@ -91,7 +91,7 @@ Use the panel below to create randomised questions. You can click each question 
       const ans2 = `( -(${b}) - sqrt(${dis}) ) / (2*(${a}))`
       const a1Tex = nerdamerToTex(nerdamer(ans1).expand());
       const a2Tex = nerdamerToTex(nerdamer(ans2).expand());
-      const aTex = `\\boldsymbol{\\implies ${lett} = ${a1Tex},~${a2Tex}}`;
+      const aTex = `\\boldsymbol{\\iff ${lett} = ${a1Tex},~${a2Tex}}`;
       render(qTex, aTex, options).then((li) => {
         qbox.appendChild(li);
         MathJax.startup.document.clear();

@@ -48,16 +48,16 @@ Thus the vertex is $(\ell, -2\ell).$ Whether the domain includes the vertex or n
 
 $\tcirc{1} \quad$ When $0 < \ell \le 2,$ the vertex is inside the domain, and hence it is the minimum point. Thus
 \\begin{align}
-  -2\ell = 11 \implies \ell = -\dfrac{11}{2}.
+  -2\ell = 11 \iff \ell = -\dfrac{11}{2}.
 \end{align}
 This violates the assumption that $\ell$ is a positive number.
 
 $\tcirc{2} \quad$ When $\ell > 2,$ the vertex is outside the domain. The closest value of $x$ to the vertex inside the domain is $x=2$, and hence the minimum value is $$ 2^2 - 2\ell \cdot 2 + \ell^2 - 2\ell = \ell^2 -6\ell + 4.$$ Then
 \begin{align}
   & \ell^2 -6\ell + 4 = 11 \\\\
-  \implies & \ell^2 - 6\ell - 7 = 0 \\\\
-  \implies & (\ell - 7)(\ell + 1) = 0 \\\\
-  \implies & \ell = 7,~-1.
+  \iff & \ell^2 - 6\ell - 7 = 0 \\\\
+  \iff & (\ell - 7)(\ell + 1) = 0 \\\\
+  \iff & \ell = 7,~-1.
 \end{align}
 Since $\ell=-1$ violates the assumption, the value of $\ell$ that satisfies the condition is $\boldsymbol{ 7 }.$
 
@@ -145,14 +145,14 @@ Therefore, from the three conditions above, the possible solutions are $\boldsym
 
 1. The function in vertex form is $$y = -2(x-2)^2 + k + 8.$$ Thus, the vertex is included in the domain, $1 \le x \le 4$. Because the parabola is concave down, the maximum point is $(2, k+8).$ Therefore,
 \begin{align}
-  k + 8 = 4 \implies k = -4.
+  k + 8 = 4 \iff k = -4.
 \end{align}
 
 2. The axis of symmetry is $x = -\dfrac{b}{2a} = \dfrac{1}{2}.$ Because the graph is concave up, the maximum occurs at the farthest point from the axis of symmetry, which is $x = -1.$ Thus, from the maximum value of 6,
 \begin{align}
   & (-1)^2 - (-1) + k + 1 = 6 \\\\
-  \implies & k + 3 = 6 \\\\
-  \implies & k = 3.
+  \iff & k + 3 = 6 \\\\
+  \iff & k = 3.
 \end{align}
 
 {{% /details %}}
@@ -176,23 +176,23 @@ $(1)$ Here we used the quadratic formula $x = \dfrac{-b\pm\sqrt{b^2-4ac}}{2a}.$
 {{% /mn %}}
 \begin{align}
   & -(-1)^2 + 2t(-1) - t^2 - 2t - 1 = 0 \\\\
-  \implies & -1 - 2t - t^2 - 2t - 1 = 0 \\\\
-  \implies & - t^2 - 4t -2 = 0 \\\\
-  \implies & t^2 + 4t + 2 = 0 \\\\
-  \implies & t= -2 \pm \sqrt{2}. \tag{1}
+  \iff & -1 - 2t - t^2 - 2t - 1 = 0 \\\\
+  \iff & - t^2 - 4t -2 = 0 \\\\
+  \iff & t^2 + 4t + 2 = 0 \\\\
+  \iff & t= -2 \pm \sqrt{2}. \tag{1}
 \end{align}
 $-2+\sqrt{2}$ is greater than $-1$, so we only choose $t=-2-\sqrt{2}.$
 
 $\tcirc{2}\quad$ When $ -1 \le t \le 0,$ the maximum value is equal to the y-coordinate of the vertex, so
 \begin{align}
-  -2t-1 = 0 \implies t = -\dfrac{1}{2}. 
+  -2t-1 = 0 \iff t = -\dfrac{1}{2}. 
 \end{align}
 
 $\tcirc{3}\quad$ When $t>0,$ the point closest to the vertex is $x=0.$ Because the maximum value is 0,
 \begin{align}
   & - t^2 - 2t - 1 = 0 \\\\
-  \implies & -(t+1)^2 = 0 \\\\
-  \implies & t=-1.
+  \iff & -(t+1)^2 = 0 \\\\
+  \iff & t=-1.
 \end{align}
 This value of $t$ does not satisfy our assumption $t>0$.
 

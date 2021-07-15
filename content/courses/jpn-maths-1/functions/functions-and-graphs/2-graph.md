@@ -99,16 +99,16 @@ and hence $a$ is called the *gradient*, or *slope*. Also, the value of $y$ when 
 
 2. We can rearrange the equation to reveal the gradient and y-intercept:
 \begin{align}
-  3x-2y = 6 & \implies 2y = 3x - 6 \\\\
-  &\implies y = \dfrac{3}{2} x - 3.
+  3x-2y = 6 & \iff 2y = 3x - 6 \\\\
+  &\iff y = \dfrac{3}{2} x - 3.
 \end{align}
 However, it is easier to find the x- and y-intercepts of the graph and draw the graph from there. When $x=0$,
 \begin{align}
-  -2y = 6 \implies y = -3,
+  -2y = 6 \iff y = -3,
 \end{align}
 so the y-intercept is $-3$, and when $y=0$,
 \begin{align}
-  3x = 6 \implies x = 2,
+  3x = 6 \iff x = 2,
 \end{align}
 so the x-intercept is $2$.
 
@@ -228,13 +228,13 @@ Thus, the range is $\boldsymbol{ -5\le y < 4 }$. The minimum is $\boldsymbol{ -5
 
 In the first case, the gradient is $\dfrac{5+1}{5-2} = 2$, so $a=2$. Then
 \begin{align}
-  f(2) = -1 \implies & 2a + b = -1 \\\\
+  f(2) = -1 \iff & 2a + b = -1 \\\\
   & 4 + b = -1 \\\\
   & b = -5.
 \end{align}
 In the second case, the gradient is $\dfrac{-5-1}{5-2}=-2$, so $a=-2$. Then
 \begin{align}
-  f(2) = 5 \implies & 2a+b = 5 \\\\
+  f(2) = 5 \iff & 2a+b = 5 \\\\
   & -4 + b = 5 \\\\
   & b = 9. 
 \end{align}

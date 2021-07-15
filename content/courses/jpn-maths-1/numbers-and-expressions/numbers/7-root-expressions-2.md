@@ -22,7 +22,7 @@ tags:
 menu:
   math1-numbers:
     parent: Real Numbers
-    name: Expressions with Square Roots 2
+    name: Expressions with Roots 2
     weight: 17
 
 weight: 17
@@ -148,11 +148,11 @@ $(1)$ Squared both terms.
 {{% /mn %}}
 \begin{alignat}{3}
 && a &= \dfrac{1+\sqrt{5}}{2} \\\\
-\implies && 2a-1 &= \sqrt{5} \\\\
+\iff && 2a-1 &= \sqrt{5} \\\\
 \implies && (2a-1)^2 &= 5 \tag{1} \\\\
-\implies && 4a^2 - 4a + 1 &= 5 \\\\
-\implies && 4a^2 &= 4a + 4 \\\\
-\implies && a^2 &= a + 1.
+\iff && 4a^2 - 4a + 1 &= 5 \\\\
+\iff && 4a^2 &= 4a + 4 \\\\
+\iff && a^2 &= a + 1.
 \end{alignat}
 
 Now we can use this to replace $a^4$ and $a^3$ with linear polynomials in $a$:
@@ -243,11 +243,11 @@ We will first express $t^2$ in terms of $t$:
 
 \begin{alignat}{3}
 && t &= \frac{1-\sqrt{3}}{2} \\\\
-\implies && 2t &= 1-\sqrt{3} \\\\
-\implies && \sqrt{3} &= 1-2t && \text{(square both sides)} \\\\
-\implies && 3 &= 1 - 4t + 4t^2 \\\\
-\implies && 4t^2 &= 4t + 2 \\\\
-\implies && 2t^2 &= 2t + 1.
+\iff && 2t &= 1-\sqrt{3} \\\\
+\iff && \sqrt{3} &= 1-2t \\\\
+\implies && 3 &= 1 - 4t + 4t^2 && \quad \text{(squared both sides)} \\\\
+\iff && 4t^2 &= 4t + 2 \\\\
+\iff && 2t^2 &= 2t + 1.
 \end{alignat}
 
 $\text{a.} \quad$ From above, we find that $ 2t^2 - 2t - 1 = \boldsymbol{ 0 .} $

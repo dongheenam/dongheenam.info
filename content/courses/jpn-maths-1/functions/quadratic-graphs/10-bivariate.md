@@ -110,8 +110,8 @@ What if we further restrict the domain by specifying the values of $x$ and $y$ d
 
 {{% note Solution %}} We will first express $x$ as a function of $y$: $ x = -2y + 8 $. Because $x\ge 0$,
 \begin{align}
-  -2y + 8 \ge 0 &\implies 8 \ge 2y \\\\
-  &\implies 4 \ge y.
+  -2y + 8 \ge 0 &\iff 8 \ge 2y \\\\
+  &\iff 4 \ge y.
 \end{align}
 Thus the possible value of $y$ is $0 \le y \le 4$. Then,
 \begin{align}
@@ -249,8 +249,8 @@ Therefore, the maximum of $2x^2-y^2$ is $\boldsymbol{ \dfrac{8}{7} }$, when $x=\
 {{% note Solution %}} From $x+2y=1$, $x = 1 - 2y$. The range of $y$ that keeps $x$ non-negative is
 \begin{align}
   & 1 - 2y \ge 0 \\\\
-  & \implies 2y - 1 \le 0 \\\\
-  & \implies y \le \dfrac{1}{2},
+  & \iff 2y - 1 \le 0 \\\\
+  & \iff y \le \dfrac{1}{2},
 \end{align}
 hence the possible values of $y$ are $0\le y \le \dfrac{1}{2}$. Then,
 \begin{align}

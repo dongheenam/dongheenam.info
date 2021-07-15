@@ -35,11 +35,11 @@ Previously we discussed how to [solve inequalities](../solving-inequalities) wit
 
 ## Finding Integer Solutions
 
-To solve an inequality for integers, we need first to find the solution of an inequality like usual, and then count the integers that lie inside the solution. The second step is pretty straightforward -- for example, can you list all integers greater than $-2$ but less than $3$?  $$ \\text{$x$ is an integer and $-2<x<3$} \quad \implies \quad x = -1,\\, 0,\\, 1,\\, \\text{or }\\, 2. $$
+To solve an inequality for integers, we need first to find the solution of an inequality like usual, and then count the integers that lie inside the solution. The second step is pretty straightforward -- for example, can you list all integers greater than $-2$ but less than $3$?  $$ \\text{$x$ is an integer and $-2<x<3$} \quad \iff \quad x = -1,\\, 0,\\, 1,\\, \\text{or }\\, 2. $$
 
 {{% details title="Inequality signs" %}}
 
-Be careful of the inequality signs! The range $x>7$ does not include $7$, because $x$ is strictly greater than $7$: $$ x>7 \quad \implies \quad x = 8,\\, 9,\\, 10,\\, \\cdots. $$ On the other hand, $x\ge 7$ does include $7$: $$ x\ge 7 \quad \implies \quad x = 7,\\, 8,\\, 9,\\, \\cdots. $$ This sounds quite obvious, but it gets easily confusing when you solve more advanced questions.
+Be careful of the inequality signs! The range $x>7$ does not include $7$, because $x$ is strictly greater than $7$: $$ x>7 \quad \iff \quad x = 8,\\, 9,\\, 10,\\, \\cdots. $$ On the other hand, $x\ge 7$ does include $7$: $$ x\ge 7 \quad \iff \quad x = 7,\\, 8,\\, 9,\\, \\cdots. $$ This sounds quite obvious, but it gets easily confusing when you solve more advanced questions.
 
 <p></p>
 {{% /details %}}
@@ -53,8 +53,8 @@ We will first solve $5n-7<2n+5$:
 
 \begin{align}
   & 5n-7<2n+5 \\\\
-  \implies & 3n < 12 \\\\
-  \implies & n < 4.
+  \iff & 3n < 12 \\\\
+  \iff & n < 4.
 \end{align}
 
 Because $n$ is a natural number, the values of $n$ that satisfy $n<4$ are $\\textbf{1, 2 and 3}$.
@@ -87,9 +87,9 @@ If the largest integer that satisfies the inequality $x<\dfrac{3a-2}{4}$ is $5$,
 Solving this inequality gives
 \begin{align}
   & 5\lt \dfrac{3a-2}{4} \le 6 \\\\
-  \implies & 20 \lt 3a-2 \le 24 \\\\
-  \implies & 22 \lt 3a \le 26 \\\\
-  \implies & \boldsymbol{ \frac{22}{3} \lt a \le \frac{26}{3} }.
+  \iff & 20 \lt 3a-2 \le 24 \\\\
+  \iff & 22 \lt 3a \le 26 \\\\
+  \iff & \boldsymbol{ \frac{22}{3} \lt a \le \frac{26}{3} }.
 \end{align}
 
 {{% /box %}}
@@ -113,14 +113,14 @@ Suppose $k$ is an integer greater than $2$, and an integer $x$ satisfies $5-x\le
 and solve the inequalities one by one. The first inequality gives
 \begin{align}
   & 5-x\le 4x \\\\
-  \implies & 5 \le 5x \\\\
-  \implies & 1 \le x, && \qdcirc{1}
+  \iff & 5 \le 5x \\\\
+  \iff & 1 \le x, && \qdcirc{1}
 \end{align}
 and the second inequality gives
 \begin{align}
   & 4x\lt 2x+k \\\\
-  \implies & 2x \lt k \\\\
-  \implies & x \lt \frac{k}{2}, && \qdcirc{2}
+  \iff & 2x \lt k \\\\
+  \iff & x \lt \frac{k}{2}, && \qdcirc{2}
 \end{align}
 {{% mn 129 %}}{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-int-ex3.png" %}} The possible range for $x$, as a function of $k$.{{% /mn %}} Because $k>2$ from the question, $\dfrac{k}{2}>1$. Thus the range of $x$ is $\boldsymbol{ 1 \le x \lt \dfrac{k}{2} }$.
 
@@ -150,9 +150,9 @@ and the second inequality gives
 
 \begin{align}
   & 4(x-2)+5(6-x)>7 \\\\
-  \implies & 4x - 8 + 30 - 5x > 7 \\\\
-  \implies & -x + 22 > 7 \\\\
-  \implies & 15 > x.
+  \iff & 4x - 8 + 30 - 5x > 7 \\\\
+  \iff & -x + 22 > 7 \\\\
+  \iff & 15 > x.
 \end{align}
 
 Therefore, the largest integer $x$ that satisfy $x<15$ is $\boldsymbol{14}$.
@@ -163,19 +163,19 @@ Therefore, the largest integer $x$ that satisfy $x<15$ is $\boldsymbol{14}$.
 
 \begin{align}
   & x - 3(x-4) \le 12 \\\\
-  \implies & x - 3x + 12 \le 12 \\\\
-  \implies & -2x \le 0 \\\\
-  \implies & x \ge 0, && \qdcirc{1}
+  \iff & x - 3x + 12 \le 12 \\\\
+  \iff & -2x \le 0 \\\\
+  \iff & x \ge 0, && \qdcirc{1}
 \end{align}
 
 and from the second inequality,
 
 \begin{align}
   & 4 + 2(3-x) \gt 5x - 10 \\\\
-  \implies & 4 + 6 - 2x \gt 5x - 10 \\\\
-  \implies & 10 - 2x \gt 5x - 10 \\\\
-  \implies & -7x \gt -20 \\\\
-  \implies & x \lt \frac{20}{7}. && \qdcirc{2}
+  \iff & 4 + 6 - 2x \gt 5x - 10 \\\\
+  \iff & 10 - 2x \gt 5x - 10 \\\\
+  \iff & -7x \gt -20 \\\\
+  \iff & x \lt \frac{20}{7}. && \qdcirc{2}
 \end{align}
 
 {{% mn q2 %}}
@@ -200,8 +200,8 @@ and from the second inequality,
 
 \begin{align}
   & 3x+1>2a \\\\
-  \implies & 3x > 2a-1 \\\\
-  \implies & x > \frac{2a-1}{3}.
+  \iff & 3x > 2a-1 \\\\
+  \iff & x > \frac{2a-1}{3}.
 \end{align}
 
 {{% mn q3 %}}
@@ -210,9 +210,9 @@ and from the second inequality,
 
 \begin{align}
   & 3 \le \dfrac{2a-1}{3} \lt 4 \\\\
-  \implies & 9 \le 2a-1 \lt 12 \\\\
-  \implies & 10 \le 2a \lt 13 \\\\
-  \implies & 5 \le a \lt \frac{13}{2}.
+  \iff & 9 \le 2a-1 \lt 12 \\\\
+  \iff & 10 \le 2a \lt 13 \\\\
+  \iff & 5 \le a \lt \frac{13}{2}.
 \end{align}
 
 {{% mn q32 %}}
@@ -225,15 +225,15 @@ and from the second inequality,
 
 \begin{align}
   & 6x-4>3x+5 \\\\
-  \implies & 3x > 9 \\\\
-  \implies & x > 3, && \qdcirc{1}
+  \iff & 3x > 9 \\\\
+  \iff & x > 3, && \qdcirc{1}
 \end{align}
 
 and if we treat $a$ as a constant and solve the second inequality,
 
 \begin{align}
   & 2x-1\le x+a \\\\
-  \implies & x \le a+1. && \qdcirc{2}
+  \iff & x \le a+1. && \qdcirc{2}
 \end{align}
 
 {{% mn q4 %}}
@@ -242,7 +242,7 @@ and if we treat $a$ as a constant and solve the second inequality,
 
 \begin{align}
   & 8 \le a+1 \lt 9 \\\\
-  \implies & \boldsymbol{ 7 \le a \lt 8 }.
+  \iff & \boldsymbol{ 7 \le a \lt 8 }.
 \end{align}
 
 <hr style="visibility: hidden" />

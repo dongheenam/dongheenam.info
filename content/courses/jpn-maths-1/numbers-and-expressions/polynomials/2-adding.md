@@ -303,8 +303,8 @@ Note how the brackets change their shapes, depending on the number of brackets i
 You can solve the equation for $P$:
 \begin{alignat}{2}
 & P + (3x^2 - 2x + 1) &&= x^2 - x \\\\
-\implies & P &&= x^2 -x \hl{ -(3x^2 - 2x + 1) } \\\\
-\implies & P &&\boldsymbol{= -2x^2 + x - 1.}
+\iff & P &&= x^2 -x \hl{ -(3x^2 - 2x + 1) } \\\\
+\iff & P &&\boldsymbol{= -2x^2 + x - 1.}
 \end{alignat}
 So the polynomial is $-2x^2 + x - 1$.
 
@@ -326,7 +326,7 @@ We can solve this equation to get $Q$.
 
 \begin{align}
 Q &- (a^3 + 2a^2b - 5ab^2 + 5b^3) = -a^3 - 4a^2b + 10ab^2 - 9b^3 \\\\
-\implies Q &= -a^3 - 4a^2b + 10ab^2 - 9b^3 \hl{+(a^3 + 2a^2b - 5ab^2 + 5b^3)} \\\\
+\iff Q &= -a^3 - 4a^2b + 10ab^2 - 9b^3 \hl{+(a^3 + 2a^2b - 5ab^2 + 5b^3)} \\\\
 &= -2a^2b + 5ab^2 - 4b^3.
 \end{align}
 

@@ -43,11 +43,11 @@ weight: 25
 </ul>
 Thus,
 \begin{align}
-  2 = -a + 1 \implies \boldsymbol{ a = -1 }
+  2 = -a + 1 \iff \boldsymbol{ a = -1 }
 \end{align}
 and
 \begin{align}
-  -2 = -b + 1 \implies \boldsymbol{ b = 3 }.
+  -2 = -b + 1 \iff \boldsymbol{ b = 3 }.
 \end{align}
 </li>
 </ol>
@@ -61,11 +61,11 @@ and
 \end{align}
 If you subtract $\tcirc{2}$ from $\tcirc{1}$,
 \begin{align}
-  6 = -3c \implies \boldsymbol{ c = -2 }.
+  6 = -3c \iff \boldsymbol{ c = -2 }.
 \end{align}
 Finally, from $\tcirc{2}$,
 \begin{align}
-  1 = -2 + d \implies \boldsymbol{ d = 3 }.
+  1 = -2 + d \iff \boldsymbol{ d = 3 }.
 \end{align}
 
 {{< figure style="margin-bottom: 0" src="courses/jpn-maths-1/functions/quadratic-graphs/review-a2.png" alt="Graph of y = cx + d." >}}
@@ -192,10 +192,10 @@ Therefore, the vertex is $\boldsymbol{ \left( -\dfrac{a}{2}, - \dfrac{a^2}{4} - 
 $\hspace{0.5em} \text{b.} \quad$ Because the coordinates of the vertex satisfies the equation $y = 2x-1$,
 \begin{align}
   -\dfrac{a^2}{4} - 2 &= 2\left( -\dfrac{a}{2} \right) - 1 \\\\
-  \implies -\dfrac{a^2}{4} + a - 1 &= 0 \\\\
-  \implies a^2 - 4a + 4 &= 0 \\\\
-  \implies (a-2)^2 &= 0 \\\\
-  \implies \boldsymbol{ a = 2 }.
+  \iff -\dfrac{a^2}{4} + a - 1 &= 0 \\\\
+  \iff a^2 - 4a + 4 &= 0 \\\\
+  \iff (a-2)^2 &= 0 \\\\
+  \iff \boldsymbol{ a = 2 }.
 \end{align}
 
 {{% /details %}}

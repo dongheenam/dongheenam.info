@@ -46,8 +46,8 @@ The equation $$ ax + 1 = -3a -2 $$ has two variables ($a$ and $x$) and hence can
 
 \begin{alignat}{2}
   && ax + 1 & = -3a -2 \\\\
-  \implies && ax &= -3a -3 \\\\
-  \implies && x &= \frac{-3a-3}{a}.
+  \iff && ax &= -3a -3 \\\\
+  \iff && x &= \frac{-3a-3}{a}.
 \end{alignat}
 
 What is the problem with this work? It should be fine for most of the time, but you cannot determine the value of $\dfrac{-3a-3}{a}$ when $a=0$, hence the value of $x$ is not set for this case! When we divided both sides by $a$, we *assumed* that $a$ is not equal to zero. Now, what happens when $a=0?$ Have a look at the complete solution below.
@@ -61,7 +61,7 @@ We will first assume $a=0$. Then
 
 \begin{alignat}{2}
   && 0\cdot x + 1 &= -3\cdot 0 - 2 \\\\
-  \implies && 1 &= -2,
+  \iff && 1 &= -2,
 \end{alignat}
 which is *always false*. Hence there are *no solutions* when $a=0$.
 
@@ -71,8 +71,8 @@ $(1)$ Note that because we assumed $a$ is not zero, we can divide both sides by 
 We will then assume $a\ne 0$. Then
 \begin{alignat}{2}
   && ax + 1 & = -3a -2 \\\\
-  \implies && ax &= -3a -3 \\\\
-  \implies && x &= \frac{-3a-3}{a}. \tag{1}
+  \iff && ax &= -3a -3 \\\\
+  \iff && x &= \frac{-3a-3}{a}. \tag{1}
 \end{alignat}
 
 Therefore, when $a$ is nonzero, $\boldsymbol{ x=\dfrac{-3a-3}{a} = -3 - \dfrac{3}{a} }$.
@@ -90,31 +90,31 @@ The inequality simplifies to
 
 \begin{align}
   & ax + a > x + a^2 \\\\
-  \implies & ax - x > a^2 - a \\\\
-  \implies & (a-1)x > a(a-1). \quad \qdcirc{1}
+  \iff & ax - x > a^2 - a \\\\
+  \iff & (a-1)x > a(a-1). \quad \qdcirc{1}
 \end{align}
 
 The next step is to divide both sides by $(a-1)$, so we need to consider the case of $\text{(i) } a-1>0$, $\text{(ii) } a-1=0$, and $\text{(iii) } a-1<0$.
 
-$\text{(i)} \quad$ When $a-1>0 \implies a>1$, we are dividing both sides by a positive number, so
+$\text{(i)} \quad$ When $a-1>0 \iff a>1$, we are dividing both sides by a positive number, so
 
 \begin{align}
-  \tcirc{1} \implies & x > a.
+  \tcirc{1} \iff & x > a.
 \end{align}
 
-$\text{(ii)} \quad$ When $a-1=0 \implies a=1$, we *cannot divide* both sides by $a-1$. Instead, we can substitute $a=1$ into $\tcirc{1}$:
+$\text{(ii)} \quad$ When $a-1=0 \iff a=1$, we *cannot divide* both sides by $a-1$. Instead, we can substitute $a=1$ into $\tcirc{1}$:
 
 \begin{align}
-  \tcirc{1} \implies & 0 \cdot x > 1 \cdot 0 \\\\
-  \implies & 0 > 0.
+  \tcirc{1} \iff & 0 \cdot x > 1 \cdot 0 \\\\
+  \iff & 0 > 0.
 \end{align}
 
 Because this inequality is always false, there are no solutions for $x$ in this case.
 
-$\text{(iii)} \quad$ When $a-1<0 \implies a<1$, we are dividing both sides by a negative number, so *the inequality sign changes*.
+$\text{(iii)} \quad$ When $a-1<0 \iff a<1$, we are dividing both sides by a negative number, so *the inequality sign changes*.
 
 \begin{align}
-  \tcirc{1} \implies & x \hl{<} a.
+  \tcirc{1} \iff & x \hl{<} a.
 \end{align}
 
 Therefore, the solution for $x$ is
@@ -145,32 +145,32 @@ to see what the solutions are in terms of $a$. From the first inequality,
 
 \begin{align}
   & ax + 2x < 4 \\\\
-  \implies & (a+2)x < 4, \quad \qdcirc{1}
+  \iff & (a+2)x < 4, \quad \qdcirc{1}
 \end{align}
 
 and from the second inequality,
 
 \begin{align}
   & 4-2x < 2x \\\\
-  \implies & 4 < 4x \\\\
-  \implies & 1 < x. \quad \qdcirc{2}
+  \iff & 4 < 4x \\\\
+  \iff & 1 < x. \quad \qdcirc{2}
 \end{align}
 
 By comparing the solution $(1<x<4)$ with $\tcirc{2}$, we can clearly see that $\tcirc{1}$ should lead to $x<4$. Because we need to divide both sides of $\tcirc{1}$ by $(a+2)$ to proceed, it is natural for us to divide the cases by the sign of $(a+2)$.
 
-$\text{(i)  } \quad$ When $a+2>0$, $\quad \tcirc{1} \implies x < \dfrac{4}{a+2}$.
+$\text{(i)  } \quad$ When $a+2>0$, $\quad \tcirc{1} \iff x < \dfrac{4}{a+2}$.
 
-$\text{(ii) } \quad$ When $a+2=0$, $\quad \tcirc{1} \implies 0 < 4$ (no solutions).
+$\text{(ii) } \quad$ When $a+2=0$, $\quad \tcirc{1} \iff 0 < 4$ (no solutions).
 
-$\text{(iii)} \quad$ When $a+2<0$, $\quad \tcirc{1} \implies x > \dfrac{4}{a+2}$.
+$\text{(iii)} \quad$ When $a+2<0$, $\quad \tcirc{1} \iff x > \dfrac{4}{a+2}$.
 
-Since $\tcirc{1}$ should apply an upper limit of $x$, only $\text{(i)}$ is a suitable choice. Hence we find, $a+2>0 \implies a>-2$ and
+Since $\tcirc{1}$ should apply an upper limit of $x$, only $\text{(i)}$ is a suitable choice. Hence we find, $a+2>0 \iff a>-2$ and
 
 \begin{alignat}{2}
   && \dfrac{4}{a+2} &= 4 \\\\
-  \implies && 4 &= 4(a+2) \\\\
-  \implies && 1 &= a+2 \\\\
-  \implies && a &= -1.
+  \iff && 4 &= 4(a+2) \\\\
+  \iff && 1 &= a+2 \\\\
+  \iff && a &= -1.
 \end{alignat}
 
 Therefore, the value of $a$ is $\boldsymbol{ -1 }$.
@@ -197,10 +197,10 @@ You would like to share the apples you have with a group of children. If you giv
 6. Solving this inequality gives
 \begin{align}
   & 0 \le 4x+19 - 7(x-1) \lt 4 \\\\
-  \implies & 0 \le 4x+19 - 7x + 7 \lt 4 \\\\
-  \implies & 0 \le -3x + 26 \lt 4 \\\\
-  \implies & -26 \le -3x \lt -22 \\\\
-  \implies & \frac{22}{3} \lt x \le \frac{26}{3}.
+  \iff & 0 \le 4x+19 - 7x + 7 \lt 4 \\\\
+  \iff & 0 \le -3x + 26 \lt 4 \\\\
+  \iff & -26 \le -3x \lt -22 \\\\
+  \iff & \frac{22}{3} \lt x \le \frac{26}{3}.
 \end{align}
 7. The number of children has to be a natural number, and the only natural number that is in between $\dfrac{22}{3}$ and $\dfrac{26}{3}$ is $8$ $\left(=\dfrac{24}{8}\right)$. Therefore there are $\textbf{8 children}$, and the number of apples is $$ 4\cdot 8 + 19 = \boldsymbol{51}. $$ 
 
@@ -243,17 +243,17 @@ Basics of solving word problems:
 1. We will first simplify the inequality in terms of $x$.
 \begin{align}
   & mx>x+m^2+m-2 \\\\
-  \implies & mx-x>m^2+m-2 \\\\
-  \implies & (m-1)x > (m-1)(m+2). && \qdcirc{1}
+  \iff & mx-x>m^2+m-2 \\\\
+  \iff & (m-1)x > (m-1)(m+2). && \qdcirc{1}
 \end{align}
 
 We need to divide both sides by $(m-1)$, if possible. Hence we will look at the cases when $(m-1)$ is positive, when it equals zero, and when it is negative.
 
-$\text{(i)  } \quad$ When $m-1>0$, $\quad \tcirc{1} \implies x > m+2$.
+$\text{(i)  } \quad$ When $m-1>0$, $\quad \tcirc{1} \iff x > m+2$.
 
-$\text{(ii) } \quad$ When $m-1=0$, $\quad \tcirc{1} \implies 0 > 0$ (always false).
+$\text{(ii) } \quad$ When $m-1=0$, $\quad \tcirc{1} \iff 0 > 0$ (always false).
 
-$\text{(iii)} \quad$ When $m-1<0$, $\quad \tcirc{1} \implies x < m+2$.
+$\text{(iii)} \quad$ When $m-1<0$, $\quad \tcirc{1} \iff x < m+2$.
 
 Therefore, the solution is
 
@@ -274,32 +274,32 @@ and solve them separately. From the second inequality,
 
 \begin{align}
   & 4x+1 \le 5 \\\\
-  \implies & 4x \le 4 \\\\
-  \implies & x \le 1. && \qdcirc{1}
+  \iff & 4x \le 4 \\\\
+  \iff & x \le 1. && \qdcirc{1}
 \end{align}
 
 Then, from the first inequality,
 \begin{align}
   & 2bx\le 4x+1 \\\\
-  \implies & (2b-4)x \le 1 \\\\
-  \implies & (b-2)x \le \frac{1}{2}. \qdcirc{2}
+  \iff & (2b-4)x \le 1 \\\\
+  \iff & (b-2)x \le \frac{1}{2}. \qdcirc{2}
 \end{align}
 
 If we compare $\tcirc{1}$ with $-5\le x\le 1$, $\tcirc{2}$ should be equivalent to $x\ge -5$. It means that the inequality sign has to flip, which means $(b-2)$ has to be negative:
 
 \begin{align}
-  \tcirc{2} \implies & x \hl{\ge} \frac{1}{2(b-2)}, \\\\
-  \implies & x \ge -5,
+  \tcirc{2} \iff & x \hl{\ge} \frac{1}{2(b-2)}, \\\\
+  \iff & x \ge -5,
 \end{align}
 
 so $\dfrac{1}{2(b-2)} = -5$. We solve this equation to find the value of $b$:
 
 \begin{alignat}{2}
   && \frac{1}{2(b-2)} &= -5 \\\\
-  \implies && 1 &= -5 \cdot 2(b-2) \\\\
-  \implies && 1 &= -10b + 20 \\\\
-  \implies && 10b &= 19 \\\\
-  \implies && \boldsymbol{ b } & \boldsymbol{ = \dfrac{19}{10} }.
+  \iff && 1 &= -5 \cdot 2(b-2) \\\\
+  \iff && 1 &= -10b + 20 \\\\
+  \iff && 10b &= 19 \\\\
+  \iff && \boldsymbol{ b } & \boldsymbol{ = \dfrac{19}{10} }.
 \end{alignat}
 
 We can also confirm this solution matches the previous assumption ($b-2<0$) we made.
@@ -323,18 +323,18 @@ After Alice gives three more pencils to Tom, Alice has $\dfrac{2}{3} n - 3$ penc
 
 Now we have two inequalities to solve. Solving $\tcirc{1}$ gives
 \begin{align}
-  \tcirc{1} \implies & \dfrac{2}{3} n > 52 - \dfrac{2}{3} n \\\\
-  \implies & \dfrac{4}{3} n > 52 \\\\
-  \implies & n > 52 \times \dfrac{3}{4} \\\\
-  \implies & n > 39.
+  \tcirc{1} \iff & \dfrac{2}{3} n > 52 - \dfrac{2}{3} n \\\\
+  \iff & \dfrac{4}{3} n > 52 \\\\
+  \iff & n > 52 \times \dfrac{3}{4} \\\\
+  \iff & n > 39.
 \end{align}
 
 Then, solving $\tcirc{2}$ gives
 \begin{align}
-  \tcirc{2} \implies & \dfrac{2}{3} n - 3 < 55 - \frac{2}{3} n \\\\
-  \implies & \dfrac{4}{3} n < 58 \\\\
-  \implies & n < 58 \times \dfrac{3}{4} \\\\
-  \implies & n < 43.5.
+  \tcirc{2} \iff & \dfrac{2}{3} n - 3 < 55 - \frac{2}{3} n \\\\
+  \iff & \dfrac{4}{3} n < 58 \\\\
+  \iff & n < 58 \times \dfrac{3}{4} \\\\
+  \iff & n < 43.5.
 \end{align}
 
 We find $ 39 < n < 43.5 $. Because Alice could give one third of her pencils, the number of pencils Alice had must be divisible by $3$. The only multiple of $3$ that is in between $39$ and $43.5$ is $42$, so Alice had $\boldsymbol{42}$ pencils at first.
@@ -356,11 +356,11 @@ $(1)$ Multiplying both sides by the least common multiple of the denominators $(
 {{% /mn %}}
 \begin{align}
   & \dfrac{d}{5} + \dfrac{15-d}{3} \le 4 \\\\
-  \implies & 3d + 5(15-d) \le 60 \tag{1} \\\\
-  \implies & 3d + 75 - 5d \le 60 \\\\
-  \implies & -2d \le 60 - 75 \\\\
-  \implies & -2d \le -15 \\\\
-  \implies & d \ge \dfrac{15}{2}.
+  \iff & 3d + 5(15-d) \le 60 \tag{1} \\\\
+  \iff & 3d + 75 - 5d \le 60 \\\\
+  \iff & -2d \le 60 - 75 \\\\
+  \iff & -2d \le -15 \\\\
+  \iff & d \ge \dfrac{15}{2}.
 \end{align}
 
 Therefore, you need to run for at least $\boldsymbol{ 7.5 }$ kilometres.

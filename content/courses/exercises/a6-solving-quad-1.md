@@ -88,7 +88,7 @@ Use the panel below to create randomised questions. You can click each question 
       } else {
         qTex = `${poly.tex()} = 0`;
       }
-      const aTex = `\\boldsymbol{\\implies ${lett}=${soln1.tex()},~${soln2.tex()}}`;
+      const aTex = `\\boldsymbol{\\iff ${lett}=${soln1.tex()},~${soln2.tex()}}`;
       render(qTex, aTex, options).then((li) => {
         qbox.appendChild(li);
         MathJax.startup.document.clear();

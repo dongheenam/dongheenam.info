@@ -295,13 +295,13 @@ $\hspace{0.5em} \text{a.} \quad$ The y-intercept is above the x-axis, so $\bolds
 $\hspace{0.5em} \text{b.} \quad$ The graph is concave up so $a>0$. Then, the x-coordinate of the vertex is negative, thus<br>
 {{% mn q3b tips %}} $\dfrac{b}{2a}>0$ means the signs of $a$ and $b$ are the same. {{% /mn %}}
 \begin{align}
-  -\dfrac{b}{2a} <0 &\implies \dfrac{b}{2a} > 0 \\\\
-  & \implies \boldsymbol{ b>0 }. \tag{1}
+  -\dfrac{b}{2a} <0 &\iff \dfrac{b}{2a} > 0 \\\\
+  & \iff \boldsymbol{ b>0 }. \tag{1}
 \end{align}
 
 $\hspace{0.5em} \text{c.} \quad$ Since the y-coordinate of the vertex is negative,
 \begin{align}
-  -\dfrac{b^2-4ac}{4a} < 0 &\implies \dfrac{b^2-4ac}{4a} > 0.
+  -\dfrac{b^2-4ac}{4a} < 0 &\iff \dfrac{b^2-4ac}{4a} > 0.
 \end{align}
 Because $a>0$, $\boldsymbol{ b^2-4ac>0 }.$
 
@@ -312,9 +312,9 @@ $\hspace{0.5em} \text{e.} \quad$ When $x=-1$, $y = a(-1)^2 +b(-1) + c = a-b+c$. 
 $\hspace{0.5em} \text{f.} \quad$ The axis of symmetry is left of $x=-1$, so<br>
 {{% mn q3f tips %}}Because $a>0$, dividing by $a$ does not change the inequality sign.{{% /mn %}}
 \begin{align}
-  -\dfrac{b}{2a} < -1 & \implies \dfrac{b}{2a} > 1 \\\\
-  &\implies b > 2a \tag{2}\\\\
-  &\implies \boldsymbol{ 0 > 2a - b} .
+  -\dfrac{b}{2a} < -1 & \iff \dfrac{b}{2a} > 1 \\\\
+  &\iff b > 2a \tag{2}\\\\
+  &\iff \boldsymbol{ 0 > 2a - b} .
 \end{align}
 
 {{% /details %}}

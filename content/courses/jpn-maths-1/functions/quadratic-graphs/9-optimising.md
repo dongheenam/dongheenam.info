@@ -109,13 +109,13 @@ In the solution above, we used the idea that the minimum of $\ell(x)$ is the squ
 Say the minimum of $[\ell(x)]^2$ be $M$. Then, from the [definition of the minimum](../extrema-1/#extrema-and-vertex-form), for every single value of $x$, $$ \[\ell(x)\]^2 \ge M. $$ From here, we find
 \begin{align}
   & \[\ell(x)\]^2 - M \ge 0 \\\\
-  & \implies \left\[ \ell(x) + \sqrt{M} \right\] \left\[ \ell(x) - \sqrt{M} \right\] \ge 0.
+  & \iff \left\[ \ell(x) + \sqrt{M} \right\] \left\[ \ell(x) - \sqrt{M} \right\] \ge 0.
 \end{align}
 
 From here, we want to divide both sides by $\left\[ \ell(x) + \sqrt{M} \right\]$ and [not flip the inequality sign](../../../numbers-and-expressions/inequalities/properties/#properties). You should notice that this value is indeed positive because $\ell(x)$ and $\sqrt{M}$ are lengths and should always be positive. Thus,
 \begin{align}
   & \ell(x) - \sqrt{M} \ge 0 \\\\
-  & \implies \ell(x) \ge \sqrt{M}.
+  & \iff \ell(x) \ge \sqrt{M}.
 \end{align}
 
 This is true for all values of $x$, so we conclude $\sqrt{M}$ is the minimum of $\ell(x)$!

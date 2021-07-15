@@ -60,16 +60,16 @@ How to solve linear inequalities:
 By moving the terms, we mean something like this:
 \begin{alignat}{2}
   & 3x \hl{+4} &&= 12 \\\\
-  \implies & 3x &&= 12 \hl{-4}.
+  \iff & 3x &&= 12 \hl{-4}.
 \end{alignat}
 
 In this lesson, we assume you are familiar with this technique. Remember, you need to change the sign when you move a term across the equal (or inequality) sign!
 
 \begin{alignat}{2}
   & 5y -4 &&= 3 +3y \\\\
-  \implies & 5y -3y &&= 3 +4 \\\\
-  \implies & 2y &&= 7 \\\\
-  \implies & y &&= \frac{7}{2}.
+  \iff & 5y -3y &&= 3 +4 \\\\
+  \iff & 2y &&= 7 \\\\
+  \iff & y &&= \frac{7}{2}.
 \end{alignat}
 
 {{% /details %}}
@@ -92,9 +92,9 @@ $(2)$ Dividing both sides by $3$
 {{% /mn %}}
 \begin{align}
   \text{1.} \qquad & 6x-21\gt 3x \\\\
-  \implies & 6x \hl{-3x}\gt \hl{21} \tag{1} \\\\
-  \implies & 3x \gt 21 \\\\
-  \implies & \boldsymbol{ x\gt 7 }. \tag{2}
+  \iff & 6x \hl{-3x}\gt \hl{21} \tag{1} \\\\
+  \iff & 3x \gt 21 \\\\
+  \iff & \boldsymbol{ x\gt 7 }. \tag{2}
 \end{align}
 
 {{% mn 100 tips %}}
@@ -103,9 +103,9 @@ $(4)$ Dividing both sides by $-4$ (change of signs)
 {{% /mn %}}
 \begin{align}
   \text{2.} \qquad & 5x+16\le 9x-4 \\\\
-  \implies & 5x \hl{-9x}\le -4 \hl{-16} \tag{3} \\\\
-  \implies & -4x \le -20 \\\\
-  \implies & \boldsymbol{ x \hl{\ge} 5 }. \tag{4}
+  \iff & 5x \hl{-9x}\le -4 \hl{-16} \tag{3} \\\\
+  \iff & -4x \le -20 \\\\
+  \iff & \boldsymbol{ x \hl{\ge} 5 }. \tag{4}
 \end{align}
 
 {{% mn 110 tips %}}
@@ -115,10 +115,10 @@ $(7)$ Dividing both sides by $-7$ (change of signs)
 {{% /mn %}}
 \begin{align}
   \text{3.} \qquad & 3(x-1)\ge 2(5x+4) \\\\
-  \implies & 3x-3 \ge 10x+8 \tag{5} \\\\
-  \implies & 3x-10x \ge 8+3 \tag{6} \\\\
-  \implies & -7x \ge 11 \\\\
-  \implies & x \le -\frac{11}{7}. \tag{7}
+  \iff & 3x-3 \ge 10x+8 \tag{5} \\\\
+  \iff & 3x-10x \ge 8+3 \tag{6} \\\\
+  \iff & -7x \ge 11 \\\\
+  \iff & x \le -\frac{11}{7}. \tag{7}
 \end{align}
 
 $\hspace{0.5em} \text{4.} \quad$ We want to remove the fractions first. We can do that by multiplying both sides by the least common multiple of the denominators: $12$.
@@ -130,12 +130,12 @@ $(10)$ Dividing both sides by $25$
 {{% /mn %}}
 \begin{align}
   & \dfrac{5x+1}{4} - \dfrac{2-3x}{3}\lt \dfrac{1}{6}x + 1 \\\\
-  \implies & 3(5x+1) - 4(2-3x) \lt 2x + 12 \\\\
-  \implies & 15x + 3 - 8 + 12x \lt 2x + 12 \tag{8} \\\\
-  \implies & 27x - 5 \lt 2x + 12 \\\\
-  \implies & 27x - 2x \lt 12 + 5 \tag{9} \\\\
-  \implies & 25x \lt 17 \quad \\\\
-  \implies & \boldsymbol{ x \lt \frac{17}{25}. } \tag{10}
+  \iff & 3(5x+1) - 4(2-3x) \lt 2x + 12 \\\\
+  \iff & 15x + 3 - 8 + 12x \lt 2x + 12 \tag{8} \\\\
+  \iff & 27x - 5 \lt 2x + 12 \\\\
+  \iff & 27x - 2x \lt 12 + 5 \tag{9} \\\\
+  \iff & 25x \lt 17 \quad \\\\
+  \iff & \boldsymbol{ x \lt \frac{17}{25}. } \tag{10}
 \end{align}
 
 {{% /box %}}
@@ -173,33 +173,33 @@ We can also draw the range on the number line. The trick is, we use filled circl
 
 \begin{align}
   \text{a.} \qquad & 5x-7\gt 3(x+1) \\\\
-  \implies & 5x-7\gt 3x+3 \\\\
-  \implies & 5x-3x\gt 3+7 \\\\
-  \implies & 2x\gt 10 \\\\
-  \implies & \boldsymbol{ x\gt 5 }.
+  \iff & 5x-7\gt 3x+3 \\\\
+  \iff & 5x-3x\gt 3+7 \\\\
+  \iff & 2x\gt 10 \\\\
+  \iff & \boldsymbol{ x\gt 5 }.
 \end{align}
 
 \begin{align}
   \text{b.} \qquad & 4(3-2x)\le 5(x+2) \\\\
-  \implies & 12-8x\le 5x+10 \\\\
-  \implies & 12-10\le 5x+8x \\\\
-  \implies & 2\le 13x \\\\
-  \implies & \boldsymbol{ x\ge \frac{2}{13} }.
+  \iff & 12-8x\le 5x+10 \\\\
+  \iff & 12-10\le 5x+8x \\\\
+  \iff & 2\le 13x \\\\
+  \iff & \boldsymbol{ x\ge \frac{2}{13} }.
 \end{align}
 
 \begin{align}
   \text{c.} \qquad & \dfrac{3x+2}{5}\lt \dfrac{2x-1}{3} \\\\
-  \implies & 3(3x+2)\lt 5(2x-1) \\\\
-  \implies & 9x+6\lt 10x-5 \\\\
-  \implies & 6+5\lt 10x-9x \\\\
-  \implies & \boldsymbol{ x\gt 11 }.
+  \iff & 3(3x+2)\lt 5(2x-1) \\\\
+  \iff & 9x+6\lt 10x-5 \\\\
+  \iff & 6+5\lt 10x-9x \\\\
+  \iff & \boldsymbol{ x\gt 11 }.
 \end{align}
 
 \begin{align}
   \text{d.} \qquad & 0.2x+1\le -0.3x -2.5 \\\\
-  \implies & 0.2x +0.3x \le -2.5-1 \\\\
-  \implies & 0.5x \le -3.5 \\\\
-  \implies & \boldsymbol{ x \le -7 }.
+  \iff & 0.2x +0.3x \le -2.5-1 \\\\
+  \iff & 0.5x \le -3.5 \\\\
+  \iff & \boldsymbol{ x \le -7 }.
 \end{align}
 
 {{% mn q1e tips %}}
@@ -208,13 +208,13 @@ $(2)$ Multiplying both sides by $12$, which is the least common multiple of the 
 {{% /mn %}}
 \begin{align}
   \text{e.} \qquad & x+ \dfrac{1}{3} \left\\{ x- \dfrac{1}{4}(x+1) \right\\} \gt 2x- \dfrac{1}{2} \\\\
-  \implies & x + \dfrac{1}{3} x - \dfrac{1}{12}(x+1) \gt 2x- \dfrac{1}{2} \tag{1} \\\\
-  \implies & 12x + 4x - (x+1) \gt 24x-6 \tag{2} \\\\
-  \implies & 16x - x - 1 \gt 24x - 6 \\\\
-  \implies & 15x - 1 \gt 24x - 6 \\\\
-  \implies & -1+6 \gt 24x-15x \\\\
-  \implies & 5 \gt 9x \\\\
-  \implies & \boldsymbol{ x \lt \dfrac{5}{9} }.
+  \iff & x + \dfrac{1}{3} x - \dfrac{1}{12}(x+1) \gt 2x- \dfrac{1}{2} \tag{1} \\\\
+  \iff & 12x + 4x - (x+1) \gt 24x-6 \tag{2} \\\\
+  \iff & 16x - x - 1 \gt 24x - 6 \\\\
+  \iff & 15x - 1 \gt 24x - 6 \\\\
+  \iff & -1+6 \gt 24x-15x \\\\
+  \iff & 5 \gt 9x \\\\
+  \iff & \boldsymbol{ x \lt \dfrac{5}{9} }.
 \end{align}
 
 {{% /details %}}

@@ -69,17 +69,17 @@ To summarise, you can reflect a graph over the x-axis by replacing $y$ with $-y$
 1. Substituting $y$ with $-y$ gives:
 \begin{align}
   \hl{-y} &= 2x^2-5x+4 \\\\
-  \implies \boldsymbol{ y } & \boldsymbol{ = -2x^2 + 5x - 4 }. \qdcirc{1}
+  \iff \boldsymbol{ y } & \boldsymbol{ = -2x^2 + 5x - 4 }. \qdcirc{1}
 \end{align}
 2. Substituting $x$ with $-x$ gives:
 \begin{align}
   y &= 2(\hl{-x})^2 -5(\hl{-x}) + 4 \\\\
-  \implies \boldsymbol{ y } & \boldsymbol{ = 2x^2 + 5x + 4 }. \qdcirc{2}
+  \iff \boldsymbol{ y } & \boldsymbol{ = 2x^2 + 5x + 4 }. \qdcirc{2}
 \end{align}
 3. Substituting $x$ with $-x$ and $y$ with $-y$ gives:
 \begin{align}
   \hl{-y} &= 2(\hl{-x})^2 -5(\hl{-x}) + 4 \\\\
-  \implies \boldsymbol{ y } & \boldsymbol{ = - 2x^2 - 5x - 4 }. \qdcirc{3}
+  \iff \boldsymbol{ y } & \boldsymbol{ = - 2x^2 - 5x - 4 }. \qdcirc{3}
 \end{align}
 
 Because the original function is
@@ -140,7 +140,7 @@ We now know how to translate and reflect quadratic graphs, so let's try mixing t
 so $P_1$ becomes
 \begin{align}
   -y &= (-x)^2 + a(-x) + b \\\\
-  \implies y &= -x^2 + ax - b. \qquad \cdots ~ (P_*)
+  \iff y &= -x^2 + ax - b. \qquad \cdots ~ (P_*)
 \end{align} 
 Then, we need to move $P_*$ 1 unit left and 8 units up, so we need to substitute
 \begin{cases}
@@ -150,7 +150,7 @@ Then, we need to move $P_*$ 1 unit left and 8 units up, so we need to substitute
 Thus
 \begin{align}
   y-8 &= -(x+1)^2 + a(x+1) - b \\\\
-  \implies y &= -x^2 - 2x - 1 + ax + a - b + 8 \\\\
+  \iff y &= -x^2 - 2x - 1 + ax + a - b + 8 \\\\
   &= -x^2 + (a-2)x + (a-b+7).
 \end{align}
 Because this equation is equivalent to $y=-x^2+5x+11$, we have
@@ -161,8 +161,8 @@ Because this equation is equivalent to $y=-x^2+5x+11$, we have
 From the first equation, we find $\boldsymbol{ a=7 }$, and substituting this to the second equation gives
 \begin{align}
   7-b+7 &= 11 \\\\
-  \implies -b &= -3 \\\\
-  \implies \\boldsymbol{ b } & \boldsymbol{ = 3 }.
+  \iff -b &= -3 \\\\
+  \iff \\boldsymbol{ b } & \boldsymbol{ = 3 }.
 \end{align}
 
 ---
@@ -182,13 +182,13 @@ $(2)$ Reflection about the origin.
   y+8 &= -(x-1)^2+5(x-1)+11 \tag{1} \\\\
   &= -x^2+2x-1 + 5x - 5 + 11 \\\\
   &= -x^2 + 7x +5 \\\\
-  \implies y &= -x^2 + 7x - 3,
+  \iff y &= -x^2 + 7x - 3,
 \end{align}
 and then
 \begin{align}
   -y &= -(-x)^2 + 7(-x) - 3 \tag{2} \\\\
   &= -x^2 - 7x - 3 \\\\
-  \implies y &= x^2 + 7x + 3.
+  \iff y &= x^2 + 7x + 3.
 \end{align}
 Therefore, we find $\boldsymbol{ a=7 }$ and $\boldsymbol{ b=3 }.$
 
@@ -256,12 +256,12 @@ Hence the vertex is $(1, 1)$. Therefore, the reflection of $(1,1)$
 We start by moving the graph of $y=x^2$:
 \begin{align}
   y - q &= (x-p)^2 \\\\
-  \implies y &= (x-p)^2 + q.
+  \iff y &= (x-p)^2 + q.
 \end{align}
 Then, if we flip this graph over the x-axis,
 \begin{align}
   -y &= (x-p)^2 + q \\\\
-  \implies y &= -(x-p)^2 - q \\\\
+  \iff y &= -(x-p)^2 - q \\\\
   &= -x^2 + 2px - p^2 - q.
 \end{align}
 Because this equation is identical to $y = -x^2 - 3x + 3$, we find
@@ -272,9 +272,9 @@ Because this equation is identical to $y = -x^2 - 3x + 3$, we find
 From $\tcirc{1}$, $\boldsymbol{ p = -\dfrac{3}{2} }$, and substituting this to $\tcirc{2}$ gives
 \begin{align}
   & -\left(-\dfrac{3}{2}\right)^2 - q = 3 \\\\
-  \implies & -\dfrac{9}{4} - q = 3 \\\\
-  \implies & q = -\dfrac{9}{4} - 3 \\\\
-  \implies & \boldsymbol{ q = -\dfrac{21}{4} }.
+  \iff & -\dfrac{9}{4} - q = 3 \\\\
+  \iff & q = -\dfrac{9}{4} - 3 \\\\
+  \iff & \boldsymbol{ q = -\dfrac{21}{4} }.
 \end{align}
 
 {{% box %}}

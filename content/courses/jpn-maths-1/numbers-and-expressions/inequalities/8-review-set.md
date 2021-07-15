@@ -36,8 +36,8 @@ weight: 18
 {{% note Solution %}} Let the integer be $n$. Then, the range of $n\div 20$ should be $$ 16.5 \le \dfrac{n}{20} < 17.5 $$ because it should round to $17.$ Then
 
 \begin{align}
-  16.5 \le \dfrac{n}{20} < 17.5 &\implies 16.5 \times 20 \le n < 17.5 \times 20 \\\\
-  &\implies 330 \le n < 350.
+  16.5 \le \dfrac{n}{20} < 17.5 &\iff 16.5 \times 20 \le n < 17.5 \times 20 \\\\
+  &\iff 330 \le n < 350.
 \end{align}
 
 Therefore, the lowest value for $n$ is $ \boldsymbol{ 330 }$ and the highest value is $ \boldsymbol{ 349 }$.
@@ -73,17 +73,17 @@ Therefore, the lowest value for $n$ is $ \boldsymbol{ 330 }$ and the highest val
 
 \begin{align}
   \text{a.} \qquad & 2(x-3)\le -x+8 \\\\
-  \implies & 2x - 6 \le -x + 8 \\\\
-  \implies & 3x \le 14 \\\\
-  \implies & \boldsymbol{ x \le \dfrac{14}{3} }.
+  \iff & 2x - 6 \le -x + 8 \\\\
+  \iff & 3x \le 14 \\\\
+  \iff & \boldsymbol{ x \le \dfrac{14}{3} }.
 \end{align}
 
 \begin{align}
   \text{b.} \qquad & \dfrac{1}{3}x > \dfrac{3}{5}x - 2 \\\\
-  \implies & 2 > \dfrac{3}{5}x - \dfrac{1}{3}x \\\\
-  \implies & 2 > \dfrac{4}{15}x \\\\
-  \implies & 2\cdot \dfrac{15}{4} > x \\\\
-  \implies & \boldsymbol{ x < \dfrac{15}{2} }. 
+  \iff & 2 > \dfrac{3}{5}x - \dfrac{1}{3}x \\\\
+  \iff & 2 > \dfrac{4}{15}x \\\\
+  \iff & 2\cdot \dfrac{15}{4} > x \\\\
+  \iff & \boldsymbol{ x < \dfrac{15}{2} }. 
 \end{align}
 
 {{% mn q2c tips %}}
@@ -91,18 +91,18 @@ $(1)$ Multiplied both sides by the LCM of $3$, $4$, and $6$ ($12$).
 {{% /mn %}}
 \begin{align}
   \text{c.} \qquad & \dfrac{5x+1}{3}-\dfrac{3+2x}{4}\ge \dfrac{1}{6}(x-5) \\\\
-  \implies & 4(5x+1) - 3(3+2x) \ge 2(x-5) \tag{1} \\\\
-  \implies & 20x + 4 - 9 - 6x \ge 2x - 10 \\\\
-  \implies & 12x \ge -5 \\\\
-  \implies & \boldsymbol{ x \ge -\dfrac{12}{5} }.
+  \iff & 4(5x+1) - 3(3+2x) \ge 2(x-5) \tag{1} \\\\
+  \iff & 20x + 4 - 9 - 6x \ge 2x - 10 \\\\
+  \iff & 12x \ge -5 \\\\
+  \iff & \boldsymbol{ x \ge -\dfrac{12}{5} }.
 \end{align}
 
 \begin{align}
   \text{d.} \qquad & 0.3x - 7.2>0.5(x-2) \\\\
-  \implies & 0.3x - 7.2 > 0.5x - 1 \\\\
-  \implies & -6.2 > 0.2x \\\\
-  \implies & -6.2 \cdot 5 > x \\\\
-  \implies & \boldsymbol{ x < -31 }.
+  \iff & 0.3x - 7.2 > 0.5x - 1 \\\\
+  \iff & -6.2 > 0.2x \\\\
+  \iff & -6.2 \cdot 5 > x \\\\
+  \iff & \boldsymbol{ x < -31 }.
 \end{align}
 
 <br>
@@ -112,18 +112,18 @@ $(1)$ Multiplied both sides by the LCM of $3$, $4$, and $6$ ($12$).
 $\hspace{0.5em} \text{a.} \quad$ From the first inequality,
 \begin{align}
   & 6(x+1)>2x-5 \\\\
-  \implies & 6x + 6 > 2x - 5 \\\\
-  \implies & 4x > -11 \\\\
-  \implies & x > -\dfrac{11}{4}, \qdcirc{1}
+  \iff & 6x + 6 > 2x - 5 \\\\
+  \iff & 4x > -11 \\\\
+  \iff & x > -\dfrac{11}{4}, \qdcirc{1}
 \end{align}
 
 and from the second inequality,
 \begin{align}
   & 25-\dfrac{6-x}{2}\le 3x \\\\
-  \implies & 50 - (6-x) \le 6x \\\\
-  \implies & 50 -6 + x \le 6x \\\\
-  \implies & 44 \le 5x \\\\
-  \implies & x \ge \dfrac{44}{5}. \qdcirc{2}
+  \iff & 50 - (6-x) \le 6x \\\\
+  \iff & 50 -6 + x \le 6x \\\\
+  \iff & 44 \le 5x \\\\
+  \iff & x \ge \dfrac{44}{5}. \qdcirc{2}
 \end{align}
 
 The intersection of $\tcirc{1}$ and $\tcirc{2}$ is $\boldsymbol{ x \ge \dfrac{44}{5} }.$
@@ -137,19 +137,19 @@ $\displaystyle \begin{cases}
 From the first inequality,
 \begin{align}
   & \dfrac{5(x-1)}{2}\le 2(2x+1) \\\\
-  \implies & 5(x-1) \le 4(2x+1) \\\\
-  \implies & 5x-5 \le 8x + 4 \\\\
-  \implies & -9 \le 3x \\\\
-  \implies & x \ge -3. \qdcirc{3}
+  \iff & 5(x-1) \le 4(2x+1) \\\\
+  \iff & 5x-5 \le 8x + 4 \\\\
+  \iff & -9 \le 3x \\\\
+  \iff & x \ge -3. \qdcirc{3}
 \end{align}
 
 From the second inequality,
 \begin{align}
   & 2(2x+1) < \dfrac{7(x-1)}{4} \\\\
-  \implies & 8(2x+1) < 7(x-1) \\\\
-  \implies & 16x + 8 < 7x - 7 \\\\
-  \implies & 9x < -15 \\\\
-  \implies & x < -\dfrac{5}{3}.  \qdcirc{4}
+  \iff & 8(2x+1) < 7(x-1) \\\\
+  \iff & 16x + 8 < 7x - 7 \\\\
+  \iff & 9x < -15 \\\\
+  \iff & x < -\dfrac{5}{3}.  \qdcirc{4}
 \end{align}
 
 The intersection of $\tcirc{3}$ and $\tcirc{4}$ is $\boldsymbol{ -3 \le x < -\dfrac{5}{3} }.$
@@ -171,9 +171,9 @@ The intersection of $\tcirc{3}$ and $\tcirc{4}$ is $\boldsymbol{ -3 \le x < -\df
 {{% note Solution %}} Let's first solve the inequalities in terms of $x$. The first inequality is already solved, and we will name it as $\tcirc{1}$. The second inequality leads to
 \begin{align}
   & 2x-1>6(x-2) \\\\
-  \implies & 2x-1>6x-12 \\\\
-  \implies & 11>4x \\\\
-  \implies & x<\dfrac{11}{4}. \qdcirc{2}
+  \iff & 2x-1>6x-12 \\\\
+  \iff & 11>4x \\\\
+  \iff & x<\dfrac{11}{4}. \qdcirc{2}
 \end{align}
 
 {{% mn q4a tips %}}
@@ -182,8 +182,8 @@ The intersection of $\tcirc{3}$ and $\tcirc{4}$ is $\boldsymbol{ -3 \le x < -\df
 $\hspace{0.5em} \text{a.} \quad$ For $\tcirc{1}$ and $\tcirc{2}$ to share no common range, we must have $ 3a+1 \ge \dfrac{11}{4} $. Thus
 \begin{align}
   & 3a+1 \ge \dfrac{11}{4} \\\\
-  \implies & 3a \ge \dfrac{7}{4} \\\\
-  \implies & \boldsymbol{ a \ge \dfrac{7}{12} }.
+  \iff & 3a \ge \dfrac{7}{4} \\\\
+  \iff & \boldsymbol{ a \ge \dfrac{7}{12} }.
 \end{align}
 
 {{% mn q4b tips %}}
@@ -192,8 +192,8 @@ $\hspace{0.5em} \text{a.} \quad$ For $\tcirc{1}$ and $\tcirc{2}$ to share no com
 $\hspace{0.5em} \text{b.} \quad$ In order to have $2$ as a solution, $\tcirc{1}$ must also include $2$ in their range. Thus
 \begin{align}
   & 3a + 1 < 2 \\\\
-  \implies & 3a < 1 \\\\
-  \implies & \boldsymbol{ a < \dfrac{1}{3} }.
+  \iff & 3a < 1 \\\\
+  \iff & \boldsymbol{ a < \dfrac{1}{3} }.
 \end{align}
 
 {{% mn q4c tips %}}
@@ -259,10 +259,10 @@ $(1)$ Multiply $180$ on both sides
 {{% /mn %}}
 \begin{align}
   & \dfrac{d}{180} + \dfrac{1500-d}{60} \le 12 \tag{1} \\\\
-  \implies & d + 3(1500-d) \le 12 \cdot 180 \\\\
-  \implies & d + 4500 - 3d \le 2160 \\\\
-  \implies & 2340 \le 2d \\\\
-  \implies & d \ge 1170.
+  \iff & d + 3(1500-d) \le 12 \cdot 180 \\\\
+  \iff & d + 4500 - 3d \le 2160 \\\\
+  \iff & 2340 \le 2d \\\\
+  \iff & d \ge 1170.
 \end{align}
 Therefore, she needs to run at least $\textbf{1170 m}.$
 
@@ -271,19 +271,19 @@ Therefore, she needs to run at least $\textbf{1170 m}.$
 7. Let the mass of 8% salt water be $m$ g. The amount of salt in 500 g of 5% saltwater is $$ \text{800 g} \times 0.05 = \text{40 g}, $$ and the amount of salt in $m$ g of 8% saltwater is $$ \text{$m$ g} \times 0.08 = \text{$0.08m$ g}. $$ Then the total amount of salt is $ (40 + 0.08m)$ g, and the total mass of the saltwater is $ (800 + m) $ g. Because the concentration needs to be in between 6% and 6.5%,
 \begin{align}
   & 6 \le \dfrac{40 + 0.08 m}{800 + m} \times 100 \le 6.5 \\\\
-  \implies & 6(800+m) \le 100(40+0.08m) \le 6.5(800+m) \\\\
-  \implies & 4800 + 6m \le 4000 + 8m \le 5200 + 6.5m.
+  \iff & 6(800+m) \le 100(40+0.08m) \le 6.5(800+m) \\\\
+  \iff & 4800 + 6m \le 4000 + 8m \le 5200 + 6.5m.
 \end{align}
 From the first inequality,
 \begin{align}
-  4800 + 6m \le 4000 + 8m &\implies 800 \le 2m \\\\
-  &\implies m \ge 400,
+  4800 + 6m \le 4000 + 8m &\iff 800 \le 2m \\\\
+  &\iff m \ge 400,
 \end{align}
 and from the second inequality,
 \begin{align}
-  4000 + 8m \le 5200 + 6.5m &\implies 1.5m \le 1200 \\\\
-  &\implies m \le 1200 \times \dfrac{2}{3} \\\\
-  &\implies m \le 800.
+  4000 + 8m \le 5200 + 6.5m &\iff 1.5m \le 1200 \\\\
+  &\iff m \le 1200 \times \dfrac{2}{3} \\\\
+  &\iff m \le 800.
 \end{align}
 Therefore, Kim needs to add $\textbf{no less than 400 g and no more than 800 g}$ of 8% saltwater.
 
@@ -309,27 +309,27 @@ $\hspace{0.5em} \text{a.} \quad$ We need to divide the ranges of $x$ at $x=3$ an
 
 $\text{(i)}\quad$ When $x<\dfrac{3}{2}$,
 \begin{align}
-  |x-3|+|2x-3| = 9 &\implies -(x-3)-(2x-3) = 9 \\\\
-  &\implies -x+3 -2x+3 = 9 \\\\
-  &\implies -3x + 6 = 9 \\\\
-  &\implies x = -1.
+  |x-3|+|2x-3| = 9 &\iff -(x-3)-(2x-3) = 9 \\\\
+  &\iff -x+3 -2x+3 = 9 \\\\
+  &\iff -3x + 6 = 9 \\\\
+  &\iff x = -1.
 \end{align}
 This answer is within the range of our assumption.
 
 $\text{(ii)}\quad$ When $\dfrac{3}{2} \le x < 3$,
 \begin{align}
-  |x-3|+|2x-3| = 9 &\implies -(x-3)+(2x-3) = 9 \\\\
-  &\implies -x+3 +2x-3 = 9 \\\\
-  &\implies x = 9
+  |x-3|+|2x-3| = 9 &\iff -(x-3)+(2x-3) = 9 \\\\
+  &\iff -x+3 +2x-3 = 9 \\\\
+  &\iff x = 9
 \end{align}
 This is not a solution because $x=9$ is outside $\dfrac{3}{2} \le x < 3$.
 
 $\text{(iii)}\quad$ When $x\ge 3$,
 \begin{align}
-  |x-3|+|2x-3| = 9 &\implies (x-3)+(2x-3) = 9 \\\\
-  &\implies x-3 +2x-3 = 9 \\\\
-  &\implies 3x-6 = 9 \\\\
-  &\implies x = 5.
+  |x-3|+|2x-3| = 9 &\iff (x-3)+(2x-3) = 9 \\\\
+  &\iff x-3 +2x-3 = 9 \\\\
+  &\iff 3x-6 = 9 \\\\
+  &\iff x = 5.
 \end{align}
 This answer is within the range of our assumption.
 
@@ -339,48 +339,48 @@ Therefore, the solution to the equation is $\boldsymbol{ x= -1, 5 }.$
 
 $\hspace{0.5em} \text{b.} \quad$ Let's first assume $x\ge 2$ and remove the inner absolute value.
 \begin{align}
-  ||x-2|-4| = 3x &\implies |(x-2) -4| = 3x \\\\
-  &\implies |x-6| = 3x.
+  ||x-2|-4| = 3x &\iff |(x-2) -4| = 3x \\\\
+  &\iff |x-6| = 3x.
 \end{align}
 
 $\text{(i)}\quad$ When $x \ge 6$,
 \begin{align}
-  |x-6| = 3x &\implies x-6 = 3x \\\\
-  &\implies -6 = 2x \\\\
-  &\implies x = -3.
+  |x-6| = 3x &\iff x-6 = 3x \\\\
+  &\iff -6 = 2x \\\\
+  &\iff x = -3.
 \end{align}
 This is outside our assumed range of $x$.
 
 $\text{(ii)}\quad$ When $2 \le x < 6$,
 \begin{align}
-  |x-6| = 3x &\implies -(x-6) = 3x \\\\
-  &\implies -x+6 = 3x \\\\
-  &\implies 6 = 4x \\\\
-  &\implies x = \dfrac{3}{2}.
+  |x-6| = 3x &\iff -(x-6) = 3x \\\\
+  &\iff -x+6 = 3x \\\\
+  &\iff 6 = 4x \\\\
+  &\iff x = \dfrac{3}{2}.
 \end{align}
 This is outside our assumed range of $x$.
 
 Thus, we find there are no solutions if we assume $x\ge 2$. Now, let's assume $x<2$:
 \begin{align}
-  ||x-2|-4| = 3x &\implies |-(x-2) -4| = 3x \\\\
-  &\implies |-x-2| = 3x \\\\
-  &\implies |x+2| = 3x.
+  ||x-2|-4| = 3x &\iff |-(x-2) -4| = 3x \\\\
+  &\iff |-x-2| = 3x \\\\
+  &\iff |x+2| = 3x.
 \end{align}
 
 $\text{(iii)}\quad$ When $-2 \le x < 2$,
 \begin{align}
-  |x+2| = 3x &\implies x+2 = 3x \\\\
-  &\implies 2 = 2x \\\\
-  &\implies x = 1.
+  |x+2| = 3x &\iff x+2 = 3x \\\\
+  &\iff 2 = 2x \\\\
+  &\iff x = 1.
 \end{align}
 This solution satisfies our assumption.
 
 $\text{(iv)}\quad$ When $x < -2$,
 \begin{align}
-  |x+2| = 3x &\implies -(x+2) = 3x \\\\
-  &\implies -x-2 = 3x \\\\
-  &\implies -2 = 4x \\\\
-  &\implies x = -\dfrac{1}{2}.
+  |x+2| = 3x &\iff -(x+2) = 3x \\\\
+  &\iff -x-2 = 3x \\\\
+  &\iff -2 = 4x \\\\
+  &\iff x = -\dfrac{1}{2}.
 \end{align}
 This is outside our assumed range of $x$.
 
@@ -392,25 +392,25 @@ $\hspace{0.5em} \text{c.} \quad$ We need to divide the cases at $x=\dfrac{3}{2}$
 
 $\text{(i)}\quad$ When $x < -\dfrac{2}{3}$,
 \begin{align}
-  |2x-3| \le |3x+2| &\implies -(2x-3) \le -(3x+2) \\\\
-  &\implies 2x-3 \ge 3x+2 \\\\
-  &\implies -5 \ge x.
+  |2x-3| \le |3x+2| &\iff -(2x-3) \le -(3x+2) \\\\
+  &\iff 2x-3 \ge 3x+2 \\\\
+  &\iff -5 \ge x.
 \end{align}
 The intersection with our assumption $x \le -\dfrac{2}{3}$ is $x \le -5. \qdcirc{1}$
 
 $\text{(ii)}\quad$ When $-\dfrac{2}{3} \le x < \dfrac{3}{2}$,
 \begin{align}
-  |2x-3| \le |3x+2| &\implies -(2x-3) \le (3x+2) \\\\
-  &\implies -2x + 3 \le 3x + 2 \\\\
-  &\implies 1 \le 5x \\\\
-  &\implies x \ge \dfrac{1}{5}.
+  |2x-3| \le |3x+2| &\iff -(2x-3) \le (3x+2) \\\\
+  &\iff -2x + 3 \le 3x + 2 \\\\
+  &\iff 1 \le 5x \\\\
+  &\iff x \ge \dfrac{1}{5}.
 \end{align}
 The intersection with our assumption $-\dfrac{2}{3} < x \le \dfrac{3}{2}$ is $\dfrac{1}{5} \le x < \dfrac{3}{2}. \qdcirc{2}$
 
 $\text{(iii)}\quad$ When $x \ge \dfrac{3}{2}$,
 \begin{align}
-|2x-3| \le |3x+2| &\implies (2x-3) \le (3x+2) \\\\
-&\implies -5 \le x.
+|2x-3| \le |3x+2| &\iff (2x-3) \le (3x+2) \\\\
+&\iff -5 \le x.
 \end{align}
 The intersection with our assumption $x \ge \dfrac{3}{2}$ is $x \ge \dfrac{3}{2}. \quad \cdots \tcirc{3}$
 
@@ -422,27 +422,27 @@ $\hspace{0.5em} \text{d.} \quad$ We need to divide the range of $x$ at $x=-2$ an
 
 $\text{(i)}\quad$ When $x < -2$,
 \begin{align}
-  2|x+2| + |x-4| < 15 &\implies -2(x+2) -(x-4) < 15 \\\\
-  &\implies -2x-4 -x+4 < 15 \\\\
-  &\implies -3x < 15 \\\\
-  &\implies x > -5.
+  2|x+2| + |x-4| < 15 &\iff -2(x+2) -(x-4) < 15 \\\\
+  &\iff -2x-4 -x+4 < 15 \\\\
+  &\iff -3x < 15 \\\\
+  &\iff x > -5.
 \end{align}
 Since we assumed $x<-2$, we find $-5 < x <-2. \qdcirc{1}$
 
 $\text{(ii)}\quad$ When $-2 \le x < 4$,
 \begin{align}
-  2|x+2| + |x-4| < 15 &\implies 2(x+2) -(x-4) < 15 \\\\
-  &\implies 2x + 4 -x + 4 < 15 \\\\
-  &\implies x < 7.
+  2|x+2| + |x-4| < 15 &\iff 2(x+2) -(x-4) < 15 \\\\
+  &\iff 2x + 4 -x + 4 < 15 \\\\
+  &\iff x < 7.
 \end{align}
 Since we assumed $-2 \le x < 4$, we find $-2 \le x < 4. \qdcirc{2}$
 
 $\text{(iii)}\quad$ When $x \ge 4$,
 \begin{align}
-  2|x+2| + |x-4| < 15 &\implies 2(x+2) +(x-4) < 15 \\\\
-  &\implies 2x+4 +x-4 < 15 \\\\
-  &\implies 3x < 15 \\\\
-  &\implies x<5.
+  2|x+2| + |x-4| < 15 &\iff 2(x+2) +(x-4) < 15 \\\\
+  &\iff 2x+4 +x-4 < 15 \\\\
+  &\iff 3x < 15 \\\\
+  &\iff x<5.
 \end{align}
 Since we assumed $x \ge 4$, we find $4 \le x < 5. \qdcirc{3}$
 
