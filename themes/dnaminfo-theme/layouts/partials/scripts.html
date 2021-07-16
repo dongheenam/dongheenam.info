@@ -1,12 +1,12 @@
 {{/* main JavaScript */}}
 {{ $main_js := resources.Get "js/main.js" | resources.Minify }}
-<script src="{{ $main_js.Permalink }}"></script>
+<script src="{{ $main_js.RelPermalink }}"></script>
 
 {{/* highlight.js */}}
 {{- if .Params.highlight -}}
 {{- $style_options := (dict "targetPath" "hljs.min.css" "outputStyle" "compressed" "enableSourceMap" true) -}}
 {{- $hljs_style := resources.Get "sass/hljs-a11y.scss" | resources.ToCSS $style_options -}}
-<link rel="stylesheet" href="{{ $hljs_style.Permalink }}" />
+<link rel="stylesheet" href="{{ $hljs_style.RelPermalink }}" />
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.0/highlight.min.js"></script>
 <script>
   hljs.initHighlightingOnLoad();

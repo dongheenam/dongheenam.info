@@ -18,7 +18,7 @@
 {{ end }}
 {{- $style_options := (dict "targetPath" "section.min.css" "outputStyle" "compressed" "enableSourceMap" true) -}}
 {{- $pg_style := resources.Get "sass/section.scss" | resources.ToCSS $style_options -}}
-<link rel="stylesheet" href="{{ $pg_style.Permalink }}" />
+<link rel="stylesheet" href="{{ $pg_style.RelPermalink }}" />
 <article class="tufte-container">
     {{ partial "breadcrumb" . }}
     <h1 style="margin-bottom: 3rem">{{ .Title }}</h1>

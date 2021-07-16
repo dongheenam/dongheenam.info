@@ -12,7 +12,7 @@
    {{ partial "breadcrumb" . }}
    <h1>{{ .Title }}</h1>
    {{ if ne .Type "docs" }}{{ template "datedisplay" . }}{{ end }}
-   <ul class="tags">{{ range (.GetTerms "tags") }}<li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>{{ end }}</ul>
+   <ul class="tags">{{ range (.GetTerms "tags") }}<li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>{{ end }}</ul>
    {{ .Content }}
    {{ if eq .Type "docs" }}{{ template "datedisplay" . }}{{ end }}
    {{ partial "pager" . }}
