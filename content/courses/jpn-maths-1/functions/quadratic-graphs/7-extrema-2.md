@@ -1,7 +1,7 @@
 ---
 title: "Minima and Maxima of Quadratic Functions 2"
 slug: extrema-2
-description: "Finding the minima and maxima of quadratic functions in a general case."
+description: "Finding the minima and maxima of quadratic functions with varying coefficients or domain."
 
 date: 2021-06-05 20:19:12.169 +1000
 

@@ -46,15 +46,15 @@ weight: 13
     - [Reflections of Quadratic Functions](quadratic-graphs/transformations-2)
 - [Review Set 1](quadratic-graphs/review-1)
 - Minimum and maximum points
-    - [Minima and Maxima of Quadratic Functions 1](quadratic-graphs/extrema-1)
-    - [Minima and Maxima of Quadratic Functions 2](quadratic-graphs/extrema-2)
+    - [Minima and Maxima of Quadratic Functions](quadratic-graphs/extrema-1)
+    - [Quadratic Functions with Varying Coefficients or Domain](quadratic-graphs/extrema-2)
     - [Minima and Maxima as Functions](quadratic-graphs/extrema-as-functions)
     - [Optimisation Problems](quadratic-graphs/optimisation)
     - [Minima and Maxima of Functions with Two Variables](quadratic-graphs/bivariate-function)
     - [Minima and Maxima of Biquadratic Functions](quadratic-graphs/biquadratic-function)
 - Determining quadratic functions
-    - Using Vertex Form 22
-    - Using General Form 23
+    - [Determining Quadratic Functions in Vertex Form](quadratic-graphs/determining)
+    - [Finding the General Form]
     - [Determining Functions from Minima and Maxima](quadratic-graphs/determining-from-extrema)
 
 ### Quadratic Equations
@@ -83,8 +83,8 @@ weight: 13
 | ├ Optimisation | 10, 10A | Met1 |
 | ├ Two-Variable Functions |  |  |
 | ├ Biquartic Functions |  |  |
-| ├ Determining the Vertex Form |  |  |
-| ├ Determining the General Form |  |  |
+| ├ Determining Quadratic Functions | 10, 10A | Met1 |
+| ├ Finding the General Form | 10A^ | Met1 |
 | └ Determining from Extrema |  |  |
 {{% /table-wrapper %}}
 

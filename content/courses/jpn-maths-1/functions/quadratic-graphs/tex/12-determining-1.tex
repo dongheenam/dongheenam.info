@@ -1,0 +1,56 @@
+%%% det-ex2.png
+
+% plotting parameters
+\newcommand{\xmin}{ -3 }
+\newcommand{\xmax}{  5 }
+\newcommand{\ymin}{ -5 }
+\newcommand{\ymax}{ 5 }
+
+\begin{document}
+\begin{tikzpicture}
+
+\begin{axis}[without_grid,
+    set layers=axis on top,
+    xmin=\xmin,
+    xmax=\xmax,
+    ymin=\ymin,
+    ymax=\ymax,
+    height=6.5cm]
+
+% origin
+\node [anchor=south east] at (0,0) {$O$};
+
+% top and bottom lines (for filling)
+\path[name path=top] (\xmin, \ymax) -- (\xmax, \ymax);
+\path[name path=bot] (\xmin, \ymin) -- (\xmax, \ymin);
+
+% graph
+\addplot [domain=-3:5, samples=100, thick] {3*(x-2)^2-2};
+\addplot [domain=-3:5, samples=100, color=black!90, thick] {2*(x-2)^2-2};
+\addplot [domain=-3:5, samples=100, color=black!80, thick] {1.4*(x-2)^2-2};
+\addplot [domain=-3:5, samples=100, color=black!70, thick] {(x-2)^2-2};
+\addplot [domain=-3:5, samples=100, color=black!60, thick] {0.7*(x-2)^2-2};
+\addplot [domain=-3:5, samples=100, color=black!50, thick] {0.5*(x-2)^2-2};
+\addplot [domain=-3:5, samples=100, color=black!40, thick] {0.25*(x-2)^2-2};
+\addplot [domain=-3:5, samples=100, color=black!30, thick] {0.18*(x-2)^2-2};
+\addplot [domain=-3:5, samples=100, color=black!20, thick] {0.14*(x-2)^2-2};
+\addplot [domain=-3:5, samples=100, color=black!10, thick] {0.1*(x-2)^2-2};
+\addplot [domain=-3:5, samples=100, thick] {-3*(x-2)^2-2};
+\addplot [domain=-3:5, samples=100, color=black!90, thick] {-2*(x-2)^2-2};
+\addplot [domain=-3:5, samples=100, color=black!80, thick] {-1.4*(x-2)^2-2};
+\addplot [domain=-3:5, samples=100, color=black!70, thick] {-(x-2)^2-2};
+\addplot [domain=-3:5, samples=100, color=black!60, thick] {-0.7*(x-2)^2-2};
+\addplot [domain=-3:5, samples=100, color=black!50, thick] {-0.5*(x-2)^2-2};
+\addplot [domain=-3:5, samples=100, color=black!45, thick] {-0.33*(x-2)^2-2};
+\addplot [domain=-3:5, samples=100, color=black!40, thick] {-0.25*(x-2)^2-2};
+\addplot [domain=-3:5, samples=100, color=black!30, thick] {-0.18*(x-2)^2-2};
+\addplot [domain=-3:5, samples=100, color=black!20, thick] {-0.14*(x-2)^2-2};
+\addplot [domain=-3:5, samples=100, color=black!10, thick] {-0.1*(x-2)^2-2};
+
+% coordinates
+\addplot [dashed] coordinates {(0,-2)(2,-2)} node[pos=0, anchor=east] {$-2$};
+\addplot [dashed] coordinates {(2,0)(2,-2)} node[pos=0, anchor=south] {$2$};
+
+\end{axis}
+\end{tikzpicture}
+\end{document}

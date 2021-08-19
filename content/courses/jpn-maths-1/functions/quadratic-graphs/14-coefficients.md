@@ -27,7 +27,7 @@ weight: 34
 
 ## Introduction
  
-We have been doing exercises to find the minimum and maximum from a quadratic functions, including some general cases where the coefficients are functions of another variable. In this lesson, we will flip the process and determine the coefficients of a quadratic function with given minimum and/or maximum.
+We did some exercises on finding the minimum and maximum from a quadratic functions, including some general cases where the coefficients are functions of another variable. In this lesson, we will flip the process and determine the coefficients of a quadratic function with given minimum and/or maximum.
 
 ## Determining the Coefficients
 
