@@ -12,8 +12,8 @@
     <section class="section-pages">
     {{- range (.Paginate .Pages 10).Pages -}}
         {{ if eq .Type "posts" }}<div class="section-page-post">{{ end }}
+        {{- if eq .Type "posts" -}}<div class="date">{{ .Date.Format "2 Jan 2006" }}</div>{{- end -}}
         <h2>
-            {{- if eq .Type "posts" -}}<div class="date">{{ .Date.Format "2 Jan 2006" }}</div>{{- end -}}
             <a href="{{ .RelPermalink }}">{{ .Name }}</a>
         </h2>
         {{ if eq .Type "posts" }}</div>{{ end }}
