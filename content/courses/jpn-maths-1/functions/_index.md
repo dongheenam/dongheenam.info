@@ -53,8 +53,8 @@ weight: 13
     - [Minima and Maxima of Functions with Two Variables](quadratic-graphs/bivariate-function)
     - [Minima and Maxima of Biquadratic Functions](quadratic-graphs/biquadratic-function)
 - Determining quadratic functions
-    - [Determining Quadratic Functions in Vertex Form](quadratic-graphs/determining)
-    - [Finding the General Form]
+    - [Determining Quadratic Functions in Vertex Form](quadratic-graphs/determining-1)
+    - [Finding the General Form](quadratic-graphs/determining-2)
     - [Determining Functions from Minima and Maxima](quadratic-graphs/determining-from-extrema)
 
 ### Quadratic Equations
