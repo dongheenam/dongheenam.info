@@ -1,112 +1,51 @@
 @import "variables";
 
-/* Import ET Book styles
-   adapted from https://github.com/edwardtufte/et-book/blob/gh-pages/et-book.css */
-
-@font-face {
-  font-family: "et-book";
-  src: url("../fonts/et-book/et-book-roman-line-figures.eot");
-  src: url("../fonts/et-book/et-book-roman-line-figures.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/et-book/et-book-roman-line-figures.woff2") format("woff2"),
-    url("../fonts/et-book/et-book-roman-line-figures.woff") format("woff"),
-    url("../fonts/et-book/et-book-roman-line-figures.ttf") format("truetype"),
-    url("../fonts/et-book/et-book-roman-line-figures.svg#etbookromanosf")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "et-book";
-  src: url("../fonts/et-book/et-book-display-italic-old-style-figures.eot");
-  src: url("../fonts/et-book/et-book-display-italic-old-style-figures.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/et-book/et-book-display-italic-old-style-figures.woff2")
-      format("woff2"),
-    url("../fonts/et-book/et-book-display-italic-old-style-figures.woff")
-      format("woff"),
-    url("../fonts/et-book/et-book-display-italic-old-style-figures.ttf")
-      format("truetype"),
-    url("../fonts/et-book/et-book-display-italic-old-style-figures.svg#etbookromanosf")
-      format("svg");
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "et-book";
-  src: url("../fonts/et-book/et-book-bold-line-figures.eot");
-  src: url("../fonts/et-book/et-book-bold-line-figures.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/et-book/et-book-bold-line-figures.woff2") format("woff2"),
-    url("../fonts/et-book/et-book-bold-line-figures.woff") format("woff"),
-    url("../fonts/et-book/et-book-bold-line-figures.ttf") format("truetype"),
-    url("../fonts/et-book/et-book-bold-line-figures.svg#etbookromanosf")
-      format("svg");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "et-book-roman-old-style";
-  src: url("../fonts/et-book/et-book-roman-old-style-figures.eot");
-  src: url("../fonts/et-book/et-book-roman-old-style-figures.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/et-book/et-book-roman-old-style-figures.woff2")
-      format("woff2"),
-    url("../fonts/et-book/et-book-roman-old-style-figures.woff") format("woff"),
-    url("../fonts/et-book/et-book-roman-old-style-figures.ttf")
-      format("truetype"),
-    url("../fonts/et-book/et-book-roman-old-style-figures.svg#etbookromanosf")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 .tufte-container {
   width: auto;
   margin-left: 20rem;
   margin-bottom: 5rem;
   padding: 2rem 0 0 1rem;
 
-  font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD",
-    "Book Antiqua", Georgia, serif;
-  font-size: 1.4rem;
-  line-height: 1.85rem;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-size: 1.3rem;
+  line-height: 1.4;
 
   counter-reset: sidenote-counter;
 
   h1 {
+    font-family: "PT Serif", serif;
     font-weight: 400;
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-size: 2.7rem;
     line-height: 1;
+    letter-spacing: -0.02em;
   }
 
   h2 {
+    font-family: "PT Serif", serif;
     font-style: italic;
     font-weight: 400;
+    font-size: 2.1rem;
     padding-top: 2rem;
     margin-top: 2.1rem;
     margin-bottom: 1.3rem;
-    font-size: 2.2rem;
     line-height: 1;
+    letter-spacing: -0.01em;
   }
 
   h3 {
-    text-decoration: underline;
+    font-family: "PT Serif", serif;
     font-style: italic;
+    text-decoration: underline;
     font-weight: 400;
     font-size: 1.7rem;
     margin-top: 2rem;
     margin-bottom: 1.4rem;
     line-height: 1;
+    letter-spacing: -0.01em;
   }
 
   h1,
@@ -139,9 +78,9 @@
 
     &.subtitle {
       font-style: italic;
-      margin-top: 1rem;
+      margin-top: 0.5rem;
       margin-bottom: 0.5rem;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       display: block;
       line-height: 1.1;
     }
@@ -171,7 +110,7 @@
 
   ol {
     li::marker {
-      font-family: et-book-roman-old-style;
+      font-style: italic;
     }
   }
   ul ol,
@@ -255,18 +194,18 @@
 
   .sidenote-number:after,
   .sidenote:before {
-    font-family: et-book-roman-old-style;
+    font-family: "PT Serif", serif;
+    font-size: 80%;
     color: var(--primary-color);
     position: relative;
     vertical-align: baseline;
-    font-size: 1.4rem;
     font-weight: bold;
   }
 
   .sidenote-number:after {
     content: counter(sidenote-counter);
     top: -0.5rem;
-    left: 0.1rem;
+    left: 0rem;
   }
 
   .sidenote:before {
@@ -295,7 +234,7 @@
 
   /* Codes */
   code {
-    font-family: "Inconsolata", monospace;
+    font-family: "IBM Plex Mono", monospace;
     font-size: 0.9em;
     line-height: 1.4;
     color: var(--primary-color);
@@ -329,17 +268,24 @@
     list-style: none;
     align-items: baseline;
 
+    font-size: 1.2rem;
+
     li {
-      margin-right: 1rem;
-      font-size: 1.15rem;
+      margin-right: 0.5rem;
       font-style: italic;
 
+      &:first-child:before {
+        content: "Tags: ";
+      }
+      &:not(:last-child):after {
+        content: ", ";
+      }
+
       a {
-        padding: 0 0.2rem;
-        border: 1px solid var(--primary-color);
+        padding: 0;
 
         font-weight: 400;
-        color: var(--primary-color);
+        color: var(--text-color);
         text-decoration: none;
       }
     }
@@ -375,19 +321,22 @@
   /* Other stuff */
   div.table-wrapper {
     overflow-x: auto;
-    font-family: "Trebuchet MS", "Gill Sans", "Gill Sans MT", sans-serif;
   }
 
   span.newthought {
     font-variant: small-caps;
   }
 
-  .bordered {
-    font-size: 0.9em !important;
+  .noted {
+    font-family: "PT Serif", serif;
+    font-weight: bold;
     text-transform: capitalize;
-    border: 1px solid var(--text-color);
-    padding: 0 0.2rem;
+    font-style: italic;
     margin-right: 1rem;
+
+    &::after {
+      content: ".";
+    }
   }
 
   input.margin-toggle {
@@ -486,7 +435,7 @@
     }
 
     label.toggle-with-word {
-      font-size: 0.9em !important;
+      text-transform: capitalize;
       font-variant: small-caps;
       padding: 0 0.2rem;
       border: 1px solid var(--primary-color);

@@ -13,10 +13,9 @@
     {{ end }}
 
     {{/* Google Fonts */}}
-    {{- $gfonts_href := "https://fonts.googleapis.com/css2?family=Inconsolata:wght@500;700&family=Exo:wght@600;800&display=swap" -}}
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preload" as="style" href="{{ $gfonts_href }}">
-    <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="{{ $gfonts_href }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
     {{/* stylesheets */}}
     {{- $style_options := (dict "targetPath" "main.min.css" "outputStyle" "compressed" "enableSourceMap" true) -}}

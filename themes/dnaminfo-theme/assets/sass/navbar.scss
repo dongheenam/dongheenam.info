@@ -41,7 +41,8 @@
   display: flex;
   align-items: center;
 
-  font-family: "Exo", sans-serif;
+  font-family: "PT Serif", serif;
+  font-style: italic;
 
   transition: top 0.4s ease-in-out;
 
@@ -51,8 +52,8 @@
     margin-top: 0.1rem;
 
     font-family: inherit;
-    font-size: 2rem;
-    font-weight: 800;
+    font-weight: bold;
+    font-size: 2.1rem;
 
     .logo-colored {
       color: var(--mainnav-logo);
@@ -79,8 +80,8 @@
     display: flex;
     justify-content: flex-start;
 
-    font-size: 1.4rem;
-    font-weight: 600;
+    font-size: 1.7rem;
+    font-weight: 400;
     list-style: none;
 
     li {
@@ -146,17 +147,21 @@ aside.sidenav {
   display: flex;
   flex-direction: column;
 
-  font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD",
-    "Book Antiqua", Georgia, serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  letter-spacing: -0.025em;
 
   code {
-    font-family: "Inconsolata", monospace;
+    font-family: "IBM Plex Mono", monospace;
     font-size: 0.9em;
     -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS. See https://github.com/edwardtufte/tufte-css/issues/81#issuecomment-261953409 */
   }
 
   .sidenav-title,
   .toc-title {
+    font-family: "PT Serif", serif;
+    font-style: italic;
     font-size: 1.4rem;
     margin: 0.5rem 0;
   }
@@ -198,14 +203,14 @@ aside.sidenav {
 
   ul {
     padding-left: 1rem;
-    font-size: 1.15rem;
+    font-size: 1.1rem;
 
     display: flex;
     flex-direction: column;
     list-style: none;
   }
   li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
 
     a {
       color: inherit;

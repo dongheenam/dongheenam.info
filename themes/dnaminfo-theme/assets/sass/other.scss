@@ -14,6 +14,12 @@
   .next {
     text-align: right;
   }
+
+  .title-prev,
+  .title-next {
+    font-family: "PT Serif", serif;
+    font-style: italic;
+  }
 }
 
 /* page footer */
@@ -24,8 +30,7 @@
   margin: 3rem auto 1rem auto;
 
   text-align: center;
-  font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD",
-    "Book Antiqua", Georgia, serif;
+  font-family: "PT Serif", serif;
   font-style: italic;
   font-size: 1.2rem;
 

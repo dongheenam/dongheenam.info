@@ -37,6 +37,7 @@
     margin-top: 0;
   }
 
+  // box for Desmos
   &-desmos {
     @extend .box;
     padding: 0;
@@ -47,6 +48,13 @@
   .box-desmos {
     width: 100%;
   }
+
+  // half-bordered box
+  &-hb {
+    @extend .box;
+    border-left: 1.5px solid var(--hr-color);
+    padding: 0 0 0 0.5rem;
+  }
 }
 
 /* Shortcode - details */
@@ -55,8 +63,8 @@ details {
 
   summary {
     color: var(--hypertext-color);
-    font-variant: small-caps;
-    font-weight: bold;
+    font-family: "PT Serif", serif;
+    font-style: italic;
     font-size: 1.2rem;
     cursor: pointer;
   }
@@ -86,9 +94,4 @@ details {
       background-color: var(--background-color);
     }
   }
-}
-
-/* Shortcode - roman style */
-.roman {
-  font-family: et-book-roman-old-style !important;
 }
