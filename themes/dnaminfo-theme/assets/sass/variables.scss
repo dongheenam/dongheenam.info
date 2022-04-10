@@ -1,7 +1,7 @@
 // Media queries
-$sdesktop: 1600px;
-$lmobile: 1200px;
-$smobile: 768px;
+$sdesktop-max: 1600px;
+$lmobile-max: 1200px;
+$smobile-max: 768px;
 
 html {
   --p-width: 55rem;
@@ -9,14 +9,14 @@ html {
   --full-width: 85rem;
   --sidenote-margin: 5rem;
 
-  @media (max-width: $sdesktop) {
+  @media (max-width: $sdesktop-max) {
     --p-width: 42rem;
     --sidenote-width: 15rem;
     --full-width: 59rem;
     --sidenote-margin: 1rem;
   }
 
-  @media screen and (max-width: $lmobile) {
+  @media screen and (max-width: $lmobile-max) {
     --p-width: 100%;
     --sidenote-width: 100%;
     --full-width: 100%;

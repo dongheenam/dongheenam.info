@@ -439,7 +439,7 @@
   }
 }
 
-@media screen and (max-width: $lmobile) {
+@media screen and (max-width: $lmobile-max) {
   .tufte-container {
     padding: 1rem 8% 0 8%;
     margin: 0;
@@ -527,7 +527,7 @@
   }
 }
 
-@media screen and (max-width: $smobile) {
+@media screen and (max-width: $smobile-max) {
   .tufte-container {
     padding: 1rem 2.5% 0 2.5%;
   }

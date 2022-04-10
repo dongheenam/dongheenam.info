@@ -62,7 +62,7 @@
   }
 }
 
-@media screen and (max-width: $lmobile) {
+@media screen and (max-width: $lmobile-max) {
   .front-container {
     .front-title {
       background-position: bottom center;
@@ -90,7 +90,7 @@
   }
 }
 
-@media screen and (max-width: $smobile) {
+@media screen and (max-width: $smobile-max) {
   .front-container .front-article {
     .front-content {
       width: 100%;
