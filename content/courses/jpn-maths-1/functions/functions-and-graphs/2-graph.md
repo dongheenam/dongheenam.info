@@ -74,12 +74,12 @@ Before moving on, we will review the basic properties of a linear function and i
 {{% /box %}}
 
 Given $f(x) = ax+b$, if you increase the value of $x$ by $1$, you increase the value of $y$ by $a$:
-\begin{align}
+\begin{align*}
   f(0) &= b, \\\\
   f(1) &= a + b, \\\\
   f(2) &= 2a + b, \\\\
   \vdots
-\end{align}
+\end{align*}
 and hence $a$ is called the *gradient*, or *slope*. Also, the value of $y$ when $x=0$ is $b$, and this value is called the *y-intercept*.
 
 {{< figure src="courses/jpn-maths-1/functions/functions-and-graphs/graph-lineprop.jpg" caption="Gradient and y-intercept of a line graph." >}}
@@ -98,18 +98,18 @@ and hence $a$ is called the *gradient*, or *slope*. Also, the value of $y$ when 
 {{< figure src="courses/jpn-maths-1/functions/functions-and-graphs/graph-ex2.png" alt="Graph of y=-x+3" >}}
 
 2. We can rearrange the equation to reveal the gradient and y-intercept:
-\begin{align}
+\begin{align*}
   3x-2y = 6 & \iff 2y = 3x - 6 \\\\
   &\iff y = \dfrac{3}{2} x - 3.
-\end{align}
+\end{align*}
 However, it is easier to find the x- and y-intercepts of the graph and draw the graph from there. When $x=0$,
-\begin{align}
+\begin{align*}
   -2y = 6 \iff y = -3,
-\end{align}
+\end{align*}
 so the y-intercept is $-3$, and when $y=0$,
-\begin{align}
+\begin{align*}
   3x = 6 \iff x = 2,
-\end{align}
+\end{align*}
 so the x-intercept is $2$.
 
 {{< figure src="courses/jpn-maths-1/functions/functions-and-graphs/graph-ex3.png" alt="Graph of 3x-2y=6" >}}
@@ -227,17 +227,17 @@ Thus, the range is $\boldsymbol{ -5\le y < 4 }$. The minimum is $\boldsymbol{ -5
 - $f(2)=5$ and $f(5)=-1$.
 
 In the first case, the gradient is $\dfrac{5+1}{5-2} = 2$, so $a=2$. Then
-\begin{align}
+\begin{align*}
   f(2) = -1 \iff & 2a + b = -1 \\\\
   & 4 + b = -1 \\\\
   & b = -5.
-\end{align}
+\end{align*}
 In the second case, the gradient is $\dfrac{-5-1}{5-2}=-2$, so $a=-2$. Then
-\begin{align}
+\begin{align*}
   f(2) = 5 \iff & 2a+b = 5 \\\\
   & -4 + b = 5 \\\\
   & b = 9. 
-\end{align}
+\end{align*}
 Therefore, we conclude $\boldsymbol{ a=2, \\, b=-5 }$, or $\boldsymbol{ a=-2, \\, b=9 }.$
 
 {{% /details %}}

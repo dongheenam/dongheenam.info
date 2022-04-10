@@ -42,16 +42,16 @@ Factorise $x^2 - xy - 2y^2 - x - 7y - 6$.
 {{% note solution %}}
 We will first rearrange the expression in terms of $x$ and factorise the terms without $x$ (the underlined ones).
 
-\begin{align}
+\begin{align*}
 & x^2 - xy - 2y^2 - x - 7y - 6 \\\\
 &= \hl{x^2} + (-y-1)\hl{x} - 2y^2 - 7y - 6 \\\\
 &= \hl{x^2} - (y+1)\hl{x} - \underline{(2y^2 + 7y + 6)} \\\\
 &= \hl{x^2} - (y+1)\hl{x} - \underline{(y+2)(2y+3)}. && \qdcirc{1}
-\end{align}
+\end{align*}
 
 Here is how the last step is done:
 
-\begin{align}
+\begin{align*}
 & 2y^2 + 7y + 6 = \boldsymbol{ (y+2)(2y+3) } \\\\[0.5em]
 & \rlap{\phantom{3\;} \raise{0.8em}{\huge \times}}
 \begin{array}{rcrcr}
@@ -59,11 +59,11 @@ Here is how the last step is done:
 2 && 3 & \rightarrow & 3 \\\\[0.5em]
 \hline &&&& \boldsymbol{ 7 }
 \end{array}
-\end{align}
+\end{align*}
 
 Now, you can use the cross-multiplication again, but in terms of $x$ this time:
 
-\begin{align}
+\begin{align*}
 & \hl{x^2} - (y+1)\hl{x} - (y+2)(2y+3) = \\{ \hl{x} - (2y+3) \\}\\{ \hl{x} + (y+2) \\} \\\\[0.5em]
 & \rlap{\phantom{3\;} \raise{0.8em}{\huge \times}}
 \begin{array}{rcrcr}
@@ -71,14 +71,14 @@ Now, you can use the cross-multiplication again, but in terms of $x$ this time:
 1 && (y+2) & \rightarrow & y+2 \\\\[0.5em]
 \hline &&&& \boldsymbol{ -y-1 }
 \end{array}
-\end{align}
+\end{align*}
 
 and of course $-y-1 = -(y+1)$, which is the coefficient of $x$. Therefore,
 
-\begin{align}
+\begin{align*}
 \tcirc{1} &= \\{ \hl{x} - (2y+3) \\}\\{ \hl{x} + (y+2) \\} \\\\
 &= \boldsymbol{ (x-2y-3)(x+y+2) }.
-\end{align}
+\end{align*}
 
 {{% /box %}}
 
@@ -99,15 +99,15 @@ Factorise $3x^2 + 7xy + 2y^2 - 5x - 5y + 2$.
 {{% note solution %}}
 We will rearrange in terms of $x$, but if you want, you can do it in $y$.
 
-\begin{align}
+\begin{align*}
 & 3x^2 + 7xy + 2y^2 - 5x - 5y + 2 \\\\
 &= 3\hl{x^2} + (7y-5)\hl{x} + \underline{2y^2 - 5y + 2} \\\\
 &= 3\hl{x^2} + (7y-5)\hl{x} + \underline{(2y-1)(y-2)} \tag{1} \\\\
 &= \\{ 3\hl{x} + (y-2) \\}\\{ \hl{x} + (2y-1) \\} \tag{2} \\\\
 &= \boldsymbol{ (3x+y-2)(x+2y-1) }.
-\end{align}
+\end{align*}
 
-\begin{align}
+\begin{align*}
 & (1): 2y^2 - 5y + 2 = (2y-1)(y-2) \\\\[0.5em]
 & \rlap{\phantom{3\;} \raise{0.8em}{\huge \times}}
 \begin{array}{rcrcr}
@@ -115,8 +115,8 @@ We will rearrange in terms of $x$, but if you want, you can do it in $y$.
 1 && -2 & \rightarrow & -4 \\\\[0.5em]
 \hline &&&& \boldsymbol{ -5 }
 \end{array}
-\end{align}
-\begin{align}
+\end{align*}
+\begin{align*}
 & (2): 3\hl{x^2} + (7y-5)\hl{x} + (2y-1)(y-2) = \\{ 3\hl{x} + (y-2) \\}\\{ \hl{x} + (2y-1) \\} \\\\[0.5em]
 & \rlap{\phantom{3\;} \raise{0.8em}{\huge \times}}
 \begin{array}{rcrcr}
@@ -124,7 +124,7 @@ We will rearrange in terms of $x$, but if you want, you can do it in $y$.
 1 && (2y-1) & \rightarrow & 6y-3 \\\\[0.5em]
 \hline &&&& \boldsymbol{ 7y-5 }
 \end{array}
-\end{align}
+\end{align*}
 
 {{% /box %}}
 
@@ -150,12 +150,12 @@ We substitute $x^2$ with $t$:
 {{% mn 338 tips %}}
 $(1)$ $t = x^2$
 {{% /mn %}}
-\begin{align}
+\begin{align*}
 x^4 + 2x^2 - 3 &= t^2 + 2t - 3 \tag{1} \\\\
 &= (t+3)(t-1) \\\\
 &= (x^2+3)(x^2-1)\\\\
 &= \boldsymbol{ (x^2+3)(x+1)(x-1) }.
-\end{align}
+\end{align*}
 
 {{% /box %}}
 
@@ -173,13 +173,13 @@ Of course, we cannot factorise $t^2+t+1$, but this polynomial can be factorised!
 $(1)$ Identity 1: $a^2 + 2ab + b^2 $ $=(a+b)^2$<br><br>
 $(2)$ Identity 2: $\square^2-\triangle^2$ $=(\square+\triangle)(\square-\triangle)$
 {{% /mn %}}
-\begin{align}
+\begin{align*}
 & a^4 + a^2 + 1 \\\\
 &= \underline{a^4 \hl{+2a^2} + 1} \hl{-a^2} \\\\
 &= \underline{\left(a^2 + 1\right)^2} - a^2 \tag{1} \\\\
 &= \left\\{\left(a^2 + 1\right)+a\right\\}\left\\{\left(a^2 + 1\right)-a\right\\} \tag{2} \\\\
 &= \boldsymbol{ (a^2+a+1)(a^2-a+1) }.
-\end{align}
+\end{align*}
 
 {{% /box %}}
 
@@ -202,18 +202,18 @@ Factorise the following.
 
 {{% note solution %}}
 
-\begin{align}
+\begin{align*}
 \text{1.} \quad & x^4 -7x^2y^2 + y^4 \\\\
 &= x^4 \hl{+2x^2y^2} + y^4 \hl{- 9x^2y^2} \\\\
 &= \left(x^2 + y^2\right)^2 - (3xy)^2 \\\\
 &= \boldsymbol{ (x^2 + 3xy + y^2)(x^2 - 3xy + y^2) }.
-\end{align}
-\begin{align}
+\end{align*}
+\begin{align*}
 \text{2.} \quad & 4x^4 + 1 \\\\
 &= 4x^4 \hl{+ 4x^2} + 1 \hl{- 4x^2} \\\\
 &= \left(2x^2+1\right)^2 - (2x)^2 \\\\
 &= \boldsymbol{ (2x^2+2x+1)(2x^2-2x+1) }.
-\end{align}
+\end{align*}
 
 {{% /box %}}
 
@@ -239,13 +239,13 @@ $(1)$<br>
 $(2)$<br>
 {{% img-raw src="courses/jpn-maths-1/numbers-and-expressions/poly-9q5a2.JPG" alt="cross-multiplication" %}}
 {{% /mn %}}
-\begin{align}
+\begin{align*}
 \text{a.} \quad & 2x^2 + 5xy + 3y^2 + 2x + 4y - 4 \\\\
 &= 2\hl{x^2} + (5y+2)\hl{x} + \underline{3y^2+4y-4} \tag{1} \\\\
 &= 2\hl{x^2} + (5y+2)\hl{x} + \underline{(y+2)(3y-2)} \tag{2} \\\\
 &= \\{ 2\hl{x} + (3y-2) \\}\\{ \hl{x} + (y+2) \\} \\\\
 &= \boldsymbol{ (2x+3y-2)(x+y+2) }.
-\end{align}
+\end{align*}
 
 ---
 
@@ -255,14 +255,14 @@ $(3)$<br>
 $(4)$<br>
 {{% img-raw src="courses/jpn-maths-1/numbers-and-expressions/poly-9q5b2.JPG" alt="cross-multiplication" %}}
 {{% /mn %}}
-\begin{align}
+\begin{align*}
 \text{b.} \quad & x^2 - 2xy - 3y^2 + 6x - 10y + 8 \\\\
 &= \hl{x^2} + (-2y+6)\hl{x} - 3y^2 - 10y + 8 \\\\
 &= \hl{x^2} + (-2y+6)\hl{x} - \underline{(3y^2+10y-8)} \\\\
 &= \hl{x^2} + (-2y+6)\hl{x} - \underline{(3y-2)(y+4)} \tag{3} \\\\
 &= \\{ \hl{x} -(3y-2) \\}\\{ \hl{x} +(y+2) \\} \tag{4} \\\\
 &= \boldsymbol{ (x-3y+2)(x+y+2) }.
-\end{align}
+\end{align*}
 
 ---
 
@@ -274,14 +274,14 @@ $(5)$<br>
 $(6)$<br>
 {{% img-raw src="courses/jpn-maths-1/numbers-and-expressions/poly-9q5c2.JPG" alt="cross-multiplication" %}}
 {{% /mn %}}
-\begin{align}
+\begin{align*}
 \text{c.} \quad & 6x^2 + 5xy + y^2 + 2x - y - 20 \\\\
 &=\hl{y^2} + (5x-1)\hl{y} + 6x^2 + 2x - 20 \\\\
 &=\hl{y^2} + (5x-1)\hl{y} + 2\underline{(3x^2+x-10)} \tag{5} \\\\
 &=\hl{y^2} + (5x-1)\hl{y} + 2\underline{(3x-5)(x+2)} \tag{6} \\\\
 &=\\{ \hl{y} + (3x-5) \\}\\{ \hl{y} + 2(x+2) \\} \\\\
 &= \boldsymbol{ (3x+y-5)(2x+y+4) }.
-\end{align}
+\end{align*}
 
 ---
 
@@ -307,12 +307,12 @@ $(6)$<br>
 $(1)$<br>
 {{% img-raw src="courses/jpn-maths-1/numbers-and-expressions/poly-11q2a.JPG" alt="cross-multiplication" %}}
 {{% /mn %}}
-\begin{align}
+\begin{align*}
 \text{a.} \quad & 2t^4 - 3t^2 + 1 \\\\
 &= 2\left(t^2\right)^2 - 3t^2 + 1 \\\\
 &= (t^2-1)(2t^2-1) \tag{1} \\\\
 &= \boldsymbol{ (t+1)(t-1)(2t^2-1) }.
-\end{align}
+\end{align*}
 
 ---
 
@@ -321,26 +321,26 @@ $(2)$<br>
 {{% img-raw src="courses/jpn-maths-1/numbers-and-expressions/poly-11q2b.JPG" alt="cross-multiplication" %}}<br>
 $(3)$ Identity 2: $a^2-b^2$ $=(a+b)(a-b)$
 {{% /mn %}}
-\begin{align}
+\begin{align*}
 \text{b.} \quad & x^4 - 13x^2 + 36 \\\\
 &= \left( x^2 \right)^2 - 13x^2 + 36 \tag{2} \\\\
 &= (x^2-4)(x^2-9) \\\\
 &= \boldsymbol{ (x+2)(x-2)(x+3)(x-3) }. \tag{3}
-\end{align}
+\end{align*}
 
 ---
 
-\begin{align}
+\begin{align*}
 \text{c.} \quad & x^4 +2x^2 + 9 \\\\
 &= \underline{x^4 \hl{+6x^2}+9} \hl{-4x^2} \\\\
 &= \underline{\left(x^2+3\right)^2 } - (2x)^2 \\\\
 &= \boldsymbol{ (x^2+2x+3)(x^2-2x+3) }.
-\end{align}
-\begin{align}
+\end{align*}
+\begin{align*}
 \text{d.} \quad & x^4 \hl{+ 3x^2} + 4 \\\\
 &= \underline{x^4 \hl{+4x^2} + 4} \hl{-x^2} \\\\
 &= \underline{\left(x^2+2\right)^2 } - x^2 \\\\
 &= \boldsymbol{(x^2+x+2)(x^2-x+2) }.
-\end{align}
+\end{align*}
 
 {{% /details %}}

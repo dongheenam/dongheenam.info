@@ -53,10 +53,10 @@ For you to use these identities, there must be two squares, $a^2$ and $b^2$, and
 
 {{% note theorem %}} Polynomial identity 1:
 
-\begin{align}
+\begin{align*}
 a^2 + 2ab + b^2 &= (a+b)^2, \\\\
 a^2 - 2ab + b^2 &= (a-b)^2.
-\end{align}
+\end{align*}
 
 {{% note example %}}
 Factorise the following.
@@ -66,17 +66,17 @@ Factorise the following.
 
 {{% note solution %}}
 
-\begin{align}
+\begin{align*}
 \text{1.} \quad & g^2 + 12g + 36 \\\\
 &= g^2 + 2\cdot 6 \cdot g + 6^2 \\\\
 &= \boldsymbol{ (g+6)^2 .}
-\end{align}
+\end{align*}
 
-\begin{align}
+\begin{align*}
 \text{2.} \quad & 16s^2 - 24st + 9t^2 \\\\
 &= (4s)^2 - 2\cdot 4s \cdot 3t + (3t)^2 \\\\
 &= \boldsymbol{ (4s-3t)^2 .}
-\end{align}
+\end{align*}
 
 {{% /box %}}
 
@@ -107,25 +107,25 @@ Factorise the following.
 
 {{% note solution %}}
 
-\begin{align}
+\begin{align*}
 \text{1.} \quad & A^2 - 16 \\\\
 &= A^2 - 4^2 \\\\
 &= \boldsymbol{ (A+4)(A-4) .}
-\end{align}
-\begin{align}
+\end{align*}
+\begin{align*}
 \text{2.} \quad & 36x^2 - 49y^2 \\\\
 &= (6x)^2 - (7y)^2 \\\\
 &= \boldsymbol{ (6x+7y)(6x-7y) .}
-\end{align}
+\end{align*}
 
-Part {{% roman 3 %}} does not look that obvious because $3$ and $27$ are not square numbers. But they do have a common factor. Factor them out first, and you should be able to apply the identity.
+Part 3 does not look that obvious because $3$ and $27$ are not square numbers. But they do have a common factor. Factor them out first, and you should be able to apply the identity.
 
-\begin{align}
+\begin{align*}
 \text{3.} \quad & 27 - 3p^2q^2 \\\\
 &= 3 ( 9 - p^2q^2 ) \\\\
 &= 3 \left\\{ 3^2 - (pq)^2 \right\\} \\\\
 &= \boldsymbol{ 3(3+pq)(3-pq) .}
-\end{align}
+\end{align*}
 
 {{% /box %}}
 
@@ -164,21 +164,21 @@ Factorise the following quadratic polynomials.
 
 {{% note solution %}}
 
-\begin{align}
+\begin{align*}
 \text{a.} \quad & x^2 + 7x + 12 \\\\
 &= x^2 + (3+4)x + 3\cdot 4 \\\\
 &= \boldsymbol{ (x+3)(x+4) .}
-\end{align}
-\begin{align}
+\end{align*}
+\begin{align*}
 \text{b.} \quad & u^2 - 4u - 12 \\\\
 &= u^2 + (-6+2)u -6\cdot 2 \\\\
 &= \boldsymbol{ (u-6)(u+2) .}
-\end{align}
-\begin{align}
+\end{align*}
+\begin{align*}
 \text{c.} \quad & p^2 - 9pq + 20q^2 \\\\
 &= p^2 + (-4q-5q)p -4q\cdot(-5q) \\\\
 &= \boldsymbol{ (p-4q)(p-5q) .}
-\end{align}
+\end{align*}
 
 {{% /box %}}
 
@@ -205,11 +205,11 @@ For the quadratics with $p\ne 1$, we have to use this identity instead:
 $$ acx^2 + (ad+bc)x + cd = (ax+b)(cx+d). $$
 
 This is a little bit complicated, because to factorise $px^2 + qx + r$, you need to find four numbers, $a$, $b$, $c$, and $d$ that satisfy
-\begin{align}
+\begin{align*}
 ac &= p, \\\\
 ad+bc &= q, \\\\
 bd &= r.
-\end{align}
+\end{align*}
 Luckily, we have a useful strategy to find the four numbers quickly: the _cross-multiplication method_.
 
 {{% box %}}
@@ -285,11 +285,11 @@ $$
 
 which corresponds to $(-2x+1)(-3x-4)$. It is easy to show that this answer is the same as the one we found in the example:
 
-\begin{align}
+\begin{align*}
 (-2x+1)(-3x-4) &= \left\\{ (2x-1)\cdot(-1) \right\\} (-3x-4) \\\\
 &= (2x-1)\left\\{ (-1)\cdot (-3x-4) \right\\} \\\\
 &= (2x-1)(3x+4).
-\end{align}
+\end{align*}
 
 Regardless of keeping the first set of pairs positive or negative, we get the same answer. That is why can only consider the positive combinations for $p$.
 
@@ -329,7 +329,7 @@ Factorise the following quadratic polynomials.
 
 {{% note solution %}}
 
-\begin{align}
+\begin{align*}
 \text{1.} \quad & 3x^2 + 5x + 2 = \boldsymbol{ (3x+2)(x+1) } \\\\[0.5em]
 & \rlap{\phantom{3\;} \raise{0.8em}{\huge \times}}
 \begin{array}{rcrcr}
@@ -337,8 +337,8 @@ Factorise the following quadratic polynomials.
 1 && 1 & \rightarrow & 3 \\\\[0.5em]
 \hline &&&& \boldsymbol{ 5 }
 \end{array}
-\end{align}
-\begin{align}
+\end{align*}
+\begin{align*}
 \text{2.} \quad & 12x^2 - 16x - 3 = \boldsymbol{ (2x-3)(6x+1) } \\\\[0.5em]
 & \rlap{\phantom{3\;} \raise{0.8em}{\huge \times}}
 \begin{array}{rcrcr}
@@ -346,8 +346,8 @@ Factorise the following quadratic polynomials.
 6 && 1 & \rightarrow & 2 \\\\[0.5em]
 \hline &&&& \boldsymbol{ -16 }
 \end{array}
-\end{align}
-\begin{align}
+\end{align*}
+\begin{align*}
 \text{3.} \quad & 6a^2 + 23ab - 48b^2 = \boldsymbol{ (2a-3b)(3a+16b) } \\\\[0.5em]
 & \rlap{\phantom{2\;} \raise{0.8em}{\huge \times}}
 \begin{array}{rcrcr}
@@ -355,7 +355,7 @@ Factorise the following quadratic polynomials.
 3 && 16b & \rightarrow & 32b \\\\[0.5em]
 \hline &&&& \boldsymbol{ 23b }
 \end{array}
-\end{align}
+\end{align*}
 
 {{% /box %}}
 
@@ -389,44 +389,44 @@ Factorise the following quadratic polynomials.
 {{% note solution %}}
 
 1.  <br>
-    \begin{align}
+    \begin{align*}
     \text{a.} \quad & x^2 + 14x + 49 \\
     &= x^2 + 2\cdot7\cdot x + 7^2 \\
     &= \boldsymbol{ (x+7)^2 .}
-    \end{align}
-    \begin{align}
+    \end{align*}
+    \begin{align*}
     \text{b.} \quad & y^2 - 4y + 4 \\
     &= y^2 - 2\cdot 2\cdot y + 2^2 \\
     &= \boldsymbol{ (y-2)^2 .}
-    \end{align}
-    \begin{align}
+    \end{align*}
+    \begin{align*}
     \text{c.} \quad & 4x^2 - 20xy + 25y^2 \\
     &= (2x)^2 - 2\cdot 2x \cdot 5y + (5y)^2 \\
     &= \boldsymbol{ (2x-5y)^2 .}
-    \end{align}
-    \begin{align}
+    \end{align*}
+    \begin{align*}
     \text{d.} \quad & b^4 + 6b^2 + 9 \\
     &= \left( b^2 \right)^2 + 2\cdot 3 \cdot b^2 + 3^2 \\
     &= \boldsymbol{ (b^2 + 3)^2 .}
-    \end{align}
+    \end{align*}
 
 2.  <br>
-    \begin{align}
+    \begin{align*}
     \text{a. } \quad & r^2 - 25 \\
     &= r^2 - 5^2 \\
     &= \boldsymbol{ (r+5)(r-5) .}
-    \end{align}
-    \begin{align}
+    \end{align*}
+    \begin{align*}
     \text{b. } \quad & 4x^2 - 9y^2 \\
     &= (2x)^2 - (3y)^2 \\
     &= \boldsymbol{ (2x+3y)(2x-3y) .}
-    \end{align}
-    \begin{align}
+    \end{align*}
+    \begin{align*}
     \text{c.} \quad & t^4 - 1 \\
     &= \left( t^2 \right)^2 - 1^2 \\
     &= (t^2 + 1)(t^2 - 1) \\
     &= \boldsymbol{ (t^2+1)(t+1)(t-1) .}
-    \end{align}
+    \end{align*}
 
 {{% /details %}}
 
@@ -450,36 +450,36 @@ Factorise the following quadratic polynomials.
 
 {{% note Solution %}}
 
-\begin{align}
+\begin{align*}
 \text{a.} \quad & x^2 - 3x + 2 \\\\
 &= x^2 + (-1-2)x -1\cdot(-2) \\\\
 &= \boldsymbol{ (x-1)(x-2) .}
-\end{align}
-\begin{align}
+\end{align*}
+\begin{align*}
 \text{b.} \quad & y^2 + 4y - 12 \\\\
 &= y^2 + (-2+6)y -2\cdot 6 \\\\
 &= \boldsymbol{ (y-2)(y+6) .}
-\end{align}
-\begin{align}
+\end{align*}
+\begin{align*}
 \text{c.} \quad & t^2 + 5t - 36 \\\\
 &= t^2 + (-4+9)t -4\cdot 9 \\\\
 &= \boldsymbol{ (t-4)(t+9) .}
-\end{align}
-\begin{align}
+\end{align*}
+\begin{align*}
 \text{d.} \quad & a^2 + 10a + 21 \\\\
 &= a^2 + (3+7)a + 3\cdot 7 \\\\
 &= \boldsymbol{ (a+3)(a+7) .}
-\end{align}
-\begin{align}
+\end{align*}
+\begin{align*}
 \text{e.} \quad & x^2 - xy - 12y^2 \\\\
 &= x^2 + (-4y+3y)x -4y\cdot 3y \\\\
 &= \boldsymbol{ (x-4y)(x+3y) .}
-\end{align}
-\begin{align}
+\end{align*}
+\begin{align*}
 \text{f.} \quad & a^2 + 3ab - 18b^2 \\\\
 &= a^2 + (6b-3b)a + 6b\cdot(-3b) \\\\
 &= \boldsymbol{ (a+6b)(a-3b) .}
-\end{align}
+\end{align*}
 
 {{% /details %}}
 
@@ -507,7 +507,7 @@ Factorise the following quadratic polynomials.
 
 {{% note solution %}}
 
-\begin{align}
+\begin{align*}
 \text{a.} \quad & 2x^2 + 3x + 1 = \boldsymbol{ (2x+1)(x+1) } \\\\[0.5em]
 & \rlap{\phantom{3\;} \raise{0.8em}{\huge \times}}
 \begin{array}{rcrcr}
@@ -515,8 +515,8 @@ Factorise the following quadratic polynomials.
 1 && 1 & \rightarrow & 2 \\\\[0.5em]
 \hline &&&& \boldsymbol{ 3 }
 \end{array}
-\end{align}
-\begin{align}
+\end{align*}
+\begin{align*}
 \text{b.} \quad & 3x^2 + 10x + 3 = \boldsymbol{ (3x+1)(x+3) } \\\\[0.5em]
 & \rlap{\phantom{3\;} \raise{0.8em}{\huge \times}}
 \begin{array}{rcrcr}
@@ -524,8 +524,8 @@ Factorise the following quadratic polynomials.
 1 && 3 & \rightarrow & 9 \\\\[0.5em]
 \hline &&&& \boldsymbol{ 10 }
 \end{array}
-\end{align}
-\begin{align}
+\end{align*}
+\begin{align*}
 \text{c.} \quad & 2x^2 - 9x + 4 = \boldsymbol{ (2x-1)(x-4) } \\\\[0.5em]
 & \rlap{\phantom{3\;} \raise{0.8em}{\huge \times}}
 \begin{array}{rcrcr}
@@ -533,8 +533,8 @@ Factorise the following quadratic polynomials.
 1 && -4 & \rightarrow & -8 \\\\[0.5em]
 \hline &&&& \boldsymbol{ 5 }
 \end{array}
-\end{align}
-\begin{align}
+\end{align*}
+\begin{align*}
 \text{d.} \quad & 6x^2 + x - 1 = \boldsymbol{ (2x+1)(3x-1) } \\\\[0.5em]
 & \rlap{\phantom{3\;} \raise{0.8em}{\huge \times}}
 \begin{array}{rcrcr}
@@ -542,8 +542,8 @@ Factorise the following quadratic polynomials.
 3 && -1 & \rightarrow & -2 \\\\[0.5em]
 \hline &&&& \boldsymbol{ 1 }
 \end{array}
-\end{align}
-\begin{align}
+\end{align*}
+\begin{align*}
 \text{e.} \quad & 12a^2 - 7a - 12 = \boldsymbol{ (3a-4)(4a+3) } \\\\[0.5em]
 & \rlap{\phantom{3\;} \raise{0.8em}{\huge \times}}
 \begin{array}{rcrcr}
@@ -551,8 +551,8 @@ Factorise the following quadratic polynomials.
 4 && 3 & \rightarrow & 9 \\\\[0.5em]
 \hline &&&& \boldsymbol{ -7 }
 \end{array}
-\end{align}
-\begin{align}
+\end{align*}
+\begin{align*}
 \text{f.} \quad & 8x^2 - 2xy - 3y^2 = \boldsymbol{ (2x+y)(4x-3y) } \\\\[0.5em]
 & \rlap{\phantom{3\;} \raise{0.8em}{\huge \times}}
 \begin{array}{rcrcr}
@@ -560,8 +560,8 @@ Factorise the following quadratic polynomials.
 4 && -3y & \rightarrow & -6y \\\\[0.5em]
 \hline &&&& \boldsymbol{ -2y }
 \end{array}
-\end{align}
-\begin{align}
+\end{align*}
+\begin{align*}
 \text{g.} \quad & 10p^2 - 19pq + 6q^2 = \boldsymbol{ (2p-3q)(5p-2q) } \\\\[0.5em]
 & \rlap{\phantom{3\;} \raise{0.8em}{\huge \times}}
 \begin{array}{rcrcr}
@@ -569,8 +569,8 @@ Factorise the following quadratic polynomials.
 5 && -2q & \rightarrow & -4q \\\\[0.5em]
 \hline &&&& \boldsymbol{ 19q }
 \end{array}
-\end{align}
-\begin{align}
+\end{align*}
+\begin{align*}
 \text{h.} \quad & 6a^2 - ab - 12b^2 = \boldsymbol{ (2a-3b)(3a+4b) } \\\\[0.5em]
 & \rlap{\phantom{3\;} \raise{0.8em}{\huge \times}}
 \begin{array}{rcrcr}
@@ -578,6 +578,6 @@ Factorise the following quadratic polynomials.
 3 && 4b & \rightarrow & 8b \\\\[0.5em]
 \hline &&&& \boldsymbol{ -b }
 \end{array}
-\end{align}
+\end{align*}
 
 {{% /details %}}

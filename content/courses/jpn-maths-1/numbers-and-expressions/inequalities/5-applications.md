@@ -88,34 +88,34 @@ Solve $a(x+1)>x+a^2$ with respect to $x$.
 {{% note solution %}}
 The inequality simplifies to
 
-\begin{align}
+\begin{align*}
   & ax + a > x + a^2 \\\\
   \iff & ax - x > a^2 - a \\\\
   \iff & (a-1)x > a(a-1). \quad \qdcirc{1}
-\end{align}
+\end{align*}
 
 The next step is to divide both sides by $(a-1)$, so we need to consider the case of $\text{(i) } a-1>0$, $\text{(ii) } a-1=0$, and $\text{(iii) } a-1<0$.
 
 $\text{(i)} \quad$ When $a-1>0 \iff a>1$, we are dividing both sides by a positive number, so
 
-\begin{align}
+\begin{align*}
   \tcirc{1} \iff & x > a.
-\end{align}
+\end{align*}
 
 $\text{(ii)} \quad$ When $a-1=0 \iff a=1$, we *cannot divide* both sides by $a-1$. Instead, we can substitute $a=1$ into $\tcirc{1}$:
 
-\begin{align}
+\begin{align*}
   \tcirc{1} \iff & 0 \cdot x > 1 \cdot 0 \\\\
   \iff & 0 > 0.
-\end{align}
+\end{align*}
 
 Because this inequality is always false, there are no solutions for $x$ in this case.
 
 $\text{(iii)} \quad$ When $a-1<0 \iff a<1$, we are dividing both sides by a negative number, so *the inequality sign changes*.
 
-\begin{align}
+\begin{align*}
   \tcirc{1} \iff & x \hl{<} a.
-\end{align}
+\end{align*}
 
 Therefore, the solution for $x$ is
 
@@ -143,18 +143,18 @@ We first solve the simultaneous inequality
 
 to see what the solutions are in terms of $a$. From the first inequality,
 
-\begin{align}
+\begin{align*}
   & ax + 2x < 4 \\\\
   \iff & (a+2)x < 4, \quad \qdcirc{1}
-\end{align}
+\end{align*}
 
 and from the second inequality,
 
-\begin{align}
+\begin{align*}
   & 4-2x < 2x \\\\
   \iff & 4 < 4x \\\\
   \iff & 1 < x. \quad \qdcirc{2}
-\end{align}
+\end{align*}
 
 By comparing the solution $(1<x<4)$ with $\tcirc{2}$, we can clearly see that $\tcirc{1}$ should lead to $x<4$. Because we need to divide both sides of $\tcirc{1}$ by $(a+2)$ to proceed, it is natural for us to divide the cases by the sign of $(a+2)$.
 
@@ -195,13 +195,13 @@ You would like to share the apples you have with a group of children. If you giv
 4. Because every child except the last one does receive 7 apples, the number of apples you had should not be smaller than $7(x-1)$, and hence $\tcirc{1}$ is greater or equal to zero. Also, $\tcirc{1}$ is equal to the number of apples the last child would get, so it would also be less than four.
 5. Putting everything together, we find $$ 0 \le 4x+19 - 7(x-1) \lt 4. $$
 6. Solving this inequality gives
-\begin{align}
+\begin{align*}
   & 0 \le 4x+19 - 7(x-1) \lt 4 \\\\
   \iff & 0 \le 4x+19 - 7x + 7 \lt 4 \\\\
   \iff & 0 \le -3x + 26 \lt 4 \\\\
   \iff & -26 \le -3x \lt -22 \\\\
   \iff & \frac{22}{3} \lt x \le \frac{26}{3}.
-\end{align}
+\end{align*}
 7. The number of children has to be a natural number, and the only natural number that is in between $\dfrac{22}{3}$ and $\dfrac{26}{3}$ is $8$ $\left(=\dfrac{24}{8}\right)$. Therefore there are $\textbf{8 children}$, and the number of apples is $$ 4\cdot 8 + 19 = \boldsymbol{51}. $$ 
 
 
@@ -241,11 +241,11 @@ Basics of solving word problems:
 {{% note solution %}}
 
 1. We will first simplify the inequality in terms of $x$.
-\begin{align}
+\begin{align*}
   & mx>x+m^2+m-2 \\\\
   \iff & mx-x>m^2+m-2 \\\\
   \iff & (m-1)x > (m-1)(m+2). && \qdcirc{1}
-\end{align}
+\end{align*}
 
 We need to divide both sides by $(m-1)$, if possible. Hence we will look at the cases when $(m-1)$ is positive, when it equals zero, and when it is negative.
 
@@ -272,25 +272,25 @@ Therefore, the solution is
 \end{cases}
 and solve them separately. From the second inequality,
 
-\begin{align}
+\begin{align*}
   & 4x+1 \le 5 \\\\
   \iff & 4x \le 4 \\\\
   \iff & x \le 1. && \qdcirc{1}
-\end{align}
+\end{align*}
 
 Then, from the first inequality,
-\begin{align}
+\begin{align*}
   & 2bx\le 4x+1 \\\\
   \iff & (2b-4)x \le 1 \\\\
   \iff & (b-2)x \le \frac{1}{2}. \qdcirc{2}
-\end{align}
+\end{align*}
 
 If we compare $\tcirc{1}$ with $-5\le x\le 1$, $\tcirc{2}$ should be equivalent to $x\ge -5$. It means that the inequality sign has to flip, which means $(b-2)$ has to be negative:
 
-\begin{align}
+\begin{align*}
   \tcirc{2} \iff & x \hl{\ge} \frac{1}{2(b-2)}, \\\\
   \iff & x \ge -5,
-\end{align}
+\end{align*}
 
 so $\dfrac{1}{2(b-2)} = -5$. We solve this equation to find the value of $b$:
 
@@ -322,20 +322,20 @@ Alice then gives one third of her pencils $(=n/3)$ to Tom. At this point, Alice 
 After Alice gives three more pencils to Tom, Alice has $\dfrac{2}{3} n - 3$ pencils, and Tom has $ 52-n + \dfrac{1}{3}n + 3$ pencils. Now, Tom has more pencils, so $$ \dfrac{2}{3} n - 3 < 52-n + \dfrac{1}{3}n + 3. \qdcirc{2} $$
 
 Now we have two inequalities to solve. Solving $\tcirc{1}$ gives
-\begin{align}
+\begin{align*}
   \tcirc{1} \iff & \dfrac{2}{3} n > 52 - \dfrac{2}{3} n \\\\
   \iff & \dfrac{4}{3} n > 52 \\\\
   \iff & n > 52 \times \dfrac{3}{4} \\\\
   \iff & n > 39.
-\end{align}
+\end{align*}
 
 Then, solving $\tcirc{2}$ gives
-\begin{align}
+\begin{align*}
   \tcirc{2} \iff & \dfrac{2}{3} n - 3 < 55 - \frac{2}{3} n \\\\
   \iff & \dfrac{4}{3} n < 58 \\\\
   \iff & n < 58 \times \dfrac{3}{4} \\\\
   \iff & n < 43.5.
-\end{align}
+\end{align*}
 
 We find $ 39 < n < 43.5 $. Because Alice could give one third of her pencils, the number of pencils Alice had must be divisible by $3$. The only multiple of $3$ that is in between $39$ and $43.5$ is $42$, so Alice had $\boldsymbol{42}$ pencils at first.
 
@@ -354,14 +354,14 @@ Suppose you cover $d~\text{km}$ by running and $(15-d)~\text{km}$ by walking. Th
 {{% mn q4 tips %}}
 $(1)$ Multiplying both sides by the least common multiple of the denominators $(15)$.
 {{% /mn %}}
-\begin{align}
+\begin{align*}
   & \dfrac{d}{5} + \dfrac{15-d}{3} \le 4 \\\\
   \iff & 3d + 5(15-d) \le 60 \tag{1} \\\\
   \iff & 3d + 75 - 5d \le 60 \\\\
   \iff & -2d \le 60 - 75 \\\\
   \iff & -2d \le -15 \\\\
   \iff & d \ge \dfrac{15}{2}.
-\end{align}
+\end{align*}
 
 Therefore, you need to run for at least $\boldsymbol{ 7.5 }$ kilometres.
 

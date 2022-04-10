@@ -67,43 +67,43 @@ In the [previous lesson](../absolute-value-equations), we found that $$ |x| = c 
 1. $|x-2|<4$ implies $\hl{ -4<x-2<4 }$. Then $ \boldsymbol{ -2 < x < 6 }. $
 2. $|x+3|\ge 5$ implies $ \hl{ x+3 \le -5 \text{ or } x+3 \ge 5 }$. When $ x+3 \le -5$, $ x \le -8$, and when $ x+3 \ge 5$, $x \ge 2$. Therefore the range is $\boldsymbol{ x\le -8 \text{ or } x \ge 2 }.$
 3. $|2x+1|\le 3$ implies $ \hl{ -3 \le 2x+1 \le 3 }$. Then
-\begin{align}
+\begin{align*}
   -3 \le 2x+1 \le 3 \iff & -4 \le 2x \le 2 \\\\
   \iff & \boldsymbol{ -2 \le x \le 1 }.
-\end{align}
+\end{align*}
 4. {{% mn 90 tips %}}
 {{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-abs-ex1a.png" %}}{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-abs-ex1b.png" %}} The diagram representing the possible ranges of $x$ for Q4.
 {{% /mn %}} When $x\ge 4$, the equality becomes
-\begin{align}
+\begin{align*}
   \hl{ x-4 < 3x } \iff & -4 < 2x \\\\
   \iff & x > -2.
-\end{align}
+\end{align*}
 Because we already assumed $x \ge 4$, the solution is $x \ge 4. \qdcirc{1}$ <br><br>
 When $x<4$, the equality becomes
-\begin{align}
+\begin{align*}
   \hl{ -(x-4) < 3x } \iff & -x + 4 < 3x \\\\
   \iff & 4 < 4x \\\\
   \iff & x > 1.
-\end{align}
+\end{align*}
 Because we assumed $x < 4$, the solution is $ 1 < x < 4. \qdcirc{2}$ <br><br>
 The complete range of $x$ that satisfies the given inequality is the union of $\tcirc{1}$ and $\tcirc{2}$, which is $\boldsymbol{ x>1 }.$
 
 {{% note "Alt. Solution" %}} We can also try using the theorem above:
-\begin{align}
+\begin{align*}
   |x-4|< 3x \iff & -3x < x-4 < 3x \\\\
   \iff & \begin{cases} -3x < x-4, & \qdcirc{3} \\\\ x-4 < 3x. & \qdcirc{4} \end{cases}
-\end{align}
+\end{align*}
 
 Then
-\begin{align}
+\begin{align*}
   \tcirc{3} \iff & -4x < -4 \\\\
   \iff & x > 1,
-\end{align}
+\end{align*}
 and
-\begin{align}
+\begin{align*}
   \tcirc{4} \iff & -4 < 2x \\\\
   \iff & x > -2.
-\end{align}
+\end{align*}
 The range of $x$ that satisfies both $\tcirc{3}$ and $\tcirc{4}$ is also $\boldsymbol{ x > 1 }$!
 
 {{% /box %}}
@@ -127,28 +127,28 @@ Like [for equations with multiple absolute values](../absolute-value-equations/#
 {{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-abs-ex2a.png" %}}{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-abs-ex2b.png" %}}{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-abs-ex2c.png" %}} The diagram representing the possible ranges of $x$ for Q1.
 {{% /mn %}} <br><br>
 $(\text{i})$ When $x<1$,
-\begin{align}
+\begin{align*}
   |x-1| + 2|x-3| \le 11 \iff & \hl{ -(x-1) -2(x-3) } \le 11 \\\\
   \iff & -x + 1 - 2x + 6 \le 11 \\\\
   \iff & -3x \le 4 \\\\
   \iff & x \ge -\dfrac{4}{3}.
-\end{align}
+\end{align*}
 The intersection with our assumption, $x<1$, is $ -\dfrac{4}{3} \le x < 1. \qdcirc{1}$ <br><br>
 $(\text{ii})$ When $1\le x < 3$,
-\begin{align}
+\begin{align*}
   |x-1| + 2|x-3| \le 11 \iff & (x-1) \hl{ -2(x-3) } \le 11 \\\\
   \iff & x - 1 - 2x + 6 \le 11 \\\\
   \iff & -x \le 6 \\\\
   \iff & x \ge -6.
-\end{align}
+\end{align*}
 The intersection with our assumption, $1 \le x < 3$, is $ 1 \le x < 3. \qdcirc{2}$ <br><br>
 $(\text{iii})$ When $x \ge 3$,
-\begin{align}
+\begin{align*}
   |x-1| + 2|x-3| \le 11 \iff & (x-1) +2(x-3) \le 11 \\\\
   \iff & x - 1 + 2x - 6 \le 11 \\\\
   \iff & 3x \le 18 \\\\
   \iff & x \le 6.
-\end{align}
+\end{align*}
 The intersection with our assumption, $x\ge 3$, is $ 3 \le x \le 6. \qdcirc{3}$ <br><br>
 Therefore, our solution is the union of $\tcirc{1}$, $\tcirc{2}$, and $\tcirc{3}$, which is $\boldsymbol{ -\dfrac{4}{3} \le x \le 6 }.$
 
@@ -158,27 +158,27 @@ Therefore, our solution is the union of $\tcirc{1}$, $\tcirc{2}$, and $\tcirc{3}
 {{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-abs-ex3a.png" %}}{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-abs-ex3b.png" %}}{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-abs-ex3c.png" %}} The diagram representing the possible ranges of $x$ for Q2.
 {{% /mn %}} <br><br>
 $(\text{i})$ When $x<7$,
-\begin{align}
+\begin{align*}
   |x-7| + |x-8| < 3 \iff & \hl{ -(x-7) -(x-8) } < 3 \\\\
   \iff & -x + 7 -x + 8 < 3 \\\\
   \iff & -2x < -12 \\\\
   \iff & x > 6.
-\end{align}
+\end{align*}
 Thus we conclude $6 < x < 7. \qdcirc{4}$ <br><br>
 $(\text{ii})$ When $7\le x<8$,
-\begin{align}
+\begin{align*}
   |x-7| + |x-8| < 3 \iff & (x-7) \hl{-(x-8) } < 3 \\\\
   \iff & x-7-x+8 < 3 \\\\
   \iff & 1 < 3.
-\end{align}
+\end{align*}
 This statement is always true regardless of the value of $x$, so we conclude $7\le x < 8. \qdcirc{5}$ <br><br>
 $(\text{iii})$ When $x \ge 8$,
-\begin{align}
+\begin{align*}
   |x-7| + |x-8| < 3 \iff & (x-7) + (x-8) < 3 \\\\
   \iff & 2x - 15 < 3 \\\\
   \iff & 2x < 18 \\\\
   \iff & x < 9.
-\end{align}
+\end{align*}
 Thus we find $8 \le x < 9. \qdcirc{6}$ <br><br>
 Our solution is the union of $\tcirc{4}$, $\tcirc{5}$, and $\tcirc{6}$, which is $\boldsymbol{ 6 < x < 9 }.$
 
@@ -204,38 +204,38 @@ Our solution is the union of $\tcirc{4}$, $\tcirc{5}$, and $\tcirc{6}$, which is
 
 {{% note Solution %}}
 
-\begin{align}
+\begin{align*}
   \text{a.} \quad |x+3| \le 2 \iff & -2 \le x+3 \le 2 \\\\
   \iff & \boldsymbol{ -5 \le x \le -1 }.
-\end{align}
+\end{align*}
 
-\begin{align}
+\begin{align*}
   \text{b.} \quad |x-4| > 3 \iff & x-4 < -3 \text{ or } x-4 > 3 \\\\
   \iff & \boldsymbol{ x < 1 \text{ or } x > 7 }.
-\end{align}
+\end{align*}
 
-\begin{align}
+\begin{align*}
   \text{c.} \quad |4x-5| > 1 \iff & 4x-5 < -1 \text{ or } 4x-5 > 1 \\\\
   \iff & 4x < 4 \text{ or } 4x > 6 \\\\
   \iff & \boldsymbol{ x < 1 \text{ or } x > \frac{3}{2} }.
-\end{align}
+\end{align*}
 
 $\hspace{0.5em} \text{d.} \quad$ When $x\ge -1$,
-\begin{align}
+\begin{align*}
   3|x+1| < x+5 \iff & 3(x+1) < x+5 \\\\
   \iff & 3x + 3 < x + 5 \\\\
   \iff & 2x < 2 \\\\
   \iff & x < 1.
-\end{align}
+\end{align*}
 Its intersection with the assumption ($x\ge -1$) is $-1 \le x < 1. \qdcirc{1}$
 
 When $x < -1$,
-\begin{align}
+\begin{align*}
   3|x+1| < x+5 \iff & -3(x+1) < x+5 \\\\
   \iff & -3x - 3 < x + 5 \\\\
   \iff & -4x < 8 \\\\
   \iff & x > -2.
-\end{align}
+\end{align*}
 Its intersection with the assumption ($x<-1$) is $-2 < x < -1. \qdcirc{2}$
 
 From $\tcirc{1}$ and $\tcirc{2}$, the possible range of $x$ is $\boldsymbol{ -2 < x < 1 }.$
@@ -258,29 +258,29 @@ From $\tcirc{1}$ and $\tcirc{2}$, the possible range of $x$ is $\boldsymbol{ -2 
 $\hspace{0.5em} \text{a.} \quad$ Because $x-5=0$ when $x=5$, we will divide the cases at $x=0$ and $x=5$.
 
 $(\text{i})$ When $x<0$,
-\begin{align}
+\begin{align*}
   |x-5| \le \dfrac{2}{3} |x| + 1 \iff & \hl{-(x-5)} \le \hl{ -\dfrac{2}{3} x} + 1 \\\\
   \iff & -x + 5 \le - \dfrac{2}{3}x + 1 \\\\
   \iff & 4 \le \dfrac{1}{3} x \\\\
   \iff & x \ge 12.
-\end{align}
+\end{align*}
 Because this does not satisfy our assumption $x<0$, we find *there are no values of $x$* that satisfies the inequality.
 
 $(\text{ii})$ When $0\le x < 5$,
-\begin{align}
+\begin{align*}
   |x-5| \le \dfrac{2}{3} |x| + 1 \iff & \hl{-(x-5)} \le \dfrac{2}{3} x + 1 \\\\
   \iff & -x + 5 \le + \dfrac{2}{3}x + 1 \\\\
   \iff & 4 \le \dfrac{5}{3} x \\\\
   \iff & x \ge \dfrac{12}{5}.
-\end{align}
+\end{align*}
 Because we assumed $0\le x < 5$, the range of $x$ that satisfies the inequality is $\dfrac{12}{5}\le x < 5. \qdcirc{1}$
 
 $(\text{iii})$ When $x\ge 5$,
-\begin{align}
+\begin{align*}
   |x-5| \le \dfrac{2}{3} |x| + 1 \iff & (x-5) \le \dfrac{2}{3} x + 1 \\\\
   \iff & \dfrac{1}{3} x \le 6 \\\\
   \iff & x \le 18.
-\end{align}
+\end{align*}
 Because we assumed $x\ge 5$, the range of $x$ that satisfies the inequality is $5\le x \le 18. \qdcirc{2}$
 
 From $\tcirc{1}$ and $\tcirc{2}$, the solution is $\boldsymbol{ \dfrac{12}{5}\le x \le 18 }.$
@@ -290,27 +290,27 @@ From $\tcirc{1}$ and $\tcirc{2}$, the solution is $\boldsymbol{ \dfrac{12}{5}\le
 $\hspace{0.5em} \text{b.} \quad$ Because $x+2=0$ at $x=-2$ and $x-1=0$ at $x=1$, we will divide the cases at $x=-2$ and $x=1$.
 
 $(\text{i})$ When $x<-2$,
-\begin{align}
+\begin{align*}
   |x+2|-|x-1|>x \iff \hl{-(x+2) + (x-1)} > x \\\\
   \iff & -x-2 +x-1 > x \\\\
   \iff & -3 > x.
-\end{align}
+\end{align*}
 Its intersection with $x<-2$ is $x<-3. \qdcirc{3}$
 
 $(\text{ii})$ When $-2 \le x < 1$,
-\begin{align}
+\begin{align*}
   |x+2|-|x-1|>x \iff (x+2) \hl{+ (x-1)} > x \\\\
   \iff & 2x + 1 > x \\\\
   \iff & x > -1.
-\end{align}
+\end{align*}
 Its intersection with $-2 \le x < 1$ is $-1 < x < 1. \qdcirc{4}$
 
 $(\text{iii})$ When $x\ge 1$,
-\begin{align}
+\begin{align*}
   |x+2|-|x-1|>x \iff (x+2) - (x-1) > x \\\\
   \iff & x+2-x+1>x \\\\
   \iff & 3 > x.
-\end{align}
+\end{align*}
 Its intersection with $x\ge 1$ is $1\le x < 3. \qdcirc{5}$
 
 From $\tcirc{3}$, $\tcirc{4}$ and $\tcirc{5}$, the complete solution is $\boldsymbol{ x<-3, \text{ or } -1 < x < 3 }.$

@@ -60,22 +60,22 @@ Let's apply this idea to quadratic functions in general form.
 - Moving 1 unit up:{{% sn 55 %}}Likewise, $q$ is positive if moving up, and negative if moving down.{{% /sn %}} $y\hl{-1} = f(x+3)$
 
 Therefore, the equation of the new graph is:
-\begin{align}
+\begin{align*}
   y &= \underline{f(x+3)} + 1 \\\\
   &= \underline{-2(x+3)^2 + 4(x+3) - 4} + 1 \\\\
   &= -2(x^2 + 6x + 9) + 4(x+3) - 3 \\\\
   &= -2x^2 + (-12+4)x -18+12-3 \\\\
   &= \boldsymbol{ -2x^2 -8x -9 }.
-\end{align}
+\end{align*}
 
 {{% note "Alt. Solution" %}} We can find the coordinates of the vertex by converting the equation to the vertex form:
-\begin{align}
+\begin{align*}
   y &= -2x^2 + 4x - 4 \\\\
   &= -2(x^2 - 2x) - 4 \\\\
   &= -2(\underline{x^2 - 2x + 1} - 1) - 4 \\\\
   &= -2\underline{(x-1)^2} + 2 - 4 \\\\
   &= -2(x-1)^2 -2 .
-\end{align}
+\end{align*}
 
 Thus we find the vertex is $(1,-2)$. If we move this vertex 3 units left and 1 unit up, it becomes $(1-3,-2+1)=(-2,-1)$. Therefore, the equation of the new graph is $$ \boldsymbol{ y = -2(x+2)^2 - 1 }. $$
 
@@ -106,20 +106,20 @@ Up until now, all we had to do is to move the graph according to the prescribed 
 {{% note Answer %}} We can certainly let $f(x) = 2x^2 + 6x + 7$ and solve $$ f(x-p) + q = 2x^2 - 4x + 1 $$ for $p$ and $q$, but it sounds a little too cumbersome. Instead, we can focus on the coordinates of the vertices.
 
 For $P_1$,
-\begin{align}
+\begin{align*}
   y &= 2x^2 + 6x + 7 \\\\
   &= 2(x^2 + 3x) + 7 \\\\
   &= 2\left\\{ \left( x + \dfrac{3}{2}\right)^2 - \dfrac{9}{4} \right\\} + 7 \\\\
   &= 2\left( x + \dfrac{3}{2}\right)^2 - \dfrac{9}{2} + 7 \\\\
   &= 2\left( x + \dfrac{3}{2}\right)^2 + \dfrac{5}{2},
-\end{align}
+\end{align*}
 so the vertex is $\left(-\dfrac{3}{2}, \dfrac{5}{2}\right)$, and for $P_2$,
-\begin{align}
+\begin{align*}
   y &= 2x^2 - 4x + 1 \\\\
   &= 2(x^2 - 2x) + 1 \\\\
   &= 2\\{ (x-1)^2 - 1 \\} + 1 \\\\
   &= 2(x-1)^2 - 1,
-\end{align}
+\end{align*}
 so the vertex is $(1, -1)$.
 
 Thus the translation moves $\left(-\dfrac{3}{2}, \dfrac{5}{2}\right)$ to $(1, -1)$. If we let the amount of horizontal translation be $p$ and vertical translation be $q$, we have
@@ -143,11 +143,11 @@ This means $p=\dfrac{5}{2}$ and $q=-\dfrac{7}{2}$. Therefore, $\textbf{$\boldsym
 \end{alignat}
 
 Thus, the equation of $P_1$ is $$ y-2 = 2(x+1)^2 + 8(x+1) + 9. $$ Therefore
-\begin{align}
+\begin{align*}
   y &= 2(x+1)^2 + 8(x+1) + 9 + 2 \\\\
   &= 2(x^2 + 2x + 1) + 8(x+1) + 11 \\\\
   &= \boldsymbol{ 2x^2 + 12x + 21 }.
-\end{align}
+\end{align*}
 
 {{% /box %}}
 
@@ -161,24 +161,24 @@ Thus, the equation of $P_1$ is $$ y-2 = 2(x+1)^2 + 8(x+1) + 9. $$ Therefore
 1. $f(x) = x^2 - 8x - 11$ or $(x-4)^2 - 5$
 
 {{% note Solution %}} When you move the graph of $y=g(x)$ 2 units right and 1 unit down, the equation becomes $$ y+1 = g(x-2). $$ Thus,
-\begin{align}
+\begin{align*}
   f(x) &= (x-2)^2 -4(x-2) - 1 \\\\
   &= x^2 - 4x + 4 - 4x + 8 - 1 \\\\
   &= \boldsymbol{ x^2 - 8x + 11 }.
-\end{align}
+\end{align*}
 
 {{% note "Alt. Solution" %}} Converting $y = x^2 - 4x$ to the vertex form gives
-\begin{align}
+\begin{align*}
   y &= x^2 - 4x \\\\
   &= x^2 - 4x + 4 - 4 \\\\
   &= (x-2)^2 - 4.
-\end{align}
+\end{align*}
 Thus the vertex of $y = x^2 - 4x$ is $(2, -4)$. If we move this point 2 units right and 1 unit down, it becomes $(2+2,-4-1)=(4,-5)$. Therefore, $f(x)$ is equal to
-\begin{align}
+\begin{align*}
   f(x) &= \boldsymbol{ (x-4)^2 - 5 } \\\\
   &= x^2 - 8x + 16 - 4 \\\\
   &= \boldsymbol{ x^2 - 8x + 11 }.
-\end{align}
+\end{align*}
 
 {{% /details %}}
 
@@ -211,10 +211,10 @@ Thus the vertex of $\tcirc{1}$ is $(4, -29)$ and the vertex of $\tcirc{2}$ is $(
 3. $y = x^2 + x$
 
 {{% note Solution %}} The graph we need to find is the graph of $y=x^2 + 3x + 4$ translated 1 unit right and 2 units down. Thus
-\begin{align}
+\begin{align*}
   y &= (x-1)^2 + 3(x-1) + 4 - 2 \\\\
   &= x^2 - 2x + 1 + 3x - 3 + 4 - 2 \\\\
   &= \boldsymbol{ x^2 + x }.
-\end{align}
+\end{align*}
 
 {{% /details %}}

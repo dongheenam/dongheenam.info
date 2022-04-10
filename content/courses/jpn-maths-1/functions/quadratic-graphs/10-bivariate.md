@@ -44,10 +44,10 @@ The [previous lesson](../optimisation) discussed practical applications of quadr
 ## Bivariate Functions
 
 We will not have a lengthy discussion on the definition of bivariate (two-variable) functions here. Still, it is worth mentioning how they emerge from single-variable functions. Do you remember that [functions](../../functions-and-graphs/introduction/#functions) are like little robots that take a value and return another value based on the pre-defined rules? Think about a robot that accepts *two values* instead. For example, the addition machine would listen to two numbers, add them up, and tell the result. The mathematical equivalent of this would be $$ f(x, y) = x + y. $$ We can use this *function* just like $f(x)$:
-\begin{align}
+\begin{align*}
   & f(1, 2) = 1 + 2 = 3, \\\\
   & f(-1,-4) = -1 + (-4) = -5.
-\end{align}
+\end{align*}
 
 This is how we can define a function with two variables.
 
@@ -65,18 +65,18 @@ We can restrict the possible values of $(x, y)$ for a bivariate function $f(x, y
 {{% mn ex1 tips %}}
 $(1)$ $2x+y=3$, so $y=3-2x$.
 {{% /mn %}}
-\begin{align}
+\begin{align*}
   f(x, y) &= x^2 + 2y^2 \\\\
   &= x^2 + 2\hl{(3-2x)}^2 \tag{1} \\\\
   &= x^2 + 2(9-12x+4x^2) \\\\
   &= 9x^2 - 24x + 18.
-\end{align}
+\end{align*}
 Then, the minimum of this expression can be found by converting it to vertex form.
-\begin{align}
+\begin{align*}
   f(x,y) &= 9\left(x^2 - \dfrac{8}{3}x \right)^2 + 18 \\\\
   &= 9\left\\{ \left(x-\dfrac{4}{3}\right)^2 - \dfrac{16}{9} \right\\} + 18 \\\\
   &= 9\left(x-\dfrac{4}{3}\right)^2 + 2,
-\end{align}
+\end{align*}
 so the minimum of $f(x,y)$ is $\boldsymbol{ 2 }$ when $x=\dfrac{4}{3}$ and $y=3-2x=\dfrac{1}{3}$.
 
 ---
@@ -109,18 +109,18 @@ What if we further restrict the domain by specifying the values of $x$ and $y$ d
 {{% note Example %}} When $x$ and $y$ are non-negative and $x+2y=8$, find the minimum and maximum of $xy$.
 
 {{% note Solution %}} We will first express $x$ as a function of $y$: $ x = -2y + 8 $. Because $x\ge 0$,
-\begin{align}
+\begin{align*}
   -2y + 8 \ge 0 &\iff 8 \ge 2y \\\\
   &\iff 4 \ge y.
-\end{align}
+\end{align*}
 Thus the possible value of $y$ is $0 \le y \le 4$. Then,
-\begin{align}
+\begin{align*}
   xy &= \hl{(-2y + 8)}y \\\\
   &= -2y^2 + 8y \\\\
   &= -2(y^2 - 4y) \\\\
   &= -2\left\\{ (y-2)^2 - 4 \right\\} \\\\
   &= -2(y-2)^2 + 8.
-\end{align}
+\end{align*}
 The graph of $f(y) = -2(y-2)^2 + 8$ is concave down, so the maximum value is $\boldsymbol{ 8 }$ when $y=2$. The minimum value occurs at the furthest point from the vertex: $f(0) = f(4) = \boldsymbol{ 0 }$.
 
 {{< figure style="margin-bottom: 0" src="courses/jpn-maths-1/functions/quadratic-graphs/extbi-ex2.png" alt="Minimum and maximum of f(x, y) = xy." >}}
@@ -156,10 +156,10 @@ Finally, there are also quadratic functions that do not have any limits. For exa
 
 
 2. Completing the square for $y$ gives
-\begin{align}
+\begin{align*}
   g(x,y) &= -x^2 - (y^2 - 2y) + 5 \\\\
   &= -x^2 - (y-1)^2 + 6.
-\end{align}
+\end{align*}
 Since $x^2\ge 0$ and $(y-1)^2\ge 0$, $-x^2\le 0$ and $-(y-1)^2\le 0$. Therefore, the maximum of $g(x,y)$ is $\boldsymbol{ 6 }$ when $x=0$ and $y=1$.
 
 {{% /box %}}
@@ -180,12 +180,12 @@ Below are more complicated examples. One useful tip is to choose one variable an
 $(1)$ Completing the square for $x$<br><br>
 $(2)$ Completing the square for $y$
 {{% /mn %}}
-\begin{align}
+\begin{align*}
   P(x,y) &= -x^2-4x-3y^2+6y-2 \\\\
   &= \hl{-(x-2)^2 + 2^2} -3y^2+6y-2 \tag{1} \\\\
   &= -(x-2)^2 + 4 \hl{ -3 \left\\{ (y-1)^2 -1 \right\\} } - 2 \tag{2} \\\\
   &= -(x-2)^2 -3(y-1)^2 + 5.
-\end{align}
+\end{align*}
 Then, $-(x-2)^2\le 0$ and $-3(y-1)^2\le 0$. Thus the maximum of $P(x,y)$ is $\boldsymbol{ 5 }$. The perfect squares equal to zero when $x-2=0$ and $y-1=0$, so the maximum occurs when $x=2$ and $y=1$.
 
 4. Because there is an $xy$ term, we cannot treat the two variables separately. We will first rearrange the function in terms of $x$ to complete the square:
@@ -193,22 +193,22 @@ Then, $-(x-2)^2\le 0$ and $-3(y-1)^2\le 0$. Thus the maximum of $P(x,y)$ is $\bo
 $(1)$ Rearranging the coefficient of $x$ to change it to $x^2 - 2\Box x + \cdots$ form.<br><br>
 $(2)$ $x^2 - 2\Box x$ $= \left(x-\Box\right)^2 - \Box^2$
 {{% /mn %}}
-\begin{align}
+\begin{align*}
   Q(x,y) &= \hl{x^2} + (4-2y)\hl{x} +2y^2-2y+6 \\\\
   &= \underline{\hl{x^2} - 2(y-2)\hl{x}} + 2y^2 -2y+6 \tag{1} \\\\
   &= \underline{\left\\{ \hl{x} - (y-2) \right\\}^2 - (y-2)^2} + 2y^2 - 2y + 6 \tag{2} \\\\
   &= (x-y+2)^2 - y^2 + 4y - 4 + 2y^2 - 2y + 6 \\\\
   &= (x-y+2)^2 + y^2 + 2y + 2.
-\end{align}
+\end{align*}
 Then, we can complete the square for the leftover terms in terms of $y$.
-\begin{align}
+\begin{align*}
   Q(x,y) &= (x-y+2)^2 + y^2 + 2y + 1^2 + 1 \\\\
   &= (x-y+2)^2 + (y+1)^2 + 1.
-\end{align}
+\end{align*}
 Because $(x-y+2)^2 \ge 0$ and $(y+1)^2 \ge 0$, the minimum occurs when
-\begin{align}
+\begin{align*}
   x-y+2 = 0, \quad y+1=0.
-\end{align}
+\end{align*}
 Solving the above equations give $x=-3$ and $y=-1$. Therefore, the minimum of $Q(x,y)$ is $\boldsymbol{ Q(-3,-1) = 1 }$.
 
 {{% /box %}}
@@ -223,19 +223,19 @@ Solving the above equations give $x=-3$ and $y=-1$. Therefore, the minimum of $Q
 1. $\dfrac{8}{7}$ when $\left( x, y \right) = \left( \dfrac{6}{7}, \dfrac{4}{7} \right)$
 
 {{% note Solution %}} From $3x-y=2$, $y = 3x-2$. Then
-\begin{align}
+\begin{align*}
   &\phantom{=} 2x^2 - y^2 \\\\
   &= 2x^2 - \hl{(3x-2)}^2 \\\\
   &= 2x^2 - (9x^2 - 12x + 4) \\\\
   &= -7x^2 + 12x - 4.
-\end{align}
+\end{align*}
 The graph of $f(x)=-7x^2+12x-4$ is concave down, so the maximum occurs at the vertex.
-\begin{align}
+\begin{align*}
   &\phantom{=} -7x^2 + 12x - 4 \\\\
   &= -7\left( x^2 - \dfrac{12}{7} x \right) - 4 \\\\
   &= -7 \left\\{ \left( x - \dfrac{6}{7} \right)^2 - \dfrac{36}{49} \right\\} - 4 \\\\
   &= -7 \left( x - \dfrac{6}{7} \right)^2 + \dfrac{8}{7}.
-\end{align}
+\end{align*}
 Therefore, the maximum of $2x^2-y^2$ is $\boldsymbol{ \dfrac{8}{7} }$, when $x=\dfrac{6}{7}$ and $y=3\cdot \dfrac{6}{7} - 2 = \dfrac{4}{7}$.
 
 {{% /details %}}
@@ -247,32 +247,32 @@ Therefore, the maximum of $2x^2-y^2$ is $\boldsymbol{ \dfrac{8}{7} }$, when $x=\
 2. maximum of $\dfrac{1}{5}$ when $\left( x, y \right) = \left( \dfrac{1}{5}, \dfrac{2}{5} \right)$<br>minimum of $1$ when $\left( x, y \right) = \left(1, 0\right)$
 
 {{% note Solution %}} From $x+2y=1$, $x = 1 - 2y$. The range of $y$ that keeps $x$ non-negative is
-\begin{align}
+\begin{align*}
   & 1 - 2y \ge 0 \\\\
   & \iff 2y - 1 \le 0 \\\\
   & \iff y \le \dfrac{1}{2},
-\end{align}
+\end{align*}
 hence the possible values of $y$ are $0\le y \le \dfrac{1}{2}$. Then,
-\begin{align}
+\begin{align*}
   x^2 + y^2 &= \hl{(1-2y)}^2 + y^2 \\\\
   &= 1 - 4y + 4y^2 + y^2 \\\\
   &= 5y^2 - 4y + 1.
-\end{align}
+\end{align*}
 We will name this function $f(y)$. The graph of $f(y)$ is concave up, so the point closest to the vertex becomes the minimum, and the point farthest from the vertex becomes the maximum. From the vertex form,
-\begin{align}
+\begin{align*}
   f(y) &= 5y^2 - 4y + 1 \\\\
   &= 5\left(y^2 - \dfrac{4}{5}y\right) + 1 \\\\
   &= 5\left\\{ \left(y-\dfrac{2}{5}\right)^2 - \dfrac{4}{25} \right\\} + 1 \\\\
   &= 5\left(y-\dfrac{2}{5}\right)^2 + \dfrac{1}{5},
-\end{align}
+\end{align*}
 the vertex is $\left( \dfrac{2}{5},\dfrac{1}{5} \right)$. Therefore, the minimum of $f(y) = x^2+y^2$ is 
-\begin{align}
+\begin{align*}
   f \left( \dfrac{2}{5} \right) &= \boldsymbol{ \dfrac{1}{5} }
-\end{align}
+\end{align*}
 when $y = \dfrac{2}{5}$ and $x = 1 - 2\cdot \dfrac{2}{5} = \dfrac{1}{5}$, and the maximum is
-\begin{align}
+\begin{align*}
   f(0) = 2 (0-1)^2 - 1 = \boldsymbol{ 1 }
-\end{align}
+\end{align*}
 when $y = 0$ and $x = 1- 2 \cdot 0 = 1$.
 
 {{< figure style="margin-bottom: 0" src="courses/jpn-maths-1/functions/quadratic-graphs/extbi-q2.png" alt="Minimum and maximum of f(x, y) = x^2 + y^2." >}}
@@ -291,14 +291,14 @@ when $y = 0$ and $x = 1- 2 \cdot 0 = 1$.
 $(1)$ Completing the square for $x$<br><br>
 $(2)$ Completing the square for $y$
 {{% /mn %}}
-\begin{align}
+\begin{align*}
   A(x,y) &= 2x^2 - 4x + y^2 + 10y - 2 \\\\
   &= 2(x^2-2x) + y^2 + 10y - 2 \\\\
   &= 2 \left\\{ (x-1)^2 - 1 \right\\} + y^2 + 10y - 2 \tag{1} \\\\
   &= 2(x-1)^2 - 2 + y^2 + 10y - 2 \\\\
   &= 2(x-1)^2 - 2 + (y+5)^2 - 25 - 2 \tag{2}\\\\
   &= 2(x-1)^2 + (y+5)^2 - 29.
-\end{align}
+\end{align*}
 Because $(x-1)^2 \ge 0$ and $(y+5)^2 \ge 0$, the minimum of $A(x,y)$ is $\boldsymbol{ -29 }$. The minimum occurs when $x-1=0$ and $y+5=0$, that is, when $x=1$ and $y=-5$.
 
 {{% /details %}}
@@ -310,18 +310,18 @@ Because $(x-1)^2 \ge 0$ and $(y+5)^2 \ge 0$, the minimum of $A(x,y)$ is $\boldsy
 4. $B(7,2) = -3$
 
 {{% note Solution %}} Because the function is monic in $x$ (the coefficient of $x^2$ is 1), we will rearrange it with respect to $x$ and complete the square first.
-\begin{align}
+\begin{align*}
   B(x,y) &= \hl{x^2} + (-2-6y) \hl{x} + 10y^2 + 2y + 2 \\\\
   &= \hl{x^2} -2 (3y+1) \hl{x} + 10y^2 + 2y + 2 \\\\
   &= \left\\{ \hl{x} - (3y+1) \right\\}^2 - (3y+1)^2 + 10y^2 + 2y + 2 \\\\
   &= (x-3y-1)^2 - 9y^2 - 6y - 1 + 10y^2 + 2y + 2 \\\\
   &= (x-3y-1)^2 + y^2 - 4y + 1.
-\end{align}
+\end{align*}
 Then, we will complete the square with the remaining terms.
-\begin{align}
+\begin{align*}
   B(x,y) &= (x-3y-1)^2 + (y - 2)^2 - 4 + 1 \\\\
   &= (x-3y-1)^2 + (y - 2)^2 - 3.
-\end{align}
+\end{align*}
 The minimum occurs when $x-3y-1=0$ and $y-2=0$, and solving these equations give $x=7$ and $y=2$. Therefore, the minimum of $B(x,y)$ is $\boldsymbol{ B(7,2) = -3 }$.
 
 {{% /details %}}

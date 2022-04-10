@@ -37,11 +37,11 @@ weight: 27
 Suppose $f(x) = x^2 - 4x + 1$ and its domain be $\\{ x\\, | \\, 0\le x \le a \\}$, where $a$ is a positive constant. How will its extremum point change based on the value of $a$?
 
 Well, we can first try drawing $y = f(x)$. Since
-\begin{align}
+\begin{align*}
   f(x) &= x^2 - 4x + 1 \\\\
   &= (x-2)^2 - 4 + 1 \\\\
   &= (x-2)^2 - 3,
-\end{align}
+\end{align*}
 the graph of $y=f(x)$ is as below.
 
 {{% mn 122 %}}Graph of $y = x^2 - 4x + 1$. Drag the black dot to change the value of $a$.{{% /mn %}}
@@ -150,11 +150,11 @@ In this case, we will try moving the graph itself and see what happens!
 2. The maximum of $f$.
 
 {{% note Solution %}} If we convert $f(x)$ to vertex form,
-\begin{align}
+\begin{align*}
   f(x) &= x^2 - 2ax + 3a \\\\
   &= x^2 - 2ax + a^2 - a^2 + 3a \\\\
   &= (x-a)^2 - a^2 + 3a.
-\end{align}
+\end{align*}
 Thus the vertex of $y=f(x)$ is $(a, -a^2+3a).$
 
 1. Because the graph is concave up, the vertex is the minimum point as long as it is included in the domain.
@@ -293,21 +293,21 @@ From the above, we conclude:
 {{% details title="Answer" %}}
 
 {{% note Solution %}} We denote $f(x) = -2x^2 + 6x + 1.$ Note
-\begin{align}
+\begin{align*}
   f(x) &= -2(x^2 - 3x) + 1 \\\\
   &= -2\left( x - \dfrac{3}{2} \right)^2 + 2 \cdot \left(\dfrac{3}{2}\right)^2 + 1 \\\\
   &= -2\left( x - \dfrac{3}{2} \right)^2 + \dfrac{11}{2},
-\end{align}
+\end{align*}
 so the vertex is $\left( \dfrac{3}{2}, \dfrac{11}{2} \right).$
 
 $\hspace{0.5em} \text{a.} \quad$ Because the vertex is the global maximum point, we can think about the values of $a$ such that the domain includes the vertex.
 
 $\tcirc{1}\quad$ When $a+1<\dfrac{3}{2}$, or $a<\dfrac{1}{2}$, the domain sits on the left of the vertex. Because $x=a+1$ is closer to the vertex than $x=a$, the maximum is
-\begin{align}
+\begin{align*}
   f(a+1) &= -2(a+1)^2 + 6(a+1) + 1 \\\\
   &= -2a^2 - 4a - 2 + 6a + 6 + 1\\\\
   &= -2a^2 + 2a + 5.
-\end{align}
+\end{align*}
 
 $\tcirc{2}\quad$ When $a\le \dfrac{3}{2} \le a+1$, or $\dfrac{1}{2} \le a \le \dfrac{3}{2}$, the domain includes the vertex. Therefore the maximum is $\dfrac{11}{2}$ at $x=\dfrac{3}{2}$.
 
@@ -346,9 +346,9 @@ Therefore, the minimum of $y = -2x^2 + 6x + 1$ is
 {{% details title="Answer" %}}
 
 {{% note Solution %}} Let $f(x) = x^2 + 2(a-1)x.$ We can find the vertex of the graph by completing the square:
-\begin{align}
+\begin{align*}
   f(x) &= \\{ x + (a-1) \\}^2 - (a-1)^2. 
-\end{align}
+\end{align*}
 The vertex is $( -(a-1), -(a-1)^2).$
 
 $\hspace{0.5em} \text{a.} \quad$ Because the graph is concave up, the point farthest from the axis of symmetry $(x=a-1)$ becomes the maximum. Note there are three possibilities:

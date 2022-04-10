@@ -80,11 +80,11 @@ For every positive real number $a$,
 
 Now, from the first definition, a lot of students tend to think $\sqrt{x^2} = x$. Although it looks pretty convincing, *this is not always true.* Let's say $x=-2$. Then
 
-\begin{align}
+\begin{align*}
   \sqrt{x^2} &= \sqrt{(-2)^2} \\\\
   &= \sqrt{4} \\\\
   &= 2,
-\end{align}
+\end{align*}
 
 which means $\sqrt{x^2} = -x$! We need to be careful with the sign of $x$ when we are simplifying $\sqrt{x^2}$. In general, it is equal to the *absolute value* of $x$.
 
@@ -155,10 +155,10 @@ $\boldsymbol{ \sqrt{x^2a} = x\sqrt{a} }$
 
 We will use the first identity to simplify the left-hand side. Because both $x^2$ and $a$ are positive,
 
-\begin{align}
+\begin{align*}
   \textstyle\sqrt{x^2a} &= \textstyle\sqrt{x^2}\sqrt{a} \\\\
   &= \hl{|x|}\sqrt{a}.
-\end{align}
+\end{align*}
 
 Then, because $x$ is also positive, $|x|=x$ and $\sqrt{x^2 a} = x\sqrt{a}$. $\quad \square$
 
@@ -167,21 +167,21 @@ Then, because $x$ is also positive, $|x|=x$ and $\sqrt{x^2 a} = x\sqrt{a}$. $\qu
 {{% details title="Why $x>0?$" %}}
 As seen in the proof, strictly speaking, $\sqrt{x^2a} = |x|\sqrt{a}$. If we don't have that condition on $x$, a lot of strange things happen. For example, we can prove $1=-1$:
 
-\begin{align}
+\begin{align*}
   1 &= \sqrt{1} \\\\
   &= \textstyle\sqrt{(-1)^2\cdot 1} \\\\
   &= -1\sqrt{1} \\\\
   &= -1\cdot 1 \\\\
   &= -1.
-\end{align}
+\end{align*}
 
 Obviously, this is not true, because
 
-\begin{align}
+\begin{align*}
   \textstyle\sqrt{(-1)^2\cdot 1} &= \hl{|-1|}\sqrt{1} \\\\
   &= \sqrt{1} \\\\
   &= 1,
-\end{align}
+\end{align*}
 
 but it is confusing, especially when you deal with variables. So make sure you are always aware of this when you take a square out of a root!
 
@@ -211,9 +211,9 @@ You can add or subtract square roots just like how we do with the variables. For
 
 Here comes probably the most important part of this section: you *cannot* add two square roots with different numbers inside{{% sn radicand %}}The correct name for this number is *radicand*. For example, the radicand of $\sqrt{13}$ is $13$.{{% /sn %}}. A lot of people make a mistake like this: $$ \sqrt{2} + \sqrt{7} = \sqrt{2+7} = \sqrt{9} = 3, $$ which is not true:
 
-\begin{align}
+\begin{align*}
   \sqrt{2} + \sqrt{7} &= 4.05996\cdots \ne 3.
-\end{align}
+\end{align*}
 
 So remember: you can multiply or divide across the square root symbol, but not add or subtract!
 
@@ -227,30 +227,30 @@ Expand and simplify the following expressions.
 {{% note solution %}}
 
 1. It is *not* equal to $\sqrt{8}\sqrt{14}=\sqrt{112}$! Instead, we will use the [polynomial identities](../../polynomials/expanding-identities/#quadratic-identities) to expand the brackets.
-\begin{align}
+\begin{align*}
   \big(\sqrt{11}-\sqrt{3}\big)\big(\sqrt{11}+\sqrt{3}\big) &= \big(\sqrt{11}\big)^2 - \big(\sqrt{3}\big)^2 \\\\
   &= 11 - 3 \\\\
   &= \boldsymbol{ 8 }.
-\end{align}
+\end{align*}
 
 2. First note $\sqrt{27}=\sqrt{3^2\cdot 3}=3\sqrt{3}$. Then we can use the perfect square identity to expand the expression.
-\begin{align}
+\begin{align*}
   \big(2\sqrt{2}-\sqrt{27}\big)^2 &= \big(2\sqrt{2}-3\sqrt{3}\big)^2 \\\\
   &= \big(2\sqrt{2}\big)^2 - 2\cdot 2\sqrt{2} \cdot 3\sqrt{3} + \big(3\sqrt{3}\big)^2 \\\\
   &= 8 - 12\sqrt{6} + 27 \\\\
   &= \boldsymbol{ 35 - 12\sqrt{6} }.
-\end{align}
+\end{align*}
 
 3. Do you remember the [substitution technique](../../polynomials/advanced-expanding/#expanding-by-substitution)? You can see $\sqrt{2}+\sqrt{3}$ is common in both brackets, so let's rename it as $A$ and expand the expression with the polynomial identity.
 {{% mn 238 tips %}}$(1)$ $\sqrt{2}+\sqrt{3}=A${{% /mn %}}
-\begin{align}
+\begin{align*}
   & \big(\sqrt{2}+\sqrt{3}+\sqrt{5}\big)\big(\sqrt{2}+\sqrt{3}-\sqrt{5}\big) \\\\
   &= \big(A + \sqrt{5} \big)\big(A - \sqrt{5} \big) \tag{1} \\\\
   &= A^2 - \big(\sqrt{5}\big)^2 \\\\
   &= \big(\sqrt{2}+\sqrt{3}\big)^2 - 5 \\\\
   &= 2 + 2\sqrt{6} + 3 - 5 \\\\
   &= \boldsymbol{ 2\sqrt{6}. }
-\end{align}
+\end{align*}
 
 {{% /box %}}
 
@@ -271,17 +271,17 @@ Expand and simplify the following expressions.
 {{% note solution %}}
 
 For (a), do NOT say $\sqrt{(-3)^2\cdot 5} = -3\sqrt{5}$.
-\begin{align}
+\begin{align*}
   \text{a.} \quad& \sqrt{(-3)^2\cdot 5} = \sqrt{3^2 \cdot 5} = \boldsymbol{ 3\sqrt{5} }. \\\\
   \text{b.} \quad& \sqrt{(-15)(-45)} = \sqrt{15\cdot 45} = \sqrt{15\cdot 15\cdot 3} = \boldsymbol{ 15\sqrt{3} }.
-\end{align}
+\end{align*}
 
-\begin{align}
+\begin{align*}
   \text{c.} \quad \sqrt{15}\sqrt{35}\sqrt{42} &= \sqrt{15\times 35\times 42} \\\\
   &= \sqrt{3\cdot 5 \times 7\cdot 5 \times 7\cdot 3\cdot 2} \\\\
   &= \sqrt{3^2\cdot 5^2 \cdot 7^2 \cdot 2} \\\\
   &= 3\cdot5\cdot7 \sqrt{2} = \boldsymbol{ 105\sqrt{2} }.
-\end{align}
+\end{align*}
 
 {{% /details %}}
 
@@ -302,39 +302,39 @@ For (a), do NOT say $\sqrt{(-3)^2\cdot 5} = -3\sqrt{5}$.
 
 $\text{a.} \quad$ We will try to make the radicands (numbers inside the root symbol) first.
 
-\begin{align}
+\begin{align*}
   & \sqrt{18}-2\sqrt{50}-\sqrt{8}+\sqrt{32} \\\\
   &= \sqrt{2\cdot 3^2} - 2\sqrt{2\cdot 5^2} - \sqrt{2\cdot 2^2} + \sqrt{2\cdot 4^2} \\\\
   &= 3\sqrt{2} - 10\sqrt{2} - 2\sqrt{2} + 4\sqrt{2} \\\\
   &= (3-10-2+4)\sqrt{2} \\\\
   &= \boldsymbol{ -5\sqrt{2} }.
-\end{align}
+\end{align*}
 
 $\text{b.} \quad$ Expand the perfect square.
 
-\begin{align}
+\begin{align*}
   \big(2\sqrt{3} - 3\sqrt{2}\big)^2 &= \big(2\sqrt{3}\big)^2 - 2\cdot 2\sqrt{3} \cdot 3\sqrt{2} + \big(3\sqrt{2}\big)^2 \\\\
   &= 12 - 12\sqrt{6} + 18 \\\\
   &= \boldsymbol{ 30 - 12\sqrt{6} }.
-\end{align}
+\end{align*}
 
 $\text{c.} \quad$ If you look carefully, it is in the $(ax+by)(cx+dy)$ form!
 
-\begin{align}
+\begin{align*}
   & \big(2\hl{\sqrt{5}}-3\sqrt{3}\big)\big(3\hl{\sqrt{5}}+2\sqrt{3}\big) \\\\
   &= 6\big(\hl{\sqrt{5}}\big)^2 + (4 - 9)\hl{\sqrt{5}}\sqrt{3} - 6\big(\sqrt{3}\big)^2 \\\\
   &= 6\cdot 5 - 5\sqrt{15} - 18 \\\\
   &= \boldsymbol{ 12 - 5\sqrt{15} }.
-\end{align}
+\end{align*}
 
 $\text{d.} \quad$ This is a slightly different version of the last example question. This time, let's expand it without actually substituting the common terms.
 
-\begin{align}
+\begin{align*}
   & \big(\sqrt{5}+\sqrt{3}+\sqrt{2}\big)\big(\sqrt{5}-\sqrt{3}+\sqrt{2}\big) \\\\
   &= \big\\{ \big(\underline{\sqrt{5}+\sqrt{2}}\big) + \sqrt{3} \big\\}\big\\{ \big(\underline{\sqrt{5}+\sqrt{2}}\big) - \sqrt{3} \big\\} \\\\
   &= \big(\underline{\sqrt{5}+\sqrt{2}} \big)^2 - 3 \\\\
   &= 5 + 2\sqrt{10} + 2 - 3 \\\\
   &= \boldsymbol{ 4 + 2\sqrt{10} }.
-\end{align}
+\end{align*}
 
 {{% /details %}}

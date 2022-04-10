@@ -150,10 +150,10 @@ So far, we focused on numbers for counting. Numbers also appear in *measurements
 
 The 'usual' type of decimals have only a certain number of digits after the decimal point. For example, The swimming competition results from the picture have two digits. That is up to one-hundredth of a second. The more accurate you measure, the more digits you need. For example, the mass of a Hydrogen atom is about: 
 
-\begin{align}
+\begin{align*}
   & 1.6735576929 \times 10^{-27} ~\text{kg} \\\\
   &= 0.0000000000000000000000000016735576929 ~\text{kg}!
-\end{align}
+\end{align*}
 
 Now, that is a lot of digits, but it certainly ends at some point. On the other hand, you may have heard of a decimal that never ends. For example, if you divide $10$ by $3$, you will get an endless bunch of repeating $3$s: $$ 10\div3 = 3.3333333333\cdots, $$
 
@@ -341,9 +341,9 @@ This is a diagram summarising the different types of numbers we learnt so far. M
 
 1. From the following list of numbers, find all (a) natural numbers; (b) integers; (c) rational numbers; and (d) irrational numbers.
 
-\begin{align}
+\begin{align*}
   3, \\: -2, \\: 0, \\: \dfrac{2}{5}, \\: \sqrt{3}, \\: -4, \\: 1.\dot{4}, \\: 2\pi, \\: \sqrt{16}
-\end{align}
+\end{align*}
 
 {{% details title="Answer" %}}
 1. 

@@ -51,11 +51,11 @@ Find all natural numbers $n$ that satisfy $5n-7<2n+5$.
 {{% note solution %}}
 We will first solve $5n-7<2n+5$:
 
-\begin{align}
+\begin{align*}
   & 5n-7<2n+5 \\\\
   \iff & 3n < 12 \\\\
   \iff & n < 4.
-\end{align}
+\end{align*}
 
 Because $n$ is a natural number, the values of $n$ that satisfy $n<4$ are $\\textbf{1, 2 and 3}$.
 
@@ -85,12 +85,12 @@ If the largest integer that satisfies the inequality $x<\dfrac{3a-2}{4}$ is $5$,
 {{% /mn %}} Because $5$ is included, $\dfrac{3a-2}{4}$ cannot be $5$, but it may equal $6$. Thus the possible range of $a$ is $$ 5\lt \dfrac{3a-2}{4} \le 6. $$
 
 Solving this inequality gives
-\begin{align}
+\begin{align*}
   & 5\lt \dfrac{3a-2}{4} \le 6 \\\\
   \iff & 20 \lt 3a-2 \le 24 \\\\
   \iff & 22 \lt 3a \le 26 \\\\
   \iff & \boldsymbol{ \frac{22}{3} \lt a \le \frac{26}{3} }.
-\end{align}
+\end{align*}
 
 {{% /box %}}
 
@@ -111,17 +111,17 @@ Suppose $k$ is an integer greater than $2$, and an integer $x$ satisfies $5-x\le
   4x\lt 2x+k,
 \end{cases}
 and solve the inequalities one by one. The first inequality gives
-\begin{align}
+\begin{align*}
   & 5-x\le 4x \\\\
   \iff & 5 \le 5x \\\\
   \iff & 1 \le x, && \qdcirc{1}
-\end{align}
+\end{align*}
 and the second inequality gives
-\begin{align}
+\begin{align*}
   & 4x\lt 2x+k \\\\
   \iff & 2x \lt k \\\\
   \iff & x \lt \frac{k}{2}, && \qdcirc{2}
-\end{align}
+\end{align*}
 {{% mn 129 %}}{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-int-ex3.png" %}} The possible range for $x$, as a function of $k$.{{% /mn %}} Because $k>2$ from the question, $\dfrac{k}{2}>1$. Thus the range of $x$ is $\boldsymbol{ 1 \le x \lt \dfrac{k}{2} }$.
 
 <br>
@@ -148,12 +148,12 @@ and the second inequality gives
 
 1. If we solve the inequality,
 
-\begin{align}
+\begin{align*}
   & 4(x-2)+5(6-x)>7 \\\\
   \iff & 4x - 8 + 30 - 5x > 7 \\\\
   \iff & -x + 22 > 7 \\\\
   \iff & 15 > x.
-\end{align}
+\end{align*}
 
 Therefore, the largest integer $x$ that satisfy $x<15$ is $\boldsymbol{14}$.
 
@@ -161,22 +161,22 @@ Therefore, the largest integer $x$ that satisfy $x<15$ is $\boldsymbol{14}$.
 
 2. From the first inequality,
 
-\begin{align}
+\begin{align*}
   & x - 3(x-4) \le 12 \\\\
   \iff & x - 3x + 12 \le 12 \\\\
   \iff & -2x \le 0 \\\\
   \iff & x \ge 0, && \qdcirc{1}
-\end{align}
+\end{align*}
 
 and from the second inequality,
 
-\begin{align}
+\begin{align*}
   & 4 + 2(3-x) \gt 5x - 10 \\\\
   \iff & 4 + 6 - 2x \gt 5x - 10 \\\\
   \iff & 10 - 2x \gt 5x - 10 \\\\
   \iff & -7x \gt -20 \\\\
   \iff & x \lt \frac{20}{7}. && \qdcirc{2}
-\end{align}
+\end{align*}
 
 {{% mn q2 %}}
 {{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-int-q2.png" %}} The diagram representing the ranges of $x\ge 1$ and $x\gt 2$.
@@ -198,22 +198,22 @@ and from the second inequality,
 
 3. We first treat $a$ as a constant(number) and solve the inequality:
 
-\begin{align}
+\begin{align*}
   & 3x+1>2a \\\\
   \iff & 3x > 2a-1 \\\\
   \iff & x > \frac{2a-1}{3}.
-\end{align}
+\end{align*}
 
 {{% mn q3 %}}
 {{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-int-q3.png" %}} The diagram representing the range of $\dfrac{2a-1}{3}$.
 {{% /mn %}} Because the smallest integer solution is $4$, the range of $\dfrac{2a-1}{3}$ should be $$ 3 \le \dfrac{2a-1}{3} \lt 4. $$ Thus,
 
-\begin{align}
+\begin{align*}
   & 3 \le \dfrac{2a-1}{3} \lt 4 \\\\
   \iff & 9 \le 2a-1 \lt 12 \\\\
   \iff & 10 \le 2a \lt 13 \\\\
   \iff & 5 \le a \lt \frac{13}{2}.
-\end{align}
+\end{align*}
 
 {{% mn q32 %}}
 {{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-int-q32.png" %}} The diagram representing the range of $a$.
@@ -223,27 +223,27 @@ and from the second inequality,
 
 4. From the first inequality,
 
-\begin{align}
+\begin{align*}
   & 6x-4>3x+5 \\\\
   \iff & 3x > 9 \\\\
   \iff & x > 3, && \qdcirc{1}
-\end{align}
+\end{align*}
 
 and if we treat $a$ as a constant and solve the second inequality,
 
-\begin{align}
+\begin{align*}
   & 2x-1\le x+a \\\\
   \iff & x \le a+1. && \qdcirc{2}
-\end{align}
+\end{align*}
 
 {{% mn q4 %}}
 {{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-int-q4.png" %}} The diagram representing the range of $x$.
 {{% /mn %}} We know there are exactly five integer solutions for $\tcirc{1}$ and $\tcirc{2}$, and the smallest integer solution for $\tcirc{1}$ is $4$. Hence the solutions should be $\hl{\text{4, 5, 6, 7, and 8}}$, or in other words, the largest integer solution for $\tcirc{2}$ should be $8$. Hence,
 
-\begin{align}
+\begin{align*}
   & 8 \le a+1 \lt 9 \\\\
   \iff & \boldsymbol{ 7 \le a \lt 8 }.
-\end{align}
+\end{align*}
 
 <hr style="visibility: hidden" />
 

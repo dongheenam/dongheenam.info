@@ -130,18 +130,18 @@ $ \boldsymbol{ |a|^2 = a^2 }$
 $a$ has to be either positive, negative, or zero. The identity is obviously true when $a=0$ (both sides equal zero), so we can consider the first two cases.
 
 1. If $a$ is positive, then
-\begin{align}
+\begin{align*}
   |a|^2 &= |a| \cdot |a| \\\\
   &= a \cdot a \\\\
   &= \boldsymbol{ a^2 }.
-\end{align}
+\end{align*}
 
 2. If $a$ is negative, then
-\begin{align}
+\begin{align*}
   |a|^2 &= |a| \cdot |a| \\\\
   &= (-a) \cdot (-a) \\\\
   &= \boldsymbol{ a^2 }.
-\end{align}
+\end{align*}
 
 Therefore, for every case, $|a|^2 = a^2$. $\quad \square$
 
@@ -152,21 +152,21 @@ $\boldsymbol{ |ab| = |a|\cdot|b| }$
 Likewise, we will divide it into four cases and see if the identity holds.
 
 1. When both $a$ and $b$ are positive, $ab$ is also positive. Then $|a|=a$, $|b|=b$, and $|ab|=ab$. Thus
-\begin{align}
+\begin{align*}
   |a| \cdot |b| = a\cdot b = ab = |ab|.
-\end{align}
+\end{align*}
 
 2. When $a$ is positive but $b$ is negative, $ab$ is negative. Then $|a|=a$, $|b|=-b$, and $|ab|=-ab$. Thus
-\begin{align}
+\begin{align*}
   |a| \cdot |b| = a\cdot (-b) = -ab = |ab|.
-\end{align}
+\end{align*}
 
 3. If we switch $a$ and $b$ for Case 2, you can prove the identity when $a<0$ and $b>0$.
 
 4. When both $a$ and $b$ are negative, $ab$ is positive. Then $|a|=-a$, $|b|=-b$, and $|ab|=ab$. Thus
-\begin{align}
+\begin{align*}
   |a| \cdot |b| = -a\cdot (-b) = ab = |ab|.
-\end{align}
+\end{align*}
 
 Therefore, for every case, $|ab| = |a|\cdot|b|$. $\quad \square$
 
@@ -175,31 +175,31 @@ Therefore, for every case, $|ab| = |a|\cdot|b|$. $\quad \square$
 $\boldsymbol{ \left|\dfrac{a}{b}\right| = \dfrac{|a|}{|b|} }$
 
 From the second identity,
-\begin{align}
+\begin{align*}
   \left|\dfrac{a}{b}\right| &= \left| a \cdot \dfrac{1}{b} \right| \\\\
   &= |a| \cdot \left| \dfrac{1}{b} \right|.
-\end{align}
+\end{align*}
 
 So we only need to prove $\left| \dfrac{1}{b} \right| = \dfrac{1}{|b|}$. This is indeed true, because when $b$ is positive, $\dfrac{1}{b}$ is also positive, so
 
-\begin{align}
+\begin{align*}
   \left| \dfrac{1}{b} \right| = \dfrac{1}{b} = \dfrac{1}{|b|},
-\end{align}
+\end{align*}
 
 and when $b$ is negative, $\dfrac{1}{b}$ is also negative, so
 
-\begin{align}
+\begin{align*}
   \left| \dfrac{1}{b} \right| = - \dfrac{1}{b} = \dfrac{1}{-b} = \dfrac{1}{|b|}.
-\end{align}
+\end{align*}
 
 Therefore,
 
-\begin{align}
+\begin{align*}
   \left|\dfrac{a}{b}\right| &= \left| a \cdot \dfrac{1}{b} \right| \\\\
   &= |a| \cdot \left| \dfrac{1}{b} \right| \\\\
   &= |a| \cdot \dfrac{1}{|b|} \\\\
   &= \dfrac{|a|}{|b|}. && \square
-\end{align}
+\end{align*}
 
 {{% /details %}}
 
@@ -212,9 +212,9 @@ Find the value of $|3-\pi|$.
 {{% note solution %}}
 We know that $\pi$ is greater than $3$, so $3-\pi<0$. Therefore
 
-\begin{align}
+\begin{align*}
   |3-\pi| = -(3-\pi) = \boldsymbol{ \pi - 3 }. 
-\end{align}
+\end{align*}
 
 <br>
 
@@ -224,11 +224,11 @@ When $x>0$ and $y<0$, simplify $|xy^2| \times \left| \dfrac{2x}{y^3} \right|$.
 {{% note solution %}}
 $x$ is positive and $y$ is negative, so $xy^2$ is a positive number (because there is an even power of $y$), and $\dfrac{2x}{y^3}$ is a negative number (because there is an odd power of $y$). Therefore
 
-\begin{align}
+\begin{align*}
   & |xy^2| \times \left| \dfrac{2x}{y^3} \right| \\\\
   &= xy^2 \times \left( - \dfrac{2x}{y^3} \right) \\\\
   &= \boldsymbol{ -\dfrac{2x^2}{y} }.
-\end{align}
+\end{align*}
 
 {{% note "Alt. Solution" %}}
 We can also use the three identities to remove the absolute value symbols as much as possible.
@@ -306,43 +306,43 @@ $\text{b.} \quad$ The distance between $P$ and $Q$ is $|-4-(-11)| = |-4+11| = \b
 
 $\text{a.} \quad$ When $x=2$,
 
-\begin{align}
+\begin{align*}
   T &= |x-1| - 2|3-x| \\\\
   &= |2-1| - 2|3-2| \\\\
   &= |1| - 2|1| \\\\
   &= 1- 2 \\\\
   &= \boldsymbol{ -1 }.
-\end{align}
+\end{align*}
 
 $\text{b.} \quad$ When $x=3$,
 
-\begin{align}
+\begin{align*}
   T &= |x-1| - 2|3-x| \\\\
   &= |3-1| - 2|3-3| \\\\
   &= |2| - 2\cdot 0 \\\\
   &= \boldsymbol{ 2 }.
-\end{align}
+\end{align*}
 
 4. 
 
 $\text{a.} \quad$ When $x=2$,
 
-\begin{align}
+\begin{align*}
   U &= |2x+1| - |-x| \\\\
   &= |2\cdot2 + 1| - |-2| \\\\
   &= |5| - |-2| \\\\
   &= 5 - 2 \\\\
   &= \boldsymbol{ 3 }.
-\end{align}
+\end{align*}
 
 $\text{b.} \quad$ When $x=-\dfrac{1}{2}$,
 
-\begin{align}
+\begin{align*}
   U &= |2x+1| - |-x| \\\\
   &= \left| 2\cdot \left(- \dfrac{1}{2} \right) + 1 \right| - \left| -\left(-\dfrac{1}{2}\right) \right| \\\\
   &= \left| 0 \right| - \left| \dfrac{1}{2} \right| \\\\
   &= 0 - \dfrac{1}{2} \\\\
   &= \boldsymbol{ -\dfrac{1}{2} }.
-\end{align}
+\end{align*}
 
 {{% /details %}}

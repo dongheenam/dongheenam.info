@@ -101,10 +101,10 @@ const polyD = new Poly([5, -1, 2], "t"); // 2t^2 - t + 5
 ### Adding polynomials
 
 Adding two polynomials can be done term-by-term: 
-\begin{align}
+\begin{align*}
 & (a_0 + a_1 x + a_2 x^2 + \dots ) + (b_0 + b_1 x + b_2 x^2 + \dots ) \\\\
 &= (a_0 + b_0) + (a_1 + b_1) x + (a_2 + b_2) x^2 + \dots.
-\end{align}
+\end{align*}
 
 Here is one example of an `add()` function:
 
@@ -215,7 +215,7 @@ const newPoly2 = polyB.add(polyT);
 ### Multiplying polynomials
 
 It is a little more difficult to visualise multiplication:
-\begin{align}
+\begin{align*}
 & (a_0 + a_1 x + a_2 x^2 + \dots ) \times (b_0 + b_1 x + b_2 x^2 + \dots ) \\\\
 &= a_0 (b_0 + b_1 x + b_2 x^2 + \dots ) \\\\
 &\phantom{=}+ a_1 x (b_0 + b_1 x + b_2 x^2 + \dots ) \\\\
@@ -223,7 +223,7 @@ It is a little more difficult to visualise multiplication:
 &= a_0 b_0 + a_0 b_1 x + a_0 b_2 x^2 + \dots \\\\
 &\phantom{=}+ a_1 b_0 x + a_1 b_1 x^2 + a_1 b_2 x^3 + \dots \\\\
 &\phantom{=}+ a_2 b_0 x^2 + a_2 b_1 x^3 + a_2 b_2 x^4 + \dots,
-\end{align}
+\end{align*}
 
 but if you look closely into it, all the terms have a shape of $ a_i b_j x^{i+j} $, so we can simplify this using the summation notation:
 $$ (a_0 + a_1 x + a_2 x^2 + \dots ) \times (b_0 + b_1 x + b_2 x^2 + \dots ) = \sum_{i} \sum_{j} a_i b_j x^{i+j} $$
@@ -292,11 +292,11 @@ const ansB = polyA.mult(polyB);     // 2x^3 - x^2 - 9x + 2
 ### Evaluating Polynomials
 
 We can evaluate the value of a polynomial when its varialbe equals a certain value. For example, for $ P(x) = 2x^3 + x^2 - x + 7 $,
-\begin{align}
+\begin{align*}
   P(-2) &= 2\cdot(-2)^3 + (-2)^2 - (-2) + 7 \\\\
   &= -16 + 4 + 2 + 7 \\\\
   &= -3.
-\end{align}
+\end{align*}
 
 This operation is fairly simple, because we just need to replace the variable with some number. We can take advantage of how `coeffs` is set up: the constant term (=the coefficient of $x^0$) is `coeffs[0]`, and the coefficient of $x^1$ is `coeffs[1]`, and so on.
 

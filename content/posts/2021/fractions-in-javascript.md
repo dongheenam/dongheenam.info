@@ -19,12 +19,12 @@ tags:
 ## Introduction
 
 In the world of programming, hardly anyone cares about the differences between $\dfrac{1}{3}$ and `1.0/3.0 = 0.333333`. However, in Maths class, you need to learn how to deal with fractions as-is; for example, what is $\dfrac{2}{3} x - \dfrac{1}{2}$ equal to when $x = \dfrac{1}{6}$? The answer is
-\begin{align}
+\begin{align*}
   \dfrac{2}{3} x - \dfrac{1}{2} &= \dfrac{2}{3} \cdot \dfrac{1}{6} - \dfrac{1}{2} \\\\
   &= \dfrac{2}{18} - \dfrac{1}{2} \\\\
   &= \dfrac{2}{18} - \dfrac{9}{18} \\\\
   &= -\dfrac{7}{18}.
-\end{align}
+\end{align*}
 While we can argue about whether this skill is necessary for our future generation or not, it is certainly useful for me to have a set of code that performs arithmetic with fractions, instead of something like
 
 ```javascript
@@ -202,17 +202,17 @@ new Frac(1, 2).add(-2);             // returns -3/2
 ```
 
 Obviously the second is equivalent to adding `new Frac(-2, 1)`, we only need to deal with the first case. Let's think about how we add two fractions - we find the least common multiple (LCM) of the denominators, and match the denominators to their LCM in order to add them:
-\begin{align}
+\begin{align*}
   \dfrac{1}{4} + \dfrac{1}{6} &= \dfrac{1\hl{\times 3}}{4\hl{\times 3}} + \dfrac{1\hl{\times 2}}{6\hl{\times 2}} \qquad \text{(LCM is 12)} \\\\
   &= \dfrac{3}{12} + \dfrac{2}{12} = \dfrac{5}{12}.
-\end{align}
+\end{align*}
 
 While this is the *simplest* method for humans, multiplying the numbers to their LCM is a complicated process. We use the fact $$ \text{LCM}(a, b)\times \text{GCD}(a,b)=a\times b $$ to generalise addition of two fractions:
-\begin{align}
+\begin{align*}
   \dfrac{n_1}{d_1} + \dfrac{n_2}{d_2} &= \dfrac{n_1 \hl{\times d_2/\text{GCD}(d_1,d_2)}}{d_1\hl{\times d_2/\text{GCD}(d_1,d_2)}} + \dfrac{n_2\hl{\times d_1/\text{GCD}(d_1,d_2)}}{d_2\hl{\times d_1/\text{GCD}(d_1,d_2)}} \\\\
   &= \dfrac{n_1 d_2 / \text{GCD}(d_1, d_2)}{\text{LCM}(d_1, d_2)} + \dfrac{n_2 d_1 / \text{GCD}(d_1, d_2)}{\text{LCM}(d_1, d_2)} \\\\
   &= \dfrac{n_1 d_2 / \text{GCD}(d_1, d_2) + n_2 d_1 / \text{GCD}(d_1, d_2)}{\text{LCM}(d_1, d_2)}.
-\end{align}
+\end{align*}
 
 If we write this up, we have the `add()` function!
 
@@ -267,9 +267,9 @@ new Frac(1,4).mult(6);    // returns 3/2
 ```
 
 Fortunately, multiplying two fractions is much easier than adding!
-\begin{align}
+\begin{align*}
   \dfrac{n_1}{d_1} \times \dfrac{n_2}{d_2} = \dfrac{n_1\times n_2}{d_1 \times d_2},
-\end{align}
+\end{align*}
 
 hence
 
@@ -342,10 +342,10 @@ class Frac {
 ### Power
 
 We know the following holds for any integer $n$ :
-\begin{align}
+\begin{align*}
   & \left( \dfrac{a}{b} \right)^n = \dfrac{a^n}{b^n}, \\\\
   & \left( \dfrac{a}{b} \right)^{-n} = \left( \dfrac{b}{a} \right)^n.
-\end{align}
+\end{align*}
 
 We can write this up as a simple code.
 
@@ -407,10 +407,10 @@ class Frac {
 ```
 
 It looks complete, but there is yet another problem: we often drop a lot of details when we write an expression. For example,
-\begin{align}
+\begin{align*}
   & \hl{+\dfrac{2}{3}}x+4 = \dfrac{2}{3}x + 4, \\\\
   & \hl{-1}x - 7 = -x - 7.
-\end{align}
+\end{align*}
 
 To deal with this mess, I feed in a string that tells the location of the fraction:
 - `"c"` if the fraction is a *coefficient*: $\hl{-}x^3 \hl{+ \dfrac{2}{3}}x^2 \hl{-\dfrac{1}{4}}x - 1 $. <br>When writing a coefficient, you can omit $1$.

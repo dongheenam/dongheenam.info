@@ -1,33 +1,44 @@
-<!-- Katex css -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css" integrity="sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB" crossorigin="anonymous">
+<style>
+    .enum ~ span .katex-display {
+        margin: 0.2rem 0 0 0 !important;
+    }
+    .katex {
+        font-size: 1.15em !important;
+    }
+    .katex-highlight {
+        color: var(--primary-color) !important;
+      }
+</style>
+
 
 <!-- The loading of KaTeX is deferred to speed up page rendering -->
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js" integrity="sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p" crossorigin="anonymous"></script>
 
 <!-- To automatically render math in text elements, include the auto-render extension: -->
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI"
-crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         renderMathInElement(document.body, {
             delimiters: [
                 {left: "$$", right: "$$", display: true},
+                {left: "\\begin{equation}", right: "\\end{equation}", display: true},
+                {left: "\\begin{align*}", right: "\\end{align*}", display: true},
+                {left: "\\begin{alignat*}", right: "\\end{alignat*}", display: true},
                 {left: "$", right: "$", display: false}
             ],
+            fleqn: true,
+            strict: false,
             ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            trust: (context) => context.command === '\\htmlClass',
             macros: {
-              "\\red": "\\textcolor{#f76497}",
+              "\\hl": "\\htmlClass{katex-highlight}",
               "\\blue": "\\textcolor{dodgerblue}",
               "\\green": "\\textcolor{#228b22}",
               "\\tcirc": "\\text{\\large \\textcircled{\\small #1}}",
               "\\scirc": "\\text{\\textcircled #1}"
             }
         });
-    });
-
-    window.addEventListener('load', (event) => {
-      document.querySelectorAll("code > span > span.katex-display").forEach(function(x){
-        x.parentElement.parentElement.classList += 'has-katex'})
     });
 </script>

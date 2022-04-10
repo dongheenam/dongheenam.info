@@ -98,10 +98,10 @@ $=3\left(x^2 + \dfrac{4}{3}x \right) - 1$<br>
 $=3\left\\\\{ x^2 + \dfrac{4}{3}x + \left( \dfrac{2}{3} \right)^2 \right\\\\}$ $\phantom{.} - 3 \left( \dfrac{2}{3} \right)^2 - 1$<br>
 $=3\left( x + \dfrac{2}{3} \right)^2 - \dfrac{4}{3} - 1$.
 {{% /mn %}}
-\begin{align}
+\begin{align*}
   y &= 3x^2 + 4x - 1 \\\\
   &= 3 \left( x + \frac{2}{3} \right)^2 - \frac{7}{3}. \tag{1} 
-\end{align}
+\end{align*}
 The coordinates of the vertex is $\left(-\dfrac{2}{3}, -\dfrac{7}{3} \right).$ Because $a=3$ is positive, the function has a $\textbf{minimum of $\boldsymbol{ -\dfrac{7}{3}}$ at $\boldsymbol{ x=-\dfrac{2}{3} }$}.$
 
 {{< figure src="courses/jpn-maths-1/functions/quadratic-graphs/ext-ex1.png" alt="Graph of y=3x^2+4x-1." >}}
@@ -113,10 +113,10 @@ $=-2\left(x^2 - \dfrac{1}{2}x \right)$<br>
 $=-2\left\\\\{ x^2 - \dfrac{1}{2}x + \left( \dfrac{1}{4} \right)^2 \right\\\\}$ $\phantom{.} +2 \left( \dfrac{1}{4} \right)^2$<br>
 $=-2\left( x - \dfrac{1}{4} \right)^2 + \dfrac{1}{8}$.
 {{% /mn %}}
-\begin{align}
+\begin{align*}
   y &= -2x^2 + x \\\\
   &= -2\left(x - \dfrac{1}{4} \right)+\dfrac{1}{8}. \tag{2}
-\end{align}
+\end{align*}
 The coordinates of the vertex is $\left(\dfrac{1}{4}, \dfrac{1}{8} \right).$ Because $a=-2$ is negative, the function has a $\textbf{maximum of $\boldsymbol{ \dfrac{1}{8}}$ at $\boldsymbol{ x=\dfrac{1}{4} }$}.$
 
 {{< figure style="margin-bottom:0" src="courses/jpn-maths-1/functions/quadratic-graphs/ext-ex2.png" alt="Graph of y=-2x^2+x." >}}
@@ -168,10 +168,10 @@ $=2(x^2 - 4x) + 5$<br>
 $=2\left\\\\{ (x-2)^2 - 4 \right\\\\} + 5$<br>
 $=2(x-2)^2 - 3.$
 {{% /mn %}}
-\begin{align}
+\begin{align*}
   y &= 2x^2 - 8x + 5 \\\\
   &= 2(x-2)^2 -3. \tag{1}
-\end{align}
+\end{align*}
 Thus the vertex is inside the domain. Because $a=2>0$, the vertex is the minimum point, and the minimum is $\boldsymbol{ -3 }$ at $\boldsymbol{ x=2 }.$ <br><br>
 The two candidates for the maximum point are the two endpoints of the domain, $x=0$ and $x=3$. When $x=0$, $y=5$, and when $x=3$, $y=3\cdot 3^2 - 8\cdot 3 + 5 = -1.$ Out of these two points, it is clear that $x=0$ is the maximum point. Therefore, the maximum value is $\boldsymbol{ 5 }$ at $\boldsymbol{ x=0 }.$<br><br>Below is the graph of the function, and you can clearly see the extrema.
 
@@ -202,38 +202,38 @@ The two candidates for the maximum point are the two endpoints of the domain, $x
 
 {{% note Solution %}}
 
-\begin{align}
+\begin{align*}
   \text{a.} \quad y &= \underline{x^2 - 2x} - 3 \\\\
   &= \underline{(x-1)^2 - 1} - 3 \\\\
   &= (x-1)^2 - 4,
-\end{align}
+\end{align*}
 so the vertex is $(1,-4)$. Because $a>0$, the function has $\textbf{a minimum},$ and its value is $\boldsymbol{ -4 }.$
 
-\begin{align}
+\begin{align*}
   \text{b.} \quad y &= -2x^2 + 3x - 5 \\\\
   &= -2 \left( x^2 - \dfrac{3}{2} x \right) - 5 \\\\
   &= -2 \left\\{ \left( x - \dfrac{3}{4} \right)^2 - \left( \frac{3}{4} \right)^2 \right\\} - 5 \\\\
   &= -2 \left( x - \dfrac{3}{4} \right)^2 + \frac{9}{8} - 5 \\\\
   &= -2 \left( x - \dfrac{3}{4} \right)^2 - \dfrac{31}{8}.
-\end{align}
+\end{align*}
 Hence the vertex is $\left(\dfrac{3}{4}, - \dfrac{31}{8} \right)$. Because $a<0$, the function has $\textbf{a maximum},$ and its value is $\boldsymbol{ - \dfrac{31}{8} }.$
 
-\begin{align}
+\begin{align*}
   \text{c.} \quad y &= -2x^2 + 6x + 1 \\\\
   &= -2 (x^2 - 3x ) + 1 \\\\
   &= -2 \left\\{ \left(x - \dfrac{3}{2} \right)^2 - \left( \dfrac{3}{2} \right)^2 \right\\} + 1 \\\\
   &= -2 \left(x - \dfrac{3}{2} \right)^2 + \dfrac{9}{2} + 1 \\\\
   &= -2 \left(x - \dfrac{3}{2} \right)^2 + \dfrac{11}{2}.
-\end{align}
+\end{align*}
 Hence the vertex is $\left( \dfrac{3}{2}, \dfrac{11}{2} \right)$. Because $a<0$, the function has $\textbf{a maximum},$ and its value is $\boldsymbol{ \dfrac{11}{2} }.$
 
-\begin{align}
+\begin{align*}
   \text{d.} \quad y &= 3x^2 - 5x + 8 \\\\
   &= 3 \left( x^2 - \dfrac{5}{3} x \right) + 8 \\\\
   &= 3 \left\\{ \left( x - \dfrac{5}{6} \right)^2 - \left( \dfrac{5}{6} \right)^2 \right\\} + 8 \\\\
   &= 3\left( x - \dfrac{5}{6} \right)^2 - \dfrac{25}{12} + 8 \\\\
   &= 3\left( x - \dfrac{5}{6} \right)^2 + \dfrac{71}{12}.
-\end{align}
+\end{align*}
 Hence the vertex is $\left( \dfrac{5}{6}, \dfrac{71}{12} \right)$. Because $a>0$, the function has a $\textbf{a minimum},$ and its value is $\boldsymbol{ \dfrac{71}{12} }.$
 
 {{% /details %}}

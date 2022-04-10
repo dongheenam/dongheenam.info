@@ -80,11 +80,11 @@ So what is the other information do we need? We need to fix the *shape* of the p
 {{% note Solution %}} 
 
 1. From the vertex, the quadratic function is $$f(x) = a(x\hl{+2})^2\hl{+1},$$ and we only need to find the value of $a$. Because the point $(-1,4)$ is on the graph $y=f(x)$, $4=f(-1)$ and
-\begin{align}
+\begin{align*}
   & 4 = a(-1+2)^2 + 1 \\\\
   \iff & 4 = a + 1 \\\\
   \iff & a = 3.
-\end{align}
+\end{align*}
 Therefore, the quadratic function is $\boldsymbol{ f(x) = 3(x+2)^2+1 }$.
 
 2. Because the vertex is on the axis of symmetry, the vertex is $\left( \dfrac{1}{2}, q \right)$, with $q$ unknown. Thus, the quadratic function is $$ f(x) = a\left( x \hl{- \dfrac{1}{2}} \right)^2 \hl{+ q}, $$ and we need to determine $a$ and $q$. Thankfully, we have two points to substitute. From the point $(-1,-6)$,
@@ -120,32 +120,32 @@ Solving $\tcirc{1}$ and $\tcirc{2}$ simultaneously gives $a=-4$, $q=3$. {{% mn 1
 {{% note Solution %}}
 
 $\hspace{0.5em} \text{a.} \quad$ Let's first find the vertex of the aforementioned function. Because
-\begin{align}
+\begin{align*}
   y &= 2x^2+6x+4 \\\\
   &= 2(x^2 + 3x) + 4 \\\\
   &= 2\left( x + \dfrac{3}{2} \right)^2 - 2\cdot \dfrac{9}{4} + 4 \\\\
   &= 2\left( x + \dfrac{3}{2} \right)^2 - \dfrac{1}{2},
-\end{align}
+\end{align*}
 the vertex of $y = 2x^2 + 6x + 4$ (and the function we are looking for) is $\left( -\dfrac{3}{2}, -\dfrac{1}{2} \right)$. Thus the vertex form of the function is $y = a\left( x + \dfrac{3}{2} \right)^2 - \dfrac{1}{2}$. Because the point $(0, -5)$ satisfies the function,
-\begin{align}
+\begin{align*}
   & -5 = a\left( 0 + \dfrac{3}{2} \right)^2 - \dfrac{1}{2} \\\\
   \iff & -5 = \dfrac{9}{4} a - \dfrac{1}{2} \\\\
   \iff & a = -2.
-\end{align}
+\end{align*}
 Therefore, the function we are looking for is $\boldsymbol{ y = -2\left( x + \dfrac{3}{2} \right)^2 - \dfrac{1}{2} }$.
 
 <br>
 
 $\hspace{0.5em} \text{b.} \quad$ Let the function be $y = a (x +3)^2 + q$. Then, because this function satisfies $y=-8$ when $x=-6$,
-\begin{align}
+\begin{align*}
   & -8 = a(-6+3)^2 + q \\\\
   \iff & -8 = 9a + q, \qdcirc{1} 
-\end{align}
+\end{align*}
 and because it also satisfies $y=-22$ when $x=1$,
-\begin{align}
+\begin{align*}
   & -22 = a(1+3)^2 + q \\\\
   \iff & -22 = 16a + q. \qdcirc{2}
-\end{align}
+\end{align*}
 Solving $\tcirc{1}$ and $\tcirc{2}$ simultaneously gives $a=-2$ and $q=10$. Therefore, the function is $\boldsymbol{ y = -2(x+3)^2 + 10 }$.
 
 
@@ -158,27 +158,27 @@ Solving $\tcirc{1}$ and $\tcirc{2}$ simultaneously gives $a=-2$ and $q=10$. Ther
 2. $y=4(x+1)^2$ or $y=(x-2)^2$
 
 {{% note Solution %}} The vertex is on the x-axis, so the y-coordinate of the vertex is 0. Hence the equation has the form $$y = a(x-p)^2. $$ Because this equation is satisfied when $(x,y)=(0,4)$,
-\begin{align}
+\begin{align*}
   & 4 = a(0-p)^2 \\\\
   \iff & 4 = a p^2 \qdcirc{1},
-\end{align}
+\end{align*}
 and it is also satisfied when $(x,y)=(-4,36)$ so
-\begin{align}
+\begin{align*}
   & 36 = a(-4-p)^2 \\\\
   \iff & 36 = a (p+4)^2. \qdcirc{2}
-\end{align}
+\end{align*}
 $\tcirc{1}\times 9$ gives $36 = 9ap^2$, and equating this with $\tcirc{2}$ gives
-\begin{align}
+\begin{align*}
   9ap^2 = a(p+4)^2.
-\end{align}
+\end{align*}
 Because $a\ne 0$, we can divide both sides by $a$ and
-\begin{align}
+\begin{align*}
   & 9p^2 = (p+4)^2 \\\\
   \iff & 9p^2 = p^2 + 8p + 16 \\\\
   \iff & 8p^2 - 8p - 16 = 0 \\\\
   \iff & 8(p+1)(p-2) = 0 \\\\
   \iff & p = -1,~2.
-\end{align}
+\end{align*}
 From $\tcirc{1}$, $a=\dfrac{4}{p^2}$. When $p=-1$, $a=4$, and when $p=2$, $a=1$. Therefore, the parabolas that satisfy the given condition are $\boldsymbol{ y=4(x+1)^2 }$ or $\boldsymbol{ y=(x-2)^2 }$.
 
 {{< figure style="margin-bottom: 0" src="courses/jpn-maths-1/functions/quadratic-graphs/det-q2.png" caption="Two possible parabolas satisfying the condition." >}}

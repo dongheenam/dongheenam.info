@@ -66,28 +66,28 @@ When $x+y+z=xy+yz+zx=2\sqrt{2}+1$ and $xyz=1$, find the value of the following e
 {{% note solution %}}
 
 1. $\phantom{0}$
-   \begin{align}
+   \begin{align*}
    \dfrac{1}{x} + \dfrac{1}{y} + \dfrac{1}{z}
    &= \frac{yz}{xyz} + \frac{xz}{xyz} + \frac{xy}{xyz} \\\\
    &= \frac{xy+yz+zx}{xyz} \\\\
    &= \frac{2\sqrt{2}+1}{1} = \boldsymbol{ 2\sqrt{2} + 1. }
-   \end{align}
+   \end{align*}
 
 2. Because $ (x+y+z)^2 = \hl{x^2+y^2+z^2} + 2(xy+yz+zx) $,
-   \begin{align}
+   \begin{align*}
    x^2+y^2+z^2 &= (x+y+z)^2 - 2(xy+yz+zx) \\\\
    &= (2\sqrt{2}+1)^2 - 2(\sqrt{2}+1) \\\\
    &= (2\sqrt{2}+1)(2\sqrt{2}+1-2) \\\\
    &= (2\sqrt{2}+1)(2\sqrt{2}-1) \\\\
    &= 8 - 1 = \boldsymbol{ 7. }
-   \end{align}
+   \end{align*}
 
 3. We will use the following identity{{% sn iden %}}The proof can be found from Question 6 of the [previous Review Set](../../polynomials/review-2/).{{% /sn %}}
-   \begin{align}
+   \begin{align*}
    \hl{x^3 + y^3 + z^3} - 3xyz = (x+y+z)(x^2+y^2+z^2-xy-yz-zx).
-   \end{align}
+   \end{align*}
    Then
-   \begin{align}
+   \begin{align*}
    & x^3+y^3+z^3 \\\\
    &= (x+y+z)(x^2+y^2+z^2-xy-yz-zx) + 3xyz \\\\
    &= \big(2\sqrt{2}+1\big)\big\\{7 - \big(2\sqrt{2}+1\big)\big\\} + 3 \\\\
@@ -96,7 +96,7 @@ When $x+y+z=xy+yz+zx=2\sqrt{2}+1$ and $xyz=1$, find the value of the following e
    &= 2\big(-4 +5\sqrt{2} + 3\big) + 3 \\\\
    &= 2\big(5\sqrt{2} - 1\big) + 3 \\\\
    &= \boldsymbol{ 10\sqrt{2} + 1. }
-   \end{align}
+   \end{align*}
 
 {{% /box %}}
 
@@ -106,33 +106,33 @@ When $x+y+z=xy+yz+zx=2\sqrt{2}+1$ and $xyz=1$, find the value of the following e
 
 If you are asked to simplify $$ x^4 + x^3 - x^2 + x $$ as much as possible, given that $x^2+3x+1=0$, what can you do? Well, we know $x^2=-3x-1$, so we can try expressing $x^4$ as follows:
 
-\begin{align}
+\begin{align*}
 x^4 &= \left( x^2 \right)^2 \\\\
 &= \hl{(-3x-1)}^2 \\\\
 &= 9x^2 + 6x + 1 \\\\
 &= 9\hl{(-3x-1)} + 6x + 1 \\\\
 &= -27x - 9 + 6x + 1 \\\\
 &= -21x - 8
-\end{align}
+\end{align*}
 
 and $x^3$ as follows:
 
-\begin{align}
+\begin{align*}
 x^3 &= x \cdot x^2 \\\\
 &= x \hl{( -3x -1 )} \\\\
 &= -3x^2 - x \\\\
 &= -3\hl{(-3x-1)} - x \\\\
 &= 9x + 3 - x \\\\
 &= 8x + 3.
-\end{align}
+\end{align*}
 
 That means that we can rewrite $x^4 + x^3 - x^2 + x$ as a linear polynomial in $x$!
 
-\begin{align}
+\begin{align*}
 & x^4 + x^3 - x^2 + x \\\\
 &= (-21x-8) + (8x+3) - (-3x-1) + x \\\\
 &= -9x -4.
-\end{align}
+\end{align*}
 
 We will use this trick to try solving this question.
 
@@ -157,7 +157,7 @@ $(1)$ Squared both terms.
 
 Now we can use this to replace $a^4$ and $a^3$ with linear polynomials in $a$:
 
-\begin{align}
+\begin{align*}
 a^3 &= a \cdot a^2 \\\\
 &= a \cdot \hl{(a+1)} \\\\
 &= a^2 + a \\\\
@@ -166,18 +166,18 @@ a^4 &= \left( a^2 \right)^2 \\\\
 &= \hl{(a + 1)}^2 \\\\
 &= a^2 + 2a + 1 \\\\
 &= \hl{(a + 1)} + 2a + 1 = 3a + 2.
-\end{align}
+\end{align*}
 
 Therefore,
 
-\begin{align}
+\begin{align*}
 & a^4 + a^3 + a^2 + a + 1 \\\\
 &= \hl{(3a+2)} + \hl{(2a+1)} + \hl{(a+1)} + a + 1 \\\\
 &= 7a + 5 \\\\
 &= 7 \cdot \frac{1+\sqrt{5}}{2} + 5 \\\\
 &= \frac{7 + 7\sqrt{5}}{2} + 5 \\\\
 &= \boldsymbol{ \frac{17 + 7\sqrt{5}}{2} .}
-\end{align}
+\end{align*}
 
 {{% /box %}}
 
@@ -196,26 +196,26 @@ Therefore,
 
 {{% note solution %}}
 
-\begin{align}
+\begin{align*}
 \text{a.} \quad & \frac{2}{xy}+\frac{2}{yz}+\frac{2}{zx} \\\\
 &= \frac{2z}{xyz} + \frac{2x}{xyz} + \frac{2y}{xyz} \\\\
 &= \frac{2(x+y+z)}{xyz} \\\\
 &= \frac{2\big(2\sqrt{3}+1\big)}{-1} \\\\
 &= \boldsymbol{ -4\sqrt{3}-2 . }
-\end{align}
+\end{align*}
 
-\begin{align}
+\begin{align*}
 \text{b.} \quad & x^2+y^2+z^2 \\\\
 &= (x+y+z)^2 - 2(xy+yz+zx) \\\\
 &= \big(2\sqrt{3}+1\big)^2 - 2\big(2\sqrt{3}-1\big) \\\\
 &= 12 + 4\sqrt{3} + 1 - 4\sqrt{3} + 2 \\\\
 &= \boldsymbol{ 15. }
-\end{align}
+\end{align*}
 
 {{% mn q1c tips %}}
 $(1)$ $A^2+B^2+C^2$ $= (A+B+C)^2$ $-$ $2(AB+BC+CA)$, where $A=xy$, $B=yz$, and $C=zx$.
 {{% /mn %}}
-\begin{align}
+\begin{align*}
 \text{c.} \quad & x^2y^2 + y^2z^2 + z^2x^2 \\\\
 &= (xy)^2 + (yz)^2 + (zx)^2 \\\\
 &= (xy+yz+zx)^2 - 2(xy\cdot yz + yz\cdot zx + zx \cdot xy) \tag{1} \\\\
@@ -223,7 +223,7 @@ $(1)$ $A^2+B^2+C^2$ $= (A+B+C)^2$ $-$ $2(AB+BC+CA)$, where $A=xy$, $B=yz$, and $
 &= \big(2\sqrt{3}-1\big)^2 - 2\cdot(-1)\cdot \big(2\sqrt{3}+1\big) \\\\
 &= 12 - 4\sqrt{3} + 1 + 4\sqrt{3} + 2 \\\\
 &= \boldsymbol{ 15. }
-\end{align}
+\end{align*}
 
 {{% /details %}}
 
@@ -257,13 +257,13 @@ $\text{b.} \quad$ We will first find the expression for $t^4$:
 {{% mn q2b tips %}}
 $(1)$ From $2t^2 = 2t+1$, $t^2 = t + \dfrac{1}{2}$.
 {{% /mn %}}
-\begin{align}
+\begin{align*}
 t^4 &= \left( t^2 \right)^2 \\\\
 &= \hl{\left(t+\frac{1}{2}\right)}^2 \tag{1} \\\\
 &= t^2 + t + \frac{1}{4} \\\\
 &= \hl{\left(t+\frac{1}{2}\right)} + t + \frac{1}{4} \\\\
 &= 2t + \frac{3}{4}.
-\end{align}
+\end{align*}
 
 Then,
 \begin{alignat}{2}
@@ -277,10 +277,10 @@ t^8 &= \left( t^4 \right)^2 \\\\
 
 Because $t=\dfrac{1-\sqrt{3}}{2}$,
 
-\begin{align}
+\begin{align*}
 \tcirc{1} &= 7\cdot \frac{1-\sqrt{3}}{2} + \frac{41}{16} \\\\
 &= \frac{56(1-\sqrt{3})}{16} + \frac{41}{16} \\\\
 &= \boldsymbol{ \frac{97 - 56\sqrt{3}}{16}. }
-\end{align}
+\end{align*}
 
 {{% /details %}}

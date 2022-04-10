@@ -67,20 +67,20 @@ To summarise, you can reflect a graph over the x-axis by replacing $y$ with $-y$
 {{% note Solution %}}
 
 1. Substituting $y$ with $-y$ gives:
-\begin{align}
+\begin{align*}
   \hl{-y} &= 2x^2-5x+4 \\\\
   \iff \boldsymbol{ y } & \boldsymbol{ = -2x^2 + 5x - 4 }. \qdcirc{1}
-\end{align}
+\end{align*}
 2. Substituting $x$ with $-x$ gives:
-\begin{align}
+\begin{align*}
   y &= 2(\hl{-x})^2 -5(\hl{-x}) + 4 \\\\
   \iff \boldsymbol{ y } & \boldsymbol{ = 2x^2 + 5x + 4 }. \qdcirc{2}
-\end{align}
+\end{align*}
 3. Substituting $x$ with $-x$ and $y$ with $-y$ gives:
-\begin{align}
+\begin{align*}
   \hl{-y} &= 2(\hl{-x})^2 -5(\hl{-x}) + 4 \\\\
   \iff \boldsymbol{ y } & \boldsymbol{ = - 2x^2 - 5x - 4 }. \qdcirc{3}
-\end{align}
+\end{align*}
 
 Because the original function is
 {{% mn 84 tips %}}
@@ -89,11 +89,11 @@ $=2\left(x^2 - \dfrac{5}{2} x + \dfrac{25}{16}-\dfrac{25}{16}\right) + 4$<br>
 $=2\left(x^2 - \dfrac{5}{4} \right)^2 -2 \cdot \dfrac{25}{16} + 4$<br>
 $=2\left(x^2 - \dfrac{5}{4} \right)^2 + \dfrac{9}{8}.$
 {{% /mn %}}
-\begin{align}
+\begin{align*}
   y &= 2x^2-5x+4 \\\\
   &= 2\left(x^2 - \dfrac{5}{2} x\right) + 4 \\\\
   &= 2\left(x-\dfrac{5}{4} \right)^2 + \dfrac{7}{8}, \tag{1}
-\end{align}
+\end{align*}
 the coordinates of the vertex is $\left( \dfrac{5}{4}, \dfrac{7}{8} \right)$. We can use this information to draw the graphs of the three reflections:
 
 {{< figure src="courses/jpn-maths-1/functions/quadratic-graphs/refl-ex2.png" alt="Three reflections of the quadratic graph $y=2x^2-5x+4$." >}}
@@ -138,32 +138,32 @@ We now know how to translate and reflect quadratic graphs, so let's try mixing t
   y \rightarrow -y,
 \end{cases}
 so $P_1$ becomes
-\begin{align}
+\begin{align*}
   -y &= (-x)^2 + a(-x) + b \\\\
   \iff y &= -x^2 + ax - b. \qquad \cdots ~ (P_*)
-\end{align} 
+\end{align*} 
 Then, we need to move $P_*$ 1 unit left and 8 units up, so we need to substitute
 \begin{cases}
   x \rightarrow x+1, \\\\
   y \rightarrow y-8.
 \end{cases}
 Thus
-\begin{align}
+\begin{align*}
   y-8 &= -(x+1)^2 + a(x+1) - b \\\\
   \iff y &= -x^2 - 2x - 1 + ax + a - b + 8 \\\\
   &= -x^2 + (a-2)x + (a-b+7).
-\end{align}
+\end{align*}
 Because this equation is equivalent to $y=-x^2+5x+11$, we have
 \begin{cases}
   a-2 = 5, \\\\
   a-b+7 = 11.
 \end{cases}
 From the first equation, we find $\boldsymbol{ a=7 }$, and substituting this to the second equation gives
-\begin{align}
+\begin{align*}
   7-b+7 &= 11 \\\\
   \iff -b &= -3 \\\\
   \iff \\boldsymbol{ b } & \boldsymbol{ = 3 }.
-\end{align}
+\end{align*}
 
 ---
 
@@ -178,18 +178,18 @@ Therefore, starting from $P_2$:
 $(1)$ Translation to the right by 1 unit and down by 8 units.<br><br>
 $(2)$ Reflection about the origin.
 {{% /mn %}}
-\begin{align}
+\begin{align*}
   y+8 &= -(x-1)^2+5(x-1)+11 \tag{1} \\\\
   &= -x^2+2x-1 + 5x - 5 + 11 \\\\
   &= -x^2 + 7x +5 \\\\
   \iff y &= -x^2 + 7x - 3,
-\end{align}
+\end{align*}
 and then
-\begin{align}
+\begin{align*}
   -y &= -(-x)^2 + 7(-x) - 3 \tag{2} \\\\
   &= -x^2 - 7x - 3 \\\\
   \iff y &= x^2 + 7x + 3.
-\end{align}
+\end{align*}
 Therefore, we find $\boldsymbol{ a=7 }$ and $\boldsymbol{ b=3 }.$
 
 
@@ -233,10 +233,10 @@ $= \dfrac{1}{2}(x^2 - 2x + 1 - 1) + \dfrac{3}{2}$<br>
 $= \dfrac{1}{2}(x-1)^2 - \dfrac{1}{2} + \dfrac{3}{2}$<br>
 $= \dfrac{1}{2}(x-1)^2 + 1.$
 {{% /mn %}}
-\begin{align}
+\begin{align*}
   y &= \dfrac{1}{2}x^2 - x + \dfrac{3}{2} \\\\
   &= \dfrac{1}{2} (x-1)^2 + 1. \tag{1}
-\end{align}
+\end{align*}
 
 Hence the vertex is $(1, 1)$. Therefore, the reflection of $(1,1)$
 - over the x-axis is $\boldsymbol{ (1, -1) }.$
@@ -254,28 +254,28 @@ Hence the vertex is $(1, 1)$. Therefore, the reflection of $(1,1)$
 {{% note Solution %}}
 
 We start by moving the graph of $y=x^2$:
-\begin{align}
+\begin{align*}
   y - q &= (x-p)^2 \\\\
   \iff y &= (x-p)^2 + q.
-\end{align}
+\end{align*}
 Then, if we flip this graph over the x-axis,
-\begin{align}
+\begin{align*}
   -y &= (x-p)^2 + q \\\\
   \iff y &= -(x-p)^2 - q \\\\
   &= -x^2 + 2px - p^2 - q.
-\end{align}
+\end{align*}
 Because this equation is identical to $y = -x^2 - 3x + 3$, we find
 \begin{cases}
   2p = -3, & \qdcirc{1}\\\\
   -p^2 - q = 3. & \qdcirc{2}
 \end{cases}
 From $\tcirc{1}$, $\boldsymbol{ p = -\dfrac{3}{2} }$, and substituting this to $\tcirc{2}$ gives
-\begin{align}
+\begin{align*}
   & -\left(-\dfrac{3}{2}\right)^2 - q = 3 \\\\
   \iff & -\dfrac{9}{4} - q = 3 \\\\
   \iff & q = -\dfrac{9}{4} - 3 \\\\
   \iff & \boldsymbol{ q = -\dfrac{21}{4} }.
-\end{align}
+\end{align*}
 
 {{% box %}}
 
@@ -289,10 +289,10 @@ $=-\left(x^2+3x+\dfrac{9}{4}-\dfrac{9}{4}\right)+3$<br>
 $=-\left(x+\dfrac{3}{2}\right)^2+\dfrac{9}{4}+3$<br>
 $=-\left(x+\dfrac{3}{2}\right)^2+\dfrac{21}{4}.$
 {{% /mn %}}
-\begin{align}
+\begin{align*}
   y &= -x^2 - 3x + 3 \\\\
   &= -\left( x + \dfrac{3}{2} \right)^2 + \dfrac{21}{4}, \tag{1}
-\end{align}
+\end{align*}
 its vertex is $\left( -\dfrac{3}{2}, \dfrac{21}{4} \right)$.
 
 If you translate $(0,0)$ according to the instructions, it moves to $(p,q)$. Then, if you reflect the point about the x-axis, it becomes $(p,-q)$. Hence we find

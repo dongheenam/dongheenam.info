@@ -48,12 +48,34 @@
   .box-desmos {
     width: 100%;
   }
+}
 
-  // half-bordered box
-  &-hb {
-    @extend .box;
-    border-left: 1.5px solid var(--hr-color);
-    padding: 0 0 0 0.5rem;
+// half-bordered box
+.box-hb {
+  border-left: 1.5px solid var(--hr-color);
+  padding: 0 0 0 0.5rem;
+  width: var(--p-width);
+  p,
+  hr,
+  ol,
+  ul,
+  table,
+  blockquote,
+  figure {
+    width: 100%;
+  }
+
+  p:first-child {
+    margin-top: 0;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    margin-right: auto;
+    margin-left: -0.5rem;
+    width: 2.5rem;
+    border-bottom: 1.5px solid var(--hr-color);
   }
 }
 

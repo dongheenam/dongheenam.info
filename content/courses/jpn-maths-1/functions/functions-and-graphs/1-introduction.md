@@ -95,35 +95,35 @@ Let's practice some algebra now.
 {{% note Solution %}}
 
 1. The key to evaluating functions is to substitute whatever is inside the bracket into $x$.
-\begin{align}
+\begin{align*}
   \text{a.} \quad f\left(\dfrac{3}{2}\right) &= 4\cdot \hl{\dfrac{3}{2}} - 3 \\\\
   &= 6 - 3 = \boldsymbol{ 3 }.
-\end{align}
-\begin{align}
+\end{align*}
+\begin{align*}
   \text{b.} \quad f(-2) &= 4\cdot \hl{(-2)} - 3 \\\\
   &= -8-3 = \boldsymbol{ -11 }.
-\end{align}
+\end{align*}
 With $\text{(c)}$, substitute $x=a+2$ into $f(x)$:
-\begin{align}
+\begin{align*}
   \text{c.} \quad f(a+2) &= 4 \hl{(a+2)} - 3 \\\\
   &= 4a + 8 - 3 = \boldsymbol{ 4a - 5 }.
-\end{align}
+\end{align*}
 
 2. Likewise, we will substitute $x=3a$, $x=a-2$ and $x=a^2$, respectively. 
-\begin{align}
+\begin{align*}
   \text{a.} \quad g(3a) &= -3\hl{(3a)}^2+2\hl{(3a)} \\\\
   &= \boldsymbol{ -27a^2 + 6a }.
-\end{align}
-\begin{align}
+\end{align*}
+\begin{align*}
   \text{b.} \quad g(a-2) &= -3\hl{(a-2)}^2+2\hl{(a-2)} \\\\
   &= -3(a^2 - 4a + 4) + 2a - 4 \\\\
   &= -3a^2 + 12a - 12 + 2a - 4 \\\\
   &= \boldsymbol{ -3a^2 + 14a - 16 }.
-\end{align}
-\begin{align}
+\end{align*}
+\begin{align*}
   \text{c.} \quad g(a^2) &= -3\hl{\left(a^2\right)}^2+2\hl{\left(a^2\right)} \\\\
   &= \boldsymbol{ -3a^4 + 2a^2 }.
-\end{align}
+\end{align*}
 
 {{% /box %}}
 
@@ -195,25 +195,25 @@ Because a function always comes with its domain (natural or not), you can calcul
 
 {{% note Solution %}} 
 
-\begin{align}
+\begin{align*}
   \text{a.} \quad f(0) &= -3\cdot 0 + 2 = \boldsymbol{ 2 }.
-\end{align}
-\begin{align}
+\end{align*}
+\begin{align*}
   \text{b.} \quad f(-1) &= -3\cdot (-1) + 2 = \boldsymbol{ 5 }.
-\end{align}
-\begin{align}
+\end{align*}
+\begin{align*}
   \text{c.} \quad f(a+1) &= -3\cdot (a+1) + 2 \\\\
   &= -3a - 3 + 2 = \boldsymbol{ -3a - 1 }.
-\end{align}
-\begin{align}
+\end{align*}
+\begin{align*}
   \text{d.} \quad g(2) &= 2^2 - 3\cdot 2 + 2 \\\\
   &= 4 - 6 + 2 = \boldsymbol{ 0 }.
-\end{align}
-\begin{align}
+\end{align*}
+\begin{align*}
   \text{e.} \quad g(2a-1) &= (2a-1)^2 -3(2a-1) + 2 \\\\
   &= 4a^2 - 4a + 1 - 6a + 3 + 2 \\\\
   &= \boldsymbol{ 4a^2 -10a + 7 }.
-\end{align}
+\end{align*}
 
 {{% /details %}}
 

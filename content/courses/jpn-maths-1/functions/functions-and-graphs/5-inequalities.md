@@ -43,11 +43,11 @@ In this lesson, we will:
 ## Graphs and Inequalities
 
 How do you solve the inequality $$ 2x-2 \le \dfrac{x}{2} + 1? $$ The obvious answer seems to [solve it algebraically](../../../numbers-and-expressions/inequalities/solving-inequalities/):
-\begin{align}
+\begin{align*}
   2x-2 \le \dfrac{x}{2} + 1 & \iff 2x - \dfrac{x}{2} \le 2 + 1 \\\\
   & \iff \dfrac{3}{2} x \le 3 \\\\
   & \iff x \le 2.
-\end{align}
+\end{align*}
 But here is another way of interpreting the question: given two functions, $f(x) = 2x-2$ and $g(x) = \dfrac{x}{2} + 1$, at which values of $x$ is the value of $g(x)$ greater than or equal to $f(x)$? One great way to visualise this problem is to draw the graphs of $y=f(x)$ and $y=g(x)$:
 
 {{< figure src="courses/jpn-maths-1/functions/functions-and-graphs/ineq-ex1.png" alt="Graphs of y=2x-2 and y=x/2+1." >}}
@@ -71,38 +71,38 @@ Below is a little more complicated example.
 {{% note Solution %}} We will first find the graph of $y=2|x+1|-|x-1|$.
 
 When $x<-1$,
-\begin{align}
+\begin{align*}
   y &=-2(x+1)+(x-1) \\\\
   &= -2x - 2 + x - 1 \\\\
   &= -x - 3.
-\end{align}
+\end{align*}
 When $-1\le x < 1$,
-\begin{align}
+\begin{align*}
   y &=2(x+1)+(x-1) \\\\
   &= 2x + 2 + x - 1 \\\\
   &= 3x + 1.
-\end{align}
+\end{align*}
 When $x\ge 1$,
-\begin{align}
+\begin{align*}
   y &=2(x+1)-(x-1) \\\\
   &= 2x + 2 - x + 1 \\\\
   &= x + 3.
-\end{align}
+\end{align*}
 
 Now, we can draw the graphs of $y=2|x+1|-|x-1|$ $(\tcirc{1})$ and $y=x+2$ $(\tcirc{2})$.
 
 {{< figure src="courses/jpn-maths-1/functions/functions-and-graphs/ineq-ex2.png" alt="Graphs of y=2|x+1|-|x-1| and y=x+2." >}}
 
 $\tcirc{1}$ is above $\tcirc{2}$ before the first intersection and after the second intersection. Note the two graphs are parallel where $x>1$, so $\tcirc{1}$ will be always above $\tcirc{2}$. Now, the first intersection is somewhere $x<-1$, so it is where $y=x+2$ meets $y=-x-3$:
-\begin{align}
+\begin{align*}
   x+2 = -x-3 & \iff 2x = -5 \\\\
   & \iff x = -\dfrac{5}{2},
-\end{align}
+\end{align*}
 Then, the second intersection is somewhere between $x=-1$ and $1$, so it is where where $y=x+2$ meets $y=3x+1$:
-\begin{align}
+\begin{align*}
   x+2 = 3x+1 & \iff 1 = 2x \\\\
   & \iff x = \dfrac{1}{2}.
-\end{align}
+\end{align*}
 
 {{< figure src="courses/jpn-maths-1/functions/functions-and-graphs/ineq-ex2a.png" alt="Solution of 2|x+1|-|x-1|>x+2." >}}
 
@@ -129,35 +129,35 @@ Therefore, we conclude $\boldsymbol{ x<-\dfrac{5}{2} }$ or $\boldsymbol{ x > \df
 $\hspace{0.5em} \text{a.} \quad$ Let the graph of $y=|x-1| + 2|x|$ be $\tcirc{1}$. It is divided into three sections:
 
 When $x<0$,
-\begin{align}
+\begin{align*}
   y &= -(x-1) - 2x \\\\
   &= -3x + 1.
-\end{align}
+\end{align*}
 When $0\le x < 1$,
-\begin{align}
+\begin{align*}
   y &= -(x-1) + 2x \\\\
   &= x + 1.
-\end{align}
+\end{align*}
 When $x \ge 1$,
-\begin{align}
+\begin{align*}
   y &= (x-1) + 2x \\\\
   &= 3x - 1.
-\end{align}
+\end{align*}
 
 Let the graph of $y=3$ to be $\tcirc{2}$. If we draw the two graphs on the coordinate plane, it becomes clear that $\tcirc{1}$ and $\tcirc{2}$ have two points of intersection:
 
 {{< figure src="courses/jpn-maths-1/functions/functions-and-graphs/ineq-q1a.png" alt="Graphs of y=|x-1| + 2|x| and y=3." >}}
 
 The first point is left of $x=0$, so it is where $y=3$ and $y=-3x+1$ meet. Thus
-\begin{align}
+\begin{align*}
   3 = -3x + 1 &\iff 3x = -2 \\\\
   &\iff x = -\dfrac{2}{3}.
-\end{align}
+\end{align*}
 The second point is right of $x=1$, so it is where $y=3$ and $y=3x-1$ meet:
-\begin{align}
+\begin{align*}
   3 = 3x-1 &\iff 4 = 3x \\\\
   &\iff x = \dfrac{4}{3}.
-\end{align}
+\end{align*}
 
 The graph of $y=|x-1| + 2|x|$ is below the graph of $y=3$ in between the two intersections. Therefore, the solution to the inequality is $\boldsymbol{ -\dfrac{2}{3} < x < \dfrac{4}{3} }.$
 
@@ -165,29 +165,29 @@ The graph of $y=|x-1| + 2|x|$ is below the graph of $y=3$ in between the two int
 $\hspace{0.5em} \text{b.} \quad$ The graph of $y = |x+2| - |x-1|$ is equivalent to the following graphs.
 
 When $x<-2$,
-\begin{align}
+\begin{align*}
   y &= -(x+2) + (x-1) \\\\
   &= -3.
-\end{align}
+\end{align*}
 When $-2\le x < 1$,
-\begin{align}
+\begin{align*}
   y &= (x+2) + (x-1) \\\\
   &= 2x + 1.
-\end{align}
+\end{align*}
 When $x \ge 1$,
-\begin{align}
+\begin{align*}
   y &= (x+2) - (x-1) \\\\
   &= 3.
-\end{align}
+\end{align*}
 
 Let this graph be $\tcirc{3}$, and the graph of $y=x$ be $\tcirc{4}$. If we draw the two graphs on the coordinate plane, we find they meet three times. Let the x-coordinates of the intersecting points to be $a$, $b$, and $c$:
 
 {{< figure src="courses/jpn-maths-1/functions/functions-and-graphs/ineq-q1b.png" alt="Graphs of y=|x+2| - |x-1| and y=x." >}}
 
 It is pretty trivial that $a=-3$ and $c=3$. $b$ is where $y=x$ and $y=2x+1$ meet:
-\begin{align}
+\begin{align*}
   x = 2x + 1 \iff x = -1,
-\end{align}
+\end{align*}
 hence $b=-1$. The inequality corresponds to the range of $x$ where $\tcirc{3}$ is above $\tcirc{4}$, which is $\boldsymbol{ x<-3 }$ or $\boldsymbol{ -1<x<3 }.$
 
 {{% /details %}}
