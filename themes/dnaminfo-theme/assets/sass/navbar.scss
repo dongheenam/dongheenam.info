@@ -190,6 +190,10 @@ aside.sidenav {
     li ul {
       margin-top: 0.5rem;
     }
+
+    a {
+      text-transform: lowercase;
+    }
   }
   .toc--expanded {
     display: block !important;
@@ -221,7 +225,8 @@ aside.sidenav {
   }
 
   li.current a,
-  .sidenav-menu li:hover a {
+  .sidenav-menu a:hover,
+  .toc a:hover {
     color: var(--primary-color);
   }
 }
