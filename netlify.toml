@@ -4,7 +4,7 @@
 
 [context.production.environment]
     NODE_VERSION = "12.18.0"
-    HUGO_VERSION = "0.84.3"
+    HUGO_VERSION = "0.96.0"
     HUGO_ENABLEGITINFO = "true"
 
 [[plugins]]

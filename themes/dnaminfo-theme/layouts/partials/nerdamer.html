@@ -4,5 +4,3 @@
 {{- $minified_js := resources.Get (printf "%s/%s" $nerdamer_loc .) | resources.Minify }}
 <script src="{{ $minified_js.RelPermalink }}"></script>
 {{- end }}
-
-

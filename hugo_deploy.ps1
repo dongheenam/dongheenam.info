@@ -19,3 +19,7 @@ git commit -m "automatic update on $today"
 git push
 
 Write-Output "All complete!"
+
+
+# other useful commands
+# hugo server --bind=192.168.1.110 --baseURL=http://192.168.1.110:1313 -D --disableFastRender --enableGitInfo
