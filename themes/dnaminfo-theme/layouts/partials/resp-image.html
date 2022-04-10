@@ -23,15 +23,5 @@
     {{ $sizes = "(min-width: 1620px) 825px, (min-width: 1220px) 630px, (min-width: 780px) 85vw, 95vw" }}
 {{- end -}}
 {{- if not .nolink -}}<a href="{{ .image.RelPermalink }}" target="_blank">{{- end -}}
-<img{{with .class }} class="{{ . }}"{{ end }}{{with .style }} style="{{ . | safeCSS }}"{{ end }} width="100%" height="auto"
-    alt="{{ .alt }}" loading="lazy"
-    sizes="{{ $sizes }}"
-    src="{{ .image.RelPermalink }}"
-    srcset="
-    {{- with $tiny }}{{ .RelPermalink }} 375w{{ end -}}
-    {{- with $small }},{{ .RelPermalink }} 630w{{ end -}}
-    {{- with $medium -}}, {{ .RelPermalink }} 885w{{ end -}}
-    {{- with $large -}}, {{ .RelPermalink }} 1275w{{ end -}}
-    "
-/>
+<img {{with .class }} class="{{ . }}"{{ end }}{{with .style }} style="{{ . | safeCSS }}"{{ end }} width="100%" height="auto" alt="{{ .alt }}" loading="lazy" src="{{ .image.RelPermalink }}"/>
 {{- if not .nolink -}}</a>{{- end -}}

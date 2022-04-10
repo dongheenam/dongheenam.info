@@ -5,9 +5,9 @@
 {{/* MathJax configuration */}}
 <script id="MathJax-configure">
   window.MathJax = {
-    loader: {load: ['[tex]/boldsymbol', 'ui/lazy']},
+    loader: {load: ['[tex]/boldsymbol', '[tex]/mathtools', 'ui/lazy']},
     tex: {
-      packages: {'[+]': ['boldsymbol']},
+      packages: {'[+]': ['boldsymbol', 'mathtools']},
       inlineMath: [['$', '$'], ['\\(', '\\)']],
       displayMath: [['$$','$$'], ['\\[','\\]']],
       macros: {

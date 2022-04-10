@@ -22,4 +22,4 @@ Write-Output "All complete!"
 
 
 # other useful commands
-# hugo server --bind=192.168.1.110 --baseURL=http://192.168.1.110:1313 -D --disableFastRender --enableGitInfo
+# hugo server --bind=192.168.1.2 --baseURL=http://192.168.1.2:1313 -D --disableFastRender --enableGitInfo
