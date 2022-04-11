@@ -17,7 +17,6 @@ tags:
   - polynomial identity
   - fraction
   - algebra
-  - AC Year 10A
 
 menu:
   math1-numbers:
@@ -27,6 +26,8 @@ menu:
 
 weight: 16
 ---
+
+## Introduction
 
 {{% details title="Getting Ready" %}}
 
@@ -38,15 +39,6 @@ The following topics are useful for understanding this lesson.
 
 {{% /details %}}
 
-{{% details title="Links to Australian Curriculum" %}}
-
-- Mathematics Year 10A
-  - Define rational and irrational numbers and perform operations with surds and fractional indices [(ACMNA264)](https://www.australiancurriculum.edu.au/f-10-curriculum/mathematics/?strand=Number+and+Algebra&year=11762&elaborations=true&cd=ACMNA264&searchTerm=ACMNA264#dimension-content).
-
-{{% /details %}}
-
-## Introduction
-
 In this lesson, we will learn
 
 - How to evaluate expressions involving the integer and decimal part of an irrational number.
@@ -56,14 +48,14 @@ In this lesson, we will learn
 
 $3\dfrac{1}{4}$ is a mixed number. It consists of a whole number (integer) $3$, and a fraction $\dfrac{1}{4}$. For a mixed number, the fraction part is always less than $1$. Likewise, we can also define the integer and decimal part for other real numbers.
 
-{{% box %}}
-{{% note definition %}}
-For a real number $x$, we can always find an integer $a$ and $0\ge b \lt 1$ where $$ x = a + b. $$ $a$ is called _the integer part_ of $x$, and $b$ is _the decimal part_ of $x$.
+{{% hbox %}}
+{{% note Definition %}}
+*For a real number $x$, we can always find an integer $a$ and $0\ge b \lt 1$ where $$ x = a + b. $$ $a$ is called the **integer part** of $x$, and $b$ is the **decimal part** of $x$.*
 
-{{% note example %}}
+{{% note Example %}}
 For $\sqrt{23}$, say its integer part is $a$ and its decimal part $b$, and $$ \sqrt{23} = a + b. $$ Because $4 \lt \sqrt{23} \lt 5$, the integer part of $\sqrt{23}$ is $a=\boldsymbol{ 4 }$. Since $\sqrt{23}=a+b$, the decimal part of $\sqrt{23}$ is $b=\boldsymbol{\sqrt{23}-4}$.
 
-{{% /box %}}
+{{% /hbox %}}
 
 {{% details title="More on finding the integer part" %}}
 
@@ -85,84 +77,91 @@ Therefore, the decimal part of $\sqrt{23}$ is $\sqrt{23}-4$.
 
 Below is an example question using the integer and decimal parts of an irrational number. Always remember, if we add the decimal and integer parts together, we get the original number!
 
-{{% box %}}
-{{% note example %}}
+{{% hbox %}}
+{{% note Example %}}
 Suppose the integer part of $\dfrac{2}{\sqrt{6}-2}$ to be $a$ and the decimal part $b$.
 
 1. Find the values of $a$ and $b$.
 2. Calculate $a^2+ab$.
 3. Calculate $a^2+4ab+4b^2$.
 
-{{% note solution %}}
+{{% note Solution %}}
 
-1. Let's rationalise the denominator first:
-   \begin{align*}
-   \dfrac{2}{\sqrt{6}-2} = \dfrac{2(\sqrt{6}+2)}{6-4} = \sqrt{6}+2.
-   \end{align*}
-   Because $2\lt \sqrt{6} \lt 3$, we know that $4\lt \sqrt{6}+2 \lt 5$, which means that the integer part of $\sqrt{6}+2$ is $a=\boldsymbol{4}$. Then $$ b = (\sqrt{6}+2) - a = \boldsymbol{\sqrt{6}-2}. $$
+{{% enum 1 %}}
+Let's rationalise the denominator first:
 
-2. Using $a+b = \sqrt{6}+2$,
-   \begin{align*}
-   a^2 + ab &= a(a+b) \\\\
-   &= 4(\sqrt{6}+2) \\\\
-   &= \boldsymbol{ 4\sqrt{6} + 8. }
-   \end{align*}
+`\begin{align*}
+\dfrac{2}{\sqrt{6}-2} = \dfrac{2(\sqrt{6}+2)}{6-4} = \sqrt{6}+2.
+\end{align*}`
 
-3. If we complete the square,
-   \begin{align*}
-   a^2+4ab+4b^2 &= (a+2b)^2 \\\\
-   &= (\underline{a+b}+b)^2 \\\\
-   &= (\underline{\sqrt{6}+2}+\sqrt{6}-2)^2 \\\\
-   &= (2\sqrt{6})^2 = \boldsymbol{24. }
-   \end{align*}
+Because $2\lt \sqrt{6} \lt 3$, we know that $4\lt \sqrt{6}+2 \lt 5$, which means that the integer part of $\sqrt{6}+2$ is $a=\boldsymbol{4}$. Then $$ b = (\sqrt{6}+2) - a = \boldsymbol{\sqrt{6}-2}. $$
 
-{{% /box %}}
+{{% enum 2 %}} Using $a+b = \sqrt{6}+2$,
 
-{{% note questions %}} Try [Practice Questions](#practice-questions) 1 before moving on.
+`\begin{align*}
+a^2 + ab &= a(a+b) \\
+&= 4(\sqrt{6}+2) \\
+&= \boldsymbol{ 4\sqrt{6} + 8. }
+\end{align*}`
+
+{{% enum 3 %}} If we complete the square,
+
+`\begin{align*}
+a^2+4ab+4b^2 &= (a+2b)^2 \\
+&= (\underline{a+b}+b)^2 \\
+&= (\underline{\sqrt{6}+2}+\sqrt{6}-2)^2 \\
+&= (2\sqrt{6})^2 = \boldsymbol{24. }
+\end{align*}`
+
+{{% /hbox %}}
+
+Try [Practice Questions](#practice-questions) 1 before moving on.
 
 ## Sum and Product of Two Numbers
 
 Say you have to calculate $(\sqrt{2}+1)^2 + (\sqrt{2}-1)^2$. You can of course expand the brackets:
 
-\begin{align*}
-& (\sqrt{2}+1)^2 + (\sqrt{2}-1)^2 \\\\
-&= 2 + 2\sqrt{2} + 1 + 2 - 2\sqrt{2} + 1 \\\\
+`\begin{align*}
+& (\sqrt{2}+1)^2 + (\sqrt{2}-1)^2 \\
+&= 2 + 2\sqrt{2} + 1 + 2 - 2\sqrt{2} + 1 \\
 &= \boldsymbol{ 6. }
-\end{align*}
+\end{align*}`
 
 However, you can also use the identity $x^2+y^2 = (x+y)^2 - 2xy$, because the sum and product of $\sqrt{2}+1$ and $\sqrt{2}-1$ are relatively simple to calculate:
 
-\begin{align*}
-(\sqrt{2}+1) + (\sqrt{2}-1) &= 2\sqrt{2}, \\\\
+`\begin{align*}
+(\sqrt{2}+1) + (\sqrt{2}-1) &= 2\sqrt{2}, \\
 (\sqrt{2}+1) \times (\sqrt{2}-1) &= 2 - 1 = 1,
-\end{align*}
+\end{align*}`
 
 so
 
-\begin{align*}
-(\sqrt{2}+1)^2 + (\sqrt{2}-1)^2 &= (2\sqrt{2})^2 - 2\cdot 1 \\\\
+`\begin{align*}
+&(\sqrt{2}+1)^2 + (\sqrt{2}-1)^2 \\
+&= (2\sqrt{2})^2 - 2\cdot 1 \\
 &= 8 - 2 = \boldsymbol{ 6. }
-\end{align*}
+\end{align*}`
 
 Likewise, from $(x+y)^3 = \hl{x^3} + 3x^2y + 3xy^2 \hl{+y^3}$,
 
-\begin{align*}
-x^3 + y^3 &= (x+y)^3 - 3x^2y - 3xy^2 \\\\
+`\begin{align*}
+x^3 + y^3 &= (x+y)^3 - 3x^2y - 3xy^2 \\
 &= (x+y)^3 - 3xy(x+y),
-\end{align*}
+\end{align*}`
 
 so we can also find
 
-\begin{align*}
-(\sqrt{2}+1)^3 + (\sqrt{2}-1)^3 &= (2\sqrt{2})^3 - 3\cdot 1 \cdot 2\sqrt{2} \\\\
-&= 8\sqrt{8} - 6\sqrt{2} \\\\
+`\begin{align*}
+&(\sqrt{2}+1)^3 + (\sqrt{2}-1)^3 \\
+&= (2\sqrt{2})^3 - 3\cdot 1 \cdot 2\sqrt{2} \\
+&= 8\sqrt{8} - 6\sqrt{2} \\
 &= 16\sqrt{2} - 6\sqrt{2} = \boldsymbol{ 10\sqrt{2}. }
-\end{align*}
+\end{align*}`
 
 We will have a look at a few more examples of this kind.
 
-{{% box %}}
-{{% note example %}}
+{{% hbox %}}
+{{% note Example %}}
 When $x=\dfrac{\sqrt{3}-\sqrt{2}}{\sqrt{3}+\sqrt{2}}$ and $y=\dfrac{\sqrt{3}+\sqrt{2}}{\sqrt{3}-\sqrt{2}}$, find the values of
 
 1. $x+y$
@@ -171,68 +170,70 @@ When $x=\dfrac{\sqrt{3}-\sqrt{2}}{\sqrt{3}+\sqrt{2}}$ and $y=\dfrac{\sqrt{3}+\sq
 4. $x^3+y^3$
 5. $x^4+y^4$
 
-{{% note solution %}}
+{{% note Solution %}}
 
-\begin{align*}
-\text{1.} \quad x+y &= \dfrac{\sqrt{3}-\sqrt{2}}{\sqrt{3}+\sqrt{2}} + \dfrac{\sqrt{3}+\sqrt{2}}{\sqrt{3}-\sqrt{2}} \\\\
-&= \frac{(\sqrt{3}-\sqrt{2})^2 + (\sqrt{3}+\sqrt{2})^2}{(\sqrt{3}+\sqrt{2})(\sqrt{3}-\sqrt{2})} \\\\
-&= \frac{3 - 2\sqrt{6} + 2 + 3 + 2\sqrt{6} + 2}{3 - 2} \\\\
+{{% enum 1 %}}
+`\begin{align*}
+x+y &= \dfrac{\sqrt{3}-\sqrt{2}}{\sqrt{3}+\sqrt{2}} + \dfrac{\sqrt{3}+\sqrt{2}}{\sqrt{3}-\sqrt{2}} \\
+&= \frac{(\sqrt{3}-\sqrt{2})^2 + (\sqrt{3}+\sqrt{2})^2}{(\sqrt{3}+\sqrt{2})(\sqrt{3}-\sqrt{2})} \\
+&= \frac{3 - 2\sqrt{6} + 2 + 3 + 2\sqrt{6} + 2}{3 - 2} \\
 &= \boldsymbol{ 10. }
-\end{align*}
+\end{align*}`
 
-\begin{align*}
-\text{2.} \quad xy &= \dfrac{\sqrt{3}-\sqrt{2}}{\sqrt{3}+\sqrt{2}} \times \dfrac{\sqrt{3}+\sqrt{2}}{\sqrt{3}-\sqrt{2}} = \boldsymbol{ 1. }
-\end{align*}
-
----
+{{% enum 2 %}}
+`\begin{align*}
+xy &= \dfrac{\sqrt{3}-\sqrt{2}}{\sqrt{3}+\sqrt{2}} \times \dfrac{\sqrt{3}+\sqrt{2}}{\sqrt{3}-\sqrt{2}} = \boldsymbol{ 1. }
+\end{align*}`
 
 For Parts 3 to 5, we use $x+y=10$ and $xy=1$.
 
-\begin{align*}
-\text{3.} \quad x^2+y^2 &= (x+y)^2 - 2xy \\\\
-&= 10^2 - 2\cdot 1 \\\\
+{{% enum 3 %}}
+`\begin{align*}
+x^2+y^2 &= (x+y)^2 - 2xy \\
+&= 10^2 - 2\cdot 1 \\
 &= \boldsymbol{ 98. }
-\end{align*}
+\end{align*}`
 
-\begin{align*}
-\text{4.} \quad x^3+y^3 &= (x+y)^3 - 3xy(x+y) \\\\
-&= 10^3 - 3\cdot 1 \cdot 10 \\\\
+{{% enum 4 %}}
+`\begin{align*}
+ x^3+y^3 &= (x+y)^3 - 3xy(x+y) \\
+&= 10^3 - 3\cdot 1 \cdot 10 \\
 &= 1000 - 30 = \boldsymbol{ 970. }
-\end{align*}
+\end{align*}`
 
-$\hspace{0.5em} \text{5.} \quad$ Because $\left(x^2+y^2\right)^2 = \hl{x^4} + 2x^2y^2 \hl{+y^4}$,
+{{% enum 5 %}} Because $\left(x^2+y^2\right)^2 = \hl{x^4} + 2x^2y^2 \hl{+y^4}$,
 
-\begin{align*}
-x^4 + y^4 &= \left(x^2 + y^2 \right)^2 - 2x^2y^2 \\\\
-&= 98^2 - 2 \cdot 1^2 \\\\
+`\begin{align*}
+x^4 + y^4 &= \left(x^2 + y^2 \right)^2 - 2x^2y^2 \\
+&= 98^2 - 2 \cdot 1^2 \\
 &= \boldsymbol{ 9602. }
-\end{align*}
+\end{align*}`
 
-{{% /box %}}
+{{% /hbox %}}
 
 We can also repeat the process to calculate $x^2+\dfrac{1}{x^2}$, $x^3+\dfrac{1}{x^3}$, and so on. For example,
 
-\begin{align*}
-\left(x + \frac{1}{x} \right)^2 &= x^2 + 2\cdot x \cdot \frac{1}{x} + \frac{1}{x^2} \\\\
-&= \underline{ x^2 + \frac{1}{x^2} } + 2, \\\\
-\left(x + \frac{1}{x} \right)^3 &= x^3 + 3\cdot x^2 \cdot \frac{1}{x} + 3\cdot x \cdot \frac{1}{x^2} + \frac{1}{x^3} \\\\
+`\begin{align*}
+\left(x + \frac{1}{x} \right)^2 &= x^2 + 2\cdot x \cdot \frac{1}{x} + \frac{1}{x^2} \\
+&= \underline{ x^2 + \frac{1}{x^2} } + 2, \\
+\left(x + \frac{1}{x} \right)^3 &= x^3 + 3\cdot x^2 \cdot \frac{1}{x} + 3\cdot x \cdot \frac{1}{x^2} + \frac{1}{x^3} \\
 &= \underline{ x^3 + \frac{1}{x^3} } + 3\left( x + \frac{1}{x} \right).
-\end{align*}
+\end{align*}`
 
 Therefore, the following holds.
 
-{{% box %}}
-{{% note theorem %}}
-\begin{align*}
-x^2 + \frac{1}{x^2} &= \left(x + \frac{1}{x} \right)^2 - 2, \\\\
+{{% hbox %}}
+{{% note Theorem %}}
+`\begin{align*}
+x^2 + \frac{1}{x^2} &= \left(x + \frac{1}{x} \right)^2 - 2, \\
 x^3 + \frac{1}{x^3} &= \left(x + \frac{1}{x} \right)^3 - 3\left( x + \frac{1}{x} \right).
-\end{align*}
-{{% /box %}}
+\end{align*}`
+{{% /hbox %}}
 
-We can extend this method any further, which means we can evaluate $x^n + \dfrac{1}{x^n}$ for _any_ $n$ once we know the value of $x+\dfrac{1}{x}$!
+We can extend this method any further, which means we can evaluate $x^n + \dfrac{1}{x^n}$ for ***any*** $n$ once we know the value of $x+\dfrac{1}{x}$!
 
-{{% box %}}
-{{% note example %}}
+{{% hbox %}}
+{{% note Example %}}
 When $x = \dfrac{\sqrt{5}-1}{2}$, evaluate
 
 1. $x+\dfrac{1}{x}$
@@ -240,36 +241,40 @@ When $x = \dfrac{\sqrt{5}-1}{2}$, evaluate
 3. $x^3+\dfrac{1}{x^3}$
 4. $x^4+\dfrac{1}{x^4}$
 
-{{% note solution %}}
+{{% note Solution %}}
 
-\begin{align*}
-\text{1.} \quad x + \frac{1}{x} &= \frac{\sqrt{5}-1}{2} + \frac{2}{\sqrt{5}-1} \\\\
-&= \frac{\sqrt{5}-1}{2} + \frac{2(\sqrt{5}+1)}{5-1} \\\\
-&= \frac{\sqrt{5}-1}{2} + \frac{\sqrt{5}+1}{2} \\\\
+{{% enum 1 %}}
+`\begin{align*}
+x + \frac{1}{x} &= \frac{\sqrt{5}-1}{2} + \frac{2}{\sqrt{5}-1} \\
+&= \frac{\sqrt{5}-1}{2} + \frac{2(\sqrt{5}+1)}{5-1} \\
+&= \frac{\sqrt{5}-1}{2} + \frac{\sqrt{5}+1}{2} \\
 &= \boldsymbol{ \sqrt{5}. }
-\end{align*}
+\end{align*}`
 
-\begin{align*}
-\text{2.} \quad x^2 + \frac{1}{x^2} &= \left(x + \frac{1}{x} \right)^2 - 2 \\\\
-&= (\sqrt{5})^2 - 2 \\\\
+{{% enum 2 %}}
+`\begin{align*}
+x^2 + \frac{1}{x^2} &= \left(x + \frac{1}{x} \right)^2 - 2 \\
+&= (\sqrt{5})^2 - 2 \\
 &= \boldsymbol{ 3. }
-\end{align*}
+\end{align*}`
 
-\begin{align*}
-\text{3.} \quad x^3 + \frac{1}{x^3} &= \left(x + \frac{1}{x} \right)^3 - 3\left( x + \frac{1}{x} \right) \\\\
-&= (\sqrt{5})^3 - 3\sqrt{5} \\\\
-&= 5\sqrt{5} - 3\sqrt{5} \\\\
+{{% enum 3 %}}
+`\begin{align*}
+x^3 + \frac{1}{x^3} &= \left(x + \frac{1}{x} \right)^3 - 3\left( x + \frac{1}{x} \right) \\
+&= (\sqrt{5})^3 - 3\sqrt{5} \\
+&= 5\sqrt{5} - 3\sqrt{5} \\
 &= \boldsymbol{ 3\sqrt{5}. }
-\end{align*}
+\end{align*}`
 
-\begin{align*}
-\text{4.} \quad x^4 + \frac{1}{x^4} &= \left(x^2\right)^2 + \frac{1}{\left(x^2\right)^2} \\\\
-&= \left( x^2 + \frac{1}{x^2} \right)^2 - 2 \\\\
-&= 3^2 - 2 \\\\
+{{% enum 4 %}}
+`\begin{align*}
+x^4 + \frac{1}{x^4} &= \left(x^2\right)^2 + \frac{1}{\left(x^2\right)^2} \\
+&= \left( x^2 + \frac{1}{x^2} \right)^2 - 2 \\
+&= 3^2 - 2 \\
 &= \boldsymbol{ 7. }
-\end{align*}
+\end{align*}`
 
-{{% /box %}}
+{{% /hbox %}}
 
 ## Practice Questions
 
@@ -284,37 +289,38 @@ When $x = \dfrac{\sqrt{5}-1}{2}$, evaluate
     2. $\dfrac{5\sqrt{3} + 1}{6}$
     3. $1$
 
-{{% note solution %}}
+{{% note Solution %}}
 
-$\text{a.} \quad$ First of all, $\dfrac{1}{2-\sqrt{3}} = \dfrac{2+\sqrt{3}}{4-3} = 2+\sqrt{3}$.
+{{% enum a %}} First of all, $\dfrac{1}{2-\sqrt{3}} = \dfrac{2+\sqrt{3}}{4-3} = 2+\sqrt{3}$.
 
 Because $1\lt \sqrt{3} \lt 2$, $3\lt 2+\sqrt{3} \lt 4$, and the integer part is $3$. Then from $a+b=2+\sqrt{3}$,
-\begin{align*}
+`\begin{align*}
 b = 2 + \sqrt{3} - 3 = \sqrt{3}-1.
-\end{align*}
+\end{align*}`
 Therefore $a=3$ and $b=\sqrt{3}-1$.
 
-{{% mn q1a tips %}}
-$(1)$ $\dfrac{3}{3\big(\sqrt{3}-1\big)}$<br>
-$\phantom{(1)}$ $=\dfrac{1}{\big(\sqrt{3}-1\big)}$<br>
-$\phantom{(1)}$ $=\dfrac{\sqrt{3}+1}{(3-1)}$<br>
-$\phantom{(1)}$ $=\dfrac{\sqrt{3}+1}{2}$<br>
+{{% enum b %}}
+{{% mn q1a tips %}} 
+`$$\begin{split} (1) \quad & \dfrac{3}{3\big(\sqrt{3}-1\big)} \\\\ &= \dfrac{1}{\big(\sqrt{3}-1\big)} \\\\ &=\dfrac{\sqrt{3}+1}{(3-1)} \\\\ &=\dfrac{\sqrt{3}+1}{2} \end{split} $$`
 {{% /mn %}}
-\begin{align*}
-\text{b.} \quad \frac{a+b^2}{3b} &= \frac{a}{3b} + \frac{b}{3} \\\\
-&= \frac{3}{3\big(\sqrt{3}-1\big)} + \frac{\sqrt{3}-1}{3} \\\\
-&= \frac{\sqrt{3}+1}{2} + \frac{\sqrt{3}-1}{3} \tag{1} \\\\
-&= \frac{3\big(\sqrt{3}+1\big) + 2\big(\sqrt{3}-1\big)}{6} \\\\
+`\begin{align*}
+&\frac{a+b^2}{3b} \\
+&= \frac{a}{3b} + \frac{b}{3} \\
+&= \frac{3}{3\big(\sqrt{3}-1\big)} + \frac{\sqrt{3}-1}{3} \\
+&= \frac{\sqrt{3}+1}{2} + \frac{\sqrt{3}-1}{3} \tag{1} \\
+&= \frac{3\big(\sqrt{3}+1\big) + 2\big(\sqrt{3}-1\big)}{6} \\
 &= \boldsymbol{ \frac{5\sqrt{3} + 1}{6}. }
-\end{align*}
+\end{align*}`
 
-\begin{align*}
-\text{c.} \quad a^2-b^2-2a-2b &= (a+b)(a-b)-2(a+b) \\\\
-&= (a+b)(a-b-2) \\\\
-&= \big(2+\sqrt{3}\big)\big\\{3-\big(\sqrt{3}-1\big)-2\big\\} \\\\
-&= \big(2+\sqrt{3}\big)\big(2-\sqrt{3}\big) \\\\
+{{% enum c %}}
+`\begin{align*}
+&a^2-b^2-2a-2b \\
+&= (a+b)(a-b)-2(a+b) \\
+&= (a+b)(a-b-2) \\
+&= \big(2+\sqrt{3}\big)\big\{3-\big(\sqrt{3}-1\big)-2\big\} \\
+&= \big(2+\sqrt{3}\big)\big(2-\sqrt{3}\big) \\
 &= 4-3 = \boldsymbol{1.}
-\end{align*}
+\end{align*}`
 
 {{% /details %}}
 
@@ -324,26 +330,28 @@ $\phantom{(1)}$ $=\dfrac{\sqrt{3}+1}{2}$<br>
 
 2. $16$
 
-{{% note solution %}}
+{{% note Solution %}}
 Because $\sqrt{9}<\sqrt{15}<\sqrt{16}$,
-\begin{align*}
-& \sqrt{9}<\sqrt{15}<\sqrt{16} \\\\
-\iff & 3 < \sqrt{15} < 4 \\\\
+
+`\begin{align*}
+& \sqrt{9}<\sqrt{15}<\sqrt{16} \\
+\iff & 3 < \sqrt{15} < 4 \\
 \iff & 7 < 4+\sqrt{15} < 8.
-\end{align*}
+\end{align*}`
+
 Hence the integer part of $4+\sqrt{15}$ is $7$, and $$ x = 4+\sqrt{15} - 7 = \sqrt{15} - 3. $$
 
 Note $x + 3 = \sqrt{15}$. Then,
-
 {{% mn q2 tips %}}
-$(1)$ Complete the square, so that we can use $x + 3 = \sqrt{15}$.
+(1) Complete the square, so that we can use $x + 3 = \sqrt{15}$.
 {{% /mn %}}
-\begin{align*}
-x^2+6x+10 &= x^2 + 6x + 9 + 1 \\\\
-&= (x+3)^2 + 1 \tag{1} \\\\
-&= \sqrt{15}^2 + 1 \\\\
+`\begin{align*}
+&x^2+6x+10 \\
+&= x^2 + 6x + 9 + 1 \\
+&= (x+3)^2 + 1 \tag{1} \\
+&= \sqrt{15}^2 + 1 \\
 &= \boldsymbol{ 16 }.
-\end{align*}
+\end{align*}`
 
 {{% /details %}}
 
@@ -358,24 +366,27 @@ x^2+6x+10 &= x^2 + 6x + 9 + 1 \\\\
 
 {{% note Solution %}} The number of interest can be simplified to
 
-\begin{align*}
-\dfrac{\sqrt{3}+1}{\sqrt{3}-1} &= \dfrac{\big(\sqrt{3}+1 \big)^2}{\big(\sqrt{3}-1\big)\big(\sqrt{3}+1 \big)} \\\\
-&= \dfrac{3 + 1 + 2\sqrt{3}}{3-1} \\\\
+`\begin{align*}
+& \dfrac{\sqrt{3}+1}{\sqrt{3}-1} \\
+&= \dfrac{\big(\sqrt{3}+1 \big)^2}{\big(\sqrt{3}-1\big)\big(\sqrt{3}+1 \big)} \\
+&= \dfrac{3 + 1 + 2\sqrt{3}}{3-1} \\
 &= 2 + \sqrt{3}.
-\end{align*}
+\end{align*}`
 
-$\hspace{0.5em} \text{a.} \quad$ Because $1\le \sqrt{3} < 2$, $a = \boldsymbol{ 3 }$, and $b= 2 + \sqrt{3} - a = \boldsymbol{ \sqrt{3} - 1 }.$
+{{% enum a %}} Because $1\le \sqrt{3} < 2$, $a = \boldsymbol{ 3 }$, and $b= 2 + \sqrt{3} - a = \boldsymbol{ \sqrt{3} - 1 }.$ 
 
+{{% enum b %}}
 {{% mn q3 tips %}}
-$(1)$ $a^2+6ab+9b^2$ $=a^2 + 2\cdot a\cdot 3b + (3b)^2$ $=(a+3b)^2$.
+(1) $a^2+6ab+9b^2$ $=a^2 + 2\cdot a\cdot 3b + (3b)^2$ $=(a+3b)^2$.
 {{% /mn %}}
-\begin{align*}
-\text{b.} \quad a^2 + 6ab + 9b^2 &= (a+3b)^2 \tag{1} \\\\
-&= \big\\{ 3 + 3\big(\sqrt{3} - 1\big) \big\\}^2 \\\\
-&= \big( 3 + 3\sqrt{3} - 3 \big)^2 \\\\
-&= \big(3\sqrt{3}\big)^2 \\\\
+`\begin{align*}
+& a^2 + 6ab + 9b^2 \\
+&= (a+3b)^2 \tag{1} \\
+&= \big\\{ 3 + 3\big(\sqrt{3} - 1\big) \big\\}^2 \\
+&= \big( 3 + 3\sqrt{3} - 3 \big)^2 \\
+&= \big(3\sqrt{3}\big)^2 \\
 &= \boldsymbol{ 27 }.
-\end{align*}
+\end{align*}`
 
 {{% /details %}}
 
@@ -390,26 +401,28 @@ $(1)$ $a^2+6ab+9b^2$ $=a^2 + 2\cdot a\cdot 3b + (3b)^2$ $=(a+3b)^2$.
 
 {{% note Solution %}} We will first find the values of $x+y$ and $xy$:
 
-\begin{align*}
-x + y &= \big(3 + 2\sqrt{2} \big) + \big(3 - 2\sqrt{2} \big) = \boldsymbol{ 6 }, \\\\
+`\begin{align*}
+x + y &= \big(3 + 2\sqrt{2} \big) + \big(3 - 2\sqrt{2} \big) = \boldsymbol{ 6 }, \\
 xy &= \big(3 + 2\sqrt{2} \big) \big(3 - 2\sqrt{2} \big) = 9 - 8 = \boldsymbol{ 1 }.
-\end{align*}
+\end{align*}`
 
 Then,
 
-\begin{align*}
-\text{a.} \quad x^2+y^2 &= (x+y)^2 - 2xy \\\\
-&= 6^2 - 2\cdot 1 \\\\
-&= 36 -2 \\\\
+{{% enum a %}}
+`\begin{align*}
+x^2+y^2 &= (x+y)^2 - 2xy \\
+&= 6^2 - 2\cdot 1 \\
+&= 36 -2 \\
 \boldsymbol{ 34 }.
-\end{align*}
-\begin{align*}
-\text{b.} \quad \dfrac{y^2}{x} + \dfrac{x^2}{y} &= \dfrac{y^3 + x^3}{xy} \\\\
-&= \dfrac{(x+y)^3 - 3xy(x+y)}{xy} \\\\
-&= \dfrac{6^3 - 3\cdot 1 \cdot 6}{1} \\\\
-&= 216 - 18 \\\\
+\end{align*}`
+{{% enum  %}}
+`\begin{align*}
+\dfrac{y^2}{x} + \dfrac{x^2}{y} &= \dfrac{y^3 + x^3}{xy} \\
+&= \dfrac{(x+y)^3 - 3xy(x+y)}{xy} \\
+&= \dfrac{6^3 - 3\cdot 1 \cdot 6}{1} \\
+&= 216 - 18 \\
 &= \boldsymbol{ 198 }.
-\end{align*}
+\end{align*}`
 
 {{% /details %}}
 
@@ -425,55 +438,54 @@ Then,
     2. $488$
     3. $126\sqrt{15}$
 
-{{% note solution %}}
-
+{{% note Solution %}}
 Let's first calculate $x+y$ and $xy$:
 
-\begin{align*}
-x+y &= \frac{\sqrt{5}+\sqrt{3}}{\sqrt{5}-\sqrt{3}} + \frac{\sqrt{5}-\sqrt{3}}{\sqrt{5}+\sqrt{3}} \\\\
-&= \frac{\big(\sqrt{5}+\sqrt{3}\big)^2 + \big(\sqrt{5}-\sqrt{3}\big)^2}{\big(\sqrt{5}-\sqrt{3}\big)\big(\sqrt{5}+\sqrt{3}\big)} \\\\
-&= \frac{5 + 2\sqrt{15} + 3 + 5 - 2\sqrt{15} + 3}{5-3} \\\\
-&= \frac{16}{2} = \boldsymbol{ 8, } \\\\ \\\\
+`\begin{align*}
+x+y &= \frac{\sqrt{5}+\sqrt{3}}{\sqrt{5}-\sqrt{3}} + \frac{\sqrt{5}-\sqrt{3}}{\sqrt{5}+\sqrt{3}} \\
+&= \frac{\big(\sqrt{5}+\sqrt{3}\big)^2 + \big(\sqrt{5}-\sqrt{3}\big)^2}{\big(\sqrt{5}-\sqrt{3}\big)\big(\sqrt{5}+\sqrt{3}\big)} \\
+&= \frac{5 + 2\sqrt{15} + 3 + 5 - 2\sqrt{15} + 3}{5-3} \\
+&= \frac{16}{2} = \boldsymbol{ 8, } \\ \\
 xy &= \frac{\sqrt{5}+\sqrt{3}}{\sqrt{5}-\sqrt{3}} \times \frac{\sqrt{5}-\sqrt{3}}{\sqrt{5}+\sqrt{3}} = \boldsymbol{ 1. }
-\end{align*}
+\end{align*}`
 
 Then, we can start evaluating the expressions with $x+y=8$ and $xy=1$.
 
-\begin{align*}
-\text{a.} \quad x^2 + y^2 &= (x+y)^2 - 2xy \\\\
+{{% enum a %}}
+`\begin{align*}
+x^2 + y^2 &= (x+y)^2 - 2xy \\
 &= 8^2 - 2\cdot 1 = \boldsymbol{ 62. }
-\end{align*}
-
-\begin{align*}
-\text{b.} \quad x^3+y^3 &= (x+y)^3 - 3xy(x+y) \\\\
-&= 8^3 - 3\cdot 1 \cdot 8 \\\\
+\end{align*}`
+{{% enum b %}}
+`\begin{align*}
+x^3+y^3 &= (x+y)^3 - 3xy(x+y) \\
+&= 8^3 - 3\cdot 1 \cdot 8 \\
 &= 512 - 24 = \boldsymbol{ 488. }
-\end{align*}
+\end{align*}`
 
-$\hspace{0.5em} \text{c.} \quad$ Now, because $(x-y)^3 = \hl{x^3} - 3x^2y + 3xy^2 \hl{y^3}$,
+{{% enum c %}} Now, because $(x-y)^3 = \hl{x^3} - 3x^2y + 3xy^2 \hl{y^3}$,
 
-\begin{align*}
-x^3 - y^3 &= (x-y)^3 + 3x^2y - 3xy^2 \\\\
-&= (x-y)^3 + 3xy(x-y). \quad \qdcirc{1}
-\end{align*}
+`\begin{align*}
+x^3 - y^3 &= (x-y)^3 + 3x^2y - 3xy^2 \\
+&= (x-y)^3 + 3xy(x-y). \tag{$=\tcirc{1}$}
+\end{align*}`
 
 We need to calculate the value of $x-y$:
-
-\begin{align*}
-x-y &= \frac{\sqrt{5}+\sqrt{3}}{\sqrt{5}-\sqrt{3}} - \frac{\sqrt{5}-\sqrt{3}}{\sqrt{5}+\sqrt{3}} \\\\
-&= \frac{\big(\sqrt{5}+\sqrt{3}\big)^2 - \big(\sqrt{5}-\sqrt{3}\big)^2}{\big(\sqrt{5}-\sqrt{3}\big)\big(\sqrt{5}+\sqrt{3}\big)} \\\\
-&= \frac{5 + 2\sqrt{15} + 3 - \big(5 - 2\sqrt{15} + 3\big)}{5-3} \\\\
-&= \frac{4\sqrt{15}}{2} \\\\
+`\begin{align*}
+x-y &= \frac{\sqrt{5}+\sqrt{3}}{\sqrt{5}-\sqrt{3}} - \frac{\sqrt{5}-\sqrt{3}}{\sqrt{5}+\sqrt{3}} \\
+&= \frac{\big(\sqrt{5}+\sqrt{3}\big)^2 - \big(\sqrt{5}-\sqrt{3}\big)^2}{\big(\sqrt{5}-\sqrt{3}\big)\big(\sqrt{5}+\sqrt{3}\big)} \\
+&= \frac{5 + 2\sqrt{15} + 3 - \big(5 - 2\sqrt{15} + 3\big)}{5-3} \\
+&= \frac{4\sqrt{15}}{2} \\
 &= 2\sqrt{15}.
-\end{align*}
+\end{align*}`
 
 Therefore
-\begin{align*}
-\tcirc{1} &= (2\sqrt{15})^3 + 3\cdot 1 \cdot 2\sqrt{15} \\\\
-&= 8 \sqrt{15^3} + 6\sqrt{15} \\\\
-&= 120\sqrt{15} + 6\sqrt{15} \\\\
+`\begin{align*}
+\tcirc{1} &= (2\sqrt{15})^3 + 3\cdot 1 \cdot 2\sqrt{15} \\
+&= 8 \cdot 15\sqrt{15} + 6\sqrt{15} \\
+&= 120\sqrt{15} + 6\sqrt{15} \\
 &= \boldsymbol{ 126\sqrt{15}. }
-\end{align*}
+\end{align*}`
 
 {{% /details %}}
 
@@ -489,28 +501,31 @@ Therefore
     2. $4\sqrt{7}$ 
     3. $110$
 
-{{% note solution %}}
+{{% note Solution %}}
 
-\begin{align*}
-\text{a.} \quad 4x^2 + \dfrac{1}{4x^2} &= (2x)^2 + \dfrac{1}{(2x)^2} \\\\
-&= \left( 2x + \frac{1}{2x} \right)^2 - 2 \\\\
-&= (\sqrt{7})^2 - 2 \\\\
+{{% enum a %}}
+`\begin{align*}
+4x^2 + \dfrac{1}{4x^2} &= (2x)^2 + \dfrac{1}{(2x)^2} \\
+&= \left( 2x + \frac{1}{2x} \right)^2 - 2 \\
+&= (\sqrt{7})^2 - 2 \\
 &= \boldsymbol{ 5. }
-\end{align*}
+\end{align*}`
 
-\begin{align*}
-\text{b.} \quad 8x^3 + \dfrac{1}{8x^3} &= (2x)^3 + \frac{1}{(2x)^3} \\\\
-&= \left( 2x + \frac{1}{2x} \right)^3 - 3\left( 2x + \frac{1}{2x} \right) \\\\
-&= \big(\sqrt{7}\big)^3 - 3\sqrt{7} \\\\
-&= 7\sqrt{7} - 3\sqrt{7} \\\\
+{{% enum b %}}
+`\begin{align*}
+8x^3 + \dfrac{1}{8x^3} &= (2x)^3 + \frac{1}{(2x)^3} \\
+&= \left( 2x + \frac{1}{2x} \right)^3 - 3\left( 2x + \frac{1}{2x} \right) \\
+&= \big(\sqrt{7}\big)^3 - 3\sqrt{7} \\
+&= 7\sqrt{7} - 3\sqrt{7} \\
 &= \boldsymbol{ 4\sqrt{7}. }
-\end{align*}
+\end{align*}`
 
-\begin{align*}
-\text{c.} \quad 64x^6 + \dfrac{1}{64x^6} &= \left(8x^3 \right)^2 + \frac{1}{\left(8x^3 \right)^2} \\\\
-&= \left( 8x^3 + \frac{1}{8x^3} \right)^2 - 2 \\\\
-&= \big(4\sqrt{7}\big)^2 - 2 \\\\
+{{% enum c %}}
+`\begin{align*}
+64x^6 + \dfrac{1}{64x^6} &= \left(8x^3 \right)^2 + \frac{1}{\left(8x^3 \right)^2} \\
+&= \left( 8x^3 + \frac{1}{8x^3} \right)^2 - 2 \\
+&= \big(4\sqrt{7}\big)^2 - 2 \\
 &= 16\cdot 7 - 2 = \boldsymbol{ 110. }
-\end{align*}
+\end{align*}`
 
 {{% /details %}}

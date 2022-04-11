@@ -305,8 +305,7 @@ Only the constant term in $x$ survives! Therefore,
 
 Then,
 {{% mn 7b tips %}}
-(1)
-$$\begin{split} &-(P-x)^3 \\\\ &= -1\cdot(P-x)^3 \\\\ &=(-1)^3\cdot(P-x)^3 \\\\ &= \left( (-1)\cdot(P-x) \right)^3 \\\\ &= (x-P)^3\end{split}$$
+`$$\begin{split} (1) \quad &-(P-x)^3 \\\\ &= -1\cdot(P-x)^3 \\\\ &=(-1)^3\cdot(P-x)^3 \\\\ &= \left( (-1)\cdot(P-x) \right)^3 \\\\ &= (x-P)^3\end{split}$$`
 {{% /mn %}}
 `\begin{align*}
 & (x+y+2z)^3 - (y+2z-x)^3 - (2z+x-y)^3 - (x+y-2z)^3 \\
