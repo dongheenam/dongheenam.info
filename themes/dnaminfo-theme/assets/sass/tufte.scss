@@ -108,7 +108,8 @@
     }
   }
 
-  ol {
+  ol,
+  ul {
     li::marker {
       font-style: italic;
       font-weight: bold;
@@ -431,12 +432,12 @@
     label.margin-toggle:not(.sidenote-number) {
       color: var(--primary-color);
       display: inline;
-      font-size: 1.3rem;
     }
 
     label.toggle-with-word {
       text-transform: capitalize;
       font-variant: small-caps;
+      font-size: 1.1rem;
       padding: 0 0.2rem;
       border: 1px solid var(--primary-color);
     }

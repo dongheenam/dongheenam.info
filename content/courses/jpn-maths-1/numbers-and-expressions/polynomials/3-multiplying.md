@@ -62,17 +62,17 @@ You may see $a^1=a$ for any $a$ because there is only one $a$ to multiply. Final
 
 ### Index laws
 
-While we can always go back to the first principle, it is convenient to discover some patterns and work with them. When it comes to index notation, those patterns are called _index laws_. There are quite a few of them, but we will only refer to what is relevant here.
+While we can always go back to the first principle, it is convenient to discover some patterns and work with them. When it comes to index notation, those patterns are called ***index laws***. There are quite a few of them, but we will only refer to what is relevant here.
 
 {{% hbox %}}
 {{% note Theorem %}}
 For any positive integers $m$ and $n$, and any numbers $a$ and $b$,
 
-\begin{align*}
-  & a^m \cdot a^n = a^{m+n}, \\\\
-  & \\left( a^m \\right)^n = a^{m n}, \\\\
+`\begin{align*}
+  & a^m \cdot a^n = a^{m+n}, \\
+  & \left( a^m \right)^n = a^{m n}, \\
   & (ab)^n = a^n b^n.
-\end{align*}
+\end{align*}`
 {{% /hbox %}}
 
 
@@ -80,29 +80,29 @@ For any positive integers $m$ and $n$, and any numbers $a$ and $b$,
 Strictly speaking, they are not proofs but specific examples for each index law. You should still see why the index laws work, and you can easily expand the logic to full proof!
 
 - $a^2 a^3 = a^{2+3}$
-\begin{align*}
+`\begin{align*}
 a^2 \times a^3
-&= (\underbrace{a\times a}\_{2 \\, \text{times}}) \times (\underbrace{a\times a\times a}\_{3 \\, \text{times}}) \\\\
-&= \underbrace{a\times a \times a \times a \times a}\_{5 \\, \text{times}} \\\\
+&= (\underbrace{a\times a}_{2 \, \text{times}}) \times (\underbrace{a\times a\times a}_{3 \, \text{times}}) \
+&= \underbrace{a\times a \times a \times a \times a}_{5 \, \text{times}} \\
 &= a^5 = a^{2+3}.
-\end{align*}
+\end{align*}`
 
 - $\\left( a^2 \\right)^3 = a^{2\times 3}$
-\begin{align*}
+`\begin{align*}
 \left( a^2 \right)^3
-&=( \underbrace{a\times a}\_{2 \\, \text{times}} )^3 \\\\
-&= \underbrace{ \underbrace{a\times a}\_{2 \\, \text{times}} \times \underbrace{a\times a}\_{2 \\, \text{times}} \times \underbrace{a\times a}\_{2 \\, \text{times}} }\_{3 \\, \text{times}} \\\\
-&= \underbrace{a\times a \times a \times a \times a \times a}\_{6 \\, \text{times}} \\\\
+&=( \underbrace{a\times a}_{2 \, \text{times}} )^3 \\
+&= \underbrace{ \underbrace{a\times a}_{2 \, \text{times}} \times \underbrace{a\times a}_{2 \, \text{times}} \times \underbrace{a\times a}_{2 \, \text{times}} }_{3 \, \text{times}} \\
+&= \underbrace{a\times a \times a \times a \times a \times a}_{6 \, \text{times}} \\
 &= a^6 = a^{2\times 3}.
-\end{align*}
+\end{align*}`
 
 - $(ab)^3 = a^3 b^3$
-\begin{align*}
+`\begin{align*}
 (a\times b)^3
-&= \underbrace{ (a\times b) \times (a\times b) \times (a\times b) }\_{3 \\, \text{times}} \\\\
-&= (\underbrace{a \times a \times a}\_{3 \\, \text{times}}) \times (\underbrace{b \times b \times b }\_{3 \\, \text{times}}) \\\\
+&= \underbrace{ (a\times b) \times (a\times b) \times (a\times b) }_{3 \, \text{times}} \\
+&= (\underbrace{a \times a \times a}_{3 \, \text{times}}) \times (\underbrace{b \times b \times b }_{3 \, \text{times}}) \\
 &= a^3 b^3.
-\end{align*}
+\end{align*}`
 
 {{% /details %}}
 
@@ -126,17 +126,17 @@ Calculate $\left(-xy^2 \right)^2 \left(-3x^2y \right)$.
 
 {{% note Solution %}}
 Before multiplying two brackets together, we need to first calculate the power with the third index law $(ab)^n = a^n b^n$.
-\begin{align*}
-&\left(-xy^2 \right)^2 \left(-3x^2y \right) \\\\
-&= (-1)^{\hl 2} x^{\hl 2} y^{\hl 4} \times \left(-3x^2y \right) \\\\
+`\begin{align*}
+&\left(-xy^2 \right)^2 \left(-3x^2y \right) \\
+&= (-1)^{\hl 2} x^{\hl 2} y^{\hl 4} \times \left(-3x^2y \right) \\
 &= x^2 y^4 \times \left(-3x^2y \right).
-\end{align*}
+\end{align*}`
 From here, we multiply them together with the first index law $a^m a^n = a^{m+n}$.
-\begin{align*}
-& x^2 y^4 \times \left(-3x^2y \right) \\\\
-&= -3 x^{\hl{2+2}} y^{\hl{4+1}} \\\\
+`\begin{align*}
+& x^2 y^4 \times \left(-3x^2y \right) \\
+&= -3 x^{\hl{2+2}} y^{\hl{4+1}} \\
 &= \boldsymbol{-3x^4y^5.}
-\end{align*}
+\end{align*}`
 
 {{% /hbox %}}
 
@@ -151,25 +151,25 @@ Simplify $-a^2b \\left( -3a^2 b c^2 \\right)^3$.
 (1) $(AB)^n = A^n B^n$<br>
 (2) $A^m \cdot A^n = A^{m+n}$
 {{% /mn %}}
-\begin{align*}
-&-a^2b \left( -3a^2 b c^2 \right)^3 \\\\
-&= -a^2b \times (-3)^{\hl 3} a^{\hl 6} b^{\hl 3} c^{\hl 6} \tag{1} \\\\
-&= (-1)\cdot(-3)^3 a^{\hl{2+6}} b^{\hl{1+3}} c^6 \tag{2} \\\\
+`\begin{align*}
+&-a^2b \left( -3a^2 b c^2 \right)^3 \\
+&= -a^2b \times (-3)^{\hl 3} a^{\hl 6} b^{\hl 3} c^{\hl 6} \tag{1} \\
+&= (-1)\cdot(-3)^3 a^{\hl{2+6}} b^{\hl{1+3}} c^6 \tag{2} \\
 &= \boldsymbol{27a^8b^4c^6.}
-\end{align*}
+\end{align*}`
 
 {{% /hbox %}}
 
 {{% details title="Powers of $\boldsymbol{-1}$" %}}
 If you observe the first few powers of $-1$:
 
-\begin{alignat*}{2}
-(-1)^1 & &&= -1 \\\\
-(-1)^2 &= (-1)^1 \cdot (-1) &&= +1 \\\\
-(-1)^3 &= (-1)^2 \cdot (-1) &&= -1 \\\\
-(-1)^4 &= (-1)^3 \cdot (-1) &&= +1 \\\\
+`\begin{alignat*}{2}
+(-1)^1 & &&= -1 \\
+(-1)^2 &= (-1)^1 \cdot (-1) &&= +1 \\
+(-1)^3 &= (-1)^2 \cdot (-1) &&= -1 \\
+(-1)^4 &= (-1)^3 \cdot (-1) &&= +1 \\
 \vdots & & &
-\end{alignat*}
+\end{alignat*}`
 
 you should be able to find:
 - $(-1)^m = -1$ if $m$ is odd, and
@@ -206,11 +206,11 @@ Remember the distributive law? We will extend it a little bit to look like this:
 $$ \hl{A}(B+C+D) = \hl{A}B + \hl{A}C + \hl{A}D. $$ 
 
 So,
-\begin{align*}
-& \underline{3abc}(a+4b-2c) \\\\
-&= \underline{3abc}\cdot a + \underline{3abc}\cdot 4b + \underline{3abc}\cdot (-2c) \\\\
+`\begin{align*}
+& \underline{3abc}(a+4b-2c) \\
+&= \underline{3abc}\cdot a + \underline{3abc}\cdot 4b + \underline{3abc}\cdot (-2c) \\
 &= \boldsymbol{3a^2bc + 12ab^2c - 6abc^2.}
-\end{align*}
+\end{align*}`
 
 {{% /hbox %}}
 
@@ -225,13 +225,13 @@ Expand $(-xy)^2(3x^2-2y-4)$.
 (1) $(ab)^n = a^n b^n$<br>
 (2) $A(B+C+D)=$ $ AB+AC+AD$
 {{% /mn %}}
-\begin{align*}
-& (-xy)^2(3x^2-2y-4) \\\\
-&= \hl{(-1)^2x^2y^2} (3x^2-2y-4) \tag{1} \\\\
-&= \underline{x^2y^2} (3x^2-2y-4) \\\\
-&= \underline{x^2y^2}\cdot 3x^2 + \underline{x^2y^2}\cdot (-2y) + \underline{x^2y^2}\cdot(-4) \tag{2} \\\\
+`\begin{align*}
+& (-xy)^2(3x^2-2y-4) \\
+&= \hl{(-1)^2x^2y^2} (3x^2-2y-4) \tag{1} \\
+&= \underline{x^2y^2} (3x^2-2y-4) \\
+&= \underline{x^2y^2}\cdot 3x^2 + \underline{x^2y^2}\cdot (-2y) + \underline{x^2y^2}\cdot(-4) \tag{2} \\
 &= \boldsymbol{3x^4y^2 - 2x^2y^3 - 4x^2y^2.}
-\end{align*}
+\end{align*}`
 
 {{% /hbox %}}
 
@@ -248,20 +248,20 @@ Expand $(a+3b)(2a-b)$.
 {{% note Solution %}}
 Because the distributive law $$ \\hl{A}(B+C) = \\hl{A}B + \\hl{A}C $$ also works when $A$ is a polynomial, we can apply the distributive law to our question:
 
-\begin{align*}
-& \underline{(a+3b)}(2a-b) \\\\
-&= \underline{(a+3b)}\cdot 2a + \underline{(a+3b)}\cdot (-b) \\\\
+`\begin{align*}
+& \underline{(a+3b)}(2a-b) \\
+&= \underline{(a+3b)}\cdot 2a + \underline{(a+3b)}\cdot (-b) \\
 &= 2a(a+3b) - b(a+3b).
-\end{align*}
+\end{align*}`
 
 Then, we can remove the brackets to finish the expansion.
 
-\begin{align*}
-& \underline{2a}(a+3b) -\underline{b}(a+3b) \\\\
-&= \underline{2a}\cdot a + \underline{2a}\cdot 3b -\underline{b}\cdot a -\underline{b}\cdot 3b \\\\
-&= 2a^2 + 6ab - ab - 3b^2 \\\\
+`\begin{align*}
+& \underline{2a}(a+3b) -\underline{b}(a+3b) \\
+&= \underline{2a}\cdot a + \underline{2a}\cdot 3b -\underline{b}\cdot a -\underline{b}\cdot 3b \\
+&= 2a^2 + 6ab - ab - 3b^2 \\
 &= \boldsymbol{2a^2 + 5ab - 3b^2.}
-\end{align*}
+\end{align*}`
 
 {{% /hbox %}}
 
@@ -275,21 +275,21 @@ Expand $(3x+2)(1+4x^2-3x)$.
 {{% note Solution %}}
 Before starting, let's focus on the second polynomial in the question: $1+4x^2-3x$. I usually sort them in descending order first because I make fewer errors this way:
 
-\begin{align*}
-& (3x+2)(1+4x^2-3x) \\\\
+`\begin{align*}
+& (3x+2)(1+4x^2-3x) \\
 &= (3x+2)(\hl{4x^2-3x+1}).
-\end{align*}
+\end{align*}`
 
 Then we can expand the bracket, one by one:
 
-\begin{align*}
-& (3x+2)(4x^2-3x+1) \\\\
-&= (3x+2)\cdot 4x^2 + (3x+2)\cdot(-3x) + (3x+2) \\\\
-&= 4x^2(3x+2) - 3x(3x+2) + 3x+2 \\\\
-&= 4x^2\cdot 3x + 4x^2\cdot 2 - 3x\cdot 3x - 3x\cdot 2 + 3x + 2 \\\\
-&= 12x^3 + 8x^2 - 9x^2 - 6x + 3x + 2 \\\\
+`\begin{align*}
+& (3x+2)(4x^2-3x+1) \\
+&= (3x+2)\cdot 4x^2 + (3x+2)\cdot(-3x) + (3x+2) \\
+&= 4x^2(3x+2) - 3x(3x+2) + 3x+2 \\
+&= 4x^2\cdot 3x + 4x^2\cdot 2 - 3x\cdot 3x - 3x\cdot 2 + 3x + 2 \\
+&= 12x^3 + 8x^2 - 9x^2 - 6x + 3x + 2 \\
 &= \boldsymbol{12x^3 -x^2 -3x + 2.}
-\end{align*}
+\end{align*}`
 
 {{% /hbox %}}
 
@@ -297,7 +297,7 @@ Then we can expand the bracket, one by one:
 
 Once you are used to expanding, you can save some time by expanding both brackets simultaneously. See the work below.
 
-{{% figure class="fullwidth" src="courses/jpn-maths-1/numbers-and-expressions/poly-mult2.jpg" alt="Faster ways to expand two brackets" %}}
+{{% figure src="courses/jpn-maths-1/numbers-and-expressions/poly-mult2.jpg" alt="Faster ways to expand two brackets" %}}
 
 {{% /details %}}
 
@@ -319,35 +319,35 @@ Once you are used to expanding, you can save some time by expanding both bracket
 {{% note Solution %}}
 
 {{% enum a %}}
-\begin{align*}
-& 4pqr^2 \left(-2p^2q \right)^3 \\\\
-&= 4pqr^2 (-2)^{\hl 3} p^{\hl 6} q^{\hl 3} \\\\
-&= 4\cdot(-8)p^{\hl{1+6}}q^{\hl{1+3}}r^2 \\\\
+`\begin{align*}
+& 4pqr^2 \left(-2p^2q \right)^3 \\
+&= 4pqr^2 (-2)^{\hl 3} p^{\hl 6} q^{\hl 3} \\
+&= 4\cdot(-8)p^{\hl{1+6}}q^{\hl{1+3}}r^2 \\
 &= \boldsymbol{-32p^7q^4r^2.}
-\end{align*}
+\end{align*}`
 
 {{% enum b %}}
-\begin{align*}
-& \left( 6c^2 \right)^2 (-2cd^3) \\\\
-&= 6^{\hl 2} c^{\hl 4} (-2cd^3) \\\\
-&= 36\cdot(-2) c^{\hl{4+1}} d^3 \\\\
+`\begin{align*}
+& \left( 6c^2 \right)^2 (-2cd^3) \\
+&= 6^{\hl 2} c^{\hl 4} (-2cd^3) \\
+&= 36\cdot(-2) c^{\hl{4+1}} d^3 \\
 &= \boldsymbol{-72c^5d^3.}
-\end{align*}
+\end{align*}`
 
 {{% enum c %}}
-\begin{align*}
-& (-ab)^2 (-2a^3b) \\\\
-&= (-1)^{\hl 2} a^{\hl 2} b^{\hl 2} (-2a^3b) \\\\
-&= -2 a^{\hl{2+3}} b^{\hl{2+1}} \\\\
+`\begin{align*}
+& (-ab)^2 (-2a^3b) \\
+&= (-1)^{\hl 2} a^{\hl 2} b^{\hl 2} (-2a^3b) \\
+&= -2 a^{\hl{2+3}} b^{\hl{2+1}} \\
 &= \boldsymbol{-2a^5b^3.}
-\end{align*}
+\end{align*}`
 
 {{% enum d %}}
-\begin{align*}
-& (-2x^4y^2z^3) (-3x^2y^2z^4) \\\\
-&= (-2)\cdot(-3)x^{\hl{4+2}}y^{\hl{2+2}}z^{\hl{3+4}} \\\\
+`\begin{align*}
+& (-2x^4y^2z^3) (-3x^2y^2z^4) \\
+&= (-2)\cdot(-3)x^{\hl{4+2}}y^{\hl{2+2}}z^{\hl{3+4}} \\
 &= \boldsymbol{6x^6y^4z^7.}
-\end{align*}
+\end{align*}`
 
 {{% /details %}}
 
@@ -368,36 +368,36 @@ Once you are used to expanding, you can save some time by expanding both bracket
 {{% note Solution %}}
 
 {{% enum a %}}
-\begin{align*}
-& -\underline{s^2t} (t^2 + 1) \\\\
-&= -\underline{s^2t} \cdot t^2 -\underline{s^2t} \cdot 1 \\\\
+`\begin{align*}
+& -\underline{s^2t} (t^2 + 1) \\
+&= -\underline{s^2t} \cdot t^2 -\underline{s^2t} \cdot 1 \\
 &= \boldsymbol{-s^2t^3 - s^2t.}
-\end{align*}
+\end{align*}`
 
 {{% enum b %}}
-\begin{align*}
-& \underline{2a^2bc} (a-3b^2+2c) \\\\
-&= \underline{2a^2bc}\cdot a + \underline{2a^2bc}\cdot(-3b^2) + \underline{2a^2bc}\cdot 2c \\\\
+`\begin{align*}
+& \underline{2a^2bc} (a-3b^2+2c) \\
+&= \underline{2a^2bc}\cdot a + \underline{2a^2bc}\cdot(-3b^2) + \underline{2a^2bc}\cdot 2c \\
 &= \boldsymbol{2a^3bc - 6a^2b^3c + 4a^2bc^2.}
-\end{align*}
+\end{align*}`
 
 {{% enum c %}}
 {{% mn q2c tips %}} (1) $(-2x)^3$ $=(-2)^3x^3$ $=-8x^3$ {{% /mn %}}
-\begin{align*}
-& (-2x)^3 (3x^2 - 2x + 4) \\\\
-&= \hl{-\underline{8x^3}} (3x^2 - 2x + 4) \tag{1} \\\\
-&= -\underline{8x^3}\cdot 3x^2 -\underline{8x^3}\cdot(-2x) -\underline{8x^3}\cdot 4 \\\\
+`\begin{align*}
+& (-2x)^3 (3x^2 - 2x + 4) \\
+&= \hl{-\underline{8x^3}} (3x^2 - 2x + 4) \tag{1} \\
+&= -\underline{8x^3}\cdot 3x^2 -\underline{8x^3}\cdot(-2x) -\underline{8x^3}\cdot 4 \\
 &= \boldsymbol{-24x^5 + 16x^4 - 32x^3.}
-\end{align*}
+\end{align*}`
 
 {{% enum d %}}
 {{% mn q2d tips %}} (2) $(-3x)(4y)$ $=-12xy$ {{% /mn %}}
-\begin{align*}
-& (-3x)(4y)(x^2-y^2) \\\\
-&= \hl{-\underline{12xy}}(x^2-y^2) \tag{2} \\\\
-&= -\underline{12xy}\cdot x^2 -\underline{12xy}\cdot(-y^2) \\\\
+`\begin{align*}
+& (-3x)(4y)(x^2-y^2) \\
+&= \hl{-\underline{12xy}}(x^2-y^2) \tag{2} \\
+&= -\underline{12xy}\cdot x^2 -\underline{12xy}\cdot(-y^2) \\
 &= \boldsymbol{-12x^3y + 12xy^3.}
-\end{align*}
+\end{align*}`
 
 {{% /details %}}
 
@@ -418,36 +418,36 @@ Once you are used to expanding, you can save some time by expanding both bracket
 {{% note Solution %}}
 
 {{% enum a %}}
-\begin{align*}
-& (\underline{x+3})(2x+1) \\\\
-&= 2x(\underline{x+3}) + (\underline{x+3}) \\\\
-&= 2x^2 + 6x + x + 3 \\\\
+`\begin{align*}
+& (\underline{x+3})(2x+1) \\
+&= 2x(\underline{x+3}) + (\underline{x+3}) \\
+&= 2x^2 + 6x + x + 3 \\
 &= \boldsymbol{2x^2 + 7x + 3.}
-\end{align*}
+\end{align*}`
 
 {{% enum b %}}
-\begin{align*}
-& (\underline{2a-1})(a^2+3a) \\\\
-&= a^2(\underline{2a-1}) + 3a(\underline{2a-1}) \\\\
-&= 2a^3 - a^2 + 6a^2 - 3a \\\\
+`\begin{align*}
+& (\underline{2a-1})(a^2+3a) \\
+&= a^2(\underline{2a-1}) + 3a(\underline{2a-1}) \\
+&= 2a^3 - a^2 + 6a^2 - 3a \\
 &= \boldsymbol{ 2a^3 + 5a^2 - 3a .}
-\end{align*}
+\end{align*}`
 
 {{% enum c %}}
-\begin{align*}
-& (\underline{6-x})(x^2+y^2) \\\\
-&= x^2(\underline{6-x}) + y^2(\underline{6-x}) \\\\
-&= 6x^2-x^3 + 6y^2 - xy^2 \\\\
+`\begin{align*}
+& (\underline{6-x})(x^2+y^2) \\
+&= x^2(\underline{6-x}) + y^2(\underline{6-x}) \\
+&= 6x^2-x^3 + 6y^2 - xy^2 \\
 &= \boldsymbol{ -x^3 + 6x^2 - xy^2 + 6y^2 .}
-\end{align*}
+\end{align*}`
 
 {{% enum d %}}
-\begin{align*}
-& (x^2+x+1)(\underline{2x-3}) \\\\
-&= x^2(\underline{2x-3}) + x(\underline{2x-3}) + (\underline{2x-3}) \\\\
-&= 2x^3 - 3x^2 + 2x^2 - 3x + 2x - 3 \\\\
+`\begin{align*}
+& (x^2+x+1)(\underline{2x-3}) \\
+&= x^2(\underline{2x-3}) + x(\underline{2x-3}) + (\underline{2x-3}) \\
+&= 2x^3 - 3x^2 + 2x^2 - 3x + 2x - 3 \\
 &= \boldsymbol{ 2x^3 - x^2 - x - 3 .}
-\end{align*}
+\end{align*}`
 
 {{% /details %}}
 
@@ -463,20 +463,20 @@ Once you are used to expanding, you can save some time by expanding both bracket
 {{% note Solution %}}
 
 {{% enum a %}}
-\begin{align*}
-& (\underline{2x-3y-1})(2x-y-3) \\\\
-&= 2x(\underline{2x-3y-1}) -y(\underline{2x-3y-1}) -3(\underline{2x-3y-1}) \\\\
-&= 4x^2 - 6xy - 2x - 2xy + 3y^2 + y -6x + 9y + 3 \\\\
+`\begin{align*}
+& (\underline{2x-3y-1})(2x-y-3) \\
+&= 2x(\underline{2x-3y-1}) -y(\underline{2x-3y-1}) -3(\underline{2x-3y-1}) \\
+&= 4x^2 - 6xy - 2x - 2xy + 3y^2 + y -6x + 9y + 3 \\
 &= \boldsymbol{ 4x^2 -8xy + 3y^2 -8x + 10y + 3. }
-\end{align*}
+\end{align*}`
 
 {{% enum b %}}
-\begin{align*}
-& (3x+x^3-1)(2x^2-x-6) \\\\
-&= (x^3+3x-1)(\underline{2x^2-x-6}) \\\\
-&= x^3(\underline{2x^2-x-6}) + 3x(\underline{2x^2-x-6}) - (\underline{2x^2-x-6}) \\\\
-&= 2x^5 - x^4 - 6x^3 + 6x^3 - 3x^2 - 18x - 2x^2 + x + 6 \\\\
+`\begin{align*}
+& (3x+x^3-1)(2x^2-x-6) \\
+&= (x^3+3x-1)(\underline{2x^2-x-6}) \\
+&= x^3(\underline{2x^2-x-6}) + 3x(\underline{2x^2-x-6}) - (\underline{2x^2-x-6}) \\
+&= 2x^5 - x^4 - 6x^3 + 6x^3 - 3x^2 - 18x - 2x^2 + x + 6 \\
 &= \boldsymbol{ 2x^5 - x^4 - 5x^2 - 17x + 6. }
-\end{align*}
+\end{align*}`
 
 {{% /details %}}

@@ -165,12 +165,12 @@ For the polynomial $ x^2 - xy + 2 + 7x - 3xy - 6y + 4 - 3x, $
 {{% /hbox %}}
 
 Like terms can be combined into a single term:
-\begin{align*}
-& x^2 -xy +2 +7x -3xy - 6y +4 -3x \\\\
-&= x^2 +(-xy-3xy) +(7x-3x) - 6y +(2+4) \\\\
-&= x^2 + (-1-3)xy + (7-3)x - 6y + (2+4) \\\\
+`\begin{align*}
+& x^2 -xy +2 +7x -3xy - 6y +4 -3x \\
+&= x^2 +(-xy-3xy) +(7x-3x) - 6y +(2+4) \\
+&= x^2 + (-1-3)xy + (7-3)x - 6y + (2+4) \\
 &= x^2 -4xy +4x - 6y +6.
-\end{align*}
+\end{align*}`
 
 {{% details title="How?" %}}
 
@@ -197,10 +197,10 @@ We defined the degree of a term before. How do we define the degree of a polynom
 
 {{% details title="Simplify first!" %}}
 Look at the following two polynomials:
-$$\begin{cases}
-a^2+2a+4-a^2, \\\\
+`$$\begin{cases}
+a^2+2a+4-a^2, \\
 2a+4.
-\end{cases}$$
+\end{cases}$$`
 
 You might say the first polynomial has a degree of 2, and the second one has a degree of 1. This is confusing because those two polynomials are, in fact, equal! $$a^2+2a+4-a^2 = 2a+4. $$ So, to avoid confusion, we ***must simplify the polynomials first*** before measuring its degree.
 
