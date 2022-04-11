@@ -65,8 +65,13 @@
     width: 100%;
   }
 
-  p:first-child {
+  & > *:first-child {
     margin-top: 0;
+  }
+  & > *:last-child,
+  & > *:last-child > *:last-child,
+  & > *:last-child > *:last-child > *:last-child {
+    margin-bottom: 0;
   }
 
   &::after {
