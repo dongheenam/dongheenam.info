@@ -1,3 +1,5 @@
+@import "variables";
+
 /* site-wide configurations */
 * {
   margin: 0;
@@ -61,4 +63,10 @@ main {
   padding-top: 3rem; // Allow space for mainnav
   max-width: fit-content;
   margin: auto;
+}
+
+@media screen and (max-width: $lmobile-max) {
+  main {
+    max-width: 100%;
+  }
 }

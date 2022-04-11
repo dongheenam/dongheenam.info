@@ -139,7 +139,7 @@ aside.sidenav {
   max-height: calc(0.9 * (100vh - 6rem));
   overflow-y: auto;
 
-  background-color: var(--background-color);
+  background-color: transparent;
   border-right: 1.5px solid var(--text-color);
   border-bottom: 1.5px solid var(--text-color);
 
