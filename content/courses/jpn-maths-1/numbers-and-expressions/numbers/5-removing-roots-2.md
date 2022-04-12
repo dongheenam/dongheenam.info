@@ -186,7 +186,7 @@ When $x\lt 1$, $(x-1)\lt 0$ and $(x-3)\lt 0$ so
 {{% details title="Tips for checking the answer" %}}
 People often forget $\sqrt{(\cdots)}$ is ***always*** positive, as long as it is a real number. And you should be able to tell, the answers to the example questions above are all positive. So this can be used as a check -- if you remove the square root and get something negative, something is going wrong!
 
-<p></p>
+
 
 {{% /details %}}
 

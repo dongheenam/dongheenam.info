@@ -61,7 +61,7 @@ For $\sqrt{23}$, say its integer part is $a$ and its decimal part $b$, and $$ \s
 
 If the integer part of $x$ is $a$, then $a\le x \lt a+1$.{{% sn int %}}One example is $4\le 4.73 \lt 5$.{{% /sn %}} So to find the integer part of an irrational number, we need to find two integers $a$ and $a+1$ that the number sits in between. For the example above, we know that $23$ is in between two square numbers, $4^2=16$ and $5^2=25$: $$ 4^2 \lt 23 \lt 5^2. $$ Therefore $$ \sqrt{4^2} \lt \sqrt{23} \lt \sqrt{5^2} \iff 4 \lt \sqrt{23} \lt 5, $$ and the integer part of $\sqrt{23}$ is $4$.
 
-<p></p>
+
 
 {{% /details %}}
 

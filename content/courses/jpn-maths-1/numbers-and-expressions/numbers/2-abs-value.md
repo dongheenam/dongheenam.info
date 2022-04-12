@@ -196,7 +196,7 @@ We know that $\pi$ is greater than $3$, so $3-\pi<0$. Therefore
 \end{align*}`
 
 {{% /hbox %}}
-<p></p>
+
 {{% hbox %}}
 
 {{% note Example %}}

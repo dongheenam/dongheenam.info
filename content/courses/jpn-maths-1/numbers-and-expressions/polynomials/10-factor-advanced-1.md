@@ -119,7 +119,7 @@ It looks like they are in $\square^2 - \triangle^2$ form, so we can apply one of
 \end{align*}`
 
 {{% /hbox %}}
-<p></p>
+
 {{% hbox %}}
 
 {{% note Example %}}

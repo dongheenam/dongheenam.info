@@ -153,7 +153,7 @@ The domains above are the *largest set of numbers* each function can be defined 
 
 {{% note Example %}} When the domain of $f(x) = 2x+1$ is $\mathbb{N}$, the possible values of $f(x)$ are $f(1) = 3$, $f(2) = 5$, $f(3) = 7$, and so on.
 
-<p></p>
+
 
 {{% /box %}}
 

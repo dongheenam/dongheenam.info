@@ -244,6 +244,6 @@ In Grade 6 of elementary school mathematics, students learn to list the sample s
 
 In Grade 1 of lower secondary mathematics, students understand that relative frequency can also be used to describe the likelihood of an event to occur.
 
-<p></p>
+
 
 {{% /details %}}

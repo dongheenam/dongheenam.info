@@ -76,7 +76,7 @@ The maximum of $A(x)$ is hence 9 at $x=3.$ This point is inside the domain $(0< 
 
 {{% /box %}}
 
-<p></p>
+
 
 {{% box %}}
 

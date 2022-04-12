@@ -253,7 +253,7 @@ Solving the simultaneous equations gives $\boldsymbol{ a=-1,~b=-10 }.$
 
 {{% /box %}}
 
-<p></p>
+
 
 {{% /details %}}
 

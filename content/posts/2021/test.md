@@ -3,19 +3,14 @@ title: Test post
 description: this is a test post!
 date: 2020-12-04 23:24:05.919 +1100
 
-nerdamer: true
+math: true
 draft: true
 ---
 
-<p>
-Input: <span id="nerdamer-input"></span><br>
-Result: <span id="nerdamer-result"></span>
-</p>
+{{% hbox %}}
 
-<script>
-    const input = "4 + (x+7)/2 + 11";
-    const a = nerdamer(input);
+`$$\begin{align}
+  2x + 3x + 2x + 3x +2x + 3x +2x + 3x +2x + 3x +2x + 3x
+\end{align}$$`
 
-    document.getElementById("nerdamer-input").innerHTML = input;
-    document.getElementById("nerdamer-result").innerHTML = a.toTeX();
-</script>
+{{% /hbox %}}

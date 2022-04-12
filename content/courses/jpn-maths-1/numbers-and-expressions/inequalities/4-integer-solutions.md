@@ -41,7 +41,7 @@ To solve an inequality for integers, we need first to find the solution of an in
 
 Be careful of the inequality signs! The range $x>7$ does not include $7$, because $x$ is strictly greater than $7$: $$ x>7 \quad \iff \quad x = 8,\\, 9,\\, 10,\\, \\cdots. $$ On the other hand, $x\ge 7$ does include $7$: $$ x\ge 7 \quad \iff \quad x = 7,\\, 8,\\, 9,\\, \\cdots. $$ This sounds quite obvious, but it gets easily confusing when you solve more advanced questions.
 
-<p></p>
+
 {{% /details %}}
 
 {{% box %}}
@@ -94,7 +94,7 @@ Solving this inequality gives
 
 {{% /box %}}
 
-<p></p>
+
 
 {{% box %}}
 

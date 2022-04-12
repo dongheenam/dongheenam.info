@@ -88,7 +88,7 @@ which means $\sqrt{x^2} = -x$! We need to be careful with the sign of $x$ when w
 For a real number $x$, $\sqrt{x^2} = |x|$.
 
 {{% /hbox %}}
-<p></p>
+
 {{% hbox %}}
 {{% note Example %}}
 Simplify:
@@ -101,7 +101,7 @@ Simplify:
 2. $ \sqrt{(-2)(-8)} = \sqrt{16} = \sqrt{4^2} = \boldsymbol{ 4 } $.
 
 {{% /hbox %}}
-<p></p>
+
 {{% hbox %}}
 
 {{% note Example %}}
@@ -218,7 +218,7 @@ Simplify
 {{% details title="Treat them like variables!" %}}
 You can add or subtract square roots just like how we do with the variables. For example, $$ \sqrt{2} + 3\sqrt{2} = 4\sqrt{2}, $$ or in words, ***one*** square root of two plus ***three*** square roots of two is ***four*** square roots of two! Likewise, $$ 4\sqrt{7} - 6\sqrt{7} = -2\sqrt{7} $$ and so on.
 
-<p></p>
+
 
 {{% /details %}}
 

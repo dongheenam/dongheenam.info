@@ -304,6 +304,6 @@ Therefore, $\boldsymbol{ p = -\dfrac{3}{2} }$ and $\boldsymbol{ q = -\dfrac{21}{
 
 {{% /box %}}
 
-<p></p>
+
 
 {{% /details %}}

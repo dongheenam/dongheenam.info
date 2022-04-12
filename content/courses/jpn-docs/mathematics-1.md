@@ -67,7 +67,7 @@ weight: 15
 
 In Grade 3 of lower secondary mathematics, students learn the properties of similar shapes and the Pythagoras' theorem and their applications.
 
-<p></p>
+
 
 {{% /details %}}
 
@@ -86,7 +86,7 @@ In Grade 3 of lower secondary mathematics, students learn the properties of simi
 
 In lower secondary mathematics, students build their knowledge of directly proportional ($y = ax$), inversely proportional ($y = \frac{a}{x}$), linear ($y = ax + b$), and simple quadratic ($y = ax^2$) relationships. However, the term "quadratic functions" is not introduced to students when learning functions of $y=ax^2$ form.
 
-<p></p>
+
 
 {{% /details %}}
 

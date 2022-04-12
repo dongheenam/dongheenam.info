@@ -97,7 +97,7 @@ And from the second inequality,
 
 {{% /box %}}
 
-<p></p>
+
 
 {{% box %}}
 {{% note example %}}
@@ -139,7 +139,7 @@ And from the second inequality,
 {{% details title="No solutions?" %}}
 When you solve inequalities, you sometimes end up with two contradicting conditions, just like the previous example question. In this case, simply state there are *no solutions*. This is one of the few moments in mathematics when you can say I cannot answer the question, and you are actually correct!
 
-<p></p>
+
 
 {{% /details %}}
 

@@ -130,7 +130,7 @@ This means $p=\dfrac{5}{2}$ and $q=-\dfrac{7}{2}$. Therefore, $\textbf{$\boldsym
 
 {{% /box %}}
 
-<p></p>
+
 
 {{% box %}}
 

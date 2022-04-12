@@ -49,7 +49,7 @@ a^2 - 2ab + b^2 &= (a-b)^2.
 \end{align*}`
 {{% /hbox %}}
 
-<p></p>
+
 
 {{% hbox %}}
 {{% note Example %}}
@@ -94,7 +94,7 @@ This may be the easiest to notice. As soon as you see two squares subtracted fro
 $$(a+b)(a-b) = a^2 - b^2.$$
 {{% /hbox %}}
 
-<p></p>
+
 
 {{% hbox %}}
 {{% note Example %}}
@@ -388,7 +388,7 @@ $$`
 
 {{% details title="Answer" %}}
 
-<p></p>
+
 
 {{% enum a %}}
 `\begin{align*}

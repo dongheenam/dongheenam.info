@@ -82,7 +82,7 @@ Let's practice some drawing now.
 
 {{% /box %}}
 
-<p></p>
+
 
 
 {{% box %}}

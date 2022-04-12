@@ -49,7 +49,7 @@ The earliest forms of numbers were only used for counting: one, two, three, four
 {{% details title="Fancy symbols!" %}}
 Since mathematicians are lazy people, and many do not understand English, they developed an easier way to communicate: symbols! Instead of saying 'natural number' every time you want to mention it, you can write $\mathbb{N}$.
 
-<p></p>
+
 
 {{% /details %}}
 
@@ -92,7 +92,7 @@ Integers are closed under addition, multiplication, and ***subtraction***.
 {{% details title="Why Z?" %}}
 While the symbol for natural numbers, $\mathbb{N}$, is pretty straightforward, $\mathbb{Z}$ for integers is not as obvious. This symbol comes from the German word ***Zahlen***, which means ***numbers***. In fact, the popular language for mathematics and physics was originally Latin (vinculum, for example) and Arabic (algebra, algorithm, ...), then moved to German. That's why we still see a lot of German influence in science and mathematics!
 
-<p></p>
+
 
 {{% /details %}}
 
@@ -114,7 +114,7 @@ You may remember practices like $$ 5\div 2 = \dfrac{5}{2} = 2\dfrac{1}{2} . $$ I
 {{% details title="Q for ..." %}}
 Now you must be looking for a word that starts with ***Q*** and has the meaning of ratio. While the symbol $\mathbb{Q}$ did come from a German word, the matching English word also starts with Q: ***quotients***.
 
-<p></p>
+
 
 {{% /details %}}
 
@@ -254,7 +254,7 @@ This means that non-repeating infinite numbers are NOT rational numbers! That is
 {{% details title="Irrational, rational, and ratio" %}}
 You may think the words ***ratio***nal and ***irratio***nal came from ***ratio***. However, it is completely the opposite! When the ancient Greeks found the number $\sqrt{2}$, it made no sense to them because they could not find any ratios that equal $\sqrt{2}$. So they named it irrational, as in non-reasonable. The terms rational and ratio are later derived from the word irrational. It is weird, isn't it?
 
-<p></p>
+
 
 {{% /details %}}
 

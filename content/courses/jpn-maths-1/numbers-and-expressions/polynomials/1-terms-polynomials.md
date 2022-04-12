@@ -73,7 +73,7 @@ The degree of a number other than zero is $0$ (because there are no variables!).
 
 The degree of say, $5$, is zero because $$ 5 = 5x^0. $$ This logic does not work for $0$ obviously: $$ 0 = 0x^0 = 0x^1 = 0x^2 = \cdots. $$ That is why we cannot decide the degree of $0$, but [some mathematicians say](https://en.wikipedia.org/wiki/Degree_of_a_polynomial#Degree_of_the_zero_polynomial) the degree of $0$ is -1. Interesting!
 
-<p></p>
+
 
 {{% /details %}}
 

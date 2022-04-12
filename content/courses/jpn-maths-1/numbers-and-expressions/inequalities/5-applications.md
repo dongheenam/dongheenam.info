@@ -127,7 +127,7 @@ Therefore, the solution for $x$ is
 
 {{% /box %}}
 
-<p></p>
+
 
 {{% box %}}
 {{% note example %}}

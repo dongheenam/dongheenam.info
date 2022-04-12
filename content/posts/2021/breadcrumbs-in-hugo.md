@@ -49,7 +49,7 @@ A Hugo page has a `.Parent` variable, and it returns the parent section of the p
 
 {{% details title="Explanation" %}}
 
-<p></p>
+
 
 ```golang
 <ol class="breadcrumb">
@@ -147,7 +147,7 @@ Another method of creating a breadcrumb is to use the URL because it will reflec
 
 {{% details title="Explanation" %}}
 
-<p></p>
+
 
 ```golang
 <ol class="breadcrumb">

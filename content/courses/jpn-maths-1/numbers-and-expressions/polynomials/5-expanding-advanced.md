@@ -153,7 +153,7 @@ We can use the perfect square identity twice to expand the expression!
 
 {{% details title="The order of letters" %}}
 
-<p></p>
+
 
 When there are a set of variables, say $a$, $b$, and $c$, people tend to sort them in a circulating order, $a\rightarrow b\rightarrow c\rightarrow a$. Write $ab+ac+bc$ as $ab+bc+ca$, and enjoy the feeling of being a mathematician!
 
@@ -243,7 +243,7 @@ Then we can use the second identity $ (x+y)(x-y) = x^2-y^2 $:
 
 {{% details title="Don't like my solutions?" %}}
 
-<p></p>
+
 
 You may find the solutions contain unnecessary steps -- that is completely fine! These are the tricks I found quite useful, you might have a better idea. Have a read and only note what you think works well.
 

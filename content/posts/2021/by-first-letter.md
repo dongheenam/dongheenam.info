@@ -89,7 +89,7 @@ We will first build the dictionary, which we call `$pages_by_letters`, where the
 
 {{% details title="Explanation" %}}
 
-<p></p>
+
 
 ```golang
 {{- $letters := split "ABCDEFGHIJKLMNOPQRSTUVWXYZ" "" -}}

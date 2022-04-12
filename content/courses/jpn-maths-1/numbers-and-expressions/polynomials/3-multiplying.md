@@ -46,7 +46,7 @@ $$a^m = \\underbrace{a \\times a \\times \\cdots \\times a}\_{m \\, \\text{times
 
 {{% /hbox %}}
 
-<p></p>
+
 
 {{% figure src="courses/jpn-maths-1/numbers-and-expressions/poly-index.jpg" caption="Comparing multiplication with exponentiation" %}}
 
@@ -194,7 +194,7 @@ Let's move on to how to calculate an expression of the form $(\text{term})\times
 $$(x+y)(x+2y)^2 \\xrightarrow{\text{expand}} x^3 + 5x^2y + 8xy^2 + 4y^3.$$
 {{% /hbox %}}
 
-<p></p>
+
 
 {{% hbox %}}
 {{% note Example %}}
@@ -265,7 +265,7 @@ Then, we can remove the brackets to finish the expansion.
 
 {{% /hbox %}}
 
-<p></p>
+
 
 {{% hbox %}}
 

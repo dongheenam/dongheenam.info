@@ -28,10 +28,10 @@ weight: 11
 
 We use ***equations*** to find the value of an unknown. For example, to find the side length of a square with an area of $4~\text{cm}^2$,
 
-  - set the length of the square to be $x$,
-  - then, from the given information, we know $x^2=4$,
-  - and finally, we solve this equation and get $x=2$ (because the length cannot be negative),
-  - to realise the side length is $2~\text{cm}$.
+1. set the length of the square to be $x$,
+2. then, from the given information, we know $x^2=4$,
+3. and finally, we solve this equation and get $x=2$ (because the length cannot be negative),
+4. to realise the side length is $2~\text{cm}$.
 
 Sometimes, the information we have on an unknown is insufficient to find its exact value, but only the ***possible range*** of its values. That's right; we will practise how to manipulate ***inequalities***.
 
@@ -74,7 +74,7 @@ It also holds for other inequality signs. For example, if $a\ge b$ then $a+c\ge 
 
 {{% /hbox %}}
 
-{{% figure src="courses/jpn-maths-1/numbers-and-expressions/ineq-prop1.jpg" alt="Examples of the properties of inequalities 1" caption="Visual examples of the adding and subtracting rules" %}}
+{{% figure class="fullwidth" src="courses/jpn-maths-1/numbers-and-expressions/ineq-prop1.jpg" alt="Examples of the properties of inequalities 1" caption="Visual examples of the adding and subtracting rules" %}}
 
 Then what about multiplying or dividing? First of all, it is obvious that multiplying or dividing by a ***positive*** number preserves the inequality sign:
 `\begin{align*}
@@ -100,7 +100,7 @@ However, when $c<0$,
 
 While all the examples we talked about assumed both $a$ and $b$ are positive, it holds regardless of the signs. For example, from $-2 < 5$, $-2\cdot(-3)=6$ and $5\cdot(-3)=-15$, so $$ -2<5 \iff -2\cdot(-3)>5\cdot(-3). $$
 
-<p></p>
+
 
 {{% /details %}}
 
@@ -119,18 +119,17 @@ When $-3<x<5$ and $-1<y<4$, find the range of the following expressions.
   4. $x+y$
   5. $2x-3y$
 
+
 {{% note Solution %}}
 
 {{% enum 1 %}}
-{{% mn 133 tips %}}
-(1) Subtract $1$ from each side.
-{{% /mn %}}
+{{% mn 133 tips %}}(1) Subtract $1$ from each side.{{% /mn %}}
 `\begin{align*}
   & \phantom{\iff} -3 < x < 5 \\
   & \iff -3-1<x-1<5-1 \tag{1} \\
   & \iff \boldsymbol{ -4<x-1<4 }.
 \end{align*}`
-
+{{% /enum %}}
 {{% enum 2 %}}
 {{% mn 143 tips %}}
 (2) Multiply each side by $2$.
@@ -140,8 +139,9 @@ When $-3<x<5$ and $-1<y<4$, find the range of the following expressions.
   & \iff -3\cdot 2 < 2x < 5\cdot 2 \tag{2} \\
   & \iff \boldsymbol{ -6 < 2x < 10 }.
 \end{align*}`
-
-{{% enum 3 %}} Multiply each side of $-1<y<4$ by $-1$: 
+{{% /enum %}}
+{{% enum 3 %}}
+Multiply each side of $-1<y<4$ by $-1$: 
 {{% mn 143 tips %}}
 (3) Multiply each side by $-1$. Note the direction of the inequality signs change.
 {{% /mn %}}
@@ -150,8 +150,9 @@ When $-3<x<5$ and $-1<y<4$, find the range of the following expressions.
   \iff & -1\cdot(-1) \hl{>} -y \hl{>} 4\cdot(-1) \tag{3} \\
   \iff & \boldsymbol{ -4<-y<1 }.
 \end{align*}`
-
-{{% enum 4 %}} Because $x$ is greater than $-3$ and $y$ is greater than $-1$, $x+y$ must be greater than $-3-1=-4$. Likewise, because $x$ is smaller than $5$ and $y$ is smaller than $4$, $x+y$ must be smaller thean $5+4=9$. Therefore $$ \boldsymbol{ -4<x+y<9 }. $$
+{{% /enum %}}
+{{% enum 4 %}}
+Because $x$ is greater than $-3$ and $y$ is greater than $-1$, $x+y$ must be greater than $-3-1=-4$. Likewise, because $x$ is smaller than $5$ and $y$ is smaller than $4$, $x+y$ must be smaller thean $5+4=9$. Therefore $$ \boldsymbol{ -4<x+y<9 }. $$
 
 ***Alternative solution.***
 A more rigorous approach goes like this:
@@ -165,8 +166,9 @@ Then, from $-1<y<4$, $-3-1<-3+y$ and $5+y<5+4$, so
   \dots \iff & -3-1 < -3+y < x+y < 5+y < 5+4 \\
   \implies & \boldsymbol{ -4 < x+y < 9 }.
 \end{align*}`
-
-{{% enum 5 %}} First of all, let's calculate the ranges of $2x$ and $-3y$:
+{{% /enum %}}
+{{% enum 5 %}}
+First of all, let's calculate the ranges of $2x$ and $-3y$:
 
 `\begin{align*}
   -3<x<5 & \iff -6 < 2x < 10, \\
@@ -178,7 +180,7 @@ Then we can use the same logic as Part (d), because $2x-3y=2x+(-3y)$:
   & -6-12 < 2x-3y < 10+3 \\
   \iff & \boldsymbol{ -18<2x-3y < 13 }.
 \end{align*}`
-
+{{% /enum %}}
 {{% /hbox %}}
 
 {{% details title="Range of $x-y$" %}}
@@ -212,26 +214,31 @@ Try [Practice Question](#practice-questions) 1 before moving on.
 
 ## Rounding and Inequalities
 
-When we round a number, we usually round down when the digit is less than $5$, and we round up when it is greater than or equal to $5$. For example, the nearest integer to $1.46$ is $1$, and the nearest integer to $1.504$ is $2$. With this rule, you can tell the range of numbers $x$, which are rounded to $2$ is $$ 1.5 \le x \lt 2.5. $$ Note the difference in the inequality signs because $1.5$ rounds to $2$ but $2.5$ does not. In other words, when you round a number to its nearest integer and the result is $2$, the possible range of the original value is $$ 4.5 \le x \lt 5.5. $$
+When we round a number, we usually round down when the digit is less than 5, and we round up when it is greater than or equal to 5. For example, the nearest integer to 1.46 is 1, and the nearest integer to 1.504 is 2. With this rule, you can tell the range of numbers $x$, which are rounded to 2 is $$ 1.5 \le x \lt 2.5. $$ Note the difference in the inequality signs because 1.5 rounds to 2 but 2.5 does not. In other words, when you round a number to its nearest integer and the result is 2, the possible range of the original value is $$ 4.5 \le x \lt 5.5. $$
 
 
-{{% note theorem %}}
+{{% hbox %}}
+{{% note Theorem %}}
 When the nearest integer to a real number $x$ is $n$, the range of $x$ is $\boldsymbol{ n-0.5 \hl{\le} x \hl{\lt} n+0.5 }. $
 
-{{% box %}}
-{{% note example %}}
+{{% /hbox %}}
+
+
+
+{{% hbox %}}
+{{% note Example %}}
 When you round $x$ and $y$ to the nearest integer, they become $6$ and $4$, respectively. Find the possible values of:
   1. $3x-4y$
   2. $xy$
 
-{{% note solution %}}
-The range of $x$ is $$ 5.5\le x \lt 6.5, \quad \qdcirc{1} $$ and the range of $y$ is $$ 3.5 \le y \lt 4.5. \quad \qdcirc{2} $$
+{{% note Solution %}}
+The range of $x$ is $$ 5.5\le x \lt 6.5, \tag{$\cdots\tcirc{1}$} $$ and the range of $y$ is $$ 3.5 \le y \lt 4.5. \tag{$\cdots\tcirc{2}$} $$
 
-1. If we multiply all sides in $\tcirc{1}$ by $3$, $$ 16.5 \le 3x \lt 19.5. \quad \qdcirc{3} $$ Likewise, if we multiply all sides of $\tcirc{2}$ by $-4$,
+{{% note 1 %}} If we multiply all sides in $\tcirc{1}$ by $3$, $$ 16.5 \le 3x \lt 19.5. \tag{$\cdots\tcirc{3}$} $$ Likewise, if we multiply all sides of $\tcirc{2}$ by $-4$,
 
 `\begin{align*}
   & -14 \ge -4y \gt -18 \\
-  \iff & -18 \lt -4y \le -14. \quad \qdcirc{4}
+  \iff & -18 \lt -4y \le -14. \tag{$\cdots\tcirc{4}$}
 \end{align*}`
 
 Therefore, because $3x-4y=3x+(-4y)$, we can add $\tcirc{3}$ and $\tcirc{4}$ side-by-side to get
@@ -242,7 +249,7 @@ Therefore, because $3x-4y=3x+(-4y)$, we can add $\tcirc{3}$ and $\tcirc{4}$ side
 
 Refer to the tip below for the change of inequality signs.
 
-2. If we multiply all sides of $\tcirc{1}$ by $y$, $$ 5.5y \le xy \lt 6.5y. $$
+{{% note 2 %}} If we multiply all sides of $\tcirc{1}$ by $y$, $$ 5.5y \le xy \lt 6.5y. $$
 
 Now, what is the smallest possible value for $5.5y$? Because $y\ge 3.5$, $$ 5.5y\ge 5.5\cdot 3.5 = 19.25. $$ Likewise, the largest possible value for $6.5y$ is $$ 6.5y \lt 6.5\cdot 4.5 = 29.25. $$ Therefore,
 `\begin{align*}
@@ -250,7 +257,8 @@ Now, what is the smallest possible value for $5.5y$? Because $y\ge 3.5$, $$ 5.5y
   \implies & \boldsymbol{ 19.25 \le xy \lt 29.25 }.
 \end{align*}`
 
-{{% /box %}}
+{{% /hbox %}}
+
 {{% details title="Combining two inequalities with different signs" %}}
 
 When $x<1$ and $y\le 2$, then $xy$ cannot be $2$ because $y$ is strictly less than $2$. Thus $$ x<1, \\; y\le 2 \iff xy < 2. $$

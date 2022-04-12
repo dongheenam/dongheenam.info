@@ -140,7 +140,7 @@ For example, $x^4 + 2x^2 - 3$ is a biquadratic polynomial. What is so special ab
 
 {{% /hbox %}}
 
-<p></p>
+
 
 {{% hbox %}}
 {{% note Example %}}
