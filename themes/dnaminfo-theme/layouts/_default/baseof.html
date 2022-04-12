@@ -3,7 +3,9 @@
   {{- partial "head" . -}}
   <body>
     {{- partial "header" . -}}
-    <main>{{- block "main" . }}{{- end }}</main>
+    <div{{ if (not .IsHome) }} class="page-wrapper"{{ end }}>
+      {{- block "main" . }}{{- end }}
+    </div>
     {{- partial "footer" . -}}
     {{- partial "scripts" . -}}
   </body>

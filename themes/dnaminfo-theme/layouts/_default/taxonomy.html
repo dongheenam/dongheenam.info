@@ -1,12 +1,15 @@
 {{- define "main" -}}
-{{- $style_options := (dict "targetPath" "section.min.css" "outputStyle" "compressed" "enableSourceMap" true) -}}
-{{- $pg_style := resources.Get "sass/section.scss" | resources.ToCSS $style_options -}}
-<link rel="stylesheet" href="{{ $pg_style.RelPermalink }}" />
-<article class="tufte-container">
+<div class="content-container">
     {{ partial "breadcrumb" . }}
+<main>
     <h1>{{ .Title | title }}</h1>
+<article>
     {{ .Content }}
+</article>
     {{- $requires_section := .Page.Params.section | default "true" -}}
+    {{- $style_options := (dict "targetPath" "section.min.css" "outputStyle" "compressed" "enableSourceMap" true) -}}
+    {{- $style := resources.Get "sass/section.scss" | resources.ToCSS $style_options -}}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
     {{ if $requires_section }}
     <section class="section-pages section-pages-post">
     {{- range (.Paginate .Pages.ByDate.Reverse 10).Pages -}}
@@ -19,6 +22,7 @@
     {{ template "_internal/pagination.html" . }}
     </section>
     {{- end -}}
+</main>
     {{ partial "pager" . }}
-</article>
+</div>
 {{- end -}}

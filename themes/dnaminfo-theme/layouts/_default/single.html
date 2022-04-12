@@ -5,16 +5,19 @@
       {{ end }}
    </p>
 {{- end -}}
-
 {{- define "main" -}}
 {{ partial "sidenav" . }}
-<article class="tufte-container">
+<div class="content-container">
    {{ partial "breadcrumb" . }}
+<main>
    <h1>{{ .Title }}</h1>
    {{ if ne .Type "docs" }}{{ template "datedisplay" . }}{{ end }}
    <ul class="tags">{{ range (.GetTerms "tags") }}<li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>{{ end }}</ul>
-   {{ .Content }}
+   <article>
+      {{ .Content }}
+   </article>
    {{ if eq .Type "docs" }}{{ template "datedisplay" . }}{{ end }}
+</main>
    {{ partial "pager" . }}
-</article>
+</div>
 {{- end -}}

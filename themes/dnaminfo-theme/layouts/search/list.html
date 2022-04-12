@@ -1,8 +1,10 @@
 {{- define "main" -}}
-<article class="tufte-container">
+<div class="content-container">
     {{ partial "breadcrumb" . }}
     <h1>{{ .Title }}</h1>
+    <main>
     {{ .Content }}
     {{ partial "algolia" }}
-</article>
+    </main>
+</div>
 {{- end -}}

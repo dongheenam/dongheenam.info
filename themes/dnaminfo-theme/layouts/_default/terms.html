@@ -16,24 +16,28 @@
   {{ end }}
   {{- $pages_by_letters = merge $pages_by_letters (dict $first_letter $new_list) -}}
 {{ end }}
-{{- $style_options := (dict "targetPath" "section.min.css" "outputStyle" "compressed" "enableSourceMap" true) -}}
-{{- $pg_style := resources.Get "sass/section.scss" | resources.ToCSS $style_options -}}
-<link rel="stylesheet" href="{{ $pg_style.RelPermalink }}" />
-<article class="tufte-container">
+<div class="content-container">
     {{ partial "breadcrumb" . }}
+<main>
     <h1 style="margin-bottom: 3rem">{{ .Title }}</h1>
+<article>
     {{ .Content }}
+</article>
+    {{- $style_options := (dict "targetPath" "section.min.css" "outputStyle" "compressed" "enableSourceMap" true) -}}
+    {{- $style := resources.Get "sass/section.scss" | resources.ToCSS $style_options -}}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
     <section class="section-pages section-pages-tag">
     {{ range $key, $value := $pages_by_letters }}
     <span class="key">{{ $key }}</span>
     <ul>
-    {{- range $value -}}
+        {{- range $value -}}
         <li>
             <a href="{{ .RelPermalink }}">{{ .Name }}</a><sup>{{ len .Pages }}</sup>
         </li>
-    {{- end -}}
+        {{- end -}}
     </ul>
     {{ end }}
     </section>
-</article>
+</main>
+</div>
 {{- end -}}

@@ -1,1 +1,1 @@
-<span class="noted">{{ .Get 0 }}</span>
+<span class="note"{{ with .Get 1 }}style="{{ . }}"{{ end }}>{{ .Get 0 }}.</span>

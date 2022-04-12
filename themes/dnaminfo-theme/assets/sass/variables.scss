@@ -4,20 +4,20 @@ $lmobile-max: 1200px;
 $smobile-max: 768px;
 
 html {
-  --p-width: 55rem;
+  --content-width: 55rem;
   --sidenote-width: 25rem;
-  --full-width: 85rem;
-  --sidenote-margin: 5rem;
+  --full-width: 82rem;
+  --sidenote-margin: 2rem;
 
   @media (max-width: $sdesktop-max) {
-    --p-width: 42rem;
+    --content-width: 42rem;
     --sidenote-width: 15rem;
     --full-width: 59rem;
     --sidenote-margin: 1rem;
   }
 
   @media screen and (max-width: $lmobile-max) {
-    --p-width: 100%;
+    --content-width: 100%;
     --sidenote-width: 100%;
     --full-width: 100%;
   }

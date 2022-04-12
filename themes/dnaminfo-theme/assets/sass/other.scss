@@ -2,8 +2,6 @@
 
 /* style for the bottom pager */
 .pager {
-  width: var(--p-width);
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -24,10 +22,8 @@
 
 /* page footer */
 .footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
-  margin: 3rem auto 1rem auto;
+  margin: 2rem auto;
 
   text-align: center;
   font-family: "PT Serif", serif;
@@ -37,25 +33,5 @@
   a:link,
   a:visited {
     color: var(--hypertext-color);
-  }
-}
-
-/* MathJax styling */
-mjx-container {
-  box-sizing: default;
-  overflow-y: hidden;
-  padding: 1px 0 !important;
-  font-variant: normal !important;
-
-  mjx-math {
-    overflow-y: visible;
-  }
-
-  &[display="true"] {
-    overflow-x: auto;
-  }
-
-  .mathjax-highlight {
-    color: var(--primary-color) !important;
   }
 }

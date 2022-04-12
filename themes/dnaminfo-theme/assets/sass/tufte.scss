@@ -1,10 +1,8 @@
 @import "variables";
 
-.tufte-container {
-  width: auto;
-  margin-left: 20rem;
-  margin-bottom: 5rem;
-  padding: 2rem 0 0 1rem;
+.content-container {
+  grid-area: content;
+  min-width: 0;
 
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
@@ -63,7 +61,6 @@
     display: block;
     clear: both;
     height: 1px;
-    width: var(--p-width);
     border: 0;
     border-top: 1px solid var(--hr-color);
     margin: 1em 0;
@@ -71,9 +68,7 @@
   }
 
   p {
-    margin-top: 1.4rem;
-    margin-bottom: 1.4rem;
-    padding-right: 0;
+    margin: 1.4rem 0;
     vertical-align: baseline;
 
     &.subtitle {
@@ -86,30 +81,16 @@
     }
   }
 
-  p,
-  footer,
-  table {
-    width: var(--p-width);
-  }
-
   dl,
   ol,
   ul {
+    width: 100%;
     margin-bottom: 1.4rem;
-    width: var(--p-width);
-    padding-left: 2rem;
-    -webkit-padding-start: 2rem;
-
-    dl,
-    ol,
-    ul,
-    p {
-      width: 100%;
-    }
+    padding-left: 3rem;
+    -webkit-padding-start: 3rem;
   }
 
-  ol,
-  ul {
+  ol {
     li::marker {
       font-style: italic;
       font-weight: bold;
@@ -129,7 +110,8 @@
   /* Blockquotes */
   blockquote {
     p {
-      margin-right: 2rem;
+      font-style: italic;
+      padding-left: 2rem;
     }
 
     footer {
@@ -145,10 +127,10 @@
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    max-width: var(--p-width);
+    width: 100%;
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
-    margin: 0 0 3em 0;
+    margin: 0 0 2em 0;
   }
 
   figcaption {
@@ -246,7 +228,6 @@
   }
 
   pre {
-    width: var(--p-width);
     overflow-x: auto;
     overflow-y: hidden;
 
@@ -320,24 +301,9 @@
   }
 
   /* Other stuff */
-  div.table-wrapper {
-    overflow-x: auto;
-  }
 
   span.newthought {
     font-variant: small-caps;
-  }
-
-  .noted,
-  .enum {
-    font-family: "PT Serif", serif;
-    font-weight: bold;
-    font-style: italic;
-    margin-right: 0.5rem;
-
-    &::after {
-      content: ".";
-    }
   }
 
   input.margin-toggle {
@@ -390,12 +356,7 @@
 }
 
 @media screen and (max-width: $lmobile-max) {
-  .tufte-container {
-    width: 100%;
-    padding: 1rem 8% 0 8%;
-    margin: 0;
-    margin-bottom: 5rem;
-
+  .content-container {
     pre {
       &:hover,
       &:focus {
@@ -404,10 +365,18 @@
       }
     }
 
+    figure {
+      max-width: 100%;
+    }
+
     dl,
     ol,
     ul {
       width: 90%;
+    }
+
+    .fullwidth {
+      width: 100%;
     }
 
     figcaption,
@@ -423,11 +392,6 @@
     blockquote {
       margin-left: 1.5em;
       margin-right: 0em;
-
-      p,
-      footer {
-        width: 100%;
-      }
     }
 
     label.margin-toggle:not(.sidenote-number) {
@@ -470,17 +434,6 @@
     label {
       cursor: pointer;
     }
-
-    div.table-wrapper,
-    table {
-      width: 100%;
-    }
-  }
-}
-
-@media screen and (max-width: $smobile-max) {
-  .tufte-container {
-    padding: 1rem 2.5% 0 2.5%;
   }
 }
 

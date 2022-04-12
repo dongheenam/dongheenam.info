@@ -6,6 +6,7 @@
 <details {{ if $is_open }}open{{ end }}>
   {{ with $summary }}<summary>{{ . }}</summary>{{ end }}
   <div class="details-content">
-    {{ .Inner | markdownify }}
+    {{ .Inner }}
+
   </div>
 </details>

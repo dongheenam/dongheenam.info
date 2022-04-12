@@ -5,13 +5,33 @@
         padding-top: 1px !important;
         padding-bottom: 1px !important;
     }
-    .enum ~ .katex-display {
-        margin: 0.2rem 0 0 0 !important;
-    }
     @media screen and (max-width: 1200px) {
         .katex-display {
             overflow-x: auto;
         }
+        .has-tag {
+            display: flex !important;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        .has-tag .base {
+            display: inline !important;
+        }
+        .has-tag .tag {
+            display: inline !important;
+            position: relative !important;
+            margin-left: 0.5rem;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .katex-display .katex {
+            padding-left: 0 !important;
+        }
+    }
+    .katex .vlist-t2 {
+        margin-right:0
     }
     .katex-highlight {
         color: var(--primary-color) !important;
@@ -52,21 +72,32 @@
             resolve();
         });
 
-        // clean the katex-display environments
+        
         runKatex.then( (msg) => {
             document.querySelectorAll("* > span > span.katex-display").forEach( (katexNode) => {
-                const nodeWithKatex = katexNode.parentNode.parentNode;
-                if (nodeWithKatex.childNodes.length == 1) {
-                    nodeWithKatex.parentNode.replaceChild(katexNode, nodeWithKatex);
+                // clean the katex-display environments
+                const parent1 = katexNode.parentNode;
+                const parent2 = parent1.parentNode;
+                const parent3 = parent2.parentNode;
+                if (parent3.childNodes.length == 1) {
+                    parent3.parentNode.replaceChild(katexNode, parent3);
+                } else if (parent2.childNodes.length == 1) {
+                    parent3.replaceChild(katexNode, parent2);
                 } else {
-                    nodeWithKatex.replaceChild(katexNode, katexNode.parentNode);
+                    parent2.replaceChild(katexNode, parent1);
+                }
+
+                // apply css class for any displays with a tag
+                if (katexNode.querySelector(".tag")) {
+                    katexNode.querySelector(".katex-html").classList.add("has-tag");
                 }
             });
         // clean the katex environments
         }).then( (msg) => {
             document.querySelectorAll("* > span:not(.katex-display) > span.katex").forEach( (katexNode) => {
-                const nodeWithKatex = katexNode.parentNode.parentNode;
-                nodeWithKatex.replaceChild(katexNode, katexNode.parentNode);
+                const parent1 = katexNode.parentNode;
+                const parent2 = parent1.parentNode;
+                parent2.replaceChild(katexNode, parent1);
             });
         });
     });

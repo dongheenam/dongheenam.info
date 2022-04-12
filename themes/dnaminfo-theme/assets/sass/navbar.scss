@@ -132,10 +132,12 @@
 
 /* Side navigation */
 aside.sidenav {
-  position: fixed;
-  width: 20rem;
-  margin: 3rem 0 0 0;
-  padding: 0.5rem 1rem 0 2rem;
+  grid-area: sidenav;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 3rem;
+
+  padding: 0.5rem 1rem 0.5rem 0;
   max-height: calc(0.9 * (100vh - 6rem));
   overflow-y: auto;
 
@@ -213,7 +215,7 @@ aside.sidenav {
     list-style: none;
   }
   li {
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.4rem;
 
     a {
       color: inherit;
@@ -236,10 +238,9 @@ aside.sidenav {
   }
 
   aside.sidenav {
-    position: relative;
-    width: 84%;
+    position: unset;
+    max-width: 100%;
     padding: 0.2rem 1rem;
-    margin: 2rem 8% 1rem 8%;
     max-height: none;
 
     border: 1.5px solid var(--text-color);
@@ -308,10 +309,5 @@ aside.sidenav {
       display: block;
       cursor: pointer;
     }
-  }
-
-  aside.sidenav {
-    width: 95%;
-    margin: 2rem 2.5% 0 2.5%;
   }
 }
