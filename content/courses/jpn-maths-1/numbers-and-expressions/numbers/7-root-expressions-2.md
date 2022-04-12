@@ -85,7 +85,8 @@ x^2+y^2+z^2 &= (x+y+z)^2 - 2(xy+yz+zx) \\
 {{% enum 3 %}} We will use the following identity{{% sn iden %}}The proof can be found from Question 6 of the [previous Review Set](../../polynomials/review-2/).{{% /sn %}}
 
 `\begin{align*}
-\hl{x^3 + y^3 + z^3} - 3xyz = (x+y+z)(x^2+y^2+z^2-xy-yz-zx).
+&\hl{x^3 + y^3 + z^3} - 3xyz \\
+&= (x+y+z)(x^2+y^2+z^2-xy-yz-zx).
 \end{align*}`
 
 Then

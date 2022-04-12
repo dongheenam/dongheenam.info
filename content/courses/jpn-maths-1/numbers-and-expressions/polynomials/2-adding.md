@@ -103,16 +103,15 @@ When you add or subtract two polynomials, you need to simplify the result by [co
 For $A=3x^2-2x+1$ and $B=2x^2+7x-3$, find $A+B$ and $A-B$.
 
 {{% note Solution %}}
-{{% mn "ex2" "tips" %}}
-(1) $- (\Box + \bigtriangleup - \bigcirc) = - \Box - \bigtriangleup + \bigcirc$
-{{% /mn %}}
 `\begin{align*}
   A + B &= (3x^2-2x+1) + (2x^2+7x-3) \\
   &= 3x^2-2x+1 + 2x^2+7x-3 \\
   &= (3x^2 + 2x^2) + (-2x+7x) + (1-3) \\
   &= \boldsymbol{5x^2+5x-2.}
 \end{align*}`
-
+{{% mn "ex2" "tips" %}}
+(1) $- (\Box + \bigtriangleup - \bigcirc) = - \Box - \bigtriangleup + \bigcirc$
+{{% /mn %}}
 `\begin{align*}
   A - B &= (3x^2-2x+1) - (2x^2+7x-3) \\
   &= 3x^2-2x+1 \hl{-2x^2-7x+3} \tag{1} \\
@@ -146,19 +145,21 @@ When $A=x^2+3y^2-2xy$, $B=y^2+3xy-2x^2$, and $C=-3x^2+xy-4y^2$, calculate the fo
 
 {{% note Solution %}}
 
-1. The first step is substitution, which is pretty straightforward:
+{{% note 1 %}} The first step is substitution, which is pretty straightforward:
 `\begin{align*}
 -3A+2B-C
 &= -3(x^2+3y^2-2xy) \\
 &\phantom{=}+2(y^2+3xy-2x^2) \\
 &\phantom{=}-(-3x^2+xy-4y^2).
 \end{align*}`
+
 Then we use the distributive law to expand the brackets. Be careful with the signs!
 `\begin{align*}
 -3(x^2+3y^2-2xy) &= \hl{-}3x^2 \hl{-}9y^2 \hl{+}6xy, \\
 2(y^2+3xy-2x^2) &= \phantom{+}2y^2 + 6xy - 4x^2, \\
 -(-3x^2+xy-4y^2) &= \hl{+}3x^2 \hl{-}xy \hl{+}4y^2.
 \end{align*}`
+
 Finally, combine the results and collect the like terms to simplify the answer.
 `\begin{align*}
 &-3x^2 -9y^2 +6xy + 2y^2 + 6xy - 4x^2 + 3x^2 -xy +4y^2 \\
@@ -166,7 +167,7 @@ Finally, combine the results and collect the like terms to simplify the answer.
 &= \boldsymbol{-4x^2+11xy-3y^2.}
 \end{align*}`
 
-2. You can substitute the expressions $A$, $B$, and $C$ straight in, but that will make things horribly complicated and long. It is much better to simplify the given expression first and then substitute.
+{{% note 2 %}} You can substitute the expressions $A$, $B$, and $C$ straight in, but that will make things horribly complicated and long. It is much better to simplify the given expression first and then substitute.
 `\begin{align*}
 & 3(2A+C)-2 \left\{ 2(A+C) - (B-C) \right\} \\
 &= 3(2A+C) - 2( 2A+2C \hl{-} B \hl{+} C ) \\
@@ -174,9 +175,10 @@ Finally, combine the results and collect the like terms to simplify the answer.
 &= 6A+3C \hl{-}4A \hl{+}2B \hl{-}6C \\
 &= 2A + 2B - 3C.
 \end{align*}`
+
 It looks much simpler now. Let's substitute and simplify.
 `\begin{align*}
-& 2A + 2B - 3C \\\\
+& 2A + 2B - 3C \\
 &= 2(x^2+3y^2-2xy) + 2(y^2+3xy-2x^2) - 3(-3x^2+xy-4y^2) \\
 &= 2x^2+6y^2-4xy + 2y^2+6xy-4x^2 \hl{+}9x^2 \hl{-}3xy \hl{+}12y^2 \\
 &= (2-4+9)x^2 + (-4+6-3)xy + (6+2+12)y^2 \\

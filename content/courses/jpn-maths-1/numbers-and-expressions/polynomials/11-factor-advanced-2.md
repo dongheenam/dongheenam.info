@@ -136,11 +136,9 @@ Try [Practice Question](#practice-questions) 1 before moving on.
 {{% note Definition %}}
 *A **biquadratic polynomial** is a quartic polynomial ([degree of 4](../../terms-and-polynomials/#degree-of-a-polynomial)) without cubic or linear terms. In other words, biquadratic polynomials has the following form:* $$ px^4 + qx^2 + r . $$
 
-For example, $x^4 + 2x^2 - 3$ is a biquadratic polynomial. What is so special about them? Biquadratic polynomials can be easily converted to a quadratic polynomial with a simple substitution. If we substitute $x^2=t$ from our example, it becomes $$ x^4 + 2x^2 - 3 = t^2 + 2t - 3, $$ which we can factorise with the quadratic identities.
-
 {{% /hbox %}}
 
-
+For example, $x^4 + 2x^2 - 3$ is a biquadratic polynomial. What is so special about them? Biquadratic polynomials can be easily converted to a quadratic polynomial with a simple substitution. If we substitute $x^2=t$ from our example, it becomes $$ x^4 + 2x^2 - 3 = t^2 + 2t - 3, $$ which we can factorise with the quadratic identities.
 
 {{% hbox %}}
 {{% note Example %}}

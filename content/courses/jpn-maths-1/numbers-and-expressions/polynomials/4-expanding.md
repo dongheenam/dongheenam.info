@@ -120,35 +120,37 @@ Expand:
 5. $(4x+y)(7y-3x)$
 
 {{% note Solution %}}
-{{% mn ex1 tips %}}
-(1) Identity 1-1<br>
-(2) Identity 1-2<br>
-(3) Identity 2
-{{% /mn %}}
 
 {{% enum 1 %}}
+{{% mn ex1 tips %}}
+(1) Identity 1-1<br>
+{{% /mn %}}
 `\begin{align*}
 & (a+2)^2 \\
 &= a^2 + 2\cdot a \cdot 2 + 2^2 \tag{1} \\
 &= \boldsymbol{a^2 + 4a + 4. }
 \end{align*}`
 {{% enum 2 %}}
+{{% mn ex2 tips %}}
+(2) Identity 1-2
+{{% /mn %}}
 `\begin{align*}
 & (3x-4y)^2 \\
 &= (3x)^2 - 2\cdot 3x \cdot 4y + (4y)^2 \tag{2} \\
 &= \boldsymbol{ 9x^2 - 24xy + 16y^2. }
 \end{align*}`
 {{% enum 3 %}}
+{{% mn ex3 tips %}}
+(3) Identity 2
+{{% /mn %}}
 `\begin{align*}
 & (2p+q)(2p-q) \\
 &= (2p)^2 - q^2 \tag{3} \\
 &= \boldsymbol{ 4p^2 - q^2. }
 \end{align*}`
 {{% enum 4 %}}
-{{% mn ex2 tips %}}
-(4) Identity 3-1<br>
-(5) Rearrange polynomials to $(ax+b)(cx+d)$ form<br>
-(6) Identity 3-2
+{{% mn ex4 tips %}}
+(4) Identity 3-1
 {{% /mn %}}
 `\begin{align*}
 & (x+3)(x-5) \\
@@ -156,6 +158,10 @@ Expand:
 &= \boldsymbol{ x^2 - 2x - 15. }
 \end{align*}`
 {{% enum 5 %}}
+{{% mn ex5 tips %}}
+(5) Rearrange polynomials to $(ax+b)(cx+d)$ form<br>
+(6) Identity 3-2
+{{% /mn %}}
 `\begin{align*}
 & (4x+y)(7y-3x) \\
 &= (4x+y)(\hl{-3x+7y}) \tag{5} \\

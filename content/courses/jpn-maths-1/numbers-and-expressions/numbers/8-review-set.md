@@ -112,20 +112,22 @@ Use the [basic properties of square roots](../square-roots/#basic-identities-of-
 {{% mn q3a tips %}}
 (1) Because $a>0$ and $b<0$, $|2a|=2a$ and $|b|=-b$.
 {{% /mn %}}
-\begin{alignat}{2}
-  \text{a.} \quad \sqrt{4a^2} + \sqrt{b^2} &= \sqrt{(2a)^2} + \sqrt{b^2} \\
+`\begin{alignat*}{2}
+  &\sqrt{4a^2} + \sqrt{b^2} \\
+  &= \sqrt{(2a)^2} + \sqrt{b^2} \\
   &= |2a| + |b| \\
   &= \boldsymbol{ 2a - b. } \tag{1}
-\end{alignat}
+\end{alignat*}`
 {{% enum b %}}
 {{% mn q3b tips %}}
 (2) Because $a$ is positive and $b, c$ are negative, $a^3bc^4$ has five negative numbers ($bc^4$) multiplied, and hence is negative.
 {{% /mn %}}
-\begin{alignat}{2}
-  \text{b.} \quad \sqrt{(a^2bc^3)^3} &= \sqrt{a^6b^3c^9} \\
+`\begin{alignat*}{2}
+  &\sqrt{(a^2bc^3)^3} \\
+  &= \sqrt{a^6b^3c^9} \\
   &= \sqrt{\left(a^3bc^4\right)^2\cdot bc} \\
   &= \boldsymbol{ -a^3bc^4 \sqrt{bc} . } \tag{2}
-\end{alignat}
+\end{alignat*}`
 
 {{% /details %}}
 

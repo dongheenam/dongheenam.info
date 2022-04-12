@@ -218,7 +218,7 @@ Expand
 
 {{% note Solution %}}
 
-1. This is similar to the previous example. If you swap the second and third brackets, you should be able to recognise the cubic identities.
+{{% note 1 %}} This is similar to the previous example. If you swap the second and third brackets, you should be able to recognise the cubic identities.
 {{% mn ex229 tips %}}
 (1) Identity 5: $(a\pm b)(a^2\mp ab + b^2)$ $=a^3\pm b^3$<br>
 (2) Identity 4: $(x+a)(x+b)$ $=x^2+(a+b)x+ab$
@@ -230,7 +230,8 @@ Expand
 &= \left( x^3 \right)^2 - 7x^3 - 8 \tag{2} \\
 &= \boldsymbol{ x^6 - 7x^3 - 8 .}
 \end{align*}`
-2.  Make use of the third index law $(ab)^m = a^m b^m$, to group them as
+
+{{% note 2 %}}  Make use of the third index law $(ab)^m = a^m b^m$, to group them as
 $$ (p + 2q)^2(p-2q)^2 = \left\\{ (p+2q)(p-2q) \right\\}^2. $$
 Then we can use the second identity $ (x+y)(x-y) = x^2-y^2 $:
 `\begin{align*}
@@ -418,8 +419,7 @@ You will find these results very useful later on.
 &= \boldsymbol{ a^2 + 4b^2 + c^2 + 4ab - 4bc - 2ca .}
 \end{align*}`
 
-{{% enum d %}} ***Alternative solution.*** You can also solve (d) with the identity $ (a + b + c)^2 = a^2 + b^2 + c^2 + 2ab + 2bc + 2ca $.
-
+***Alternative solution.*** You can also solve (d) with the identity $ (a + b + c)^2 = a^2 + b^2 + c^2 + 2ab + 2bc + 2ca $.
 `\begin{align*}
 & (a+2b-c)^2 \\
 &= a^2 + (2b)^2 + (-c)^2 + 2\cdot a\cdot 2b + 2\cdot 2b\cdot (-c) + 2\cdot (-c) \cdot a \\

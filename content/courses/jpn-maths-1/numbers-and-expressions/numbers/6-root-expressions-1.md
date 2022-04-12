@@ -382,7 +382,7 @@ Note $x + 3 = \sqrt{15}$. Then,
 `\begin{align*}
 & a^2 + 6ab + 9b^2 \\
 &= (a+3b)^2 \tag{1} \\
-&= \big\\{ 3 + 3\big(\sqrt{3} - 1\big) \big\\}^2 \\
+&= \big\{ 3 + 3\big(\sqrt{3} - 1\big) \big\}^2 \\
 &= \big( 3 + 3\sqrt{3} - 3 \big)^2 \\
 &= \big(3\sqrt{3}\big)^2 \\
 &= \boldsymbol{ 27 }.
@@ -415,7 +415,7 @@ x^2+y^2 &= (x+y)^2 - 2xy \\
 &= 36 -2 \\
 \boldsymbol{ 34 }.
 \end{align*}`
-{{% enum  %}}
+{{% enum b %}}
 `\begin{align*}
 \dfrac{y^2}{x} + \dfrac{x^2}{y} &= \dfrac{y^3 + x^3}{xy} \\
 &= \dfrac{(x+y)^3 - 3xy(x+y)}{xy} \\

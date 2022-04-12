@@ -103,20 +103,23 @@ Factorise the following expressions.
 
 {{% note Solution %}}
 
-1. It looks like there are no common factors, but wait, $y-2x = -(2x-y)$, so there is one!
-   `\begin{align*}
-   & (2x-y)^2 + y - 2x \\
-   &= \underline{(2x-y)}(2x-y) - \underline{(2x-y)} \\
-   &= \boldsymbol{ (2x-y)(2x-y-1). }
-   \end{align*}`
-2. Similarly, we can factorise the second and third terms first to find a common factor:
-   `\begin{align*}
-   & (x-y)^2 + y\underline{z} - \underline{z}x \\
-   &= (x-y)^2 + z(y-x) \\
-   &= (x-y)^2 - z(x-y) \\
-   &= \underline{(x-y)}(x-y) - z\underline{(x-y)} \\
-   &= \boldsymbol{ (x-y)(x-y-z) .}
-   \end{align*}`
+{{% enum 1 %}} It looks like there are no common factors, but wait, $y-2x = -(2x-y)$, so there is one!
+
+`\begin{align*}
+& (2x-y)^2 + y - 2x \\
+&= \underline{(2x-y)}(2x-y) - \underline{(2x-y)} \\
+&= \boldsymbol{ (2x-y)(2x-y-1). }
+\end{align*}`
+
+{{% enum 2 %}} Similarly, we can factorise the second and third terms first to find a common factor:
+
+`\begin{align*}
+& (x-y)^2 + y\underline{z} - \underline{z}x \\
+&= (x-y)^2 + z(y-x) \\
+&= (x-y)^2 - z(x-y) \\
+&= \underline{(x-y)}(x-y) - z\underline{(x-y)} \\
+&= \boldsymbol{ (x-y)(x-y-z) .}
+\end{align*}`
 
 {{% /hbox %}}
 

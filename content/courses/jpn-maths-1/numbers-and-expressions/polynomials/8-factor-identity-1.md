@@ -90,7 +90,7 @@ This may be the easiest to notice. As soon as you see two squares subtracted fro
 
 {{% hbox %}}
 
-{{% note Identity 2 %}} ***Difference of perfect squares***.
+{{% note "Identity 2" %}} ***Difference of perfect squares***.
 $$(a+b)(a-b) = a^2 - b^2.$$
 {{% /hbox %}}
 
@@ -431,7 +431,7 @@ $$`
     3. $(t^2 + t)(t+1)(t-1)$
     4. $(m-n+p)(m-n-p)$
 
-{{% note solution %}}
+{{% note Solution %}}
 
 {{% enum a %}}
 `\begin{align*}
@@ -478,6 +478,8 @@ $$`
     4. $(a+3)(a+7)$
     5. $(x-4y)(x+3y)$
     6. $(a+6b)(a-3b)$
+
+{{% note Solution %}}
 
 {{% enum a %}}
 `\begin{align*}

@@ -79,15 +79,13 @@ For any positive integers $m$ and $n$, and any numbers $a$ and $b$,
 {{% details title="Proofs... sort of" %}}
 Strictly speaking, they are not proofs but specific examples for each index law. You should still see why the index laws work, and you can easily expand the logic to full proof!
 
-- $a^2 a^3 = a^{2+3}$
 `\begin{align*}
 a^2 \times a^3
-&= (\underbrace{a\times a}_{2 \, \text{times}}) \times (\underbrace{a\times a\times a}_{3 \, \text{times}}) \
+&= (\underbrace{a\times a}_{2 \, \text{times}}) \times (\underbrace{a\times a\times a}_{3 \, \text{times}}) \\
 &= \underbrace{a\times a \times a \times a \times a}_{5 \, \text{times}} \\
 &= a^5 = a^{2+3}.
 \end{align*}`
 
-- $\\left( a^2 \\right)^3 = a^{2\times 3}$
 `\begin{align*}
 \left( a^2 \right)^3
 &=( \underbrace{a\times a}_{2 \, \text{times}} )^3 \\
@@ -96,7 +94,6 @@ a^2 \times a^3
 &= a^6 = a^{2\times 3}.
 \end{align*}`
 
-- $(ab)^3 = a^3 b^3$
 `\begin{align*}
 (a\times b)^3
 &= \underbrace{ (a\times b) \times (a\times b) \times (a\times b) }_{3 \, \text{times}} \\

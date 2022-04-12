@@ -193,7 +193,7 @@ We use [the distributive law](../factorising-common-factor/#factorising-with-dis
 `\begin{align*}
 & 4x^4 - 37x^2y^2 + 9y^4 \\
 &= 4 \hl{ \left( x^2 \right)^2 } - 37y^2 \hl{x^2} + 9y^4 \\
-&= (\hl{x^2}-9y^2)(4\hl{x^2}-y^2) \tag{5} \\
+&= (\hl{x^2}-9y^2)(4\hl{x^2}-y^2) \tag{4} \\
 &= \boldsymbol{ (x+3y)(x-3y)(2x+y)(2x-y) }.
 \end{align*}`
 
@@ -204,7 +204,7 @@ We use [the distributive law](../factorising-common-factor/#factorising-with-dis
 `\begin{align*}
 & \left( x^2 - x \right)^2 - 8x^2 + 8x + 12 \\
 &= \left(\underline{x^2 - x} \right)^2 - 8 (\underline{x^2 - x}) + 12 \\
-&= (\underline{x^2-x}-2)(\underline{x^2-x}-6) \tag{6}\\
+&= (\underline{x^2-x}-2)(\underline{x^2-x}-6) \tag{5}\\
 &= \boldsymbol{ (x-2)(x+1)(x-3)(x+2) }.
 \end{align*}`
 
