@@ -60,32 +60,3 @@ weight: 13
 ### Quadratic Equations
 
 ### Quadratic Inequalities
-
-## Comparison Table
-
-{{% table-wrapper %}}
-| Topic | AC 7-10 | AC Senior | HSC S6 | IB DP |
-| ----- | ---------- | ------------ | --- | --- |
-| **[Functions and Graphs](functions-and-graphs)** | | | | |
-| ├ Functions, Domain and Range |  | Met1 |
-| ├ Graphs of Linear Functions | 9^, 10^ | Met1 |
-| ├ Transformations of Graphs | 9^, 10A^ | Met1 |
-| ├ Graphing with Absolute Values |  | Spec3 |
-| ├ Inequalities and Graphs |  |  |
-| └ Graphing Piecewise Functions |  | Gen2 |
-| **[Quadratic Graphs](quadratic-graphs)** | | |
-| ├ Quadratic Functions and Graphs | 10, 10A | Met1 |
-| ├ Graphing General Form | 10, 10A | Met1 |
-| ├ Translations of Quadratics | 10A | Met1 |
-| ├ Reflections of Quadratics | 10A | Met1 |
-| ├ Extrema of Quadratics | 10A^ | Met1 |
-| ├ Extrema as Functions |  |  |
-| ├ Optimisation | 10, 10A | Met1 |
-| ├ Two-Variable Functions |  |  |
-| ├ Biquartic Functions |  |  |
-| ├ Determining Quadratic Functions | 10, 10A | Met1 |
-| ├ Finding the General Form | 10A^ | Met1 |
-| └ Determining from Extrema |  |  |
-{{% /table-wrapper %}}
-
-^ indicates the topic may be used for extension.

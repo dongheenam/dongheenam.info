@@ -2,5 +2,5 @@
     {{% hbox %}} Content {{% /hbox %}}
 */}}
 <div class="box-hb"{{ with .Get "style" }}style="{{ . }}"{{ end }}>
-    {{ .Inner | markdownify }}
+    {{ .Inner }}
 </div>

@@ -5,8 +5,13 @@
 {{- $is_open := eq (.Get "open") "true" | default "false" -}}
 <details {{ if $is_open }}open{{ end }}>
   {{ with $summary }}<summary>{{ . }}</summary>{{ end }}
-  <div class="details-content">
-    {{ .Inner }}
-
-  </div>
+<div class="details-content">
+    {{- $content := markdownify .Inner -}}
+    {{- $hasBlock := or (in $content "<p>") (in $content "<li>") -}}
+    {{ if $hasBlock }}
+{{- $content -}}
+      {{ else }}
+<p>{{ $content }}</p>
+    {{ end }}
+</div>
 </details>

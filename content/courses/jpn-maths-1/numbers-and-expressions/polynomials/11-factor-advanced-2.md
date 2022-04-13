@@ -250,7 +250,7 @@ Factorise the following.
 &= \boldsymbol{ (2x+3y-2)(x+y+2) }.
 \end{align*}`
 
-<hr style="visibility: hidden" />
+{{% hr %}}
 
 {{% enum b %}}
 {{% mn q1b tips %}}
@@ -268,7 +268,7 @@ Factorise the following.
 &= \boldsymbol{ (x-3y+2)(x+y+2) }.
 \end{align*}`
 
-<hr style="visibility: hidden" />
+{{% hr %}}
 
 {{% enum c %}} Because the coefficient of $y^2$ is $1$, it is easier to rearrange the expression in terms of $y$.
 {{% mn q1c tips %}}
@@ -287,7 +287,7 @@ Factorise the following.
 &= \boldsymbol{ (3x+y-5)(2x+y+4) }.
 \end{align*}`
 
-<hr style="visibility: hidden" />
+{{% hr %}}
 
 {{% /details %}}
 
@@ -319,7 +319,7 @@ Factorise the following.
 &= \boldsymbol{ (t+1)(t-1)(2t^2-1) }.
 \end{align*}`
 
-<hr style="visibility: hidden" />
+{{% hr %}}
 
 {{% enum b %}}
 {{% mn q2b tips %}}
@@ -334,7 +334,7 @@ $(3)$ Identity 2: $a^2-b^2$ $=(a+b)(a-b)$
 &= \boldsymbol{ (x+2)(x-2)(x+3)(x-3) }. \tag{3}
 \end{align*}`
 
-<hr style="visibility: hidden" />
+{{% hr %}}
 
 {{% enum c %}}
 `\begin{align*}

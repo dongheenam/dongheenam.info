@@ -46,15 +46,15 @@ The first condition is pretty easy: if you fix the value of $t$ and there are mo
 
 How is this going to be useful? Here is one application: a function may have maximum or minimum values. If the extremum values of a function forms a function, you may be able to find the minimum or maximum of the extremum values of a function!
 
-{{% box %}}
+{{% hbox %}}
 
 {{% note Example %}} Suppose $f(x) = x^2 - 2ax + 2a$ with the domain $0\le x \le 2$ and $a$ is positive. Define the minimum value of $f(x)$ as $\min_f (a).$ Find the maximum of $\min_f (a).$
 
 {{% note Solution %}} We will first find the vertex of the function in terms of $a$.
-\begin{align*}
-  f(x) &= x^2 - 2ax \hl{+a^2 -a^2} + 2a \\\\
+`\begin{align*}
+  f(x) &= x^2 - 2ax \hl{+a^2 -a^2} + 2a \\
   &= (x-a)^2 - a^2 + 2a
-\end{align*}
+\end{align*}`
 hence the vertex of $y=f(x)$ is $(a, -a^2+2a).$ The vertex can be inside the domain $0\le x \le 2$ or outside.
 
 $\tcirc{1}\quad$ When $0< a \le 2,$ the vertex is inside the domain. Because $y=f(x)$ is concave up, the vertex becomes the minimum. Hence the minimum value is $$f(a) = -a^2 + 2a.$$
@@ -62,15 +62,15 @@ $\tcirc{1}\quad$ When $0< a \le 2,$ the vertex is inside the domain. Because $y=
 $\tcirc{2}\quad$ When $a > 2,$ the vertex is on the right of the domain. The minimum occurs at the nearest point to the vertex. Hence the minimum value is $$f(2) = 2^2 - 2a\cdot 2 + 2a = -2a + 4.$$
 
 From above, we can define $\min_f (a)$ by:
-$$ \textstyle \min_f (a) = \begin{cases} -a^2 + 2a & \text{if } 0 < a \le 2, \\\\ -2a + 4 & \text{if } a > 2. \end{cases} $$
+$$ \textstyle \min_f (a) = \begin{cases} -a^2 + 2a & \text{if } 0 < a \le 2, \\ -2a + 4 & \text{if } a > 2. \end{cases} $$
 
 So what is the maximum of this function? We know it should not happen beyond $a=2$ because $-2a+4$ decreases as $a$ increases. Then the maximum of $\min_f(a)$ is equal to the maximum of $-a^2 + 2a$ at $0 < a \le 2.$ This is a concave down parabola, so the maximum is the vertex.
-\begin{align*}
-  -a^2 + 2a &= -(a^2 - 2a) \\\\
-  &= -(a^2 - 2a \hl{+ 1 -1} ) \\\\
-  &= -\left\\{(a-1)^2 - 1 \right\\} \\\\
+`\begin{align*}
+  -a^2 + 2a &= -(a^2 - 2a) \\
+  &= -(a^2 - 2a \hl{+ 1 -1} ) \\
+  &= -\left\\{(a-1)^2 - 1 \right\\} \\
   &= -(a-1)^2 + 1,
-\end{align*}
+\end{align*}`
 The vertex is $(1,1),$ so the maximum is $\boldsymbol{ 1 }$ at $\boldsymbol{ a=1 }.$
 
 {{% mn 76 %}}Minimum points of $f(x) = x^2 - 2ax + 2a$. Drag the vertex to change the value of $a$. Note where the minimum value is the largest. {{% /mn %}}
@@ -109,7 +109,7 @@ The vertex is $(1,1),$ so the maximum is $\boldsymbol{ 1 }$ at $\boldsymbol{ a=1
   }
 </script>
 
-{{% /box %}}
+{{% /hbox %}}
 
 
 ## Practice Questions
@@ -121,10 +121,10 @@ The vertex is $(1,1),$ so the maximum is $\boldsymbol{ 1 }$ at $\boldsymbol{ a=1
 1. $-5$ at $-1 \le a \le 3$
 
 {{% note Solution %}} From
-\begin{align*}
-  f(x) &= x^2 - 6x + 9 - 9 + 4 \\\\
+`\begin{align*}
+  f(x) &= x^2 - 6x + 9 - 9 + 4 \\
   &= (x-3)^2 - 5,
-\end{align*}
+\end{align*}`
 the vertex of $y=f(x)$ is $(3, -5).$ Because the graph is concave up, the vertex or the point closest to the vertex becomes the minimum. We can think of the following three possibilities:
 
 $\tcirc{1}\quad$ When $a+4<3$ or $a<-1$, the vertex is on the left of the domain. The minimum is $$ f(a+4) = (a+1)^2 - 5 = a^2 + 2a - 4. $$
@@ -134,7 +134,7 @@ $\tcirc{2}\quad$ When $a \le 3 \le a+4$ or $-1 \le a \le 3$, the vertex is insid
 $\tcirc{3}\quad$ When $a > 3$, the vertex is on the right of the domain. The minimum is $$ f(a) = a^2 - 6a + 4. $$
 
 Therefore, we find
-$$ \textstyle \min_g(a) = \begin{cases} a^2 + 2a - 4 & \text{if } a < -1, \\\\ -5 & \text{if } -1 \le a \le 3, \\\\ a^2 - 6a + 4 & \text{if } a > 3. \end{cases} $$
+$$ \textstyle \min_g(a) = \begin{cases} a^2 + 2a - 4 & \text{if } a < -1, \\ -5 & \text{if } -1 \le a \le 3, \\ a^2 - 6a + 4 & \text{if } a > 3. \end{cases} $$
 
 Now, let's think about what the minimum of this function would be. Because $a^2 + 2a - 4 = (a+1)^2 - 5$ and $a^2 - 6a + 4 = (a-3)^2 - 5,$ the value of $\min_g(a)$ cannot be smaller than -5. Therefore, the minimum of $\min_g(a)$ is $\boldsymbol{ -5 },$ and it occurs at $\boldsymbol{ -1 \le a \le 3 }.$
 

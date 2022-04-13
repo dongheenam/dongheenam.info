@@ -360,7 +360,7 @@ We combine [the cubic identity](../factorising-identities-2/#factorising-with-cu
 &= \boldsymbol{ (2x-5)(6x-7) }.
 \end{align*}`
 
-<hr style="visibility: hidden" />
+{{% hr %}}
 
 {{% enum d %}} Did you notice $(x^2-1)^2 = (x+1)^2(x-1)^2$? We will substitute $(x+1)^2=A$ and $(x-1)^2=B$ to continue!
 {{% mn q5d tips %}}
@@ -635,7 +635,7 @@ $$`
 &= \boldsymbol{ (a+3b-2)(a-b-1) .}
 \end{align*}`
 
-<hr style="visibility: hidden" />
+{{% hr %}}
 
 {{% enum c %}} We will [rearrange the polynomial](../advanced-factorising-1/#rearranging-the-polynomials) in terms of $x$ first.
 {{% mn q9c tips %}}
@@ -654,7 +654,7 @@ $$`
 &= \boldsymbol{ (3x-y+2)(x+2y+3) }.
 \end{align*}`
 
-<hr style="visibility: hidden" />
+{{% hr %}}
 
 {{% enum d %}} The numbers are a bit too big to work with comfortably. Thankfully some of them are divisible by $3$, so we factor it out first{{% sn div3 %}}A number is divisible by $3$ if the sum of all digits is divisible by $3$. For example, $252$ is divisible by $3$ ($252 = 3\times 84$) because $2+5+2=9$ is divisible by $3$.{{% /sn %}}. We also know that there is no $y$ in the coefficient of $x$, which means it is easier to apply the cross-multiplication method to $y$ first.
 {{% mn q9d tips %}}
@@ -673,7 +673,7 @@ $$`
 &= \boldsymbol{ (4x+6y-9)(6x-9y+10) }.
 \end{align*}`
 
-<hr style="visibility: hidden" />
+{{% hr %}}
 
 {{% /details %}}
 
@@ -772,7 +772,7 @@ $$`
 &= \boldsymbol{ (xy + yz + zx)(x+y+z) }.
 \end{align*}`
 
-<hr style="visibility: hidden" />
+{{% hr %}}
 
 {{% enum b %}} The polynomial is only linear in $b$, so we will rearrange the polynomial in terms of $b$.
 {{% mn q11b tips %}}
@@ -788,7 +788,7 @@ $$`
 &= \boldsymbol{ (3a-4c)(2a+c)(b-c) }. \tag{2}
 \end{align*}`
 
-<hr style="visibility: hidden" />
+{{% hr %}}
 
 {{% enum c %}} Once we expand the brackets, we can find two perfect squares! Note we split $-4ab$ into $-2ab-2ab$ in order to do that.
 

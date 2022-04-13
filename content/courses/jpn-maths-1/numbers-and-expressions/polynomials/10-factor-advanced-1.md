@@ -489,6 +489,6 @@ From here, we will substitute $x+y$ back and see if we can factorise any further
 &= \boldsymbol{ (x+2z)(3x+2y-z) .}
 \end{align*}`
 
-<hr style="visibility: hidden" />
+{{% hr %}}
 
 {{% /details %}}

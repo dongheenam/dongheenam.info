@@ -347,7 +347,7 @@ Then, adding $\tcirc{1}$ with $-\tcirc{2}$ gives
   \iff & \boldsymbol{ -5 \lt x-y \lt -3 }.
 \end{align*}`
 
-$\text{b.} \quad$ Dividing $\tcirc{1}$ by $5$, we get
+ Dividing $\tcirc{1}$ by $5$, we get
 
 `\begin{align*}
   & \frac{2.5}{5} \le \frac{x}{5} \lt \frac{3.5}{5} \\
