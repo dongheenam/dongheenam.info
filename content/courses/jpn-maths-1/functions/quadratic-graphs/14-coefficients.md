@@ -37,22 +37,28 @@ If we know the coefficient of $x^2$, we can find the shape of the parabola.
 
 {{% hbox %}}
 
-{{% note Example %}} Find the value of positive real number $\ell$, when the function $y = x^2 - 2\ell x + \ell^2 - 2\ell$ $(0\le x \le 2)$ has minimum $11$.
+{{% note Example %}}
+Find the value of positive real number $\ell$, when the function $y = x^2 - 2\ell x + \ell^2 - 2\ell$ $(0\le x \le 2)$ has minimum 11.
 
-{{% note Solution %}} To find the position of the vertex in terms of $\ell$, we first convert the function to vertex form:
+{{% note Solution %}}
+To find the position of the vertex in terms of $\ell$, we first convert the function to vertex form:
 `\begin{align*}
   y &= x^2 - 2\ell x + \ell^2 - 2\ell \\
   &= (x - \ell)^2 - 2\ell.
 \end{align*}`
+
 Thus the vertex is $(\ell, -2\ell).$ Whether the domain includes the vertex or not is important in finding the minimum,{{% sn %}}See [this lesson](../extrema-1/#restricted-domain) for more discussion on the relationship of the location of vertex and extrema.{{% /sn %}} so we will divide the cases.
 
-$\tcirc{1} \quad$ When $0 < \ell \le 2,$ the vertex is inside the domain, and hence it is the minimum point. Thus
-\`\begin{align*}
+{{% ol i %}}
+{{% li %}}
+When $0 < \ell \le 2,$ the vertex is inside the domain, and hence it is the minimum point. Thus
+`\begin{align*}
   -2\ell = 11 \iff \ell = -\dfrac{11}{2}.
 \end{align*}`
 This violates the assumption that $\ell$ is a positive number.
-
-$\tcirc{2} \quad$ When $\ell > 2,$ the vertex is outside the domain. The closest value of $x$ to the vertex inside the domain is $x=2$, and hence the minimum value is $$ 2^2 - 2\ell \cdot 2 + \ell^2 - 2\ell = \ell^2 -6\ell + 4.$$ Then
+{{% /li %}}
+{{% li %}}
+When $\ell > 2,$ the vertex is outside the domain. The closest value of $x$ to the vertex inside the domain is $x=2$, and hence the minimum value is $$ 2^2 - 2\ell \cdot 2 + \ell^2 - 2\ell = \ell^2 -6\ell + 4.$$ Then
 `\begin{align*}
   & \ell^2 -6\ell + 4 = 11 \\
   & \iff \ell^2 - 6\ell - 7 = 0 \\
@@ -60,6 +66,8 @@ $\tcirc{2} \quad$ When $\ell > 2,$ the vertex is outside the domain. The closest
   & \iff \ell = 7,~-1.
 \end{align*}`
 Since $\ell=-1$ violates the assumption, the value of $\ell$ that satisfies the condition is $\boldsymbol{ 7 }.$
+{{% /li %}}
+{{% /ol %}}
 
 {{% mn 62 %}}Extremum points of $y = x^2 - 2\ell x + \ell^2 - 2\ell$. Drag the vertex to change the value of $\ell$.{{% /mn %}}
 {{% desmos id="ex1" style="height: 450px; margin-bottom: 0.5rem" options="{keypad: false, expressions: false}" %}}
@@ -105,25 +113,44 @@ If the coefficient of $x^2$ is left unknown, the problem becomes trickier becaus
 
 {{% hbox %}}
 
-{{% note Example %}} Let $f(x) = ax^2 - 2ax + b.$ When the maximum of $f(x),$ within its domain $0 \le x \le 3,$ is 9 and minimum is 1, find the values of $a$ and $b$.
+{{% note Example %}}
+Let $f(x) = ax^2 - 2ax + b.$ When the maximum of $f(x),$ within its domain $0 \le x \le 3,$ is 9 and minimum is 1, find the values of $a$ and $b$.
 
-{{% note Solution %}} The function in vertex form is {{% mn 110 tips %}}$f(x)$ $=a(x^2 - 2x) + b$ <br>$=a\left\[ (x-1)^2 - 1 \right\] + b$ <br>$=a(x-1)^2 - a + b.${{% /mn %}}$$f(x) = a(x-1)^2 - a + b.$$ Note the vertex $(1, b-a)$ is included in the domain. Let's now consider the three possible options for the sign of $a$.
+{{% note Solution %}}
+The function in vertex form is
+{{% mn 110 tips %}}
 
-$\tcirc{1}\quad$ When $a=0$, $f(x)=b$, so the function becomes constant. The maximum and minimum values should be different, so it does not satisfy the condition.
+$f(x) \\\\\\\\
+=a(x^2 - 2x) + b \\\\\\\\
+=a\left[ (x-1)^2 - 1 \right] + b \\\\\\\\
+=a(x-1)^2 - a + b.$
+{{% /mn %}}
+$$f(x) = a(x-1)^2 - a + b.$$
 
-$\tcirc{2}\quad$ When $a>0$, $y=f(x)$ is concave up. This makes the vertex the minimum point, and $x=3$ the maximum point. Because the maximum value is 9 and the minimum value is 1,
+Note the vertex $(1, b-a)$ is included in the domain. Let's now consider the three possible options for the sign of $a$.
+
+{{% ol i %}}
+{{% li %}}
+When $a=0$, $f(x)=b$, so the function becomes constant. The maximum and minimum values should be different, so it does not satisfy the condition.
+{{% /li %}}
+{{% li %}}
+When $a>0$, $y=f(x)$ is concave up. This makes the vertex the minimum point, and $x=3$ the maximum point. Because the maximum value is 9 and the minimum value is 1,
 `\begin{align*}
   f(1) &= -a+b = 1, \\
   f(3) &= a \cdot 3^2 - 2a \cdot 3 + b = 3a + b = 9.
 \end{align*}`
-Solving the equations gives $a = 2,$ $b=3$. This solution satisfies our assumption that $a>0$.
 
-$\tcirc{3}\quad$ When $a<0$, $y=f(x)$ is concave down, This makes the vertex the maximum point, and $x=3$ the minimum point. Because the maximum value is 9 and the minimum value is 1,
+Solving the equations gives $a = 2,$ $b=3$. This solution satisfies our assumption that $a>0$.
+{{% /li %}}
+{{% li %}}
+When $a<0$, $y=f(x)$ is concave down, This makes the vertex the maximum point, and $x=3$ the minimum point. Because the maximum value is 9 and the minimum value is 1,
 `\begin{align*}
   f(1) &= -a+b = 9, \\
   f(3) &= 3a + b = 1.
 \end{align*}`
 Solving the equations gives $a=-2,$ $b=7$. This solution satisfies our assumption that $a<0$.
+{{% /li %}}
+{{% /ol %}}
 
 {{< figure src="courses/jpn-maths-1/functions/quadratic-graphs/extapp-ex1.png" caption="Extrema of $f(x) = ax^2 - 2ax + b$ when $a>0$ (left) and when $a<0$ (right)." >}}
 
@@ -135,20 +162,26 @@ Therefore, from the three conditions above, the possible solutions are $\boldsym
 ## Practice Questions 
 
 1. When the maximum value of the function $y = -2x^2 + 8x + k,$ $1\le x \le 4$, is 4, find $k$.
-2. The maximum of $y = x^2-x + k + 1$ $(-1\le x \le 1)$ is 6. What is the value of $k$?
 
 {{% details title="Answer" %}}
-1. $k=-4$
-2. $k=3$
+1. -4
 
 {{% note Solution %}} 
-
-1. The function in vertex form is $$y = -2(x-2)^2 + k + 8.$$ Thus, the vertex is included in the domain, $1 \le x \le 4$. Because the parabola is concave down, the maximum point is $(2, k+8).$ Therefore,
+The function in vertex form is $$y = -2(x-2)^2 + k + 8.$$ Thus, the vertex is included in the domain, $1 \le x \le 4$. Because the parabola is concave down, the maximum point is $(2, k+8).$ Therefore,
 `\begin{align*}
   k + 8 = 4 \iff k = -4.
 \end{align*}`
 
-2. The axis of symmetry is $x = -\dfrac{b}{2a} = \dfrac{1}{2}.$ Because the graph is concave up, the maximum occurs at the farthest point from the axis of symmetry, which is $x = -1.$ Thus, from the maximum value of 6,
+{{% /details %}}
+
+2. The maximum of $y = x^2-x + k + 1$ $(-1\le x \le 1)$ is 6. What is the value of $k$?
+
+{{% details title="Answer" %}}
+
+2. 3
+
+{{% note Solution %}} 
+The axis of symmetry is $x = -\dfrac{b}{2a} = \dfrac{1}{2}.$ Because the graph is concave up, the maximum occurs at the farthest point from the axis of symmetry, which is $x = -1.$ Thus, from the maximum value of 6,
 `\begin{align*}
   & (-1)^2 - (-1) + k + 1 = 6 \\
   & \iff k + 3 = 6 \\
@@ -163,14 +196,17 @@ Therefore, from the three conditions above, the possible solutions are $\boldsym
 
 3. $t=-2-\sqrt{2},~-\dfrac{1}{2}$
 
-{{% note Solution %}} Because $(x-t)^2 = x^2 - 2tx + t^2,$
+{{% note Solution %}}
+Because $(x-t)^2 = x^2 - 2tx + t^2,$
 `\begin{align*}
   y &= -x^2 + 2tx - t^2 -2t-1 \\
   &= -(x-t)^2 - 2t - 1.
 \end{align*}`
-The vertex of the quadratic graph is $(t, -2t-1).$ Because the graph is concave down, the vertex, or the point closest to the vertex becomes the maximum. We have to now think about three different possibilities: $\tcirc{1}$ when the vertex is on the left of the domain, $\tcirc{2}$ when the vertex is in the domain, and $\tcirc{3}$ when the vertex is on the right of the domain.
+The vertex of the quadratic graph is $(t, -2t-1).$ Because the graph is concave down, the vertex, or the point closest to the vertex becomes the maximum. We have to now think about three different possibilities: {{% enum i %}} when the vertex is on the left of the domain, {{% enum ii %}} when the vertex is in the domain, and {{% enum iii %}} when the vertex is on the right of the domain.
 
-$\tcirc{1}\quad$ When $t <-1,$ the point closest to the vertex is $x=-1.$ Because the maximum value is 0,
+{{% ol i %}}
+{{% li %}}
+When $t <-1,$ the point closest to the vertex is $x=-1.$ Because the maximum value is 0,
 {{% mn q3 tips %}}
 (1) Here we used the quadratic formula $x = \dfrac{-b\pm\sqrt{b^2-4ac}}{2a}.$
 {{% /mn %}}
@@ -182,19 +218,23 @@ $\tcirc{1}\quad$ When $t <-1,$ the point closest to the vertex is $x=-1.$ Becaus
   & \iff t= -2 \pm \sqrt{2}. \tag{1}
 \end{align*}`
 $-2+\sqrt{2}$ is greater than $-1$, so we only choose $t=-2-\sqrt{2}.$
-
-$\tcirc{2}\quad$ When $ -1 \le t \le 0,$ the maximum value is equal to the y-coordinate of the vertex, so
+{{% /li %}}
+{{% li %}}
+When $ -1 \le t \le 0,$ the maximum value is equal to the y-coordinate of the vertex, so
 `\begin{align*}
   -2t-1 = 0 \iff t = -\dfrac{1}{2}. 
 \end{align*}`
-
-$\tcirc{3}\quad$ When $t>0,$ the point closest to the vertex is $x=0.$ Because the maximum value is 0,
+{{% /li %}}
+{{% li %}}
+When $t>0,$ the point closest to the vertex is $x=0.$ Because the maximum value is 0,
 `\begin{align*}
   & - t^2 - 2t - 1 = 0 \\
   & \iff -(t+1)^2 = 0 \\
   & \iff t=-1.
 \end{align*}`
 This value of $t$ does not satisfy our assumption $t>0$.
+{{% /li %}}
+{{% /ol %}}
 
 From the above three conditions, the values of $t$ that make the maximum equal to 0 are $\boldsymbol{ t=-2-\sqrt{2},~-\dfrac{1}{2}}.$
 
@@ -235,7 +275,6 @@ From the above three conditions, the values of $t$ that make the maximum equal t
 
 {{% /details %}}
 
-
 4. The function $g(x) = ax^2 + 4ax + b$ has domain $-1 \le x \le 2$. When the minimum of $g$ is 1 and the maximum is 6, find the possible values of $a$ and $b$.
 
 {{% details title="Answer" %}}
@@ -245,26 +284,34 @@ From the above three conditions, the values of $t$ that make the maximum equal t
 {{% note Solution %}}
 `\begin{align*}
   g(x) & = a (x^2 + 4x) + b \\
-  &= a\left\\{ (x+2)^2 - 4 \right\\} + b \\
+  &= a\left\{ (x+2)^2 - 4 \right\} + b \\
   &= a(x+2)^2 - 4a +b,
 \end{align*}`
 so the vertex of $g(x)$ is $(-2, -4a + b).$ Because the vertex is outside the domain, the candidates for minimum and maximum are $x=-1$ and $x=2$.
 
-$\tcirc{1}\quad$ When $a>0,$ the point closest to the vertex is the minimum. The minimum occurs at $x=-1$ and its value is $$ g(-1) = a(-1)^2 +4a(-1) + b = -3a + b.$$ The maximum occurs at $x=2$ and its value is $$ g(2) = a\cdot 2^2 + 4a \cdot 2 + b = 12a + b. $$
+{{% ol i %}}
+{{% li %}}
+When $a>0,$ the point closest to the vertex is the minimum. The minimum occurs at $x=-1$ and its value is $$ g(-1) = a(-1)^2 +4a(-1) + b = -3a + b.$$ The maximum occurs at $x=2$ and its value is $$ g(2) = a\cdot 2^2 + 4a \cdot 2 + b = 12a + b. $$
 Thus, we have the following simultaneous equations:
-\begin{cases}
+`$$\begin{cases}
   -3a + b &= 1 \\
   12a + b &= 6
-\end{cases}
+\end{cases}$$`
 and solving them gives $a = \dfrac{1}{3}$ and $b = 2.$ This solution satisfies our assumption of $a>0.$
-
-$\tcirc{2}\quad$ When $a<0,$ the point closest to the vertex is the maximum. $g(-1) = -3a+b$ is the maximum value and $g(2) = 12a + b$ is the minimum value. Thus, we have the following simultaneous equations:
-\begin{cases}
+{{% /li %}}
+{{% li %}}
+When $a<0,$ the point closest to the vertex is the maximum. $g(-1) = -3a+b$ is the maximum value and $g(2) = 12a + b$ is the minimum value. Thus, we have the following simultaneous equations:
+`$$\begin{cases}
   -3a + b &= 6 \\
   12a + b &= 1
-\end{cases}
+\end{cases}$$`
 Solving them gives $a = -\dfrac{1}{3}$ and $b = 5.$ This solution satisfies our assumption of $a<0.$
+{{% /li %}}
+{{% li %}}
+When $a=0,$ $g(x) = b.$ This function can only have a single value, so it cannot satisfy the condition.
+{{% /li %}}
+{{% /ol %}}
 
-$\tcirc{3}\quad$ When $a=0,$ $g(x) = b.$ This function can only have a single value, so it cannot satisfy the condition.
+Therefore, the solutions are $\boldsymbol{ (a,b) = \left( \dfrac{1}{3}, 2 \right), ~ \left( -\dfrac{1}{3}, 5 \right) }$.
 
 {{% /details %}}

@@ -1,0 +1,4 @@
+{{- $styles := dict "1" "decimal" "a" "lower-alpha" "A" "upper-alpha" "i" "lower-roman" "I" "upper-roman" -}}
+<ol class="custom-ol"{{ with .Get 0 }} style="list-style-type:{{ index $styles (string .) }};"{{ end }}{{ with .Get 1 }} start="{{ . }}"{{ end }}>
+    {{ .Inner }}
+</ol>

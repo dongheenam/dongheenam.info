@@ -33,7 +33,7 @@ We [looked at some examples](../extrema-2/#varying-coefficients) how the minimum
 
 ## Function of Extremum Values
 
-Suppose a quadratic function $f(x)$ with a free parameter $t$.{{% sn 36 %}}Strictly speaking, this makes $f$ a function of *both* $x$ and $t$, or $f(x, t)$. However, this treatment makes the problem much more complicated, so we will treat it as just a function of $x$ for now.{{% /sn %}} Below is one example.
+Suppose a quadratic function $f(x)$ with a free parameter $t$.{{% sn 36 %}}Strictly speaking, this makes $f$ a function of ***both*** $x$ and $t$, or $f(x, t)$. However, this treatment makes the problem much more complicated, so we will treat it as just a function of $x$ for now.{{% /sn %}} Below is one example.
 
 - $f(x) = x^2 + t.$
 
@@ -57,20 +57,28 @@ How is this going to be useful? Here is one application: a function may have max
 \end{align*}`
 hence the vertex of $y=f(x)$ is $(a, -a^2+2a).$ The vertex can be inside the domain $0\le x \le 2$ or outside.
 
-$\tcirc{1}\quad$ When $0< a \le 2,$ the vertex is inside the domain. Because $y=f(x)$ is concave up, the vertex becomes the minimum. Hence the minimum value is $$f(a) = -a^2 + 2a.$$
+{{% enum-grid "$\tcirc{1}$" %}}
+When $0< a \le 2,$ the vertex is inside the domain. Because $y=f(x)$ is concave up, the vertex becomes the minimum.
 
-$\tcirc{2}\quad$ When $a > 2,$ the vertex is on the right of the domain. The minimum occurs at the nearest point to the vertex. Hence the minimum value is $$f(2) = 2^2 - 2a\cdot 2 + 2a = -2a + 4.$$
+Hence the minimum value is $$f(a) = -a^2 + 2a.$$
+{{% /enum-grid %}}
+{{% enum-grid "$\tcirc{2}$" %}}
+When $a > 2,$ the vertex is on the right of the domain. The minimum occurs at the nearest point to the vertex.
+
+Hence the minimum value is $$f(2) = 2^2 - 2a\cdot 2 + 2a = -2a + 4.$$
+{{% /enum-grid %}}
 
 From above, we can define $\min_f (a)$ by:
-$$ \textstyle \min_f (a) = \begin{cases} -a^2 + 2a & \text{if } 0 < a \le 2, \\ -2a + 4 & \text{if } a > 2. \end{cases} $$
+`$$ \textstyle \min_f (a) = \begin{cases} -a^2 + 2a & \text{if } 0 < a \le 2, \\ -2a + 4 & \text{if } a > 2. \end{cases} $$`
 
 So what is the maximum of this function? We know it should not happen beyond $a=2$ because $-2a+4$ decreases as $a$ increases. Then the maximum of $\min_f(a)$ is equal to the maximum of $-a^2 + 2a$ at $0 < a \le 2.$ This is a concave down parabola, so the maximum is the vertex.
 `\begin{align*}
   -a^2 + 2a &= -(a^2 - 2a) \\
   &= -(a^2 - 2a \hl{+ 1 -1} ) \\
-  &= -\left\\{(a-1)^2 - 1 \right\\} \\
+  &= -\left\{(a-1)^2 - 1 \right\} \\
   &= -(a-1)^2 + 1,
 \end{align*}`
+
 The vertex is $(1,1),$ so the maximum is $\boldsymbol{ 1 }$ at $\boldsymbol{ a=1 }.$
 
 {{% mn 76 %}}Minimum points of $f(x) = x^2 - 2ax + 2a$. Drag the vertex to change the value of $a$. Note where the minimum value is the largest. {{% /mn %}}
@@ -118,25 +126,35 @@ The vertex is $(1,1),$ so the maximum is $\boldsymbol{ 1 }$ at $\boldsymbol{ a=1
 
 {{% details title="Answer" %}}
 
-1. $-5$ at $-1 \le a \le 3$
+1. -5 at $-1 \le a \le 3$
 
 {{% note Solution %}} From
 `\begin{align*}
   f(x) &= x^2 - 6x + 9 - 9 + 4 \\
   &= (x-3)^2 - 5,
 \end{align*}`
-the vertex of $y=f(x)$ is $(3, -5).$ Because the graph is concave up, the vertex or the point closest to the vertex becomes the minimum. We can think of the following three possibilities:
+the vertex of $y=f(x)$ is $(3, -5).$
 
-$\tcirc{1}\quad$ When $a+4<3$ or $a<-1$, the vertex is on the left of the domain. The minimum is $$ f(a+4) = (a+1)^2 - 5 = a^2 + 2a - 4. $$
+Because the graph is concave up, the vertex or the point closest to the vertex becomes the minimum. We can think of the following three possibilities:
 
-$\tcirc{2}\quad$ When $a \le 3 \le a+4$ or $-1 \le a \le 3$, the vertex is inside the domain. The minimum is $$ f(3) = -5. $$
-
-$\tcirc{3}\quad$ When $a > 3$, the vertex is on the right of the domain. The minimum is $$ f(a) = a^2 - 6a + 4. $$
+{{% enum-grid "$\tcirc{1}$" %}}
+When $a+4<3$ or $a<-1$, the vertex is on the left of the domain. The minimum is $$ f(a+4) = (a+1)^2 - 5 = a^2 + 2a - 4. $$
+{{% /enum-grid %}}
+{{% enum-grid "$\tcirc{2}$" %}}
+When $a \le 3 \le a+4$ or $-1 \le a \le 3$, the vertex is inside the domain. The minimum is $$ f(3) = -5. $$
+{{% /enum-grid %}}
+{{% enum-grid "$\tcirc{3}$" %}}
+When $a > 3$, the vertex is on the right of the domain. The minimum is $$ f(a) = a^2 - 6a + 4. $$
+{{% /enum-grid %}}
 
 Therefore, we find
-$$ \textstyle \min_g(a) = \begin{cases} a^2 + 2a - 4 & \text{if } a < -1, \\ -5 & \text{if } -1 \le a \le 3, \\ a^2 - 6a + 4 & \text{if } a > 3. \end{cases} $$
+`$$ \textstyle \min_g(a) = \begin{cases} a^2 + 2a - 4 & \text{if } a < -1, \\ -5 & \text{if } -1 \le a \le 3, \\ a^2 - 6a + 4 & \text{if } a > 3. \end{cases} $$`
 
-Now, let's think about what the minimum of this function would be. Because $a^2 + 2a - 4 = (a+1)^2 - 5$ and $a^2 - 6a + 4 = (a-3)^2 - 5,$ the value of $\min_g(a)$ cannot be smaller than -5. Therefore, the minimum of $\min_g(a)$ is $\boldsymbol{ -5 },$ and it occurs at $\boldsymbol{ -1 \le a \le 3 }.$
+Now, let's think about what the minimum of this function would be.
+
+Because $a^2 + 2a - 4 = (a+1)^2 - 5$ and $a^2 - 6a + 4 = (a-3)^2 - 5,$ the value of $\min_g(a)$ cannot be smaller than -5. 
+
+Therefore, the minimum of $\min_g(a)$ is $\boldsymbol{ -5 },$ and it occurs at $\boldsymbol{ -1 \le a \le 3 }.$
 
 {{% mn 141 %}}Minimum points of $g(x) = x^2 - 6x + 4$ where $a \le x \le a+4$. Drag the black dot to change the value of $a$. Note where the minimum value is the smallest. {{% /mn %}}
 {{% desmos id="q1" style="height: 450px; margin-bottom: 0.5rem" options="{keypad: false, expressions: false}" %}}
