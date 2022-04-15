@@ -8,6 +8,7 @@ lastMod: 2021-01-03 16:33:26.443 +1100
 toc: true
 math: true
 draft: false
+code: true
 highlight: true
 
 tags:

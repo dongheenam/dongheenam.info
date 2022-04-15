@@ -1,5 +1,5 @@
 ---
-title: "Determining Quadratic Functions in Vertex Form"
+title: "Determining Quadratic Functions using the Vertex Form"
 slug: determining-1
 description: "Finding the algebraic expression of a parabola using its vertex or the axis of symmetry."
 
