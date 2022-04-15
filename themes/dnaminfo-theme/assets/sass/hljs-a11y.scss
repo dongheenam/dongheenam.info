@@ -2,8 +2,6 @@
     Color theme: a11y-syntax-highlighting 
     https://github.com/ericwbailey/a11y-syntax-highlighting
 */
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400&display=swap");
-
 html {
   &.light-theme {
     --hljs-bg: #fefefe;
@@ -28,11 +26,6 @@ html {
     --hljs-title: #00e0e0;
     --hljs-keyword: #dcc6e0;
   }
-}
-
-code {
-  font-family: "Ubuntu Mono", monospace !important;
-  font-size: 1em !important;
 }
 
 pre code {
