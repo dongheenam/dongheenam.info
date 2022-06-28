@@ -6,12 +6,6 @@
 <details {{ if $is_open }}open{{ end }}>
   {{ with $summary }}<summary>{{ . }}</summary>{{ end }}
 <div class="details-content">
-    {{- $content := markdownify .Inner -}}
-    {{- $hasBlock := or (in $content "<p>") (in $content "<li>") -}}
-    {{ if $hasBlock }}
-{{- $content -}}
-      {{ else }}
-<p>{{ $content }}</p>
-    {{ end }}
+  {{- .Page.RenderString (dict "display" "block") .Inner -}}
 </div>
 </details>
