@@ -81,17 +81,6 @@ html {
   font-weight: 700;
 }
 
-pre > code.language-filename {
-  color: var(--primary-color);
-  font-style: italic;
-  text-decoration: underline;
-}
-
-pre code.hljs {
-  display: block;
-  overflow-x: auto;
-  padding: 1em;
-}
 code.hljs {
   padding: 3px 5px;
 }

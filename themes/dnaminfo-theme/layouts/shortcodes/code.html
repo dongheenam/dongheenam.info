@@ -1,0 +1,13 @@
+{{/* Usage: 
+    {{% code file="dict/test.py" %}} 
+    ```python
+    print("hello, world!")
+    ```
+    {{% /code %}} 
+*/}}
+
+<div class="code-block">
+{{ with .Get "filename" }}<code class="code-filename">> {{ . }}</code>{{ end }}
+{{ .Inner }}
+</div>
+

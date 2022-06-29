@@ -228,8 +228,12 @@
   }
 
   pre {
+    display: block;
+    margin: 1.4rem 0;
     overflow-x: auto;
     overflow-y: hidden;
+
+    background: var(--details-background);
 
     & > code {
       color: inherit;
@@ -239,6 +243,28 @@
     &:hover,
     &:focus {
       min-width: min-content;
+    }
+  }
+
+  .code-block {
+    position: relative;
+
+    .code-filename {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      padding: 0 0.5rem;
+      font-style: italic;
+
+      transform: translate(0px, -100%);
+
+      border: 2px solid var(--hljs-color);
+      border-bottom: none;
+    }
+
+    .code-filename + pre {
+      margin-top: 2.8rem;
     }
   }
 

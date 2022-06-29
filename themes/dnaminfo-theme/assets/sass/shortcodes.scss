@@ -123,7 +123,7 @@ details {
     cursor: pointer;
   }
 
-  div.details-content {
+  div.details-box {
     background-color: var(--details-background);
     position: relative;
     padding: 1px 0;
@@ -139,9 +139,8 @@ details {
       z-index: -1;
     }
 
-    & > ol:first-child,
-    & > ul:first-child {
-      margin-top: 1.4rem;
+    div.details-content {
+      margin: 1.4rem 0;
     }
 
     code {

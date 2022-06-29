@@ -1,11 +1,16 @@
+{{/* Reference:
+  https://www.joshwcomeau.com/css/rules-of-margin-collapse/
+*/}}
 {{/* Usage: 
-    {{% details title="title" %}} Hidden content {{% /details %}} 
+  {{% details title="title" %}} Hidden content {{% /details %}} 
 */}}
 {{- $summary := (.Get "title") | default "" -}}
 {{- $is_open := eq (.Get "open") "true" | default "false" -}}
 <details {{ if $is_open }}open{{ end }}>
   {{ with $summary }}<summary>{{ . }}</summary>{{ end }}
+<div class="details-box">
 <div class="details-content">
   {{- .Page.RenderString (dict "display" "block") .Inner -}}
+</div>
 </div>
 </details>

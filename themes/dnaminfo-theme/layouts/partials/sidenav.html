@@ -9,35 +9,21 @@
 {{ end -}}
 {{ if or $toc_required $menu_required }}
 <aside class="sidenav">
-    {{ if $toc_required }}
-    <div class="toc-title toc-title--expanded">Table of Contents</div>
-    <div class="toc toc--expanded">
-      {{ .TableOfContents }}
-    </div>
-    {{ end }}
-    {{ if and $toc_required $menu_required }}<hr>{{ end }}
-    {{ if $menu_required }}
-    <div class="sidenav-title">Lessons</div>
+  {{ if $menu_required }}{{/* start of menu */}}
+  <div class="sidenav-title">Lessons</div>
     <ul class="sidenav-menu">
-      {{ range (index .Site.Menus $menu_id) }}
-      <li{{ if $current_page.IsMenuCurrent $menu_id . }} class="current"{{ end }}>
-        {{- if .URL -}}
-          <a href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
-        {{- else -}}
-          {{ .Name }}
-        {{- end -}}
-      </li>
-      {{- if and .HasChildren (or ($current_page.IsMenuCurrent $menu_id . ) ($current_page.HasMenuCurrent $menu_id . )) -}}
-      <ul>
-      {{- range .Children -}}
-        <li{{ if $current_page.IsMenuCurrent $menu_id . }} class="current"{{ end }}>
-          <a href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
-        </li>
-      {{- end -}}
-      </ul>
-      {{- end -}}
-      {{- end }}
+    {{ partial "menu-item" (dict 
+        "menu" $menu_id
+        "list" (index .Site.Menus $menu_id)
+        "current" $current_page) }}
     </ul>
-    {{ end }}
-  </aside>
-  {{ end }}
+  {{ end }}{{/* end of menu */}}
+  {{ if and $toc_required $menu_required }}<hr>{{ end }}
+  {{ if $toc_required }}{{/* start of toc */}}
+  <div class="toc-title toc-title--expanded">Table of Contents</div>
+  <div class="toc toc--expanded">
+    {{ .TableOfContents }}
+  </div>
+  {{ end }}{{/* end of toc */}}
+</aside>
+{{ end }}
