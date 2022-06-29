@@ -2,7 +2,8 @@
 Title: Inequalities
 
 menu:
-  math1-numbers:
+  math1:
+    parent: Numbers and Expressions
     name: Linear Inequalities
     weight: 30
 

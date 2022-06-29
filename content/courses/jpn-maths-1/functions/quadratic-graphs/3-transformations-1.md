@@ -16,7 +16,7 @@ tags:
   - transformation
 
 menu:
-  math1-func:
+  math1:
     name: Translations
     parent: Quadratic Graphs
     weight: 13

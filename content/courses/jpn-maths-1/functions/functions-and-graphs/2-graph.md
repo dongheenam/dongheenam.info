@@ -19,7 +19,7 @@ tags:
   
 
 menu:
-  math1-func:
+  math1:
     name: Graph of Linear Function
     parent: Functions and Graphs
     weight: 12

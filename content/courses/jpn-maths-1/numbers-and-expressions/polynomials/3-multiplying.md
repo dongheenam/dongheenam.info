@@ -19,7 +19,7 @@ tags:
   - distributive law
 
 menu:
-  math1-numbers:
+  math1:
     parent: Polynomials
     name: Multiplying
     weight: 13

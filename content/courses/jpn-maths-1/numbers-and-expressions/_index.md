@@ -15,12 +15,9 @@ menu:
   math1:
     name: Numbers and Expressions
     parent: Japanese Maths 1
-    weight: 11
-  math1-numbers:
-    name: 📙 Numbers and Expressions
     weight: 10
 
-weight: 11
+weight: 10
 ---
 
 ## List of Topics

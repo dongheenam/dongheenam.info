@@ -16,7 +16,7 @@ tags:
   - absolute value
 
 menu:
-  math1-numbers:
+  math1:
     parent: Real Numbers
     name: Absolute Values
     weight: 12

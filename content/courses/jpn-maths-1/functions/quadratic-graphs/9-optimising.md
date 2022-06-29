@@ -15,7 +15,7 @@ tags:
   - minimum and maximum
 
 menu:
-  math1-func:
+  math1:
     name: Optimisations
     parent: Quadratic Graphs
     weight: 19

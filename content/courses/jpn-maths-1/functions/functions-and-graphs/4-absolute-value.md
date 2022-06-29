@@ -16,7 +16,7 @@ tags:
   - absolute value
 
 menu:
-  math1-func:
+  math1:
     name: Graphing with Absolute Values
     parent: Functions and Graphs
     weight: 14

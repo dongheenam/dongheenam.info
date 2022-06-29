@@ -16,7 +16,7 @@ tags:
   - transformation
 
 menu:
-  math1-func:
+  math1:
     name: "✏️ Review 1"
     parent: Quadratic Graphs
     weight: 15

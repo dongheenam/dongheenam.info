@@ -19,7 +19,7 @@ tags:
   - algebra
 
 menu:
-  math1-numbers:
+  math1:
     parent: Real Numbers
     name: Expressions with Roots 2
     weight: 17

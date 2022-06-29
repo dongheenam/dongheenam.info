@@ -17,9 +17,9 @@ tags:
   - polynomial identity
 
 menu:
-  math1-numbers:
+  math1:
     parent: Polynomials
-    name: "Expanding with Identities"
+    name: Expanding with Identities
     weight: 14
 
 weight: 14

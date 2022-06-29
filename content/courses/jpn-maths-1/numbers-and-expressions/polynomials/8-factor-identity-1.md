@@ -18,7 +18,7 @@ tags:
   - polynomial identity
 
 menu:
-  math1-numbers:
+  math1:
     parent: Polynomials
     name: Factorising with Identities 1
     weight: 18

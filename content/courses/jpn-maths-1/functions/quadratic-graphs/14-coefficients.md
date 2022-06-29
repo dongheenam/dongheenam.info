@@ -17,7 +17,7 @@ tags:
   - minimum and maximum
 
 menu:
-  math1-func:
+  math1:
     name: Finding Functions from Extrema
     parent: Quadratic Graphs
     weight: 24

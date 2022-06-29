@@ -16,7 +16,7 @@ tags:
   - algebra
 
 menu:
-  math1-numbers:
+  math1:
     parent: Linear Inequalities
     name: Properties of Inequalities
     weight: 11

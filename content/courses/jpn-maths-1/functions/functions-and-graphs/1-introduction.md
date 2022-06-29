@@ -18,7 +18,7 @@ tags:
   - AC Methods
 
 menu:
-  math1-func:
+  math1:
     name: Functions, Domain and Range
     parent: Functions and Graphs
     weight: 11

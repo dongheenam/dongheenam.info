@@ -15,7 +15,7 @@ tags:
   - quadratic function
   
 menu:
-  math1-func:
+  math1:
     name: Graphing General Forms
     parent: Quadratic Graphs
     weight: 12

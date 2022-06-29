@@ -15,12 +15,9 @@ menu:
   math1:
     name: Functions
     parent: Japanese Maths 1
-    weight: 13
-  math1-func:
-    name: 📙 Functions
-    weight: 10
-
-weight: 13
+    weight: 20
+    
+weight: 10
 ---
 
 ## List of Topics

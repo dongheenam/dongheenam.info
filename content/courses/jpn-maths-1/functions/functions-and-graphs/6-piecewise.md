@@ -17,7 +17,7 @@ tags:
   - floor function
 
 menu:
-  math1-func:
+  math1:
     name: Graphing Piecewise Functions
     parent: Functions and Graphs
     weight: 16

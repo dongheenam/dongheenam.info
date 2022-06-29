@@ -23,6 +23,9 @@ ignoreFiles = [ "\\.tex$" ]
 # Goldmark Markup settings
 [markup]
   [markup.goldmark]
+    [markup.goldmark.parser.attribute]
+      block = false
+      title = false
     [markup.goldmark.renderer]
       hardWraps = false
       unsafe = true

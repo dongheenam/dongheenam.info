@@ -17,7 +17,7 @@ tags:
   - algebra
 
 menu:
-  math1-numbers:
+  math1:
     parent: Linear Inequalities
     name: Inequalities with Absolute Values
     weight: 17

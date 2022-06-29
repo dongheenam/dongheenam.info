@@ -17,7 +17,7 @@ tags:
   - factorisation
 
 menu:
-  math1-numbers:
+  math1:
     parent: Polynomials
     name: "✏️ Review 2"
     weight: 22

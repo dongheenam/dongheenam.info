@@ -18,7 +18,7 @@ tags:
   - fraction
 
 menu:
-  math1-numbers:
+  math1:
     parent: Real Numbers
     name: Removing Square Roots 2
     weight: 15

@@ -18,7 +18,7 @@ tags:
   - algebra
 
 menu:
-  math1-numbers:
+  math1:
     parent: Linear Inequalities
     name: ✏️ Review 4
     weight: 18

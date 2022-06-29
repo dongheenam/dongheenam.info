@@ -14,7 +14,7 @@ tags:
   - quadratic function
 
 menu:
-  math1-func:
+  math1:
     name: Determining Functions in Vertex Form
     parent: Quadratic Graphs
     weight: 22

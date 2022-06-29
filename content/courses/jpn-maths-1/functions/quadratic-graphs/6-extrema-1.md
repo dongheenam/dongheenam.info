@@ -16,7 +16,7 @@ tags:
   - minimum and maximum
 
 menu:
-  math1-func:
+  math1:
     name: Extrema of Quadratics 1
     parent: Quadratic Graphs
     weight: 16

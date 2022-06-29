@@ -17,7 +17,7 @@ tags:
   - inequality
 
 menu:
-  math1-func:
+  math1:
     name: Inequalities and Graphs
     parent: Functions and Graphs
     weight: 15

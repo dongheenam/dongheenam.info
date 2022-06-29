@@ -17,7 +17,7 @@ tags:
   - transformation
 
 menu:
-  math1-func:
+  math1:
     name: Transformations of Graph
     parent: Functions and Graphs
     weight: 13

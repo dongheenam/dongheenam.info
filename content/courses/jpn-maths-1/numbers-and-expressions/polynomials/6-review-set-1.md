@@ -16,7 +16,7 @@ tags:
   - polynomial
 
 menu:
-  math1-numbers:
+  math1:
     parent: Polynomials
     name: "✏️ Review 1"
     weight: 16

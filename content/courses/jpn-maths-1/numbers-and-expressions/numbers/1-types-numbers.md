@@ -17,7 +17,7 @@ tags:
   - decimal
 
 menu:
-  math1-numbers:
+  math1:
     parent: Real Numbers
     name: Types of Numbers
     weight: 11

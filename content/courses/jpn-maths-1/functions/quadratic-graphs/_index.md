@@ -2,7 +2,8 @@
 Title: Quadratic Graphs
 
 menu:
-  math1-func:
+  math1:
+    parent: Functions
     name: Quadratic Graphs
     weight: 30
 

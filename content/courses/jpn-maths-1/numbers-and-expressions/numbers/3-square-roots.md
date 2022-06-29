@@ -17,7 +17,7 @@ tags:
   - polynomial identity
 
 menu:
-  math1-numbers:
+  math1:
     parent: Real Numbers
     name: Square Roots
     weight: 13

@@ -15,7 +15,7 @@ tags:
   - quadratic function
 
 menu:
-  math1-func:
+  math1:
     name: Quadratic Functions and Graphs
     parent: Quadratic Graphs
     weight: 11

@@ -16,7 +16,7 @@ tags:
   - algebra
 
 menu:
-  math1-numbers:
+  math1:
     parent: Linear Inequalities
     name: Applications of Inequalities
     weight: 15

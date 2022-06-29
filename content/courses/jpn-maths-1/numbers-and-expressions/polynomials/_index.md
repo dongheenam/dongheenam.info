@@ -2,9 +2,10 @@
 Title: Expansion and Factorisation of Polynomials
 
 menu:
-  math1-numbers:
+  math1:
     name: Polynomials
-    weight: 20
+    parent: Numbers and Expressions
+    weight: 10
 
 toc: false
 type: docs
