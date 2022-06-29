@@ -72,11 +72,11 @@ We will use this graph to find the graph of other quadratic functions later. Fin
 
 {{% hbox %}}
 {{% note Definition %}}
-1. ***Parabola** is the name of the shape describing a quadratic graph.*
+- ***Parabola** is the name of the shape describing a quadratic graph.*
     - ***Concave up** means the graph bends upward ($\cup$ shape).*
     - ***Concave down** means the graph bends downward ($\cap$ shape).*
-2. *The **axis of symmetry** is the vertical line about which the parabola is symmetric.*
-3. *The **vertex** is where the parabola meets its axis of symmetry.*
+- *The **axis of symmetry** is the vertical line about which the parabola is symmetric.*
+- *The **vertex** is where the parabola meets its axis of symmetry.*
 
 {{< figure style="margin-bottom: 0" src="courses/jpn-maths-1/functions/quadratic-graphs/quad-properties.jpg" alt="Properties of a parabola." >}}
 
