@@ -17,7 +17,7 @@ menu:
     parent: Japanese Maths 1
     weight: 20
     
-weight: 10
+weight: 20
 ---
 
 ## List of Topics
