@@ -19,7 +19,7 @@ tags:
 menu:
   math1:
     parent: Polynomials
-    name: "✏️ Review 2"
+    name: "✏️ Review 5"
     weight: 22
 
 weight: 22
