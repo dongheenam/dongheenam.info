@@ -16,6 +16,8 @@ ignoreFiles = [ "\\.tex$" ]
   author = "Donghee Nam"
   description = "Giving insight on the world's most commonly used language"
 
+  cloudinary_url = "https://res.cloudinary.com/dnam/image/upload"
+
 # flatten posts directory structure
 [permalinks]
   posts = "/posts/:title/"

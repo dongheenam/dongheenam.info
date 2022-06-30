@@ -4,19 +4,8 @@
         style="optional css style" class="optional css class" location="main|fullwidth|sidenote"
     %}} 
 */}}
-{{/* generating images */}}
-{{- $default_image := "" -}}{{- $original := "" -}}
-{{- $small := "" -}}{{- $medium := "" -}}
-{{- if ge .image.Width "768" -}}
-  {{- $small = .image.Resize "768x q100 webp" -}}
-  {{- $default_image = .image.Resize "480x q100" -}}
-{{- else -}}
-  {{- $default_image = .image -}}
-{{- end -}}
-{{- if ge .image.Width "1024" -}}
-  {{- $medium = .image.Resize "1024x q100 webp" -}}
-{{- end -}}
-{{ $original = .image.Resize (printf "%dx q100 webp" .image.Width) }}
+{{- $base_url := site.Params.cloudinary_url -}}
+{{- $img := .image }}
 {{/* defining sizes */}}
 {{- $sizes := "" -}}
 {{- if eq .loc "sidenote" -}}
@@ -25,19 +14,14 @@
     {{ $sizes = "100vw" }}
 {{- end -}}
 {{/* printing sources */}}
-{{- $srcset := "" -}}
-{{- if ne $small "" }}{{ $srcset = printf "%s, 768w" $small.RelPermalink }}{{ end }}
-{{- if ne $medium "" }}{{ $srcset = printf "%s, %s 1024w" $srcset $medium.RelPermalink }}{{ end }}
-{{ $srcset = printf "%s, %s %dw" $srcset $original.RelPermalink .image.Width }}
-<source type="image/webp" 
-  srcset="{{ $srcset }}"
-  sizes="{{ $sizes }}" />
-<source type="image" 
-  src="{{ .image.RelPermalink }}"
-  sizes="{{ $sizes }}" />
 <img 
-  width="{{ .image.Width }}" height="{{ .image.Height }}" loading="lazy" decoding="async" 
+  loading="lazy" decoding="async" 
   {{ with .class -}} class="{{ . }}"{{- end -}}
   {{- with .style -}} style="{{ . | safeCSS }}"{{- end -}}
+  srcset="{{ $base_url }}/f_auto,q_auto,w_400/{{ $img }} 400w,
+          {{ $base_url }}/f_auto,q_auto,w_768/{{ $img }} 768w,
+          {{ $base_url }}/f_auto,q_auto,w_1024/{{ $img }} 1024w,
+          {{ $base_url }}/f_auto,q_auto,w_1680/{{ $img }} 1680w"
+  sizes="{{ $sizes }}"
   alt="{{ .alt }}"
-  src="{{ $default_image.RelPermalink }}" />
+  src="{{ $base_url }}/{{ $img }}" />
