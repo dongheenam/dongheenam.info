@@ -3,18 +3,14 @@
         style="optional css style" class="optional css class" noresize="turn off auto resizing"
     %}} 
 */}}
-<<<<<<< HEAD
-{{- $base_url := site.Params.cloudinary_url -}}
-=======
 {{- $path := .Get "src" }}
->>>>>>> local-images
-{{- $img := .Get "src" -}}
+{{- $img := resources.Get $path -}}
 {{- $alt_text := (.Get "alt" | default (.Get "caption") | default "") -}}
 <figure 
   {{- with (.Get "class") }} class="{{ . }}"{{ end }}
   {{- with (.Get "style") }} style="{{ . | safeCSS }}"{{ end }} >
 {{- if (.Get "caption") -}}
-  {{- $fig_id := .Get "id" | default $img -}}
+  {{- $fig_id := .Get "id" | default (path.Base $img.RelPermalink) -}}
   <label for="fig-{{ $fig_id }}" class="margin-toggle toggle-with-word">caption</label>
   <input type="checkbox" id="fig-{{ $fig_id }}" class="margin-toggle" />
   <figcaption class="marginnote">
@@ -22,19 +18,20 @@
   </figcaption>
 {{- end -}}
 <picture>
-{{- if in $img "http" -}}{{/* from external source */}}
+{{- if in (.Get "src") "http" -}}{{/* from external source */}}
   <img
+    width="100%" height="auto"
     {{ with (.Get "class") -}} class="{{ . }}"{{- end -}}
     {{- with (.Get "style") -}} style="{{ . | safeCSS }}"{{- end -}}
-    src='{{ $img }}'
+    src='{{ .Get "src" }}'
     alt='{{ .Get "alt" }}' />
 {{- else -}}{{/* from internal source */}}
-  {{- if in $img "svg" -}}{{/* vector graphics */}}
+  {{- if eq $img.MediaType.SubType "svg" -}}{{/* vector graphics */}}
     <img
       width="100%" height="auto"
       {{ with (.Get "class") -}} class="{{ . }}"{{- end -}}
       {{- with (.Get "style") -}} style="{{ . }}"{{- end -}}
-      src='{{ printf "%s/%s" $base_url $img }}'
+      src='{{ $img.RelPermalink }}'
       alt='{{ .Get "alt" }}' />
   {{- else -}}{{/* all other graphics */}}
     {{- $img_options := dict 

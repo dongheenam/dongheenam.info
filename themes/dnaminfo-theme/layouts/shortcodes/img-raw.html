@@ -1,11 +1,5 @@
 {{/* Usage: 
-    {{% img src="path" alt="alt-text" %}} 
+    {{% img-raw src="path" alt="alt-text" %}} 
 */}}
-<<<<<<< HEAD
-{{- $base_url := site.Params.cloudinary_url -}}
-{{- $img := .Get "src" -}}
-<img src='{{ printf "%s/%s" $base_url $img }}' alt='{{ .Get "alt" }}' />
-=======
 {{- $img := resources.Get (.Get "src") -}}
-<a href='{{ $img.RelPermalink }}' target="_blank"><img src='{{ $img.RelPermalink }}' alt='{{ .Get "alt" }}' width="{{ $img.Width }}" height="auto" /></a>
->>>>>>> local-images
+<a href='{{ $img.RelPermalink }}' target="_blank"><img src='{{ $img.RelPermalink }}' alt='{{ .Get "alt" }}' width="{{ $img.Width }}" height="{{ $img.Height }}" /></a>
