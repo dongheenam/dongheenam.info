@@ -5,8 +5,8 @@ baseURL = "https://www.dongheenam.info/"
 languageCode = "en-au"
 theme = "dnaminfo-theme"
 
-# set timeout to 2 minutes
-timeout = 120000
+# set timeout to 10 minutes
+timeout = 600000
 
 # ignore TeX files
 ignoreFiles = [ "\\.tex$" ]
