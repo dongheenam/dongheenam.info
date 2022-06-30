@@ -3,7 +3,11 @@
         style="optional css style" class="optional css class" noresize="turn off auto resizing"
     %}} 
 */}}
+<<<<<<< HEAD
 {{- $base_url := site.Params.cloudinary_url -}}
+=======
+{{- $path := .Get "src" }}
+>>>>>>> local-images
 {{- $img := .Get "src" -}}
 {{- $alt_text := (.Get "alt" | default (.Get "caption") | default "") -}}
 <figure 
