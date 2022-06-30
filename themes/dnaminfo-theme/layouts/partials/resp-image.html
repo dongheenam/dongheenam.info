@@ -6,21 +6,15 @@
 */}}
 {{/* generating images */}}
 {{- $default_image := "" -}}{{- $original := "" -}}
-{{- $tiny := "" -}}{{- $small := "" -}}{{- $medium := "" -}}{{- $large := "" -}}
-{{- if ge .image.Width "480" -}}
-  {{- $tiny = .image.Resize "480x q100 webp" -}}
+{{- $small := "" -}}{{- $medium := "" -}}
+{{- if ge .image.Width "768" -}}
+  {{- $small = .image.Resize "768x q100 webp" -}}
   {{- $default_image = .image.Resize "480x q100" -}}
 {{- else -}}
   {{- $default_image = .image -}}
 {{- end -}}
-{{- if ge .image.Width "768" -}}
-  {{- $small = .image.Resize "768x q100 webp" -}}
-{{- end -}}
 {{- if ge .image.Width "1024" -}}
   {{- $medium = .image.Resize "1024x q100 webp" -}}
-{{- end -}}
-{{- if ge .image.Width "2048" -}}
-  {{- $large = .image.Resize "2048x q100 webp" -}}
 {{- end -}}
 {{ $original = .image.Resize (printf "%dx q100 webp" .image.Width) }}
 {{/* defining sizes */}}
@@ -32,10 +26,8 @@
 {{- end -}}
 {{/* printing sources */}}
 {{- $srcset := "" -}}
-{{- if ne $tiny "" }}{{ $srcset = printf "%s 480w" $tiny.RelPermalink }}{{ end }}
-{{- if ne $small "" }}{{ $srcset = printf "%s, %s 768w" $srcset $small.RelPermalink }}{{ end }}
+{{- if ne $small "" }}{{ $srcset = printf "%s, 768w" $small.RelPermalink }}{{ end }}
 {{- if ne $medium "" }}{{ $srcset = printf "%s, %s 1024w" $srcset $medium.RelPermalink }}{{ end }}
-{{- if ne $large "" }}{{ $srcset = printf "%s, %s 2048w" $srcset $large.RelPermalink }}{{ end }}
 {{ $srcset = printf "%s, %s %dw" $srcset $original.RelPermalink .image.Width }}
 <source type="image/webp" 
   srcset="{{ $srcset }}"

@@ -3,6 +3,7 @@ $sdesktop-max: 1600px;
 $lmobile-max: 1200px;
 $smobile-max: 768px;
 
+// widths
 html {
   --content-width: 55rem;
   --sidenote-width: 25rem;
@@ -21,4 +22,42 @@ html {
     --sidenote-width: 100%;
     --full-width: 100%;
   }
+}
+
+// fonts
+// source: https://google-webfonts-helper.herokuapp.com
+/* pt-serif-regular - latin */
+@font-face {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/pt-serif-v17-latin-regular.woff2") format("woff2"),
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url("../fonts/pt-serif-v17-latin-regular.woff") format("woff");
+}
+
+/* pt-serif-italic - latin */
+@font-face {
+  font-family: "PT Serif";
+  font-style: italic;
+  font-weight: 400;
+  src: local(""),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/pt-serif-v17-latin-italic.woff2") format("woff2"),
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url("../fonts/pt-serif-v17-latin-italic.woff") format("woff");
+}
+
+/* pt-serif-700italic - latin */
+@font-face {
+  font-family: "PT Serif";
+  font-style: italic;
+  font-weight: 700;
+  src: local(""),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/pt-serif-v17-latin-700italic.woff2") format("woff2"),
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url("../fonts/pt-serif-v17-latin-700italic.woff") format("woff");
 }
