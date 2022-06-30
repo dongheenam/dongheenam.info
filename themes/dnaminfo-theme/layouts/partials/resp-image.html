@@ -4,24 +4,48 @@
         style="optional css style" class="optional css class" location="main|fullwidth|sidenote"
     %}} 
 */}}
+{{/* generating images */}}
+{{- $default_image := "" -}}{{- $original := "" -}}
 {{- $tiny := "" -}}{{- $small := "" -}}{{- $medium := "" -}}{{- $large := "" -}}
-{{- if ge .image.Width "375" -}}
-    {{- $tiny = .image.Resize "375x q100" -}}
-{{- if ge .image.Width "630" -}}
-    {{- $small = .image.Resize "630x q100" -}}
-{{- if ge .image.Width "885" -}}
-    {{- $medium = .image.Resize "885x q100" -}}
-{{- if ge .image.Width "1275" -}}
-    {{- $large = .image.Resize "1275x q100" -}}
-{{- end -}}{{- end -}}{{- end -}}{{- end -}}
+{{- if ge .image.Width "480" -}}
+  {{- $tiny = .image.Resize "480x q100 webp" -}}
+  {{- $default_image = .image.Resize "480x q100" -}}
+{{- else -}}
+  {{- $default_image = .image -}}
+{{- end -}}
+{{- if ge .image.Width "768" -}}
+  {{- $small = .image.Resize "768x q100 webp" -}}
+{{- end -}}
+{{- if ge .image.Width "1024" -}}
+  {{- $medium = .image.Resize "1024x q100 webp" -}}
+{{- end -}}
+{{- if ge .image.Width "2048" -}}
+  {{- $large = .image.Resize "2048x q100 webp" -}}
+{{- end -}}
+{{ $original = .image.Resize (printf "%dx q100 webp" .image.Width) }}
+{{/* defining sizes */}}
 {{- $sizes := "" -}}
-{{- if eq .loc "fullwidth" -}}
-    {{ $sizes = "(min-width: 1620px) 1275px, (min-width: 1220px) 885px, (min-width: 780px) 85vw, 95vw" }}
-{{- else if eq .loc "sidenote" -}}
+{{- if eq .loc "sidenote" -}}
     {{ $sizes = "(min-width: 1620px) 375px, (min-width: 1220px) 225px, (min-width: 780px) 85vw, 95vw" }}
 {{- else -}}
-    {{ $sizes = "(min-width: 1620px) 825px, (min-width: 1220px) 630px, (min-width: 780px) 85vw, 95vw" }}
+    {{ $sizes = "100vw" }}
 {{- end -}}
-{{- if not .nolink -}}<a href="{{ .image.RelPermalink }}" target="_blank">{{- end -}}
-<img {{with .class }} class="{{ . }}"{{ end }}{{with .style }} style="{{ . | safeCSS }}"{{ end }} width="100%" height="auto" alt="{{ .alt }}" loading="lazy" src="{{ .image.RelPermalink }}"/>
-{{- if not .nolink -}}</a>{{- end -}}
+{{/* printing sources */}}
+{{- $srcset := "" -}}
+{{- if ne $tiny "" }}{{ $srcset = printf "%s 480w" $tiny.RelPermalink }}{{ end }}
+{{- if ne $small "" }}{{ $srcset = printf "%s, %s 768w" $srcset $small.RelPermalink }}{{ end }}
+{{- if ne $medium "" }}{{ $srcset = printf "%s, %s 1024w" $srcset $medium.RelPermalink }}{{ end }}
+{{- if ne $large "" }}{{ $srcset = printf "%s, %s 2048w" $srcset $large.RelPermalink }}{{ end }}
+{{ $srcset = printf "%s, %s %dw" $srcset $original.RelPermalink .image.Width }}
+<source type="image/webp" 
+  srcset="{{ $srcset }}"
+  sizes="{{ $sizes }}" />
+<source type="image" 
+  src="{{ .image.RelPermalink }}"
+  sizes="{{ $sizes }}" />
+<img 
+  width="{{ .image.Width }}" height="{{ .image.Height }}" loading="lazy" decoding="async" 
+  {{ with .class -}} class="{{ . }}"{{- end -}}
+  {{- with .style -}} style="{{ . | safeCSS }}"{{- end -}}
+  alt="{{ .alt }}"
+  src="{{ $default_image.RelPermalink }}" />

@@ -1,5 +1,5 @@
 {{/* Usage: 
-    {{% img src="path" alt="alt-text" %}} 
+    {{% img-raw src="path" alt="alt-text" %}} 
 */}}
 {{- $img := resources.Get (.Get "src") -}}
-<a href='{{ $img.RelPermalink }}' target="_blank"><img src='{{ $img.RelPermalink }}' alt='{{ .Get "alt" }}' width="{{ $img.Width }}" height="auto" /></a>
+<a href='{{ $img.RelPermalink }}' target="_blank"><img src='{{ $img.RelPermalink }}' alt='{{ .Get "alt" }}' width="{{ $img.Width }}" height="{{ $img.Height }}" /></a>

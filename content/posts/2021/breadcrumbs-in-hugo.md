@@ -27,9 +27,7 @@ While Hugo does not have built-in support for breadcrumbs, making one from scrat
 
 A Hugo page has a `.Parent` variable, and it returns the parent section of the page. So, for example, the `.Parent` of this post would be `/posts/`. The official [Hugo documentation](https://gohugo.io/content-management/sections/#example-breadcrumb-navigation) provides an excellent partial code that shows the breadcrumb navigation using a recursive method:
 
-```filename
-> layouts/partials/breadcrumb.html
-```
+{{% code filename="layouts/partials/breadcrumb.html" %}}
 ```golang
 <ul class="breadcrumb">
   {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
@@ -46,6 +44,8 @@ A Hugo page has a `.Parent` variable, and it returns the parent section of the p
   </li>
 {{ end }}
 ```
+{{% /code %}}
+
 
 {{% details title="Explanation" %}}
 
@@ -87,9 +87,7 @@ The first half of the code checks if `p1` has a section above, either a parent s
 
 Adding this partial to the `<body>` of this page (`/posts/breadcrumb-navigation-in-hugo/`)
 
-```filename
-> layouts/posts/single.html
-```
+{{% code filename="layouts/posts/single.html" %}}
 ```html
 <body>
   {{ partial "breadcrumb" . }}
@@ -97,12 +95,12 @@ Adding this partial to the `<body>` of this page (`/posts/breadcrumb-navigation-
   ...
 </body>
 ```
+{{% /code %}}
+
 
 and compiling the site gives the following HTML code:
 
-```filename
-> public/posts/breadcrumb-navigation-in-hugo.HTML
-```
+{{% code filename="public/posts/breadcrumb-navigation-in-hugo.html" %}}
 ```html
 <body>
   <ol class="breadcrumb">
@@ -121,6 +119,8 @@ and compiling the site gives the following HTML code:
   ...
 </body>
 ```
+{{% /code %}}
+
 
 Note that [my homepage](/) does have a title of *Welcome!*, so I will need to do some fixes on that if I would use this code.
 
@@ -129,9 +129,8 @@ Note that [my homepage](/) does have a title of *Welcome!*, so I will need to do
 
 Another method of creating a breadcrumb is to use the URL because it will reflect on the section structure of the pages. Here is an example:
 
-```filename
-> layouts/partials/breadcrumb.html
-```
+
+{{% code filename="layouts/partials/breadcrumb.html" %}}
 ```golang
 <ol class="breadcrumb">
   <li><a href="/">Home</a></li>
@@ -144,9 +143,10 @@ Another method of creating a breadcrumb is to use the URL because it will reflec
   {{ end }}
 </ol>
 ```
+{{% /code %}}
+
 
 {{% details title="Explanation" %}}
-
 
 
 ```golang
@@ -187,9 +187,7 @@ First, we will get rid of the empty strings using the `if` statement.{{% sn 186 
 
 Below is the HTML for the breadcrumb of this page:
 
-```filename
-> public/posts/breadcrumb-navigation-in-hugo.html
-```
+{{% code filename="public/posts/breadcrumb-navigation-in-hugo.html" %}}
 ```html
 <body>
   <ol class="breadcrumb">
@@ -208,6 +206,8 @@ Below is the HTML for the breadcrumb of this page:
   ...
 </body>
 ```
+{{% /code %}}
+
 
 The end result may not look very different from the first method, if the slugs of posts and sections are pretty much identical to the titles. Slugs are often much shorter in my blog and this code will make the breadcrumbs much more compact.
 
@@ -216,9 +216,7 @@ The end result may not look very different from the first method, if the slugs o
 
 Finally, we can put the lists on a single line.
 
-```filename
-> assets/css/main.css
-```
+{{% code filename="assets/css/main.css" %}}
 ```css
 .breadcrumb {
   list-style: none;
@@ -238,5 +236,7 @@ Finally, we can put the lists on a single line.
   padding: 0.3rem;
 }
 ```
+{{% /code %}}
+
 
 Setting `<ol>` as a flexbox enables the list items to naturally wrap to the next line if there is not enough space.

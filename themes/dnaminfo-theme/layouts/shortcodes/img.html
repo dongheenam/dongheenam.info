@@ -3,14 +3,31 @@
         style="optional css style" class="optional css class" location="main|fullwidth|sidenote"
     %}} 
 */}}
-{{- if in (.Get "src") "http" -}}
-  <a href='{{ .Get "src" }}' target="_blank"><img{{with (.Get "class") }} class="{{ . }}"{{ end }}{{with (.Get "style") }} style="{{ . | safeCSS }}"{{ end }} src='{{ .Get "src" }}' alt='{{ .Get "alt" }}' width="100%" height="auto" /></a>
-{{- else -}}
+<picture>
+{{- if in (.Get "src") "http" -}}{{/* from external source */}}
+  <img
+    width="100%" height="auto"
+    {{ with (.Get "class") -}} class="{{ . }}"{{- end -}}
+    {{- with (.Get "style") -}} style="{{ . | safeCSS }}"{{- end -}}
+    src='{{ .Get "src" }}'
+    alt='{{ .Get "alt" }}'/>
+{{- else -}}{{/* from internal source */}}
   {{- $img := resources.Get (.Get "src") -}}
-  {{- if in $img.RelPermalink "svg" -}}
-    <a href='{{ $img.RelPermalink }}' target="_blank"><img{{with (.Get "class") }} class="{{ . }}"{{ end }}{{with (.Get "style") }} style="{{ . }}"{{ end }} src='{{ $img.RelPermalink }}' alt='{{ .Get "alt" }}' width="100%" height="auto" /></a>
-  {{- else -}}
-    {{- $img_options := dict "image" $img "alt" (.Get "alt") "class" (.Get "class") "style" (.Get "style") "loc" (.Get "loc") -}}
-    {{- partial "resp-image" $img_options -}}
+  {{- if eq $img.MediaType.SubType "svg" -}}{{/* vector graphics */}}
+    <img
+      width="100%" height="auto"
+      {{ with (.Get "class") -}} class="{{ . }}"{{- end -}}
+      {{- with (.Get "style") -}} style="{{ . }}"{{- end -}}
+      src='{{ $img.RelPermalink }}'
+      alt='{{ .Get "alt" }}' />
+  {{- else -}}{{/* all other graphics */}}
+    {{- $img_options := dict 
+        "image" $img
+        "alt" (.Get "alt")
+        "class" (.Get "class")
+        "style" (.Get "style")
+        "loc" (.Get "loc") -}}
+    {{ partial "resp-image" $img_options }}
   {{- end -}}
 {{- end -}}
+</picture>

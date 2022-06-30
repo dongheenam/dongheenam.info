@@ -48,9 +48,7 @@ renders as follows.
 
 Desmos provides the pre-packaged JavaScript file, so you simply need to include it using the `<script>` tag:
 
-```filename
-> layouts/partials/head.html
-```
+{{% code filename="layouts/partials/head.html" %}}
 ```html
 <head>
     ...
@@ -61,6 +59,8 @@ Desmos provides the pre-packaged JavaScript file, so you simply need to include 
     {{- end -}}
 </head>
 ```
+{{% /code %}}
+
 
 Things to note:
 - You need to write `desmos: true` in your page's YAML to include the script.
@@ -71,9 +71,7 @@ Things to note:
 
 You then need to create an empty `<div>` with an unique ID and initiate Desmos. Since this is mostly repetitive, it is best to make a [Hugo shortcode](https://gohugo.io/content-management/shortcodes/). Here is my suggestion:
 
-```filename
-> layouts/shortcodes/desmos.html
-```
+{{% code filename="layouts/shortcodes/desmos.html" %}}
 ```html
 {{- $id := .Get "id" -}}
 {{- $style := .Get "style" | default "width: 100%; height: 450px" -}}
@@ -83,21 +81,20 @@ You then need to create an empty `<div>` with an unique ID and initiate Desmos. 
   const calc_{{ $id | safeJS }} = Desmos.GraphingCalculator(elt{{ with .Get "options" }}, {{ . | safeJS }}{{ end }});
 </script>
 ```
+{{% /code %}}
+
 
 This is an example usage.{{% sn 86 %}}You can find the list of available options from the [Desmos API Documentation](https://www.desmos.com/api/v1.6/docs/index.html#document-calculator).{{% /sn %}}
 
-```filename
-> content/desmos-example.md
-```
+{{% code filename="content/desmos-example.md" %}}
 ```html
 {{% print "{{% desmos id=\"vd1\" options=\"{keypad: false}\" %}}" %}}
 ```
+{{% /code %}}
 
 Above is converted to
 
-```filename
-> public/desmos-example.html
-```
+{{% code filename="public/desmos-example.html" %}}
 ```html
 <div id="calc-vd1" style="width: 100%; height: 450px"></div>
 <script>
@@ -105,6 +102,7 @@ Above is converted to
   const calc_vd1 = Desmos.GraphingCalculator(elt_vd1, {keypad: false});
 </script>
 ```
+{{% /code %}}
 
 The name of the JS variables have the ID as suffix to avoid duplicate variable names when the shortcode is called more than once. I admit it may not be the most elegant solution for this, but hey, it works!
 

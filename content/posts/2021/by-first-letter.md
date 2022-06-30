@@ -58,9 +58,7 @@ and build the document using this information.
 
 We will first build the dictionary, which we call `$pages_by_letters`, where the keys are the letters of the alphabet, and the values are the list of tags that start with that letter. Here is the full code:
 
-```filename
-> layouts/_default/terms.html
-```
+{{% code filename="layouts/_default/terms.html" %}}
 ```golang
 {{ define "main" }}
 
@@ -86,6 +84,8 @@ We will first build the dictionary, which we call `$pages_by_letters`, where the
 
 {{ end }}
 ```
+{{% /code %}}
+
 
 {{% details title="Explanation" %}}
 
@@ -141,9 +141,7 @@ Then, we will try to search the dictionary with `$first_letter`. If there is an 
 
 We can then make the list from the dictionary. Since we will make use of the [CSS grid](https://css-tricks.com/snippets/css/complete-guide-grid/), the keys can just sit inside a `<span>`.
 
-```filename
-> layouts/_default/terms.html
-```
+{{% code filename="layouts/_default/terms.html" %}}
 ```golang
 ...
 
@@ -160,6 +158,8 @@ We can then make the list from the dictionary. Since we will make use of the [CS
 {{ end }}
 </section>
 ```
+{{% /code %}}
+
 
 `{{ len .Pages }}` calculates the number of posts for a single tag.
 
@@ -168,9 +168,7 @@ We can then make the list from the dictionary. Since we will make use of the [CS
 
 Finally, we need to put them in places. 
 
-```filename
-> assets/scss/main.scss
-```
+{{% code filename="assets/scss/main.scss" %}}
 ```scss
 .section-pages-tag {
   display: grid;
@@ -194,3 +192,5 @@ Finally, we need to put them in places.
   }
 }
 ```
+{{% /code %}}
+
