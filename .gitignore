@@ -1,7 +1,7 @@
 resources/*
 public/*
 venv/
-assets/
+/assets/
 
 .prettierignore
 hugo.exe
