@@ -4,7 +4,7 @@
     %}} 
 */}}
 {{- $path := .Get "src" }}
-{{- $img := resources.Get $path -}}
+{{- $img := .Get "src" -}}
 {{- $alt_text := (.Get "alt" | default (.Get "caption") | default "") -}}
 <figure 
   {{- with (.Get "class") }} class="{{ . }}"{{ end }}

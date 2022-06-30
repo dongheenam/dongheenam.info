@@ -1,4 +1,3 @@
-
 # Site definitions
 title = "dongheenam"
 baseURL = "https://www.dongheenam.info/"
@@ -11,10 +10,13 @@ timeout = 600000
 # ignore TeX files
 ignoreFiles = [ "\\.tex$" ]
 
-# site infos
 [params]
+  # site infos
   author = "Donghee Nam"
   description = "Giving insight on the world's most commonly used language"
+
+  # cloudinary URL for image hosting
+  cloudinary_url = "https://res.cloudinary.com/dnam/image/upload"
 
 # flatten posts directory structure
 [permalinks]
