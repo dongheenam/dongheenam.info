@@ -90,6 +90,7 @@ h6 {
 
   display: grid;
   max-width: 100%;
+  min-height: 90vh;
 
   grid-template-columns: 20rem var(--content-width) var(--sidenote-width);
   grid-template-areas: "sidenav content sidenote";
