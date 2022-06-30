@@ -1,5 +1,5 @@
 ---
-title: "Review Set 2"
+title: "Review: Factorisation"
 description: "Review questions for polynomial factorisation."
 slug: "review-2"
 
@@ -19,7 +19,7 @@ tags:
 menu:
   math1:
     parent: Polynomials
-    name: "✏️ Review 5"
+    name: ✏️ Review 2
     weight: 22
 
 weight: 22

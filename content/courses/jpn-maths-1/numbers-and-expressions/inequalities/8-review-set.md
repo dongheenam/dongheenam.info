@@ -1,5 +1,5 @@
 ---
-title: Review Set 4
+title: "Review: Inequalities"
 slug: review-4
 description: Review of inequalities and their applications.
 

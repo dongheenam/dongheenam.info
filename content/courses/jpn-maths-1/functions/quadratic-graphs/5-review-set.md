@@ -1,6 +1,6 @@
 ---
-title: "Review Set 1"
-slug: review-1
+title: "Review: Functions and Quadratic Graphs"
+slug: review-5
 description: "Review questions for functions, graphs and their transformations."
 
 date: 2021-05-02 22:26:58.171 +1000
@@ -17,7 +17,7 @@ tags:
 
 menu:
   math1:
-    name: "✏️ Review 1"
+    name: ✏️ Review 5
     parent: Quadratic Graphs
     weight: 15
 

@@ -1,7 +1,7 @@
 ---
-title: "Review Set 1"
+title: "Review: Polynomials and Expansion"
 description: "Review questions for polynomial arithmetic and expansion."
-slug: "review-1"
+slug: review-1
 
 date: 2020-05-25 15:24:17 +1000
 lastMod: 2020-12-10 07:57:00.199 +1100
@@ -18,7 +18,7 @@ tags:
 menu:
   math1:
     parent: Polynomials
-    name: "✏️ Review 4"
+    name: ✏️ Review 1
     weight: 16
 
 weight: 16

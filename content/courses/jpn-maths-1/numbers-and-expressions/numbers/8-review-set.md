@@ -1,5 +1,5 @@
 ---
-title: Review Set 3
+title: "Review: Absolute Values and Roots"
 slug: review-3
 description: Review questions for absolute values and square roots.
 
