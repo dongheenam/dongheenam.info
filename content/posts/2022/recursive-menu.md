@@ -17,9 +17,8 @@ tags:
 
 ## Introduction
 
-Hugo lets you generate menus from the `menu` parameters of individual pages. For example, if you have a Menu `example-menu` with a top page, Projects 1 and 2 directly beneath it, two examples under Project 1,
+Hugo lets you generate menus from the `menu` parameters of individual pages. For example, if you have a Menu `example-menu` with a top page, Projects 1 and 2 directly beneath it, two examples under Project 1, it will have the following structure:{{% mn Tree %}}Made with a wonderful tool [tree.nathanfriend.io/](https://tree.nathanfriend.io/). {{% /mn %}}
 
-it will have the following structure:{{% mn Tree %}}Made with a wonderful tool [tree.nathanfriend.io/](https://tree.nathanfriend.io/). {{% /mn %}}
 ```plaintext
 example-menu
 └── Top
@@ -29,7 +28,9 @@ example-menu
     └── Project 2
 ```
 
-{{% details title="Structuring the front matter" %}}
+This can be done post-by-post in the front matter and it is a little painful to set it up at first. Have a look at the code below to see how you can construct `example-menu`.
+
+{{% details title="Structuring a menu using the front matter" %}}
 
 {{% code filename="posts/index.md" %}}
 ```yaml
@@ -100,18 +101,18 @@ menu:
 [The Documentation](https://gohugo.io/templates/menu-templates/) shows some good examples of a menu template, but it also has a few shortcomings:
 
 - The menu is only two levels deep. The Examples in `example-menu` will never be visible.
-- It shows the entire menu at once. If the menu contained posts with lots of children, it will be pretty difficult to navigate.
+- It shows the entire menu at once. If the menu contained items with lots of children, it will be pretty difficult to navigate.
 
-You can definitely see the result of this from the official Hugo website as well, just have a look at how many pages are in [the Functions section](https://gohugo.io/functions/)!
+You can definitely see the result of this from the official Hugo website as well, just have a look at how many pages there are in [the Functions section](https://gohugo.io/functions/)!
 
-Inspired by this [Vue example case](https://vuejs.org/examples/#tree), I decided to design a resursive menu template that can:
+Inspired by this [Vue example case](https://vuejs.org/examples/#tree), I decided to design a recursive menu template that can:
 
 - display arbitrarily nested menus (and only the designers would stop us), and
-- only show the parents and siblings of the current page.
+- show only the parents and siblings of the current page.
 
 ## Python Proof-of-concept
 
-Because I am really bad at recursive programming (who aren't really!) and I am not very comfortable programming with Hugo template codes, I decided to first build a model using Python.
+Because recursive programming requires a lot of thinking and I am not proficient in Hugo yet, I decided to first build a model using Python.
 
 ### Foundation
 
@@ -161,12 +162,12 @@ Let's first think of the "show-all" case first. All it needs is a function that 
 
 ```python
 def show_menu(menu, indent=""):
-  # print the title
-  print(f"{indent}{menu.title}")
+    # print the title
+    print(f"{indent}{menu.title}")
 
-  # then loop over its children
-  for child in menu.children:
-    show_menu(child, indent=indent+"  ")
+    # then loop over its children
+    for child in menu.children:
+      show_menu(child, indent=indent+"  ")
 ```
 
 Putting everything together and running `show_menu` with `example_menu` as its input gives this.
@@ -210,15 +211,15 @@ class Menu:
     ...
 
 def show_menu(menu, current, indent=""):
-  # puts a star sign at the end of the current menu
-  show_current = "*" if menu == current else ""
+    # puts a star sign at the end of the current menu
+    show_current = "*" if menu == current else ""
 
-  # print the title
-  print(f"{indent}{menu.title}{show_current}")
+    # print the title
+    print(f"{indent}{menu.title}{show_current}")
 
-  # then loop over its children
-  for child in menu.children:
-    show_menu(child, current, indent=indent+"  ")
+    # then loop over its children
+    for child in menu.children:
+        show_menu(child, current, indent=indent+"  ")
 
 example_menu = (
     ...
@@ -247,17 +248,17 @@ class Menu:
     ...
 
 def show_menu(menu, current, indent=""):
-  # puts a star sign at the end of the current menu
-  show_current = "*" if menu == current else ""
+    # puts a star sign at the end of the current menu
+    show_current = "*" if menu == current else ""
 
-  # print the title
-  print(f"{indent}{menu.title}{show_current}")
+    # print the title
+    print(f"{indent}{menu.title}{show_current}")
 
-  # then loop over its children
-  # only if the item has the current page
-  if menu.has(current):
-      for child in menu.children:
-        show_menu(child, current, indent=indent+"  ")
+    # then loop over its children
+    # only if the item has the current page
+    if menu.has(current):
+        for child in menu.children:
+            show_menu(child, current, indent=indent+"  ")
 
 example_menu = (
     ...
@@ -304,10 +305,10 @@ class Menu:
     ...
 
 def show_menu(menu, current, indent=""):
-  ...
-  if menu.has(current) or menu == current:
-      for child in menu.children:
-        show_menu(child, current, indent=indent+"  ")
+    ...
+    if menu.has(current) or menu == current:
+        for child in menu.children:
+            show_menu(child, current, indent=indent+"  ")
 
 example_menu = (
     ...

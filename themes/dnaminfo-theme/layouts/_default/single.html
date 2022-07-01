@@ -14,11 +14,6 @@
    {{ if ne .Type "docs" }}{{ template "datedisplay" . }}{{ end }}
    <ul class="tags">{{ range (.GetTerms "tags") }}<li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>{{ end }}</ul>
    <article>
-      <ol>
-      {{ range .Parent.Pages }}
-         <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-      {{ end }}
-      </ol>
       {{ .Content }}
    </article>
    {{ if eq .Type "docs" }}{{ template "datedisplay" . }}{{ end }}

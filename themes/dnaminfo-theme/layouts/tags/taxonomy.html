@@ -8,11 +8,9 @@
   {{- if not (in $letters $first_letter) }}
     {{ $first_letter = "#" }}
   {{ end }}
-  {{- $new_list := slice -}}
+  {{- $new_list := slice $page -}}
   {{ with index $pages_by_letters $first_letter }}
-    {{- $new_list = . | append $page -}}
-  {{ else }}
-    {{- $new_list = slice $page -}}
+    {{- $new_list = union . $new_list -}}
   {{ end }}
   {{- $pages_by_letters = merge $pages_by_letters (dict $first_letter $new_list) -}}
 {{ end }}
