@@ -9,7 +9,6 @@ lastmod: 2021-01-12 17:46:19.818 +0800
 toc: false
 type: docs
 math: true
-nerdamer: true
 
 tags:
   - algebra
@@ -89,8 +88,8 @@ Use the panel below to create randomised questions. You can click each question 
       }
       const ans1 = `( -(${b}) + sqrt(${dis}) ) / (2*(${a}))`
       const ans2 = `( -(${b}) - sqrt(${dis}) ) / (2*(${a}))`
-      const a1Tex = nerdamerToTex(nerdamer(ans1).expand());
-      const a2Tex = nerdamerToTex(nerdamer(ans2).expand());
+      const a1Tex = ans1;
+      const a2Tex = ans2;
       const aTex = `\\boldsymbol{\\iff ${lett} = ${a1Tex},~${a2Tex}}`;
       render(qTex, aTex, options).then((li) => {
         qbox.appendChild(li);
