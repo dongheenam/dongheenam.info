@@ -207,9 +207,7 @@ To determine which menu tree should be rendered, the function needs to know wher
 
 {{% code filename="menu.py" %}}
 ```python
-class Menu:
-    ...
-
+...
 def show_menu(menu, current, indent=""):
     # puts a star sign at the end of the current menu
     show_current = "*" if menu == current else ""
@@ -220,11 +218,7 @@ def show_menu(menu, current, indent=""):
     # then loop over its children
     for child in menu.children:
         show_menu(child, current, indent=indent+"  ")
-
-example_menu = (
-    ...
-)
-
+...
 show_menu(example_menu, Menu("Project 2"))
 ```
 {{% /code %}}
@@ -244,9 +238,7 @@ Then, we can add an if statement before we enter the loop. This is to block any 
 
 {{% code filename="menu.py" %}}
 ```python
-class Menu:
-    ...
-
+...
 def show_menu(menu, current, indent=""):
     # puts a star sign at the end of the current menu
     show_current = "*" if menu == current else ""
@@ -259,9 +251,7 @@ def show_menu(menu, current, indent=""):
     if menu.has(current):
         for child in menu.children:
             show_menu(child, current, indent=indent+"  ")
-
-example_menu = (
-    ...
+...
 )
 
 show_menu(example_menu, Menu("Project 2"))
@@ -301,19 +291,13 @@ so we can modify the code slightly to view the children of the current page as w
 
 {{% code filename="menu.py" %}}
 ```python
-class Menu:
-    ...
-
+...
 def show_menu(menu, current, indent=""):
     ...
     if menu.has(current) or menu == current:
         for child in menu.children:
             show_menu(child, current, indent=indent+"  ")
-
-example_menu = (
-    ...
-)
-
+...
 show_menu(example_menu, Menu("Top"))
 ```
 {{% /code %}}
@@ -417,4 +401,4 @@ Here would be the result of rendering `example-menu` from the Project 2 page.
 ```
 {{% /code %}}
 
-Finally, you can see this code in action in [one of my courses](/courses/jpn-maths-1/).
+Finally, you can see this code in action in [my course](/courses/jpn-maths-1/).
