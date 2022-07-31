@@ -37,14 +37,14 @@ Because the gradient is negative, $y$ decreases as $x$ increases. Hence,
 - When $x=b$, the function reaches its minimum of $-2$.
 
 Thus,
-`\begin{align*}
+\begin{align*}
   2 = -a + 1 \iff \boldsymbol{ a = -1 }
-\end{align*}`
+\end{align*}
 
 and
-`\begin{align*}
+\begin{align*}
   -2 = -b + 1 \iff \boldsymbol{ b = 3 }.
-\end{align*}`
+\end{align*}
 
 {{< figure src="courses/jpn-maths-1/functions/quadratic-graphs/review-a1.png" alt="Graph of y = -x + 1." >}}
 
@@ -58,20 +58,20 @@ and
 
 {{% note Solution %}} 
 Because $x=-2$ is part of the domain and $y=7$ is part of the range, we find $x=-2$ corresponds to $y=7$ and $x=1$ corresponds to $y=1$. Thus
-`\begin{align*}
-  7 &= -2c + d, \tag{$\cdots\tcirc{1}$} \\
+\begin{align*}
+  7 &= -2c + d, \tag{$\cdots\tcirc{1}$} \cr
   1 &= c + d. \tag{$\cdots\tcirc{2}$}
-\end{align*}`
+\end{align*}
 
 If you subtract $\tcirc{2}$ from $\tcirc{1}$,
-`\begin{align*}
+\begin{align*}
   6 = -3c \iff \boldsymbol{ c = -2 }.
-\end{align*}`
+\end{align*}
 
 Finally, from $\tcirc{2}$,
-`\begin{align*}
+\begin{align*}
   1 = -2 + d \iff \boldsymbol{ d = 3 }.
-\end{align*}`
+\end{align*}
 
 {{< figure style="margin-bottom: 0" src="courses/jpn-maths-1/functions/quadratic-graphs/review-a2.png" alt="Graph of y = cx + d." >}}
 
@@ -89,28 +89,28 @@ We will first draw the graph of the given function.
 {{% ol i %}}
 {{% li %}}
 When $2x+2<0$, $x<-1$ and
-`\begin{align*}
-  y &= -(2x+2) + x-1 \\
-  &= -2x-2+x-1 \\
+\begin{align*}
+  y &= -(2x+2) + x-1 \cr
+  &= -2x-2+x-1 \cr
   &= -x-3.
-\end{align*}`
+\end{align*}
 {{% /li %}}
 {{% li %}}
 When $2x+2\ge 0$, $x\ge -1$ and
-`\begin{align*}
-  y &= (2x+2) +x-1 \\
+\begin{align*}
+  y &= (2x+2) +x-1 \cr
   &= 3x+1.
-\end{align*}`
+\end{align*}
 {{% /li %}}
 {{% /ol %}}
 
 {{< figure style="margin-bottom: 0" src="courses/jpn-maths-1/functions/quadratic-graphs/review-a3.png" caption="Graph of $y=|2x+2|+x-1$." >}}
 
 Thus, the region surrounded by the graph and the x-axis is a triangle, and its area is
-`\begin{align*}
-  y &= \dfrac{1}{2} \cdot \left( 3-\dfrac{1}{3} \right) \cdot 2 \\
+\begin{align*}
+  y &= \dfrac{1}{2} \cdot \left( 3-\dfrac{1}{3} \right) \cdot 2 \cr
   &= \boldsymbol{ \dfrac{8}{3} }.
-\end{align*}`
+\end{align*}
 
 {{% /details %}}
 
@@ -132,31 +132,31 @@ Let's have a closer look at how the function behaves.
 {{% ol i %}}
 {{% li %}}
 When $x<1$,
-`\begin{align*}
-  f(x) &= -(x-1)-(x-2)-(x-3) \\
+\begin{align*}
+  f(x) &= -(x-1)-(x-2)-(x-3) \cr
   &= -3x + 6.
-\end{align*}`
+\end{align*}
 {{% /li %}}
 {{% li %}}
 When $1\le x < 2$,
-`\begin{align*}
-  f(x) &= (x-1)-(x-2)-(x-3) \\
+\begin{align*}
+  f(x) &= (x-1)-(x-2)-(x-3) \cr
   &= -x+4.
-\end{align*}`
+\end{align*}
 {{% /li %}}
 {{% li %}}
 When $2\le x < 3$,
-`\begin{align*}
-  f(x) &= (x-1)+(x-2)-(x-3) \\
+\begin{align*}
+  f(x) &= (x-1)+(x-2)-(x-3) \cr
   &= x.
-\end{align*}`
+\end{align*}
 {{% /li %}}
 {{% li %}}
 When $x\ge 3$,
-`\begin{align*}
-  f(x) &= (x-1)+(x-2)+(x-3) \\
+\begin{align*}
+  f(x) &= (x-1)+(x-2)+(x-3) \cr
   &= 3x-6.
-\end{align*}`
+\end{align*}
 {{% /li %}}
 {{% /ol %}}
 
@@ -164,28 +164,28 @@ Note the gradient is negative when $x<2$, and the gradient becomes positive when
 
 {{% enum b %}}
 When $3x-24<0$, $x<8$ and{{% sn a4 %}}Check [this lesson on removing absolute values](../../../numbers-and-expressions/inequalities/absolute-value-equations/#equations-with-multiple-absolute-values) if you need help.{{% /sn %}}
-`\begin{align*}
-  f(x) &= \big| x - (3x-24) \big| \\
-  &= | -2x + 24 | \\
+\begin{align*}
+  f(x) &= \big| x - (3x-24) \big| \cr
+  &= | -2x + 24 | \cr
   &= 2| 12 - x |.
-\end{align*}`
+\end{align*}
 $12-x$ is always positive because we assumed $x<8$.
 
 Thus $f(x) = 2(12-x) = -2x+24.$
 
 When $3x-24\ge 0$, $x\ge 8$ and
-`\begin{align*}
-  f(x) &= | x + (3x-24) | \\
-  &= | 4x - 24 | \\
+\begin{align*}
+  f(x) &= | x + (3x-24) | \cr
+  &= | 4x - 24 | \cr
   &= 4| x-6 |.
-\end{align*}`
+\end{align*}
 $x-6$ is always positive because we assumed $x\ge 8$.
 
 Thus $f(x) = 4(x-6) = 4x - 24.$
 
 So far we found
 $$ f(x) = \begin{cases}
-  -2x+24 & \text{when $x<8$,} \\\\
+  -2x+24 & \text{when $x<8$,} \cr
   4x-24 & \text{when $x\ge 8$.}
 \end{cases} $$
 
@@ -208,23 +208,23 @@ Because the function changes from negative gradient to positive gradient at $x=8
 {{% enum a %}}
 We treat $a$ as a constant and complete the square. Note we need a factor of 2 in front of $x$.
 
-`\begin{align*}
-  y &= x^2 + ax - 2 \\
-  &= x^2 + 2\cdot \dfrac{a}{2} x + \dfrac{a^2}{4} - \dfrac{a^2}{4} - 2 \\
+\begin{align*}
+  y &= x^2 + ax - 2 \cr
+  &= x^2 + 2\cdot \dfrac{a}{2} x + \dfrac{a^2}{4} - \dfrac{a^2}{4} - 2 \cr
   &= \left( x + \dfrac{a}{2}\right)^2 - \dfrac{a^2}{4} - 2.
-\end{align*}`
+\end{align*}
 
 Therefore, the vertex is $\boldsymbol{ \left( -\dfrac{a}{2}, - \dfrac{a^2}{4} - 2 \right) }.$
 
 {{% enum b %}}
 Because the coordinates of the vertex satisfies the equation $y = 2x-1$,
-`\begin{align*}
-  -\dfrac{a^2}{4} - 2 &= 2\left( -\dfrac{a}{2} \right) - 1 \\
-  \iff -\dfrac{a^2}{4} + a - 1 &= 0 \\
-  \iff a^2 - 4a + 4 &= 0 \\
-  \iff (a-2)^2 &= 0 \\
+\begin{align*}
+  -\dfrac{a^2}{4} - 2 &= 2\left( -\dfrac{a}{2} \right) - 1 \cr
+  \iff -\dfrac{a^2}{4} + a - 1 &= 0 \cr
+  \iff a^2 - 4a + 4 &= 0 \cr
+  \iff (a-2)^2 &= 0 \cr
   \iff \boldsymbol{ a = 2 }.
-\end{align*}`
+\end{align*}
 
 {{% /details %}}
 
@@ -243,25 +243,25 @@ We need to first find the coordinates of the vertex. From the first graph,
 =2(x^2-6x+9-9)+17 \\\\\\\\
 =2(x-3)^2-1.$
 {{% /mn %}}
-`\begin{align*}
-  y &= 2x^2 - 12x + 17 \\
+\begin{align*}
+  y &= 2x^2 - 12x + 17 \cr
   &= 2(x-3)^2 - 1, \tag{1}
-\end{align*}`
+\end{align*}
 hence the vertex is $(3, -1)$.
 
 Then, from the second graph,
-`\begin{align*}
-  y &= ax^2 + 6x + b \\
-  &= a\left(x^2 + \dfrac{6}{a} x \right) + b \\
-  &= a\left(x^2 + \dfrac{6}{a} x + \dfrac{9}{a^2} - \dfrac{9}{a^2} \right) + b \\
+\begin{align*}
+  y &= ax^2 + 6x + b \cr
+  &= a\left(x^2 + \dfrac{6}{a} x \right) + b \cr
+  &= a\left(x^2 + \dfrac{6}{a} x + \dfrac{9}{a^2} - \dfrac{9}{a^2} \right) + b \cr
   &= a\left( x + \dfrac{3}{a} \right)^2 - \dfrac{9}{a^2} + b.
-\end{align*}`
+\end{align*}
 
 Therefore, we can construct two equations for $a$ and $b$:
-`$$\begin{cases}
--\dfrac{3}{a} = 3, &\quad \cdots \tcirc{1} \\[0.5em]
+$$\begin{cases}
+-\dfrac{3}{a} = 3, &\quad \cdots \tcirc{1} \\\\[0.5em]
 -\dfrac{9}{a^2} + b = -1. &\quad \cdots \tcirc{2}
-\end{cases}$$`
+\end{cases}$$
 
 From $\tcirc{1}$, $\boldsymbol{ a = -1 }.$
 
@@ -269,16 +269,16 @@ Then, from $\tcirc{2}$, $\boldsymbol{ b=-10 }.$
 
 ***Alternative solution.***
 Because the second graph has to have the vertex of $(3, -1)$, its vertex form is $ y = a(x-3)^2 -1.$ If we expand this expression,
-`\begin{align*}
-  y &= a(x^2 - 6x + 9) - 1 \\
+\begin{align*}
+  y &= a(x^2 - 6x + 9) - 1 \cr
   &= ax^2 - 6ax + 9a - 1.
-\end{align*}`
+\end{align*}
 
 Comparing the coefficients with $y = ax^2 + 6x + b$, we find
-`$$\begin{cases}
--6a &= 6 \\
+$$\begin{cases}
+-6a &= 6 \cr
 9a - 1 &= b.
-\end{cases}$$`
+\end{cases}$$
 
 Solving the simultaneous equations gives $\boldsymbol{ a=-1,~b=-10 }.$
 
@@ -298,12 +298,12 @@ Solving the simultaneous equations gives $\boldsymbol{ a=-1,~b=-10 }.$
 
 {{% note Solution %}}
 From $[ x - (a+2) ]^2 = x^2 - 2(a+2)x + (a+2)^2$,
-`\begin{align*}
-  y &= x^2 - 2(a+2)x + a^2-a+1 \\
-  &= x^2 - 2(a+2)x + (a+2)^2 - (a+2)^2 + a^2-a+1 \\
-  &= [ x - (a+2) ]^2 - a^2 -4a - 4 + a^2 - a + 1 \\
+\begin{align*}
+  y &= x^2 - 2(a+2)x + a^2-a+1 \cr
+  &= x^2 - 2(a+2)x + (a+2)^2 - (a+2)^2 + a^2-a+1 \cr
+  &= [ x - (a+2) ]^2 - a^2 -4a - 4 + a^2 - a + 1 \cr
   &= [ x - (a+2) ]^2 - 5a - 3.
-\end{align*}`
+\end{align*}
 
 Thus the coordinates of the vertex of $G$ is $(a+2, -5a-3)$.
 

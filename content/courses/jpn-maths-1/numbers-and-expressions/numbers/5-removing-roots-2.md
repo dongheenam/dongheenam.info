@@ -61,20 +61,20 @@ Simplify the following expressions by removing the double square roots.
 We will modify what is inside the big square root into a perfect square.
 
 {{% enum 1 %}}
-`\begin{align*}
-& \textstyle\sqrt{11+2\sqrt{30}} \\
-&= \textstyle\sqrt{5+6+2\sqrt{5}\sqrt{6}} \\
-&= \textstyle\sqrt{\hl{(\sqrt{5}+\sqrt{6})^2}} \\
+\begin{align*}
+& \textstyle\sqrt{11+2\sqrt{30}} \cr
+&= \textstyle\sqrt{5+6+2\sqrt{5}\sqrt{6}} \cr
+&= \textstyle\sqrt{\hl{(\sqrt{5}+\sqrt{6})^2}} \cr
 &= \boldsymbol{ \sqrt{5} + \sqrt{6}. }
-\end{align*}`
+\end{align*}
 
 {{% enum 2 %}}
-`\begin{align*}
-& \textstyle\sqrt{9-2\sqrt{14}} \\
-&= \textstyle\sqrt{7+2-2\sqrt{7}\sqrt{\smash{2}\vphantom{6}}} \\
-&= \textstyle\sqrt{\hl{(\sqrt{7}-\sqrt{2})^2}} \\
+\begin{align*}
+& \textstyle\sqrt{9-2\sqrt{14}} \cr
+&= \textstyle\sqrt{7+2-2\sqrt{7}\sqrt{\smash{2}\vphantom{6}}} \cr
+&= \textstyle\sqrt{\hl{(\sqrt{7}-\sqrt{2})^2}} \cr
 &= \boldsymbol{ \sqrt{7}-\sqrt{2}. }
-\end{align*}`
+\end{align*}
 
 ***Note.*** The answer for the second example is ***not*** $\sqrt{2}-\sqrt{7}$! This is because $\sqrt{9-2\sqrt{14}}$ is greater than zero (there is no negative sign in front), but $\sqrt{2}-\sqrt{7}<0$.
 
@@ -84,10 +84,10 @@ In short, we can remove the outer root of a double square root expression of thi
 
 {{% hbox %}}
 {{% note Theorem %}} For any positive real numbers $a$ and $b$ with $a>b$,
-`\begin{align*}
-\textstyle\sqrt{(a+b)+2\sqrt{ab}} &= \sqrt{a} + \sqrt{b}, \\
+\begin{align*}
+\textstyle\sqrt{(a+b)+2\sqrt{ab}} &= \sqrt{a} + \sqrt{b}, \cr
 \textstyle\sqrt{(a+b)-2\sqrt{ab}} &= \sqrt{a} - \sqrt{b}.
-\end{align*}`
+\end{align*}
 
 {{% /hbox %}}
 
@@ -108,11 +108,11 @@ Because $\sqrt{84}=\sqrt{2^2\cdot 21} = 2\sqrt{21}$,
 (1) Be careful, $\sqrt{3}-\sqrt{7}$ is wrong!
 {{% /mn %}}
 
-`\begin{align*}
-\textstyle\sqrt{10-\sqrt{84}} &= \textstyle\sqrt{3+7-\hl{2\sqrt{21}}} \\
-&= \textstyle\sqrt{\hl{(\sqrt{7}-\sqrt{3})^2}} \\
+\begin{align*}
+\textstyle\sqrt{10-\sqrt{84}} &= \textstyle\sqrt{3+7-\hl{2\sqrt{21}}} \cr
+&= \textstyle\sqrt{\hl{(\sqrt{7}-\sqrt{3})^2}} \cr
 &= \boldsymbol{ \sqrt{7} - \sqrt{3}. } \tag{1}
-\end{align*}`
+\end{align*}
 
 {{% enum 2 %}}
 Here, we will multiply and divide by $\sqrt{2}$:
@@ -120,13 +120,13 @@ Here, we will multiply and divide by $\sqrt{2}$:
 (2) Rationalising the denominator.
 {{% /mn %}} 
 
-`\begin{align*}
-\textstyle\sqrt{6+\sqrt{35}} &= \hl{ \dfrac{\sqrt{12+2\sqrt{35}}}{\sqrt{2}} } \\
-&= \dfrac{\sqrt{ 7+5 + 2\sqrt{35} }}{\sqrt{2}} \\
-&= \dfrac{\hl{\sqrt{7}+\sqrt{5}}}{\sqrt{2}} \\
-&= \dfrac{(\sqrt{7}+\sqrt{5})\cdot \sqrt{2}}{2} \tag{2} \\
+\begin{align*}
+\textstyle\sqrt{6+\sqrt{35}} &= \hl{ \dfrac{\sqrt{12+2\sqrt{35}}}{\sqrt{2}} } \cr
+&= \dfrac{\sqrt{ 7+5 + 2\sqrt{35} }}{\sqrt{2}} \cr
+&= \dfrac{\hl{\sqrt{7}+\sqrt{5}}}{\sqrt{2}} \cr
+&= \dfrac{(\sqrt{7}+\sqrt{5})\cdot \sqrt{2}}{2} \tag{2} \cr
 &= \boldsymbol{ \dfrac{\sqrt{14}+\sqrt{10}}{2}. }
-\end{align*}`
+\end{align*}
 
 {{% /hbox %}}
 
@@ -158,28 +158,28 @@ Calculate the value of $\sqrt{(x-1)^2}+\sqrt{(x-3)^2}$, when:
 {{% enum 1 %}}
 When $x\ge 3$, $(x-1)\gt 0$ and $(x-3)\ge 0$ so
 
-`\begin{align*}
-\sqrt{(x-1)^2}+\sqrt{(x-3)^2} &= (x-1) + (x-3) \\
+\begin{align*}
+\sqrt{(x-1)^2}+\sqrt{(x-3)^2} &= (x-1) + (x-3) \cr
 &= \boldsymbol{ 2x-4. }
-\end{align*}`
+\end{align*}
 
 {{% enum 2 %}}
 When $1\le x \lt 3$, $(x-1)\ge 0$ and $(x-3)\lt 0$ so
 
-`\begin{align*}
-\sqrt{(x-1)^2}+\sqrt{(x-3)^2} &= (x-1) \hl{-(x-3)} \\
-&= x - 1 - x + 3 \\
+\begin{align*}
+\sqrt{(x-1)^2}+\sqrt{(x-3)^2} &= (x-1) \hl{-(x-3)} \cr
+&= x - 1 - x + 3 \cr
 &= \boldsymbol{ 2. }
-\end{align*}`
+\end{align*}
 
 {{% enum 3 %}}
 When $x\lt 1$, $(x-1)\lt 0$ and $(x-3)\lt 0$ so
 
-`\begin{align*}
-\sqrt{(x-1)^2}+\sqrt{(x-3)^2} &= \hl{-(x-1)} \hl{-(x-3)} \\
-&= -x+1-x+3 \\
+\begin{align*}
+\sqrt{(x-1)^2}+\sqrt{(x-3)^2} &= \hl{-(x-1)} \hl{-(x-3)} \cr
+&= -x+1-x+3 \cr
 &= \boldsymbol{ -2x+4. }
-\end{align*}`
+\end{align*}
 
 {{% /hbox %}}
 
@@ -209,49 +209,49 @@ People often forget $\sqrt{(\cdots)}$ is ***always*** positive, as long as it is
 
 {{% enum a %}} Since $4\sqrt{2} = 2\cdot 2\sqrt{2} = 2\sqrt{8}$,
 
-`\begin{align*}
-&\textstyle\sqrt{6 + 4\sqrt{2}} \\
-&= \textstyle\sqrt{6 + \hl{2\sqrt{8}}} \\
-&= \textstyle\sqrt{4 + 2 + 2\sqrt{2\cdot 4}} \\
-&= \sqrt{4} + \sqrt{2} \\
+\begin{align*}
+&\textstyle\sqrt{6 + 4\sqrt{2}} \cr
+&= \textstyle\sqrt{6 + \hl{2\sqrt{8}}} \cr
+&= \textstyle\sqrt{4 + 2 + 2\sqrt{2\cdot 4}} \cr
+&= \sqrt{4} + \sqrt{2} \cr
 &= \boldsymbol{ 2 + \sqrt{2}. }
-\end{align*}`
+\end{align*}
 
 {{% enum b %}} $\sqrt{48} = \sqrt{2^2\cdot 12} = 2\sqrt{12}$ and
 
-`\begin{align*}
-&\textstyle\sqrt{8-\sqrt{48}} \\
-&= \textstyle\sqrt{8-\hl{2\sqrt{12}}} \\
-&= \textstyle\sqrt{6 + 2 - 2\sqrt{6\cdot 2}} \\
+\begin{align*}
+&\textstyle\sqrt{8-\sqrt{48}} \cr
+&= \textstyle\sqrt{8-\hl{2\sqrt{12}}} \cr
+&= \textstyle\sqrt{6 + 2 - 2\sqrt{6\cdot 2}} \cr
 &= \boldsymbol{ \sqrt{6}-\sqrt{2}. }
-\end{align*}`
+\end{align*}
 
 {{% enum c %}} We will multiply and divide the expression by $\sqrt{2}$:
 {{% mn q1c tips %}}
 (1) Rationalising the denominator
 {{% /mn %}}
 
-`\begin{align*}
-&\textstyle\sqrt{2+\sqrt{3}} \\
-&= \hl{\dfrac{\sqrt{4+2\sqrt{3}}}{\sqrt{2}}} \\
-&= \dfrac{\sqrt{1+3+2\sqrt{1\cdot 3}}}{\sqrt{2}} \\
-&= \dfrac{1 + \sqrt{3}}{\sqrt{2}} \\
+\begin{align*}
+&\textstyle\sqrt{2+\sqrt{3}} \cr
+&= \hl{\dfrac{\sqrt{4+2\sqrt{3}}}{\sqrt{2}}} \cr
+&= \dfrac{\sqrt{1+3+2\sqrt{1\cdot 3}}}{\sqrt{2}} \cr
+&= \dfrac{1 + \sqrt{3}}{\sqrt{2}} \cr
 &= \boldsymbol{ \dfrac{\sqrt{2}+\sqrt{6}}{2}. } \tag{1}
-\end{align*}`
+\end{align*}
 
 {{% enum d %}} We first change $3\sqrt{5} = \sqrt{9\cdot 5} = \sqrt{45}$ and apply the same trick as Part (c).
 {{% mn q1d tips %}}
 (2) Rationalising the denominator
 {{% /mn %}}
 
-`\begin{align*}
-&\textstyle\sqrt{9-3\sqrt{5}} \\
-&= \textstyle\sqrt{9-\hl{\sqrt{45}}} \\
-&= \hl{\dfrac{\sqrt{18-2\sqrt{45}}}{\sqrt{2}}} \\
-&= \dfrac{\sqrt{15 + 3 - 2\sqrt{15\cdot 3}}}{\sqrt{2}} \\
-&= \dfrac{\sqrt{15}-\sqrt{3}}{\sqrt{2}} \\
+\begin{align*}
+&\textstyle\sqrt{9-3\sqrt{5}} \cr
+&= \textstyle\sqrt{9-\hl{\sqrt{45}}} \cr
+&= \hl{\dfrac{\sqrt{18-2\sqrt{45}}}{\sqrt{2}}} \cr
+&= \dfrac{\sqrt{15 + 3 - 2\sqrt{15\cdot 3}}}{\sqrt{2}} \cr
+&= \dfrac{\sqrt{15}-\sqrt{3}}{\sqrt{2}} \cr
 &= \boldsymbol{ \dfrac{\sqrt{30}-\sqrt{6}}{2}. } \tag{2}
-\end{align*}`
+\end{align*}
 
 {{% /details %}}
 
@@ -270,13 +270,13 @@ People often forget $\sqrt{(\cdots)}$ is ***always*** positive, as long as it is
 {{% mn q2a tips %}}
 (1) $4\sqrt{6}$ $=2\cdot 2\sqrt{6}$ $=2\cdot\sqrt{2^2\cdot 6}$ $=2\sqrt{24}$.
 {{% /mn %}}
-`\begin{align*}
-& \textstyle\sqrt{11+4\sqrt{6}} \\
-&= \textstyle\sqrt{11 + \hl{2\sqrt{24}}} \tag{1} \\
-&= \textstyle\sqrt{3 + 8 + 2\sqrt{3\cdot 8}} \\
-&= \sqrt{3} + \sqrt{8} \\
+\begin{align*}
+& \textstyle\sqrt{11+4\sqrt{6}} \cr
+&= \textstyle\sqrt{11 + \hl{2\sqrt{24}}} \tag{1} \cr
+&= \textstyle\sqrt{3 + 8 + 2\sqrt{3\cdot 8}} \cr
+&= \sqrt{3} + \sqrt{8} \cr
 &= \boldsymbol{ \sqrt{3} + 2\sqrt{2} }.
-\end{align*}`
+\end{align*}
 
 {{% enum b %}}
 {{% mn q2b tips %}}
@@ -284,16 +284,16 @@ People often forget $\sqrt{(\cdots)}$ is ***always*** positive, as long as it is
 (3) $\sqrt{3} - \sqrt{5}$ is wrong!<br>
 (4) Rationalising the denominator.
 {{% /mn %}}
-`\begin{align*}
-& \dfrac{1}{\sqrt{4-\sqrt{15}}} \\
-&= \dfrac{\hl{\sqrt{2}}}{\hl{\sqrt{2}}\sqrt{4-\sqrt{15}}} \tag{2} \\
-&= \dfrac{\sqrt{2}}{\sqrt{8 - 2\sqrt{15}}} \\
-&= \dfrac{\sqrt{2}}{\sqrt{3 + 5 - 2\sqrt{3\cdot 5}}} \\
-&= \dfrac{\sqrt{2}}{\sqrt{5} - \sqrt{3}} \tag{3} \\
-&= \dfrac{\sqrt{2}\big(\sqrt{5} + \sqrt{3}\big)}{\big(\sqrt{5} - \sqrt{3}\big)\big(\sqrt{5} + \sqrt{3}\big)} \tag{4} \\
-&= \dfrac{\sqrt{10} - \sqrt{6}}{5 - 3} \\
+\begin{align*}
+& \dfrac{1}{\sqrt{4-\sqrt{15}}} \cr
+&= \dfrac{\hl{\sqrt{2}}}{\hl{\sqrt{2}}\sqrt{4-\sqrt{15}}} \tag{2} \cr
+&= \dfrac{\sqrt{2}}{\sqrt{8 - 2\sqrt{15}}} \cr
+&= \dfrac{\sqrt{2}}{\sqrt{3 + 5 - 2\sqrt{3\cdot 5}}} \cr
+&= \dfrac{\sqrt{2}}{\sqrt{5} - \sqrt{3}} \tag{3} \cr
+&= \dfrac{\sqrt{2}\big(\sqrt{5} + \sqrt{3}\big)}{\big(\sqrt{5} - \sqrt{3}\big)\big(\sqrt{5} + \sqrt{3}\big)} \tag{4} \cr
+&= \dfrac{\sqrt{10} - \sqrt{6}}{5 - 3} \cr
 &= \boldsymbol{ \dfrac{\sqrt{10} - \sqrt{6}}{2} }.
-\end{align*}`
+\end{align*}
 
 {{% /details %}}
 
@@ -314,25 +314,25 @@ People often forget $\sqrt{(\cdots)}$ is ***always*** positive, as long as it is
 
 {{% enum a %}} When $a\ge 0$, $a+2\ge 0$, hence
 
-`\begin{align*}
-\sqrt{(a+2)^2}+\sqrt{a^2} &= (a+2) + a \\
+\begin{align*}
+\sqrt{(a+2)^2}+\sqrt{a^2} &= (a+2) + a \cr
 &= \boldsymbol{ 2a + 2. }
-\end{align*}`
+\end{align*}
 
 {{% enum b %}} When $-2\le a\lt 0$, $a+2\ge 0$, hence
 
-`\begin{align*}
-\sqrt{(a+2)^2}+\sqrt{a^2} &= (a+2) \hl{- a} \\
+\begin{align*}
+\sqrt{(a+2)^2}+\sqrt{a^2} &= (a+2) \hl{- a} \cr
 &= \boldsymbol{ 2. }
-\end{align*}`
+\end{align*}
 
 {{% enum c %}} When $a\lt -2$, $a+2\lt 0$, hence
 
-`\begin{align*}
-\sqrt{(a+2)^2}+\sqrt{a^2} &= \hl{-(a+2)} \hl{- a} \\
-&= -a-2-a \\
+\begin{align*}
+\sqrt{(a+2)^2}+\sqrt{a^2} &= \hl{-(a+2)} \hl{- a} \cr
+&= -a-2-a \cr
 &= \boldsymbol{ -2a - 2. }
-\end{align*}`
+\end{align*}
 
 {{% /details %}}
 
@@ -346,11 +346,11 @@ People often forget $\sqrt{(\cdots)}$ is ***always*** positive, as long as it is
 {{% mn q4 tips %}}
 (1) $-2\lt y\lt \dfrac{3}{4}$, so $y+2\gt 0$ but $4y-3\lt 0$.
 {{% /mn %}}
-`\begin{align*}
-& \sqrt{y^2+4y+4}-\sqrt{16y^2-24y+9} \\
-&= \sqrt{(y+2)^2} - \sqrt{(4y-3)^2} \\
-&= (y+2) \hl{+ (4y-3)} \tag{1} \\
+\begin{align*}
+& \sqrt{y^2+4y+4}-\sqrt{16y^2-24y+9} \cr
+&= \sqrt{(y+2)^2} - \sqrt{(4y-3)^2} \cr
+&= (y+2) \hl{+ (4y-3)} \tag{1} \cr
 &= \boldsymbol{ 5y - 1 }.
-\end{align*}`
+\end{align*}
 
 {{% /details %}}

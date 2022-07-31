@@ -58,17 +58,17 @@ This means we can use all the identities we found so far for factorisation too!
 The distributive law says $$ \hl{A}B + \hl{A}C + \hl{A}D = \hl{A}(B+C+D). $$ How can we use this to factorise an expression, say $$ 2x^3 - 6x^2 + 8x? $$
 
 We need to find a term, which we call here $\hl{A}$, that is included in all of the terms. After some thoughts, you may realise $\hl{2x}$ is included in all three terms of the expression:
-`\begin{align*}
-2x^3 &= \hl{2x} \times x^2, \\
-6x^2 &= \hl{2x} \times 3x, \\
+\begin{align*}
+2x^3 &= \hl{2x} \times x^2, \cr
+6x^2 &= \hl{2x} \times 3x, \cr
 8x &= \hl{2x} \times 4.
-\end{align*}`
+\end{align*}
 
 Using this information,
-`\begin{align*}
-& 2x^3 - 6x^2 + 8x = \hl{2x} \times x^2 - \hl{2x} \times 3x + \hl{2x} \times 4 \\
+\begin{align*}
+& 2x^3 - 6x^2 + 8x = \hl{2x} \times x^2 - \hl{2x} \times 3x + \hl{2x} \times 4 \cr
 &= \hl{2x} (x^2 - 3x + 4 ).
-\end{align*}`
+\end{align*}
 
 Here $\hl{2x}$ is called the ***common factor*** because it is in every term of the polynomial. Let's have a look at a more complicated example:
 
@@ -78,10 +78,10 @@ Factorise $12x^2y^3z - 18xz^2$.
 
 {{% note Solution %}}
 The common factor of $12x^2y^3z$ and $18xz^2$ is $6xz$. So
-`\begin{align*}
-12x^2y^3z - 18xz^2 &= 6xz\times 2xy^2 - 6xz\times 3z \\
+\begin{align*}
+12x^2y^3z - 18xz^2 &= 6xz\times 2xy^2 - 6xz\times 3z \cr
 &= \boldsymbol{ 6xz ( 2xy^2 - 3z ) .}
-\end{align*}`
+\end{align*}
 
 {{% /hbox %}}
 
@@ -105,21 +105,21 @@ Factorise the following expressions.
 
 {{% enum 1 %}} It looks like there are no common factors, but wait, $y-2x = -(2x-y)$, so there is one!
 
-`\begin{align*}
-& (2x-y)^2 + y - 2x \\
-&= \underline{(2x-y)}(2x-y) - \underline{(2x-y)} \\
+\begin{align*}
+& (2x-y)^2 + y - 2x \cr
+&= \underline{(2x-y)}(2x-y) - \underline{(2x-y)} \cr
 &= \boldsymbol{ (2x-y)(2x-y-1). }
-\end{align*}`
+\end{align*}
 
 {{% enum 2 %}} Similarly, we can factorise the second and third terms first to find a common factor:
 
-`\begin{align*}
-& (x-y)^2 + y\underline{z} - \underline{z}x \\
-&= (x-y)^2 + z(y-x) \\
-&= (x-y)^2 - z(x-y) \\
-&= \underline{(x-y)}(x-y) - z\underline{(x-y)} \\
+\begin{align*}
+& (x-y)^2 + y\underline{z} - \underline{z}x \cr
+&= (x-y)^2 + z(y-x) \cr
+&= (x-y)^2 - z(x-y) \cr
+&= \underline{(x-y)}(x-y) - z\underline{(x-y)} \cr
 &= \boldsymbol{ (x-y)(x-y-z) .}
-\end{align*}`
+\end{align*}
 
 {{% /hbox %}}
 
@@ -142,23 +142,23 @@ Factorise the following expressions.
 {{% note Solution %}}
 
 {{% enum b %}}
-`\begin{align*}
-& 6a^2b + 4ab^2 - 2ab \\
-&= 2(3a^2b + 2ab^2 - ab) \\
+\begin{align*}
+& 6a^2b + 4ab^2 - 2ab \cr
+&= 2(3a^2b + 2ab^2 - ab) \cr
 &= \boldsymbol{ 2ab(3a + 2b - 1) .}
-\end{align*}`
+\end{align*}
 {{% enum c %}}
-`\begin{align*}
-& 24c^2d - 36c^3d^2 + 12c^4 \\
-&= 12(2c^2d - 3c^3d^2 + c^4 ) \\
+\begin{align*}
+& 24c^2d - 36c^3d^2 + 12c^4 \cr
+&= 12(2c^2d - 3c^3d^2 + c^4 ) \cr
 &= \boldsymbol{ 12c^2(2d - 3cd^2 + c^2) .}
-\end{align*}`
+\end{align*}
 {{% enum d %}}
-`\begin{align*}
-& 9a^3x^2y - 45ax^3y^2 + 18a^2xy^3 \\
-&= 9(a^3x^2y - 5ax^3y^2 + 2a^2xy^3) \\
+\begin{align*}
+& 9a^3x^2y - 45ax^3y^2 + 18a^2xy^3 \cr
+&= 9(a^3x^2y - 5ax^3y^2 + 2a^2xy^3) \cr
 &= \boldsymbol{ 9axy(a^2x - 5x^2y + 2ay^2) .}
-\end{align*}`
+\end{align*}
 
 {{% /details %}}
 
@@ -179,25 +179,25 @@ Factorise the following expressions.
 {{% note Solution %}}
 
 {{% enum b %}}
-`\begin{align*}
-& p(3x-y) + 2q(y-3x) \\
-&= p(x-y) - 2q(3x-y) \\
+\begin{align*}
+& p(3x-y) + 2q(y-3x) \cr
+&= p(x-y) - 2q(3x-y) \cr
 &= \boldsymbol{ (p-2q)(3x-y) .}
-\end{align*}`
+\end{align*}
 {{% enum c %}}
-`\begin{align*}
-& (a-b)x^2 - (b-a)xy \\
-&= (a-b)x^2 + (a-b)xy \\
-&= \underline{(a-b)x} \cdot x + \underline{(a-b)x}\cdot y \\
-&= (a-b)x(x+y) \\
+\begin{align*}
+& (a-b)x^2 - (b-a)xy \cr
+&= (a-b)x^2 + (a-b)xy \cr
+&= \underline{(a-b)x} \cdot x + \underline{(a-b)x}\cdot y \cr
+&= (a-b)x(x+y) \cr
 &= \boldsymbol{ x(a-b)(x+y) .}
-\end{align*}`
+\end{align*}
 {{% enum d %}}
-`\begin{align*}
-& 3a(x-y) + 6b(x-y) + 9c(y-x) \\
-&= 3a(\underline{x-y}) + 6b(\underline{x-y}) - 9c(\underline{x-y}) \\
-&= (\underline{x-y})(3a + 6b - 9c) \\
+\begin{align*}
+& 3a(x-y) + 6b(x-y) + 9c(y-x) \cr
+&= 3a(\underline{x-y}) + 6b(\underline{x-y}) - 9c(\underline{x-y}) \cr
+&= (\underline{x-y})(3a + 6b - 9c) \cr
 &= \boldsymbol{ 3(x-y)(a+2b-3c) .}
-\end{align*}`
+\end{align*}
 
 {{% /details %}}

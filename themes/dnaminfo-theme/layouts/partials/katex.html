@@ -75,34 +75,5 @@
             });
             resolve();
         });
-
-        
-        runKatex.then( (msg) => {
-            document.querySelectorAll("* > span > span.katex-display").forEach( (katexNode) => {
-                // clean the katex-display environments
-                const parent1 = katexNode.parentNode;
-                const parent2 = parent1.parentNode;
-                const parent3 = parent2.parentNode;
-                if (parent3.childNodes.length == 1) {
-                    parent3.parentNode.replaceChild(katexNode, parent3);
-                } else if (parent2.childNodes.length == 1) {
-                    parent3.replaceChild(katexNode, parent2);
-                } else {
-                    parent2.replaceChild(katexNode, parent1);
-                }
-
-                // apply css class for any displays with a tag
-                if (katexNode.querySelector(".tag")) {
-                    katexNode.querySelector(".katex-html").classList.add("has-tag");
-                }
-            });
-        // clean the katex environments
-        }).then( (msg) => {
-            document.querySelectorAll("* > span:not(.katex-display) > span.katex").forEach( (katexNode) => {
-                const parent1 = katexNode.parentNode;
-                const parent2 = parent1.parentNode;
-                parent2.replaceChild(katexNode, parent1);
-            });
-        });
     });
 </script>

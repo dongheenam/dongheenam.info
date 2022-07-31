@@ -42,11 +42,11 @@ For you to use these identities, there must be two squares, $a^2$ and $b^2$, and
 
 {{% hbox %}}
 
-{{% note Identity 1 %}} ***Perfect squares***.
-`\begin{align*}
-a^2 + 2ab + b^2 &= (a+b)^2, \\
+{{% note "Identity 1" %}} ***Perfect squares***.
+\begin{align*}
+a^2 + 2ab + b^2 &= (a+b)^2, \\\\
 a^2 - 2ab + b^2 &= (a-b)^2.
-\end{align*}`
+\end{align*}
 {{% /hbox %}}
 
 
@@ -61,17 +61,17 @@ Factorise the following.
 {{% note Solution %}}
 
 {{% enum 1 %}}
-`\begin{align*}
-& g^2 + 12g + 36 \\
-&= g^2 + 2\cdot 6 \cdot g + 6^2 \\
+\begin{align*}
+& g^2 + 12g + 36 \\\\
+&= g^2 + 2\cdot 6 \cdot g + 6^2 \\\\
 &= \boldsymbol{ (g+6)^2 .}
-\end{align*}`
+\end{align*}
 {{% enum 2 %}}
-`\begin{align*}
-& 16s^2 - 24st + 9t^2 \\
-&= (4s)^2 - 2\cdot 4s \cdot 3t + (3t)^2 \\
+\begin{align*}
+& 16s^2 - 24st + 9t^2 \\\\
+&= (4s)^2 - 2\cdot 4s \cdot 3t + (3t)^2 \\\\
 &= \boldsymbol{ (4s-3t)^2 .}
-\end{align*}`
+\end{align*}
 
 {{% /hbox %}}
 
@@ -107,27 +107,27 @@ Factorise the following.
 {{% note Solution %}}
 
 {{% enum 1 %}}
-`\begin{align*}
-& A^2 - 16 \\
-&= A^2 - 4^2 \\
+\begin{align*}
+& A^2 - 16 \\\\
+&= A^2 - 4^2 \\\\
 &= \boldsymbol{ (A+4)(A-4) .}
-\end{align*}`
+\end{align*}
 
 {{% enum 2 %}}
-`\begin{align*}
-& 36x^2 - 49y^2 \\
-&= (6x)^2 - (7y)^2 \\
+\begin{align*}
+& 36x^2 - 49y^2 \\\\
+&= (6x)^2 - (7y)^2 \\\\
 &= \boldsymbol{ (6x+7y)(6x-7y) .}
-\end{align*}`
+\end{align*}
 
 {{% enum 3 %}} It does not look that obvious because $3$ and $27$ are not square numbers. But they do have a common factor. Factor them out first, and you should be able to apply the identity.
 
-`\begin{align*}
-& 27 - 3p^2q^2 \\
-&= 3 ( 9 - p^2q^2 ) \\
-&= 3 \left\{ 3^2 - (pq)^2 \right\} \\
+\begin{align*}
+& 27 - 3p^2q^2 \\\\
+&= 3 ( 9 - p^2q^2 ) \\\\
+&= 3\left\\{ 3^2 - (pq)^2\right\\} \\\\
 &= \boldsymbol{ 3(3+pq)(3-pq) .}
-\end{align*}`
+\end{align*}
 
 {{% /hbox %}}
 
@@ -170,33 +170,33 @@ Factorise the following quadratic polynomials.
 {{% note Solution %}}
 
 {{% enum 1 %}}
-`\begin{align*}
-& x^2 + 7x + 12 \\
-&= x^2 + (3+4)x + 3\cdot 4 \\
+\begin{align*}
+& x^2 + 7x + 12 \\\\
+&= x^2 + (3+4)x + 3\cdot 4 \\\\
 &= \boldsymbol{ (x+3)(x+4) .}
-\end{align*}`
+\end{align*}
 {{% enum 2 %}}
-`\begin{align*}
-& u^2 - 4u - 12 \\
-&= u^2 + (-6+2)u -6\cdot 2 \\
+\begin{align*}
+& u^2 - 4u - 12 \\\\
+&= u^2 + (-6+2)u -6\cdot 2 \\\\
 &= \boldsymbol{ (u-6)(u+2) .}
-\end{align*}`
+\end{align*}
 {{% enum 3 %}}
-`\begin{align*}
-& p^2 - 9pq + 20q^2 \\
-&= p^2 + (-4q-5q)p -4q\cdot(-5q) \\
+\begin{align*}
+& p^2 - 9pq + 20q^2 \\\\
+&= p^2 + (-4q-5q)p -4q\cdot(-5q) \\\\
 &= \boldsymbol{ (p-4q)(p-5q) .}
-\end{align*}`
+\end{align*}
 
 {{% /hbox %}}
 
 {{% details title="Difficult finding the pair?" %}}
 Instead of thinking of the sum and the product together, it is easier to first find all the number pairs that multiply to $r$, then choose the pair that adds up to $q$. For example, say you want to factorise $$ y^2 - y - 6. $$
 You can first find all pairs whose product is $-6$:
-`\begin{alignat*}{2}
-& (-1, 6), \quad & (-2, 3), \\
+\begin{alignat*}{2}
+& (-1, 6), \quad & (-2, 3), \\\\
 & (1, -6), \quad & (2, -3).
-\end{alignat*}`
+\end{alignat*}
 
 Which of these number pairs add up to $-1$? It is $(2,-3)$. Therefore $$ y^2 - y - 6 = (y+2)(y-3). $$
 
@@ -217,11 +217,11 @@ $$ acx^2 + (ad+bc)x + cd = (ax+b)(cx+d). $$
 {{% /hbox %}}
 
 This is a little bit complicated, because to factorise $px^2 + qx + r$, you need to find four numbers, $a$, $b$, $c$, and $d$ that satisfy
-`\begin{align*}
-ac &= p, \\
-ad+bc &= q, \\
+\begin{align*}
+ac &= p, \\\\
+ad+bc &= q, \\\\
 bd &= r.
-\end{align*}`
+\end{align*}
 Luckily, we have a useful strategy to find the four numbers quickly: the ***cross-multiplication method***.
 
 {{% hbox %}}
@@ -235,39 +235,39 @@ Suppose we want to factorise $6x^2 + 5x - 4 $.
 
 {{% enum 3 %}} Choose one pair from each of steps 1 and 2. Cross-multiply them to see whether the sum equals $q$. For example, if we choose $(1,6)$ and $(1,-4)$:
 
-`$$
+$$
 \rlap{\kern1.1em\raisebox{0.65em}{$\huge\times$} }
 \begin{array}{rcrcrr}
-  6 && 1 & \rightarrow & 1\cdot 1 = & 1 \\[0.7em]
-  1 && -4 & \rightarrow & 6\cdot(-4) = &-24 \\[0.2em]
-  \hline \\[-0.9em]
+  6 && 1 & \rightarrow & 1\cdot 1 = & 1 \\\\[0.7em]
+  1 && -4 & \rightarrow & 6\cdot(-4) = &-24 \\\\[0.2em]
+  \hline \\\\[-0.9em]
   &&&&& \boldsymbol{ -23 }
 \end{array}
-$$`
+$$
 
 {{% enum 4 %}}If we did not get $q$, choose a different pair and repeat.
 
-`$$
+$$
 \rlap{\kern1.1em\raisebox{0.65em}{$\huge\times$} }
 \begin{array}{rcrcrr}
-  2 && 1 & \rightarrow & 3\cdot 1 = & 3 \\[0.7em]
-  3 && -4 & \rightarrow & 2\cdot(-4) = &-8 \\[0.2em]
-  \hline \\[-0.9em]
+  2 && 1 & \rightarrow & 3\cdot 1 = & 3 \\\\[0.7em]
+  3 && -4 & \rightarrow & 2\cdot(-4) = &-8 \\\\[0.2em]
+  \hline \\\\[-0.9em]
   &&&&& \boldsymbol{ -5 }
 \end{array}
-$$`
+$$
   
 {{% enum 5 %}} The last one was very close - try again with opposite signs:
 
-`$$
+$$
 \rlap{\kern1.1em\raisebox{0.65em}{$\huge\times$} }
 \begin{array}{rcrcrr}
-  2 && -1 & \rightarrow & 3\cdot(-1) = & -3 \\[0.7em]
-  3 && 4 & \rightarrow & 2\cdot4 = & 8\\[0.2em]
-  \hline \\[-0.9em]
+  2 && -1 & \rightarrow & 3\cdot(-1) = & -3 \\\\[0.7em]
+  3 && 4 & \rightarrow & 2\cdot4 = & 8 \\\\[0.2em]
+  \hline \\\\[-0.9em]
   &&&&& \boldsymbol{ 5 }
 \end{array}
-$$`
+$$
 
 {{% enum 6 %}} Once the sum equals $q$, read the numbers horizontally. The top two numbers become one term and the bottom two another:
 
@@ -288,22 +288,22 @@ The method helps you find the value of $ad+bc$ once you choose $a$, $b$, $c$, an
 {{% note "Short answer" %}} this is because you can always find an answer while keeping both $a$ and $b$ positive.
 
 {{% note "Explanation" %}} Say, for the example above, you use $(-2,-3)$ instead for the factors of $p$. Then the combination of numbers that give you $q=5$ is this one,
-`$$
+$$
 \rlap{\kern1.8em\raisebox{0.65em}{$\huge\times$} }
 \begin{array}{rcrcrr}
-  -2 && 1 & \rightarrow & -3\cdot 1 = & -3 \\[0.7em]
-  -3 && -4 & \rightarrow & -2\cdot(-4) = & 8 \\[0.2em]
-  \hline \\[-0.9em]
+  -2 && 1 & \rightarrow & -3\cdot 1 = & -3 \\\\[0.7em]
+  -3 && -4 & \rightarrow & -2\cdot(-4) = & 8 \\\\[0.2em]
+  \hline \\\\[-0.9em]
   &&&&& \boldsymbol{ 5 }
 \end{array}
-$$`
+$$
 
 which corresponds to $(-2x+1)(-3x-4)$. It is easy to show that this answer is the same as the one we found in the example:
-`\begin{align*}
-(-2x+1)(-3x-4) &= \left\{ (2x-1)\cdot(-1) \right\} (-3x-4) \\
-&= (2x-1)\left\{ (-1)\cdot (-3x-4) \right\} \\
+\begin{align*}
+(-2x+1)(-3x-4) &=\left\\{ (2x-1)\cdot(-1)\right\\} (-3x-4) \\\\
+&= (2x-1)\left\\{ (-1)\cdot (-3x-4)\right\\} \\\\
 &= (2x-1)(3x+4).
-\end{align*}`
+\end{align*}
 
 Regardless of keeping the first set of pairs positive or negative, we get the same answer. That is why can only consider the positive combinations for $p$.
 
@@ -315,15 +315,15 @@ and factorise it.
 
 {{% details title="Still too many pairs to try out?" %}}
 Here is another tip I find very useful: the numbers need to be ***coprime*** (the largest common denominator is 1) in the horizontal direction. Say you wanted to try out this one:
-`$$
+$$
 \rlap{\kern1.1em\raisebox{0.65em}{$\huge\times$} }
 \begin{array}{rcrcrr}
-  2 && 4 & \rightarrow & 3\cdot4 = & 12 \\[0.7em]
-  3 && -1 & \rightarrow & 2\cdot(-1) = & -2\\[0.2em]
-  \hline \\[-0.9em]
+  2 && 4 & \rightarrow & 3\cdot4 = & 12 \\\\[0.7em]
+  3 && -1 & \rightarrow & 2\cdot(-1) = & -2 \\\\[0.2em]
+  \hline \\\\[-0.9em]
   &&&&& \boldsymbol{ 10 }
 \end{array}
-$$`
+$$
 
 This one obviously does not work, but what does this combination represent? It is this polynomial $$ (2x+4)(3x-1) = 6x^2 + 10x - 4, $$
 which does have a common factor: $$ 2(x+2)(3x-1) = 2(3x^2 + 5x - 2). $$
@@ -344,37 +344,37 @@ Factorise the following quadratic polynomials.
 {{% note Solution %}}
 
 {{% enum 1 %}} $3x^2 + 5x + 2 = \boldsymbol{ (3x+2)(x+1) }$.
-`$$
+$$
 \rlap{\kern1.1em\raisebox{0.65em}{$\huge\times$} }
 \begin{array}{rcrrr}
-  3 && 2 & \rightarrow & 2 \\[0.7em]
-  1 && 1 & \rightarrow & 3 \\[0.2em]
-  \hline \\[-0.9em]
+  3 && 2 & \rightarrow & 2 \\\\[0.7em]
+  1 && 1 & \rightarrow & 3 \\\\[0.2em]
+  \hline \\\\[-0.9em]
   &&&& \boldsymbol{ 5 }
 \end{array}
-$$`
+$$
 
 {{% enum 2 %}} $12x^2 - 16x - 3 = \boldsymbol{ (2x-3)(6x+1) }$.
-`$$
+$$
 \rlap{\kern1.1em\raisebox{0.65em}{$\huge\times$} }
 \begin{array}{rcrrr}
-  2 && -3 & \rightarrow & -18 \\[0.7em]
-  6 && 1 & \rightarrow & 2 \\[0.2em]
-  \hline \\[-0.9em]
+  2 && -3 & \rightarrow & -18 \\\\[0.7em]
+  6 && 1 & \rightarrow & 2 \\\\[0.2em]
+  \hline \\\\[-0.9em]
   &&&& \boldsymbol{ -16 }
 \end{array}
-$$`
+$$
 
 {{% enum 3 %}} $6a^2 + 23ab - 48b^2 = \boldsymbol{ (2a-3b)(3a+16b) }$.
-`$$
+$$
 \rlap{\kern1.1em\raisebox{0.65em}{$\huge\times$} }
 \begin{array}{rcrrr}
-  2 && -3b & \rightarrow & -9b \\[0.7em]
-  3 && 16b & \rightarrow & 32b \\[0.2em]
-  \hline \\[-0.9em]
+  2 && -3b & \rightarrow & -9b \\\\[0.7em]
+  3 && 16b & \rightarrow & 32b \\\\[0.2em]
+  \hline \\\\[-0.9em]
   &&&& \boldsymbol{ 23b }
 \end{array}
-$$`
+$$
 
 {{% /hbox %}}
 
@@ -391,29 +391,29 @@ $$`
 
 
 {{% enum a %}}
-`\begin{align*}
-& x^2 + 14x + 49 \\
-&= x^2 + 2\cdot7\cdot x + 7^2 \\
+\begin{align*}
+& x^2 + 14x + 49 \cr
+&= x^2 + 2\cdot7\cdot x + 7^2 \cr
 &= \boldsymbol{ (x+7)^2 .}
-\end{align*}`
+\end{align*}
 {{% enum b %}}
-`\begin{align*}
-& y^2 - 4y + 4 \\
-&= y^2 - 2\cdot 2\cdot y + 2^2 \\
+\begin{align*}
+& y^2 - 4y + 4 \cr
+&= y^2 - 2\cdot 2\cdot y + 2^2 \cr
 &= \boldsymbol{ (y-2)^2 .}
-\end{align*}`
+\end{align*}
 {{% enum c %}}
-`\begin{align*}
-& 4x^2 - 20xy + 25y^2 \\
-&= (2x)^2 - 2\cdot 2x \cdot 5y + (5y)^2 \\
+\begin{align*}
+& 4x^2 - 20xy + 25y^2 \cr
+&= (2x)^2 - 2\cdot 2x \cdot 5y + (5y)^2 \cr
 &= \boldsymbol{ (2x-5y)^2 .}
-\end{align*}`
+\end{align*}
 {{% enum d %}}
-`\begin{align*}
-& b^4 + 6b^2 + 9 \\
-&= \left( b^2 \right)^2 + 2\cdot 3 \cdot b^2 + 3^2 \\
+\begin{align*}
+& b^4 + 6b^2 + 9 \cr
+&= \left( b^2 \right)^2 + 2\cdot 3 \cdot b^2 + 3^2 \cr
 &= \boldsymbol{ (b^2 + 3)^2 .}
-\end{align*}`
+\end{align*}
 
 {{% /details %}}
 
@@ -434,30 +434,30 @@ $$`
 {{% note Solution %}}
 
 {{% enum a %}}
-`\begin{align*}
-& r^2 - 25 \\
-&= r^2 - 5^2 \\
+\begin{align*}
+& r^2 - 25 \cr
+&= r^2 - 5^2 \cr
 &= \boldsymbol{ (r+5)(r-5) .}
-\end{align*}`
+\end{align*}
 {{% enum b %}}
-`\begin{align*}
-& 4x^2 - 9y^2 \\
-&= (2x)^2 - (3y)^2 \\
+\begin{align*}
+& 4x^2 - 9y^2 \cr
+&= (2x)^2 - (3y)^2 \cr
 &= \boldsymbol{ (2x+3y)(2x-3y) .}
-\end{align*}`
+\end{align*}
 {{% enum c %}}
-`\begin{align*}
-& t^4 - 1 \\
-&= \left( t^2 \right)^2 - 1^2 \\
-&= (t^2 + 1)(t^2 - 1) \\
+\begin{align*}
+& t^4 - 1 \cr
+&= \left( t^2 \right)^2 - 1^2 \cr
+&= (t^2 + 1)(t^2 - 1) \cr
 &= \boldsymbol{ (t^2+1)(t+1)(t-1) .}
-\end{align*}`
+\end{align*}
 {{% enum d %}}
-`\begin{align*}
-  & (\underline{m-n})^2 - p^2 \\
-  &= (\underline{m-n}+p)(\underline{m-n}-p) \\
+\begin{align*}
+  & (\underline{m-n})^2 - p^2 \cr
+  &= (\underline{m-n}+p)(\underline{m-n}-p) \cr
   &= \boldsymbol{ (m-n+p)(m-n-p) }.
-\end{align*}`
+\end{align*}
 
 {{% /details %}}
 
@@ -482,41 +482,41 @@ $$`
 {{% note Solution %}}
 
 {{% enum a %}}
-`\begin{align*}
-& x^2 - 3x + 2 \\
-&= x^2 + (-1-2)x -1\cdot(-2) \\
+\begin{align*}
+& x^2 - 3x + 2 \cr
+&= x^2 + (-1-2)x -1\cdot(-2) \cr
 &= \boldsymbol{ (x-1)(x-2) .}
-\end{align*}`
+\end{align*}
 {{% enum b %}}
-`\begin{align*}
- & y^2 + 4y - 12 \\
-&= y^2 + (-2+6)y -2\cdot 6 \\
+\begin{align*}
+ & y^2 + 4y - 12 \cr
+&= y^2 + (-2+6)y -2\cdot 6 \cr
 &= \boldsymbol{ (y-2)(y+6) .}
-\end{align*}`
+\end{align*}
 {{% enum c %}}
-`\begin{align*}
-& t^2 + 5t - 36 \\
-&= t^2 + (-4+9)t -4\cdot 9 \\
+\begin{align*}
+& t^2 + 5t - 36 \cr
+&= t^2 + (-4+9)t -4\cdot 9 \cr
 &= \boldsymbol{ (t-4)(t+9) .}
-\end{align*}`
+\end{align*}
 {{% enum d %}}
-`\begin{align*}
-& a^2 + 10a + 21 \\
-&= a^2 + (3+7)a + 3\cdot 7 \\
+\begin{align*}
+& a^2 + 10a + 21 \cr
+&= a^2 + (3+7)a + 3\cdot 7 \cr
 &= \boldsymbol{ (a+3)(a+7) .}
-\end{align*}`
+\end{align*}
 {{% enum e %}}
-`\begin{align*}
-& x^2 - xy - 12y^2 \\
-&= x^2 + (-4y+3y)x -4y\cdot 3y \\
+\begin{align*}
+& x^2 - xy - 12y^2 \cr
+&= x^2 + (-4y+3y)x -4y\cdot 3y \cr
 &= \boldsymbol{ (x-4y)(x+3y) .}
-\end{align*}`
+\end{align*}
 {{% enum f %}}
-`\begin{align*}
-& a^2 + 3ab - 18b^2 \\
-&= a^2 + (6b-3b)a + 6b\cdot(-3b) \\
+\begin{align*}
+& a^2 + 3ab - 18b^2 \cr
+&= a^2 + (6b-3b)a + 6b\cdot(-3b) \cr
 &= \boldsymbol{ (a+6b)(a-3b) .}
-\end{align*}`
+\end{align*}
 
 {{% /details %}}
 
@@ -545,91 +545,91 @@ $$`
 {{% note Solution %}}
 
 {{% enum a %}} $ 2x^2 + 3x + 1 = \boldsymbol{ (2x+1)(x+1) } $
-`$$
+$$
 \rlap{\kern1.1em\raisebox{0.65em}{$\huge\times$} }
 \begin{array}{rcrrr}
-  2 && 1 & \rightarrow & 1 \\[0.7em]
-  1 && 1 & \rightarrow & 2 \\[0.2em]
-  \hline \\[-0.9em]
+  2 && 1 & \rightarrow & 1 \\\\[0.7em]
+  1 && 1 & \rightarrow & 2 \\\\[0.2em]
+  \hline \\\\[-0.9em]
   &&&& \boldsymbol{ 3 }
 \end{array}
-$$`
+$$
 
 {{% enum b %}} $3x^2 + 10x + 3 = \boldsymbol{ (3x+1)(x+3) }$
-`$$
+$$
 \rlap{\kern1.1em\raisebox{0.65em}{$\huge\times$} }
 \begin{array}{rcrrr}
-  3 && 1 & \rightarrow & 1 \\[0.7em]
-  1 && 3 & \rightarrow & 9 \\[0.2em]
-  \hline \\[-0.9em]
+  3 && 1 & \rightarrow & 1 \\\\[0.7em]
+  1 && 3 & \rightarrow & 9 \\\\[0.2em]
+  \hline \\\\[-0.9em]
   &&&& \boldsymbol{ 10 }
 \end{array}
-$$`
+$$
 
 {{% enum c %}} $2x^2 - 9x + 4 = \boldsymbol{ (2x-1)(x-4) }$
-`$$
+$$
 \rlap{\kern1.1em\raisebox{0.65em}{$\huge\times$} }
 \begin{array}{rcrrr}
-  2 && -1 & \rightarrow & -1 \\[0.7em]
-  1 && -4 & \rightarrow & -8 \\[0.2em]
-  \hline \\[-0.9em]
+  2 && -1 & \rightarrow & -1 \\\\[0.7em]
+  1 && -4 & \rightarrow & -8 \\\\[0.2em]
+  \hline \\\\[-0.9em]
   &&&& \boldsymbol{ -9 }
 \end{array}
-$$`
+$$
 
 {{% enum d %}} $6x^2 + x - 1 = \boldsymbol{ (2x+1)(3x-1) }$
-`$$
+$$
 \rlap{\kern1.1em\raisebox{0.65em}{$\huge\times$} }
 \begin{array}{rcrrr}
-  2 && 1 & \rightarrow & 3 \\[0.7em]
-  3 && -1 & \rightarrow & -2 \\[0.2em]
-  \hline \\[-0.9em]
+  2 && 1 & \rightarrow & 3 \\\\[0.7em]
+  3 && -1 & \rightarrow & -2 \\\\[0.2em]
+  \hline \\\\[-0.9em]
   &&&& \boldsymbol{ 1 }
 \end{array}
-$$`
+$$
 
 {{% enum e %}} $12a^2 - 7a - 12 = \boldsymbol{ (3a-4)(4a+3) }$
-`$$
+$$
 \rlap{\kern1.1em\raisebox{0.65em}{$\huge\times$} }
 \begin{array}{rcrrr}
-  3 && -4 & \rightarrow & -16 \\[0.7em]
-  4 && 3 & \rightarrow & 9 \\[0.2em]
-  \hline \\[-0.9em]
+  3 && -4 & \rightarrow & -16 \\\\[0.7em]
+  4 && 3 & \rightarrow & 9 \\\\[0.2em]
+  \hline \\\\[-0.9em]
   &&&& \boldsymbol{ -7 }
 \end{array}
-$$`
+$$
 
 {{% enum f %}} $8x^2 - 2xy - 3y^2 = \boldsymbol{ (2x+y)(4x-3y) }$
-`$$
+$$
 \rlap{\kern1.1em\raisebox{0.65em}{$\huge\times$} }
 \begin{array}{rcrrr}
-  2 && y & \rightarrow & 4y \\[0.7em]
-  4 && -3y & \rightarrow & -6y \\[0.2em]
-  \hline \\[-0.9em]
+  2 && y & \rightarrow & 4y \\\\[0.7em]
+  4 && -3y & \rightarrow & -6y \\\\[0.2em]
+  \hline \\\\[-0.9em]
   &&&& \boldsymbol{ -2y }
 \end{array}
-$$`
+$$
 
 {{% enum g %}} $10p^2 - 19pq + 6q^2 = \boldsymbol{ (2p-3q)(5p-2q) }$
-`$$
+$$
 \rlap{\kern1.1em\raisebox{0.65em}{$\huge\times$} }
 \begin{array}{rcrrr}
-  2 && -3q & \rightarrow & -15q \\[0.7em]
-  5 && -2q & \rightarrow & -4q \\[0.2em]
-  \hline \\[-0.9em]
+  2 && -3q & \rightarrow & -15q \\\\[0.7em]
+  5 && -2q & \rightarrow & -4q \\\\[0.2em]
+  \hline \\\\[-0.9em]
   &&&& \boldsymbol{ -19q }
 \end{array}
-$$`
+$$
 
 {{% enum h %}} $6a^2 - ab - 12b^2 = \boldsymbol{ (2a-3b)(3a+4b) }$
-`$$
+$$
 \rlap{\kern1.1em\raisebox{0.65em}{$\huge\times$} }
 \begin{array}{rcrrr}
-  2 && -3b & \rightarrow & -9b \\[0.7em]
-  3 && 4b & \rightarrow & 8b \\[0.2em]
-  \hline \\[-0.9em]
+  2 && -3b & \rightarrow & -9b \\\\[0.7em]
+  3 && 4b & \rightarrow & 8b \\\\[0.2em]
+  \hline \\\\[-0.9em]
   &&&& \boldsymbol{ -b }
 \end{array}
-$$`
+$$
 
 {{% /details %}}

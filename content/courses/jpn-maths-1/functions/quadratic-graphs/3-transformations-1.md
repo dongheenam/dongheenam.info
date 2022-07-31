@@ -48,22 +48,22 @@ Let's apply this idea to quadratic functions in general form.
 - Moving 1 unit up:{{% sn 55 %}}Likewise, $q$ is positive if moving up, and negative if moving down.{{% /sn %}} $y\hl{-1} = f(x+3)$
 
 Therefore, the equation of the new graph is:
-`\begin{align*}
-  y &= \underline{f(x+3)} + 1 \\
-  &= \underline{-2(x+3)^2 + 4(x+3) - 4} + 1 \\
-  &= -2(x^2 + 6x + 9) + 4(x+3) - 3 \\
-  &= -2x^2 + (-12+4)x -18+12-3 \\
+\begin{align*}
+  y &= \underline{f(x+3)} + 1 \cr
+  &= \underline{-2(x+3)^2 + 4(x+3) - 4} + 1 \cr
+  &= -2(x^2 + 6x + 9) + 4(x+3) - 3 \cr
+  &= -2x^2 + (-12+4)x -18+12-3 \cr
   &= \boldsymbol{ -2x^2 -8x -9 }.
-\end{align*}`
+\end{align*}
 
 ***Alternative solution.*** We can find the coordinates of the vertex by converting the equation to the vertex form:
-`\begin{align*}
-  y &= -2x^2 + 4x - 4 \\
-  &= -2(x^2 - 2x) - 4 \\
-  &= -2(\underline{x^2 - 2x + 1} - 1) - 4 \\
-  &= -2\underline{(x-1)^2} + 2 - 4 \\
+\begin{align*}
+  y &= -2x^2 + 4x - 4 \cr
+  &= -2(x^2 - 2x) - 4 \cr
+  &= -2(\underline{x^2 - 2x + 1} - 1) - 4 \cr
+  &= -2\underline{(x-1)^2} + 2 - 4 \cr
   &= -2(x-1)^2 -2 .
-\end{align*}`
+\end{align*}
 
 Thus we find the vertex is $(1,-2)$. If we move this vertex 3 units left and 1 unit up, it becomes $(1-3,-2+1)=(-2,-1)$. Therefore, the equation of the new graph is $$ \boldsymbol{ y = -2(x+2)^2 - 1 }. $$
 
@@ -90,21 +90,21 @@ Up until now, all we had to do is to move the graph according to the prescribed 
 {{% note Solution %}} We can certainly let $f(x) = 2x^2 + 6x + 7$ and solve $$ f(x-p) + q = 2x^2 - 4x + 1 $$ for $p$ and $q$, but it sounds a little too cumbersome. Instead, we can focus on the coordinates of the vertices.
 
 For $P_1$,
-`\begin{align*}
-  y &= 2x^2 + 6x + 7 \\
-  &= 2(x^2 + 3x) + 7 \\
-  &= 2\left\{ \left( x + \dfrac{3}{2}\right)^2 - \dfrac{9}{4} \right\} + 7 \\
-  &= 2\left( x + \dfrac{3}{2}\right)^2 - \dfrac{9}{2} + 7 \\
+\begin{align*}
+  y &= 2x^2 + 6x + 7 \cr
+  &= 2(x^2 + 3x) + 7 \cr
+  &= 2\left\\{ \left( x + \dfrac{3}{2}\right)^2 - \dfrac{9}{4}\right\\} + 7 \cr
+  &= 2\left( x + \dfrac{3}{2}\right)^2 - \dfrac{9}{2} + 7 \cr
   &= 2\left( x + \dfrac{3}{2}\right)^2 + \dfrac{5}{2},
-\end{align*}`
+\end{align*}
 
 so the vertex is $\left(-\dfrac{3}{2}, \dfrac{5}{2}\right)$. For $P_2$,
-`\begin{align*}
-  y &= 2x^2 - 4x + 1 \\
-  &= 2(x^2 - 2x) + 1 \\
-  &= 2\\{ (x-1)^2 - 1 \\} + 1 \\
+\begin{align*}
+  y &= 2x^2 - 4x + 1 \cr
+  &= 2(x^2 - 2x) + 1 \cr
+  &= 2\\{ (x-1)^2 - 1 \\} + 1 \cr
   &= 2(x-1)^2 - 1,
-\end{align*}`
+\end{align*}
 so the vertex is $(1, -1)$.
 
 Thus the translation moves $\left(-\dfrac{3}{2}, \dfrac{5}{2}\right)$ to $(1, -1)$. If we let the amount of horizontal translation be $p$ and vertical translation be $q$, we have
@@ -121,17 +121,17 @@ This means $p=\dfrac{5}{2}$ and $q=-\dfrac{7}{2}$. Therefore, $\textbf{$\boldsym
 {{% note Example %}} When translated 1 unit along the x-axis and -2 units along the y-axis, the parabola $P_1$ moves to $P_2:~ y=2x^2 + 8x + 9$. Find the expression for $P_1$.
 
 {{% note Solution %}} If we move $P_1$ right by 1 unit and down by 2 units and get $P_2$, $P_1$ is $P_2$ moved left by 1 unit and up by 2 units:
-`\begin{alignat*}{3}
-  P_1 \longrightarrow & ~\text{(1 unit right, 2 units down)} & \longrightarrow P_2 \\
-  P_1 \longleftarrow & ~\text{(1 unit left, 2 units up)} & \longleftarrow P_2 \\
-\end{alignat*}`
+\begin{alignat*}{3}
+  P_1 \longrightarrow & ~\text{(1 unit right, 2 units down)} & \longrightarrow P_2 \cr
+  P_1 \longleftarrow & ~\text{(1 unit left, 2 units up)} & \longleftarrow P_2 \cr
+\end{alignat*}
 
 Thus, the equation of $P_1$ is $$ y-2 = 2(x+1)^2 + 8(x+1) + 9. $$ Therefore
-`\begin{align*}
-  y &= 2(x+1)^2 + 8(x+1) + 9 + 2 \\
-  &= 2(x^2 + 2x + 1) + 8(x+1) + 11 \\
+\begin{align*}
+  y &= 2(x+1)^2 + 8(x+1) + 9 + 2 \cr
+  &= 2(x^2 + 2x + 1) + 8(x+1) + 11 \cr
   &= \boldsymbol{ 2x^2 + 12x + 21 }.
-\end{align*}`
+\end{align*}
 
 {{% /hbox %}}
 
@@ -149,27 +149,27 @@ When you move the graph of $y=g(x)$ 2 units right and 1 unit down, the equation 
 $$ y+1 = g(x-2). $$
 
 Thus,
-`\begin{align*}
-  f(x) &= (x-2)^2 -4(x-2) - 1 \\
-  &= x^2 - 4x + 4 - 4x + 8 - 1 \\
+\begin{align*}
+  f(x) &= (x-2)^2 -4(x-2) - 1 \cr
+  &= x^2 - 4x + 4 - 4x + 8 - 1 \cr
   &= \boldsymbol{ x^2 - 8x + 11 }.
-\end{align*}`
+\end{align*}
 
 ***Alternative solution.*** Converting $y = x^2 - 4x$ to the vertex form gives
-`\begin{align*}
-  y &= x^2 - 4x \\
-  &= x^2 - 4x + 4 - 4 \\
+\begin{align*}
+  y &= x^2 - 4x \cr
+  &= x^2 - 4x + 4 - 4 \cr
   &= (x-2)^2 - 4.
-\end{align*}`
+\end{align*}
 
 Thus the vertex of $y = x^2 - 4x$ is $(2, -4)$. If we move this point 2 units right and 1 unit down, it becomes $(2+2,-4-1)=(4,-5)$.
 
 Therefore, $f(x)$ is equal to
-`\begin{align*}
-  f(x) &= \boldsymbol{ (x-4)^2 - 5 } \\
-  &= x^2 - 8x + 16 - 4 \\
+\begin{align*}
+  f(x) &= \boldsymbol{ (x-4)^2 - 5 } \cr
+  &= x^2 - 8x + 16 - 4 \cr
   &= \boldsymbol{ x^2 - 8x + 11 }.
-\end{align*}`
+\end{align*}
 
 {{% /details %}}
 
@@ -181,16 +181,16 @@ Therefore, $f(x)$ is equal to
 
 {{% note Solution %}}
 If we convert both functions to their vertex forms,
-`\begin{align*}
-  y &= x^2 - 8x - 13 \\
-  &= x^2 - 8x + 16 - 16 - 13 \\
+\begin{align*}
+  y &= x^2 - 8x - 13 \cr
+  &= x^2 - 8x + 16 - 16 - 13 \cr
   &= (x-4)^2 - 29 \tag{$\cdots\tcirc{1}$}
-\end{align*}`
+\end{align*}
 
 and
-`\begin{align*}
-  y &= x^2 + 4x + 3 \\
-  &= x^2 + 4x + 4 - 4 + 3 \\
+\begin{align*}
+  y &= x^2 + 4x + 3 \cr
+  &= x^2 + 4x + 4 - 4 + 3 \cr
   &= (x+2)^2* - 1. \tag{$\cdots\tcirc{2}$}
 \end{align}`
 
@@ -206,10 +206,10 @@ Thus the vertex of $\tcirc{1}$ is $(4, -29)$ and the vertex of $\tcirc{2}$ is $(
 
 {{% note Solution %}}
 The graph we need to find is the graph of $y=x^2 + 3x + 4$ translated 1 unit right and 2 units down. Thus
-`\begin{align*}
-  y &= (x-1)^2 + 3(x-1) + 4 - 2 \\
-  &= x^2 - 2x + 1 + 3x - 3 + 4 - 2 \\
+\begin{align*}
+  y &= (x-1)^2 + 3(x-1) + 4 - 2 \cr
+  &= x^2 - 2x + 1 + 3x - 3 + 4 - 2 \cr
   &= \boldsymbol{ x^2 + x }.
-\end{align*}`
+\end{align*}
 
 {{% /details %}}

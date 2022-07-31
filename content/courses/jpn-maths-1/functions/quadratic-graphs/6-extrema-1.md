@@ -57,7 +57,7 @@ If $y_\text{max} = f(x_\text{max})$, then $(x_\text{max}, y_\text{max})$ is call
 
 If $y_\text{min} = f(x_\text{min})$, then $(x_\text{min}, y_\text{min})$ is called the ***minimum point*** of $f$.
 
-***Extrema** refer to either minima or maxima. *
+***Extrema** refer to either minima or maxima.*
 
 {{% /hbox %}}
 
@@ -93,10 +93,10 @@ $ 3x^2 + 4x - 1 \\\\\\\\[0.5em]
 =3\left( x + \frac{2}{3} \right)^2 - \frac{7}{3}.$
 {{< /mn >}}
 
-`\begin{align*}
-  y &= 3x^2 + 4x - 1 \\
+\begin{align*}
+  y &= 3x^2 + 4x - 1 \cr
   &= 3 \left( x + \frac{2}{3} \right)^2 - \frac{7}{3}. \tag{1} 
-\end{align*}`
+\end{align*}
 
 The coordinates of the vertex is $\left(-\dfrac{2}{3}, -\dfrac{7}{3} \right).$ Because $a=3$ is positive, the function has a $\textbf{minimum of $\boldsymbol{ -\dfrac{7}{3}}$ at $\boldsymbol{ x=-\dfrac{2}{3} }$}.$
 
@@ -111,10 +111,10 @@ $-2x^2+x \\\\\\\\[0.5em]
 =-2\left( x - \frac{1}{4} \right)^2 + \frac{1}{8}$.
 {{% /mn %}}
 
-`\begin{align*}
-  y &= -2x^2 + x \\
+\begin{align*}
+  y &= -2x^2 + x \cr
   &= -2\left(x - \dfrac{1}{4} \right)+\dfrac{1}{8}. \tag{2}
-\end{align*}`
+\end{align*}
 
 The coordinates of the vertex is $\left(\dfrac{1}{4}, \dfrac{1}{8} \right).$ Because $a=-2$ is negative, the function has a $\textbf{maximum of $\boldsymbol{ \dfrac{1}{8}}$ at $\boldsymbol{ x=\dfrac{1}{4} }$}.$
 
@@ -172,10 +172,10 @@ Completing the square gives
 =2(x-2)^2 - 3.$
 {{% /mn %}}
 
-`\begin{align*}
-  y &= 2x^2 - 8x + 5 \\
+\begin{align*}
+  y &= 2x^2 - 8x + 5 \cr
   &= 2(x-2)^2 -3. \tag{1}
-\end{align*}`
+\end{align*}
 
 Thus the vertex is inside the domain. Because $a=2>0$, the vertex is the minimum point, and the minimum is $\boldsymbol{ -3 }$ at $\boldsymbol{ x=2 }.$
 
@@ -222,44 +222,44 @@ Because $(-3,-1)$ is not included, there is ***no minimum*** and the function ha
 {{% note Solution %}}
 
 {{% enum a %}}
-`\begin{align*}
-  y &= \underline{x^2 - 2x} - 3 \\
-  &= \underline{(x-1)^2 - 1} - 3 \\
+\begin{align*}
+  y &= \underline{x^2 - 2x} - 3 \cr
+  &= \underline{(x-1)^2 - 1} - 3 \cr
   &= (x-1)^2 - 4,
-\end{align*}`
+\end{align*}
 
 so the vertex is $(1,-4)$. Because $a>0$, the function has ***a minimum***, and its value is $\boldsymbol{ -4 }.$
 
 {{% enum b %}}
-`\begin{align*}
-  y &= -2x^2 + 3x - 5 \\
-  &= -2 \left( x^2 - \dfrac{3}{2} x \right) - 5 \\
-  &= -2 \left\{ \left( x - \dfrac{3}{4} \right)^2 - \left( \frac{3}{4} \right)^2 \right\} - 5 \\
-  &= -2 \left( x - \dfrac{3}{4} \right)^2 + \frac{9}{8} - 5 \\
+\begin{align*}
+  y &= -2x^2 + 3x - 5 \cr
+  &= -2 \left( x^2 - \dfrac{3}{2} x \right) - 5 \cr
+  &= -2\left\\{ \left( x - \dfrac{3}{4} \right)^2 - \left( \frac{3}{4} \right)^2\right\\} - 5 \cr
+  &= -2 \left( x - \dfrac{3}{4} \right)^2 + \frac{9}{8} - 5 \cr
   &= -2 \left( x - \dfrac{3}{4} \right)^2 - \dfrac{31}{8}.
-\end{align*}`
+\end{align*}
 
 Hence the vertex is $\left(\dfrac{3}{4}, - \dfrac{31}{8} \right)$. Because $a<0$, the function has a ***maximum***, and its value is $\boldsymbol{ - \dfrac{31}{8} }.$
 
 {{% enum c %}}
-`\begin{align*}
-  y &= -2x^2 + 6x + 1 \\
-  &= -2 (x^2 - 3x ) + 1 \\
-  &= -2 \left\{ \left(x - \dfrac{3}{2} \right)^2 - \left( \dfrac{3}{2} \right)^2 \right\} + 1 \\
-  &= -2 \left(x - \dfrac{3}{2} \right)^2 + \dfrac{9}{2} + 1 \\
+\begin{align*}
+  y &= -2x^2 + 6x + 1 \cr
+  &= -2 (x^2 - 3x ) + 1 \cr
+  &= -2\left\\{ \left(x - \dfrac{3}{2} \right)^2 - \left( \dfrac{3}{2} \right)^2\right\\} + 1 \cr
+  &= -2 \left(x - \dfrac{3}{2} \right)^2 + \dfrac{9}{2} + 1 \cr
   &= -2 \left(x - \dfrac{3}{2} \right)^2 + \dfrac{11}{2}.
-\end{align*}`
+\end{align*}
 
 Hence the vertex is $\left( \dfrac{3}{2}, \dfrac{11}{2} \right)$. Because $a<0$, the function has a ***maximum***, and its value is $\boldsymbol{ \dfrac{11}{2} }.$
 
 {{% enum d %}}
-`\begin{align*}
-  y &= 3x^2 - 5x + 8 \\
-  &= 3 \left( x^2 - \dfrac{5}{3} x \right) + 8 \\
-  &= 3 \left\{ \left( x - \dfrac{5}{6} \right)^2 - \left( \dfrac{5}{6} \right)^2 \right\} + 8 \\
-  &= 3\left( x - \dfrac{5}{6} \right)^2 - \dfrac{25}{12} + 8 \\
+\begin{align*}
+  y &= 3x^2 - 5x + 8 \cr
+  &= 3 \left( x^2 - \dfrac{5}{3} x \right) + 8 \cr
+  &= 3\left\\{ \left( x - \dfrac{5}{6} \right)^2 - \left( \dfrac{5}{6} \right)^2\right\\} + 8 \cr
+  &= 3\left( x - \dfrac{5}{6} \right)^2 - \dfrac{25}{12} + 8 \cr
   &= 3\left( x - \dfrac{5}{6} \right)^2 + \dfrac{71}{12}.
-\end{align*}`
+\end{align*}
 
 Hence the vertex is $\left( \dfrac{5}{6}, \dfrac{71}{12} \right)$. Because $a>0$, the function has a ***minimum***, and its value is $\boldsymbol{ \dfrac{71}{12} }.$
 

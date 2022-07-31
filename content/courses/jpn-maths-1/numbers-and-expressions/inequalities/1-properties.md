@@ -77,10 +77,10 @@ It also holds for other inequality signs. For example, if $a\ge b$ then $a+c\ge 
 {{% figure src="courses/jpn-maths-1/numbers-and-expressions/ineq-prop1.jpg" alt="Examples of the properties of inequalities 1" caption="Visual examples of the adding and subtracting rules" %}}
 
 Then what about multiplying or dividing? First of all, it is obvious that multiplying or dividing by a ***positive*** number preserves the inequality sign:
-`\begin{align*}
-  1<4 &\iff 1\times 5 < 4\times 5 , \\
+\begin{align*}
+  1<4 &\iff 1\times 5 < 4\times 5 , \cr
   1<4 &\iff \frac{1}{3} < \frac{4}{3}.
-\end{align*}`
+\end{align*}
 
 However, when we multiply 1 and 4 by say, -1, they become -1 and -4: $$ 1 < 4 \iff -1 > -4. $$ This means multiplying or dividing by a negative number ***flips*** the inequality sign.
 
@@ -123,84 +123,84 @@ When $-3<x<5$ and $-1<y<4$, find the range of the following expressions.
 
 {{% enum 1 %}}
 {{% mn 133 tips %}}(1) Subtract 1 from each side.{{% /mn %}}
-`\begin{align*}
-  & \phantom{\iff} -3 < x < 5 \\
-  & \iff -3-1<x-1<5-1 \tag{1} \\
+\begin{align*}
+  & \phantom{\iff} -3 < x < 5 \cr
+  & \iff -3-1<x-1<5-1 \tag{1} \cr
   & \iff \boldsymbol{ -4<x-1<4 }.
-\end{align*}`
+\end{align*}
 
 {{% enum 2 %}}
 {{% mn 143 tips %}}
 (2) Multiply each side by 2.
 {{% /mn %}}
-`\begin{align*}
-  & \phantom{\iff} -3<x<5 \\
-  & \iff -3\cdot 2 < 2x < 5\cdot 2 \tag{2} \\
+\begin{align*}
+  & \phantom{\iff} -3<x<5 \cr
+  & \iff -3\cdot 2 < 2x < 5\cdot 2 \tag{2} \cr
   & \iff \boldsymbol{ -6 < 2x < 10 }.
-\end{align*}`
+\end{align*}
 
 {{% enum 3 %}}
 Multiply each side of $-1<y<4$ by -1: 
 {{% mn 143 tips %}}
 (3) Multiply each side by -1. Note the direction of the inequality signs change.
 {{% /mn %}}
-`\begin{align*}
-  & -1<y<4 \\
-  \iff & -1\cdot(-1) \hl{>} -y \hl{>} 4\cdot(-1) \tag{3} \\
+\begin{align*}
+  & -1<y<4 \cr
+  \iff & -1\cdot(-1) \hl{>} -y \hl{>} 4\cdot(-1) \tag{3} \cr
   \iff & \boldsymbol{ -4<-y<1 }.
-\end{align*}`
+\end{align*}
 
 {{% enum 4 %}}
 Because $x$ is greater than $-3$ and $y$ is greater than $-1$, $x+y$ must be greater than $-3-1=-4$. Likewise, because $x$ is smaller than $5$ and $y$ is smaller than $4$, $x+y$ must be smaller thean $5+4=9$. Therefore $$ \boldsymbol{ -4<x+y<9 }. $$
 
 ***Alternative solution.***
 A more rigorous approach goes like this:
-`\begin{align*}
-  & -3 < x < 5 \\
+\begin{align*}
+  & -3 < x < 5 \cr
   \iff & -3+y < x+y < 5+y.
-\end{align*}`
+\end{align*}
 
 Then, from $-1<y<4$, $-3-1<-3+y$ and $5+y<5+4$, so
-`\begin{align*}
-  \dots \iff & -3-1 < -3+y < x+y < 5+y < 5+4 \\
+\begin{align*}
+  \dots \iff & -3-1 < -3+y < x+y < 5+y < 5+4 \cr
   \implies & \boldsymbol{ -4 < x+y < 9 }.
-\end{align*}`
+\end{align*}
 {{% enum 5 %}}
 First of all, let's calculate the ranges of $2x$ and $-3y$:
 
-`\begin{align*}
-  -3<x<5 & \iff -6 < 2x < 10, \\
+\begin{align*}
+  -3<x<5 & \iff -6 < 2x < 10, \cr
   -1<y<4 & \iff 3 \hl{>} -3y \hl{>} -12.
-\end{align*}`
+\end{align*}
 
 Then we can use the same logic as Part (d), because $2x-3y=2x+(-3y)$:
-`\begin{align*}
-  & -6-12 < 2x-3y < 10+3 \\
+\begin{align*}
+  & -6-12 < 2x-3y < 10+3 \cr
   \iff & \boldsymbol{ -18<2x-3y < 13 }.
-\end{align*}`
+\end{align*}
 {{% /hbox %}}
 
 {{% details title="Range of $x-y$" %}}
 
 You might say, for the solution of Part 5, you could subtract the range of $3y$ from the range of $2x$:
-`\begin{align*}
-  & -6 \lt 2x \lt 10, \\
-  & -3 \lt 3y \lt 12 \\
-  \iff & -6-(-3) \lt 2x-3y \lt 10-12 \\
+\begin{align*}
+  & -6 \lt 2x \lt 10, \cr
+  & -3 \lt 3y \lt 12 \cr
+  \iff & -6-(-3) \lt 2x-3y \lt 10-12 \cr
   \iff & \boldsymbol{ -3 \lt 2x-3y \lt -2 } \quad (?)
-\end{align*}`
+\end{align*}
 
 You can see this method is wrong, but why is it wrong? Think this way: if you pick a number from each group and subtract one from another, how can you make the answer the largest? It is when you subtract the smallest possible number from the largest possible number, so
-`\begin{align*}
-  & 2x-3y \lt 10 - (-3) \\
+\begin{align*}
+  & 2x-3y \lt 10 - (-3) \cr
   \iff & 2x-3y \lt 13.
-\end{align*}`
+\end{align*}
 
 Likewise, you hit the lower bound of the possible answers when you subtract the largest possible from the smallest possible:
-`\begin{align*}
-  & 2x-3y \gt -6 - 12 \\
+\begin{align*}
+  & 2x-3y \gt -6 - 12 \cr
   \iff & 2x-3y \gt -18.
-\end{align*}`
+\end{align*}
 
 Therefore, $-18 \lt 2x-3y \lt 13$! I find this method much less straightforward than adding $-3y$ to $2x$. I will add its negative instead whenever we have to subtract a variable from another.
 
@@ -231,26 +231,26 @@ The range of $x$ is $$ 5.5\le x \lt 6.5, \tag{$\cdots\tcirc{1}$} $$ and the rang
 
 {{% enum 1 %}} If we multiply all sides in $\tcirc{1}$ by $3$, $$ 16.5 \le 3x \lt 19.5. \tag{$\cdots\tcirc{3}$} $$ Likewise, if we multiply all sides of $\tcirc{2}$ by $-4$,
 
-`\begin{align*}
-  & -14 \ge -4y \gt -18 \\
+\begin{align*}
+  & -14 \ge -4y \gt -18 \cr
   \iff & -18 \lt -4y \le -14. \tag{$\cdots\tcirc{4}$}
-\end{align*}`
+\end{align*}
 
 Therefore, because $3x-4y=3x+(-4y)$, we can add $\tcirc{3}$ and $\tcirc{4}$ side-by-side to get
-`\begin{align*}
-  & 16.5+(-18) \hl{\lt} 3x+(-4y) \hl{\lt} 19.5+(-14) \\
+\begin{align*}
+  & 16.5+(-18) \hl{\lt} 3x+(-4y) \hl{\lt} 19.5+(-14) \cr
   \iff & \boldsymbol{ -1.5 \lt 3x-4y \lt 5.5 }.
-\end{align*}`
+\end{align*}
 
 Refer to the tip below for the change of inequality signs.
 
 {{% enum 2 %}} If we multiply all sides of $\tcirc{1}$ by $y$, $$ 5.5y \le xy \lt 6.5y. $$
 
 Now, what is the smallest possible value for $5.5y$? Because $y\ge 3.5$, $$ 5.5y\ge 5.5\cdot 3.5 = 19.25. $$ Likewise, the largest possible value for $6.5y$ is $$ 6.5y \lt 6.5\cdot 4.5 = 29.25. $$ Therefore,
-`\begin{align*}
-  & 19.25 \le 5.5y \le xy \lt 6.5y \lt 29.25 \\
+\begin{align*}
+  & 19.25 \le 5.5y \le xy \lt 6.5y \lt 29.25 \cr
   \implies & \boldsymbol{ 19.25 \le xy \lt 29.25 }.
-\end{align*}`
+\end{align*}
 
 {{% /hbox %}}
 
@@ -281,35 +281,35 @@ In general, combining two inequalities results in an equal sign *only when both 
 {{% note Solution %}}
 
 {{% enum a %}}
-`\begin{align*}
-  -1<x<2 & \iff -1+3<x+3<2+3 \\
+\begin{align*}
+  -1<x<2 & \iff -1+3<x+3<2+3 \cr
   &\iff \boldsymbol{ 2<x+3<5 }.
-\end{align*}`
+\end{align*}
 {{% enum b %}}
-`\begin{align*}
-  1<y<3 &\iff 1\cdot(-2) \hl{>} -2y \hl{>} 3\cdot(-2) \\
-  &\iff -2>-2y>-6 \\
+\begin{align*}
+  1<y<3 &\iff 1\cdot(-2) \hl{>} -2y \hl{>} 3\cdot(-2) \cr
+  &\iff -2>-2y>-6 \cr
   &\iff \boldsymbol{ -6<-2y<-2 }.
-\end{align*}`
+\end{align*}
 {{% enum c %}}
-`\begin{align*}
-  -1<x<2 &\iff \frac{-1}{-5} \hl{>} \frac{x}{-5} \hl{>} \frac{2}{-5} \\
-  &\iff \frac{1}{5} > -\frac{x}{5} > -\frac{2}{5} \\
+\begin{align*}
+  -1<x<2 &\iff \frac{-1}{-5} \hl{>} \frac{x}{-5} \hl{>} \frac{2}{-5} \cr
+  &\iff \frac{1}{5} > -\frac{x}{5} > -\frac{2}{5} \cr
   &\iff \boldsymbol{ -\frac{2}{5}< -\frac{x}{5} < \frac{1}{5} }.
-\end{align*}`
+\end{align*}
 
 {{% enum d %}}
 The possible ranges of $5x$ and $-3y$ are
-`\begin{align*}
-  -1<x<2 &\iff -5<5x<10, \\
+\begin{align*}
+  -1<x<2 &\iff -5<5x<10, \cr
   1<y<3 &\iff -9<3y<-3.
-\end{align*}`
+\end{align*}
 
 Hence, the range of $5x-3y=5x+(-3y)$ is
-`\begin{align*}
-  & (-5)+(-9) < 5x+(-3y) < 10+(-3) \\
+\begin{align*}
+  & (-5)+(-9) < 5x+(-3y) < 10+(-3) \cr
   \iff & \boldsymbol{ -14 < 5x-3y < 7 }.
-\end{align*}`
+\end{align*}
 
 {{% /details %}}
 
@@ -328,69 +328,69 @@ Hence, the range of $5x-3y=5x+(-3y)$ is
 {{% note Solution %}}
 
 The ranges of $x$ and $y$ are:
-`\begin{align*}
-  & 2.5 \le x \lt 3.5, \tag{$\cdots\tcirc{1}$} \\
+\begin{align*}
+  & 2.5 \le x \lt 3.5, \tag{$\cdots\tcirc{1}$} \cr
   & 6.5 \le y \lt 7.5. \tag{$\cdots\tcirc{2}$} 
-\end{align*}`
+\end{align*}
 
 {{% enum a %}} Because $x-y=x+(-y)$, we need to find the range of $-y$:
 
-`\begin{align*}
-  -\tcirc{2} \iff & -6.5 \hl{\ge} -y \hl{\gt} -7.5 \\
+\begin{align*}
+  -\tcirc{2} \iff & -6.5 \hl{\ge} -y \hl{\gt} -7.5 \cr
   \iff & -7.5 \lt -y \le -6.5.
-\end{align*}`
+\end{align*}
 
 Then, adding $\tcirc{1}$ with $-\tcirc{2}$ gives
 
-`\begin{align*}
-  & 2.5-7.5 \hl{\lt} x-y \hl{\lt} 3.5-6.5 \\
+\begin{align*}
+  & 2.5-7.5 \hl{\lt} x-y \hl{\lt} 3.5-6.5 \cr
   \iff & \boldsymbol{ -5 \lt x-y \lt -3 }.
-\end{align*}`
+\end{align*}
 
  Dividing $\tcirc{1}$ by $5$, we get
 
-`\begin{align*}
-  & \frac{2.5}{5} \le \frac{x}{5} \lt \frac{3.5}{5} \\
+\begin{align*}
+  & \frac{2.5}{5} \le \frac{x}{5} \lt \frac{3.5}{5} \cr
   \iff & 0.5 \le \frac{x}{5} \lt 0.7, \tag{$\cdots\tcirc{3}$}
-\end{align*}`
+\end{align*}
 
 and dividing $\tcirc{2}$ by $2$, we get
 
-`\begin{align*}
-  & \frac{6.5}{2} \le \frac{y}{2} \lt \frac{7.5}{2} \\
+\begin{align*}
+  & \frac{6.5}{2} \le \frac{y}{2} \lt \frac{7.5}{2} \cr
   \iff & 3.25 \le \frac{y}{2} \lt 3.75. \tag{$\cdots\tcirc{4}$}
-\end{align*}`
+\end{align*}
 
 Finally, adding $\tcirc{3}$ and $\tcirc{4}$ gives us the range of $\dfrac{x}{5}+\dfrac{y}{2}$:
 
-`\begin{align*}
-  & 0.5+3.25 \le \dfrac{x}{5}+\dfrac{y}{2} \lt 0.7+3.75 \\
+\begin{align*}
+  & 0.5+3.25 \le \dfrac{x}{5}+\dfrac{y}{2} \lt 0.7+3.75 \cr
   \iff & \boldsymbol{ 3.75 \le \dfrac{x}{5}+\dfrac{y}{2} \lt 4.45 }.
-\end{align*}`
+\end{align*}
 
 {{% enum c %}}
 Multiplying $2y$ on all sides of $\tcirc{1}$ gives
 
-`\begin{align*}
+\begin{align*}
   & 5y \le 2xy \lt 7y. \tag{$\cdots\tcirc{5}$}
-\end{align*}`
+\end{align*}
 
 Now, because $y \ge 6.5$, the smallest possible value for $5y$ is
-`\begin{align*}
-  & 5y \le 5 \cdot 6.5 \\
+\begin{align*}
+  & 5y \le 5 \cdot 6.5 \cr
   \iff & 5y \le 32.5,
-\end{align*}`
+\end{align*}
 
 and because $y \lt 7.5$, the largest possible value for $7y$ is
-`\begin{align*}
-  & 7y \lt 7 \cdot 7.5 \\
+\begin{align*}
+  & 7y \lt 7 \cdot 7.5 \cr
   \iff & 7y \lt 52.5.
-\end{align*}`
+\end{align*}
 
 Therefore, the range of $2xy$ is
-`\begin{align*}
-  \tcirc{5} \iff & 32.5 \le 5y \le 2xy \lt 7y \lt 52.5 \\
+\begin{align*}
+  \tcirc{5} \iff & 32.5 \le 5y \le 2xy \lt 7y \lt 52.5 \cr
   \iff & \boldsymbol{ 32.5 \le 2xy \lt 52.5 }.
-\end{align*}`
+\end{align*}
 
 {{% /details %}}

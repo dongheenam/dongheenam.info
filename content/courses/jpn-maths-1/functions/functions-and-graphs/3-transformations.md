@@ -82,7 +82,7 @@ Because we are used keep the left-hand side as $y$, a more familiar version of t
 
 {{% details title="Why?" %}}
 
-Some of you might be thinking that this rule is counter-intuitive. For example, if you want to move a point, say $A(0,1)$, to the right by three units, you have to ***add*** three to the x-coordinates (so it becomes $A'(3, 1)$). Still, if you want to move $y=3x$ to the right by three units, you have to ***subtract*** three from $x$!
+Some of you might be thinking that this rule is counter-intuitive. For example, if you want to move a point, say $A(0,1)$, to the right by three units, you have to ***add*** three to the x-coordinates (so it becomes $A\rq(3, 1)$). Still, if you want to move $y=3x$ to the right by three units, you have to ***subtract*** three from $x$!
 
 Here comes the secret: you are not moving the graph, but you are changing the perspective by moving the ***coordinate plane itself***. If you want to move your graph up, you instead move the coordinate plane down.
 
@@ -144,12 +144,12 @@ Using these operations, we can define two different algebraic forms of a line gr
 
 From the [previous lesson](../graph#graph-of-a-linear-function), we discussed the general form of a linear function is $$ f(x) = ax + b. $$ It is easy to tell that you can obtain this graph by vertically stretching the graph of $y=x$ by a factor of $a$, and then moving it up by $b$:
 
-`\begin{alignat*}{2}
-  y &= x \\
-  \longrightarrow \dfrac{y}{\hl{a}} &= x && \text{(dilation by $a$)} \\
-  y &= ax \\
+\begin{alignat*}{2}
+  y &= x \cr
+  \longrightarrow \dfrac{y}{\hl{a}} &= x && \text{(dilation by $a$)} \cr
+  y &= ax \cr
   \longrightarrow y &= ax \hl{+b}. && \text{(translation by $b$)}
-\end{alignat*}`
+\end{alignat*}
 
 So, how do these operations relate to the property of $y=ax+b$? Well, the graph of $y=x$ has the gradient of 1 and the y-intercept of 0. Because you vertically stretch the graph by a factor of $a$ first, its gradient also increases by the same factor while fixing the y-intercept. Then you move the graph upward by $b$, so the y-intercept also moves up by $b$ without moving the gradient. Therefore, the graph of $y=ax+b$ has the gradient of $a$ and the y-intercept of $b$.
 
@@ -157,11 +157,11 @@ So, how do these operations relate to the property of $y=ax+b$? Well, the graph 
 
 Note that the graph of $x+y=1$ has the x-intercept of 1 and the y-intercept of 1. How can we make this graph have an x-intercept of $a$ and a y-intercept of $b$? Well, the answer is dilation: you need to vertically stretch the graph by $b$ (to move the y-intercept), and horizontally stretch the graph by $a$ (to move the x-intercept):
 
-`\begin{alignat*}{2}
-  x + y &= 1 \\
-  \longrightarrow x + \dfrac{y}{\hl{b}} &= 1 && \text{(dilation by $b$)} \\
-  \longrightarrow \dfrac{x}{\hl{a}} + \dfrac{y}{b} &= 1 && \text{(dilation by $a$)} \\
-\end{alignat*}`
+\begin{alignat*}{2}
+  x + y &= 1 \cr
+  \longrightarrow x + \dfrac{y}{\hl{b}} &= 1 && \text{(dilation by $b$)} \cr
+  \longrightarrow \dfrac{x}{\hl{a}} + \dfrac{y}{b} &= 1 && \text{(dilation by $a$)} \cr
+\end{alignat*}
 
 Below is the visual representation of this logic.
 

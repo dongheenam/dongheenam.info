@@ -47,9 +47,9 @@ Let's remember the definition of absolute values:{{% sn abs %}}Please refer to [
 
 {{% hbox %}}
 {{% note Definition %}} For any real number $A$,
-`\begin{align*}
-  |A| = \begin{cases} A~ &\text{if $A\ge 0$,} \\ -A~ &\text{if $A<0$.} \end{cases}
-\end{align*}`
+\begin{align*}
+  |A| = \begin{cases} A~ &\text{if $A\ge 0$,} \cr -A~ &\text{if $A<0$.} \end{cases}
+\end{align*}
 
 {{% /hbox %}}
 
@@ -83,19 +83,19 @@ $x+4 = 0$ When $x=-4$, so we will set two cases based on this value.
 {{% ol i %}}
 {{% li %}}
 When When $x\ge -4$,
-`\begin{align*}
-  & \hl{x + 4 = 5x} \\
-  \iff& 4x = 4 \\
+\begin{align*}
+  & \hl{x + 4 = 5x} \cr
+  \iff& 4x = 4 \cr
   \iff& x = 1.
-\end{align*}`
+\end{align*}
 {{% /li %}}
 {{% li %}}
 When $x< -4$,
-`\begin{align*}
-  & \hl{x + 4 = -5x} \\
-  \iff& 6x = -4 \\
+\begin{align*}
+  & \hl{x + 4 = -5x} \cr
+  \iff& 6x = -4 \cr
   \iff& x = -\dfrac{2}{3}.
-\end{align*}`
+\end{align*}
 {{% /li %}}
 {{% /ol %}}
 
@@ -110,17 +110,17 @@ Therefore, from {{% enum i %}} and {{% enum ii %}}, $\boldsymbol{ x = 1 }$.
 {{% details title="Alternative Solution for solving $|x-1|=2$" %}}
 
 Because the value of $|A|$ is either $A$ or $-A$, you can use the following shortcut:
-`\begin{align*}
+\begin{align*}
   \text{for $c>0$,} \quad \boldsymbol{ |A| = c \iff A = \pm c. }
-\end{align*}`
+\end{align*}
 
 Thus, for the equation $|x-1|=2$,
-`\begin{align*}
-  & |x-1| = 2 \\
-  & \iff \hl{x-1 = \pm 2} \\
-  & \iff x = 1 \pm 2 \\
+\begin{align*}
+  & |x-1| = 2 \cr
+  & \iff \hl{x-1 = \pm 2} \cr
+  & \iff x = 1 \pm 2 \cr
   & \iff \boldsymbol{ x = 3,~-1 }.
-\end{align*}`
+\end{align*}
 
 This is yet another solution. The definition of $|a-b|$ is the ***distance*** between $a$ and $b$. So, finding $x$ that satisfies $|x-1| = 2$ is to find numbers that are exactly 2 units away from 1. From $1$, if you move 2 units to the right, you arrive at 3, and if you move 2 units to the left, you arrive at -1. Therefore, the answers are -1 and 3.
 
@@ -145,27 +145,27 @@ Then, we can proceed to solve the linear equations for the three different cases
 {{% ol  %}}
 {{% li %}}
 When $x<-2$, the equation becomes $\hl{-(x+2)-(x-1) = 4}$. Then
-`\begin{align*}
-  & -(x+2)-(x-1) = 4 \\
-  & \iff -2x -1 = 4 \\
+\begin{align*}
+  & -(x+2)-(x-1) = 4 \cr
+  & \iff -2x -1 = 4 \cr
   & \iff x = -\dfrac{5}{2}.
-\end{align*}`
+\end{align*}
 {{% /li %}}
 {{% li %}}
 When $-2\le x < 1$, the equation becomes $\hl{(x+2)-(x-1) = 4}$. Then
-`\begin{align*}
-  & (x+2)-(x-1) = 4 \\
+\begin{align*}
+  & (x+2)-(x-1) = 4 \cr
   & \iff 3 = 4.
-\end{align*}`
+\end{align*}
 Therefore there are ***no solutions***.
 {{% /li %}}
 {{% li %}}
 When $x \ge 1$, the equation becomes $\hl{(x+2)+(x-1) = 4}$. Then
-`\begin{align*}
-  & (x+2)+(x-1) = 4 \\
-  & \iff 2x + 1 = 4 \\
+\begin{align*}
+  & (x+2)+(x-1) = 4 \cr
+  & \iff 2x + 1 = 4 \cr
   & \iff x = \dfrac{3}{2}.
-\end{align*}`
+\end{align*}
 {{% /li %}}
 {{% /ol %}}
 
@@ -183,21 +183,21 @@ Below is a slightly different example. The principle is still the same: divide t
 {{% ol i %}}
 {{% li %}}
 When $x\ge 4$, the equation becomes $| \hl{(x-4)} -3 | = 2$. Then
-`\begin{align*}
-  &|x-7| = 2 \\
-  & \iff x-7 = \pm 2 \\
+\begin{align*}
+  &|x-7| = 2 \cr
+  & \iff x-7 = \pm 2 \cr
   & \iff x = 7 \pm 2,
-\end{align*}`
+\end{align*}
 which implies $x = 9$ or $5$. Note that both solutions satisfy our assumption of $x\ge 4$.
 {{% /li %}}
 {{% li %}}
 When $x< 4$, the equation becomes $| \hl{-(x-4)} -3 | = 2$. Then
-`\begin{align*}
-  &|-x + 4 - 3| = 2 \\
-  & \iff |-x+1| = 2 \\
-  & \iff -x+1 = \pm 2 \\
+\begin{align*}
+  &|-x + 4 - 3| = 2 \cr
+  & \iff |-x+1| = 2 \cr
+  & \iff -x+1 = \pm 2 \cr
   & \iff x = 1 \mp 2,
-\end{align*}`
+\end{align*}
 which implies $ x = -1$ or $3$. Note that both solutions satisfy $x<4$.
 {{% /li %}}
 {{% /ol %}}
@@ -205,26 +205,26 @@ which implies $ x = -1$ or $3$. Note that both solutions satisfy $x<4$.
 From {{% enum i %}} and {{% enum ii %}}, the solutions are $\\boldsymbol{ x = -1,~ 3,~ 5,~ 9 }.$
 
 ***Alternative solution.*** We can also remove the outer absolute symbol first:
-`\begin{align*}
-  & \big| |x-4| - 3\big| = 2 \\
-  & \iff |x-4| - 3 = \pm 2 \\
-  & \iff |x-4| = 3 \pm 2 \\
+\begin{align*}
+  & \big| |x-4| - 3\big| = 2 \cr
+  & \iff |x-4| - 3 = \pm 2 \cr
+  & \iff |x-4| = 3 \pm 2 \cr
   & \iff |x-4| = \text{$5$ or $1$}.
-\end{align*}`
+\end{align*}
 
 Now, if $|x-4|=5$,
-`\begin{align*}
-  & x - 4 = \pm 5 \\
-  & \iff x = 4 \pm 5 \\
+\begin{align*}
+  & x - 4 = \pm 5 \cr
+  & \iff x = 4 \pm 5 \cr
   & \iff x = \text{$9$ or $-1$},
-\end{align*}`
+\end{align*}
 
 and if $|x-4|=1$,
-`\begin{align*}
-  & x - 4 = \pm 1 \\
-  & \iff x = 4 \pm 1 \\
+\begin{align*}
+  & x - 4 = \pm 1 \cr
+  & \iff x = 4 \pm 1 \cr
   & \iff x = \text{$5$ or $3$}.
-\end{align*}`
+\end{align*}
 
 Therefore, the solutions are $\boldsymbol{ x = -1,~ 3,~ 5,~ 9 }.$
 
@@ -281,20 +281,20 @@ The sign of $x-1$ changes at $x=1$, so we look at when $x\ge 1$, and then when $
 {{% ol i %}}
 {{% li %}}
 When $x\ge 1$, $2(x-1) = 3x$, then
-`\begin{align*}
-  & 2x - 2 = 3x \\
+\begin{align*}
+  & 2x - 2 = 3x \cr
   & \iff x = -2.
-\end{align*}`
+\end{align*}
 
 Note that $x=-2$ is ***not a solution***, because we already assumed $x\ge 1$.
 {{% /li %}}
 {{% li %}}
 When $x< 1$, $-2(x-1) = 3x$, then
-`\begin{align*}
-  & -2x + 2 = 3x \\
-  & \iff 5x = 2 \\
+\begin{align*}
+  & -2x + 2 = 3x \cr
+  & \iff 5x = 2 \cr
   & \iff x = \dfrac{2}{5}.
-\end{align*}`
+\end{align*}
 {{% /li %}}
 {{% /ol %}}
 
@@ -319,29 +319,29 @@ The expressions inside the absolute symbols change their signs at $x=-1$ and $x=
 {{% ol i %}}
 {{% li %}}
 When $x < -1$, $ \hl{-2(x+1)+(x-3)} = 2x $,
-`\begin{align*}
-  & -2x - 2 + x - 3 = 2x \\
-  & \iff 3x = -5 \\
+\begin{align*}
+  & -2x - 2 + x - 3 = 2x \cr
+  & \iff 3x = -5 \cr
   & \iff x = -\dfrac{5}{3}.
-\end{align*}`
+\end{align*}
 
 This solution satisfies the condition $x < -1$.
 {{% /li %}}
 {{% li %}}
 When $-1 \le x < 3$, $ 2(x+1)\hl{+(x-3)} = 2x $,
-`\begin{align*}
-  & 2x + 2 + x - 3 = 2x \\
+\begin{align*}
+  & 2x + 2 + x - 3 = 2x \cr
   & \iff x = 1.
-\end{align*}`
+\end{align*}
 
 This solution satisfies the condition $-1 \le x < 3$.
 {{% /li %}}
 {{% li %}}
 When $x \ge 3$, $ 2(x+1)-(x-3) = 2x $,
-`\begin{align*}
-  & 2x + 2 -x + 3 = 2x \\
+\begin{align*}
+  & 2x + 2 -x + 3 = 2x \cr
   & \iff x = 5.
-\end{align*}`
+\end{align*}
 
 This solution satisfies the condition $x \ge 3$.
 {{% /li %}}
@@ -351,20 +351,20 @@ Therefore, the solutions are $\boldsymbol{ x = -\dfrac{5}{3},~1,~5 }.$
 
 {{% enum b %}} If we remove the outer absolute symbol first,
 
-`\begin{align*}
-  & \big||x-1|-2\big|-3 = 0 \\
-  & \iff \big||x-1|-2\big| = 3 \\
-  & \iff |x-1| -2 = \pm 3 \\
-  & \iff |x-1| = 2 \pm 3 \\
+\begin{align*}
+  & \big||x-1|-2\big|-3 = 0 \cr
+  & \iff \big||x-1|-2\big| = 3 \cr
+  & \iff |x-1| -2 = \pm 3 \cr
+  & \iff |x-1| = 2 \pm 3 \cr
   & \iff |x-1| = \text{$5$ or $-1$}.
-\end{align*}`
+\end{align*}
 
 Because the absolute value of a number cannot be less than zero, the only possibility is $|x-1| = 5$. Then
-`\begin{align*}
-  & x-1 = \pm 5 \\
-  & \iff x = 1 \pm 5 \\
+\begin{align*}
+  & x-1 = \pm 5 \cr
+  & \iff x = 1 \pm 5 \cr
   & \iff x = \text{$6$ or $-4$}.
-\end{align*}`
+\end{align*}
 
 Therefore, the solutions are $\boldsymbol{ x = -4,~6 }.$
 
@@ -374,25 +374,25 @@ We can also remove the inner absolute value symbol first:
 {{% ol i %}}
 {{% li %}}
 When $x < 1$, $ \big| \hl{-(x-1)} - 2 \big| -3 = 0 $, then
-`\begin{align*}
-  & | -x+1 -2 | = 3 \\
-  & \iff | -x -1 | = 3 \\
-  & \iff -x -1 = \pm 3 \\
-  & \iff x = -1 \mp -3 \\
+\begin{align*}
+  & | -x+1 -2 | = 3 \cr
+  & \iff | -x -1 | = 3 \cr
+  & \iff -x -1 = \pm 3 \cr
+  & \iff x = -1 \mp -3 \cr
   & \iff x = \text{$2$ or $-4$.}
-\end{align*}`
+\end{align*}
 
 Because we assumed $x<1$, the only valid solution is $x=-4$.
 {{% /li %}}
 {{% li %}}
 When $x \ge 1$, $ \big| \hl{(x-1)} - 2 \big| -3 = 0 $, then
-`\begin{align*}
-  & | x-1 -2 | = 3 \\
-  & \iff |x-3| = 3 \\
-  & \iff x-3 = \pm 3 \\
-  & \iff x = 3 \pm 3 \\
+\begin{align*}
+  & | x-1 -2 | = 3 \cr
+  & \iff |x-3| = 3 \cr
+  & \iff x-3 = \pm 3 \cr
+  & \iff x = 3 \pm 3 \cr
   & \iff x = \text{$6$ or $0$.}
-\end{align*}`
+\end{align*}
 
 Because we assumed $x\ge 1$, the only valid solution is $x=6$.
 {{% /li %}}

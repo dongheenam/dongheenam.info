@@ -110,10 +110,10 @@ Below are the properties of the graphs of $y=ax^2$.
 ### Graph of $y = a(x-p)^2 + q$ and the vertex form
 
 The vertex of the graph of $y= ax^2$ is always the origin $(0,0)$. How do we describe a parabola whose vertex is not at the origin? Well, we can certainly [translate the graph](../../functions-and-graphs/transformations/#translation). You might have already guessed that the graph of $y = a(x-p)^2 + q$ is the graph of $y = ax^2$ translated horizontally by $p$ units and vertically by $q$ units.
-`\begin{alignat*}{2}
-  y = ax^2 & \longrightarrow y = a(\hl{x-p})^2 \quad && \text{(moved horizontally by $p$ units)} \\
+\begin{alignat*}{2}
+  y = ax^2 & \longrightarrow y = a(\hl{x-p})^2 \quad && \text{(moved horizontally by $p$ units)} \cr
   & \longrightarrow y = a(x-p)^2 \hl{+q} \quad && \text{(moved vertically by $q$ units)}
-\end{alignat*}`
+\end{alignat*}
 
 Therefore, the graph of $y = a(x-p)^2 + q$ looks like this:
 

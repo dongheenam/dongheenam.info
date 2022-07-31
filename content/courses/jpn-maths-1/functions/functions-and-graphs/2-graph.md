@@ -38,7 +38,7 @@ Graphs are a convenient way of visualising functions. In this lesson, we will:
 
 ## Graph
 
-Let's recall the definition of a function: a function ***relates*** a certain value of $x$ with the corresponding value of $y$. {{% mn %}}{{% img loc="sidenote" src="courses/jpn-maths-1/functions/functions-and-graphs/graph-ex1.png" %}} The graph of $y=x+2$. {{% /mn %}} For example, a function $$ y = x+2 $$ pairs $x=0$ with $y=2$, $1$ with $3$, $\sqrt{5}$ with $\sqrt{5}+2$, and so on. You can see these values form a *combination* of numbers: $(0, 2)$, $(1, 3)$ and $\big(\sqrt{5}, \sqrt{5}+2\big)$. If we collect these coordinates on the coordinate plane, we get the ***graph*** of $y=x+2$!
+Let's recall the definition of a function: a function ***relates*** a certain value of $x$ with the corresponding value of $y$. {{% mn %}}{{% img-raw loc="sidenote" src="courses/jpn-maths-1/functions/functions-and-graphs/graph-ex1.png" %}} The graph of $y=x+2$. {{% /mn %}} For example, a function $$ y = x+2 $$ pairs $x=0$ with $y=2$, $1$ with $3$, $\sqrt{5}$ with $\sqrt{5}+2$, and so on. You can see these values form a *combination* of numbers: $(0, 2)$, $(1, 3)$ and $\big(\sqrt{5}, \sqrt{5}+2\big)$. If we collect these coordinates on the coordinate plane, we get the ***graph*** of $y=x+2$!
 
 {{% hbox %}}
 
@@ -64,12 +64,12 @@ Before moving on, we will review the basic properties of a linear function and i
 {{% /hbox %}}
 
 Given $f(x) = ax+b$, if you increase the value of $x$ by 1, you increase the value of $y$ by $a$:
-`\begin{align*}
-  f(0) &= b, \\
-  f(1) &= a + b, \\
-  f(2) &= 2a + b, \\
+\begin{align*}
+  f(0) &= b, \cr
+  f(1) &= a + b, \cr
+  f(2) &= 2a + b, \cr
   \vdots
-\end{align*}`
+\end{align*}
 and hence $a$ is called the ***gradient***, or ***slope***. Also, the value of $y$ when $x=0$ is $b$, and this value is called the ***y-intercept***.
 
 {{< figure src="courses/jpn-maths-1/functions/functions-and-graphs/graph-lineprop.jpg" caption="Gradient and y-intercept of a line graph." >}}
@@ -90,20 +90,20 @@ The graph has the gradient of -1, and y-intercept of 3. Thus the graph passes $(
 
 {{% enum 2 %}}
 We can rearrange the equation to reveal the gradient and y-intercept:
-`\begin{align*}
-  3x-2y = 6 & \iff 2y = 3x - 6 \\
+\begin{align*}
+  3x-2y = 6 & \iff 2y = 3x - 6 \cr
   &\iff y = \dfrac{3}{2} x - 3.
-\end{align*}`
+\end{align*}
 
 However, it is easier to find the x- and y-intercepts of the graph and draw the graph from there. When $x=0$,
-`\begin{align*}
+\begin{align*}
   -2y = 6 \iff y = -3,
-\end{align*}`
+\end{align*}
 
 so the y-intercept is $-3$, and when $y=0$,
-`\begin{align*}
+\begin{align*}
   3x = 6 \iff x = 2,
-\end{align*}`
+\end{align*}
 
 so the x-intercept is $2$.
 
@@ -229,18 +229,18 @@ Say $f(x) = ax+b$. The two possibilities are:
 - $f(2)=5$ and $f(5)=-1$.
 
 In the first case, the gradient is $\dfrac{5+1}{5-2} = 2$, so $a=2$. Then
-`\begin{align*}
-  f(2) = -1 & \iff 2a + b = -1 \\
-  & 4 + b = -1 \\
+\begin{align*}
+  f(2) = -1 & \iff 2a + b = -1 \cr
+  & 4 + b = -1 \cr
   & b = -5.
-\end{align*}`
+\end{align*}
 
 In the second case, the gradient is $\dfrac{-5-1}{5-2}=-2$, so $a=-2$. Then
-`\begin{align*}
-  f(2) = 5 & \iff 2a+b = 5 \\
-  & -4 + b = 5 \\
+\begin{align*}
+  f(2) = 5 & \iff 2a+b = 5 \cr
+  & -4 + b = 5 \cr
   & b = 9. 
-\end{align*}`
+\end{align*}
 
 Therefore, we conclude $\boldsymbol{ a=2, \\, b=-5 }$, or $\boldsymbol{ a=-2, \\, b=9 }.$
 

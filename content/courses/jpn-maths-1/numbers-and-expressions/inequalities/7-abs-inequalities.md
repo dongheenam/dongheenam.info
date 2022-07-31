@@ -79,52 +79,52 @@ Therefore the range is $\boldsymbol{ x\le -8 \text{ or } x \ge 2 }.$
 {{% enum 3 %}}
 $|2x+1|\le 3$ implies $ \hl{ -3 \le 2x+1 \le 3 }$. Then
 
-`\begin{align*}
-  -3 \le 2x+1 \le 3 & \iff -4 \le 2x \le 2 \\
+\begin{align*}
+  -3 \le 2x+1 \le 3 & \iff -4 \le 2x \le 2 \cr
   & \iff \boldsymbol{ -2 \le x \le 1 }.
-\end{align*}`
+\end{align*}
 
 {{% enum 4 %}}
 {{% mn 90 tips %}}
-{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-abs-ex1a.png" %}}{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-abs-ex1b.png" %}} Possible ranges of $x$ for Q4.
+{{% img-raw loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-abs-ex1a.png" %}}{{% img-raw loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-abs-ex1b.png" %}} Possible ranges of $x$ for Q4.
 {{% /mn %}} When $x\ge 4$, the equality becomes
 
-`\begin{align*}
-  \hl{ x-4 < 3x } & \iff -4 < 2x \\
+\begin{align*}
+  \hl{ x-4 < 3x } & \iff -4 < 2x \cr
   & \iff x > -2.
-\end{align*}`
+\end{align*}
 
 Because we already assumed $x \ge 4$, the solution is
 $ x \ge 4. \\,( \cdots \tcirc{1} )$
 
 When $x<4$, the equality becomes
-`\begin{align*}
-  \hl{ -(x-4) < 3x } & \iff -x + 4 < 3x \\
-  & \iff 4 < 4x \\
+\begin{align*}
+  \hl{ -(x-4) < 3x } & \iff -x + 4 < 3x \cr
+  & \iff 4 < 4x \cr
   & \iff x > 1.
-\end{align*}`
+\end{align*}
 
 Because we assumed $x < 4$, the solution is $ 1 < x < 4.  \\,( \cdots \tcirc{2} )$
 
 The complete range of $x$ that satisfies the given inequality is the union of $\tcirc{1}$ and $\tcirc{2}$, which is $\boldsymbol{ x>1 }.$
 
 ***Alternative solution.*** We can also try using the theorem above:
-`\begin{align*}
-  |x-4|< 3x & \iff -3x < x-4 < 3x \\
-  & \iff \begin{cases} -3x < x-4, & \quad \cdots \tcirc{3} \\ x-4 < 3x. & \quad \cdots \tcirc{4} \end{cases}
-\end{align*}`
+\begin{align*}
+  |x-4|< 3x & \iff -3x < x-4 < 3x \cr
+  & \iff \begin{cases} -3x < x-4, & \quad \cdots \tcirc{3} \cr x-4 < 3x. & \quad \cdots \tcirc{4} \end{cases}
+\end{align*}
 
 Then
-`\begin{align*}
-  \tcirc{3} & \iff -4x < -4 \\
+\begin{align*}
+  \tcirc{3} & \iff -4x < -4 \cr
   & \iff x > 1,
-\end{align*}`
+\end{align*}
 
 and
-`\begin{align*}
-  \tcirc{4} & \iff -4 < 2x \\
+\begin{align*}
+  \tcirc{4} & \iff -4 < 2x \cr
   & \iff x > -2.
-\end{align*}`
+\end{align*}
 
 The range of $x$ that satisfies both $\tcirc{3}$ and $\tcirc{4}$ is also $\boldsymbol{ x > 1 }$!
 
@@ -143,44 +143,44 @@ Like [for equations with multiple absolute values](../absolute-value-equations/#
 
 {{% note Solution %}}
 Since the signs of $x-1$ and $x-3$ change at $x=1$ and $x=3$ respectively, our choice of cases are {{% enum i %}}$x<1$, {{% enum ii %}}$1\le x < 3$, and {{% enum iii %}}$x \ge 3$. {{% mn 126 tips %}}
-{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-abs-ex2a.png" %}}{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-abs-ex2b.png" %}}{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-abs-ex2c.png" %}} The diagram representing the possible ranges of $x$ for Q1.
+{{% img-raw loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-abs-ex2a.png" %}}{{% img-raw loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-abs-ex2b.png" %}}{{% img-raw loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-abs-ex2c.png" %}} The diagram representing the possible ranges of $x$ for Q1.
 {{% /mn %}}
 
 {{% ol i %}}
 {{% li %}}
 When $x<1$,
-`\begin{align*}
-  & |x-1| + 2|x-3| \le 11 \\
-  & \iff \hl{ -(x-1) -2(x-3) } \le 11 \\
-  & \iff -x + 1 - 2x + 6 \le 11 \\
-  & \iff -3x \le 4 \\
+\begin{align*}
+  & |x-1| + 2|x-3| \le 11 \cr
+  & \iff \hl{ -(x-1) -2(x-3) } \le 11 \cr
+  & \iff -x + 1 - 2x + 6 \le 11 \cr
+  & \iff -3x \le 4 \cr
   & \iff x \ge -\dfrac{4}{3}.
-\end{align*}`
+\end{align*}
 
 The intersection with our assumption, $x<1$, is $$ -\dfrac{4}{3} \le x < 1. \quad\cdots\tcirc{1}$$
 {{% /li %}}
 {{% li %}}
 When $1\le x < 3$,
-`\begin{align*}
-  & |x-1| + 2|x-3| \le 11 \\
-  & \iff (x-1) \hl{ -2(x-3) } \le 11 \\
-  & \iff x - 1 - 2x + 6 \le 11 \\
-  & \iff -x \le 6 \\
+\begin{align*}
+  & |x-1| + 2|x-3| \le 11 \cr
+  & \iff (x-1) \hl{ -2(x-3) } \le 11 \cr
+  & \iff x - 1 - 2x + 6 \le 11 \cr
+  & \iff -x \le 6 \cr
   & \iff x \ge -6.
-\end{align*}`
+\end{align*}
 
 The intersection with our assumption, $1 \le x < 3$, is 
 $$ 1 \le x < 3. \quad\cdots\tcirc{2}$$
 {{% /li %}}
 {{% li %}}
 When $x \ge 3$,
-`\begin{align*}
-  & |x-1| + 2|x-3| \le 11 \\
-  & \iff (x-1) +2(x-3) \le 11 \\
-  & \iff x - 1 + 2x - 6 \le 11 \\
-  & \iff 3x \le 18 \\
+\begin{align*}
+  & |x-1| + 2|x-3| \le 11 \cr
+  & \iff (x-1) +2(x-3) \le 11 \cr
+  & \iff x - 1 + 2x - 6 \le 11 \cr
+  & \iff 3x \le 18 \cr
   & \iff x \le 6.
-\end{align*}`
+\end{align*}
 
 The intersection with our assumption, $x\ge 3$, is 
 $$ 3 \le x \le 6. \quad\cdots\tcirc{3}$$
@@ -197,40 +197,40 @@ Therefore, our solution is the union of $\tcirc{1}$, $\tcirc{2}$, and $\tcirc{3}
 
 {{% note Solution %}}
 Likewise, we will solve the inequality when {{% enum i %}}$x<7$, {{% enum ii %}}$7\le x < 8$, and {{% enum iii %}}$x \ge 8$. {{% mn 158 tips %}}
-{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-abs-ex3a.png" %}}{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-abs-ex3b.png" %}}{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-abs-ex3c.png" %}} The diagram representing the possible ranges of $x$ for Q2.
+{{% img-raw loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-abs-ex3a.png" %}}{{% img-raw loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-abs-ex3b.png" %}}{{% img-raw loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-abs-ex3c.png" %}} The diagram representing the possible ranges of $x$ for Q2.
 {{% /mn %}} 
 
 {{% ol i %}}
 {{% li %}}
 When $x<7$,
-`\begin{align*}
-  |x-7| + |x-8| < 3 & \iff \hl{ -(x-7) -(x-8) } < 3 \\
-  & \iff -x + 7 -x + 8 < 3 \\
-  & \iff -2x < -12 \\
+\begin{align*}
+  |x-7| + |x-8| < 3 & \iff \hl{ -(x-7) -(x-8) } < 3 \cr
+  & \iff -x + 7 -x + 8 < 3 \cr
+  & \iff -2x < -12 \cr
   & \iff x > 6.
-\end{align*}`
+\end{align*}
 From the assumptions,
 $$6 < x < 7. \quad\cdots\tcirc{4}$$
 {{% /li %}}
 {{% li %}}
 When $7\le x<8$,
-`\begin{align*}
-  |x-7| + |x-8| < 3 & \iff (x-7) \hl{-(x-8) } < 3 \\
-  & \iff x-7-x+8 < 3 \\
+\begin{align*}
+  |x-7| + |x-8| < 3 & \iff (x-7) \hl{-(x-8) } < 3 \cr
+  & \iff x-7-x+8 < 3 \cr
   & \iff 1 < 3.
-\end{align*}`
+\end{align*}
 
 This statement is always true regardless of the value of $x$, so from the assumptions,
 $$7\le x < 8. \quad\cdots\tcirc{5}$$
 {{% /li %}}
 {{% li %}}
 When $x \ge 8$,
-`\begin{align*}
-  |x-7| + |x-8| < 3 & \iff (x-7) + (x-8) < 3 \\
-  & \iff 2x - 15 < 3 \\
-  & \iff 2x < 18 \\
+\begin{align*}
+  |x-7| + |x-8| < 3 & \iff (x-7) + (x-8) < 3 \cr
+  & \iff 2x - 15 < 3 \cr
+  & \iff 2x < 18 \cr
   & \iff x < 9.
-\end{align*}`
+\end{align*}
 
 From the assumptions, $$8 \le x < 9. \quad\cdots\tcirc{6}$$
 {{% /li %}}
@@ -259,24 +259,24 @@ Our solution is the union of $\tcirc{4}$, $\tcirc{5}$, and $\tcirc{6}$, which is
 {{% note Solution %}}
 
 {{% enum a %}}
-`\begin{align*}
-  & |x+3| \le 2 \\
-  & \iff -2 \le x+3 \le 2 \\
+\begin{align*}
+  & |x+3| \le 2 \cr
+  & \iff -2 \le x+3 \le 2 \cr
   & \iff \boldsymbol{ -5 \le x \le -1 }.
-\end{align*}`
+\end{align*}
 {{% enum b %}}
-`\begin{align*}
-  & |x-4| > 3 \\
-  & \iff x-4 < -3 \text{ or } x-4 > 3 \\
+\begin{align*}
+  & |x-4| > 3 \cr
+  & \iff x-4 < -3 \text{ or } x-4 > 3 \cr
   & \iff \boldsymbol{ x < 1 \text{ or } x > 7 }.
-\end{align*}`
+\end{align*}
 {{% enum c %}}
-`\begin{align*}
-  & |4x-5| > 1 \\
-  & \iff 4x-5 < -1 \text{ or } 4x-5 > 1 \\
-  & \iff 4x < 4 \text{ or } 4x > 6 \\
+\begin{align*}
+  & |4x-5| > 1 \cr
+  & \iff 4x-5 < -1 \text{ or } 4x-5 > 1 \cr
+  & \iff 4x < 4 \text{ or } 4x > 6 \cr
   & \iff \boldsymbol{ x < 1 \text{ or } x > \frac{3}{2} }.
-\end{align*}`
+\end{align*}
 
 {{% enum d %}}
 The expression inside the absolute value symbol changes its sign at $x = -1$.
@@ -284,25 +284,25 @@ The expression inside the absolute value symbol changes its sign at $x = -1$.
 {{% ol i %}}
 {{% li %}}
 When $x\ge -1$,
-`\begin{align*}
-  & 3|x+1| < x+5 \\
-  & \iff 3(x+1) < x+5 \\
-  & \iff 3x + 3 < x + 5 \\
-  & \iff 2x < 2 \\
+\begin{align*}
+  & 3|x+1| < x+5 \cr
+  & \iff 3(x+1) < x+5 \cr
+  & \iff 3x + 3 < x + 5 \cr
+  & \iff 2x < 2 \cr
   & \iff x < 1.
-\end{align*}`
+\end{align*}
 
 Its intersection with the assumption ($x\ge -1$) is $$-1 \le x < 1. \quad\cdots\tcirc{1}$$
 {{% /li %}}
 {{% li %}}
 When $x < -1$,
-`\begin{align*}
-  & 3|x+1| < x+5 \\
-  & \iff -3(x+1) < x+5 \\
-  & \iff -3x - 3 < x + 5 \\
-  & \iff -4x < 8 \\
+\begin{align*}
+  & 3|x+1| < x+5 \cr
+  & \iff -3(x+1) < x+5 \cr
+  & \iff -3x - 3 < x + 5 \cr
+  & \iff -4x < 8 \cr
   & \iff x > -2.
-\end{align*}`
+\end{align*}
 
 Its intersection with the assumption ($x<-1$) is $$-2 < x < -1. \quad\cdots\tcirc{2}$$
 {{% /li %}}
@@ -330,37 +330,37 @@ Because $x-5=0$ when $x=5$, we will divide the cases at $x=0$ and $x=5$.
 {{% ol i %}}
 {{% li %}}
 When $x<0$,
-`\begin{align*}
-  & |x-5| \le \dfrac{2}{3} |x| + 1 \\
-  & \iff \hl{-(x-5)} \le \hl{ -\dfrac{2}{3} x} + 1 \\
-  & \iff -x + 5 \le - \dfrac{2}{3}x + 1 \\
-  & \iff 4 \le \dfrac{1}{3} x \\
+\begin{align*}
+  & |x-5| \le \dfrac{2}{3} |x| + 1 \cr
+  & \iff \hl{-(x-5)} \le \hl{ -\dfrac{2}{3} x} + 1 \cr
+  & \iff -x + 5 \le - \dfrac{2}{3}x + 1 \cr
+  & \iff 4 \le \dfrac{1}{3} x \cr
   & \iff x \ge 12.
-\end{align*}`
+\end{align*}
 
 Because this does not satisfy our assumption $x<0$, ***there are no values of $x$*** that satisfies the inequality.
 {{% /li %}}
 {{% li %}}
 When $0\le x < 5$,
-`\begin{align*}
-  & |x-5| \le \dfrac{2}{3} |x| + 1 \\
-  & \iff \hl{-(x-5)} \le \dfrac{2}{3} x + 1 \\
-  & \iff -x + 5 \le + \dfrac{2}{3}x + 1 \\
-  & \iff 4 \le \dfrac{5}{3} x \\
+\begin{align*}
+  & |x-5| \le \dfrac{2}{3} |x| + 1 \cr
+  & \iff \hl{-(x-5)} \le \dfrac{2}{3} x + 1 \cr
+  & \iff -x + 5 \le + \dfrac{2}{3}x + 1 \cr
+  & \iff 4 \le \dfrac{5}{3} x \cr
   & \iff x \ge \dfrac{12}{5}.
-\end{align*}`
+\end{align*}
 
 Because we assumed $0\le x < 5$, the range of $x$ that satisfies the inequality is
 $$\dfrac{12}{5}\le x < 5. \quad\cdots\tcirc{1}$$
 {{% /li %}}
 {{% li %}}
 When $x\ge 5$,
-`\begin{align*}
-  & |x-5| \le \dfrac{2}{3} |x| + 1 \\
-  & \iff (x-5) \le \dfrac{2}{3} x + 1 \\
-  & \iff \dfrac{1}{3} x \le 6 \\
+\begin{align*}
+  & |x-5| \le \dfrac{2}{3} |x| + 1 \cr
+  & \iff (x-5) \le \dfrac{2}{3} x + 1 \cr
+  & \iff \dfrac{1}{3} x \le 6 \cr
   & \iff x \le 18.
-\end{align*}`
+\end{align*}
 
 Because we assumed $x\ge 5$, the range of $x$ that satisfies the inequality is $$5\le x \le 18. \quad\cdots\tcirc{2}$$
 {{% /li %}}
@@ -374,34 +374,34 @@ Because $x+2=0$ at $x=-2$ and $x-1=0$ at $x=1$, we will divide the cases at $x=-
 {{% ol i %}}
 {{% li %}}
 When $x<-2$,
-`\begin{align*}
-  & |x+2|-|x-1|>x \\
-  & \iff \hl{-(x+2) + (x-1)} > x \\
-  & \iff -x-2 +x-1 > x \\
+\begin{align*}
+  & |x+2|-|x-1|>x \cr
+  & \iff \hl{-(x+2) + (x-1)} > x \cr
+  & \iff -x-2 +x-1 > x \cr
   & \iff -3 > x.
-\end{align*}`
+\end{align*}
 
 Its intersection with $x<-2$ is $$x<-3. \quad\cdots\tcirc{3}$$
 {{% /li %}}
 {{% li %}}
 When $-2 \le x < 1$,
-`\begin{align*}
-  & |x+2|-|x-1|>x \\
-  & \iff (x+2) \hl{+ (x-1)} > x \\
-  & \iff 2x + 1 > x \\
+\begin{align*}
+  & |x+2|-|x-1|>x \cr
+  & \iff (x+2) \hl{+ (x-1)} > x \cr
+  & \iff 2x + 1 > x \cr
   & \iff x > -1.
-\end{align*}`
+\end{align*}
 
 Its intersection with $-2 \le x < 1$ is $$-1 < x < 1. \quad\cdots\tcirc{4}$$
 {{% /li %}}
 {{% li %}}
 When $x\ge 1$,
-`\begin{align*}
-  & |x+2|-|x-1|>x \\
-  & \iff (x+2) - (x-1) > x \\
-  & \iff x+2-x+1>x \\
+\begin{align*}
+  & |x+2|-|x-1|>x \cr
+  & \iff (x+2) - (x-1) > x \cr
+  & \iff x+2-x+1>x \cr
   & \iff 3 > x.
-\end{align*}`
+\end{align*}
 
 Its intersection with $x\ge 1$ is $$1\le x < 3. \quad\cdots\tcirc{5}$$
 {{% /li %}}

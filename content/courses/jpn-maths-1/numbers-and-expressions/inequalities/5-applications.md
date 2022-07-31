@@ -36,11 +36,11 @@ Now that we are fairly familiar with linear inequalities, we will take the next 
 
 The equation $$ ax + 1 = -3a -2 $$ has two variables ($a$ and $x$) and hence cannot be solved. However, we can always treat one of the variables as constant and express one variable in terms of the other:
 
-`\begin{alignat*}{2}
-  && ax + 1 & = -3a -2 \\
-  & \iff& ax &= -3a -3 \\
+\begin{alignat*}{2}
+  && ax + 1 & = -3a -2 \cr
+  & \iff& ax &= -3a -3 \cr
   & \iff& x &= \frac{-3a-3}{a}.
-\end{alignat*}`
+\end{alignat*}
 
 What is the problem with this work? It should be fine for most of the time, but you cannot determine the value of $\dfrac{-3a-3}{a}$ when $a=0$, hence the value of $x$ is not set for this case! When we divided both sides by $a$, we ***assumed*** that $a$ is not equal to zero. Now, what happens when $a=0?$ Have a look at the complete solution below.
 
@@ -50,21 +50,21 @@ Solve $ax + 1 = -3a -2$ with respect to $x$.
 
 {{% note Solution %}}
 We will first assume $a=0$. Then
-`\begin{alignat*}{2}
-  && 0\cdot x + 1 &= -3\cdot 0 - 2 \\
+\begin{alignat*}{2}
+  && 0\cdot x + 1 &= -3\cdot 0 - 2 \cr
   & \iff& 1 &= -2,
-\end{alignat*}`
+\end{alignat*}
 which is ***always false***. Hence there are ***no solutions*** when $a=0$.
 
 {{% mn 67 tips %}}
 (1) Note that because we assumed $a$ is not zero, we can divide both sides by $a$.
 {{% /mn %}}
 We will then assume $a\ne 0$. Then
-`\begin{alignat*}{2}
-  && ax + 1 & = -3a -2 \\
-  & \iff& ax &= -3a -3 \\
+\begin{alignat*}{2}
+  && ax + 1 & = -3a -2 \cr
+  & \iff& ax &= -3a -3 \cr
   & \iff& x &= \frac{-3a-3}{a}. \tag{1}
-\end{alignat*}`
+\end{alignat*}
 
 Therefore, when $a$ is nonzero, $\boldsymbol{ x=\dfrac{-3a-3}{a} = -3 - \dfrac{3}{a} }$.
 
@@ -78,11 +78,11 @@ Solve $a(x+1)>x+a^2$ with respect to $x$.
 
 {{% note Solution %}}
 The inequality simplifies to
-`\begin{align*}
-  & ax + a > x + a^2 \\
-  & \iff ax - x > a^2 - a \\
+\begin{align*}
+  & ax + a > x + a^2 \cr
+  & \iff ax - x > a^2 - a \cr
   & \iff (a-1)x > a(a-1). \tag{$=\cdots\tcirc{1}$}
-\end{align*}`
+\end{align*}
 
 The next step is to divide both sides by $(a-1)$, so we need to consider the case of {{% enum i %}}$a-1>0$, {{% enum ii %}}$a-1=0$, and {{% enum iii %}}$a-1<0$.
 
@@ -90,18 +90,18 @@ The next step is to divide both sides by $(a-1)$, so we need to consider the cas
 {{% li %}}
 When $a-1>0 \iff a>1$, we are dividing both sides by a positive number, so
 
-`\begin{align*}
+\begin{align*}
   \tcirc{1} & \iff x > a.
-\end{align*}`
+\end{align*}
 
 {{% /li %}}
 {{% li %}}
 When $a-1=0 \iff a=1$, we *cannot divide* both sides by $a-1$. Instead, we can substitute $a=1$ into $\tcirc{1}$:
 
-`\begin{align*}
-  \tcirc{1} & \iff 0 \cdot x > 1 \cdot 0 \\
+\begin{align*}
+  \tcirc{1} & \iff 0 \cdot x > 1 \cdot 0 \cr
   & \iff 0 > 0.
-\end{align*}`
+\end{align*}
 
 Because this inequality is always false, there are no solutions for $x$ in this case.
 
@@ -109,16 +109,16 @@ Because this inequality is always false, there are no solutions for $x$ in this 
 {{% li %}}
 When $a-1<0 \iff a<1$, we are dividing both sides by a negative number, so ***the inequality sign changes***.
 
-`\begin{align*}
+\begin{align*}
   \tcirc{1} & \iff x \hl{<} a.
-\end{align*}`
+\end{align*}
 
 Therefore, the solution for $x$ is
-`$$\begin{cases}
-  \boldsymbol{ x>a }, \quad & \text{if $a>1$}, \\
-  \textbf{no solutions}, & \text{if $a=1$}, \\
+$$\begin{cases}
+  \boldsymbol{ x>a }, \quad & \text{if $a>1$}, \cr
+  \textbf{no solutions}, & \text{if $a=1$}, \cr
   \boldsymbol{ x<a }, \quad & \text{if $a<1$}.
-\end{cases}$$`
+\end{cases}$$
 
 {{% /li %}}
 {{% /ol %}}
@@ -131,23 +131,23 @@ Find the value of $a$ if the solution for the inequality $ax<4-2x<2x$ with respe
 
 {{% note Solution %}}
 We first solve the simultaneous inequality 
-`$$\begin{cases}
-  ax < 4-2x, \\
+$$\begin{cases}
+  ax < 4-2x, \cr
   4-2x < 2x,
-\end{cases}$$`
+\end{cases}$$
 
 to see what the solutions are in terms of $a$. From the first inequality,
-`\begin{align*}
-  & ax + 2x < 4 \\
+\begin{align*}
+  & ax + 2x < 4 \cr
   & \iff (a+2)x < 4, \tag{$\cdots\tcirc{1}$}
-\end{align*}`
+\end{align*}
 
 and from the second inequality,
-`\begin{align*}
-  & 4-2x < 2x \\
-  & \iff 4 < 4x \\
+\begin{align*}
+  & 4-2x < 2x \cr
+  & \iff 4 < 4x \cr
   & \iff 1 < x. \tag{$\cdots\tcirc{2}$}
-\end{align*}`
+\end{align*}
 
 By comparing the solution $(1<x<4)$ with $\tcirc{2}$, we can clearly see that $\tcirc{1}$ should lead to $x<4$. Because we need to divide both sides of $\tcirc{1}$ by $(a+2)$ to proceed, it is natural for us to divide the cases by the sign of $(a+2)$.
 
@@ -164,12 +164,12 @@ When $a+2<0$, $\quad \tcirc{1} \iff x > \dfrac{4}{a+2}$.
 {{% /ol %}}
 
 Since $\tcirc{1}$ should apply an upper limit of $x$, only {{% enum i %}}is a suitable choice. Hence we find, $a+2>0 \iff a>-2$ and
-`\begin{alignat*}{2}
-  && \dfrac{4}{a+2} &= 4 \\
-  & \iff& 4 &= 4(a+2) \\
-  & \iff& 1 &= a+2 \\
+\begin{alignat*}{2}
+  && \dfrac{4}{a+2} &= 4 \cr
+  & \iff& 4 &= 4(a+2) \cr
+  & \iff& 1 &= a+2 \cr
   & \iff& a &= -1.
-\end{alignat*}`
+\end{alignat*}
 
 Therefore, the value of $a$ is $\boldsymbol{ -1 }$.
 
@@ -205,13 +205,13 @@ Putting everything together, we find $$ 0 \le 4x+19 - 7(x-1) \lt 4. $$
 {{% enum 6 %}}
 Solving this inequality gives
 
-`\begin{align*}
-  & 0 \le 4x+19 - 7(x-1) \lt 4 \\
-  & \iff 0 \le 4x+19 - 7x + 7 \lt 4 \\
-  & \iff 0 \le -3x + 26 \lt 4 \\
-  & \iff -26 \le -3x \lt -22 \\
+\begin{align*}
+  & 0 \le 4x+19 - 7(x-1) \lt 4 \cr
+  & \iff 0 \le 4x+19 - 7x + 7 \lt 4 \cr
+  & \iff 0 \le -3x + 26 \lt 4 \cr
+  & \iff -26 \le -3x \lt -22 \cr
   & \iff \frac{22}{3} \lt x \le \frac{26}{3}.
-\end{align*}`
+\end{align*}
 
 {{% enum 7 %}}
 The number of children has to be a natural number, and the only natural number that is in between $\dfrac{22}{3}$ and $\dfrac{26}{3}$ is $8$ $\left(=\dfrac{24}{8}\right)$. 
@@ -242,19 +242,19 @@ Basics of solving word problems:
 
 {{% details title="Answer" %}}
 
-1. `$$\begin{cases}
-  x>m+2, \quad & \text{if $m>1$}, \\
-  \text{no solutions}, & \text{if $m=1$}, \\
+1. $$\begin{cases}
+  x>m+2, \quad & \text{if $m>1$}, \cr
+  \text{no solutions}, & \text{if $m=1$}, \cr
   x<m+2, \quad & \text{if $m<1$}.
-\end{cases}$$`
+\end{cases}$$
 
 {{% note Solution %}}
 We will first simplify the inequality in terms of $x$.
-`\begin{align*}
-  & mx>x+m^2+m-2 \\
-  & \iff mx-x>m^2+m-2 \\
+\begin{align*}
+  & mx>x+m^2+m-2 \cr
+  & \iff mx-x>m^2+m-2 \cr
   & \iff (m-1)x > (m-1)(m+2). \tag{$ \cdots\tcirc{1}$}
-\end{align*}`
+\end{align*}
 
 We need to divide both sides by $(m-1)$, if possible. Hence we will look at the cases when $(m-1)$ is positive, when it equals zero, and when it is negative.
 
@@ -271,11 +271,11 @@ When $m-1<0$, $\quad \tcirc{1} \iff x < m+2$.
 {{% /ol %}}
 
 Therefore, the solution is
-`$$\begin{cases}
-  \boldsymbol{ x>m+2 }, & \text{if $m>1$}, \\
-  \textbf{no solutions}, & \text{if $m=1$}, \\
+$$\begin{cases}
+  \boldsymbol{ x>m+2 }, & \text{if $m>1$}, \cr
+  \textbf{no solutions}, & \text{if $m=1$}, \cr
   \boldsymbol{ x<m+2 }, & \text{if $m<1$}.
-\end{cases}$$`
+\end{cases}$$
 
 {{% /details %}}
 
@@ -287,39 +287,39 @@ Therefore, the solution is
 
 {{% note Solution %}}
 Divide the inequality into two:
-`$$\begin{cases}
+$$\begin{cases}
   2bx\le 4x+1,\\
   4x+1 \le 5,
-\end{cases}$$`
+\end{cases}$$
 and solve them separately. From the second inequality,
 
-`\begin{align*}
-  & 4x+1 \le 5 \\
-  & \iff 4x \le 4 \\
+\begin{align*}
+  & 4x+1 \le 5 \cr
+  & \iff 4x \le 4 \cr
   & \iff x \le 1. \tag{$ \cdots\tcirc{1}$}
-\end{align*}`
+\end{align*}
 
 Then, from the first inequality,
-`\begin{align*}
-  & 2bx\le 4x+1 \\
-  & \iff (2b-4)x \le 1 \\
+\begin{align*}
+  & 2bx\le 4x+1 \cr
+  & \iff (2b-4)x \le 1 \cr
   & \iff (b-2)x \le \frac{1}{2}. \tag{$ \cdots\tcirc{2}$}
-\end{align*}`
+\end{align*}
 
 If we compare $\tcirc{1}$ with $-5\le x\le 1$, $\tcirc{2}$ should be equivalent to $x\ge -5$. It means that the inequality sign has to flip, which means $(b-2)$ has to be negative:
-`\begin{align*}
-  \tcirc{2} & \iff x \hl{\ge} \frac{1}{2(b-2)}, \\
+\begin{align*}
+  \tcirc{2} & \iff x \hl{\ge} \frac{1}{2(b-2)}, \cr
   & \iff x \ge -5,
-\end{align*}`
+\end{align*}
 
 so $\dfrac{1}{2(b-2)} = -5$. We solve this equation to find the value of $b$:
-`\begin{alignat*}{2}
-  && \frac{1}{2(b-2)} &= -5 \\
-  & \iff& 1 &= -5 \cdot 2(b-2) \\
-  & \iff& 1 &= -10b + 20 \\
-  & \iff& 10b &= 19 \\
+\begin{alignat*}{2}
+  && \frac{1}{2(b-2)} &= -5 \cr
+  & \iff& 1 &= -5 \cdot 2(b-2) \cr
+  & \iff& 1 &= -10b + 20 \cr
+  & \iff& 10b &= 19 \cr
   & \iff& \boldsymbol{ b } & \boldsymbol{ = \dfrac{19}{10} }.
-\end{alignat*}`
+\end{alignat*}
 
 We can also confirm this solution matches the previous assumption ($b-2<0$) we made.
 
@@ -339,20 +339,20 @@ Alice then gives one third of her pencils $(=n/3)$ to Tom. At this point, Alice 
 After Alice gives three more pencils to Tom, Alice has $\dfrac{2}{3} n - 3$ pencils, and Tom has $ 52-n + \dfrac{1}{3}n + 3$ pencils. Now, Tom has more pencils, so $$ \dfrac{2}{3} n - 3 < 52-n + \dfrac{1}{3}n + 3. \tag{$ \cdots\tcirc{2}$} $$
 
 Now we have two inequalities to solve. Solving $\tcirc{1}$ gives
-`\begin{align*}
-  \tcirc{1} & \iff \dfrac{2}{3} n > 52 - \dfrac{2}{3} n \\
-  & \iff \dfrac{4}{3} n > 52 \\
-  & \iff n > 52 \times \dfrac{3}{4} \\
+\begin{align*}
+  \tcirc{1} & \iff \dfrac{2}{3} n > 52 - \dfrac{2}{3} n \cr
+  & \iff \dfrac{4}{3} n > 52 \cr
+  & \iff n > 52 \times \dfrac{3}{4} \cr
   & \iff n > 39.
-\end{align*}`
+\end{align*}
 
 Then, solving $\tcirc{2}$ gives
-`\begin{align*}
-  \tcirc{2} & \iff \dfrac{2}{3} n - 3 < 55 - \frac{2}{3} n \\
-  & \iff \dfrac{4}{3} n < 58 \\
-  & \iff n < 58 \times \dfrac{3}{4} \\
+\begin{align*}
+  \tcirc{2} & \iff \dfrac{2}{3} n - 3 < 55 - \frac{2}{3} n \cr
+  & \iff \dfrac{4}{3} n < 58 \cr
+  & \iff n < 58 \times \dfrac{3}{4} \cr
   & \iff n < 43.5.
-\end{align*}`
+\end{align*}
 
 We find $ 39 < n < 43.5 $. Because Alice could give one third of her pencils, the number of pencils Alice had must be divisible by 3. The only multiple of 3 that is in between 39 and 43.5 is 42, so Alice had $\boldsymbol{42}$ pencils at first.
 
@@ -369,14 +369,14 @@ Suppose you cover $d~\text{km}$ by running and $(15-d)~\text{km}$ by walking. Th
 {{% mn q4 tips %}}
 (1) Multiplying both sides by the least common multiple of the denominators (15).
 {{% /mn %}}
-`\begin{align*}
-  & \dfrac{d}{5} + \dfrac{15-d}{3} \le 4 \\
-  & \iff 3d + 5(15-d) \le 60 \tag{1} \\
-  & \iff 3d + 75 - 5d \le 60 \\
-  & \iff -2d \le 60 - 75 \\
-  & \iff -2d \le -15 \\
+\begin{align*}
+  & \dfrac{d}{5} + \dfrac{15-d}{3} \le 4 \cr
+  & \iff 3d + 5(15-d) \le 60 \tag{1} \cr
+  & \iff 3d + 75 - 5d \le 60 \cr
+  & \iff -2d \le 60 - 75 \cr
+  & \iff -2d \le -15 \cr
   & \iff d \ge \dfrac{15}{2}.
-\end{align*}`
+\end{align*}
 
 Therefore, you need to run for at least $\boldsymbol{ 7.5 }$ kilometres.
 

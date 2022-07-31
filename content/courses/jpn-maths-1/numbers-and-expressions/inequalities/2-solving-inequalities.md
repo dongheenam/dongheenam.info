@@ -53,19 +53,19 @@ How to solve linear inequalities:
 {{% details title="Moving the terms" %}}
 
 By moving the terms, we mean something like this:
-`\begin{alignat*}{2}
-  & 3x \hl{+4} &&= 12 \\
+\begin{alignat*}{2}
+  & 3x \hl{+4} &&= 12 \cr
   & \iff 3x &&= 12 \hl{-4}.
-\end{alignat*}`
+\end{alignat*}
 
 In this lesson, we assume you are familiar with this technique. Remember, you need to change the sign when you move a term across the equal (or inequality) sign!
 
-`\begin{alignat*}{2}
-  & 5y -4 &&= 3 +3y \\
-  & \iff 5y -3y &&= 3 +4 \\
-  & \iff 2y &&= 7 \\
+\begin{alignat*}{2}
+  & 5y -4 &&= 3 +3y \cr
+  & \iff 5y -3y &&= 3 +4 \cr
+  & \iff 2y &&= 7 \cr
   & \iff y &&= \frac{7}{2}.
-\end{alignat*}`
+\end{alignat*}
 
 {{% /details %}}
 
@@ -86,36 +86,36 @@ Solve the following inequalities.
 (1) Moving the terms<br>
 (2) Dividing both sides by $3$
 {{% /mn %}}
-`\begin{align*}
-  & 6x-21\gt 3x \\
-  & \iff 6x \hl{-3x}\gt \hl{21} \tag{1} \\
-  & \iff 3x \gt 21 \\
+\begin{align*}
+  & 6x-21\gt 3x \cr
+  & \iff 6x \hl{-3x}\gt \hl{21} \tag{1} \cr
+  & \iff 3x \gt 21 \cr
   & \iff \boldsymbol{ x\gt 7 }. \tag{2}
-\end{align*}`
+\end{align*}
 
 {{% mn 100 tips %}}
 (3) Moving the terms<br>
 (4) Dividing both sides by -4 (change of signs)
 {{% /mn %}}
-`\begin{align*}
-   & 5x+16\le 9x-4 \\
-  & \iff 5x \hl{-9x}\le -4 \hl{-16} \tag{3} \\
-  & \iff -4x \le -20 \\
+\begin{align*}
+   & 5x+16\le 9x-4 \cr
+  & \iff 5x \hl{-9x}\le -4 \hl{-16} \tag{3} \cr
+  & \iff -4x \le -20 \cr
   & \iff \boldsymbol{ x \hl{\ge} 5 }. \tag{4}
-\end{align*}`
+\end{align*}
 
 {{% mn 110 tips %}}
 (5) Expanding the bracket<br>
 (6) Moving the terms<br>
 (7) Dividing both sides by -7 (change of signs)
 {{% /mn %}}
-`\begin{align*}
-   & 3(x-1)\ge 2(5x+4) \\
-  & \iff 3x-3 \ge 10x+8 \tag{5} \\
-  & \iff 3x-10x \ge 8+3 \tag{6} \\
-  & \iff -7x \ge 11 \\
+\begin{align*}
+   & 3(x-1)\ge 2(5x+4) \cr
+  & \iff 3x-3 \ge 10x+8 \tag{5} \cr
+  & \iff 3x-10x \ge 8+3 \tag{6} \cr
+  & \iff -7x \ge 11 \cr
   & \iff x \le -\frac{11}{7}. \tag{7}
-\end{align*}`
+\end{align*}
 
  We want to remove the fractions first. We can do that by multiplying both sides by the least common multiple of the denominators: $12$.
 
@@ -124,15 +124,15 @@ Solve the following inequalities.
 (9) Moving the terms<br>
 (10) Dividing both sides by 25
 {{% /mn %}}
-`\begin{align*}
-  & \dfrac{5x+1}{4} - \dfrac{2-3x}{3}\lt \dfrac{1}{6}x + 1 \\
-  & \iff 3(5x+1) - 4(2-3x) \lt 2x + 12 \\
-  & \iff 15x + 3 - 8 + 12x \lt 2x + 12 \tag{8} \\
-  & \iff 27x - 5 \lt 2x + 12 \\
-  & \iff 27x - 2x \lt 12 + 5 \tag{9} \\
-  & \iff 25x \lt 17 \quad \\
+\begin{align*}
+  & \dfrac{5x+1}{4} - \dfrac{2-3x}{3}\lt \dfrac{1}{6}x + 1 \cr
+  & \iff 3(5x+1) - 4(2-3x) \lt 2x + 12 \cr
+  & \iff 15x + 3 - 8 + 12x \lt 2x + 12 \tag{8} \cr
+  & \iff 27x - 5 \lt 2x + 12 \cr
+  & \iff 27x - 2x \lt 12 + 5 \tag{9} \cr
+  & \iff 25x \lt 17 \quad \cr
   & \iff \boldsymbol{ x \lt \frac{17}{25}. } \tag{10}
-\end{align*}`
+\end{align*}
 
 {{% /hbox %}}
 
@@ -140,7 +140,7 @@ Solve the following inequalities.
 ### Expressing the answers on the number line
 
 {{% mn range fig %}}
-{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-range-def1.png" %}}{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-range-def2.png" %}}{{% img loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-range-def3.png" %}}Diagrams of the possible values of $x$. Click to enlarge.
+{{% img-raw loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-range-def1.png" %}}{{% img-raw loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-range-def2.png" %}}{{% img-raw loc="sidenote" src="courses/jpn-maths-1/numbers-and-expressions/ineq-range-def3.png" %}}Diagrams of the possible values of $x$. Click to enlarge.
 {{% /mn %}}
 
 We can also draw the range on the number line. The trick is, we use filled circles ($\bullet$) when you want to include the value and use empty circles ($\circ$) to exclude that value. For example, the inequality $$ x\le -\frac{1}{2} $$ needs a filled circle at $x=-\dfrac{1}{2}$, and the inequality $$ x\lt 2 $$ needs an empty circle at $x=2$.
@@ -168,50 +168,50 @@ We can also draw the range on the number line. The trick is, we use filled circl
 {{% note Solution %}}
 
 {{% enum a %}}
-`\begin{align*}
-   & 5x-7\gt 3(x+1) \\
-  & \iff 5x-7\gt 3x+3 \\
-  & \iff 5x-3x\gt 3+7 \\
-  & \iff 2x\gt 10 \\
+\begin{align*}
+   & 5x-7\gt 3(x+1) \cr
+  & \iff 5x-7\gt 3x+3 \cr
+  & \iff 5x-3x\gt 3+7 \cr
+  & \iff 2x\gt 10 \cr
   & \iff \boldsymbol{ x\gt 5 }.
-\end{align*}`
+\end{align*}
 {{% enum b %}}
-`\begin{align*}
-   & 4(3-2x)\le 5(x+2) \\
-  & \iff 12-8x\le 5x+10 \\
-  & \iff 12-10\le 5x+8x \\
-  & \iff 2\le 13x \\
+\begin{align*}
+   & 4(3-2x)\le 5(x+2) \cr
+  & \iff 12-8x\le 5x+10 \cr
+  & \iff 12-10\le 5x+8x \cr
+  & \iff 2\le 13x \cr
   & \iff \boldsymbol{ x\ge \frac{2}{13} }.
-\end{align*}`
+\end{align*}
 {{% enum c %}}
-`\begin{align*}
-   & \dfrac{3x+2}{5}\lt \dfrac{2x-1}{3} \\
-  & \iff 3(3x+2)\lt 5(2x-1) \\
-  & \iff 9x+6\lt 10x-5 \\
-  & \iff 6+5\lt 10x-9x \\
+\begin{align*}
+   & \dfrac{3x+2}{5}\lt \dfrac{2x-1}{3} \cr
+  & \iff 3(3x+2)\lt 5(2x-1) \cr
+  & \iff 9x+6\lt 10x-5 \cr
+  & \iff 6+5\lt 10x-9x \cr
   & \iff \boldsymbol{ x\gt 11 }.
-\end{align*}`
+\end{align*}
 {{% enum d %}}
-`\begin{align*}
-   & 0.2x+1\le -0.3x -2.5 \\
-  & \iff 0.2x +0.3x \le -2.5-1 \\
-  & \iff 0.5x \le -3.5 \\
+\begin{align*}
+   & 0.2x+1\le -0.3x -2.5 \cr
+  & \iff 0.2x +0.3x \le -2.5-1 \cr
+  & \iff 0.5x \le -3.5 \cr
   & \iff \boldsymbol{ x \le -7 }.
-\end{align*}`
+\end{align*}
 {{% enum e %}}
 {{% mn q1e tips %}}
 (1) Expanding the bracket.<br>
 (2) Multiplying both sides by 12, which is the least common multiple of the denominators (3, 12 and 2).
 {{% /mn %}}
-`\begin{align*}
-   & x+ \dfrac{1}{3} \left\{ x- \dfrac{1}{4}(x+1) \right\} \gt 2x- \dfrac{1}{2} \\
-  & \iff x + \dfrac{1}{3} x - \dfrac{1}{12}(x+1) \gt 2x- \dfrac{1}{2} \tag{1} \\
-  & \iff 12x + 4x - (x+1) \gt 24x-6 \tag{2} \\
-  & \iff 16x - x - 1 \gt 24x - 6 \\
-  & \iff 15x - 1 \gt 24x - 6 \\
-  & \iff -1+6 \gt 24x-15x \\
-  & \iff 5 \gt 9x \\
+\begin{align*}
+   & x+ \dfrac{1}{3}\left\\{ x- \dfrac{1}{4}(x+1)\right\\} \gt 2x- \dfrac{1}{2} \cr
+  & \iff x + \dfrac{1}{3} x - \dfrac{1}{12}(x+1) \gt 2x- \dfrac{1}{2} \tag{1} \cr
+  & \iff 12x + 4x - (x+1) \gt 24x-6 \tag{2} \cr
+  & \iff 16x - x - 1 \gt 24x - 6 \cr
+  & \iff 15x - 1 \gt 24x - 6 \cr
+  & \iff -1+6 \gt 24x-15x \cr
+  & \iff 5 \gt 9x \cr
   & \iff \boldsymbol{ x \lt \dfrac{5}{9} }.
-\end{align*}`
+\end{align*}
 
 {{% /details %}}

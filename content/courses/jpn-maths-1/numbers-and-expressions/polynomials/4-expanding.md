@@ -62,17 +62,17 @@ Here are some of the useful identities for expanding brackets. Note that the res
 
 {{% hbox %}}
 {{% note "Identity 1" %}} ***Perfect squares***.
-`\begin{align*}
-(a+b)^2 &= a^2 + 2ab + b^2, \tag{1-1} \\
+\begin{align*}
+(a+b)^2 &= a^2 + 2ab + b^2, \tag{1-1} \cr
 (a-b)^2 &= a^2 - 2ab + b^2. \tag{1-2}
-\end{align*}`
+\end{align*}
 {{% note "Identity 2" %}} ***Difference of squares***.
 $$ (a+b)(a-b) = a^2 - b^2. \tag{2} $$
 {{% note "Identity 3" %}} ***Product of two linear polynomials***.
-`\begin{align*}
-(x+a)(x+b) &= x^2 + (a+b)x + ab, \tag{3-1} \\
+\begin{align*}
+(x+a)(x+b) &= x^2 + (a+b)x + ab, \tag{3-1} \cr
 (ax+b)(cx+d) &= acx^2 + (ad+bc)x + bd. \tag{3-2}
-\end{align*}`
+\end{align*}
 
 {{% /hbox %}}
 
@@ -80,29 +80,29 @@ $$ (a+b)(a-b) = a^2 - b^2. \tag{2} $$
 We will expand the left-hand sides to see if we arrive on the other side. Once we get to the other side, put a little box symbol{{% sn box %}}Mathematicians often use a box symbol $\Box$ to indicate the end of a proof. Pretty cool, isn't it!{{% /sn %}} to indicate the proof is finished!
 
 {{% enum 1 %}}
-`\begin{align*}
-(a+b)^2 &= (\underline{a+b})(a+b) \\
-&= a(\underline{a+b}) + b(\underline{a+b}) \\
-&= a^2 + ab + ab + b^2 \\
+\begin{align*}
+(a+b)^2 &= (\underline{a+b})(a+b) \cr
+&= a(\underline{a+b}) + b(\underline{a+b}) \cr
+&= a^2 + ab + ab + b^2 \cr
 &= a^2 + 2ab + b^2. && \Box
-\end{align*}`
+\end{align*}
 
 Switch $b$ with $-b$ and it becomes the proof for $(a-b)^2=a^2-2ab+b^2$.
 
 {{% enum 2 %}}
-`\begin{align*}
-(\underline{a+b})(a-b) &= a(\underline{a+b}) - b(\underline{a+b}) \\
-&= a^2 + ab - ab - b^2 \\
+\begin{align*}
+(\underline{a+b})(a-b) &= a(\underline{a+b}) - b(\underline{a+b}) \cr
+&= a^2 + ab - ab - b^2 \cr
 &= a^2 - b^2. && \Box
-\end{align*}`
+\end{align*}
 
 {{% enum 3 %}}
-`\begin{align*}
-& (\underline{ax+b})(cx+d) \\
-&= cx (\underline{ax+b}) + d (\underline{ax+b}) \\
-&= ac x^2 + bc x + ad x + bd \\
+\begin{align*}
+& (\underline{ax+b})(cx+d) \cr
+&= cx (\underline{ax+b}) + d (\underline{ax+b}) \cr
+&= ac x^2 + bc x + ad x + bd \cr
 &= ac x^2 + (bc+ad)x + bd. && \Box
-\end{align*}`
+\end{align*}
 
 When $a=c=1$, we achieve $(x+a)(x+b)=x^2+(a+b)x+ab$.
 
@@ -125,60 +125,60 @@ Expand:
 {{% mn ex1 tips %}}
 (1) Identity 1-1<br>
 {{% /mn %}}
-`\begin{align*}
-& (a+2)^2 \\
-&= a^2 + 2\cdot a \cdot 2 + 2^2 \tag{1} \\
+\begin{align*}
+& (a+2)^2 \cr
+&= a^2 + 2\cdot a \cdot 2 + 2^2 \tag{1} \cr
 &= \boldsymbol{a^2 + 4a + 4. }
-\end{align*}`
+\end{align*}
 {{% enum 2 %}}
 {{% mn ex2 tips %}}
 (2) Identity 1-2
 {{% /mn %}}
-`\begin{align*}
-& (3x-4y)^2 \\
-&= (3x)^2 - 2\cdot 3x \cdot 4y + (4y)^2 \tag{2} \\
+\begin{align*}
+& (3x-4y)^2 \cr
+&= (3x)^2 - 2\cdot 3x \cdot 4y + (4y)^2 \tag{2} \cr
 &= \boldsymbol{ 9x^2 - 24xy + 16y^2. }
-\end{align*}`
+\end{align*}
 {{% enum 3 %}}
 {{% mn ex3 tips %}}
 (3) Identity 2
 {{% /mn %}}
-`\begin{align*}
-& (2p+q)(2p-q) \\
-&= (2p)^2 - q^2 \tag{3} \\
+\begin{align*}
+& (2p+q)(2p-q) \cr
+&= (2p)^2 - q^2 \tag{3} \cr
 &= \boldsymbol{ 4p^2 - q^2. }
-\end{align*}`
+\end{align*}
 {{% enum 4 %}}
 {{% mn ex4 tips %}}
 (4) Identity 3-1
 {{% /mn %}}
-`\begin{align*}
-& (x+3)(x-5) \\
-&= x^2 + (3-5)x + 3\cdot(-5) \tag{4} \\
+\begin{align*}
+& (x+3)(x-5) \cr
+&= x^2 + (3-5)x + 3\cdot(-5) \tag{4} \cr
 &= \boldsymbol{ x^2 - 2x - 15. }
-\end{align*}`
+\end{align*}
 {{% enum 5 %}}
 {{% mn ex5 tips %}}
 (5) Rearrange polynomials to $(ax+b)(cx+d)$ form<br>
 (6) Identity 3-2
 {{% /mn %}}
-`\begin{align*}
-& (4x+y)(7y-3x) \\
-&= (4x+y)(\hl{-3x+7y}) \tag{5} \\
-&= 4\cdot(-3)x^2 + \left\{ 4\cdot 7y + y\cdot(-3) \right\} x + y\cdot 7y \tag{6} \\
+\begin{align*}
+& (4x+y)(7y-3x) \cr
+&= (4x+y)(\hl{-3x+7y}) \tag{5} \cr
+&= 4\cdot(-3)x^2 +\left\\{ 4\cdot 7y + y\cdot(-3)\right\\} x + y\cdot 7y \tag{6} \cr
 &= \boldsymbol{ -12x^2 +25xy + 7y^2. }
-\end{align*}`
+\end{align*}
 
 {{% /hbox %}}
 
 {{% details title="Alternative solution for Q5" %}}
 In the solution above, we solved it as a polynomial of $x$. Of course, you can focus on $y$ and use the identity.
 
-`\begin{align*}
-(4x+y)(7y-3x) &= (\hl{y} + 4x)(7\hl{y}-3x) \\
-&= 7\hl{y^2} + \{ -3x + 28x \}\hl{y} - 12x^2 \\
+\begin{align*}
+(4x+y)(7y-3x) &= (\hl{y} + 4x)(7\hl{y}-3x) \cr
+&= 7\hl{y^2} + \{ -3x + 28x \}\hl{y} - 12x^2 \cr
 &= \boldsymbol{ 7y^2 + 25xy - 12x^2 }.
-\end{align*}`
+\end{align*}
 
 {{% /details %}}
 
@@ -191,15 +191,15 @@ This is another set of identities that involve cubic polynomials. They are in fa
 {{% hbox %}}
 
 {{% note "Identity 4" %}} ***Perfect cubes***.
-`\begin{align*}
-(a\hl{+}b)^3 &= a^3 \hl{+} 3a^2b + 3ab^2 \hl{+} b^3, \tag{4-1} \\
+\begin{align*}
+(a\hl{+}b)^3 &= a^3 \hl{+} 3a^2b + 3ab^2 \hl{+} b^3, \tag{4-1} \cr
 (a\hl{-}b)^3 &= a^3 \hl{-} 3a^2b + 3ab^2 \hl{-} b^3. \tag{4-2}
-\end{align*}`
+\end{align*}
 {{% note "Identity 5" %}} ***Sums and differences of cubes***.
-`\begin{align*}
-(a\hl{+}b)(a\hl{-}ab+b^2) &= a^3 \hl{+} b^3, \tag{5-1} \\
+\begin{align*}
+(a\hl{+}b)(a\hl{-}ab+b^2) &= a^3 \hl{+} b^3, \tag{5-1} \cr
 (a\hl{-}b)(a\hl{+}ab+b^2) &= a^3 \hl{-} b^3. \tag{5-2}
-\end{align*}`
+\end{align*}
 
 {{% /hbox %}}
 
@@ -211,22 +211,22 @@ We only show one of each set of identities. You can easily repeat the exercise, 
 {{% mn id4 tips %}}
 (1) Identity 1
 {{% /mn %}}
-`\begin{align*}
-& (a+b)^3 \\
-&= (a+b) \cdot (a+b)^2 \\
-&= (a+b) \cdot (a^2 + 2ab + b^2) \tag{1} \\
-&= a^2 (a+b) + 2ab (a+b) + b^2 (a+b) \\
-&= a^3 + a^2b + 2a^2b + 2ab^2 + ab^2 + b^3 \\
+\begin{align*}
+& (a+b)^3 \cr
+&= (a+b) \cdot (a+b)^2 \cr
+&= (a+b) \cdot (a^2 + 2ab + b^2) \tag{1} \cr
+&= a^2 (a+b) + 2ab (a+b) + b^2 (a+b) \cr
+&= a^3 + a^2b + 2a^2b + 2ab^2 + ab^2 + b^3 \cr
 &= a^3 + 3a^2b + 3ab^2 + b^3. && \Box
-\end{align*}`
+\end{align*}
 
 {{% enum 5 %}}
-`\begin{align*}
-& (a+b)(a^2-ab+b^2) \\
-&= a^2 (a+b) - ab(a+b) + b^2 (a+b) \\
-&= a^3 + a^2b - a^2b - ab^2 + ab^2 - b^3 \\
+\begin{align*}
+& (a+b)(a^2-ab+b^2) \cr
+&= a^2 (a+b) - ab(a+b) + b^2 (a+b) \cr
+&= a^3 + a^2b - a^2b - ab^2 + ab^2 - b^3 \cr
 &= a^3 - b^3. && \Box
-\end{align*}`
+\end{align*}
 
 {{% /details %}}
 
@@ -249,30 +249,30 @@ Expand:
 {{% /mn %}}
 
 {{% enum 1 %}}
-`\begin{align*}
-& (a+1)^3 \\
+\begin{align*}
+& (a+1)^3 \cr
 &= \boldsymbol{ a^3 + 3a^2 + 3a + 1. } \tag{1}
-\end{align*}`
+\end{align*}
 {{% enum 2 %}}
-`\begin{align*}
-& (x+2)(x^2-2x+4) \\
-&=(x+2)(x^2-x\cdot 2 + 2^2 ) \\
-&= x^3 - 2^3 \tag{2} \\
+\begin{align*}
+& (x+2)(x^2-2x+4) \cr
+&=(x+2)(x^2-x\cdot 2 + 2^2 ) \cr
+&= x^3 - 2^3 \tag{2} \cr
 &= \boldsymbol{ x^3 - 8. }
-\end{align*}`
+\end{align*}
 {{% enum 3 %}}
-`\begin{align*}
-& (2z-3w)(4z^2 + 6zw + 9w^2) \\
-&= (2z - 3w) \left\{ (2z)^2 + 2z\cdot 3w + (3w)^2 \right\} \\
-&= (2z)^3 - (3w)^3 \tag{3} \\
+\begin{align*}
+& (2z-3w)(4z^2 + 6zw + 9w^2) \cr
+&= (2z - 3w)\left\\{ (2z)^2 + 2z\cdot 3w + (3w)^2\right\\} \cr
+&= (2z)^3 - (3w)^3 \tag{3} \cr
 &= \boldsymbol{ 8z^3 - 27w^3 .}
-\end{align*}`
+\end{align*}
 {{% enum 4 %}}
-`\begin{align*}
-& (3y-2x)^3 \\
-&= (3y)^3 - 3\cdot (3y)^2\cdot 2x + 3\cdot 3y \cdot (2x)^2 - (2x)^3 \tag{4} \\
+\begin{align*}
+& (3y-2x)^3 \cr
+&= (3y)^3 - 3\cdot (3y)^2\cdot 2x + 3\cdot 3y \cdot (2x)^2 - (2x)^3 \tag{4} \cr
 &= \boldsymbol{ 27y^3 - 54y^2x + 36yx^2 - 8x^3 .}
-\end{align*}`
+\end{align*}
 
 {{% /hbox %}}
 
@@ -322,38 +322,38 @@ You can see that the plus-minus signs share the signs, so when one is positive, 
 Parts (a) to (c) use the first identity.
 
 {{% enum a %}}
-`\begin{align*}
-& (3x+5y)^2 \\
-&= (3x)^2 + 2\cdot 3x\cdot 5y + (5y)^2 \\
+\begin{align*}
+& (3x+5y)^2 \cr
+&= (3x)^2 + 2\cdot 3x\cdot 5y + (5y)^2 \cr
 &= \boldsymbol{ 9x^2 + 30xy + 25y^2 }.
-\end{align*}`
+\end{align*}
 {{% enum b %}}
-`\begin{align*}
-& (7f-2g)^2 \\
-&= (7f)^2 - 2\cdot 7f \cdot 2g + (2g)^2 \\
+\begin{align*}
+& (7f-2g)^2 \cr
+&= (7f)^2 - 2\cdot 7f \cdot 2g + (2g)^2 \cr
 &= \boldsymbol{ 49f^2 - 28fg + 4g^2 }.
-\end{align*}`
+\end{align*}
 {{% enum c %}}
-`\begin{align*}
-& (2xy-3)^2 \\
-&= (2xy)^2 - 2\cdot 2xy \cdot 3 + 3^2 \\
+\begin{align*}
+& (2xy-3)^2 \cr
+&= (2xy)^2 - 2\cdot 2xy \cdot 3 + 3^2 \cr
 &= \boldsymbol{ 4x^2y^2 - 12xy + 9 .}
-\end{align*}`
+\end{align*}
 
 Parts (d) and (e) use the second identity.
 
 {{% enum d %}}
-`\begin{align*}
-& (x+5y)(x-5y) \\
-&= x^2 - (5y)^2 \\
+\begin{align*}
+& (x+5y)(x-5y) \cr
+&= x^2 - (5y)^2 \cr
 &= \boldsymbol{ x^2 - 25y^2 }.
-\end{align*}`
+\end{align*}
 {{% enum e %}}
-`\begin{align*}
-& (3c^2 - 2d)(3c^2 + 2d) \\
-&= (3c^2)^2 - (2d)^2\\
+\begin{align*}
+& (3c^2 - 2d)(3c^2 + 2d) \cr
+&= (3c^2)^2 - (2d)^2 \cr
 &= \boldsymbol{ 9c^4 - 4d^2 }.
-\end{align*}`
+\end{align*}
 
 {{% /details %}}
 
@@ -378,30 +378,30 @@ We use the third identity for all parts.
 {{% mn q2 tips %}}
 (1) Rearrange the terms to $(x+a)(x+b)$ form
 {{% /mn %}}
-`\begin{align*}
-& (x-2y)(3y+x) \\
-&= (x-2y)(\hl{x+3y}) \tag{1} \\
-&= x^2 + (-2y+3y)x -2y\cdot 3y \\
+\begin{align*}
+& (x-2y)(3y+x) \cr
+&= (x-2y)(\hl{x+3y}) \tag{1} \cr
+&= x^2 + (-2y+3y)x -2y\cdot 3y \cr
 &= \boldsymbol{ x^2 + xy - 6y^2 .}
-\end{align*}`
+\end{align*}
 {{% enum b %}}
-`\begin{align*}
-& (x^2 - 4)(x^2 + 3) \\
-&= \left(x^2\right)^2 + (-4+3)x^2 -4\cdot 3 \\
+\begin{align*}
+& (x^2 - 4)(x^2 + 3) \cr
+&= \left(x^2\right)^2 + (-4+3)x^2 -4\cdot 3 \cr
 &= \boldsymbol{ x^4 - x^2 - 12 .}
-\end{align*}`
+\end{align*}
 {{% enum c %}}
-`\begin{align*}
-& (3a-2)(4a+1) \\
-&= 12a^2 + (3 - 8)a - 2 \\
+\begin{align*}
+& (3a-2)(4a+1) \cr
+&= 12a^2 + (3 - 8)a - 2 \cr
 &= \boldsymbol{ 12a^2 - 5a - 2 .}
-\end{align*}`
+\end{align*}
 {{% enum d %}}
-`\begin{align*}
-& (2p-3q)(4p+2q) \\
-&= 8p^2 + (4q-12q)p -3q\cdot 2q \\
+\begin{align*}
+& (2p-3q)(4p+2q) \cr
+&= 8p^2 + (4q-12q)p -3q\cdot 2q \cr
 &= \boldsymbol{ 8p^2 - 8pq - 6q^2 .}
-\end{align*}`
+\end{align*}
 
 {{% /details %}}
 
@@ -423,33 +423,33 @@ We use the third identity for all parts.
 Parts (a) and (b) use the fourth identity.
 
 {{% enum a %}}
-`\begin{align*}
-& (2x+1)^3 \\
-&= (2x)^3 + 3(2x)^2 + 3(2x) + 1 \\
+\begin{align*}
+& (2x+1)^3 \cr
+&= (2x)^3 + 3(2x)^2 + 3(2x) + 1 \cr
 &= \boldsymbol{ 8x^3 + 12x^2 + 6x + 1. }
-\end{align*}`
+\end{align*}
 {{% enum b %}}
-`\begin{align*}
-& (x-4y)^3 \\
-&= x^3 - 3x^2\cdot 4y + 3x (4y)^2 - (4y)^3 \\
+\begin{align*}
+& (x-4y)^3 \cr
+&= x^3 - 3x^2\cdot 4y + 3x (4y)^2 - (4y)^3 \cr
 &= \boldsymbol{ x^3 - 12x^2y + 48xy^2 - 64y^3 .}
-\end{align*}`
+\end{align*}
 
 Parts (c) and (d) use the fifth identity.
 
 {{% enum c %}}
-`\begin{align*}
-& (2p-q)(4p^2+2pq+q^2) \\
-&= (2p - q)\left\{ (2p)^2 + 2p\cdot q + q^2 \right\} \\
-&= (2p)^3 - q^3 \\
+\begin{align*}
+& (2p-q)(4p^2+2pq+q^2) \cr
+&= (2p - q)\left\\{ (2p)^2 + 2p\cdot q + q^2\right\\} \cr
+&= (2p)^3 - q^3 \cr
 &= \boldsymbol{ 8p^3 - q^3 .}
-\end{align*}`
+\end{align*}
 {{% enum a %}}
-`\begin{align*}
-& (d+5)(d^2-5d+25) \\
-&= (d+5)(d^2 - d\cdot 5 + 5^2 ) \\
-&= d^3 + 5^3 \\
+\begin{align*}
+& (d+5)(d^2-5d+25) \cr
+&= (d+5)(d^2 - d\cdot 5 + 5^2 ) \cr
+&= d^3 + 5^3 \cr
 &= \boldsymbol{ d^3 + 125. }
-\end{align*}`
+\end{align*}
 
 {{% /details %}}

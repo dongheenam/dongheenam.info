@@ -10,5 +10,5 @@
 {{- end -}}
 <input type="checkbox" id="mn-{{ .Get 0 }}" class="margin-toggle" />
 <span class="marginnote">
-    {{ .Inner | markdownify }}
+  {{- markdownify .Inner -}}
 </span>

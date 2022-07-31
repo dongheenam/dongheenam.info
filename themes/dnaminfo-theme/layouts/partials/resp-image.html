@@ -7,10 +7,8 @@
 {{/* generating images */}}
 {{- $default_image := .image.Resize "480x q100" -}}
 {{- $webp := .image.Resize (printf "%dx q100 webp" .image.Width) -}}
-<source type="image/webp" 
-  srcset="{{ $webp.RelPermalink }}" />
-<source type="image" 
-  src="{{ .image.RelPermalink }}" />
+<source type="image/webp" srcset="{{ $webp.RelPermalink }}" />
+<source type="image" src="{{ .image.RelPermalink }}" />
 <img 
   width="{{ .image.Width }}" height="{{ .image.Height }}" loading="lazy" decoding="async" 
   {{ with .class -}} class="{{ . }}"{{- end -}}

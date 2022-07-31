@@ -42,40 +42,40 @@ Factorise $x^2 - xy - 2y^2 - x - 7y - 6$.
 {{% note Solution %}}
 We will first rearrange the expression in terms of $x$ and factorise the terms without $x$ (the underlined ones).
 
-`\begin{align*}
-& x^2 - xy - 2y^2 - x - 7y - 6 \\
-&= \hl{x^2} + (-y-1)\hl{x} - 2y^2 - 7y - 6 \\
-&= \hl{x^2} - (y+1)\hl{x} - \underline{(2y^2 + 7y + 6)} \\
+\begin{align*}
+& x^2 - xy - 2y^2 - x - 7y - 6 \cr
+&= \hl{x^2} + (-y-1)\hl{x} - 2y^2 - 7y - 6 \cr
+&= \hl{x^2} - (y+1)\hl{x} - \underline{(2y^2 + 7y + 6)} \cr
 &= \hl{x^2} - (y+1)\hl{x} - \underline{(y+2)(2y+3)}. \tag{$=\tcirc{1}$}
-\end{align*}`
+\end{align*}
 
 Here is how the last step is done:
-`$$ 2y^2 + 7y + 6 = (y+2)(2y+3) \\[0.5em]
+$$ 2y^2 + 7y + 6 = (y+2)(2y+3) \\\\[0.5em]
 \rlap{\kern1.1em\raisebox{0.65em}{$\huge\times$} }
 \begin{array}{rcrrr}
-  1 && 2 & \rightarrow & 4 \\[0.7em]
-  2 && 3 & \rightarrow & 3 \\[0.2em]
-  \hline \\[-0.9em]
+  1 && 2 & \rightarrow & 4 \\\\[0.7em]
+  2 && 3 & \rightarrow & 3 \\\\[0.2em]
+  \hline \\\\[-0.9em]
   &&&& \boldsymbol{ 7 }
 \end{array}
-$$`
+$$
 
 Now, you can use the cross-multiplication again, but in terms of $x$ this time:
-`$$ \hl{x^2} - (y+1)\hl{x} - (y+2)(2y+3) = \{ \hl{x} - (2y+3) \}\{ \hl{x} + (y+2) \} \\[0.5em]
+$$ \hl{x^2} - (y+1)\hl{x} - (y+2)(2y+3) = \{ \hl{x} - (2y+3) \}\{ \hl{x} + (y+2) \} \\\\[0.5em]
 \rlap{\kern1.1em\raisebox{0.65em}{$\huge\times$} }
 \begin{array}{rcrrr}
-  1 && -(2y+3) & \rightarrow & -2y-3 \\[0.7em]
-  1 && (y+2) & \rightarrow & y+2 \\[0.2em]
-  \hline \\[-0.9em]
+  1 && -(2y+3) & \rightarrow & -2y-3 \\\\[0.7em]
+  1 && (y+2) & \rightarrow & y+2 \\\\[0.2em]
+  \hline \\\\[-0.9em]
   &&&& \boldsymbol{ -y-1 }
 \end{array}
-$$`
+$$
 
 and of course $-y-1 = -(y+1)$, which is the coefficient of $x$. Therefore,
-`\begin{align*}
-\tcirc{1} &= \{ \hl{x} - (2y+3) \}\{ \hl{x} + (y+2) \} \\
+\begin{align*}
+\tcirc{1} &= \{ \hl{x} - (2y+3) \}\{ \hl{x} + (y+2) \} \cr
 &= \boldsymbol{ (x-2y-3)(x+y+2) }.
-\end{align*}`
+\end{align*}
 
 {{% /hbox %}}
 
@@ -95,33 +95,33 @@ Factorise $3x^2 + 7xy + 2y^2 - 5x - 5y + 2$.
 
 {{% note Solution %}}
 We will rearrange in terms of $x$, but if you want, you can do it in $y$.
-`\begin{align*}
-& 3x^2 + 7xy + 2y^2 - 5x - 5y + 2 \\
-&= 3\hl{x^2} + (7y-5)\hl{x} + \underline{2y^2 - 5y + 2} \\
-&= 3\hl{x^2} + (7y-5)\hl{x} + \underline{(2y-1)(y-2)} \tag{1} \\
-&= \{ 3\hl{x} + (y-2) \}\{ \hl{x} + (2y-1) \} \tag{2} \\
+\begin{align*}
+& 3x^2 + 7xy + 2y^2 - 5x - 5y + 2 \cr
+&= 3\hl{x^2} + (7y-5)\hl{x} + \underline{2y^2 - 5y + 2} \cr
+&= 3\hl{x^2} + (7y-5)\hl{x} + \underline{(2y-1)(y-2)} \tag{1} \cr
+&= \{ 3\hl{x} + (y-2) \}\{ \hl{x} + (2y-1) \} \tag{2} \cr
 &= \boldsymbol{ (3x+y-2)(x+2y-1) }.
-\end{align*}`
+\end{align*}
 
-`$$ (1): 2y^2 - 5y + 2 = (2y-1)(y-2) \\[0.5em]
+$$ (1): 2y^2 - 5y + 2 = (2y-1)(y-2) \\\\[0.5em]
 \rlap{\kern1.1em\raisebox{0.65em}{$\huge\times$} }
 \begin{array}{rcrrr}
-  2 && -1 & \rightarrow & -1 \\[0.7em]
-  1 && -2 & \rightarrow & -4 \\[0.2em]
-  \hline \\[-0.9em]
+  2 && -1 & \rightarrow & -1 \\\\[0.7em]
+  1 && -2 & \rightarrow & -4 \\\\[0.2em]
+  \hline \\\\[-0.9em]
   &&&& \boldsymbol{ -5 }
 \end{array}
-$$`
+$$
 
-`$$ (2): 3\hl{x^2} + (7y-5)\hl{x} + (2y-1)(y-2) = \{ 3\hl{x} + (y-2) \}\{ \hl{x} + (2y-1) \} \\[0.5em]
+$$ (2): 3\hl{x^2} + (7y-5)\hl{x} + (2y-1)(y-2) = \{ 3\hl{x} + (y-2) \}\{ \hl{x} + (2y-1) \} \\\\[0.5em]
 \rlap{\kern1.1em\raisebox{0.65em}{$\huge\times$} }
 \begin{array}{rcrrr}
-  3 && (y-2) & \rightarrow & y-2 \\[0.7em]
-  1 && (2y-1) & \rightarrow & 6y-3 \\[0.2em]
-  \hline \\[-0.9em]
+  3 && (y-2) & \rightarrow & y-2 \\\\[0.7em]
+  1 && (2y-1) & \rightarrow & 6y-3 \\\\[0.2em]
+  \hline \\\\[-0.9em]
   &&&& \boldsymbol{ 7y-5 }
 \end{array}
-$$`
+$$
 
 {{% /hbox %}}
 
@@ -150,12 +150,12 @@ We substitute $x^2$ with $t$:
 (1) $t = x^2$
 {{% /mn %}}
 
-`\begin{align*}
-x^4 + 2x^2 - 3 &= t^2 + 2t - 3 \tag{1} \\
-&= (t+3)(t-1) \\
+\begin{align*}
+x^4 + 2x^2 - 3 &= t^2 + 2t - 3 \tag{1} \cr
+&= (t+3)(t-1) \cr
 &= (x^2+3)(x^2-1)\\
 &= \boldsymbol{ (x^2+3)(x+1)(x-1) }.
-\end{align*}`
+\end{align*}
 
 {{% /hbox %}}
 
@@ -173,13 +173,13 @@ Of course, we cannot factorise $t^2+t+1$, but this polynomial can be factorised!
 (2) Identity 2: $\square^2-\triangle^2$ $=(\square+\triangle)(\square-\triangle)$
 {{% /mn %}}
 
-`\begin{align*}
-& a^4 + a^2 + 1 \\
-&= \underline{a^4 \hl{+2a^2} + 1} \hl{-a^2} \\
-&= \underline{\left(a^2 + 1\right)^2} - a^2 \tag{1} \\
-&= \left\{\left(a^2 + 1\right)+a\right\}\left\{\left(a^2 + 1\right)-a\right\} \tag{2} \\
+\begin{align*}
+& a^4 + a^2 + 1 \cr
+&= \underline{a^4 \hl{+2a^2} + 1} \hl{-a^2} \cr
+&= \underline{\left(a^2 + 1\right)^2} - a^2 \tag{1} \cr
+&=\left\\{\left(a^2 + 1\right)+a\right\\}\left\\{\left(a^2 + 1\right)-a\right\\} \tag{2} \cr
 &= \boldsymbol{ (a^2+a+1)(a^2-a+1) }.
-\end{align*}`
+\end{align*}
 
 {{% /hbox %}}
 
@@ -203,19 +203,19 @@ Factorise the following.
 {{% note Solution %}}
 
 {{% enum 1 %}}
-`\begin{align*}
-& x^4 -7x^2y^2 + y^4 \\
-&= x^4 \hl{+2x^2y^2} + y^4 \hl{- 9x^2y^2} \\
-&= \left(x^2 + y^2\right)^2 - (3xy)^2 \\
+\begin{align*}
+& x^4 -7x^2y^2 + y^4 \cr
+&= x^4 \hl{+2x^2y^2} + y^4 \hl{- 9x^2y^2} \cr
+&= \left(x^2 + y^2\right)^2 - (3xy)^2 \cr
 &= \boldsymbol{ (x^2 + 3xy + y^2)(x^2 - 3xy + y^2) }.
-\end{align*}`
+\end{align*}
 {{% enum 2 %}}
-`\begin{align*}
-& 4x^4 + 1 \\
-&= 4x^4 \hl{+ 4x^2} + 1 \hl{- 4x^2} \\
-&= \left(2x^2+1\right)^2 - (2x)^2 \\
+\begin{align*}
+& 4x^4 + 1 \cr
+&= 4x^4 \hl{+ 4x^2} + 1 \hl{- 4x^2} \cr
+&= \left(2x^2+1\right)^2 - (2x)^2 \cr
 &= \boldsymbol{ (2x^2+2x+1)(2x^2-2x+1) }.
-\end{align*}`
+\end{align*}
 
 {{% /hbox %}}
 
@@ -242,13 +242,13 @@ Factorise the following.
 (2)<br>
 {{% img-raw src="courses/jpn-maths-1/numbers-and-expressions/poly-9q5a2.JPG" alt="cross-multiplication" %}}
 {{% /mn %}}
-`\begin{align*}
-& 2x^2 + 5xy + 3y^2 + 2x + 4y - 4 \\
-&= 2\hl{x^2} + (5y+2)\hl{x} + \underline{3y^2+4y-4} \tag{1} \\
-&= 2\hl{x^2} + (5y+2)\hl{x} + \underline{(y+2)(3y-2)} \tag{2} \\
-&= \{ 2\hl{x} + (3y-2) \}\{ \hl{x} + (y+2) \} \\
+\begin{align*}
+& 2x^2 + 5xy + 3y^2 + 2x + 4y - 4 \cr
+&= 2\hl{x^2} + (5y+2)\hl{x} + \underline{3y^2+4y-4} \tag{1} \cr
+&= 2\hl{x^2} + (5y+2)\hl{x} + \underline{(y+2)(3y-2)} \tag{2} \cr
+&= \{ 2\hl{x} + (3y-2) \}\{ \hl{x} + (y+2) \} \cr
 &= \boldsymbol{ (2x+3y-2)(x+y+2) }.
-\end{align*}`
+\end{align*}
 
 {{% hr %}}
 
@@ -259,14 +259,14 @@ Factorise the following.
 (4)<br>
 {{% img-raw src="courses/jpn-maths-1/numbers-and-expressions/poly-9q5b2.JPG" alt="cross-multiplication" %}}
 {{% /mn %}}
-`\begin{align*}
-\text{b.} \quad & x^2 - 2xy - 3y^2 + 6x - 10y + 8 \\
-&= \hl{x^2} + (-2y+6)\hl{x} - 3y^2 - 10y + 8 \\
-&= \hl{x^2} + (-2y+6)\hl{x} - \underline{(3y^2+10y-8)} \\
-&= \hl{x^2} + (-2y+6)\hl{x} - \underline{(3y-2)(y+4)} \tag{3} \\
-&= \{ \hl{x} -(3y-2) \}\{ \hl{x} +(y+2) \} \tag{4} \\
+\begin{align*}
+\text{b.} \quad & x^2 - 2xy - 3y^2 + 6x - 10y + 8 \cr
+&= \hl{x^2} + (-2y+6)\hl{x} - 3y^2 - 10y + 8 \cr
+&= \hl{x^2} + (-2y+6)\hl{x} - \underline{(3y^2+10y-8)} \cr
+&= \hl{x^2} + (-2y+6)\hl{x} - \underline{(3y-2)(y+4)} \tag{3} \cr
+&= \{ \hl{x} -(3y-2) \}\{ \hl{x} +(y+2) \} \tag{4} \cr
 &= \boldsymbol{ (x-3y+2)(x+y+2) }.
-\end{align*}`
+\end{align*}
 
 {{% hr %}}
 
@@ -278,14 +278,14 @@ Factorise the following.
 {{% img-raw src="courses/jpn-maths-1/numbers-and-expressions/poly-9q5c2.JPG" alt="cross-multiplication" %}}
 {{% /mn %}}
 
-`\begin{align*}
-& 6x^2 + 5xy + y^2 + 2x - y - 20 \\
-&=\hl{y^2} + (5x-1)\hl{y} + 6x^2 + 2x - 20 \\
-&=\hl{y^2} + (5x-1)\hl{y} + 2\underline{(3x^2+x-10)} \tag{5} \\
-&=\hl{y^2} + (5x-1)\hl{y} + 2\underline{(3x-5)(x+2)} \tag{6} \\
-&=\{ \hl{y} + (3x-5) \}\{ \hl{y} + 2(x+2) \} \\
+\begin{align*}
+& 6x^2 + 5xy + y^2 + 2x - y - 20 \cr
+&=\hl{y^2} + (5x-1)\hl{y} + 6x^2 + 2x - 20 \cr
+&=\hl{y^2} + (5x-1)\hl{y} + 2\underline{(3x^2+x-10)} \tag{5} \cr
+&=\hl{y^2} + (5x-1)\hl{y} + 2\underline{(3x-5)(x+2)} \tag{6} \cr
+&=\{ \hl{y} + (3x-5) \}\{ \hl{y} + 2(x+2) \} \cr
 &= \boldsymbol{ (3x+y-5)(2x+y+4) }.
-\end{align*}`
+\end{align*}
 
 {{% hr %}}
 
@@ -312,12 +312,12 @@ Factorise the following.
 (1)<br>
 {{% img-raw src="courses/jpn-maths-1/numbers-and-expressions/poly-11q2a.JPG" alt="cross-multiplication" %}}
 {{% /mn %}}
-`\begin{align*}
-& 2t^4 - 3t^2 + 1 \\
-&= 2\left(t^2\right)^2 - 3t^2 + 1 \\
-&= (t^2-1)(2t^2-1) \tag{1} \\
+\begin{align*}
+& 2t^4 - 3t^2 + 1 \cr
+&= 2\left(t^2\right)^2 - 3t^2 + 1 \cr
+&= (t^2-1)(2t^2-1) \tag{1} \cr
 &= \boldsymbol{ (t+1)(t-1)(2t^2-1) }.
-\end{align*}`
+\end{align*}
 
 {{% hr %}}
 
@@ -327,29 +327,29 @@ Factorise the following.
 {{% img-raw src="courses/jpn-maths-1/numbers-and-expressions/poly-11q2b.JPG" alt="cross-multiplication" %}}<br>
 $(3)$ Identity 2: $a^2-b^2$ $=(a+b)(a-b)$
 {{% /mn %}}
-`\begin{align*}
-& x^4 - 13x^2 + 36 \\
-&= \left( x^2 \right)^2 - 13x^2 + 36 \tag{2} \\
-&= (x^2-4)(x^2-9) \\
+\begin{align*}
+& x^4 - 13x^2 + 36 \cr
+&= \left( x^2 \right)^2 - 13x^2 + 36 \tag{2} \cr
+&= (x^2-4)(x^2-9) \cr
 &= \boldsymbol{ (x+2)(x-2)(x+3)(x-3) }. \tag{3}
-\end{align*}`
+\end{align*}
 
 {{% hr %}}
 
 {{% enum c %}}
-`\begin{align*}
-& x^4 +2x^2 + 9 \\
-&= \underline{x^4 \hl{+6x^2}+9} \hl{-4x^2} \\
-&= \underline{\left(x^2+3\right)^2 } - (2x)^2 \\
+\begin{align*}
+& x^4 +2x^2 + 9 \cr
+&= \underline{x^4 \hl{+6x^2}+9} \hl{-4x^2} \cr
+&= \underline{\left(x^2+3\right)^2 } - (2x)^2 \cr
 &= \boldsymbol{ (x^2+2x+3)(x^2-2x+3) }.
-\end{align*}`
+\end{align*}
 
 {{% enum d %}}
-`\begin{align*}
-& x^4 \hl{+ 3x^2} + 4 \\
-&= \underline{x^4 \hl{+4x^2} + 4} \hl{-x^2} \\
-&= \underline{\left(x^2+2\right)^2 } - x^2 \\
+\begin{align*}
+& x^4 \hl{+ 3x^2} + 4 \cr
+&= \underline{x^4 \hl{+4x^2} + 4} \hl{-x^2} \cr
+&= \underline{\left(x^2+2\right)^2 } - x^2 \cr
 &= \boldsymbol{(x^2+x+2)(x^2-x+2) }.
-\end{align*}`
+\end{align*}
 
 {{% /details %}}

@@ -2,4 +2,4 @@
     {{% img-raw src="path" alt="alt-text" %}} 
 */}}
 {{- $img := resources.Get (.Get "src") -}}
-<a href='{{ $img.RelPermalink }}' target="_blank"><img src='{{ $img.RelPermalink }}' alt='{{ .Get "alt" }}' width="{{ $img.Width }}" height="{{ $img.Height }}" /></a>
+<a href='{{ $img.RelPermalink }}' target="_blank"><img src='{{ $img.RelPermalink }}' alt='{{ .Get "alt" }}' /></a>

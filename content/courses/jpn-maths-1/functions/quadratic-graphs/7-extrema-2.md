@@ -37,11 +37,11 @@ weight: 27
 Suppose $f(x) = x^2 - 4x + 1$ and its domain be $\\{ x\\, | \\, 0\le x \le a \\}$, where $a$ is a positive constant. How will its extremum point change based on the value of $a$?
 
 Well, we can first try drawing $y = f(x)$. Since
-`\begin{align*}
-  f(x) &= x^2 - 4x + 1 \\
-  &= (x-2)^2 - 4 + 1 \\
+\begin{align*}
+  f(x) &= x^2 - 4x + 1 \cr
+  &= (x-2)^2 - 4 + 1 \cr
   &= (x-2)^2 - 3,
-\end{align*}`
+\end{align*}
 the graph of $y=f(x)$ is as below.
 
 {{% mn 122 %}}Graph of $y = x^2 - 4x + 1$. Drag the black dot to change the value of $a$.{{% /mn %}}
@@ -126,11 +126,11 @@ Thus, the maximum value is $f(a+2) = (a+2-1)^2 + 1 = a^2 + 2a + 2.$
 {{% /enum-grid %}}
 
 Therefore, the maximum value of $f(x)$ is
-`$$\begin{cases}
-\textbf{when $\boldsymbol{a<0}$,} & \boldsymbol{ a^2 - 2a + 2 } && \textbf{at $\boldsymbol{ x=a }$} \\
-\textbf{when $\boldsymbol{a=0}$,} & \boldsymbol{ 2 } && \textbf{at $\boldsymbol{ x=0,~2 }$} \\
+$$\begin{cases}
+\textbf{when $\boldsymbol{a<0}$,} & \boldsymbol{ a^2 - 2a + 2 } && \textbf{at $\boldsymbol{ x=a }$} \cr
+\textbf{when $\boldsymbol{a=0}$,} & \boldsymbol{ 2 } && \textbf{at $\boldsymbol{ x=0,~2 }$} \cr
 \textbf{when $\boldsymbol{a>0}$,} & \boldsymbol{ a^2 + 2a + 2 } && \textbf{at $\boldsymbol{ x=a+2 }$}
-\end{cases}$$`
+\end{cases}$$
 
 {{< figure src="courses/jpn-maths-1/functions/quadratic-graphs/extvar-ex2a.png" alt="Maximum points of y = x^2-2x+2." >}}
 
@@ -154,11 +154,11 @@ Thus, the minimum value is $f(a) = a^2 - 2a + 2.$
 {{% /enum-grid %}}
 
 Therefore, the minimum value of $f(x)$ is
-`$$\begin{cases}
-\textbf{when $\boldsymbol{a<-1}$,} & \boldsymbol{ a^2 + 2a + 2 } && \textbf{at $\boldsymbol{ x=a+2 }$} \\
-\textbf{when $\boldsymbol{-1\le a \le 1}$,} & \boldsymbol{ 1 } && \textbf{at $\boldsymbol{ x=1 }$} \\
+$$\begin{cases}
+\textbf{when $\boldsymbol{a<-1}$,} & \boldsymbol{ a^2 + 2a + 2 } && \textbf{at $\boldsymbol{ x=a+2 }$} \cr
+\textbf{when $\boldsymbol{-1\le a \le 1}$,} & \boldsymbol{ 1 } && \textbf{at $\boldsymbol{ x=1 }$} \cr
 \textbf{when $\boldsymbol{a>1}$,} & \boldsymbol{ a^2 - 2a + 2 } && \textbf{at $\boldsymbol{ x=a }$}
-\end{cases}$$`
+\end{cases}$$
 
 {{< figure style="margin-bottom:0" src="courses/jpn-maths-1/functions/quadratic-graphs/extvar-ex2b.png" alt="Minimum points of y = x^2-2x+2." >}}
 
@@ -180,11 +180,11 @@ When $a$ is a constant and the domain of the function $f(x) = x^2 - 2ax + 3a$ is
 
 {{% note Solution %}}
 If we convert $f(x)$ to vertex form,
-`\begin{align*}
-  f(x) &= x^2 - 2ax + 3a \\
-  &= x^2 - 2ax + a^2 - a^2 + 3a \\
+\begin{align*}
+  f(x) &= x^2 - 2ax + 3a \cr
+  &= x^2 - 2ax + a^2 - a^2 + 3a \cr
   &= (x-a)^2 - a^2 + 3a.
-\end{align*}`
+\end{align*}
 
 Thus the vertex of $y=f(x)$ is $(a, -a^2+3a).$
 
@@ -202,11 +202,11 @@ When $a>4$, the vertex is right of the domain. $x=4$ is closer to the vertex tha
 {{% /enum-grid %}}
 
 Therefore, the minimum of $f$ is
-`$$\begin{cases}
-\textbf{when $\boldsymbol{a<0}$,} & \boldsymbol{ 3a } && \textbf{at $\boldsymbol{ x=0 }$} \\
-\textbf{when $\boldsymbol{0\le a \le 4}$,} & \boldsymbol{ -a^2+3a } && \textbf{at $\boldsymbol{ x=a }$} \\
+$$\begin{cases}
+\textbf{when $\boldsymbol{a<0}$,} & \boldsymbol{ 3a } && \textbf{at $\boldsymbol{ x=0 }$} \cr
+\textbf{when $\boldsymbol{0\le a \le 4}$,} & \boldsymbol{ -a^2+3a } && \textbf{at $\boldsymbol{ x=a }$} \cr
 \textbf{when $\boldsymbol{a>4}$,} & \boldsymbol{ 16-5a } && \textbf{at $\boldsymbol{ x=4 }$}
-\end{cases}$$`
+\end{cases}$$
 
 {{% enum 2 %}}
 The maximum occurs the farthest point from the vertex. We can think of the following possibilities.
@@ -222,11 +222,11 @@ When $a>2$, $x=0$ is farther away from $x=4$. The maximum is $f(0) = 3a.$
 {{% /enum-grid %}}
 
 Therefore, the maximum of $f$ is
-`$$\begin{cases}
-\textbf{when $\boldsymbol{a<2}$,} & \boldsymbol{ 16-5a } && \textbf{at $\boldsymbol{ x=4 }$} \\
-\textbf{when $\boldsymbol{a=2}$,} & \boldsymbol{ 6 } && \textbf{at $\boldsymbol{ x=0,~2 }$} \\
+$$\begin{cases}
+\textbf{when $\boldsymbol{a<2}$,} & \boldsymbol{ 16-5a } && \textbf{at $\boldsymbol{ x=4 }$} \cr
+\textbf{when $\boldsymbol{a=2}$,} & \boldsymbol{ 6 } && \textbf{at $\boldsymbol{ x=0,~2 }$} \cr
 \textbf{when $\boldsymbol{a>2}$,} & \boldsymbol{ 3a } && \textbf{at $\boldsymbol{ x=0 }$}
-\end{cases}$$`
+\end{cases}$$
 
 Below is the visualisation of $y=f(x).$ Note how the maximum and minimum points change depending on the value of $a$!
 
@@ -311,25 +311,25 @@ When $\hl{a > 6}$, $f(a)$ becomes smaller than $f(0)$ because it is now farther 
 
 From the above, we conclude:
 - When $0< a < 3$, 
-`$$\begin{cases}
-    \textbf{minimum of $\boldsymbol{ 0 }$ at $\boldsymbol{ x=0 }$,} \\
+$$\begin{cases}
+    \textbf{minimum of $\boldsymbol{ 0 }$ at $\boldsymbol{ x=0 }$,} \cr
     \textbf{maximum of $\boldsymbol{ -a^2+6a }$ at $\boldsymbol{ x=a }$.}
-\end{cases}$$`
+\end{cases}$$
 - When $3 \le a < 6$,
-`$$\begin{cases}
-    \textbf{minimum of $\boldsymbol{ 0 }$ at $\boldsymbol{ x=0 }$,} \\
+$$\begin{cases}
+    \textbf{minimum of $\boldsymbol{ 0 }$ at $\boldsymbol{ x=0 }$,} \cr
     \textbf{maximum of $\boldsymbol{ 9 }$ at $\boldsymbol{ x=3 }$.}
-\end{cases}$$`
+\end{cases}$$
 - When $a = 6$,
-`$$\begin{cases}
-    \textbf{minimum of $\boldsymbol{ 0 }$ at $\boldsymbol{ x=0, 6}$,} \\
+$$\begin{cases}
+    \textbf{minimum of $\boldsymbol{ 0 }$ at $\boldsymbol{ x=0, 6}$,} \cr
     \textbf{maximum of $\boldsymbol{ 9 }$ at $\boldsymbol{ x=3 }$.}
-\end{cases}$$`
+\end{cases}$$
 - When $a > 6$,
-`$$\begin{cases}
-    \textbf{minimum of $\boldsymbol{ -a^2+6a }$ at $\boldsymbol{ x=a }$,} \\
+$$\begin{cases}
+    \textbf{minimum of $\boldsymbol{ -a^2+6a }$ at $\boldsymbol{ x=a }$,} \cr
     \textbf{maximum of $\boldsymbol{ 9 }$ at $\boldsymbol{ x=3 }$.}
-\end{cases}$$`
+\end{cases}$$
 
 {{% /details %}}
 
@@ -342,11 +342,11 @@ From the above, we conclude:
 
 {{% note Solution %}}
 We denote $f(x) = -2x^2 + 6x + 1.$ Note
-`\begin{align*}
-  f(x) &= -2(x^2 - 3x) + 1 \\
-  &= -2\left( x - \dfrac{3}{2} \right)^2 + 2 \cdot \left(\dfrac{3}{2}\right)^2 + 1 \\
+\begin{align*}
+  f(x) &= -2(x^2 - 3x) + 1 \cr
+  &= -2\left( x - \dfrac{3}{2} \right)^2 + 2 \cdot \left(\dfrac{3}{2}\right)^2 + 1 \cr
   &= -2\left( x - \dfrac{3}{2} \right)^2 + \dfrac{11}{2},
-\end{align*}`
+\end{align*}
 so the vertex is $\left( \dfrac{3}{2}, \dfrac{11}{2} \right).$
 
 {{% enum a %}}
@@ -356,11 +356,11 @@ Because the vertex is the global maximum point, we can think about the values of
 When $a+1<\dfrac{3}{2}$, or $a<\dfrac{1}{2}$, the domain sits on the left of the vertex.
 
 Because $x=a+1$ is closer to the vertex than $x=a$, the maximum is
-`\begin{align*}
-  f(a+1) &= -2(a+1)^2 + 6(a+1) + 1 \\
+\begin{align*}
+  f(a+1) &= -2(a+1)^2 + 6(a+1) + 1 \cr
   &= -2a^2 - 4a - 2 + 6a + 6 + 1\\
   &= -2a^2 + 2a + 5.
-\end{align*}`
+\end{align*}
 {{% /enum-grid %}}
 {{% enum-grid "$\tcirc{2}$" %}}
 When $a\le \dfrac{3}{2} \le a+1$, or $\dfrac{1}{2} \le a \le \dfrac{3}{2}$, the domain includes the vertex.
@@ -374,11 +374,11 @@ Because $x=a$ is now closer to the vertex than $x=a+1$, the maximum is $f(a) = -
 {{% /enum-grid %}}
 
 Therefore, the maximum of $y = -2x^2 + 6x + 1$ is
-`$$\begin{cases}
-\textbf{when $\boldsymbol{a<\dfrac{1}{2}}$,} & \boldsymbol{ -2a^2 + 2a + 5 } && \textbf{at $\boldsymbol{ x=a+1 }$} \\
-\textbf{when $\boldsymbol{\dfrac{1}{2}\le a \le \dfrac{3}{2}}$,} & \boldsymbol{ \dfrac{11}{2} } && \textbf{at $\boldsymbol{ x=\dfrac{3}{2} }$} \\
+$$\begin{cases}
+\textbf{when $\boldsymbol{a<\dfrac{1}{2}}$,} & \boldsymbol{ -2a^2 + 2a + 5 } && \textbf{at $\boldsymbol{ x=a+1 }$} \cr
+\textbf{when $\boldsymbol{\dfrac{1}{2}\le a \le \dfrac{3}{2}}$,} & \boldsymbol{ \dfrac{11}{2} } && \textbf{at $\boldsymbol{ x=\dfrac{3}{2} }$} \cr
 \textbf{when $\boldsymbol{a>\dfrac{3}{2}}$,} & \boldsymbol{ -2a^2 + 6a + 1 } && \textbf{at $\boldsymbol{ x=a }$}
-\end{cases}$$`
+\end{cases}$$
 
 {{% enum b %}}
 The point that is the farthest away from the vertex becomes the minimum. Because of this, we can think of three possibilities based on the relationship between the vertex and the midpoint of the domain $x = a + \dfrac{1}{2}.$
@@ -400,11 +400,11 @@ The minimum is $f(a+1) = -2a^2 + 2a + 5.$
 {{% /enum-grid %}}
 
 Therefore, the minimum of $y = -2x^2 + 6x + 1$ is
-`$$\begin{cases}
-\textbf{when $\boldsymbol{a<1}$,} & \boldsymbol{ -2a^2 + 6a + 1 } && \textbf{at $\boldsymbol{ x=a }$} \\
-\textbf{when $\boldsymbol{a=1}$,} & \boldsymbol{ 5 } && \textbf{at $\boldsymbol{ x=1, 2 }$} \\
+$$\begin{cases}
+\textbf{when $\boldsymbol{a<1}$,} & \boldsymbol{ -2a^2 + 6a + 1 } && \textbf{at $\boldsymbol{ x=a }$} \cr
+\textbf{when $\boldsymbol{a=1}$,} & \boldsymbol{ 5 } && \textbf{at $\boldsymbol{ x=1, 2 }$} \cr
 \textbf{when $\boldsymbol{a>1}$,} & \boldsymbol{ -2a^2 + 2a + 5 } && \textbf{at $\boldsymbol{ x=a+1 }$}
-\end{cases}$$`
+\end{cases}$$
 
 {{% /details %}}
 
@@ -416,9 +416,9 @@ Therefore, the minimum of $y = -2x^2 + 6x + 1$ is
 
 {{% note Solution %}}
 Let $f(x) = x^2 + 2(a-1)x.$ We can find the vertex of the graph by completing the square:
-`\begin{align*}
+\begin{align*}
   f(x) &= \\{ x + (a-1) \\}^2 - (a-1)^2. 
-\end{align*}`
+\end{align*}
 The vertex is $( -(a-1), -(a-1)^2).$
 
 {{% enum a %}}
@@ -441,11 +441,11 @@ Hence the maximum is $f(-1) = 1 - 2(a-1) = -2a + 3.$
 {{% /enum-grid %}}
 
 Therefore, the maximum of $y=f(x)$ is
-`$$\begin{cases}
-\textbf{when $\boldsymbol{a>1}$,} & \boldsymbol{ 2a - 1 } && \textbf{at $\boldsymbol{ x=1 }$} \\
-\textbf{when $\boldsymbol{a=1}$,} & \boldsymbol{ 1 } && \textbf{at $\boldsymbol{ x=-1,~1 }$} \\
+$$\begin{cases}
+\textbf{when $\boldsymbol{a>1}$,} & \boldsymbol{ 2a - 1 } && \textbf{at $\boldsymbol{ x=1 }$} \cr
+\textbf{when $\boldsymbol{a=1}$,} & \boldsymbol{ 1 } && \textbf{at $\boldsymbol{ x=-1,~1 }$} \cr
 \textbf{when $\boldsymbol{a<1}$,} & \boldsymbol{ -2a + 3 } && \textbf{at $\boldsymbol{ x=-1 }$}
-\end{cases}$$`
+\end{cases}$$
 
 {{% enum b %}}
 Because the graph is concave up, the point closest to the vertex, or the vertex itself, is the minimum.
@@ -465,11 +465,11 @@ Hence the minimum is $f(1) = 2a - 1.$
 {{% /enum-grid %}}
 
 Therefore, the minimum of $y=f(x)$ is
-`$$\begin{cases}
-\textbf{when $\boldsymbol{a>2}$,} & \boldsymbol{ -2a + 3 } && \textbf{at $\boldsymbol{ x=-1 }$} \\
-\textbf{when $\boldsymbol{0\le a \le 2}$,} & \boldsymbol{ -(a-1)^2 } && \textbf{at $\boldsymbol{ x=a }$} \\
+$$\begin{cases}
+\textbf{when $\boldsymbol{a>2}$,} & \boldsymbol{ -2a + 3 } && \textbf{at $\boldsymbol{ x=-1 }$} \cr
+\textbf{when $\boldsymbol{0\le a \le 2}$,} & \boldsymbol{ -(a-1)^2 } && \textbf{at $\boldsymbol{ x=a }$} \cr
 \textbf{when $\boldsymbol{a<0}$,} & \boldsymbol{ 2a - 1 } && \textbf{at $\boldsymbol{ x=1 }$}
-\end{cases}$$`
+\end{cases}$$
 
 {{% mn q3 %}}Extremum points of $y = x^2 + 2(a-1)x$. Drag the vertex to change the value of $a$.{{% /mn %}}
 {{% desmos id="q3" style="height: 450px; margin-bottom: 0.5rem" options="{keypad: false, expressions: false}" %}}

@@ -54,10 +54,10 @@ How can we generalise this result to the distance between any two real numbers, 
 {{% hbox %}}
 {{% note Theorem %}}
 For real numbers $a$ and $b$, the distance between $a$ and $b$ is:
-`$$d = \begin{cases}
-  a-b \quad & \text{if $a\ge b$,} \\
+$$d = \begin{cases}
+  a-b \quad & \text{if $a\ge b$,} \cr
   b-a \quad & \text{if $a<b$.}
-\end{cases}$$`
+\end{cases}$$
 
 {{% /hbox %}}
 
@@ -66,13 +66,13 @@ As you can see, this is quite long and messy. Mathematicians developed a new sym
 {{% hbox %}}
 {{% note Definition %}}
 *Define $|a-b|$ as the **distance** between $a$ and $b$. That is,*
-`$$
+$$
 |a-b|=
 \begin{cases}
-  a-b \quad & \text{if $a\ge b$,} \\
+  a-b \quad & \text{if $a\ge b$,} \cr
   b-a \quad & \text{if $a<b$.}
 \end{cases}
-$$`
+$$
 
 We read $|a-b|$ as *the absolute value of a-b*.
 {{% /hbox %}}
@@ -82,12 +82,12 @@ If we set $b=0$ and focus on $a$ only, we have a little more popular version of 
 {{% hbox %}}
 {{% note Definition %}}
 *Define $|a|$ as the **absolute value** of $a$. $|a|$ equals the distance of $a$ from $0$, which means,*
-`$$ |a|=
+$$ |a|=
 \begin{cases}
-  a \quad & \text{if $a\ge 0$,} \\
+  a \quad & \text{if $a\ge 0$,} \cr
   -a \quad & \text{if $a<0$.}
 \end{cases}
-$$`
+$$
 
 {{% note Example %}}
 If the number is positive, it equals its absolute value. If the number is negative, multiply it by $-1$.
@@ -121,17 +121,17 @@ For any real numbers $a$ and $b$,
 $a$ has to be either positive, negative, or zero. The identity is obviously true when $a=0$ (both sides equal zero), so we can consider the first two cases.
 
 - If $a$ is positive, then
-`\begin{align*}
-  |a|^2 &= |a| \cdot |a| \\
-  &= a \cdot a \\
+\begin{align*}
+  |a|^2 &= |a| \cdot |a| \cr
+  &= a \cdot a \cr
   &= \boldsymbol{ a^2 }.
-\end{align*}`
+\end{align*}
 - If $a$ is negative, then
-`\begin{align*}
-  |a|^2 &= |a| \cdot |a| \\
-  &= (-a) \cdot (-a) \\
+\begin{align*}
+  |a|^2 &= |a| \cdot |a| \cr
+  &= (-a) \cdot (-a) \cr
   &= \boldsymbol{ a^2 }.
-\end{align*}`
+\end{align*}
 
 Therefore, for every case, $|a|^2 = a^2$. $\quad \square$
 
@@ -140,46 +140,46 @@ Therefore, for every case, $|a|^2 = a^2$. $\quad \square$
 Likewise, we will divide it into four cases and see if the identity holds.
 
 - When both $a$ and $b$ are positive, $ab$ is also positive. Then $|a|=a$, $|b|=b$, and $|ab|=ab$. Thus
-`\begin{align*}
+\begin{align*}
   |a| \cdot |b| = a\cdot b = ab = |ab|.
-\end{align*}`
+\end{align*}
 - When $a$ is positive but $b$ is negative, $ab$ is negative. Then $|a|=a$, $|b|=-b$, and $|ab|=-ab$. Thus
-`\begin{align*}
+\begin{align*}
   |a| \cdot |b| = a\cdot (-b) = -ab = |ab|.
-\end{align*}`
+\end{align*}
 - If we switch $a$ and $b$ for Case 2, you can prove the identity when $a<0$ and $b>0$.
 - When both $a$ and $b$ are negative, $ab$ is positive. Then $|a|=-a$, $|b|=-b$, and $|ab|=ab$. Thus
-`\begin{align*}
+\begin{align*}
   |a| \cdot |b| = -a\cdot (-b) = ab = |ab|.
-\end{align*}`
+\end{align*}
 
 Therefore, for every case, $|ab| = |a|\cdot|b|$. $\quad \square$
 
 {{% enum 3 %}} $ \left|\dfrac{a}{b}\right| = \dfrac{|a|}{|b|} $
 
 From the second identity,
-`\begin{align*}
-  \left|\dfrac{a}{b}\right| &= \left| a \cdot \dfrac{1}{b} \right| \\
+\begin{align*}
+  \left|\dfrac{a}{b}\right| &= \left| a \cdot \dfrac{1}{b} \right| \cr
   &= |a| \cdot \left| \dfrac{1}{b} \right|.
-\end{align*}`
+\end{align*}
 
 So we only need to prove $\left| \dfrac{1}{b} \right| = \dfrac{1}{|b|}$. This is indeed true, because when $b$ is positive, $\dfrac{1}{b}$ is also positive, so
-`\begin{align*}
+\begin{align*}
   \left| \dfrac{1}{b} \right| = \dfrac{1}{b} = \dfrac{1}{|b|},
-\end{align*}`
+\end{align*}
 
 and when $b$ is negative, $\dfrac{1}{b}$ is also negative, so
-`\begin{align*}
+\begin{align*}
   \left| \dfrac{1}{b} \right| = - \dfrac{1}{b} = \dfrac{1}{-b} = \dfrac{1}{|b|}.
-\end{align*}`
+\end{align*}
 
 Therefore,
-`\begin{align*}
-  \left|\dfrac{a}{b}\right| &= \left| a \cdot \dfrac{1}{b} \right| \\
-  &= |a| \cdot \left| \dfrac{1}{b} \right| \\
-  &= |a| \cdot \dfrac{1}{|b|} \\
+\begin{align*}
+  \left|\dfrac{a}{b}\right| &= \left| a \cdot \dfrac{1}{b} \right| \cr
+  &= |a| \cdot \left| \dfrac{1}{b} \right| \cr
+  &= |a| \cdot \dfrac{1}{|b|} \cr
   &= \dfrac{|a|}{|b|}. && \square
-\end{align*}`
+\end{align*}
 
 {{% /details %}}
 
@@ -191,9 +191,9 @@ Find the value of $|3-\pi|$.
 
 {{% note Solution %}}
 We know that $\pi$ is greater than $3$, so $3-\pi<0$. Therefore
-`\begin{align*}
+\begin{align*}
   |3-\pi| = -(3-\pi) = \boldsymbol{ \pi - 3 }. 
-\end{align*}`
+\end{align*}
 
 {{% /hbox %}}
 
@@ -204,23 +204,23 @@ When $x>0$ and $y<0$, simplify $|xy^2| \times \left| \dfrac{2x}{y^3} \right|$.
 
 {{% note Solution %}}
 $x$ is positive and $y$ is negative, so $xy^2$ is a positive number (because there is an even power of $y$), and $\dfrac{2x}{y^3}$ is a negative number (because there is an odd power of $y$). Therefore
-`\begin{align*}
-  & |xy^2| \times \left| \dfrac{2x}{y^3} \right| \\
-  &= xy^2 \times \left( - \dfrac{2x}{y^3} \right) \\
+\begin{align*}
+  & |xy^2| \times \left| \dfrac{2x}{y^3} \right| \cr
+  &= xy^2 \times \left( - \dfrac{2x}{y^3} \right) \cr
   &= \boldsymbol{ -\dfrac{2x^2}{y} }.
-\end{align*}`
+\end{align*}
 
 ***Alternative solution.*** We can also use the three identities to remove the absolute value symbols as much as possible.
-`\begin{alignat*}{2}
-  & |xy^2| \times \left| \dfrac{2x}{y^3} \right| \\
-  &= |x| \cdot |y^2| \times \dfrac{|2x|}{|y^3|} \quad && \tag{2nd \& 3rd identity} \\
-  &= |x| \cdot |2x| \times \dfrac{|y^2|}{|y^3|} \\
-  &= | 2x^2 | \times \left| \dfrac{y^2}{y^3} \right| && \tag{2nd \& 3rd identity} \\
-  &= 2x^2 \times \left| \dfrac{1}{y} \right| && \tag{1st identity} \\
-  &= 2x^2 \times \dfrac{1}{|y|} && \tag{3rd identity} \\
-  &= 2x^2 \times \left( -\dfrac{1}{y} \right) && \tag{$\because y<0$} \\
+\begin{alignat*}{2}
+  & |xy^2| \times \left| \dfrac{2x}{y^3} \right| \cr
+  &= |x| \cdot |y^2| \times \dfrac{|2x|}{|y^3|} \quad && \tag{2nd \\& 3rd identity} \cr
+  &= |x| \cdot |2x| \times \dfrac{|y^2|}{|y^3|} \cr
+  &= | 2x^2 | \times \left| \dfrac{y^2}{y^3} \right| && \tag{2nd \\& 3rd identity} \cr
+  &= 2x^2 \times \left| \dfrac{1}{y} \right| && \tag{1st identity} \cr
+  &= 2x^2 \times \dfrac{1}{|y|} && \tag{3rd identity} \cr
+  &= 2x^2 \times \left( -\dfrac{1}{y} \right) && \tag{$\because y<0$} \cr
   &= \boldsymbol{ -\dfrac{2x^2}{y} }.
-\end{alignat*}`
+\end{alignat*}
 
 {{% /hbox %}}
 
@@ -280,22 +280,22 @@ $$ |2\sqrt{3}-4| = \boldsymbol{ 4-2\sqrt{3} }. $$
 
 {{% enum a %}} When $x=2$,
 
-`\begin{align*}
-  T &= |x-1| - 2|3-x| \\
-  &= |2-1| - 2|3-2| \\
-  &= |1| - 2|1| \\
-  &= 1- 2 \\
+\begin{align*}
+  T &= |x-1| - 2|3-x| \cr
+  &= |2-1| - 2|3-2| \cr
+  &= |1| - 2|1| \cr
+  &= 1- 2 \cr
   &= \boldsymbol{ -1 }.
-\end{align*}`
+\end{align*}
 
 {{% enum b %}} When $x=3$,
 
-`\begin{align*}
-  T &= |x-1| - 2|3-x| \\
-  &= |3-1| - 2|3-3| \\
-  &= |2| - 2\cdot 0 \\
+\begin{align*}
+  T &= |x-1| - 2|3-x| \cr
+  &= |3-1| - 2|3-3| \cr
+  &= |2| - 2\cdot 0 \cr
   &= \boldsymbol{ 2 }.
-\end{align*}`
+\end{align*}
 
 {{% /details %}}
 
@@ -312,22 +312,22 @@ $$ |2\sqrt{3}-4| = \boldsymbol{ 4-2\sqrt{3} }. $$
 
 {{% enum a %}} When $x=2$,
 
-`\begin{align*}
-  U &= |2x+1| - |-x| \\
-  &= |2\cdot2 + 1| - |-2| \\
-  &= |5| - |-2| \\
-  &= 5 - 2 \\
+\begin{align*}
+  U &= |2x+1| - |-x| \cr
+  &= |2\cdot2 + 1| - |-2| \cr
+  &= |5| - |-2| \cr
+  &= 5 - 2 \cr
   &= \boldsymbol{ 3 }.
-\end{align*}`
+\end{align*}
 
 {{% enum b %}} When $x=-\dfrac{1}{2}$,
 
-`\begin{align*}
-  U &= |2x+1| - |-x| \\
-  &= \left| 2\cdot \left(- \dfrac{1}{2} \right) + 1 \right| - \left| -\left(-\dfrac{1}{2}\right) \right| \\
-  &= \left| 0 \right| - \left| \dfrac{1}{2} \right| \\
-  &= 0 - \dfrac{1}{2} \\
+\begin{align*}
+  U &= |2x+1| - |-x| \cr
+  &= \left| 2\cdot \left(- \dfrac{1}{2} \right) + 1 \right| - \left| -\left(-\dfrac{1}{2}\right) \right| \cr
+  &= \left| 0 \right| - \left| \dfrac{1}{2} \right| \cr
+  &= 0 - \dfrac{1}{2} \cr
   &= \boldsymbol{ -\dfrac{1}{2} }.
-\end{align*}`
+\end{align*}
 
 {{% /details %}}

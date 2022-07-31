@@ -44,17 +44,17 @@ In this lesson, we will:
 
 To draw a function with an absolute value symbol, we need to understand it first. [Remember that](../../../numbers-and-expressions/numbers/absolute-values#distance-and-absolute-value) $|A| = A$ when $A$ is positive, and $|A| = -A$ when $A$ is negative. For example, the $|x-2|$ is equivalent to
 
-`$$ |x-2| = \begin{cases}
-  x-2 & \quad \text{if $x\ge 2$}, \\
+$$ |x-2| = \begin{cases}
+  x-2 & \quad \text{if $x\ge 2$}, \cr
   -x+2 & \quad \text{if $x<2$}.
-\end{cases} $$`
+\end{cases} $$
 
 Therefore, the graph of $y=|x-2|$ is
 
-`$$ y = |x-2| \iff \begin{cases}
-  y = x-2 & \quad \text{if $x\ge 2$}, \\
+$$ y = |x-2| \iff \begin{cases}
+  y = x-2 & \quad \text{if $x\ge 2$}, \cr
   y = -x+2 & \quad \text{if $x<2$}.
-\end{cases} $$`
+\end{cases} $$
 
 {{< figure src="courses/jpn-maths-1/functions/functions-and-graphs/abs-ex1.png" alt="Graph of y=|x-2|." >}}
 
@@ -66,10 +66,10 @@ Sketch the graph of $y=\left| \dfrac{x}{2} +1  \right|$.
 
 {{% note Solution %}}
 $\dfrac{x}{2} +1 = 0$ when $x=-2$, so we need to draw the graph of 
-`$$\begin{cases}
-  y = \dfrac{x}{2} +1, & \text{if $x\ge -2$,} \\
+$$\begin{cases}
+  y = \dfrac{x}{2} +1, & \text{if $x\ge -2$,} \cr
   y = -\dfrac{x}{2} - 1, & \text{if $x<-2$.}
-\end{cases}$$`
+\end{cases}$$
 
 {{< figure src="courses/jpn-maths-1/functions/functions-and-graphs/abs-ex2.png" alt="Graph of y=|x/2 + 1|." >}}
 
@@ -78,10 +78,10 @@ $\dfrac{x}{2} +1 = 0$ when $x=-2$, so we need to draw the graph of
 {{% details title="Using the transformation" %}}
 
 There is one more method of drawing the graph of $y=|f(x)|$ using the [transformation of graphs](../transformation). Recall that
-`$$ |f(x)| =\begin{cases}
-f(x) & \quad \text{if $f(x)>0$}, \\
+$$ |f(x)| =\begin{cases}
+f(x) & \quad \text{if $f(x)>0$}, \cr
 -f(x) & \quad \text{if $f(x)<0$},
-\end{cases} $$`
+\end{cases} $$
 and the graph of $y=-f(x)$ is the reflection of $y=f(x)$ about the x-axis. Thus, you can just draw the graph of $y=f(x)$, and reflect that graph only where its value becomes negative!
 
 {{< figure src="courses/jpn-maths-1/functions/functions-and-graphs/abs-trans.jpg" alt="Drawing a graph using reflection." >}}
@@ -103,24 +103,24 @@ Just like [solving equations with multiple absolute values](../../../numbers-and
 {{% ol i %}}
 {{% li %}}
 When $x<-1$, $x+1<0$ and $x-3<0$,
-`\begin{align*}
-  y &= -(x+1) -(x-3) \\
+\begin{align*}
+  y &= -(x+1) -(x-3) \cr
   &= -2x + 2.
-\end{align*}`
+\end{align*}
 {{% /li %}}
 {{% li %}}
 When $-1\le x < 3$, $x+1>0$ and $x-3<0$,
-`\begin{align*}
-  y &= (x+1) - (x-3) \\
+\begin{align*}
+  y &= (x+1) - (x-3) \cr
   &= 4.
-\end{align*}`
+\end{align*}
 {{% /li %}}
 {{% li %}}
 When $x\ge 3$, $x+1>0$ and $x-3>0$,
-`\begin{align*}
-  y &= (x+1) + (x+3) \\
+\begin{align*}
+  y &= (x+1) + (x+3) \cr
   &= 2x + 4.
-\end{align*}`
+\end{align*}
 {{% /li %}}
 {{% /ol %}}
 
@@ -143,10 +143,10 @@ Therefore, the graph of $y=|x+1| + |x-3|$ looks like below:
 
 {{% enum a %}}
 Note that $3-x\ge 0$ when $x \le 3$, and $3-x<0$ when $x >3$. Thus, the function is equivalent to
-`$$\begin{cases}
-  y = x-3 &\quad \text{if $x\le 3$,} \\
+$$\begin{cases}
+  y = x-3 &\quad \text{if $x\le 3$,} \cr
   y = 3-x &\quad \text{if $x<3$.}
-\end{cases}$$`
+\end{cases}$$
 
 Thus, the graph of $y = |3-x|$ is
 
@@ -154,31 +154,31 @@ Thus, the graph of $y = |3-x|$ is
 
 {{% enum b %}}
 $2x+4=0$ when $x=-2$. Hence we need to draw
-`$$\begin{cases}
-  y = 2x+4 &\quad \text{if $x\ge -2$,} \\
+$$\begin{cases}
+  y = 2x+4 &\quad \text{if $x\ge -2$,} \cr
   y = -2x-4 &\quad \text{if $x<-2$.}
-\end{cases}$$`
+\end{cases}$$
 
 {{< figure src="courses/jpn-maths-1/functions/functions-and-graphs/abs-q1b.png" alt="Graph of y=|2x+4|." >}}
 
 {{% enum c %}}
 $x-1=0$ when $x=-1$, so the graph passes through $(-1, 3)$. Then, when $x\ge 1$,
-`\begin{align*}
-  2|x-1| + 3 &= 2(x-1) + 3 \\
+\begin{align*}
+  2|x-1| + 3 &= 2(x-1) + 3 \cr
   &= 2x + 1,
-\end{align*}`
+\end{align*}
 
 and when $x<1$,
-`\begin{align*}
-  2|x-1| + 3 &= -2(x-1) + 3 \\
+\begin{align*}
+  2|x-1| + 3 &= -2(x-1) + 3 \cr
   &= -2x + 5.
-\end{align*}`
+\end{align*}
 
 Therefore, the function is equivalent to
-`$$\begin{cases}
-  y = 2x+1 &\quad \text{if $x\ge 1$, } \\
+$$\begin{cases}
+  y = 2x+1 &\quad \text{if $x\ge 1$, } \cr
   y = -2x+5 &\quad \text{if $x<1$.}
-\end{cases}$$`
+\end{cases}$$
 
 {{< figure src="courses/jpn-maths-1/functions/functions-and-graphs/abs-q1c.png" alt="Graph of y=2|x-1|+3." >}}
 
@@ -197,24 +197,24 @@ Therefore, the function is equivalent to
 {{% ol i %}}
 {{% li %}}
 When $x<-1$, $x+1<0$ and $x<0$,
-`\begin{align*}
-  y &= -(x+1) + x \\
+\begin{align*}
+  y &= -(x+1) + x \cr
   &= -1.
-\end{align*}`
+\end{align*}
 {{% /li %}}
 {{% li %}}
 When $-1 \le x < 0$, $x+1>0$ and $x<0$,
-`\begin{align*}
-  y &= (x+1) + x \\
+\begin{align*}
+  y &= (x+1) + x \cr
   &= 2x+1.
-\end{align*}`
+\end{align*}
 {{% /li %}}
 {{% li %}}
 When $x\ge 0$, $x+1>0$,
-`\begin{align*}
-  y &= (x+1) - x \\
+\begin{align*}
+  y &= (x+1) - x \cr
   &= 1.
-\end{align*}`
+\end{align*}
 {{% /li %}}
 {{% /ol %}}
 
@@ -228,24 +228,24 @@ The breakpoints are $x=-1$ and $1$.
 {{% ol i %}}
 {{% li %}}
 When $x<-1$, $x+1<0$ and $x-1<0$,
-`\begin{align*}
-  y &= -(x+1) - 2(x-1) \\
+\begin{align*}
+  y &= -(x+1) - 2(x-1) \cr
   &= -3x + 1.
-\end{align*}`
+\end{align*}
 {{% /li %}}
 {{% li %}}
 When $-1\le x < 1$, $x+1>0$ and $x-1<0$,
-`\begin{align*}
-  y &= (x+1) - 2(x-1) \\
+\begin{align*}
+  y &= (x+1) - 2(x-1) \cr
   &= -x + 3.
-\end{align*}`
+\end{align*}
 {{% /li %}}
 {{% li %}}
 When $x \ge 1$, $x+1>0$ and $x-1>0$,
-`\begin{align*}
-  y &= (x+1) + 2(x-1) \\
+\begin{align*}
+  y &= (x+1) + 2(x-1) \cr
   &= 3x - 1.
-\end{align*}`
+\end{align*}
 {{% /li %}}
 {{% /ol %}}
 

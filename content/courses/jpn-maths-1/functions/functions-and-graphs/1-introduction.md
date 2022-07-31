@@ -80,22 +80,22 @@ When $f(x) = 4x-3$, evaluate:
 {{% note Solution %}}
 The key to evaluating functions is to substitute whatever is inside the bracket into $x$.
 {{% enum 1 %}}
-`\begin{align*}
-   f\left(\dfrac{3}{2}\right) &= 4\cdot \hl{\dfrac{3}{2}} - 3 \\
+\begin{align*}
+   f\left(\dfrac{3}{2}\right) &= 4\cdot \hl{\dfrac{3}{2}} - 3 \cr
   &= 6 - 3 = \boldsymbol{ 3 }.
-\end{align*}`
+\end{align*}
 {{% enum 2 %}}
-`\begin{align*}
-   f(-2) &= 4\cdot \hl{(-2)} - 3 \\
+\begin{align*}
+   f(-2) &= 4\cdot \hl{(-2)} - 3 \cr
   &= -8-3 = \boldsymbol{ -11 }.
-\end{align*}`
+\end{align*}
 {{% enum 3 %}}
 Substitute $x=a+2$ into $f(x)$:
 
-`\begin{align*}
-   f(a+2) &= 4 \hl{(a+2)} - 3 \\
+\begin{align*}
+   f(a+2) &= 4 \hl{(a+2)} - 3 \cr
   &= 4a + 8 - 3 = \boldsymbol{ 4a - 5 }.
-\end{align*}`
+\end{align*}
 
 {{% /hbox %}}
 
@@ -111,22 +111,22 @@ When $g(x) = -3x^2+2x$, evaluate:
 Likewise, we will substitute $x=3a$, $x=a-2$ and $x=a^2$, respectively.
 
 {{% enum 1 %}}
-`\begin{align*}
-   g(3a) &= -3\hl{(3a)}^2+2\hl{(3a)} \\
+\begin{align*}
+   g(3a) &= -3\hl{(3a)}^2+2\hl{(3a)} \cr
   &= \boldsymbol{ -27a^2 + 6a }.
-\end{align*}`
+\end{align*}
 {{% enum 2 %}}
-`\begin{align*}
-   g(a-2) &= -3\hl{(a-2)}^2+2\hl{(a-2)} \\
-  &= -3(a^2 - 4a + 4) + 2a - 4 \\
-  &= -3a^2 + 12a - 12 + 2a - 4 \\
+\begin{align*}
+   g(a-2) &= -3\hl{(a-2)}^2+2\hl{(a-2)} \cr
+  &= -3(a^2 - 4a + 4) + 2a - 4 \cr
+  &= -3a^2 + 12a - 12 + 2a - 4 \cr
   &= \boldsymbol{ -3a^2 + 14a - 16 }.
-\end{align*}`
+\end{align*}
 {{% enum 3 %}}
-`\begin{align*}
-   g(a^2) &= -3\hl{\left(a^2\right)}^2+2\hl{\left(a^2\right)} \\
+\begin{align*}
+   g(a^2) &= -3\hl{\left(a^2\right)}^2+2\hl{\left(a^2\right)} \cr
   &= \boldsymbol{ -3a^4 + 2a^2 }.
-\end{align*}`
+\end{align*}
 
 {{% /hbox %}}
 
@@ -196,29 +196,29 @@ Because a function always comes with its domain (natural or not), you can calcul
 {{% note Solution %}} 
 
 {{% enum a %}}
-`\begin{align*}
+\begin{align*}
    f(0) &= -3\cdot 0 + 2 = \boldsymbol{ 2 }.
-\end{align*}`
+\end{align*}
 {{% enum b %}}
-`\begin{align*}
+\begin{align*}
    f(-1) &= -3\cdot (-1) + 2 = \boldsymbol{ 5 }.
-\end{align*}`
+\end{align*}
 {{% enum c %}}
-`\begin{align*}
-   f(a+1) &= -3\cdot (a+1) + 2 \\
+\begin{align*}
+   f(a+1) &= -3\cdot (a+1) + 2 \cr
   &= -3a - 3 + 2 = \boldsymbol{ -3a - 1 }.
-\end{align*}`
+\end{align*}
 {{% enum d %}}
-`\begin{align*}
-   g(2) &= 2^2 - 3\cdot 2 + 2 \\
+\begin{align*}
+   g(2) &= 2^2 - 3\cdot 2 + 2 \cr
   &= 4 - 6 + 2 = \boldsymbol{ 0 }.
-\end{align*}`
+\end{align*}
 {{% enum e %}}
-`\begin{align*}
-   g(2a-1) &= (2a-1)^2 -3(2a-1) + 2 \\
-  &= 4a^2 - 4a + 1 - 6a + 3 + 2 \\
+\begin{align*}
+   g(2a-1) &= (2a-1)^2 -3(2a-1) + 2 \cr
+  &= 4a^2 - 4a + 1 - 6a + 3 + 2 \cr
   &= \boldsymbol{ 4a^2 -10a + 7 }.
-\end{align*}`
+\end{align*}
 
 {{% /details %}}
 

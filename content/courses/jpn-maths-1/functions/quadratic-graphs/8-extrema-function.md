@@ -51,10 +51,10 @@ How is this going to be useful? Here is one application: a function may have max
 {{% note Example %}} Suppose $f(x) = x^2 - 2ax + 2a$ with the domain $0\le x \le 2$ and $a$ is positive. Define the minimum value of $f(x)$ as $\min_f (a).$ Find the maximum of $\min_f (a).$
 
 {{% note Solution %}} We will first find the vertex of the function in terms of $a$.
-`\begin{align*}
-  f(x) &= x^2 - 2ax \hl{+a^2 -a^2} + 2a \\
+\begin{align*}
+  f(x) &= x^2 - 2ax \hl{+a^2 -a^2} + 2a \cr
   &= (x-a)^2 - a^2 + 2a
-\end{align*}`
+\end{align*}
 hence the vertex of $y=f(x)$ is $(a, -a^2+2a).$ The vertex can be inside the domain $0\le x \le 2$ or outside.
 
 {{% enum-grid "$\tcirc{1}$" %}}
@@ -69,15 +69,15 @@ Hence the minimum value is $$f(2) = 2^2 - 2a\cdot 2 + 2a = -2a + 4.$$
 {{% /enum-grid %}}
 
 From above, we can define $\min_f (a)$ by:
-`$$ \textstyle \min_f (a) = \begin{cases} -a^2 + 2a & \text{if } 0 < a \le 2, \\ -2a + 4 & \text{if } a > 2. \end{cases} $$`
+$$ \textstyle \min_f (a) = \begin{cases} -a^2 + 2a & \text{if } 0 < a \le 2, \cr -2a + 4 & \text{if } a > 2. \end{cases} $$
 
 So what is the maximum of this function? We know it should not happen beyond $a=2$ because $-2a+4$ decreases as $a$ increases. Then the maximum of $\min_f(a)$ is equal to the maximum of $-a^2 + 2a$ at $0 < a \le 2.$ This is a concave down parabola, so the maximum is the vertex.
-`\begin{align*}
-  -a^2 + 2a &= -(a^2 - 2a) \\
-  &= -(a^2 - 2a \hl{+ 1 -1} ) \\
-  &= -\left\{(a-1)^2 - 1 \right\} \\
+\begin{align*}
+  -a^2 + 2a &= -(a^2 - 2a) \cr
+  &= -(a^2 - 2a \hl{+ 1 -1} ) \cr
+  &= -\left\\{(a-1)^2 - 1\right\\} \cr
   &= -(a-1)^2 + 1,
-\end{align*}`
+\end{align*}
 
 The vertex is $(1,1),$ so the maximum is $\boldsymbol{ 1 }$ at $\boldsymbol{ a=1 }.$
 
@@ -93,9 +93,9 @@ The vertex is $(1,1),$ so the maximum is $\boldsymbol{ 1 }$ at $\boldsymbol{ a=1
   let min_coords = minLoc(2);
   calc_ex1.setExpressions([
     { id: 'slider', latex: 'a=2', sliderBounds: {min:0, max: 3.5, step: 0.05} },
-    { id: 'dom', latex: "0 \\le x \\le 2",  color: "blue", lineWidth: 2, lineOpacity: 0.5, fillOpacity: 0.1},
+    { id: 'dom', latex: "0 \crle x \crle 2",  color: "blue", lineWidth: 2, lineOpacity: 0.5, fillOpacity: 0.1},
     { id: 'f', latex: "y=x^2 - 2ax + 2a", color: "black", lineStyle: Desmos.Styles.DASHED},
-    { id: 'f2', latex: "y=x^2 - 2ax + 2a \\{ 0 \\le x \\le 2 \\}", color: "black", lineWidth: 3.5},
+    { id: 'f2', latex: "y=x^2 - 2ax + 2a \cr{ 0 \crle x \crle 2 \\}", color: "black", lineWidth: 3.5},
     { id: 'ver', latex: "(a, -a^2+2a)", color: 'black', showLabel: true, label:"a = 2", labelSize: Desmos.LabelSizes.LARGE},
     { id: 'min', latex: min_coords, color: 'green', pointSize: 15, showLabel: true, label:"Min", labelSize: Desmos.LabelSizes.LARGE }
   ]);
@@ -129,10 +129,10 @@ The vertex is $(1,1),$ so the maximum is $\boldsymbol{ 1 }$ at $\boldsymbol{ a=1
 1. -5 at $-1 \le a \le 3$
 
 {{% note Solution %}} From
-`\begin{align*}
-  f(x) &= x^2 - 6x + 9 - 9 + 4 \\
+\begin{align*}
+  f(x) &= x^2 - 6x + 9 - 9 + 4 \cr
   &= (x-3)^2 - 5,
-\end{align*}`
+\end{align*}
 the vertex of $y=f(x)$ is $(3, -5).$
 
 Because the graph is concave up, the vertex or the point closest to the vertex becomes the minimum. We can think of the following three possibilities:
@@ -148,7 +148,7 @@ When $a > 3$, the vertex is on the right of the domain. The minimum is $$ f(a) =
 {{% /enum-grid %}}
 
 Therefore, we find
-`$$ \textstyle \min_g(a) = \begin{cases} a^2 + 2a - 4 & \text{if } a < -1, \\ -5 & \text{if } -1 \le a \le 3, \\ a^2 - 6a + 4 & \text{if } a > 3. \end{cases} $$`
+$$ \textstyle \min_g(a) = \begin{cases} a^2 + 2a - 4 & \text{if } a < -1, \cr -5 & \text{if } -1 \le a \le 3, \cr a^2 - 6a + 4 & \text{if } a > 3. \end{cases} $$
 
 Now, let's think about what the minimum of this function would be.
 
@@ -168,9 +168,9 @@ Therefore, the minimum of $\min_g(a)$ is $\boldsymbol{ -5 },$ and it occurs at $
   let min_coords2 = minLoc2(2);
   calc_q1.setExpressions([
     { id: 'slider', latex: 'a=0', sliderBounds: {min:-4, max: 6, step: 0.1} },
-    { id: 'dom', latex: "a \\le x \\le a+4",  color: "blue", lineWidth: 2, lineOpacity: 0.5, fillOpacity: 0.1},
+    { id: 'dom', latex: "a \crle x \crle a+4",  color: "blue", lineWidth: 2, lineOpacity: 0.5, fillOpacity: 0.1},
     { id: 'f', latex: "y=x^2 - 6x + 4", color: "black", lineStyle: Desmos.Styles.DASHED},
-    { id: 'f2', latex: "y=x^2 - 6x + 4 \\{ a \\le x \\le a+4 \\}", color: "black", lineWidth: 3.5},
+    { id: 'f2', latex: "y=x^2 - 6x + 4 \cr{ a \crle x \crle a+4 \\}", color: "black", lineWidth: 3.5},
     { id: 'dom-start', latex: "(a, 0)", color: 'black', showLabel: true, label:"a = 0", labelSize: Desmos.LabelSizes.LARGE},
     { id: 'min', latex: min_coords2, color: 'green', pointSize: 15, showLabel: true, label:"Min", labelSize: Desmos.LabelSizes.LARGE }
   ]);

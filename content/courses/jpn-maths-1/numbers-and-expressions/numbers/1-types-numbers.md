@@ -122,18 +122,18 @@ Note that all integers are also rational numbers, because the ratio of any numbe
 
 So our journey has completed! We have finally found a set of numbers we can freely divide. Here is a list of different types of numbers we discussed so far:
 
-`$$
+$$
 \text{Rationals} 
 \begin{cases}
     \text{Integers} 
     \begin{cases}
-      \text{Positive integers} = \text{Naturals } (2, 7, 42, \dots) \\
-      0 \\
+      \text{Positive integers} = \text{Naturals } (2, 7, 42, \dots) \cr
+      0 \cr
       \text{Negative integers } (-3, -5, -119, \dots)
-    \end{cases} \\ \\
+    \end{cases} \cr \cr
     \text{Fractions } (\dfrac{2}{3}, -\dfrac{1}{2}, \dots) 
 \end{cases}
-$$`
+$$
 
 There is one problem, however -- it is the troublesome ***0***. Because we cannot divide a number by zero, we usually do not include it when we talk about division, like this:
 
@@ -145,18 +145,16 @@ Rational numbers are closed under addition, subtraction, and multiplication. Rat
 
 ## Decimal Representation of Numbers
 
-{{% mn olympics %}}
-{{% img src="courses/jpn-maths-1/numbers-and-expressions/num-olympics.jpg" alt="Result from a swimming world championship." %}}
-Result from a swimming world championship. Photo by [\\~\\~swimfreak\\~\\~](https://commons.wikimedia.org/wiki/File:Budapest2017_fina_world_championships_-_1500freestyle_final_-_score_board_-_results.jpg) via Wikimedia Commons / [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0)
-{{% /mn %}}
+{{% figure src="courses/jpn-maths-1/numbers-and-expressions/num-olympics.jpg" alt="Result from a swimming world championship." caption="Result from a swimming world championship. Photo by [\~\~swimfreak\~\~](https://commons.wikimedia.org/wiki/File:Budapest2017_fina_world_championships_-_1500freestyle_final_-_score_board_-_results.jpg) via Wikimedia Commons / [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0)" %}}
+
 So far, we focused on numbers for counting. Numbers also appear in ***measurements***, such as length, weight, temperature, time, and so on. While we often use whole numbers (integers) for measuring, like ***180 cm*** or ***73 kg***, sometimes we need to be more accurate. Athletic competition is a good example -- the winner of a swimming championship can change by much less than a second. We use ***decimals*** to make sure we can tell who is faster than the others.
 
 The 'usual' type of decimals have only a certain number of digits after the decimal point. For example, The swimming competition results from the picture have two digits. That is up to one-hundredth of a second. The more accurate you measure, the more digits you need. For example, the mass of a Hydrogen atom is about: 
 
-`\begin{align*}
-  & 1.6735576929 \times 10^{-27} ~\text{kg} \\
+\begin{align*}
+  & 1.6735576929 \times 10^{-27} ~\text{kg} \cr
   &= 0.0000000000000000000000000016735576929 ~\text{kg}!
-\end{align*}`
+\end{align*}
 
 Now, that is a lot of digits, but it certainly ends at some point. On the other hand, you may have heard of a decimal that never ends. For example, if you divide 10 by 3, you will get an endless bunch of repeating 3s: $$ 10\div3 = 3.3333333333\cdots, $$
 
@@ -189,25 +187,25 @@ Below are NOT repeating decimals:
 
 You can clearly see that $3.3333\cdots$ is a repeating decimal, while $\pi$ is not. Another good example for a non-repeating, infinite decimal is a surd: $$ \sqrt{2} = 1.414213562\cdots. $$ We write dots ($\cdot$) on top of numbers to tell the repeating part. For example,
 
-`\begin{alignat*}{2}
-  & 0.1666666\cdots &&= 0.1\dot{6}, \\
-  & 0.17171717\cdots &&= 0.\dot{1}\dot{7}, \\
+\begin{alignat*}{2}
+  & 0.1666666\cdots &&= 0.1\dot{6}, \cr
+  & 0.17171717\cdots &&= 0.\dot{1}\dot{7}, \cr
   & 5.835835835\cdots &&= 5.\dot{8}3\dot{5}.
-\end{alignat*}`
+\end{alignat*}
 
 Let's summarise the three different terms for decimals before moving on!
 
-`$$
+$$
 \text{Decimals} 
 \begin{cases}
-    \text{Finite } (0.175, -3.8, 16) \\ \\
+    \text{Finite } (0.175, -3.8, 16) \cr \cr
     \text{Infinite }
     \begin{cases}
-      \text{Repeating } (0.\dot{3}, 7.\dot{31}) \\
+      \text{Repeating } (0.\dot{3}, 7.\dot{31}) \cr
       \text{Non-repeating } (\pi, 0.5772156\cdots)
     \end{cases}
 \end{cases}
-$$`
+$$
 
 
 ## Real Numbers
@@ -222,11 +220,11 @@ The collection of rational numbers and finite and infinite decimals is called **
 
 ### Converting fractions to decimals
 
-We could close up this lesson here, but there is a lot of overlapping part between rationals and decimals. For example, 1.0 (decimal) is obviously the same as 1 (natural), and $\frac{1}{2}$ (rational) is 0.5 (decimal). We need to try converting decimals and rationals and finding some patterns to better classify the real numbers. Here we will not spend too much time practising the conversion because you should have had a few exercises throughout primary school. For example,{{% mn logdiv1 %}}{{% img src="courses/jpn-maths-1/numbers-and-expressions/num-longdiv_1.svg" alt="Long division workout for 1 divide 8." style="max-width: 50%" %}}{{% /mn %}}
+We could close up this lesson here, but there is a lot of overlapping part between rationals and decimals. For example, 1.0 (decimal) is obviously the same as 1 (natural), and $\frac{1}{2}$ (rational) is 0.5 (decimal). We need to try converting decimals and rationals and finding some patterns to better classify the real numbers. Here we will not spend too much time practising the conversion because you should have had a few exercises throughout primary school. For example,{{% mn logdiv1 %}}{{% img-raw src="courses/jpn-maths-1/numbers-and-expressions/num-longdiv_1.svg" alt="Long division workout for 1 divide 8." style="max-width: 50%" %}}{{% /mn %}}
 
 $$\dfrac{5}{8} = 5\div 8 = 0.625$$ and $$0.85 = \dfrac{\bcancel{85}^{13}}{\bcancel{100}^{20}} = \dfrac{13}{20}.$$
 
-For the example above, the division ends, and you can express the fraction as a finite decimal. However, not all fractions behave this way -- the division never ends for some fractions! Have a look at the long division for $\dfrac{1}{6}$, for example. {{% mn logdiv2 %}}{{% img src="courses/jpn-maths-1/numbers-and-expressions/num-longdiv_2.svg" alt="Long division workout for 1 divide 6." style="max-width: 50%" %}}{{% /mn %}}
+For the example above, the division ends, and you can express the fraction as a finite decimal. However, not all fractions behave this way -- the division never ends for some fractions! Have a look at the long division for $\dfrac{1}{6}$, for example. {{% mn logdiv2 %}}{{% img-raw src="courses/jpn-maths-1/numbers-and-expressions/num-longdiv_2.svg" alt="Long division workout for 1 divide 6." style="max-width: 50%" %}}{{% /mn %}}
 
 We get $$\dfrac{1}{6} = 0.1\dot{6}. $$ 
 
@@ -263,19 +261,19 @@ You may think the words ***ratio***nal and ***irratio***nal came from ***ratio**
 
 You may be familiar with converting finite decimals to fractions, such as
 
-`\begin{alignat*}{2}
-  &0.7 &&= \dfrac{7}{10}, \\
+\begin{alignat*}{2}
+  &0.7 &&= \dfrac{7}{10}, \cr
   &0.375 &&= \dfrac{\bcancel{375}^3}{\bcancel{1000}^8} = \dfrac{3}{8}.
-\end{alignat*}`
+\end{alignat*}
 
 What about repeating decimals like $0.\dot{5}=0.555\cdots$? Well, we can think this way. We first say the value of this decimal is $x$, or in other words, $$x=0.555\cdots. \tag{1} $$ Can you think what $10x$ would equal to? It should be $$10x=5.555\cdots. \tag{2} $$ Note both $x$ and $10x$ have the same decimal part $555\cdots$. This means, if you take $(1)$ from $(2)$, they will be gone! So:
 
-`$$\begin{array}{rrlll}
-  & 10x & = 5\hl{.555\cdots} && \cdots (2) \\[0.2em]
- -(& x & =0.\hl{555\cdots} & ) & \cdots (1) \\[0.2em]
-  \hline \\[-0.9em]
+$$\begin{array}{rrlll}
+  & 10x & = 5\hl{.555\cdots} && \cdots (2) \\\\[0.2em]
+ -(& x & =0.\hl{555\cdots} & ) & \cdots (1) \\\\[0.2em]
+  \hline \\\\[-0.9em]
   & 9x & = 5 &&
-\end{array}$$`
+\end{array}$$
 
 This means, of course, $$ x = \dfrac{5}{9}. $$
 
@@ -295,34 +293,34 @@ Convert the following decimals to fractions.
 
 {{% enum b %}} We set $x=0.888\cdots$. Then
 
-`$$\begin{array}{rrll}
-  & 10x & = 8.888\cdots & \\[0.2em]
- -(& x & =0.888\cdots & ) \\[0.2em]
-  \hline \\[-0.9em]
+$$\begin{array}{rrll}
+  & 10x & = 8.888\cdots & \\\\[0.2em]
+ -(& x & =0.888\cdots & ) \\\\[0.2em]
+  \hline \\\\[-0.9em]
   & 9x & = 8 &&
-\end{array}$$`
+\end{array}$$
 
 and therefore $ x = \boldsymbol{\dfrac{8}{9} }$.
 
 {{% enum c %}} We set $x=0.275275\cdots$. We need to find a multiple of $x$ that has the same decimal part (note $10x=2.752752\cdots$ has a *different* decimal part to $x$!). To do so, we need $1000x$ instead:
 
-`$$\begin{array}{rrll}
-  & 1000x & = 275.275275\cdots & \\[0.2em]
- -(& x & =\phantom{00}0.275275\cdots & ) \\[0.2em]
-  \hline \\[-0.9em]
+$$\begin{array}{rrll}
+  & 1000x & = 275.275275\cdots & \\\\[0.2em]
+ -(& x & =\phantom{00}0.275275\cdots & ) \\\\[0.2em]
+  \hline \\\\[-0.9em]
   & 999x & = 275 &&
-\end{array}$$`
+\end{array}$$
 
 Therefore $x = \boldsymbol{\dfrac{275}{999}}$.
 
 {{% enum d %}} We set $x=0.13636\cdots$. Ideally, we want to keep the decimal part $3636\cdots$, so the first equation would be on $10x$ and the other on $1000x$: 
 
-`$$\begin{array}{rrll}
-  & 1000x & = 136.3636\cdots & \\[0.2em]
- -(& 10x & =\phantom{00}1.3636\cdots & ) \\[0.2em]
-  \hline \\[-0.9em]
+$$\begin{array}{rrll}
+  & 1000x & = 136.3636\cdots & \\\\[0.2em]
+ -(& 10x & =\phantom{00}1.3636\cdots & ) \\\\[0.2em]
+  \hline \\\\[-0.9em]
   & 990x & = 135 &&
-\end{array}$$`
+\end{array}$$
 
 Thus $x=\dfrac{\bcancel{135}^{15}}{\bcancel{990}\_{110}}=\dfrac{\bcancel{15}^3}{\bcancel{110}\_{22}}=\boldsymbol{ \dfrac{3}{22} }$.
 
@@ -331,12 +329,12 @@ Thus $x=\dfrac{\bcancel{135}^{15}}{\bcancel{990}\_{110}}=\dfrac{\bcancel{15}^3}{
 {{% details title="0.999...=?" %}}
 Whether $0.999\cdots$ equals 1 or not is a little old topic, but here is proof using what we have learnt so far. Let $x=0.999\cdots$. Then
 
-`$$\begin{array}{rrll}
-  & 10x & = 9.999\cdots & \\[0.2em]
- -(& x & =0.999\cdots & ) \\[0.2em]
-  \hline \\[-0.9em]
+$$\begin{array}{rrll}
+  & 10x & = 9.999\cdots & \\\\[0.2em]
+ -(& x & =0.999\cdots & ) \\\\[0.2em]
+  \hline \\\\[-0.9em]
   & 9x & = 9 &&
-\end{array}$$`
+\end{array}$$
 
 and obviously, the answer to the equation is $x=1$! $\square$
 
@@ -356,9 +354,9 @@ This is a diagram summarising the different types of numbers we learnt so far. M
 
 1. From the following list of numbers, find all (a) natural numbers; (b) integers; (c) rational numbers; and (d) irrational numbers.
 
-`\begin{align*}
-  3, \: -2, \: 0, \: \dfrac{2}{5}, \: \sqrt{3}, \: -4, \: 1.\dot{4}, \: 2\pi, \: \sqrt{16}
-\end{align*}`
+\begin{align*}
+  3, \\: -2, \\: 0, \\: \dfrac{2}{5}, \\: \sqrt{3}, \\: -4, \\: 1.\dot{4}, \\: 2\pi, \\: \sqrt{16}
+\end{align*}
 
 {{% details title="Answer" %}}
 1. 
@@ -403,34 +401,34 @@ This is a diagram summarising the different types of numbers we learnt so far. M
 
 {{% enum b %}} Set $x=0.\dot{4}$. Then
 
-`$$\begin{array}{rrll}
-  & 10x & = 4.444\cdots & \\[0.2em]
- -(& x & =0.444\cdots & ) \\[0.2em]
-  \hline \\[-0.9em]
+$$\begin{array}{rrll}
+  & 10x & = 4.444\cdots & \\\\[0.2em]
+ -(& x & =0.444\cdots & ) \\\\[0.2em]
+  \hline \\\\[-0.9em]
   & 9x & = 4 &&
-\end{array}$$`
+\end{array}$$
 
 Therefore $x=\boldsymbol{ \dfrac{4}{9} }$.
 
 {{% enum c %}} Set $x=0.\dot{2}\dot{7}$. Then
 
-`$$\begin{array}{rrll}
-  & 100x & = 27.2727\cdots & \\[0.2em]
- -(& x & =\phantom{0}0.2727\cdots & ) \\[0.2em]
-  \hline \\[-0.9em]
+$$\begin{array}{rrll}
+  & 100x & = 27.2727\cdots & \\\\[0.2em]
+ -(& x & =\phantom{0}0.2727\cdots & ) \\\\[0.2em]
+  \hline \\\\[-0.9em]
   & 99x & = 27 &&
-\end{array}$$`
+\end{array}$$
 
 Therefore $x=\dfrac{\bcancel{27}^{3}}{\bcancel{99}^{11}}=\boldsymbol{ \dfrac{3}{11} }$.
 
 {{% enum d %}} Set $x=0.5\dot{1}\dot{6}$. Then
 
-`$$\begin{array}{rrll}
-  & 1000x & = 516.1616\cdots & \\[0.2em]
- -(& 10x & =\phantom{00}5.1616 & ) \\[0.2em]
-  \hline \\[-0.9em]
+$$\begin{array}{rrll}
+  & 1000x & = 516.1616\cdots & \\\\[0.2em]
+ -(& 10x & =\phantom{00}5.1616 & ) \\\\[0.2em]
+  \hline \\\\[-0.9em]
   & 990x & = 511 &&
-\end{array}$$`
+\end{array}$$
 
 Therefore $x=\boldsymbol{ \dfrac{511}{990} }$.
 

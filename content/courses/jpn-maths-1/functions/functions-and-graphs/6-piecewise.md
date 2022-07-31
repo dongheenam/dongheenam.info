@@ -28,7 +28,7 @@ weight: 16
 ## Introduction
 
 From [the previous lesson](../absolute-values) on drawing absolute value functions, we now know that drawing the graph of $y=|x-3|$ is equivalent to drawing
-`$$ y = \begin{cases} x-3 & \text{if $x\ge 3$,} \\ 3-x & \text{if $x < 3$.} \end{cases} $$`
+$$ y = \begin{cases} x-3 & \text{if $x\ge 3$,} \cr 3-x & \text{if $x < 3$.} \end{cases} $$
 In other words, we have to draw two different functions depending on the range of $x$. In this lesson, we will extend this idea further, and we will:
 
 - define and draw a piecewise-defined function.
@@ -50,14 +50,14 @@ This means that the tax rates are different based on your annual income, and you
 {{% note Definition %}} *A **piecewise-defined function** is a function with multiple rules across different sub-domains. In other words, the rule of a piecewise-defined function changes depending on the value of the input.*
 
 {{% note Example %}} Let {{< dollar >}}$I$ be the annual income and $T$ the amount of income tax you need to pay as an Australian resident. Then
-`$$ T = 
+$$ T = 
 \begin{cases}
-0 & \text{if $I \le 18200$,} \\
-0.19(I-18200) & \text{if $18200< I \le 45000$,} \\
-5092 + 0.325(I-45000) & \text{if $45000 < I < 120000$,} \\
+0 & \text{if $I \le 18200$,} \cr
+0.19(I-18200) & \text{if $18200< I \le 45000$,} \cr
+5092 + 0.325(I-45000) & \text{if $45000 < I < 120000$,} \cr
 & \vdots
 \end{cases}
-$$`
+$$
 
 {{% /hbox %}}
 
@@ -66,7 +66,7 @@ Let's practice some drawing now.
 {{% hbox %}}
 
 {{% note Example %}} Draw the following piecewise function.
-`$$\begin{cases} y = -3 & \text{if $x<-3$,} \\ y=2x+3 & \text{if $-3\le x\le 2$,} \\ y=-x+6 & \text{if $x>2$.} \end{cases}$$`
+$$\begin{cases} y = -3 & \text{if $x<-3$,} \cr y=2x+3 & \text{if $-3\le x\le 2$,} \cr y=-x+6 & \text{if $x>2$.} \end{cases}$$
 
 {{% note Solution %}} We will draw the three line graphs in the three regions as specified. One small problem is that the two of the line graphs meet at $x=-3$, but not at $x=2$: $2x+3=7$ but $-x+6=4$. We know the value of $y$ has to be $7$ and not $4$ because $x=2$ is in the second region. How we show this information on the graph is by using circles: a filled circle means the point is ***included***, and an open circle means the point is ***not included***.
 
@@ -77,10 +77,10 @@ Let's practice some drawing now.
 {{% hbox %}}
 
 {{% note Example %}} The definition of $f$ is as follows:
-`$$f(x) = \begin{cases}
-  2x & \text{for $0\le x < 2$,} \\
+$$f(x) = \begin{cases}
+  2x & \text{for $0\le x < 2$,} \cr
   8-2x & \text{for $2\le x \le 4$.}
-\end{cases}$$`
+\end{cases}$$
 Draw the graph of 
 1. $y=f(x)$.
 2. $y=f(f(x))$.
@@ -92,10 +92,10 @@ Draw the graph of
 {{< figure src="courses/jpn-maths-1/functions/functions-and-graphs/piecewise-ex2a.png" alt="Graph of y = f(x)." >}}
 
 {{% enum 2 %}} To find the definition of $f(f(x))$, we simply evaluate $f(x)$ at $x = f(x)$:
-`$$ f(f(x)) = \begin{cases}
-  2f(x) & \text{for $0\le f(x) < 2$,} \\
+$$ f(f(x)) = \begin{cases}
+  2f(x) & \text{for $0\le f(x) < 2$,} \cr
   8-2f(x) & \text{for $2\le f(x) \le 4$.}
-\end{cases} $$`
+\end{cases} $$
 From the graph of $y=f(x)$, we find:
 - When $0 \le x < 1$ or $3 < x \le 4$, $$0\le f(x) < 2,$$
 - When $1 \le x \le 3$, $$2\le f(x) \le 4.$$
@@ -105,35 +105,35 @@ This means there are four different rules for $y = f(f(x))$:
 {{% ol i %}}
 {{% li %}}
 When $0\le x < 1$, $f(f(x)) = 2f(x)$ and $f(x) = 2x$ so 
-`\begin{align*}
-  f(f(x)) &= 2f(x) \\
-  &= 2 \cdot 2x \\
+\begin{align*}
+  f(f(x)) &= 2f(x) \cr
+  &= 2 \cdot 2x \cr
   &= 4x.
-\end{align*}`
+\end{align*}
 {{% /li %}}
 {{% li %}}
 When $1\le x < 2$, $f(f(x)) = 8-2f(x)$ and $f(x) = 2x$ so
-`\begin{align*}
-  f(f(x)) &= 8-2f(x) \\
-  &= 8 - 2\cdot 2x \\
+\begin{align*}
+  f(f(x)) &= 8-2f(x) \cr
+  &= 8 - 2\cdot 2x \cr
   &= 8 - 4x.
-\end{align*}`
+\end{align*}
 {{% /li %}}
 {{% li %}}
 When $2\le x < 3$, $f(f(x)) = 8-2f(x)$ and $f(x) = 8-2x$ so
-`\begin{align*}
-  f(f(x)) &= 8-2f(x) \\
-  &= 8-2(8-2x) \\
+\begin{align*}
+  f(f(x)) &= 8-2f(x) \cr
+  &= 8-2(8-2x) \cr
   &= 4x-8.
-\end{align*}`
+\end{align*}
 {{% /li %}}
 {{% li %}}
 When $3\le x < 4$, $f(f(x)) = 2f(x)$ and $f(x) = 8-2x$ so
-`\begin{align*}
-  f(f(x)) &= 2f(x) \\
-  &= 2(8-2x) \\
+\begin{align*}
+  f(f(x)) &= 2f(x) \cr
+  &= 2(8-2x) \cr
   &= 16-4x.
-\end{align*}`
+\end{align*}
 {{% /li %}}
 {{% /ol %}}
 
@@ -162,14 +162,14 @@ The floor function is a special type of function that returns [the integer part]
 {{% /hbox %}}
 
 What would the graph of $y = \lfloor x \rfloor$ be like? Let's start with the range of $x$ that satisfies $\lfloor x \rfloor = 1$. Because , It is obvious that any $x$ between 1 and 2 would return 1, $\lfloor 1 \rfloor = 1$, and $\lfloor 2 \rfloor = 2$. Thus, $\lfloor x \rfloor = 1$ when $1 \le x < 2$. Generalising this idea gives:
-`$$ \lfloor x \rfloor = \begin{cases}
-  & \vdots \\
-  -1 & \text{for $-1 \le x < 0$, } \\
-  0 & \text{for $0 \le x < 1$, } \\
-  1 & \text{for $1 \le x < 2$, } \\
-  2 & \text{for $2 \le x < 3$, } \\
+$$ \lfloor x \rfloor = \begin{cases}
+  & \vdots \cr
+  -1 & \text{for $-1 \le x < 0$, } \cr
+  0 & \text{for $0 \le x < 1$, } \cr
+  1 & \text{for $1 \le x < 2$, } \cr
+  2 & \text{for $2 \le x < 3$, } \cr
   & \vdots
-\end{cases} $$`
+\end{cases} $$
 
 {{% hbox %}}
 {{% note Theorem %}} $\lfloor x \rfloor = n$ for an integer $n$ where $n \le x < n+1$.
@@ -243,9 +243,9 @@ when $2x = 4$ or $x=2$, $y=4$.
 ## Practice Questions
 
 1. Draw the following piecewise functions.
-    1. $\begin{cases} y=-x-5 & \text{if $x\le -5$, } \\\\ y=x+5 & \text{if $-5< x \le 3$,} \\ y=8 & \text{if $x>3$.} \end{cases}$
+    1. $\begin{cases} y=-x-5 & \text{if $x\le -5$, } \cr\\ y=x+5 & \text{if $-5< x \le 3$,} \cr y=8 & \text{if $x>3$.} \end{cases}$
 
-    2. $\begin{cases} y=-3 & \text{if $x\le 0$, } \\\\ y=2x & \text{if $0< x < 4$,} \\ y=5 & \text{if $x=4$,} \\\\ y=-x+7 & \text{if $x>4$.} \end{cases}$
+    2. $\begin{cases} y=-3 & \text{if $x\le 0$, } \cr\\ y=2x & \text{if $0< x < 4$,} \cr y=5 & \text{if $x=4$,} \cr\\ y=-x+7 & \text{if $x>4$.} \end{cases}$
 
 {{% details title="Answer" %}}
 
@@ -271,9 +271,9 @@ Be careful with the discontinuity at $x=0$ and $x=4$.
 {{% details title="Answer" %}}
 
 2. 
-    1. $f(x) = \begin{cases} -x-4 & \text{if $x<0$, } \\\\ 2x-4 & \text{if $0\le x < 4$,} \\\\ 4 & \text{if $x\ge 4$.} \end{cases}$
+    1. $f(x) = \begin{cases} -x-4 & \text{if $x<0$, } \cr\\ 2x-4 & \text{if $0\le x < 4$,} \cr\\ 4 & \text{if $x\ge 4$.} \end{cases}$
 
-    2. $ f(x) = \begin{cases} 5 & \text{if $x\le -4$, } \\\\ 3 & \text{if $-4 < x < 0$,} \\\\ -x & \text{if $0 \le x \le 3$,} \\\\ x-3 & \text{if $ x > 3 $.} \end{cases} $
+    2. $ f(x) = \begin{cases} 5 & \text{if $x\le -4$, } \cr\\ 3 & \text{if $-4 < x < 0$,} \cr\\ -x & \text{if $0 \le x \le 3$,} \cr\\ x-3 & \text{if $ x > 3 $.} \end{cases} $
 
 {{% note Solution %}}
 
@@ -287,7 +287,7 @@ The graph drawn in $0\le x < 4$ has the y-intercept of $-4$ and the gradient of 
 The graph in $x \ge 4$ has the function $y=4$.
 
 Therefore, the function of the graph is
-`$$ \boldsymbol{ f(x) = } \begin{cases} \boldsymbol{ -x-4 } & \textbf{if $\boldsymbol{ x<0 }$, } \\ \boldsymbol{ 2x-4 } & \textbf{if $\boldsymbol{ 0\le x < 4 }$,} \\ \boldsymbol{ 4 } & \textbf{if $\boldsymbol{ x\ge 4 }$.} \end{cases} $$`
+$$ \boldsymbol{ f(x) = } \begin{cases} \boldsymbol{ -x-4 } & \textbf{if $\boldsymbol{ x<0 }$, } \cr \boldsymbol{ 2x-4 } & \textbf{if $\boldsymbol{ 0\le x < 4 }$,} \cr \boldsymbol{ 4 } & \textbf{if $\boldsymbol{ x\ge 4 }$.} \end{cases} $$
 
 {{% enum b %}}
 There are four separate sub-domains for the functions. Focusing on the filled and open circles, the four regions are: $x\le -4$, $-4 < x < 0$, $0\le x \le 3$, and $x>3$.
@@ -301,12 +301,12 @@ The graph drawn in $0\le x \le 3$ has the y-intercept of $0$ and the gradient of
 The graph drawn in $x >3$ has the gradient of $1$ and x-intercept of $3$. Thus the function is $y=x-3$.{{% sn q2b %}}If we let the y-intercept of the graph be $b$, then the function of the graph is $y=x+b$. This graph passes through $(3,0)$, so $0 = 3+b$, which leads to $b=-3$. Thus the equation is $y=x-3$.{{% /sn %}}
 
 Therefore, the function of the graph is
-`$$ \boldsymbol{ f(x) = } \begin{cases} \boldsymbol{ 5 } & \textbf{if $\boldsymbol{ x\le -4 }$, } \\ \boldsymbol{ 3 } & \textbf{if $\boldsymbol{ -4 < x < 0 }$,} \\ \boldsymbol{ -x } & \textbf{if $\boldsymbol{ 0 \le x \le 3 }$,} \\ \boldsymbol{ x-3 } & \textbf{if $\boldsymbol{ x > 3 }$.} \end{cases} $$`
+$$ \boldsymbol{ f(x) = } \begin{cases} \boldsymbol{ 5 } & \textbf{if $\boldsymbol{ x\le -4 }$, } \cr \boldsymbol{ 3 } & \textbf{if $\boldsymbol{ -4 < x < 0 }$,} \cr \boldsymbol{ -x } & \textbf{if $\boldsymbol{ 0 \le x \le 3 }$,} \cr \boldsymbol{ x-3 } & \textbf{if $\boldsymbol{ x > 3 }$.} \end{cases} $$
 
 {{% /details %}}
 
 3. When $ f(x) = \begin{cases}
-  2x & \text{for $0\le x < \dfrac{1}{2}$,} \\\\
+  2x & \text{for $0\le x < \dfrac{1}{2}$,} \cr\\
   2x-1 & \text{for $\dfrac{1}{2} \le x \le 1$,}
 \end{cases} $
 sketch the graphs of:
@@ -324,10 +324,10 @@ The graph of $y=f(x)$ is below. Be careful with the discontinuity at $x=\dfrac{1
 
 {{% enum b %}}
 From the definition of $y = f(x)$,
-`$$ f(f(x)) = \begin{cases}
-  2f(x) & \text{for $0\le f(x) < \dfrac{1}{2}$,} \\
+$$ f(f(x)) = \begin{cases}
+  2f(x) & \text{for $0\le f(x) < \dfrac{1}{2}$,} \cr
   2f(x)-1 & \text{for $\dfrac{1}{2} \le f(x) \le 1$.}
-\end{cases} $$`
+\end{cases} $$
 
 From the graph of $y=f(x)$, we find:
 - $0\le f(x) < \dfrac{1}{2}$ when $0\le x < \dfrac{1}{4}$ or $\dfrac{1}{2} \le x < \dfrac{3}{4}$,
