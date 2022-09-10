@@ -21,8 +21,6 @@ markup:
       unsafe: true
       xhtml: false
   highlight:
-    codeFences: true
-    guessSyntax: true
     noClasses: false
   
 # build settings

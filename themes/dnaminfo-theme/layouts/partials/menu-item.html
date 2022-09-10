@@ -22,9 +22,9 @@
       (or 
           ($current_page.IsMenuCurrent $menu_id .)
           ($current_page.HasMenuCurrent $menu_id .)) }}
-      <ul>
-      {{ partial "menu-item" (dict "menu" $menu_id "list" .Children "current" $current_page) }}
-      </ul>
+    <ul>
+    {{ partial "menu-item" (dict "menu" $menu_id "list" .Children "current" $current_page) }}
+    </ul>
   {{ end }}
   </li>
 {{ end }}{{/* end range */}}

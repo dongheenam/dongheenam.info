@@ -1,6 +1,6 @@
 ---
 title: "Generating a Recursive Menu in Hugo"
-description: "Rendering a multi-level list using recursion in Hugo (and other languages!)"
+description: "Rendering a multi-level list using recursion in Hugo"
 
 date: 2022-06-29 08:20:06.460 +1000
 
@@ -27,13 +27,12 @@ example-menu
     └── Project 2
 ```
 
-This can be done post-by-post in the front matter and it is a little painful to set it up at first. Have a look at the code below to see how you can construct `example-menu`.
+This can be done post-by-post in the front matter and it is a little painful to set it up at first. Click below to see how `example-menu` is constructed.
 
 {{% details title="Structuring a menu using the front matter" %}}
 
 ```yaml {path="posts/index.md"}
 ---
-# ...
 menu:
   example-menu:
     name: "Top"
@@ -42,7 +41,6 @@ menu:
 
 ```yaml {path="posts/project-1.md"}
 ---
-# ...
 menu:
   example-menu:
     parent: "Top"
@@ -53,7 +51,6 @@ menu:
 
 ```yaml {path="posts/example-11.md"}
 ---
-# ...
 menu:
   example-menu:
     parent: "Project 1"
@@ -64,7 +61,6 @@ menu:
 
 ```yaml {path="posts/example-12.md"}
 ---
-# ...
 menu:
   example-menu:
     parent: "Project 1"
@@ -75,7 +71,6 @@ menu:
 
 ```yaml {path="posts/project-2.md"}
 ---
-# ...
 menu:
   example-menu:
     parent: "Top"
@@ -86,9 +81,9 @@ menu:
 
 {{% /details %}}
 
-[The Documentation](https://gohugo.io/templates/menu-templates/) shows some good examples of a menu template, but it also has a few shortcomings:
+[The documentation](https://gohugo.io/templates/menu-templates/) shows some good examples of a menu template, but it also has a few shortcomings:
 
-- The menu is only two levels deep. The Examples in `example-menu` will never be visible.
+- The menu is only two levels deep. The examples in `example-menu` will never be visible.
 - It shows the entire menu at once. If the menu contained items with lots of children, it will be pretty difficult to navigate.
 
 You can definitely see the result of this from the official Hugo website as well, just have a look at how many pages there are in [the Functions section](https://gohugo.io/functions/)!
@@ -178,12 +173,14 @@ Let's start with having a look at the overall structure first. This is where the
 {{ end }}
 
 <aside class="sidenav">
-{{/* ... */}}
-  <div class="sidenav-menu">
+{{/* ...rest of code */}}
+  <div class="menu">
+    <ul>
     {{ partial "menu-item" (dict 
         "menu" $menu_id
         "list" (index .Site.Menus $menu_id)
         "current" $current_page) }}
+    </ul>
   </div>
 </aside>
 ```
@@ -191,10 +188,74 @@ Let's start with having a look at the overall structure first. This is where the
 You can see that the partial is called with three variables, `menu`, `list`, and `current`.
 
 - `menu` is the name of the menu. In our example it has the value `example-menu`. This is used as the first argument in [`.IsMenuCurrent`](https://gohugo.io/functions/ismenucurrent/) and [`.HasMenuCurrent`](https://gohugo.io/functions/hasmenucurrent/) function.
-- `list` contains the children pages to be displayed. The initial value, `index .Site.Menus $menu_id` will pull all the top-level pages in the menu. In our example this will be \[Top\]. 
+- `list` contains the children pages to be displayed. The initial value, `index .Site.Menus $menu_id` will pull all the top-level pages in the menu. In our example, this will be `Top`. 
 - `current` is the current page. Because of [how Hugo scopes work](https://www.regisphilibert.com/blog/2018/02/hugo-the-scope-the-context-and-the-dot/), you will find many partials and shortcodes start by first defining the current page, which is done here as well.
 
 Let's look inside what the partial looks like.
+
+```html {path="layouts/partials/menu-item.html"}
+{{ $menu_id := .menu }}
+{{ $list := .list }}
+{{ $current_page := .current }}
+
+{{ range $list }}
+  {{- $is_current := $current_page.IsMenuCurrent $menu_id . -}}
+  <li>
+  {{- if .URL -}}
+    <a{{ if $is_current }} class="current"{{ end }} href="{{ .URL }}">{{ .Name }}</a>
+  {{- else -}}
+    <span{{ if $is_current }} class="current"{{ end }}>{{ .Name }}</span>
+  {{- end -}}
+  
+  {{/* only render the child elements of the current page
+       and the ancestors of the current page. */}}
+  {{- if and 
+      .HasChildren
+      (or 
+        ($current_page.IsMenuCurrent $menu_id .)
+        ($current_page.HasMenuCurrent $menu_id .)) -}}
+      <ul>
+      {{ partial "menu-item" (dict 
+          "menu" $menu_id
+          "list" .Children
+          "current" $current_page) }}
+      </ul>
+  {{- end -}}
+  </li>
+{{ end }}{{/* end range $list */}}
+
+```
+
+{{% details title="Update: nested list rendering" %}}
+
+The menu template was developed from the [example template](https://gohugo.io/templates/menu-templates/) in the Hugo documentation, which renders like this:
+
+```html {hl_lines="3-6"}
+<ul>
+  <li>Item 1</li>
+  <ul>
+    <li>Subitem 1</li>
+    <li>Subitem 2</li>
+  </ul>
+  <li>Item 2</li>
+</ul>
+```
+
+However, according to [MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals#nesting_lists) and [HTML Standard](https://html.spec.whatwg.org/multipage/grouping-content.html#the-ul-element), nested lists should look like this instead:
+
+```html {hl_lines="3-6"}
+<ul>
+  <li>Item 1
+    <ul>
+      <li>Subitem 1</li>
+      <li>Subitem 2</li>
+    </ul>
+  </li>
+  <li>Item 2</li>
+</ul>
+```
+
+Hence I ended up fixing the menu partial. Below is what the original code looked like.
 
 ```html {path="layouts/partials/menu-item.html"}
 {{ $menu_id := .menu }}
@@ -227,6 +288,8 @@ Let's look inside what the partial looks like.
 {{ end }}{{/* end range $list */}}
 </ul>
 ```
+
+{{% /details %}}
 
 It definitely wasn't as tricky as it sounded!
 
