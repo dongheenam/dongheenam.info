@@ -48,18 +48,15 @@ renders as follows.
 
 Desmos provides the pre-packaged JavaScript file, so you simply need to include it using the `<script>` tag:
 
-{{% code filename="layouts/partials/head.html" %}}
-```html
+```html {path="layouts/partials/head.html"}
 <head>
-    ...
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    ...
+    <!-- rest of head -->
+
     {{- if .Params.desmos -}}
     <script src="https://www.desmos.com/api/v1.6/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
     {{- end -}}
 </head>
 ```
-{{% /code %}}
 
 
 Things to note:
@@ -71,8 +68,7 @@ Things to note:
 
 You then need to create an empty `<div>` with an unique ID and initiate Desmos. Since this is mostly repetitive, it is best to make a [Hugo shortcode](https://gohugo.io/content-management/shortcodes/). Here is my suggestion:
 
-{{% code filename="layouts/shortcodes/desmos.html" %}}
-```html
+```html {path="layouts/shortcodes/desmos.html"}
 {{- $id := .Get "id" -}}
 {{- $style := .Get "style" | default "width: 100%; height: 450px" -}}
 <div id="calc-{{ $id }}" style="{{ $style | safeCSS }}"></div>
@@ -81,28 +77,23 @@ You then need to create an empty `<div>` with an unique ID and initiate Desmos. 
   const calc_{{ $id | safeJS }} = Desmos.GraphingCalculator(elt{{ with .Get "options" }}, {{ . | safeJS }}{{ end }});
 </script>
 ```
-{{% /code %}}
 
 
 This is an example usage.{{% sn 86 %}}You can find the list of available options from the [Desmos API Documentation](https://www.desmos.com/api/v1.6/docs/index.html#document-calculator).{{% /sn %}}
 
-{{% code filename="content/desmos-example.md" %}}
-```html
+```html {path="content/desmos-example.md"}
 {{% print "{{% desmos id=\"vd1\" options=\"{keypad: false}\" %}}" %}}
 ```
-{{% /code %}}
 
 Above is converted to
 
-{{% code filename="public/desmos-example.html" %}}
-```html
+```html {path="public/desmos-example.html"}
 <div id="calc-vd1" style="width: 100%; height: 450px"></div>
 <script>
   const elt_vd1 = document.getElementById('calc-vd1');
   const calc_vd1 = Desmos.GraphingCalculator(elt_vd1, {keypad: false});
 </script>
 ```
-{{% /code %}}
 
 The name of the JS variables have the ID as suffix to avoid duplicate variable names when the shortcode is called more than once. I admit it may not be the most elegant solution for this, but hey, it works!
 

@@ -4,16 +4,17 @@
   grid-area: content;
   min-width: 0;
 
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
-    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
+  font-family: var(--sans-font);
   font-size: 1.3rem;
   line-height: 1.4;
 
   counter-reset: sidenote-counter;
 
   h1 {
-    font-family: "PT Serif", serif;
+    width: var(--full-width);
+    clear: both;
+    
+    font-family: var(--serif-font);
     font-weight: 400;
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -23,7 +24,7 @@
   }
 
   h2 {
-    font-family: "PT Serif", serif;
+    font-family: var(--serif-font);
     font-style: italic;
     font-weight: 400;
     font-size: 2.1rem;
@@ -35,7 +36,7 @@
   }
 
   h3 {
-    font-family: "PT Serif", serif;
+    font-family: var(--serif-font);
     font-style: italic;
     text-decoration: underline;
     font-weight: 400;
@@ -94,7 +95,7 @@
     li::marker {
       font-style: italic;
       font-weight: bold;
-      font-family: "PT Serif", serif;
+      font-family: var(--serif-font);
     }
   }
   ul ol,
@@ -179,7 +180,7 @@
 
   .sidenote-number:after,
   .sidenote:before {
-    font-family: "PT Serif", serif;
+    font-family: var(--serif-font);
     font-size: 80%;
     color: var(--primary-color);
     position: relative;
@@ -218,56 +219,50 @@
   }
 
   /* Codes */
-  code {
-    font-family: monospace;
+  // inline codes
+  code:not(pre *) {
+    font-family: var(--monospace-font);
     font-size: 0.9em;
-    line-height: 1.4;
     color: var(--primary-color);
     background-color: var(--details-background);
     /* Prevent adjustments of font size after orientation changes in iOS.
     See https://github.com/edwardtufte/tufte-css/issues/81#issuecomment-261953409 */
     -webkit-text-size-adjust: 100%;
   }
-
-  pre {
-    display: block;
+  // code blocks
+  .code-container {
     margin: 1.4rem 0;
+    
     overflow-x: auto;
     overflow-y: hidden;
-
-    background: var(--details-background);
-
-    & > code {
-      color: inherit;
-      padding: 1rem;
-    }
 
     &:hover,
     &:focus {
       min-width: min-content;
     }
   }
+  .code-block {    
+    min-width: min-content;
+  }
+  .code-path {
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 0 0.5rem;
+    border-radius: 0.3rem 0.3rem 0 0;
 
-  .code-block {
-    position: relative;
-
-    .code-filename {
-      position: absolute;
-      top: 0;
-      left: 0;
-
-      padding: 0 0.5rem;
-      font-style: italic;
-
-      transform: translate(0px, -100%);
-
-      border: 2px solid var(--hljs-color);
-      border-bottom: none;
-    }
-
-    .code-filename + pre {
-      margin-top: 2.8rem;
-    }
+    font-family: var(--monospace-font);
+    color: #8b949e;
+    background-color: #010203;
+    font-style: italic;
+  }
+  pre {
+    display: block;
+    padding: 1rem;
+    font-size: 0.8em;
+    border-radius: 0.3rem;
+  }
+  .code-path + .highlight pre {
+    border-radius: 0 0 0.3rem 0.3rem;
   }
 
   /* List of tags */
@@ -329,7 +324,6 @@
   }
 
   /* Other stuff */
-
   span.newthought {
     font-variant: small-caps;
   }
@@ -385,11 +379,10 @@
 
 @media screen and (max-width: $lmobile-max) {
   .content-container {
-    pre {
+    .code-container {
       &:hover,
       &:focus {
         min-width: 100%;
-        max-width: 100%;
       }
     }
 

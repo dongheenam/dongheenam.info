@@ -1,0 +1,19 @@
+build:
+  publish: public
+  command: npm run build
+
+context:
+  production:
+    environment:
+      HUGO_VERSION: 0.102.3
+      HUGO_ENABLEGITINFO: true
+
+plugins:
+  package: netlify-plugin-hugo-cache-resources
+  inputs:
+    debug: false
+
+headers:
+  for: /portfolio/*
+  values: 
+    X-Robots-Tag: noindex

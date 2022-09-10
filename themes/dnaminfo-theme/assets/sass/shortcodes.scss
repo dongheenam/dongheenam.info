@@ -78,7 +78,7 @@
   justify-content: top;
 
   .enum-title {
-    font-family: "PT Serif", serif;
+    font-family: var(--serif-font);
     font-weight: bold;
     font-style: italic;
     margin-right: 0.35rem;
@@ -105,19 +105,20 @@
 
 // Noted content
 .note {
-  font-family: "PT Serif", serif;
+  font-family: var(--serif-font);
   font-weight: bold;
   font-style: italic;
   margin-right: 0.5rem;
 }
 
 /* Shortcode - details */
-details {
+.content-container details {
   margin-bottom: 1.4rem;
 
   summary {
     color: var(--hypertext-color);
-    font-family: "PT Serif", serif;
+    font-family: var(--serif-font);
+    font-weight: bold;
     font-style: italic;
     font-size: 1.2rem;
     cursor: pointer;
@@ -143,7 +144,7 @@ details {
       margin: 1.4rem 0;
     }
 
-    code {
+    code:not(pre *) {
       background-color: var(--background-color);
     }
   }

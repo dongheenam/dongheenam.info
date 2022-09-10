@@ -141,7 +141,7 @@ Here is a bit more complicated example.
 
 {{% hbox %}}
 {{% note Example %}}
-Simplify $-a^2b \crleft( -3a^2 b c^2 \crright)^3$.
+Simplify $-a^2b \left( -3a^2 b c^2 \right)^3$.
 
 {{% note Solution %}}
 {{% mn "ex1" "tips" %}}
@@ -243,7 +243,7 @@ Multiplying one polynomial with another polynomial is very similar to multiplyin
 Expand $(a+3b)(2a-b)$.
 
 {{% note Solution %}}
-Because the distributive law $$ \crhl{A}(B+C) = \crhl{A}B + \crhl{A}C $$ also works when $A$ is a polynomial, we can apply the distributive law to our question:
+Because the distributive law $$ \hl{A}(B+C) = \hl{A}B + \hl{A}C $$ also works when $A$ is a polynomial, we can apply the distributive law to our question:
 
 \begin{align*}
 & \underline{(a+3b)}(2a-b) \cr

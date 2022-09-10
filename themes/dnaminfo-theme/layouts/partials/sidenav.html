@@ -1,4 +1,4 @@
-{{- $current_page := . }}
+{{- $current_page := . -}}
 {{ $toc_required := .Params.toc | default false }}
 {{ $menu_id := "" }}
 {{ $menu_required := and (eq .Type "docs") .Params.menu }}
@@ -6,24 +6,33 @@
   {{ range $key, $value := .Params.menu }}
     {{ $menu_id = $key }}
   {{ end }}
-{{ end -}}
+{{- end -}}
+{{/* start render */}}
 {{ if or $toc_required $menu_required }}
 <aside class="sidenav">
   {{ if $menu_required }}{{/* start of menu */}}
-  <div class="sidenav-title">Lessons</div>
-    <ul class="sidenav-menu">
-    {{ partial "menu-item" (dict 
-        "menu" $menu_id
-        "list" (index .Site.Menus $menu_id)
-        "current" $current_page) }}
-    </ul>
+  <details open id="side-menu">
+    <summary class="menu-title">Lessons</summary>
+    <div class="menu">
+      <nav>
+        <ul>
+        {{ partial "menu-item" (dict 
+            "menu" $menu_id
+            "list" (index .Site.Menus $menu_id)
+            "current" $current_page) }}
+        </ul>
+      </nav>
+    </div>
+  </details>
   {{ end }}{{/* end of menu */}}
   {{ if and $toc_required $menu_required }}<hr>{{ end }}
   {{ if $toc_required }}{{/* start of toc */}}
-  <div class="toc-title toc-title--expanded">Table of Contents</div>
-  <div class="toc toc--expanded">
-    {{ .TableOfContents }}
-  </div>
+  <details open id="toc-menu">
+    <summary class="menu-title">Table of Contents</summary>
+    <div class="menu">
+      {{ .TableOfContents }}
+    </div>
+  </details>
   {{ end }}{{/* end of toc */}}
 </aside>
 {{ end }}

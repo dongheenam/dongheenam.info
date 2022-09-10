@@ -1,13 +1,24 @@
-/* Expand mainnav for mobile */
-const mainnavButton = document.querySelector(".mainnav-hamburger");
-const mainnavMenu = document.querySelector(".mainnav-menu");
-mainnavButton.addEventListener("click", () => {
-  mainnavMenu.classList.toggle("mainnav-menu--expanded");
+/* expand and close menu */
+function toggleMenu(menuId) {
+  console.log("hello there!");
+  const $menu = document.getElementById(menuId);
+  if ($menu) {
+    element.classList.toggle("menu-title--expanded");
+  }
+}
+
+/* close side navigation in mobile mode */
+const sidenavMenu = document.getElementById("side-menu");
+window.addEventListener('DOMContentLoaded', (event) => {
+  if (sidenavMenu && window.matchMedia("(max-width: 1200px").matches) {
+    sidenavMenu.open = false;
+  }
 });
 
-/* Auto-hide navbar when scrolling down */
+/* auto-hide navbar when scrolling down */
 let lastScroll = 0;
 const mainnav = document.querySelector(".mainnav");
+const mainnavMenu = document.querySelector(".mainnav .menu");
 window.addEventListener("scroll", () => {
   const currentScroll = window.scrollY;
   if (currentScroll <= 0) {
@@ -21,22 +32,3 @@ window.addEventListener("scroll", () => {
   lastScroll = currentScroll;
 });
 
-/* Expand TOC */
-const tocTitle = document.querySelector(".toc-title");
-const tocMenu = document.querySelector(".toc");
-if (tocTitle) {
-  tocTitle.addEventListener("click", () => {
-    tocTitle.classList.toggle("toc-title--expanded");
-    tocMenu.classList.toggle("toc--expanded");
-  });
-}
-
-/* Expand sidebar for mobile */
-const sidenavTitle = document.querySelector(".sidenav-title");
-const sidenavMenu = document.querySelector(".sidenav-menu");
-if (sidenavTitle) {
-  sidenavTitle.addEventListener("click", () => {
-    sidenavTitle.classList.toggle("sidenav-title--expanded");
-    sidenavMenu.classList.toggle("sidenav-menu--expanded");
-  });
-}

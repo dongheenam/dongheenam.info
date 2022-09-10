@@ -33,8 +33,8 @@ $ git submodule init
 
 to attach the [Nerdamer depository](https://github.com/jiggzson/nerdamer) to `assets/js/nerdamer/`. Note that we are putting the files under the Assets folder, not the Static folder, because you would want to minify the files first with [Hugo Pipes](https://gohugo.io/hugo-pipes/minification/).{{% sn minify %}}The library is delivered without minification. You can reduce its size from 1 MB to about 500 kB by minifying the files.{{% /sn %}} Inside the folder, you will see five JavaScript files:
 
-{{% code filename="/" %}}
-```plaintext
+```text
+/
 ├───.github
 ├───archetypes
 ├───assets
@@ -51,13 +51,10 @@ to attach the [Nerdamer depository](https://github.com/jiggzson/nerdamer) to `as
 ├───static
 └───themes
 ```
-{{% /code %}}
-
 
 `nerdamer.core.js` contains the core functionality of Nerdamer, and the four other 'add-ons' provide some extra features (the full list of functions each add-on provides on [the documentation page](https://nerdamer.com/documentation.html)). Create a partial that minifies and loads the necessary files:
 
-{{% code filename="layouts/partials/nerdamer.html" %}}
-```golang
+```html {path="layouts/partials/nerdamer.html"}
 {{- $nerdamer_loc := "js/nerdamer" -}}
 {{- $nerdamer_files := slice "nerdamer.core.js" "Algebra.js" "Calculus.js" "Extra.js" "Solve.js" -}}
 {{- range $nerdamer_files }}
@@ -65,19 +62,17 @@ to attach the [Nerdamer depository](https://github.com/jiggzson/nerdamer) to `as
 <script src="{{ $minified_js.Permalink }}"></script>
 {{- end }}
 ```
-{{% /code %}}
 
 and attach it to the site's head:
 
-{{% code filename="layouts/_default/baseof.html" %}}
-```html
+```html {path="layouts/_default/baseof.html"}
 <head>
-  ...
+  <!-- ...rest of head -->
+
   {{- if .Params.nerdamer -}}
     {{ partial "nerdamer" . }}
   {{- end -}}
 </head>
 ```
-{{% /code %}}
 
 If you want to load Nerdamer in a specific page, simply set `nerdamer: true` in the page's YAML.

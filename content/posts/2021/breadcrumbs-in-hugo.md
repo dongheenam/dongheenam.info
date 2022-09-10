@@ -27,57 +27,77 @@ While Hugo does not have built-in support for breadcrumbs, making one from scrat
 
 A Hugo page has a `.Parent` variable, and it returns the parent section of the page. So, for example, the `.Parent` of this post would be `/posts/`. The official [Hugo documentation](https://gohugo.io/content-management/sections/#example-breadcrumb-navigation) provides an excellent partial code that shows the breadcrumb navigation using a recursive method:
 
-{{% code filename="layouts/partials/breadcrumb.html" %}}
-```golang
+```html {path="layouts/partials/breadcrumb.html"}
 <ul class="breadcrumb">
   {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
 </ul>
 
 {{ define "breadcrumbnav" }}
   {{ if .p1.Parent }}
-    {{ template "breadcrumbnav" (dict "p1" .p1.Parent "p2" .p2 )  }}
+    {{ template "breadcrumbnav" (dict "p1" .p1.Parent "p2" .p2 )}}
   {{ else if not .p1.IsHome }}
-    {{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 )  }}
+    {{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 )}}
   {{ end }}
   <li{{ if eq .p1 .p2 }} class="active"{{ end }}>
     <a href="{{ .p1.RelPermalink }}">{{ .p1.Title }}</a>
   </li>
 {{ end }}
 ```
-{{% /code %}}
-
 
 {{% details title="Explanation" %}}
 
-
-
-```golang
-<ol class="breadcrumb">
+```html {hl_lines="1-3"}
+<ul class="breadcrumb">
   {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
-</ol>
+</ul>
+
+{{ define "breadcrumbnav" }}
+  {{ if .p1.Parent }}
+    {{ template "breadcrumbnav" (dict "p1" .p1.Parent "p2" .p2 )}}
+  {{ else if not .p1.IsHome }}
+    {{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 )}}
+  {{ end }}
+  <li{{ if eq .p1 .p2 }} class="active"{{ end }}>
+    <a href="{{ .p1.RelPermalink }}">{{ .p1.Title }}</a>
+  </li>
+{{ end }}
 ```
 
 First, it sets up an ordered list and calls a `breadcrumbnav` template with two variables, `p1` and `p2`, both set up to be the current page (`.`). The rest of the code is the definition of this template. Because of how it is set up, we will look at the bottom of the template first.
 
-```golang
+```html {hl_lines="11-13"}
+<ul class="breadcrumb">
+  {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
+</ul>
+
 {{ define "breadcrumbnav" }}
-  ...
+  {{ if .p1.Parent }}
+    {{ template "breadcrumbnav" (dict "p1" .p1.Parent "p2" .p2 )}}
+  {{ else if not .p1.IsHome }}
+    {{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 )}}
+  {{ end }}
   <li{{ if eq .p1 .p2 }} class="active"{{ end }}>
-    <a href="{{ .p1.Permalink }}">{{ .p1.Title }}</a>
+    <a href="{{ .p1.RelPermalink }}">{{ .p1.Title }}</a>
   </li>
 {{ end }}
 ```
 
 The *last string* the template prints out is the `<li>` item with the title of `p1` (which equals the current page) and its link. Because `p1` and `p2` are both `.`, the list item has the `active` class.
 
-```golang
+```html {hl_lines="6-10"}
+<ul class="breadcrumb">
+  {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
+</ul>
+
 {{ define "breadcrumbnav" }}
   {{ if .p1.Parent }}
-    {{ template "breadcrumbnav" (dict "p1" .p1.Parent "p2" .p2 )  }}
+    {{ template "breadcrumbnav" (dict "p1" .p1.Parent "p2" .p2 )}}
   {{ else if not .p1.IsHome }}
-    {{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 )  }}
+    {{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 )}}
   {{ end }}
-  ...
+  <li{{ if eq .p1 .p2 }} class="active"{{ end }}>
+    <a href="{{ .p1.RelPermalink }}">{{ .p1.Title }}</a>
+  </li>
 {{ end }}
 ```
 
@@ -87,21 +107,18 @@ The first half of the code checks if `p1` has a section above, either a parent s
 
 Adding this partial to the `<body>` of this page (`/posts/breadcrumb-navigation-in-hugo/`)
 
-{{% code filename="layouts/posts/single.html" %}}
-```html
+```html {path="layouts/posts/single.html"}
 <body>
   {{ partial "breadcrumb" . }}
 
-  ...
+  <!-- ...rest of body -->
 </body>
 ```
-{{% /code %}}
 
 
 and compiling the site gives the following HTML code:
 
-{{% code filename="public/posts/breadcrumb-navigation-in-hugo.html" %}}
-```html
+```html {path="public/posts/breadcrumb-navigation-in-hugo.html"}
 <body>
   <ol class="breadcrumb">
     <li>
@@ -116,10 +133,9 @@ and compiling the site gives the following HTML code:
     </li>
   </ol>
   
-  ...
+  <!-- ...rest of body -->
 </body>
 ```
-{{% /code %}}
 
 
 Note that [my homepage](/) does have a title of *Welcome!*, so I will need to do some fixes on that if I would use this code.
@@ -129,9 +145,7 @@ Note that [my homepage](/) does have a title of *Welcome!*, so I will need to do
 
 Another method of creating a breadcrumb is to use the URL because it will reflect on the section structure of the pages. Here is an example:
 
-
-{{% code filename="layouts/partials/breadcrumb.html" %}}
-```golang
+```html {path="layouts/partials/breadcrumb.html"}
 <ol class="breadcrumb">
   <li><a href="/">Home</a></li>
   {{ $rellink := "" }}
@@ -143,41 +157,50 @@ Another method of creating a breadcrumb is to use the URL because it will reflec
   {{ end }}
 </ol>
 ```
-{{% /code %}}
 
 
 {{% details title="Explanation" %}}
 
-
-```golang
+```html {hl_lines="2"}
 <ol class="breadcrumb">
   <li><a href="/">Home</a></li>
-  ...
+  {{ $rellink := "" }}
+  {{ range (split .RelPermalink "/") }}
+    {{ if gt (len . ) 0 -}}
+      {{ $rellink = printf "%s/%s" $rellink . }}
+      <li><a href="{{ $rellink }}">{{ humanize . }}</a></li>
+    {{ end }}
+  {{ end }}
 </ol>
 ```
 
 It first defines an ordered list like before, and the first item in the list is the homepage.
 
-```golang
+```html {hl_lines="3-4 9"}
 <ol class="breadcrumb">
-  ...
+  <li><a href="/">Home</a></li>
   {{ $rellink := "" }}
   {{ range (split .RelPermalink "/") }}
-    ...
+    {{ if gt (len . ) 0 -}}
+      {{ $rellink = printf "%s/%s" $rellink . }}
+      <li><a href="{{ $rellink }}">{{ humanize . }}</a></li>
+    {{ end }}
   {{ end }}
 </ol>
 ```
 
 The `.RelPermalink` refers to the relative link to the page, so `/posts/breadcrumb-navigation-in-hugo/`. If we split it by slashes, we will get a `slice` that looks like `["", "posts", "breadcrumb-navigation-in-hugo", ""]`. We will loop over these strings to build up the breadcrumb.
 
-```golang
+```html {hl_lines="5-8"}
 <ol class="breadcrumb">
-  ...
+  <li><a href="/">Home</a></li>
+  {{ $rellink := "" }}
+  {{ range (split .RelPermalink "/") }}
     {{ if gt (len . ) 0 -}}
       {{ $rellink = printf "%s/%s" $rellink . }}
       <li><a href="{{ $rellink }}">{{ humanize . }}</a></li>
     {{ end }}
-  ...
+  {{ end }}
 </ol>
 ```
 
@@ -187,8 +210,7 @@ First, we will get rid of the empty strings using the `if` statement.{{% sn 186 
 
 Below is the HTML for the breadcrumb of this page:
 
-{{% code filename="public/posts/breadcrumb-navigation-in-hugo.html" %}}
-```html
+```html {path="public/posts/breadcrumb-navigation-in-hugo.html"}
 <body>
   <ol class="breadcrumb">
     <li>
@@ -203,10 +225,9 @@ Below is the HTML for the breadcrumb of this page:
     </li>
   </ol>
   
-  ...
+  <!-- ...rest of body -->
 </body>
 ```
-{{% /code %}}
 
 
 The end result may not look very different from the first method, if the slugs of posts and sections are pretty much identical to the titles. Slugs are often much shorter in my blog and this code will make the breadcrumbs much more compact.
@@ -216,8 +237,7 @@ The end result may not look very different from the first method, if the slugs o
 
 Finally, we can put the lists on a single line.
 
-{{% code filename="assets/css/main.css" %}}
-```css
+```css {path="assets/css/main.css"}
 .breadcrumb {
   list-style: none;
 
@@ -236,7 +256,5 @@ Finally, we can put the lists on a single line.
   padding: 0.3rem;
 }
 ```
-{{% /code %}}
-
 
 Setting `<ol>` as a flexbox enables the list items to naturally wrap to the next line if there is not enough space.

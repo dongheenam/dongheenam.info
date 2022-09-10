@@ -61,3 +61,12 @@ html {
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
       url("../fonts/pt-serif-v17-latin-700italic.woff") format("woff");
 }
+
+html {
+  --sans-font: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+  Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
+  --serif-font: "PT Serif", serif;
+  --monospace-font: monospace;
+
+}

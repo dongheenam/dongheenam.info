@@ -58,8 +58,7 @@ and build the document using this information.
 
 We will first build the dictionary, which we call `$pages_by_letters`, where the keys are the letters of the alphabet, and the values are the list of tags that start with that letter. Here is the full code:
 
-{{% code filename="layouts/_default/terms.html" %}}
-```golang
+```html {linenos=inline, path="layouts/_default/terms.html"}
 {{ define "main" }}
 
 {{- $letters := split "ABCDEFGHIJKLMNOPQRSTUVWXYZ" "" -}}
@@ -80,47 +79,24 @@ We will first build the dictionary, which we call `$pages_by_letters`, where the
   {{- $pages_by_letters = merge $pages_by_letters (dict $first_letter $new_list) -}}
 {{ end }}
 
-...
+<!-- ...rest of page -->
 
 {{ end }}
 ```
-{{% /code %}}
 
 
 {{% details title="Explanation" %}}
 
-
-
-```golang
+```html {hl_lines="1-3"}
 {{- $letters := split "ABCDEFGHIJKLMNOPQRSTUVWXYZ" "" -}}
 {{- $pages := .Pages.ByTitle -}}
 {{- $pages_by_letters := dict -}}
-{{ range $pages }}
-  ...
-{{ end }}
-```
-
-Let's first define some useful variables. Here, `$letters` is the slice (list) of the English alphabet, and `$pages` is the slice of all terms, sorted alphabetically. Then, we will loop over `$pages` to look at individual terms.
-
-```golang
-...
 {{ range $pages }}
   {{- $page := . -}}
   {{- $first_letter := upper ( substr $page.Name 0 1 ) -}}
   {{- if not (in $letters $first_letter) }}
     {{ $first_letter = "#" }}
   {{ end }}
-  ...
-{{ end }}
-...
-```
-
-Because we need to [change the scope](https://www.regisphilibert.com/blog/2018/02/hugo-the-scope-the-context-and-the-dot/), we first need to define `$page`. Then, `$first_letter`, as the name suggests, is the (capitalised) first letter of the name of `$page`. A term can start with numbers or non-alphabetic letters, so we need to classify them separately. 
-
-```golang
-...
-{{ range $pages }}
-  ...
   {{- $new_list := slice -}}
   {{ with index $pages_by_letters $first_letter }}
     {{- $new_list = . | append $page -}}
@@ -129,7 +105,50 @@ Because we need to [change the scope](https://www.regisphilibert.com/blog/2018/0
   {{ end }}
   {{- $pages_by_letters = merge $pages_by_letters (dict $first_letter $new_list) -}}
 {{ end }}
-...
+```
+
+Let's first define some useful variables. Here, `$letters` is the slice (list) of the English alphabet, and `$pages` is the slice of all terms, sorted alphabetically. Then, we will loop over `$pages` to look at individual terms.
+
+```html {hl_lines="4-9 17"}
+{{- $letters := split "ABCDEFGHIJKLMNOPQRSTUVWXYZ" "" -}}
+{{- $pages := .Pages.ByTitle -}}
+{{- $pages_by_letters := dict -}}
+{{ range $pages }}
+  {{- $page := . -}}
+  {{- $first_letter := upper ( substr $page.Name 0 1 ) -}}
+  {{- if not (in $letters $first_letter) }}
+    {{ $first_letter = "#" }}
+  {{ end }}
+  {{- $new_list := slice -}}
+  {{ with index $pages_by_letters $first_letter }}
+    {{- $new_list = . | append $page -}}
+  {{ else }}
+    {{- $new_list = slice $page -}}
+  {{ end }}
+  {{- $pages_by_letters = merge $pages_by_letters (dict $first_letter $new_list) -}}
+{{ end }}
+```
+
+Because we need to [change the scope](https://www.regisphilibert.com/blog/2018/02/hugo-the-scope-the-context-and-the-dot/), we first need to define `$page`. Then, `$first_letter`, as the name suggests, is the (capitalised) first letter of the name of `$page`. A term can start with numbers or non-alphabetic letters, so we need to classify them separately. 
+
+```html {hl_lines="10-16"}
+{{- $letters := split "ABCDEFGHIJKLMNOPQRSTUVWXYZ" "" -}}
+{{- $pages := .Pages.ByTitle -}}
+{{- $pages_by_letters := dict -}}
+{{ range $pages }}
+  {{- $page := . -}}
+  {{- $first_letter := upper ( substr $page.Name 0 1 ) -}}
+  {{- if not (in $letters $first_letter) }}
+    {{ $first_letter = "#" }}
+  {{ end }}
+  {{- $new_list := slice -}}
+  {{ with index $pages_by_letters $first_letter }}
+    {{- $new_list = . | append $page -}}
+  {{ else }}
+    {{- $new_list = slice $page -}}
+  {{ end }}
+  {{- $pages_by_letters = merge $pages_by_letters (dict $first_letter $new_list) -}}
+{{ end }}
 ```
 
 Then, we will try to search the dictionary with `$first_letter`. If there is an entry, we can attend the current `$page` to the entry. Otherwise, we need to make a new slice. The loop ends after we update the dictionary.
@@ -141,9 +160,8 @@ Then, we will try to search the dictionary with `$first_letter`. If there is an 
 
 We can then make the list from the dictionary. Since we will make use of the [CSS grid](https://css-tricks.com/snippets/css/complete-guide-grid/), the keys can just sit inside a `<span>`.
 
-{{% code filename="layouts/_default/terms.html" %}}
-```golang
-...
+```html {path="layouts/_default/terms.html"}
+<!-- ...rest of page -->
 
 <section class="section-pages-tag">
 {{ range $key, $items := $pages_by_letters }}
@@ -158,18 +176,15 @@ We can then make the list from the dictionary. Since we will make use of the [CS
 {{ end }}
 </section>
 ```
-{{% /code %}}
-
 
 `{{ len .Pages }}` calculates the number of posts for a single tag.
 
 
 ### CSS
 
-Finally, we need to put them in places. 
+Finally, we can put everything together using (S)CSS.
 
-{{% code filename="assets/scss/main.scss" %}}
-```scss
+```scss {path="assets/scss/main.scss"}
 .section-pages-tag {
   display: grid;
   grid-template-columns: 3rem auto;
@@ -192,5 +207,4 @@ Finally, we need to put them in places.
   }
 }
 ```
-{{% /code %}}
 

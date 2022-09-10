@@ -1,0 +1,24 @@
+{{/* 
+  custom code highlighting hook for filename support 
+  Usage: 
+    ```python {path="/lib/code.py"}
+    print("hello, world!")
+    ```
+*/}}
+{{/* parse options */}}
+{{- $lang := .Type | default "text" -}}
+{{- if eq (lower $lang) "html" -}}
+  {{ $lang = "go-html-template" -}}
+{{- else if not (transform.CanHighlight $lang) -}}
+  {{- $lang = "text" -}}
+{{- end -}}
+
+{{/* render codeblock */}}
+<div class="code-container">
+  <div class="code-block">
+  {{- with (index .Attributes "path") -}}
+    <div class="code-path">&gt; {{ . }}</div>
+  {{- end -}}
+  {{- highlight .Inner $lang .Options -}}
+  </div>
+</div>

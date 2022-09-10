@@ -8,15 +8,14 @@
 {{- $list := .list }}
 {{- $current_page := .current }}
 {{ range $list }}
+  {{- $is_current := $current_page.IsMenuCurrent $menu_id . -}}
   {{/* top items */}}
-  <li{{ if $current_page.IsMenuCurrent $menu_id . }} class="current"{{ end }}>
+  <li>
   {{- if .URL -}}
-    <a href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+    <a{{ if $is_current }} class="current"{{ end }} href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
   {{- else -}}
-    {{ .Name }}
+    <span{{ if $is_current }} class="current"{{ end }}>{{ .Name }}</span>
   {{- end -}}
-  </li>
-
   {{/* child items */}}
   {{- if and 
       .HasChildren
@@ -27,4 +26,5 @@
       {{ partial "menu-item" (dict "menu" $menu_id "list" .Children "current" $current_page) }}
       </ul>
   {{ end }}
+  </li>
 {{ end }}{{/* end range */}}

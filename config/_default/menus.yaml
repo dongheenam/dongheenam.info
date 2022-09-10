@@ -1,0 +1,13 @@
+main:
+  - name: Posts
+    url: /posts/
+    weight: 10
+  - name: Courses
+    url: /courses/
+    weight: 20
+  - name: Tags
+    url: /tags/
+    weight: 30
+  - name: Portfolio
+    url: /portfolio/
+    weight: 40

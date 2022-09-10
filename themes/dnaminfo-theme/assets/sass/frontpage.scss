@@ -13,7 +13,7 @@
     background-color: rgb(178, 161, 118);
     padding: 9rem 15% 3rem 15%;
 
-    font-family: "PT Serif", serif;
+    font-family: var(--serif-font);
     font-weight: bold;
     font-size: 4rem;
     color: #fffff8;
@@ -34,7 +34,7 @@
       font-size: 1.4rem;
 
       h2 {
-        font-family: "PT Serif", serif;
+        font-family: var(--serif-font);
         padding-top: 0.5em;
         margin-bottom: 0.5em;
 
