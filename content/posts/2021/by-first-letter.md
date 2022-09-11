@@ -58,7 +58,7 @@ and build the document using this information.
 
 We will first build the dictionary, which we call `$pages_by_letters`, where the keys are the letters of the alphabet, and the values are the list of tags that start with that letter. Here is the full code:
 
-```html {linenos=inline, path="layouts/_default/terms.html"}
+```html {path="layouts/_default/terms.html"}
 {{ define "main" }}
 
 {{- $letters := split "ABCDEFGHIJKLMNOPQRSTUVWXYZ" "" -}}

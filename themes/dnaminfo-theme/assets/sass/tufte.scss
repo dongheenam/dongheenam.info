@@ -232,6 +232,7 @@
   // code blocks
   .code-container {
     margin: 1.4rem 0;
+    border-radius: 0.3rem;
     
     overflow-x: auto;
     overflow-y: hidden;
@@ -252,7 +253,6 @@
     font-size: 0.9em;
     font-weight: bold;
     padding: 0 0.5rem;
-    border-radius: 0.3rem 0.3rem 0 0;
 
     font-family: var(--monospace-font);
     color: #8b949e;
@@ -263,10 +263,6 @@
     display: block;
     padding: 1rem;
     font-size: 0.8em;
-    border-radius: 0.3rem;
-  }
-  .code-path + .highlight pre {
-    border-radius: 0 0 0.3rem 0.3rem;
   }
 
   /* List of tags */
