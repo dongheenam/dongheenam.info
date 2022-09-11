@@ -97,11 +97,6 @@
   top: -3rem;
 }
 
-/* add a border for the dark theme to make it look distinct from body */
-.dark-theme .mainnav {
-  border-bottom: 2px solid var(--text-color);
-}
-
 @media screen and (max-width: 1200px) {
   .mainnav {
     padding: 0 8%;
@@ -236,17 +231,6 @@ aside.sidenav {
       font-size: 1.3rem;
       margin-top: 0.5rem;
     }
-
-    // .sidenav-title {
-    //   pointer-events: auto;
-    //   cursor: pointer;
-    // }
-    // .sidenav-title:before {
-    //   @include triangle-right;
-    // }
-    // .sidenav-title--expanded:before {
-    //   @include triangle-bottom;
-    // }
 
     hr {
       margin: 0;
