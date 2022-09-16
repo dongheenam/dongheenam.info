@@ -27,16 +27,20 @@
     margin-top: 0;
   }
 
-  // box for Desmos
-  &-desmos {
-    @extend .box;
-    padding: 0;
-    margin-bottom: 3rem;
-    border: none;
-  }
-
   .box-desmos {
     width: 100%;
+  }
+}
+// box for Desmos
+.box-desmos {
+  @extend .box;
+  padding: 0;
+  margin-bottom: 3rem;
+  border: none;
+  width: 100%;
+
+  .dark-theme & {
+    filter: invert(0.9);
   }
 }
 
@@ -147,5 +151,62 @@
     code:not(pre *) {
       background-color: var(--background-color);
     }
+  }
+}
+
+// tabs
+.tab-container {
+  border: 1px solid var(--hr-color);
+  padding: 0.2rem 0.6rem;
+  margin: 1.4rem 0;
+}
+
+.tab-nav {
+  display: flex;
+  border-bottom: 1px solid var(--hr-color);
+  font-size: 0.9em;
+}
+.tab-button {
+  padding: 0 0.5rem;
+  border: none;
+  border-top-left-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
+  
+  background: transparent;
+  color: inherit;
+  
+  cursor: pointer;
+
+  &:hover {
+    background: var(--hr-color);
+  }
+  &:active {
+    background: var(--hr-color);
+    opacity: 0.9;
+  }
+  &.active {
+    color: var(--primary-color);
+    font-weight: bold;
+  }
+}
+
+.tab-item {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+
+  & > *:first-child {
+  margin-top: 0.2rem;
+  }
+  & > *:last-child {
+  margin-bottom: 0.6rem;
+  }
+
+  // remove expanding for code blocks
+  .code-container:hover,
+  .code-container:focus {
+    min-width: 100%;
   }
 }

@@ -1,0 +1,59 @@
+{{/* 
+  Usage:
+  {{% tabs groupId="tab-group-id" %}}
+    {{% tab name="Tab 1" %}}
+      Content 1
+    {{% /tab %}}
+    {{% tab name="Tab 2" %}}
+      Content 2
+    {{% /tab %}}
+    ...
+  {{% /tabs %}}
+  
+  inspired by https://github.com/matcornic/hugo-theme-learn 
+*/}}
+
+{{/* script */}}
+{{- if not (.Page.Scratch.Get "next-tabs") -}}
+<script>
+  function toggleActive(element, condition) {
+    if (condition) {
+      element.classList.add("active");
+    } else {
+      element.classList.remove("active");
+    }
+  }
+  function switchTab(groupId, name) {
+    const tabItems = document.querySelectorAll(`.tab-item[data-tab-group=${groupId}]`);
+    const tabButtons = document.querySelectorAll(`.tab-button[data-tab-group=${groupId}]`);
+    tabItems.forEach((item) => toggleActive(item, item.dataset.tabItem === name));
+    tabButtons.forEach((item) => toggleActive(item, item.dataset.tabItem === name));
+  }
+</script>
+{{ .Page.Scratch.Set "next-tabs" "true" }}
+{{- end -}}
+{{/* HTML */}}
+{{- with .Inner }}{{ end -}}
+{{- $groupId := .Get "groupId" | default "default" -}}
+<div class="tab-container">
+  <div class="tab-nav">
+  {{- range $idx, $tab := .Scratch.Get "tabs" -}}
+    <button
+      data-tab-item="{{ .name }}"
+      data-tab-group="{{ $groupId }}"
+      class='tab-button {{ cond (eq $idx 0) "active" "" }}'
+      onclick="switchTab('{{ $groupId }}','{{ .name }}')"
+    >{{ .name }}</button>
+  {{- end -}}
+  </div>
+  <div class="tab-content">
+  {{- range $idx, $tab := .Scratch.Get "tabs" -}}
+    <div 
+      data-tab-item="{{ .name }}"
+      data-tab-group="{{ $groupId }}"
+      class='tab-item {{ cond (eq $idx 0) "active" "" }}'>
+      {{ .content }}
+    </div>
+  {{- end -}}
+  </div>
+</div>

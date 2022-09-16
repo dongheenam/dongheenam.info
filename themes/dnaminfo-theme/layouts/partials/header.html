@@ -1,15 +1,15 @@
 <header class="top-navigation">
   <nav class="mainnav">
     <div class="logo"><a href="/">donghee<span class="logo-colored">NAM</span></a></div>
-    <ul class="menu" id="mainmav-menu">
+    <ul class="main-menu" id="mainmav-menu">
       {{ range .Site.Menus.main }}
       <li><a href="{{ .URL }}">{{ .Name }}</a></li>
       {{ end }}
     </ul>
-    <div class="icons">
-      <a href="/search"><div class="search">search</div></a>
-      <div class="toggle"></div>
-      <div class="hamburger" onclick="toggleMenu('mainmav-menu')"></div>
+    <div class="main-menu-icons">
+      <a href="/search"><div class="main-menu-search">search</div></a>
+      <div id="theme-toggle"></div>
+      <div class="main-menu-hamburger" onclick="toggleMenu('mainmav-menu')"></div>
     </div>
   </nav>
 </header>

@@ -2,7 +2,7 @@
 
 /* site-wide configurations */
 /* reference: https://www.joshwcomeau.com/css/custom-css-reset/ */
-* {
+*, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -26,7 +26,6 @@ html {
     --hr-color: #ccc;
     --details-background: #f3f3e6;
 
-    
   }
 
   &.dark-theme {
@@ -41,9 +40,6 @@ html {
       filter: brightness(0.8) contrast(1.2);
     }
 
-    div.box-desmos {
-      filter: invert(0.9);
-    }
   }
 }
 

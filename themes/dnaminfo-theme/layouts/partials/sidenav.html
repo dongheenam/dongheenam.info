@@ -10,9 +10,18 @@
 {{/* start render */}}
 {{ if or $toc_required $menu_required }}
 <aside class="sidenav">
+  {{ if $toc_required }}{{/* start of toc */}}
+  <details open id="toc-menu">
+    <summary class="side-menu-title">Table of Contents</summary>
+    <div class="side-menu">
+      {{ .TableOfContents }}
+    </div>
+  </details>
+  {{ end }}{{/* end of toc */}}
+  {{ if and $toc_required $menu_required }}<hr>{{ end }}
   {{ if $menu_required }}{{/* start of menu */}}
   <details open id="side-menu">
-    <summary class="menu-title">Lessons</summary>
+    <summary class="side-menu-title">Lessons</summary>
     <div class="menu">
       <nav>
         <ul>
@@ -24,15 +33,6 @@
       </nav>
     </div>
   </details>
-  {{ end }}{{/* end of menu */}}
-  {{ if and $toc_required $menu_required }}<hr>{{ end }}
-  {{ if $toc_required }}{{/* start of toc */}}
-  <details open id="toc-menu">
-    <summary class="menu-title">Table of Contents</summary>
-    <div class="menu">
-      {{ .TableOfContents }}
-    </div>
-  </details>
-  {{ end }}{{/* end of toc */}}
+  {{ end }}
 </aside>
 {{ end }}
