@@ -4,7 +4,7 @@ description: "how to make a tabbed view of contents in Hugo"
 date: 2022-09-17 13:05:10.589 +1000
 
 toc: true
-draft: true
+draft: false
 
 tags:
   - Hugo
