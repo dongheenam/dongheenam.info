@@ -1,14 +1,15 @@
 {{- $current_page := . -}}
-{{ $toc_required := .Params.toc | default false }}
-{{ $menu_id := "" }}
-{{ $menu_required := and (eq .Type "docs") .Params.menu }}
-{{ if $menu_required }}
-  {{ range $key, $value := .Params.menu }}
+{{- $toc_required := .Params.toc | default false -}}
+{{- $menu_id := "" -}}
+{{- $menu_required := and (eq .Type "docs") .Params.menu -}}
+{{- $related_pages := .Site.RegularPages.Related . | first 5 -}}
+{{ if $menu_required -}}
+  {{- range $key, $value := .Params.menu -}}
     {{ $menu_id = $key }}
-  {{ end }}
+  {{- end -}}
 {{- end -}}
 {{/* start render */}}
-{{ if or $toc_required $menu_required }}
+{{- if or $toc_required $menu_required -}}
 <aside class="sidenav">
   {{ if $toc_required }}{{/* start of toc */}}
   <details open id="toc-menu">
@@ -18,7 +19,7 @@
     </div>
   </details>
   {{ end }}{{/* end of toc */}}
-  {{ if and $toc_required $menu_required }}<hr>{{ end }}
+  {{ if and $toc_required (or $menu_required $related_pages) }}<hr>{{ end }}
   {{ if $menu_required }}{{/* start of menu */}}
   <details open id="side-menu">
     <summary class="side-menu-title">Lessons</summary>
@@ -33,6 +34,21 @@
       </nav>
     </div>
   </details>
+  {{ else }}{{/* start of see also */}}
+  {{ with $related_pages }}
+  <details open id="side-menu">
+    <summary class="side-menu-title">See Also</summary>
+    <div class="side-menu">
+      <nav>
+        <ul>
+        {{ range . }}
+          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        {{ end }}
+        </ul>
+      </nav>
+    </div>
+  </details>
+  {{ end }}
   {{ end }}
 </aside>
 {{ end }}

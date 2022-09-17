@@ -18,7 +18,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 /* auto-hide navbar when scrolling down */
 let lastScroll = 0;
 const mainnav = document.querySelector(".mainnav");
-const mainnavMenu = document.querySelector(".mainnav .menu");
+const mainnavMenu = document.querySelector(".main-menu");
 window.addEventListener("scroll", () => {
   const currentScroll = window.scrollY;
   if (currentScroll <= 0) {
