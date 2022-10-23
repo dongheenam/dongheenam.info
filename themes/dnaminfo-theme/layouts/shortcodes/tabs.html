@@ -39,7 +39,7 @@
 {{/* HTML */}}
 {{- with .Inner }}{{ end -}}
 {{- $groupId := .Get "id" | default "default" -}}
-<div class="tab-container box">
+<div class="tab-container">
   <div class="tab-nav">
   {{- range $idx, $tab := .Scratch.Get "tabs" -}}
     <button

@@ -1,12 +1,18 @@
 @import "variables";
 
+$base-font-size: 1.3rem;
+$base-line-height: 1.5;
+$leading: 1.5 * $base-font-size;
+$scale: 1.414;
+
+
 .content-container {
   grid-area: content;
   min-width: 0;
 
   font-family: var(--sans-font);
-  font-size: 1.3rem;
-  line-height: 1.4;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
 
   counter-reset: sidenote-counter;
 
@@ -16,10 +22,10 @@
     
     font-family: var(--serif-font);
     font-weight: 400;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    font-size: 2.7rem;
-    line-height: 1;
+    margin-top: $leading;
+    margin-bottom: 0;
+    font-size: 2 * $scale * $base-font-size;
+    line-height: 2 * $leading;
     letter-spacing: -0.02em;
   }
 
@@ -27,11 +33,9 @@
     font-family: var(--serif-font);
     font-style: italic;
     font-weight: 400;
-    font-size: 2.1rem;
-    padding-top: 2rem;
-    margin-top: 2rem;
-    margin-bottom: 1.3rem;
-    line-height: 1;
+    font-size: 1.414 * $scale * $base-font-size;
+    margin-top: 1.414 * $scale * $leading;
+    line-height: 1.414 * $leading;
     letter-spacing: -0.01em;
   }
 
@@ -40,10 +44,9 @@
     font-style: italic;
     text-decoration: underline;
     font-weight: 400;
-    font-size: 1.7rem;
-    margin-top: 2.4rem;
-    margin-bottom: 1.4rem;
-    line-height: 1;
+    font-size: $scale * $base-font-size;
+    margin-top: $scale * $leading;
+    line-height: $leading;
     letter-spacing: -0.01em;
   }
 
@@ -69,7 +72,7 @@
   }
 
   p {
-    margin: 1.4rem 0;
+    margin: $leading 0;
     vertical-align: baseline;
 
     &.subtitle {
@@ -225,8 +228,8 @@
     font-size: 0.9em;
     color: var(--primary-color);
     background-color: var(--details-background);
-    /* Prevent adjustments of font size after orientation changes in iOS.
-    See https://github.com/edwardtufte/tufte-css/issues/81#issuecomment-261953409 */
+    // Prevent adjustments of font size after orientation changes in iOS.
+    // See https://github.com/edwardtufte/tufte-css/issues/81#issuecomment-261953409
     -webkit-text-size-adjust: 100%;
   }
   // code blocks
@@ -264,6 +267,34 @@
     padding: 1rem;
     font-size: 0.8em;
   }
+  // fixing padding issues for tabled line numbers
+  .chroma:has(.lntable) {
+    padding: 1rem 0;
+
+    pre {
+    padding: 0;
+    }
+  }
+  .chroma .lntable {
+    // make table width equal to the container to fix the highlighted lines
+    width: 100%;
+    display: table;
+    .line {
+      padding-right: 1rem;
+    }
+    .lntd:first-child {
+      width: 1%;
+    }
+
+    // remove table border defined below
+    thead, tbody {
+      border: none;
+    }
+
+  }
+
+
+  
   
   /* List of tags */
   .tags {

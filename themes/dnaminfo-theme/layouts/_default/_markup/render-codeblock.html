@@ -12,13 +12,17 @@
 {{- else if not (transform.CanHighlight $lang) -}}
   {{- $lang = "text" -}}
 {{- end -}}
-
+{{- $options := .Options -}}
+{{- if index .Attributes "path" -}}
+  {{/* if path is specified then automatically add line numbers */}}
+  {{- $options = merge (dict "linenos" "table") $options -}}
+{{- end -}}
 {{/* render codeblock */}}
 <div class="code-container">
   <div class="code-block">
   {{- with (index .Attributes "path") -}}
     <div class="code-path">&gt; {{ . }}</div>
   {{- end -}}
-  {{- highlight .Inner $lang .Options -}}
+  {{- highlight .Inner $lang $options -}}
   </div>
 </div>
