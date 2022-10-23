@@ -23,7 +23,7 @@ $scale: 1.414;
     font-family: var(--serif-font);
     font-weight: 400;
     margin-top: $leading;
-    margin-bottom: 0;
+    margin-bottom: $leading;
     font-size: 2 * $scale * $base-font-size;
     line-height: 2 * $leading;
     letter-spacing: -0.02em;
@@ -35,6 +35,7 @@ $scale: 1.414;
     font-weight: 400;
     font-size: 1.414 * $scale * $base-font-size;
     margin-top: 1.414 * $scale * $leading;
+    margin-bottom: $leading;
     line-height: 1.414 * $leading;
     letter-spacing: -0.01em;
   }
@@ -46,6 +47,7 @@ $scale: 1.414;
     font-weight: 400;
     font-size: $scale * $base-font-size;
     margin-top: $scale * $leading;
+    margin-bottom: $leading;
     line-height: $leading;
     letter-spacing: -0.01em;
   }
