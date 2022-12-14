@@ -9,7 +9,6 @@ draft: false
 
 tags:
   - Hugo
-  - Hugo Render Hooks
 
 ---
 

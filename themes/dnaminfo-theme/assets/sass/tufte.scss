@@ -224,15 +224,23 @@ $scale: 1.414;
   }
 
   /* Codes */
+  code {
+    // Prevent adjustments of font size after orientation changes in iOS.
+    // See https://github.com/edwardtufte/tufte-css/issues/81#issuecomment-261953409
+    -webkit-text-size-adjust: 100%;
+  }
   // inline codes
   code:not(pre *) {
     font-family: var(--monospace-font);
     font-size: 0.9em;
     color: var(--primary-color);
     background-color: var(--details-background);
-    // Prevent adjustments of font size after orientation changes in iOS.
-    // See https://github.com/edwardtufte/tufte-css/issues/81#issuecomment-261953409
-    -webkit-text-size-adjust: 100%;
+  }
+  h2, h3, h4, h5, h6 {
+    code {
+      color: inherit;
+      background-color: inherit;
+    }
   }
   // code blocks
   .code-container {
@@ -240,7 +248,6 @@ $scale: 1.414;
     border-radius: 0.3rem;
     
     font-size: 0.8em;
-    -webkit-text-size-adjust: 100%;
     overflow-x: auto;
     overflow-y: hidden;
 
@@ -257,7 +264,6 @@ $scale: 1.414;
     min-width: min-content;
   }
   .code-path {
-    font-size: 0.9em;
     font-weight: bold;
     padding: 0 0.5rem;
 
@@ -268,36 +274,16 @@ $scale: 1.414;
   }
   pre {
     display: block;
-    padding: 1rem;
+    padding: 0.5rem;
   }
-  // fixing padding issues for tabled line numbers
-  .chroma:has(.lntable) {
-    padding: 1rem 0;
+  // remove padding when showing line numbers
+  table pre {
+    padding: 0.5rem 0;
 
-    pre {
-    padding: 0;
-    }
-  }
-  .chroma .lntable {
-    // make table width equal to the container to fix the highlighted lines
-    width: 100%;
-    display: table;
     .line {
-      padding-right: 1rem;
+      padding-right: 0.5rem;
     }
-    .lntd:first-child {
-      width: 1%;
-    }
-
-    // remove table border defined below
-    thead, tbody {
-      border: none;
-    }
-
   }
-
-
-  
   
   /* List of tags */
   .tags {

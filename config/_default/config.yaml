@@ -22,6 +22,7 @@ markup:
       xhtml: false
   highlight:
     noClasses: false
+    style: github-dark
   
 # build settings
 timeout: 600000
