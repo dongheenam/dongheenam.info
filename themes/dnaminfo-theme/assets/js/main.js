@@ -1,9 +1,8 @@
 /* expand and close menu */
 function toggleMenu(menuId) {
-  console.log("hello there!");
   const $menu = document.getElementById(menuId);
   if ($menu) {
-    element.classList.toggle("menu-title--expanded");
+    $menu.classList.toggle("main-menu--expanded");
   }
 }
 
