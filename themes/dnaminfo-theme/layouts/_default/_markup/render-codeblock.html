@@ -21,7 +21,7 @@
 <div class="code-container">
   <div class="code-block">
   {{- with (index .Attributes "path") -}}
-    <div class="code-path">&gt; {{ . }}</div>
+    <div class="code-path"><span>&gt; {{ . }}</span></div>
   {{- end -}}
   {{- highlight .Inner $lang $options -}}
   </div>

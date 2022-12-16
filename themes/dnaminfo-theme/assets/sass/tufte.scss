@@ -265,12 +265,16 @@ $scale: 1.414;
   }
   .code-path {
     font-weight: bold;
-    padding: 0 0.5rem;
 
     font-family: var(--monospace-font);
     color: #8b949e;
     background-color: #010203;
     font-style: italic;
+
+    span {
+      position: sticky;
+      left: 0.5rem;
+    }
   }
   pre {
     display: block;
@@ -282,6 +286,17 @@ $scale: 1.414;
 
     .line {
       padding-right: 0.5rem;
+    }
+  }
+  .chroma table {
+    // make table width equal to the container to fix the highlighted lines
+    .lntd:first-child {
+      width: 1%;
+    }
+
+    // remove table border defined below
+    thead, tbody {
+      border: none;
     }
   }
   
