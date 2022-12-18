@@ -36,14 +36,13 @@ In this lesson, we will learn:
 
 These are the three laws of arithmetic that you may remember from earlier years:
 
-{{% hbox %}}
+{{< hbox title="Theorem" >}}
 
-{{% note Theorem %}}
 - *The **commutative law** tells you can swap the order of adding or multiplying.*
 - *The **associative law** tells you can group the items when adding or multiplying.*
 - *The **distributive law** tells multiplying the sum is the same as summing the product.*
 
-{{% /hbox %}}
+{{< /hbox >}}
 
 We can describe the three laws in a more mathematical way. For every polynomial $A$, $B$, and $C$,
 

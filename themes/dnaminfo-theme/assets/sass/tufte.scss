@@ -160,6 +160,11 @@ $scale: 1.414;
   a:link,
   a:visited {
     color: var(--hypertext-color);
+
+    /* code block as link */
+    &:has(code) {
+      color: var(--primary-color);
+    }
   }
 
   /* Sidenotes, margin notes */
@@ -278,7 +283,7 @@ $scale: 1.414;
   }
   pre {
     display: block;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
   }
   // remove padding when showing line numbers
   table pre {

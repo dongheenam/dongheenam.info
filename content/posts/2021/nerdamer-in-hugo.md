@@ -9,7 +9,6 @@ toc: true
 math: true
 draft: false
 highlight: true
-nerdamer: true
 
 tags:
   - JavaScript
@@ -17,6 +16,8 @@ tags:
   - Hugo
 
 ---
+
+{{% note Update %}} The [GitHub repository](https://github.com/jiggzson/nerdamer) for Nerdamer has been archived as of Nov 2022. There are a couple of alternatives you can look at, such as [math.js](https://github.com/josdejong/mathjs). This post may be still useful for those who wish to incorporate JavaScript libraries in Hugo.
 
 ## Introduction
 

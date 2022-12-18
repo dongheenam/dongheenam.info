@@ -45,9 +45,9 @@
     "Gallery": {
       "prefix": "gal",
       "body": [
-        "{{% gallery id=\"$1\" caption=$2 %}}",
+        "{{< gallery id=\"$1\" caption=$2 >}}",
         "  {{< img src=\"$3\" $4 >}}$0",
-        "{{% /gallery %}}"
+        "{{< /gallery >}}"
       ],
       "description": "Insert a gallery"
     },
@@ -70,42 +70,42 @@
   
     "Note": {
       "prefix": "note",
-      "body": "{{% note $1 %}} $0",
+      "body": "{{< note $1 >}} $0",
       "description": "Hugo note shortcode"
     },
   
     "Enumerate": {
       "prefix": "enum",
-      "body": "{{% enum $1 %}} $0",
+      "body": "{{< enum $1 >}} $0",
       "description": "Hugo enum shortcode"
     },
   
     "Enumerated grid": {
       "prefix": "enum-grid",
-      "body": ["{{% enum-grid $1 %}}", "$2", "{{% /enum-grid %}}"],
+      "body": ["{{< enum-grid $1 >}}", "$2", "{{< /enum-grid >}}"],
       "description": "Hugo enum in grid shortcode"
     },
   
     "Customised ordered list": {
       "prefix": "custom-ol",
-      "body": ["{{% ol $1 %}}", "{{% li %}}", "$2", "{{% /li %}}", "{{% /ol %}}"],
+      "body": ["{{< ol $1 >}}", "{{< li >}}", "$2", "{{< /li >}}", "{{< /ol >}}"],
       "description": "Hugo shortcode for ordered list"
     },
   
-    "Box": {
+    "Half-Box": {
       "prefix": "hbox",
-      "body": ["{{% hbox %}}", "$0", "{{% /hbox %}}"]
+      "body": ["{{< hbox title=\"$1\" >}}", "$0", "{{< /hbox >}}"]
     },
   
     "Details": {
       "prefix": "details",
-      "body": ["{{% details title=\"$1\" %}}", "$0", "{{% /details %}}"],
+      "body": ["{{< details title=\"$1\" >}}", "$0", "{{< /details >}}"],
       "description": "Hugo details shortcode"
     },
   
     "Invisible line": {
       "prefix": "hr",
-      "body": ["{{% hr %}}", "$0"],
+      "body": ["{{< hr >}}", "$0"],
       "description": "Hugo shortcode for invisible horizontal line"
     },
   

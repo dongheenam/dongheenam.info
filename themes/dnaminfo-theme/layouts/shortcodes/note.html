@@ -1,1 +1,6 @@
-<span class="note"{{ with .Get 1 }}style="{{ . }}"{{ end }}>{{ .Get 0 }}.</span>
+{{- $style := .Get 1 -}}
+{{- with .Get 0 -}}
+<span class="note"{{ with $style }}style="{{ . }}"{{ end }}>
+  {{- . -}}.
+</span>
+{{- end -}}

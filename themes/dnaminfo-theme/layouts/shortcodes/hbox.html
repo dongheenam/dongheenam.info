@@ -1,6 +1,10 @@
-{{/* Usage: 
-    {{% hbox %}} Content {{% /hbox %}}
+{{/* A box with left border only
+  Usage: 
+  {{% hbox title="Title" style="width: 50%;" %}} Content {{% /hbox %}}
 */}}
-<div class="box-hb"{{ with .Get "style" }}style="{{ . }}"{{ end }}>
-    {{ .Inner }}
+<div class="box box-hb"{{ with .Get "style" }}style="{{ . }}"{{ end }}>
+  {{- with .Get "title" -}}
+    <div><span class="note">{{ . }}.</span></div>
+  {{- end -}}
+  {{ .Inner | markdownify }}
 </div>

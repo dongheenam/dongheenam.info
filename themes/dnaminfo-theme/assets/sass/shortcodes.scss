@@ -21,14 +21,17 @@
 .box {
   max-width: 100%;
   border: 1.5px solid var(--hr-color);
-  padding: 1rem 0.5rem 0 0.5rem;
+  padding: 1rem 0.5rem;
 
-  p:first-child {
+  & + &,
+  & + figure {
+    margin-top: 1.4rem;
+  }
+  & > *:first-child {
     margin-top: 0;
   }
-
-  .box-desmos {
-    width: 100%;
+  & > *:last-child {
+    margin-bottom: 0;
   }
 }
 // box for Desmos
@@ -46,17 +49,9 @@
 
 // half-bordered box
 .box-hb {
-  max-width: 100%;
+  border: none;
   border-left: 1.5px solid var(--hr-color);
   padding: 0 0 0 0.5rem;
-
-  & + &,
-  & + figure {
-    margin-top: 1.4rem;
-  }
-  & > *:first-child {
-    margin-top: 0;
-  }
 
   &::after {
     content: "";
