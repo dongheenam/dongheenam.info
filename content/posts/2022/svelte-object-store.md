@@ -15,7 +15,7 @@ tags:
 
 ## Introduction
 
-[Svelte stores](https://svelte.dev/docs#run-time-svelte-store) are an amazing tool to make writing an app in Svelte more exciting. You just need one line of code, `$` syntax and a simple `bind:` to create a global state: 
+[Svelte stores](https://svelte.dev/docs#run-time-svelte-store) are an amazing tool to make writing an app in Svelte more exciting. You just need one line of code with `$` and `bind:` to create an input connected to a global state: 
 
 ```svelte
 <script>
@@ -98,7 +98,7 @@ You would think the highlighted line should only run when the age changes, but i
 
 ### Issues with `afterUpdate`
 
-Okay, that seems odd, but it still makes some sense because we are still using the `name` field in the component. So you decide to extract the inputs and then insert the age-dependent logic in the `AgeForm` component. You then use a reactive statement with `$:` to make sure you only run the code when the age changes:
+Okay, that seems odd, but it still makes some sense because we are still using the `name` field in the component. So you decide to extract the inputs and then insert the age-dependent logic in the `AgeForm` component:
 
 ```svelte {path="App.svelte"}
 <script>
@@ -276,7 +276,7 @@ function create_fragment(ctx) {
 
 {{% /tabs %}}
 
-The compiled code clearly indicates `<input>` will be updated when its value does not match `$store.name`. Thus, *components carry out the shallow comparison* for the store anyways, so stores do not need to worry about triggering redundant DOM updates.
+The compiled code clearly indicates `<input>` will be updated when its value does not match `$store.name`. Thus, *components carry out the shallow comparison* for the store anyway, so stores do not need to worry about triggering redundant DOM updates.
 
 However, there is still one takeaway; because `p()` will still be called to do these checks, callback functions scheduled with lifecycle methods like `beforeUpdate()` and `afterUpdate()` *will be invoked whether or not* the elements actually update.
 
@@ -336,7 +336,7 @@ I was inspired by [this amazing presentation](https://www.youtube.com/watch?v=FN
 
 ## Solutions
 
-Now that we understand the reasons behind this seemingly unnecessary "updates", we can start discuss what we can do to avoid the issues.
+Now that we understand the reasons behind this seemingly unnecessary "updates", we can discuss how we can improve our practices.
 
 ### Don't worry about it
 
@@ -366,7 +366,7 @@ export const age = writable(18);
 </label>
 ```
 
-What if the component needs to access multiple stores at once? Of course it can import all of them, but you can `derive` a read-only store from multiple stores:
+What if the component needs to access multiple stores at once? Of course it can import all of them, or you can `derive` a read-only store from multiple stores:
 
 ```javascript {path="stores.js"}
 import { writable, derived } from "svelte/store";
@@ -424,7 +424,9 @@ export const store = writable({
 </label>
 ```
 
-Note that because derived stores are read-only, you need to write a custom change handler, instead of using `bind:`. If you really want to bind to an `<input>`, we can implement the `set()` function:
+Note that because derived stores are read-only, you need to write a custom change handler, instead of using `bind:`. If you really want to bind to an `<input>`, we can implement the `set()` function to [turn it into](/posts/persisting-svelte-stores-with-localstorage/#understanding-svelte-stores) a writable store.{{% sn derived %}}
+You can also use external libraries like [`svelte-writable-derived`](https://github.com/PixievoltNo1/svelte-writable-derived).
+{{% /sn %}}
 
 ```javascript {path="stores.js"}
 import { writable, derived, get } from "svelte/store";
@@ -447,8 +449,3 @@ export const store = writable({
 });
 export const age = slice(store, "age");
 ```
-
-{{< hbox title="Note" >}}
-You can also use external libraries like [`svelte-writable-derived`](https://github.com/PixievoltNo1/svelte-writable-derived).
-{{< /hbox >}}
-
