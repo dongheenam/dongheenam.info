@@ -4,7 +4,7 @@
 */}}
 <div class="box box-hb"{{ with .Get "style" }}style="{{ . }}"{{ end }}>
   {{- with .Get "title" -}}
-    <div><span class="note">{{ . }}.</span></div>
+    <span class="note">{{ . }}.</span>
   {{- end -}}
   {{ .Inner | markdownify }}
 </div>

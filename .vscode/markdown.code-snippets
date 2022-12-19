@@ -99,7 +99,7 @@
   
     "Details": {
       "prefix": "details",
-      "body": ["{{< details title=\"$1\" >}}", "$0", "{{< /details >}}"],
+      "body": ["{{% details title=\"$1\" %}}", "$0", "{{% /details %}}"],
       "description": "Hugo details shortcode"
     },
   
