@@ -5,7 +5,7 @@ description: "Svelte stores are perfect for handling nested objects, but there a
 date: 2022-12-17 17:31:52.266 +1100
 
 toc: true
-draft: true
+draft: false
 
 tags:
   - Svelte
