@@ -227,9 +227,11 @@
     // See https://github.com/edwardtufte/tufte-css/issues/81#issuecomment-261953409
     -webkit-text-size-adjust: 100%;
   }
+  code {
+    font-family: var(--monospace-font);
+  }
   // inline codes
   code:not(pre *) {
-    font-family: var(--monospace-font);
     font-size: 0.9em;
     color: var(--primary-color);
     background-color: var(--details-background);
@@ -332,6 +334,7 @@
   /* Table */
   table {
     border-collapse: collapse;
+    width: 100%;
 
     tr:hover {
       background-color: var(--details-background);
