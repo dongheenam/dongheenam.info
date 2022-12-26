@@ -3,6 +3,12 @@ $sdesktop-max: 1600px;
 $lmobile-max: 1200px;
 $smobile-max: 768px;
 
+// typography
+$base-font-size: 1.3rem;
+$base-line-height: 1.5;
+$leading: 1.5 * $base-font-size;
+$scale: 1.414;
+
 // widths
 html {
   --content-width: 55rem;

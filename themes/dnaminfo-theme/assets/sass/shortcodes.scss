@@ -22,16 +22,10 @@
   max-width: 100%;
   border: 1.5px solid var(--hr-color);
   padding: 1rem 0.5rem;
+  margin: $leading 0;
 
-  & + &,
-  & + figure {
-    margin-top: 1.4rem;
-  }
   & > *:first-child {
     margin-top: 0;
-  }
-  & > *:last-child {
-    margin-bottom: 0;
   }
 }
 // box for Desmos
@@ -66,12 +60,12 @@
 
 // Customised list
 .custom-li:not(:last-child) {
-  margin-bottom: 1.4rem;
+  margin-bottom: $leading;
 }
 
 // Enum environment
 .enum-box {
-  margin: 1.4rem 0;
+  margin: $leading 0;
   display: grid;
   grid-template-columns: 3rem 1fr;
   justify-content: top;

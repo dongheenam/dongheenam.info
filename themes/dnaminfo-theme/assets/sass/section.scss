@@ -10,11 +10,11 @@
   .date {
     position: absolute;
     margin-left: -15rem;
-    margin-top: 0;
-    padding: 0.4rem 0;
+    padding-top: 0.8rem;
     width: 13rem;
 
     text-align: right;
+    vertical-align: bottom;
     font-size: 1.1rem;
     font-style: italic;
   }
@@ -86,9 +86,6 @@
       margin: 0;
       padding: 0;
       width: auto;
-
-      text-align: right;
-      text-align: left;
     }
   }
 }

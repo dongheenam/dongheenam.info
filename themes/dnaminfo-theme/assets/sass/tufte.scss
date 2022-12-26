@@ -1,11 +1,5 @@
 @import "variables";
 
-$base-font-size: 1.3rem;
-$base-line-height: 1.5;
-$leading: 1.5 * $base-font-size;
-$scale: 1.414;
-
-
 .content-container {
   grid-area: content;
   min-width: 0;
@@ -80,7 +74,6 @@ $scale: 1.414;
     &.subtitle {
       font-style: italic;
       margin-top: 0.5rem;
-      margin-bottom: 0.5rem;
       font-size: 1.2rem;
       display: block;
       line-height: 1.1;
@@ -91,9 +84,9 @@ $scale: 1.414;
   ol,
   ul {
     width: 100%;
-    margin-bottom: 1.4rem;
-    padding-left: 3rem;
-    -webkit-padding-start: 3rem;
+    margin-bottom: $leading;
+    padding-left: 2em;
+    -webkit-padding-start: 2em;
   }
 
   ol {
@@ -136,7 +129,7 @@ $scale: 1.414;
     width: 100%;
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
-    margin: 0 0 2em 0;
+    margin: 0 0 2*$leading 0;
   }
 
   figcaption {
@@ -229,7 +222,7 @@ $scale: 1.414;
   }
 
   /* Codes */
-  code {
+  code, .code-path {
     // Prevent adjustments of font size after orientation changes in iOS.
     // See https://github.com/edwardtufte/tufte-css/issues/81#issuecomment-261953409
     -webkit-text-size-adjust: 100%;
@@ -249,7 +242,7 @@ $scale: 1.414;
   }
   // code blocks
   .code-container {
-    margin: 1.4rem 0;
+    margin: $leading 0;
     border-radius: 0.3rem;
     
     font-size: 0.8em;
