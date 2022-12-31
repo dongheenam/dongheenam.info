@@ -424,16 +424,16 @@ export const store = writable({
 </label>
 ```
 
-Note that because derived stores are read-only, you need to write a custom change handler, instead of using `bind:`. If you really want to bind to an `<input>`, we can implement the `set()` function to [turn it into](/posts/persisting-svelte-stores-with-localstorage/#understanding-svelte-stores) a writable store.{{% sn derived %}}
+Because derived stores are read-only, you need to provide a custom change handler, instead of using `bind:`. If you really want to bind to an `<input>`, we can implement the `set()` function to [turn it into](/posts/persisting-svelte-stores-with-localstorage/#understanding-svelte-stores) a writable store.{{% sn derived %}}
 You can also use external libraries like [`svelte-writable-derived`](https://github.com/PixievoltNo1/svelte-writable-derived).
 {{% /sn %}}
 
 ```javascript {path="stores.js"}
-import { writable, derived, get } from "svelte/store";
+import { writable, derived } from "svelte/store";
 
 const slice = (parentStore, key) => {
   return {
-    ...derived(parentStore, (value) => value[key]),
+    ...derived(parentStore, ($store) => $store[key]),
     set: (value) => {
       parentStore.update((prev) => ({ ...prev, [key]: value }));
     },
@@ -441,7 +441,6 @@ const slice = (parentStore, key) => {
       parentStore.update((prev) => ({ ...prev, [key]: updater(prev[key]) })),
   };
 };
-export default slice;
 
 export const store = writable({
   name: "John",

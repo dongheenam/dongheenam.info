@@ -9,6 +9,7 @@ lastmod: 2021-01-12 17:46:19.818 +0800
 toc: false
 type: docs
 math: true
+draft: true
 
 tags:
   - algebra
@@ -49,7 +50,7 @@ Use the panel below to create randomised questions. You can click each question 
     const nq = document.getElementById("nq").value;
     let nm,cpl,both;
     [nm,cpl,both] = 
-      ["nm","cpl","both"].map(chked);
+      ["nm","cpl","both"].map(isChecked);
     // Sanity check
     nqIsNumber = /[\d+]/.test(nq);
     if (!nqIsNumber || nq<1 || nq>10 ) {
@@ -63,9 +64,6 @@ Use the panel below to create randomised questions. You can click each question 
     // Make questions
     qinst.innerHTML = "Solve the following quadratic equations.";
     qbox.innerHTML = "";
-    let options = MathJax.getMetricsFor(qbox);
-    options.display = false;
-    MathJax.texReset();
     for (let i = 0; i < nq; i++) {
       const lett = choice(poolLett);
       let a, b, c, dis;
@@ -79,7 +77,7 @@ Use the panel below to create randomised questions. You can click each question 
       const poly = new Poly([c, b, a], lett);
       let qTex;
       if (both) {
-        const generator = () => yn()? choice(poolCoeff) : 0;
+        const generator = () => randBoolean()? choice(poolCoeff) : 0;
         const order = nm? 2 : 1;
         const poly2 = new Poly(genCoeffs(order, generator), lett);
         qTex = `${poly.add(poly2).tex()} = ${poly2.tex()} `;
@@ -91,10 +89,8 @@ Use the panel below to create randomised questions. You can click each question 
       const a1Tex = ans1;
       const a2Tex = ans2;
       const aTex = `\\boldsymbol{\\iff ${lett} = ${a1Tex},~${a2Tex}}`;
-      render(qTex, aTex, options).then((li) => {
+      render(qTex, aTex).then((li) => {
         qbox.appendChild(li);
-        MathJax.startup.document.clear();
-        MathJax.startup.document.updateDocument();
       });
     }
     return;

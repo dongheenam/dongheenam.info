@@ -50,7 +50,7 @@ Use the panel below to create randomised questions. You can click each question 
     const nq = document.getElementById("nq").value;
     let co0,frac0,both;
     [co0,frac0,both] = 
-      ["co0","frac0","both"].map(chked);
+      ["co0","frac0","both"].map(isChecked);
     // Sanity check
     nqIsNumber = /[\d+]/.test(nq);
     if (!nqIsNumber || nq<1 || nq>10 ) {
@@ -65,9 +65,6 @@ Use the panel below to create randomised questions. You can click each question 
     // Make questions
     qinst.innerHTML = "Solve the following quadratic equations.";
     qbox.innerHTML = "";
-    let options = MathJax.getMetricsFor(qbox);
-    options.display = false;
-    MathJax.texReset();
     for (let i = 0; i < nq; i++) {
       const lett = choice(poolLett);
       let poly;
@@ -75,13 +72,13 @@ Use the panel below to create randomised questions. You can click each question 
       soln2 = new Frac(choice(poolNum), frac0? choice(poolNum, "z") : 1).reduce();
       if (co0) {
         const polyTemp = new Poly([-soln1.n, soln1.d], lett).mult(new Poly([-soln2.n, soln2.d], lett));
-        poly = polyTemp.mult(yn()? 1 : choice(poolMult));
+        poly = polyTemp.mult(randBoolean()? 1 : choice(poolMult));
       } else {
         poly = new Poly([soln1.mult(-1), 1], lett).mult(new Poly([soln2.mult(-1), 1], lett));
       }
       let qTex;
       if (both) {
-        const generator = () => yn()? new Frac(choice(poolNum), frac0? choice(poolNum, "z") : 1) : 0;
+        const generator = () => randBoolean()? new Frac(choice(poolNum), frac0? choice(poolNum, "z") : 1) : 0;
         const order = co0? 2 : 1;
         const poly2 = new Poly(genCoeffs(order, generator), lett);
         qTex = `${poly.add(poly2).tex()} = ${poly2.tex()} `;
@@ -89,10 +86,8 @@ Use the panel below to create randomised questions. You can click each question 
         qTex = `${poly.tex()} = 0`;
       }
       const aTex = `\\boldsymbol{\\iff ${lett}=${soln1.tex()},~${soln2.tex()}}`;
-      render(qTex, aTex, options).then((li) => {
+      render(qTex, aTex).then((li) => {
         qbox.appendChild(li);
-        MathJax.startup.document.clear();
-        MathJax.startup.document.updateDocument();
       });
     }
     return;

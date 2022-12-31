@@ -52,7 +52,7 @@ Use the panel below to create randomised questions. You can click each question 
     const nq = document.getElementById("nq").value;
     let lg,neg0,frac0,deg0;
     [lg,neg0,frac0,deg0] = 
-      ["lg","neg0","frac0","deg0"].map(chked);
+      ["lg","neg0","frac0","deg0"].map(isChecked);
     // Sanity check
     nqIsNumber = /[\d+]/.test(nq);
     if (!nqIsNumber || nq<1 || nq>10 ) {
@@ -71,14 +71,11 @@ Use the panel below to create randomised questions. You can click each question 
     // Make questions
     qinst.innerHTML = "Expand the following expressions.";
     qbox.innerHTML = "";
-    let options = MathJax.getMetricsFor(qbox);
-    options.display = false;
-    MathJax.texReset();
     for (let i = 0; i < nq; i++) {
       const lett = choice(poolLett);
       const order = deg0? 3 : 1;
       const minOrder = deg0? 2 : 1;
-      const generator = () => (!deg0 || yn())? 
+      const generator = () => (!deg0 || randBoolean())? 
         new Frac(choice(poolCoeff), frac0? choice(poolCoeff,"z") : 1) : 0;
       const coeffs = genCoeffs(order, generator, minOrder, 2);
       const poly = new Poly(coeffs, lett);
@@ -88,10 +85,8 @@ Use the panel below to create randomised questions. You can click each question 
       }
       const qTex = `${n.tex("c")}\\left(${poly.tex()}\\right)`;
       const aTex = `=\\boldsymbol{${poly.mult(n).tex()}}`;
-      render(qTex, aTex, options).then((li) => {
+      render(qTex, aTex).then((li) => {
         qbox.appendChild(li);
-        MathJax.startup.document.clear();
-        MathJax.startup.document.updateDocument();
       });
     }
     return;

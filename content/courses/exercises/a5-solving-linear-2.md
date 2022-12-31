@@ -54,7 +54,7 @@ Use the panel below to create randomised questions. You can click each question 
     const nq = document.getElementById("nq").value;
     let neg,frac0,frac1,two,both;
     [neg,frac0,frac1,two,both] = 
-      ["neg","frac0","frac1","two","both"].map(chked);
+      ["neg","frac0","frac1","two","both"].map(isChecked);
     both = two? both : false; // both depends on two
     // Sanity check
     nqIsNumber = /[\d+]/.test(nq);
@@ -75,9 +75,6 @@ Use the panel below to create randomised questions. You can click each question 
     // Make questions
     qinst.innerHTML = "Solve the following linear equations.";
     qbox.innerHTML = "";
-    let options = MathJax.getMetricsFor(qbox);
-    options.display = false;
-    MathJax.texReset();
     for (let i = 0; i < nq; i++) {
       const lett = choice(poolLett);
       const ans = new Frac(choice(pool9), frac0? choice(pool9,"z") : 1);
@@ -86,7 +83,7 @@ Use the panel below to create randomised questions. You can click each question 
       lhs = new Poly([0, ans.d], lett);
       rhs = new Frac(ans.n);
       // if the coefficient of x is not 1, -1, for 50% of chance,
-      if (!frac1 && Math.abs(ans.d)!=1 && yn()) { 
+      if (!frac1 && Math.abs(ans.d)!=1 && randBoolean()) { 
         // factorise the coefficient of x to make a bracket
         const op = neg? "n" : "";
         const num0 = new Frac(choice(factorsOf(ans.d, op), "1"));
@@ -121,7 +118,7 @@ Use the panel below to create randomised questions. You can click each question 
         rhsTex = rhs.tex();
       }
       if (two) { // add a second expression
-        const gen = () => yn()? new Frac(choice(pool9)) : 0;
+        const gen = () => randBoolean()? new Frac(choice(pool9)) : 0;
         let newPoly, newPolyVal = new Frac(1, 2);
         let num11;
         switch (choice(arange(1, frac1? 3 : 2))) {
@@ -131,9 +128,9 @@ Use the panel below to create randomised questions. You can click each question 
               newPoly = new Poly(genCoeffs(1, gen, 1, 2), lett);
               newPolyVal = newPoly.eval(ans).mult(num11);
             }
-            if (both && yn()) { // add on the rhs
+            if (both && randBoolean()) { // add on the rhs
               rhs = rhs.sub(newPolyVal);
-              if (yn()) {
+              if (randBoolean()) {
                 rhsTex = `${num11.mult(-1).tex("c")}\\left(${newPoly.tex()}\\right)` + rhs.tex("s");
               } else {
                 rhsTex = rhs.tex() + `${num11.mult(-1).tex("sc")}\\left(${newPoly.tex()}\\right)`;
@@ -149,7 +146,7 @@ Use the panel below to create randomised questions. You can click each question 
               newPoly = new Poly(genCoeffs(1, gen, 0, 1), lett);
               newPolyVal = newPoly.eval(ans);
             }
-            if (both && yn()) { // add on the rhs
+            if (both && randBoolean()) { // add on the rhs
               rhs = rhs.sub(newPolyVal);
               rhsTex = newPoly.add(rhs).tex();
             } else { // add on the lhs
@@ -167,9 +164,9 @@ Use the panel below to create randomised questions. You can click each question 
               num11 = choice(factorsOf(newPolyVal, neg? "np" : "p"));
             }
             let sign;
-            if (both && yn()) { // add on the rhs
+            if (both && randBoolean()) { // add on the rhs
               rhs = rhs.sub(newPolyVal.div(num11));
-              if (yn()) {
+              if (randBoolean()) {
                 sign = num11 > 0 ? "" : "-";
                 rhsTex = `${sign} \\dfrac{${newPoly.tex()}}{${Math.abs(num11)}}` + rhs.tex("s");
               } else {
@@ -188,10 +185,8 @@ Use the panel below to create randomised questions. You can click each question 
 
       const qTex = `${lhsTex} = ${rhsTex}`;
       const aTex = `\\boldsymbol{\\iff ${lett} = ${ans.reduce().tex()}}`;
-      render(qTex, aTex, options).then((li) => {
+      render(qTex, aTex).then((li) => {
         qbox.appendChild(li);
-        MathJax.startup.document.clear();
-        MathJax.startup.document.updateDocument();
       });
     }
     return;

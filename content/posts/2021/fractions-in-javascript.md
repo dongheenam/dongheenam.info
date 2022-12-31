@@ -500,8 +500,8 @@ const frac = new Frac(choice(pool), choice(pool, "z"));
 
 Click on this button to generate a new random fraction: <button id="gen" onclick="genQRand();">Generate</button>
 <ul>
-  <li>Generated string: <code id="rand-q"> </code></li>
-  <li>Rendered fraction: <span id="rand-a"> </span></li>
+  <li>Generated string: <code id="tex-1"> </code></li>
+  <li>Rendered fraction: <span id="rendered-1"> </span></li>
 </ul>
 </div>
 
@@ -513,14 +513,11 @@ Click on this button to generate a new random fraction: <button id="gen" onclick
     const frac = new Frac(choice(pool), choice(pool, "z"));
     const fracTex = frac.tex();
 
-    const qForm = document.getElementById("rand-q");
-    const aForm = document.getElementById("rand-a");
+    const qNode = document.getElementById("tex-1");
+    const aNode = document.getElementById("rendered-1");
     
-    qForm.innerHTML = fracTex;
-    aForm.innerHTML = "";
-    MathJax.tex2chtmlPromise(fracTex, {display: false}).then((node) => {
-      aForm.appendChild(node);
-    });
+    qNode.innerHTML = fracTex;
+    katex.render(fracTex, aNode);
   }
 </script>
 
@@ -548,9 +545,9 @@ Below is the code in action!
 
 Click on this button to generate a new random question: <button id="gen" onclick="genQArit();">Generate</button>
 <ul>
-  <li>Generated question: <code id="arit-tex"> </code></li>
-  <li>Rendered question: <span id="arit-q"> </span></li>
-  <li>Rendered answer: <span id="arit-a"> </span></li>
+  <li>Generated question: <code id="tex-2"> </code></li>
+  <li>Rendered question: <span id="rendered-2"> </span></li>
+  <li>Rendered answer: <span id="answer-2"> </span></li>
 </ul>
 </div>
 
@@ -567,19 +564,13 @@ Click on this button to generate a new random question: <button id="gen" onclick
     const qTex = `${f1.tex()} ${f2.tex("s")} \\times ${f3.tex("b")}`;
     const aTex = `=${ans.tex()}`;
 
-    const texForm = document.getElementById("arit-tex");
-    const qForm = document.getElementById("arit-q");
-    const aForm = document.getElementById("arit-a");
+    const texNode = document.getElementById("tex-2");
+    const qNode = document.getElementById("rendered-2");
+    const aNode = document.getElementById("answer-2");
     
-    texForm.innerHTML = qTex;
-    qForm.innerHTML = "";
-    aForm.innerHTML = "";
-    MathJax.tex2chtmlPromise(qTex, {display: false}).then((node) => {
-      qForm.appendChild(node);
-    });
-    MathJax.tex2chtmlPromise(aTex, {display: false}).then((node) => {
-      aForm.appendChild(node);
-    });
+    texNode.innerHTML = qTex;
+    katex.render(qTex, qNode);
+    katex.render(aTex, aNode);
   }
 </script>
 

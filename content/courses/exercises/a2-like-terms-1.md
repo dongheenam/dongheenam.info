@@ -53,7 +53,7 @@ Use the panel below to create randomised questions. You can click each question 
     const nq = document.getElementById("nq").value;
     let lg,neg0,frac0,deg0;
     [lg,neg0,frac0,deg0] = 
-      ["lg","neg0","frac0","deg0"].map(chked);
+      ["lg","neg0","frac0","deg0"].map(isChecked);
     // Sanity check
     nqIsNumber = /[\d+]/.test(nq);
     if (!nqIsNumber || nq<1 || nq>10 ) {
@@ -68,15 +68,12 @@ Use the panel below to create randomised questions. You can click each question 
     // Make questions
     qinst.innerHTML = "Simplify the following expressions by collecting like terms.";
     qbox.innerHTML = "";
-    let options = MathJax.getMetricsFor(qbox);
-    options.display = false;
-    MathJax.texReset();
     for (let i = 0; i < nq; i++) {
       const lett = choice(poolLett);
       const order = deg0? 3 : 1;
       const generator = frac0 
-        ? () => yn() ? new Frac(choice(poolCoeff), choice(poolCoeff,"z")) : 0
-        : () => yn() ? new Frac(choice(poolCoeff)) : 0;
+        ? () => randBoolean() ? new Frac(choice(poolCoeff), choice(poolCoeff,"z")) : 0
+        : () => randBoolean() ? new Frac(choice(poolCoeff)) : 0;
       const nPoly = choice(arange(2, 3));
       let qTex = "";
       let ans = new Poly([0], lett);
@@ -88,10 +85,8 @@ Use the panel below to create randomised questions. You can click each question 
         ans = ans.add(poly);
       }
       const aTex = `=\\boldsymbol{${ans.tex()}}`;
-      render(qTex, aTex, options).then((li) => {
+      render(qTex, aTex).then((li) => {
         qbox.appendChild(li);
-        MathJax.startup.document.clear();
-        MathJax.startup.document.updateDocument();
       });
     }
     return;

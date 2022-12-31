@@ -59,7 +59,7 @@ Use the panel below to create randomised questions. You can click each question 
     const nq = document.getElementById("nq").value;
     let lim,neg0,neg1,frac0,deg0,deg1,deg2;
     [lim,neg0,neg1,frac0,deg0,deg1,deg2] = 
-      ["lim","neg0","neg1","frac0","deg0","deg1","deg2"].map(chked);
+      ["lim","neg0","neg1","frac0","deg0","deg1","deg2"].map(isChecked);
     // Sanity check
     nqIsNumber = /[\d+]/.test(nq);
     if (!nqIsNumber || nq<1 || nq>10 ) {
@@ -73,13 +73,10 @@ Use the panel below to create randomised questions. You can click each question 
     // Make questions
     qinst.innerHTML = "Evaluate the following expressions.";
     qbox.innerHTML = "";
-    let options = MathJax.getMetricsFor(qbox);
-    options.display = false;
-    MathJax.texReset();
     for (let i = 0; i < nq; i++) {
       const lett = choice(poolLett);
       const order = deg2? 4 : deg1? 3 : deg0? 2 : 1;
-      const generator = () => yn()? new Frac(choice(poolCoeff)) : 0;
+      const generator = () => randBoolean()? new Frac(choice(poolCoeff)) : 0;
       let x, coeffs, poly, ans;
       while (true) {
         x = new Frac(choice(poolX), frac0? choice(poolX, "z") : 1).reduce();
@@ -90,10 +87,8 @@ Use the panel below to create randomised questions. You can click each question 
       }
       const qTex = `${poly.tex()},~\\text{when}~${lett}=${x.tex()}`;
       const aTex = `=\\boldsymbol{${ans.tex()}}`;
-      render(qTex, aTex, options).then((li) => {
+      render(qTex, aTex).then((li) => {
         qbox.appendChild(li);
-        MathJax.startup.document.clear();
-        MathJax.startup.document.updateDocument();
       });
     }
     return;

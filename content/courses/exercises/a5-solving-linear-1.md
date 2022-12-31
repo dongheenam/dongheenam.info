@@ -52,7 +52,7 @@ Use the panel below to create randomised questions. You can click each question 
     const nq = document.getElementById("nq").value;
     let neg0,frac0,frac1,both;
     [neg0,frac0,frac1,both] = 
-      ["neg0","frac0","frac1","both"].map(chked);
+      ["neg0","frac0","frac1","both"].map(isChecked);
     // Sanity check
     nqIsNumber = /[\d+]/.test(nq);
     if (!nqIsNumber || nq<1 || nq>10 ) {
@@ -71,9 +71,6 @@ Use the panel below to create randomised questions. You can click each question 
     // Make questions
     qinst.innerHTML = "Solve the following linear equations.";
     qbox.innerHTML = "";
-    let options = MathJax.getMetricsFor(qbox);
-    options.display = false;
-    MathJax.texReset();
     for (let i = 0; i < nq; i++) {
       const lett = choice(poolLett);
       const ans = new Frac(choice(poolAns), frac0? choice(poolAns,"z") : 1);
@@ -94,10 +91,8 @@ Use the panel below to create randomised questions. You can click each question 
       
       const qTex = `${lhs.tex()} = ${rhs.tex()}`;
       const aTex = `\\boldsymbol{\\iff ${lett}=${ans.tex()}}`;
-      render(qTex, aTex, options).then((li) => {
+      render(qTex, aTex).then((li) => {
         qbox.appendChild(li);
-        MathJax.startup.document.clear();
-        MathJax.startup.document.updateDocument();
       });
     }
     return;
