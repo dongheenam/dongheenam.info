@@ -1,8 +1,8 @@
 # Site definitions
-title: dongheenam
+title: dongheenam.info
 baseURL: https://www.dongheenam.info/
-languageCode: en-auSvelte store example 1
-theme: dnaminfo-theme
+languageCode: en-au
+theme: dnaminfo-theme-v2
 
 # site parameters
 params:
