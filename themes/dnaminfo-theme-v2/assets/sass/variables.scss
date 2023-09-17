@@ -1,15 +1,18 @@
 // https://css-tricks.com/approaches-media-queries-sass/
-$tablet-width: 520px;
-$desktop-width: 1000px;
-
 @mixin tablet {
-  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+  @media (min-width: 768px) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media (min-width: #{$desktop-width}) {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin desktop-large {
+  @media (min-width: 1280px) {
     @content;
   }
 }
