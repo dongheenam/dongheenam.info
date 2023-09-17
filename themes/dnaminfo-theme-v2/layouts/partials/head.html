@@ -1,0 +1,39 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    {{ if not .IsHome }}{{ with .Title }}{{ . }} | {{ end }}{{ end }}{{
+    .Site.Title }}
+  </title>
+
+  <meta
+    name="author"
+    content="{{ with .Site.Params.author }}{{ . }}{{ end }}"
+  />
+  <meta
+    name="description"
+    content="{{if .IsHome }}{{ $.Site.Params.description }}{{ else }}{{ .Description }}{{ end }}"
+  />
+  <meta name="theme-color" content="#111111" />
+
+  {{ if .Params.noindex }}
+  <meta name="robots" content="noindex" />
+  <meta name="googlebot" content="noindex" />
+  {{ end }}
+  
+  {{/* stylesheets */}}
+  {{ $options := dict "transpiler" "dartsass" "targetPath" "css/default.css" }}
+  {{ with resources.Get "sass/default.scss" | resources.ToCSS $options | resources.Minify }}
+  <link rel="stylesheet" href="{{ .Permalink }}" crossorigin="anonymous" />
+  {{ end }}
+
+  <link rel="canonical" href="{{ .Permalink }}" />
+
+  {{/* {{- template "_internal/twitter_cards.html" . -}} */}} {{/* {{- template
+  "_internal/opengraph.html" . -}} */}} {{/* handle dark theme */}} {{/* {{
+  partial "dark-theme" . }} */}} {{/* load Desmos */}} {{/* {{- if
+  .Params.desmos -}}
+  <script src="https://www.desmos.com/api/v1.6/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+  {{- end -}} */}} {{/* Fabicon stuff - realfavicongenerator.net */}} {{/* {{-
+  partial "fabicon" . -}} */}}
+</head>

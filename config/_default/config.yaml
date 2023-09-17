@@ -23,24 +23,23 @@ markup:
   highlight:
     noClasses: false
     style: github-dark
-  
+
 # build settings
 timeout: 600000
 
 ignoreFiles:
   - \.tex$
+# permalinks:
+#   posts: /posts/:title/
 
-permalinks:
-  posts: /posts/:title/
+# outputs:
+# home:
+# - HTML
+# - Algolia
 
-outputs:
-  home:
-    - HTML
-    - Algolia
-
-outputFormats:
-  Algolia:
-    mediaType: application/json
-    baseName: algolia
-    isPlainText: true
-    notAlternative: true
+# outputFormats:
+#   Algolia:
+#     mediaType: application/json
+#     baseName: algolia
+#     isPlainText: true
+#     notAlternative: true

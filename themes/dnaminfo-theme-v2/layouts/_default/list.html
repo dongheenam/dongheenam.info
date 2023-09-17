@@ -1,0 +1,9 @@
+{{- define "main" -}}
+<h1>{{ .Title }}</h1>
+<article>
+  {{ .Content }}
+</article>
+{{ range .Paginator.Pages }}
+  <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+{{- end -}}{{/* end range */}}
+{{- end -}}

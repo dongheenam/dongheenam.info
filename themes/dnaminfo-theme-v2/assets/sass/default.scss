@@ -1,0 +1,112 @@
+@use "./variables.scss" as *;
+@use "./fonts.scss";
+
+/* CSS RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.35;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+html {
+  isolation: isolate;
+}
+
+/* FONT SIZE SETUP */
+html {
+  font-size: 18px;
+
+  @include tablet {
+    font-size: 2.4vw;
+  }
+  @include desktop {
+    font-size: 24px;
+  }
+}
+
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+
+  &.light-theme {
+    --primary-color: #e60073;
+    --background-color: #fffff8;
+    --text-color: #111;
+    --hypertext-color: #00008c;
+    --hr-color: #ccc;
+    --details-background: #f3f3e6;
+  }
+  &.dark-theme {
+    --primary-color: #ff66b3;
+    --background-color: #111;
+    --text-color: #fffff8;
+    --hypertext-color: #9999ff;
+    --hr-color: #666;
+    --details-background: #1d1f21;
+
+    img {
+      filter: brightness(0.8) contrast(1.2);
+    }
+  }
+}
+
+/* DEFAULT STYLES */
+html {
+  font-family: "Source Serif 4";
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+:is(ul, ol) li {
+  line-height: 1.5;
+}
+:is(ul, ol) :is(ul, ol) {
+  margin-top: 0;
+  margin-bottom: 0;
+}
