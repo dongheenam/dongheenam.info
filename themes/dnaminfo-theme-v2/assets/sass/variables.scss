@@ -1,18 +1,22 @@
 // https://css-tricks.com/approaches-media-queries-sass/
+$largest-mobile-width: 700px;
+$largest-tablet-width: 1024px;
+$largest-desktop-width: 1280px;
+
 @mixin tablet {
-  @media (min-width: 768px) {
+  @media (min-width: $largest-mobile-width) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media (min-width: 1024px) {
+  @media (min-width: $largest-tablet-width) {
     @content;
   }
 }
 
 @mixin desktop-large {
-  @media (min-width: 1280px) {
+  @media (min-width: $largest-desktop-width) {
     @content;
   }
 }
