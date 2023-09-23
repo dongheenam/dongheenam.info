@@ -89,7 +89,7 @@ html {
 
 /* DEFAULT STYLES */
 html {
-  font-family: "Source Serif 4";
+  font-family: "Source Serif 4", serif;
   color: var(--text-color);
   background-color: var(--background-color);
 }
@@ -127,6 +127,11 @@ h3 {
 
 p {
   margin-bottom: 1em;
+}
+
+code {
+  font-family: "Iosevka Fixed", monospace;
+  font-size: 0.95em;
 }
 
 ul,
