@@ -14,6 +14,13 @@ tags:
 
 single line `code`
 
+```python
+
+def hello(this: int, that: str):
+    return f"{this * 3} is {that}"
+
+```
+
 ## What is Lorem Ipsum?
 
 abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
