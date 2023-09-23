@@ -147,7 +147,8 @@ Because we need to [change the scope](https://www.regisphilibert.com/blog/2018/0
   {{ else }}
     {{- $new_list = slice $page -}}
   {{ end }}
-  {{- $pages_by_letters = merge $pages_by_letters (dict $first_letter $new_list) -}}
+  {{- $sort_list := sort $new_list ".Name" -}}
+  {{- $pages_by_letters = merge $pages_by_letters (dict $first_letter $sort_list) -}}
 {{ end }}
 ```
 
