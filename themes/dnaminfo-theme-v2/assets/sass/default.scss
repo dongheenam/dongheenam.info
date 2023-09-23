@@ -65,14 +65,12 @@ html {
 html {
   max-width: 100%;
 
-  &.light-theme {
-    --primary-color: #e60073;
-    --background-color: #fffff8;
-    --background-accent-color: #f3f3e6;
-    --text-color: #111;
-    --hypertext-color: #00008c;
-    --hr-color: #ccc;
-  }
+  --primary-color: #e60073;
+  --background-color: #fffff8;
+  --background-accent-color: #f3f3e6;
+  --text-color: #111;
+  --hypertext-color: #00008c;
+  --hr-color: #ccc;
   &.dark-theme {
     --primary-color: #ff66b3;
     --background-color: #111;
@@ -163,7 +161,7 @@ body {
   margin: 0 1.5rem;
   padding: 3rem 0 25vh 0;
 
-  border: 1px solid black; // temporary
+  border: 1px solid var(--hr-color); // temporary
 
   @include tablet {
     position: relative;

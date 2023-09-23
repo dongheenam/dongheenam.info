@@ -2,8 +2,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>
-    {{ if not .IsHome }}{{ with .Title }}{{ . }} | {{ end }}{{ end }}{{
-    .Site.Title }}
+    {{ if not .IsHome }}{{ with .Title }}{{ . }} | {{ end }}{{ end }}{{ .Site.Title }}
   </title>
 
   <meta
@@ -29,11 +28,6 @@
 
   <link rel="canonical" href="{{ .Permalink }}" />
 
-  {{/* {{- template "_internal/twitter_cards.html" . -}} */}} {{/* {{- template
-  "_internal/opengraph.html" . -}} */}} {{/* handle dark theme */}} {{/* {{
-  partial "dark-theme" . }} */}} {{/* load Desmos */}} {{/* {{- if
-  .Params.desmos -}}
-  <script src="https://www.desmos.com/api/v1.6/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
-  {{- end -}} */}} {{/* Fabicon stuff - realfavicongenerator.net */}} {{/* {{-
-  partial "fabicon" . -}} */}}
+  {{/* Fabicon stuff - realfavicongenerator.net */}} 
+  {{- partial "fabicon" . -}}
 </head>

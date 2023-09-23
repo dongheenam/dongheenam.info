@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="light-theme">
+<html lang="en" class="dark-theme">
   {{- partial "head" . -}}
   <body>
-    {{/*  {{- partial "header" . -}}  */}}
+    {{- partial "header" . -}}
     <div id="content">
       {{- block "main" . }}{{- end -}}
     </div>
-    {{/*  {{- partial "footer" . -}}
-    {{- partial "scripts" . -}}  */}}
+    {{/* {{- partial "footer" . -}} */}}
   </body>
 </html>
