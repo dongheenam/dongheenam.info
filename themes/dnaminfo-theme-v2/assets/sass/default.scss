@@ -1,5 +1,6 @@
 @use "./variables.scss" as *;
 @use "./fonts.scss";
+@use "./shortcodes.scss";
 
 /* CSS RESET */
 *,
@@ -57,10 +58,7 @@ html {
   font-size: 18px;
 
   @include tablet {
-    font-size: 2.1vw;
-  }
-  @include desktop {
-    font-size: 21.5px;
+    font-size: min(2.1vw, 21.5px);
   }
 }
 
@@ -120,6 +118,7 @@ h3 {
   text-transform: lowercase;
   font-variant: small-caps;
   font-weight: 900;
+  letter-spacing: 0.09em;
 
   h2 + & {
     margin-top: 0;
@@ -145,17 +144,10 @@ ol {
 }
 
 /* GLOBAL LAYOUT */
-$side-gap: 1.5rem;
-$content-width: 31rem;
-$aside-width: 9rem;
-$large-aside-width: 12rem;
 
 body {
+  width: min(100%, calc($largest-tablet-width - $scrollbar-width));
   margin-inline: auto;
-
-  @include desktop {
-    max-width: $largest-tablet-width;
-  }
 }
 #content {
   min-height: 100vh;
@@ -166,8 +158,8 @@ body {
 
   @include tablet {
     position: relative;
-    margin-left: 1.5rem;
-    margin-right: $large-aside-width + $side-gap;
+    margin-right: 1.5rem;
+    margin-left: $large-aside-width + $side-gap;
   }
 }
 aside {
@@ -178,6 +170,7 @@ aside {
   border-left-width: 3px;
   background-color: var(--background-accent-color);
 
+  font-size: 0.85rem;
   font-weight: 300;
 
   > *:last-child {
@@ -186,19 +179,20 @@ aside {
 
   @include tablet {
     position: absolute;
-    right: -$aside-width - $side-gap;
+    left: -$aside-width - $side-gap;
     width: $aside-width;
+    transform: translate(0, 0.15em); // baseline alignment
 
     margin: 0 0 1rem 0;
     padding: 0;
 
-    font-size: 0.85rem;
+    text-align: right;
     border: none;
     background-color: initial;
   }
 
   @include desktop-large {
-    right: -$large-aside-width - $side-gap;
+    left: -$large-aside-width - $side-gap;
     width: $large-aside-width;
   }
 }

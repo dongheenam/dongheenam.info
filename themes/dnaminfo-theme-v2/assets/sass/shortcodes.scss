@@ -1,0 +1,39 @@
+@use "./variables.scss" as *;
+
+.boxed {
+  border: 1px solid var(--text-color);
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+
+  & > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.note-title {
+  text-transform: capitalize;
+  font-style: italic;
+
+  &:after {
+    content: ".";
+  }
+
+  @include tablet {
+    position: absolute;
+    left: -$aside-width - $side-gap;
+    width: $aside-width;
+    text-align: right;
+    transform: translate(0, 0.1em); // baseline alignment
+
+    text-transform: lowercase;
+    font-size: 0.9em;
+    font-variant: small-caps;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+
+    &:after {
+      content: "";
+    }
+  }
+}

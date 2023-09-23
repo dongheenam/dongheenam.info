@@ -1,0 +1,14 @@
+{{ $content := .Inner | $.Page.RenderString }}
+{{/* wrap the title with a <span> and append it to the first paragraph */}}
+{{ with .Get 0 }}
+  {{ $title := print "<p><span class='note-title'>" . "</span> " }}
+  {{ if hasPrefix $content "<p>" }}
+    {{ $content = print $title (strings.TrimPrefix "<p>" $content) }}
+  {{ else }}
+    {{ $content = print $title "</p>" $content }}
+  {{ end }}
+{{ end }}
+
+<div class="boxed">
+  {{- $content | safeHTML -}}
+</div>

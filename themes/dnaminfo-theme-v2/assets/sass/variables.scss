@@ -3,6 +3,14 @@ $largest-mobile-width: 700px;
 $largest-tablet-width: 1024px;
 $largest-desktop-width: 1280px;
 
+// https://stackoverflow.com/questions/3541863/css-100-width-but-avoid-scrollbar
+$scrollbar-width: calc(100vw - 100%);
+
+$side-gap: 1.5rem;
+$content-width: 31rem;
+$aside-width: 9rem;
+$large-aside-width: 12rem;
+
 @mixin tablet {
   @media (min-width: $largest-mobile-width) {
     @content;
