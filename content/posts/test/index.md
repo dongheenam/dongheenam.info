@@ -42,22 +42,34 @@ Lorem Ipsum has been the industry's {{% smallcaps %}}standard dummy{{% /smallcap
 
 {{% figure src="cathedral.jpg" caption="Central dome of Salzburg Cathedral, Austria." %}}
 
-{{% figure src="map.svg" %}}
-
-
+{{% figure src="map.svg" border="true" %}}
 
 ## Codeblock
 
+single line `code`?2
 
-single line `code`
-
-```python
-
-def hello(this: int, that: str):
-    return f"{this * 3} is {that}"
-
+```html {path="layouts/partials/head.html", hl_lines="2-4"}
+<head>
+    <meta name="author" content="{{ with .Site.Params.author }}{{ . }}{{ end }}" />
+    <meta name="description" content="{{if .IsHome }}{{ $.Site.Params.description }}{{ else }}{{ .Description }}{{ end }}" />
+    <meta name="theme-color" content="#111111" />
+</head>
 ```
 
+```python {path="my.py", hl_lines="2"}
+print("Hello, world!")
+print("Bye, world!")
+```
+
+```python {path="my.py", linenos="false"}
+print("Hello, world!")
+print("Bye, world!")
+```
+
+```python
+print("Hello, world!")
+print("Bye, world!")
+```
 
 
 ## Why do we use it?

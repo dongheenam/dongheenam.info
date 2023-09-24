@@ -1,0 +1,42 @@
+{{/* 
+  custom code highlighting hook for filename support 
+  Usage: 
+    ```python {path="/lib/code.py"}
+    print("hello, world!")
+    ```
+*/}}
+{{/* css */}}
+{{ if not (.Page.Scratch.Get "chroma-resources-loaded") }}
+  {{ $options := dict "transpiler" "dartsass" "targetPath" "css/chroma.css" }}
+  {{ with resources.Get "sass/chroma.scss" | resources.ToCSS $options | resources.Minify }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}" crossorigin="anonymous" />
+  {{ end }}
+  {{ with resources.Get "js/copy-code.js" }}
+    <script src="{{ .RelPermalink }}"></script>
+  {{ end }}
+  {{ .Page.Scratch.Set "chroma-resources-loaded" "true" }}
+{{ end }}
+{{/* parse options */}}
+{{ $lang := .Type | default "text" }}
+{{ if eq (lower $lang) "html" }}
+  {{ $lang = "go-html-template" }}
+{{ else if not (transform.CanHighlight $lang) }}
+  {{ $lang = "text" }}
+{{ end }}
+{{ $options := .Options }}
+{{ if index .Attributes "path" }}
+  {{/* if path is specified then automatically add line numbers */}}
+  {{ $options = merge (dict "linenos" "table") $options }}
+{{ end }}
+{{/* render codeblock */}}
+<div class="codeblock">
+  {{- with (index .Attributes "path") -}}
+    <div class="code-path"><span>{{ . }}</span></div>
+  {{- end -}}
+  <div class="code-container">
+    {{- highlight .Inner $lang $options -}}
+  </div>
+  <button class="code-copy" title="copy code" onclick="copy('{{ .Inner | safeJS }}')">
+    <svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 32 32" aria-hidden="true"><path d="M28,10V28H10V10H28m0-2H10a2,2,0,0,0-2,2V28a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V10a2,2,0,0,0-2-2Z"></path><path d="M4,18H2V4A2,2,0,0,1,4,2H18V4H4Z"></path></svg>
+  </button>
+</div>
