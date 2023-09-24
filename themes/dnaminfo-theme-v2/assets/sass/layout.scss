@@ -1,0 +1,76 @@
+@use "./variables.scss" as *;
+
+body {
+  width: min(100%, calc($largest-tablet-width - $scrollbar-width));
+  margin-inline: auto;
+}
+
+/* header and footer */
+header {
+  position: fixed;
+  left: var(--gap-md);
+  z-index: 9999;
+
+  animation: fadeOut 5s ease-in-out forwards;
+}
+@keyframes fadeOut {
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* body text and aside */
+#content {
+  min-height: 100vh;
+  margin: 0 1.5rem;
+  padding: 3rem 0 25vh 0;
+
+  border: 1px solid var(--hr-color); // temporary
+
+  @include tablet {
+    position: relative;
+    margin-right: 1.5rem;
+    margin-left: $large-aside-width + $side-gap;
+  }
+}
+aside {
+  margin: 1rem 0;
+  padding: 0.5rem;
+
+  border: 1px solid var(--hr-color);
+  border-left-width: 3px;
+  background-color: var(--background-accent-color);
+
+  font-size: 0.85rem;
+  @include font-weight(300);
+
+  strong {
+    @include font-weight(500);
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+
+  @include tablet {
+    position: absolute;
+    left: -$aside-width - $side-gap;
+    width: $aside-width;
+    transform: translate(0, 0.15em); // baseline alignment
+
+    margin: 0 0 1rem 0;
+    padding: 0;
+
+    text-align: right;
+    border: none;
+    background-color: initial;
+  }
+
+  @include desktop-large {
+    left: -$large-aside-width - $side-gap;
+    width: $large-aside-width;
+  }
+}

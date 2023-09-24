@@ -21,8 +21,8 @@
   {{ end }}
   
   {{/* stylesheets */}}
-  {{ $options := dict "transpiler" "dartsass" "targetPath" "css/default.css" }}
-  {{ with resources.Get "sass/default.scss" | resources.ToCSS $options | resources.Minify }}
+  {{ $options := dict "transpiler" "dartsass" "targetPath" "css/main.css" }}
+  {{ with resources.Get "sass/main.scss" | resources.ToCSS $options | resources.Minify }}
   <link rel="stylesheet" href="{{ .Permalink }}" crossorigin="anonymous" />
   {{ end }}
 

@@ -1,10 +1,15 @@
 @use "./variables.scss" as *;
 
 .boxed {
-  border: 1px solid var(--text-color);
+  margin: 1rem 0;
   padding: 0.5rem;
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
+
+  border: 1px solid var(--hr-color);
+  border-left-width: 3px;
+  background-color: var(--background-accent-color);
+
+  font-size: 0.85rem;
+  @include font-weight(300);
 
   & > *:last-child {
     margin-bottom: 0;
@@ -15,6 +20,8 @@
   text-transform: capitalize;
   font-style: italic;
 
+  @include font-weight(400);
+
   &:after {
     content: ".";
   }
@@ -23,18 +30,20 @@
     position: absolute;
     left: -$aside-width - $side-gap;
     width: $aside-width;
-    text-align: right;
-    transform: translate(0, 0.1em); // baseline alignment
 
-    text-transform: lowercase;
-    font-size: 0.9em;
-    font-variant: small-caps;
-    font-style: normal;
-    font-weight: 700;
-    letter-spacing: 0.09em;
+    transform: translate(0, -0.15rem);
+    text-align: right;
+
+    font-size: 1rem;
+    @include small-caps;
+    @include font-weight(500);
 
     &:after {
       content: "";
     }
   }
+}
+
+.small-caps {
+  @include small-caps;
 }

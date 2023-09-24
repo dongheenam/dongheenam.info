@@ -1,71 +1,21 @@
 /* normal/it */
 @font-face {
-  font-family: "Source Serif 4";
-  src: url("/fonts/SourceSerif4-Regular.otf.woff2") format("woff2"),
-    url("/fonts/SourceSerif4-Regular.otf.woff") format("woff");
-  font-weight: 400;
+  font-family: "Source Serif Variable";
+  src: url("/fonts/SourceSerif4Variable-Roman-latin.woff2")
+      format("woff2-variations"),
+    url("/fonts/SourceSerif4Variable-Roman-latin.woff")
+      format("woff-variations");
+  font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Source Serif 4";
-  src: url("/fonts/SourceSerif4-It.otf.woff2") format("woff2"),
-    url("/fonts/SourceSerif4-It.otf.woff") format("woff");
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-
-/* extraLight/it */
-@font-face {
-  font-family: "Source Serif 4";
-  src: url("/fonts/SourceSerif4-Light.otf.woff2") format("woff2"),
-    url("/fonts/SourceSerif4-Light.otf.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Source Serif 4";
-  src: url("/fonts/SourceSerif4-LightIt.otf.woff2") format("woff2"),
-    url("/fonts/SourceSerif4-LightIt.otf.woff") format("woff");
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-
-/* bold/it */
-@font-face {
-  font-family: "Source Serif 4";
-  src: url("/fonts/SourceSerif4-Bold.otf.woff2") format("woff2"),
-    url("/fonts/SourceSerif4-Bold.otf.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Source Serif 4";
-  src: url("/fonts/SourceSerif4-BoldIt.otf.woff2") format("woff2"),
-    url("/fonts/SourceSerif4-BoldIt.otf.woff") format("woff");
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
-}
-
-/* black/it */
-@font-face {
-  font-family: "Source Serif 4";
-  src: url("/fonts/SourceSerif4-Black.otf.woff2") format("woff2"),
-    url("/fonts/SourceSerif4-Black.otf.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Source Serif 4";
-  src: url("/fonts/SourceSerif4-BlackIt.otf.woff2") format("woff2"),
-    url("/fonts/SourceSerif4-BlackIt.otf.woff") format("woff");
-  font-weight: 900;
+  font-family: "Source Serif Variable";
+  src: url("/fonts/SourceSerif4Variable-Italic-latin.woff2")
+      format("woff2-variations"),
+    url("/fonts/SourceSerif4Variable-Italic-latin.woff")
+      format("woff-variations");
+  font-weight: 100 900;
   font-style: italic;
   font-display: swap;
 }

@@ -1,15 +1,8 @@
+// media queries
 // https://css-tricks.com/approaches-media-queries-sass/
 $largest-mobile-width: 700px;
 $largest-tablet-width: 1024px;
 $largest-desktop-width: 1280px;
-
-// https://stackoverflow.com/questions/3541863/css-100-width-but-avoid-scrollbar
-$scrollbar-width: calc(100vw - 100%);
-
-$side-gap: 1.5rem;
-$content-width: 31rem;
-$aside-width: 9rem;
-$large-aside-width: 12rem;
 
 @mixin tablet {
   @media (min-width: $largest-mobile-width) {
@@ -27,4 +20,52 @@ $large-aside-width: 12rem;
   @media (min-width: $largest-desktop-width) {
     @content;
   }
+}
+
+// widths
+// https://stackoverflow.com/questions/3541863/css-100-width-but-avoid-scrollbar
+$scrollbar-width: calc(100vw - 100%);
+
+$side-gap: 1.5rem;
+$content-width: 31rem;
+$aside-width: 9rem;
+$large-aside-width: 12rem;
+
+// colors
+html {
+  --primary-color: #e60073;
+  --background-color: #fffff8;
+  --background-accent-color: #f3f3e6;
+  --text-color: #111;
+  --hypertext-color: #00008c;
+  --hr-color: #ccc;
+  &.dark-theme {
+    --primary-color: #ff66b3;
+    --background-color: #111;
+    --background-accent-color: #1d1f21;
+    --text-color: #fffff8;
+    --hypertext-color: #9999ff;
+    --hr-color: #666;
+
+    img {
+      filter: brightness(0.8) contrast(1.2);
+    }
+  }
+}
+
+// font weights
+$dark-mode-correction: 0.85;
+@mixin font-weight($weight) {
+  font-weight: $weight;
+  .dark-theme & {
+    font-weight: calc($weight * $dark-mode-correction);
+  }
+}
+
+// font styles
+@mixin small-caps {
+  text-transform: lowercase;
+  font-style: normal;
+  font-variant: small-caps;
+  letter-spacing: 0.09em;
 }
