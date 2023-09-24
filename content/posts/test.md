@@ -25,7 +25,19 @@ def hello(this: int, that: str):
 
 abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
 
-{{% note "Definition" %}}
+{{% note title="Definition" color="gray" %}}
+Lorem
+
+Ipsum
+{{% /note %}}
+
+{{% note title="Definition" color="gold" %}}
+Lorem
+
+Ipsum
+{{% /note %}}
+
+{{% note title="Definition" color="accent" %}}
 Lorem
 
 Ipsum
@@ -41,11 +53,39 @@ Lorem Ipsum has been the industry's {{% smallcaps %}}standard dummy{{% /smallcap
 
 It is a *long established fact* that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
 
+{{% aside %}}
+**Lorem Ipsum** is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+{{% /aside %}}
+
 ## Examples 
 
-### The standard Lorem Ipsum passage, used since the 1500s
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+### Unordered Lists
 
-### Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+- Nulla maximus ac libero eget fermentum.
+- Duis aliquet venenatis bibendum.
+- Donec vitae tellus quis ligula dignissim aliquam. Sed tincidunt gravida tortor non euismod. Pellentesque congue, felis ac gravida volutpat, magna enim malesuada nisi, eget dictum urna enim quis dui. Sed tincidunt dignissim lorem sit amet vestibulum.
+- Pellentesque vitae dui at risus faucibus interdum non vitae lacus. Donec aliquet placerat lectus sit amet interdum. Etiam porttitor rutrum nulla a aliquet. 
+- Suspendisse potenti.
+  - Nulla tincidunt malesuada tortor nec porttitor.
+  - Quisque at pellentesque libero, quis mattis lorem.
+  - Ut imperdiet ac eros pulvinar ultricies. Donec luctus, turpis quis luctus volutpat, ex massa fermentum ante, sit amet rutrum velit turpis ac enim. Suspendisse id enim sapien.
+  - Proin et libero varius, malesuada nunc sit amet, vestibulum tortor. In ut tincidunt massa. Aenean rhoncus viverra sem id posuere. Curabitur mauris felis, eleifend at lacus posuere, gravida ullamcorper sem.
 
-"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+### Ordered Lists
+
+1. Nulla maximus ac libero eget fermentum.
+2. Duis aliquet venenatis bibendum.
+3. Donec vitae tellus quis ligula dignissim aliquam. Sed tincidunt gravida tortor non euismod. Pellentesque congue, felis ac gravida volutpat, magna enim malesuada nisi, eget dictum urna enim quis dui. Sed tincidunt dignissim lorem sit amet vestibulum.
+
+    Maecenas quam turpis, interdum et dui sed, vehicula lobortis mauris. Vivamus viverra dui vel sem euismod accumsan. Cras sit amet felis nec metus facilisis rhoncus.
+4. Pellentesque vitae dui at risus faucibus interdum non vitae lacus. Donec aliquet placerat lectus sit amet interdum. Etiam porttitor rutrum nulla a aliquet. 
+5. Suspendisse potenti.
+    1. Nulla tincidunt malesuada tortor nec porttitor.
+    2. Quisque at pellentesque libero, quis mattis lorem.
+    3. Ut imperdiet ac eros pulvinar ultricies. Donec luctus, turpis quis luctus volutpat, ex massa fermentum ante, sit amet rutrum velit turpis ac enim. Suspendisse id enim sapien.
+    4. Proin et libero varius, malesuada nunc sit amet, vestibulum tortor. In ut tincidunt massa. Aenean rhoncus viverra sem id posuere. Curabitur mauris felis, eleifend at lacus posuere, gravida ullamcorper sem.
+
+Hey?
+
+11. Pellentesque vitae dui at risus faucibus interdum non vitae lacus. Donec aliquet placerat lectus sit amet interdum. Etiam porttitor rutrum nulla a aliquet.
+12. Donec condimentum iaculis urna, a imperdiet ex fringilla quis. Duis eget libero eu turpis condimentum porta non ac lorem. In odio velit, tempor vel scelerisque id, faucibus at felis. Praesent erat ante, tempus sit amet ipsum sed, feugiat molestie nisl. Nunc posuere orci vel cursus convallis.

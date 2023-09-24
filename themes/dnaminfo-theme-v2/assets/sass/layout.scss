@@ -8,7 +8,7 @@ body {
 /* header and footer */
 header {
   position: fixed;
-  left: var(--gap-md);
+  left: 0.5rem;
   z-index: 9999;
 
   animation: fadeOut 5s ease-in-out forwards;
@@ -28,7 +28,7 @@ header {
   margin: 0 1.5rem;
   padding: 3rem 0 25vh 0;
 
-  border: 1px solid var(--hr-color); // temporary
+  border: 1px solid var(--border-gray); // temporary
 
   @include tablet {
     position: relative;
@@ -36,13 +36,15 @@ header {
     margin-left: $large-aside-width + $side-gap;
   }
 }
-aside {
+
+aside,
+.note {
   margin: 1rem 0;
   padding: 0.5rem;
 
-  border: 1px solid var(--hr-color);
+  border: 1px solid var(--border-gray);
   border-left-width: 3px;
-  background-color: var(--background-accent-color);
+  background-color: var(--background-gray);
 
   font-size: 0.85rem;
   @include font-weight(300);
@@ -54,14 +56,18 @@ aside {
   > *:last-child {
     margin-bottom: 0;
   }
-
+}
+aside,
+.aside {
   @include tablet {
-    position: absolute;
-    left: -$aside-width - $side-gap;
-    width: $aside-width;
-    transform: translate(0, 0.15em); // baseline alignment
+    position: relative;
+    float: left;
+    clear: left;
 
-    margin: 0 0 1rem 0;
+    width: $aside-width;
+    margin: 0;
+    margin-left: -$aside-width - $side-gap;
+    margin-bottom: 1em;
     padding: 0;
 
     text-align: right;
@@ -72,5 +78,47 @@ aside {
   @include desktop-large {
     left: -$large-aside-width - $side-gap;
     width: $large-aside-width;
+  }
+}
+aside {
+  @include tablet {
+    top: 0.15rem; // vertical align with paragraph
+  }
+}
+
+/* lists */
+:is(ul, ol) li {
+  margin: 0 0 0.25rem 2.5rem;
+  display: block;
+  list-style-type: none;
+
+  &::before {
+    position: absolute;
+    margin-left: -2.5rem;
+    @include font-weight(600);
+  }
+}
+
+ul {
+  li::before {
+    content: "\00BB";
+  }
+  li li::before {
+    content: "\203A";
+  }
+}
+
+ol {
+  counter-reset: lis;
+
+  li::before {
+    counter-increment: lis;
+    content: counter(lis) ". ";
+
+    font-variant-numeric: oldstyle-nums;
+    font-style: italic;
+  }
+  li li::before {
+    content: counter(lis, lower-alpha) ". ";
   }
 }

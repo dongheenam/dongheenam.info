@@ -1,49 +1,45 @@
 @use "./variables.scss" as *;
 
-.boxed {
-  margin: 1rem 0;
-  padding: 0.5rem;
-
-  border: 1px solid var(--hr-color);
-  border-left-width: 3px;
-  background-color: var(--background-accent-color);
-
-  font-size: 0.85rem;
-  @include font-weight(300);
-
-  & > *:last-child {
-    margin-bottom: 0;
-  }
+/* NOTE */
+.note-gray {
+  border-color: var(--border-gray);
+  background-color: var(--background-gray);
+  color: var(--text-gray);
 }
-
+.note-gold {
+  border-color: var(--border-gold);
+  background-color: var(--background-gold);
+  color: var(--text-gold);
+}
+.note-accent {
+  border-color: var(--border-accent);
+  background-color: var(--background-accent);
+  color: var(--text-accent);
+}
 .note-title {
   text-transform: capitalize;
   font-style: italic;
 
   @include font-weight(400);
 
-  &:after {
+  &::after {
     content: ".";
   }
 
   @include tablet {
-    position: absolute;
-    left: -$aside-width - $side-gap;
-    width: $aside-width;
-
-    transform: translate(0, -0.15rem);
-    text-align: right;
-
     font-size: 1rem;
     @include small-caps;
     @include font-weight(500);
 
-    &:after {
+    top: -0.15rem;
+
+    &::after {
       content: "";
     }
   }
 }
 
+/* SMALL-CAP */
 .small-caps {
   @include small-caps;
 }

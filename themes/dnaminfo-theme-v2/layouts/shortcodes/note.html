@@ -1,7 +1,8 @@
 {{ $content := .Inner | $.Page.RenderString }}
+{{ $color := .Get "color" | default "gray" }}
 {{/* wrap the title with a <span> and append it to the first paragraph */}}
-{{ with .Get 0 }}
-  {{ $title := print "<p><span class='note-title'>" . "</span> " }}
+{{ with .Get "title" }}
+  {{ $title := print "<p><span class='note-title aside'>" . "</span> " }}
   {{ if hasPrefix $content "<p>" }}
     {{ $content = print $title (strings.TrimPrefix "<p>" $content) }}
   {{ else }}
@@ -9,6 +10,6 @@
   {{ end }}
 {{ end }}
 
-<div class="boxed">
+<div class="note note-{{ $color }}">
   {{- $content | safeHTML -}}
 </div>
