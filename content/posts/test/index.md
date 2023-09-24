@@ -38,15 +38,13 @@ Lorem Ipsum has been the industry's {{% smallcaps %}}standard dummy{{% /smallcap
 
 ## Images
 
-{{% figure src="house.avif" caption="It's a **house**." %}}
-
 {{% figure src="cathedral.jpg" caption="Central dome of Salzburg Cathedral, Austria." %}}
 
 {{% figure src="map.svg" border="true" %}}
 
 ## Codeblock
 
-single line `code`?
+single line `code`?1
 
 ```html {path="layouts/partials/head.html", hl_lines="2-4"}
 <head>
