@@ -29,8 +29,6 @@ header {
   margin: 0 1.5rem;
   padding: 3rem 0 25vh 0;
 
-  border: 1px solid var(--border-gray); // temporary
-
   @include tablet {
     position: relative;
     margin-right: 1.5rem;
@@ -188,6 +186,8 @@ figure {
 }
 // make table width equal to the container to fix the highlighted lines
 .chroma .lntd:first-child {
+  position: sticky;
+  left: 0;
   width: 1%;
 }
 

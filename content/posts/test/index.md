@@ -46,7 +46,7 @@ Lorem Ipsum has been the industry's {{% smallcaps %}}standard dummy{{% /smallcap
 
 ## Codeblock
 
-single line `code`?2
+single line `code`?
 
 ```html {path="layouts/partials/head.html", hl_lines="2-4"}
 <head>
