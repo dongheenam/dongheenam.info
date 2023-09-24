@@ -12,15 +12,6 @@ tags:
 
 ---
 
-single line `code`
-
-```python
-
-def hello(this: int, that: str):
-    return f"{this * 3} is {that}"
-
-```
-
 ## What is Lorem Ipsum?
 
 abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
@@ -44,6 +35,30 @@ Ipsum
 {{% /note %}}
 
 Lorem Ipsum has been the industry's {{% smallcaps %}}standard dummy{{% /smallcaps %}} text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+## Images
+
+{{% figure src="house.avif" caption="It's a **house**." %}}
+
+{{% figure src="cathedral.jpg" caption="Central dome of Salzburg Cathedral, Austria." %}}
+
+{{% figure src="map.svg" %}}
+
+
+
+## Codeblock
+
+
+single line `code`
+
+```python
+
+def hello(this: int, that: str):
+    return f"{this * 3} is {that}"
+
+```
+
+
 
 ## Why do we use it?
 
