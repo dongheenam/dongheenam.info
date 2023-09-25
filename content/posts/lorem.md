@@ -21,4 +21,4 @@ menu:
 
 ## Introduction
 
-What is Lorem Ipsum!
+What is Lorem Ipsum?

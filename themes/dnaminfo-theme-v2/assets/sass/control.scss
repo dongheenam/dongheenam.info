@@ -16,7 +16,7 @@
 
   @include tablet {
     position: fixed;
-    top: 9.25rem;
+    top: 7.75rem;
     left: 0;
     max-height: fit-content;
     width: $large-aside-width;
@@ -25,9 +25,6 @@
     transition: opacity 1s ease-out;
     pointer-events: none;
     opacity: 0;
-  }
-  @include desktop {
-    left: calc((100vw - $largest-tablet-width) / 2);
   }
 }
 #control-hover-area {
@@ -40,9 +37,6 @@
     left: 0;
     bottom: 0;
     width: $large-aside-width;
-  }
-  @include desktop {
-    width: calc((100vw - $largest-tablet-width) / 2 + $large-aside-width);
   }
 }
 #control-hover-area:hover ~ #control,
@@ -57,10 +51,11 @@
   font-size: 0.85rem;
   background: var(--background-gray);
   border: 1px solid var(--border-gray);
+  color: var(--text-gray);
 
-  summary {
+  summary,
+  .toggle-theme {
     cursor: pointer;
-    color: var(--text-color);
     &:hover {
       color: var(--text-accent);
     }
@@ -72,7 +67,6 @@
   grid-template-columns: repeat(2, 1fr);
   margin: 0.5rem 0;
 
-  color: var(--text-gray);
   @include small-caps;
 
   li {

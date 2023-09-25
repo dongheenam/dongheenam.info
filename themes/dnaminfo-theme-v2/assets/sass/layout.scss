@@ -1,9 +1,22 @@
 @use "./variables.scss" as *;
 
 body {
+  position: relative;
   width: min(100%, calc($largest-tablet-width - $scrollbar-width));
+  min-height: 100vh;
   overflow-x: hidden;
   margin-inline: auto;
+}
+
+/* footer */
+footer {
+  position: absolute;
+  bottom: 0.5rem;
+  width: 100%;
+
+  text-align: center;
+  color: var(--text-gray);
+  font-style: italic;
 }
 
 /* metadata */
@@ -28,9 +41,8 @@ body {
 
 /* body text and aside */
 #content {
-  min-height: 100vh;
   margin: 0 1.5rem;
-  padding: 3rem 0 15vh 0;
+  padding: 3rem 0;
 
   @include tablet {
     position: relative;
@@ -39,7 +51,7 @@ body {
   }
 }
 article {
-  padding-bottom: 5rem;
+  padding-bottom: 25vh;
 }
 
 aside,
