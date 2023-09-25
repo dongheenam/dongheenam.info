@@ -12,13 +12,15 @@
   }
 </style>
 {{ partial "side-control" . }}
-<div class="title-block">
+<div class="title-block fullwidth">
   <h1>{{ .Title }}</h1>
-  <p class="subtitle">
-    {{ .Description }}<br>
-    <span class="date small-text">{{ .Date.Format "2 Jan 2006" }}. </span>
-    <span class="date small-text">{{ .Content | countwords }} words. </span>
-  </p>
+  <div class="subtitle-block">
+    <p>{{ .Description }}</p>
+    <p class="date small-text">
+      {{ .Date.Format "2 Jan 2006" }}. {{ .Content | countwords }} words.
+    </p>
+  </div>
+  <hr />
 </div>
 <article>
   {{ .Content }}

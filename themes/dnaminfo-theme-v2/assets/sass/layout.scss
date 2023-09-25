@@ -10,16 +10,27 @@ body {
 .title-block {
   margin-bottom: 2rem;
 }
-.subtitle {
+.subtitle-block {
   font-style: italic;
   @include font-weight(300);
+
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 0;
+  }
+
+  p {
+    margin: 0;
+  }
 }
 
 /* body text and aside */
 #content {
   min-height: 100vh;
   margin: 0 1.5rem;
-  padding: 3rem 0 25vh 0;
+  padding: 3rem 0 15vh 0;
 
   @include tablet {
     position: relative;
@@ -84,11 +95,22 @@ aside,
   }
 }
 
+/* fullwidth elements */
+.fullwidth {
+  @include tablet {
+    position: relative;
+    clear: both;
+    margin-left: -$aside-width - $side-gap;
+  }
+  @include desktop-large {
+    margin-left: -$large-aside-width - $side-gap;
+  }
+}
+
 /* lists */
-article :is(ul, ol) li {
+article :is(ul, ol) li,
+.fancy-list li {
   margin: 0 0 0.25rem 2.5rem;
-  display: block;
-  list-style-type: none;
 
   &::before {
     position: absolute;
@@ -97,7 +119,8 @@ article :is(ul, ol) li {
   }
 }
 
-article ul {
+article ul,
+ul.fancy-list {
   li::before {
     content: "\00BB";
   }
@@ -106,7 +129,8 @@ article ul {
   }
 }
 
-article ol {
+article ol,
+ol.fancy-list {
   counter-reset: lis;
 
   li::before {
@@ -142,16 +166,42 @@ figure {
   }
 }
 
-/* navigation */
+/* pager */
+.fancy-list {
+  margin-bottom: 1rem;
+}
+.prev-next {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr auto auto 1fr;
+  gap: 1rem;
+
+  @include small-caps;
+  color: var(--text-gray);
+
+  .prev {
+    text-align: left;
+  }
+  .next {
+    text-align: right;
+  }
+}
+.meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+
+  .date {
+    margin: 0;
+  }
+}
 .tags {
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+  gap: 0.5rem;
 
-  font-size: 0.9em;
   font-style: italic;
-
-  li {
-    margin: 0 0.125rem;
-  }
 }

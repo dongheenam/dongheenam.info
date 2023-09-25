@@ -1,7 +1,10 @@
 {{ with resources.Get "js/control.ts" | js.Build }}
   <script src="{{ .RelPermalink }}"></script>
 {{ end }}
-<div id="control-overlay"></div>
+{{/*  <div id="control-help" class="small-text">
+  Hover your pointer over the left edge of the screen to show the controls.
+</div>  */}}
+<div id="control-hover-area"></div>
 <div id="control">
   <div class="control-content">
     <label class="toggle-theme">
@@ -9,16 +12,35 @@
       <span class="toggle">Dark mode </span><span id="theme-status">is on.</span>
     </label>
     <ul class="posts">
-      <li class="prev"><a href="#">←Prev</a></li>
-      <li class="all"><a href="#">↑All</a></li>
-      <li class="next"><a href="#">Next→</a></li>
+      <li class="home">
+        <a href="/">Home</a>
+      </li>
+      <li class="all">
+        {{- with .Parent -}}
+          <a href="{{ .RelPermalink }}" title="{{ .Title }}">List</a>
+        {{- end -}}
+      </li>
     </ul>
+    <ul class="posts">
+      <li class="prev">
+        {{- with .PrevInSection -}}
+          <a href="{{ .RelPermalink }}" title="{{ .Title }}">← Prev</a>
+        {{- end -}}
+      </li>
+      <li class="next">
+        {{- with .NextInSection -}}
+          <a href="{{ .RelPermalink }}" title="{{ .Title }}">Next →</a>
+        {{- end -}}
+      </li>
+    </ul>
+    {{ with .TableOfContents }}
     <details id="toc">
       <summary>Table of Contents</summary>
       <div>
-        {{ .TableOfContents }}
+        {{ . }}
       </div>
     </details>
+    {{ end}}
   </div>
 </div>
 <button id="control-toggle" class="small-text" onclick="toggleControl(event)">Click here to expand controls</button>

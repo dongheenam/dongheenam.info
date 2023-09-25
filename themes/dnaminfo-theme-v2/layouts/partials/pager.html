@@ -1,17 +1,58 @@
-<nav id="post-nav">
-  <aside>
+{{ $published := .Date.Format "2 Jan 2006" }}
+{{ $updated := .Lastmod.Format "2 Jan 2006" | default "" }}
+{{ $menu_id := "" }}
+{{ range $key, $value := .Params.menu }}
+  {{ $menu_id = $key }}
+{{ end }}
+<nav id="post-nav" class="fullwidth">
+  <div class="meta">
     <ul class="tags small-text">
       {{ range (.GetTerms "tags") }}
         <li><a href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a></li>
       {{ end }}
     </ul>
-  </aside>
-  <div>
-    <div>
-      Other posts in this series
+    <p class="date small-text">
+      {{- if not (in (slice "" $published) $updated) -}}
+        Last updated on {{ $updated }}.
+      {{- end -}}
+    </p>
+  </div>
+  <hr />
+  {{ with (index .Site.Menus $menu_id) }}
+    <h3>Series: {{ title $menu_id }}</h3>
+    <ol class="fancy-list">
+      {{ range . }}
+        <li><a href="{{ .URL }}">{{ .Name | default .Title }}</a></li>
+      {{ end }}
+    </ol>
+  {{ end }}
+  {{ with .Site.RegularPages.Related . | first 5 }}
+    <h3>Related posts</h3>
+    <ul class="fancy-list">
+      {{ range . }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+  {{ end }}
+  <hr />
+  <div class="prev-next">
+    <div class="prev">
+      {{- with .PrevInSection -}}
+        <a href="{{ .RelPermalink }}">← {{ .Title }}</a>
+      {{- end -}}
     </div>
-    <div>
-      Related posts
+    <div class="home">
+      <a href="/">Home</a>
+    </div>
+    <div class="all">
+      {{- with .Parent -}}
+        <a href="{{ .RelPermalink }}">List</a>
+      {{- end -}}
+    </div>
+    <div class="next">
+      {{- with .NextInSection -}}
+        <a href="{{ .RelPermalink }}">{{ .Title }} →</a>
+      {{- end -}}
     </div>
   </div>
 </nav>

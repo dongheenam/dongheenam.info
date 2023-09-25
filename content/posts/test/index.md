@@ -12,6 +12,7 @@ tags:
   - Typo
   - Hello!
 
+
 ---
 
 ## What is Lorem Ipsum?
@@ -46,7 +47,7 @@ Lorem Ipsum has been the industry's {{% smallcaps %}}standard dummy{{% /smallcap
 
 ## Codeblock
 
-single line `code`?1
+single line `code`?
 
 ```html {path="layouts/partials/head.html", hl_lines="2-4"}
 <head>
