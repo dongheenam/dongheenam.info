@@ -53,3 +53,8 @@ h6 {
 html {
   isolation: isolate;
 }
+
+:is(ul, ol) li {
+  display: block;
+  list-style-type: none;
+}

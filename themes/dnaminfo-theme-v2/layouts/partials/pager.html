@@ -1,0 +1,17 @@
+<nav id="post-nav">
+  <aside>
+    <ul class="tags small-text">
+      {{ range (.GetTerms "tags") }}
+        <li><a href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a></li>
+      {{ end }}
+    </ul>
+  </aside>
+  <div>
+    <div>
+      Other posts in this series
+    </div>
+    <div>
+      Related posts
+    </div>
+  </div>
+</nav>

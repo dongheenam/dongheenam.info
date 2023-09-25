@@ -5,6 +5,7 @@ html {
   font-size: 18px;
 
   @include tablet {
+    // TODO: make font-size 2.1% of the screen width excluding the scrollbar
     font-size: min(2.1vw, 21.5px);
   }
 }
@@ -23,8 +24,8 @@ body {
 }
 
 h1 {
-  font-size: 1.3em;
-  @include font-weight(900);
+  font-size: 1.8em;
+  @include font-weight(800);
 }
 
 h2 {
@@ -56,6 +57,15 @@ code {
   font-family: "Iosevka Fixed SS04", monospace;
   font-size: 0.91em;
   -webkit-text-size-adjust: 100%;
+}
+
+a {
+  color: var(--hypertext-color);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--text-color);
+  }
 }
 
 // ul,

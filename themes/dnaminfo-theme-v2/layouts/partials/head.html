@@ -19,7 +19,7 @@
   <meta name="robots" content="noindex" />
   <meta name="googlebot" content="noindex" />
   {{ end }}
-  
+
   {{/* stylesheets */}}
   {{ $options := dict "transpiler" "dartsass" "targetPath" "css/main.css" }}
   {{ with resources.Get "sass/main.scss" | resources.ToCSS $options | resources.Minify }}
@@ -28,6 +28,6 @@
 
   <link rel="canonical" href="{{ .Permalink }}" />
 
-  {{/* Fabicon stuff - realfavicongenerator.net */}} 
+  {{/* Fabicon stuff - realfavicongenerator.net */}}
   {{- partial "fabicon" . -}}
 </head>

@@ -1,0 +1,141 @@
+@use "./variables.scss" as *;
+
+/* side control */
+#control {
+  position: relative;
+  z-index: 9999;
+  top: -3rem;
+
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+  overflow: hidden;
+
+  &.open {
+    max-height: 30vh;
+  }
+
+  @include tablet {
+    position: fixed;
+    top: 1.5rem;
+    left: 0;
+    max-height: fit-content;
+    width: $large-aside-width;
+    overflow: hidden;
+
+    transition: opacity 1s ease-out;
+    pointer-events: none;
+    opacity: 0;
+  }
+  @include desktop {
+    left: calc((100vw - $largest-tablet-width) / 2);
+  }
+}
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#control-overlay {
+  display: none;
+
+  @include tablet {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: $large-aside-width;
+  }
+  @include desktop {
+    width: calc((100vw - $largest-tablet-width) / 2 + $large-aside-width);
+  }
+}
+
+#control-overlay:hover ~ #control,
+#control:hover,
+#control:focus-within {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.control-content {
+  padding: 0.5rem;
+  font-size: 0.85rem;
+  background: var(--background-gray);
+  border: 1px solid var(--border-gray);
+
+  a,
+  .toggle-theme,
+  summary {
+    color: var(--text-color);
+    @include clickable-text;
+  }
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0.5rem 0;
+
+  color: var(--text-gray);
+  @include small-caps;
+
+  li {
+    text-align: center;
+    border: 1px solid transparent;
+  }
+}
+
+#toc {
+  summary {
+    @include small-caps;
+    @include font-weight(500);
+  }
+  div {
+    margin: 0.25rem 0;
+    overflow-y: auto;
+  }
+  li {
+    margin-left: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+#control-toggle {
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 3rem;
+
+  color: var(--text-gray);
+  background: transparent;
+  border: 1px solid var(--border-gray);
+
+  &.open {
+    inset: 0;
+    height: auto;
+  }
+
+  @include tablet {
+    display: none;
+  }
+
+  animation: disappear 3s ease-out forwards;
+}
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

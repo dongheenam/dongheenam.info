@@ -160,3 +160,12 @@ $dark-mode-correction: 0.85;
   font-variant: small-caps;
   letter-spacing: 0.09em;
 }
+
+// button
+@mixin clickable-text {
+  cursor: pointer;
+
+  &:hover {
+    color: var(--text-accent);
+  }
+}

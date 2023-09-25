@@ -1,0 +1,69 @@
+{{ with resources.Get "js/control.ts" | js.Build }}
+  <script src="{{ .RelPermalink }}"></script>
+{{ end }}
+<div id="control-overlay"></div>
+<div id="control">
+  <div class="control-content">
+    <label class="toggle-theme">
+      <input type="checkbox" id="theme-toggle" checked="true" style="display: none"/>
+      <span class="toggle">Dark mode </span><span id="theme-status">is on.</span>
+    </label>
+    <ul class="posts">
+      <li class="prev"><a href="#">←Prev</a></li>
+      <li class="all"><a href="#">↑All</a></li>
+      <li class="next"><a href="#">Next→</a></li>
+    </ul>
+    <details id="toc">
+      <summary>Table of Contents</summary>
+      <div>
+        {{ .TableOfContents }}
+      </div>
+    </details>
+  </div>
+</div>
+<button id="control-toggle" class="small-text" onclick="toggleControl(event)">Click here to expand controls</button>
+
+<script>
+  const STORAGE_KEY = "dnam-theme";
+  const toggle = document.getElementById("theme-toggle");
+  const status = document.getElementById("theme-status");
+  const html = document.documentElement;
+
+  const toDark = () => {
+    html.classList.add("dark-theme");
+    localStorage.setItem(STORAGE_KEY, "dark");
+    status.innerText = "is on.";
+  }
+  const toLight = () => {
+    html.classList.remove("dark-theme");
+    localStorage.setItem(STORAGE_KEY, "light");
+    status.innerText = "is off.";
+  }
+
+  // load theme from localStorage
+  const loadTheme = () => {
+    const currentTheme = localStorage.getItem(STORAGE_KEY);
+    if (currentTheme === "light") {
+      toLight();
+      toggle.checked = false;
+      return;
+    }
+    if (!window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      toLight();
+      toggle.checked = false;
+    }
+  }
+
+  // toggle theme on clicking the checkbox
+  const toggleTheme = () => {
+    if (html.classList.contains("dark-theme")) {
+      toLight();
+    } else {
+      toDark();
+    }
+  }
+
+  loadTheme();
+  toggle.addEventListener("change", toggleTheme);
+
+</script>

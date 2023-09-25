@@ -1,7 +1,27 @@
 {{- define "main" -}}
-<h1>{{ .Title }}</h1>
-<p class="subtitle">{{ .Description }}</p>
+<style>
+  .date {
+    color: var(--text-gray);
+    font-style: italic;
+  }
+  .meta-display {
+    text-align: right;
+    font-style: italic;
+    color: var(--text-gray);
+    top: 1.05rem !important; /* override default vertical alignment */
+  }
+</style>
+{{ partial "side-control" . }}
+<div class="title-block">
+  <h1>{{ .Title }}</h1>
+  <p class="subtitle">
+    {{ .Description }}<br>
+    <span class="date small-text">{{ .Date.Format "2 Jan 2006" }}. </span>
+    <span class="date small-text">{{ .Content | countwords }} words. </span>
+  </p>
+</div>
 <article>
   {{ .Content }}
 </article>
+{{ partial "pager" . }}
 {{- end -}}

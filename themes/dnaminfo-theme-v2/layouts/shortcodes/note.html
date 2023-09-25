@@ -2,7 +2,7 @@
 {{ $color := .Get "color" | default "gray" }}
 {{/* wrap the title with a <span> and append it to the first paragraph */}}
 {{ with .Get "title" }}
-  {{ $title := print "<p><span class='note-title aside'>" . "</span> " }}
+  {{ $title := print "<p><span class='aside note-title'>" . "</span> " }}
   {{ if hasPrefix $content "<p>" }}
     {{ $content = print $title (strings.TrimPrefix "<p>" $content) }}
   {{ else }}
