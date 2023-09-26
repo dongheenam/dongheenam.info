@@ -1,4 +1,5 @@
-{{ $content := .Inner | $.Page.RenderString (dict "display" "block") }}
+{{ .Page.Scratch.Set "require-note-resources" "true" }}
+{{ $content := .Inner | .Page.RenderString (dict "display" "block") }}
 {{ $color := .Get "color" | default "gray" }}
 {{/* wrap the title with a <span> and append it to the first paragraph */}}
 {{ with .Get "title" }}

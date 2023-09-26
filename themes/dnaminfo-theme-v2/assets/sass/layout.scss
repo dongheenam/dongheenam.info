@@ -1,5 +1,6 @@
 @use "./variables.scss" as *;
 
+/* blocks */
 body {
   position: relative;
   width: min(100%, calc($largest-tablet-width - $scrollbar-width));
@@ -7,8 +8,6 @@ body {
   overflow-x: hidden;
   margin-inline: auto;
 }
-
-/* footer */
 footer {
   position: absolute;
   bottom: 0.5rem;
@@ -18,28 +17,6 @@ footer {
   color: var(--text-gray);
   font-style: italic;
 }
-
-/* metadata */
-.title-block {
-  margin-bottom: 2rem;
-}
-.subtitle-block {
-  font-style: italic;
-  @include font-weight(300);
-
-  @include tablet {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 0;
-  }
-
-  p {
-    margin: 0;
-  }
-}
-
-/* body text and aside */
 #content {
   margin: 0 1.5rem;
   padding: 3rem 0;
@@ -54,19 +31,9 @@ article {
   padding-bottom: 25vh;
 }
 
-aside,
-.small-text {
-  font-size: 0.85rem;
-  @include font-weight(300);
-
-  strong {
-    @include font-weight(500);
-  }
-}
-
-aside,
+/* components */
 .note {
-  margin: 1rem 0;
+  margin-bottom: 1.5rem;
   padding: 0.5rem;
 
   border: 1px solid var(--border-gray);
@@ -77,7 +44,7 @@ aside,
     margin-bottom: 0;
   }
 }
-aside,
+
 .aside {
   @include tablet {
     position: relative;
@@ -100,14 +67,13 @@ aside,
     width: $large-aside-width;
   }
 }
-aside,
+// matching the vertical alignment with the body paragraph
 .aside.small-text {
   @include tablet {
-    top: 0.15rem; // vertical align with paragraph
+    top: 0.15rem;
   }
 }
 
-/* fullwidth elements */
 .fullwidth {
   @include tablet {
     position: relative;
@@ -119,23 +85,19 @@ aside,
   }
 }
 
-/* lists */
-article > :is(ul, ol),
+// article > :is(ul, ol),
 .fancy-list {
-  margin-bottom: 1rem;
-}
-article > :is(ul, ol) li,
-.fancy-list li {
-  margin: 0 0 0.25rem 2.5rem;
+  margin-bottom: 1.5rem;
 
-  &::before {
+  li {
+    margin: 0 0 0.25rem 2.5rem;
+  }
+  li::before {
     position: absolute;
     margin-left: -2.5rem;
     @include font-weight(600);
   }
 }
-
-article > ul,
 ul.fancy-list {
   li::before {
     content: "\00BB";
@@ -144,8 +106,6 @@ ul.fancy-list {
     content: "\203A";
   }
 }
-
-article > ol,
 ol.fancy-list {
   counter-reset: lis;
 
@@ -161,9 +121,37 @@ ol.fancy-list {
   }
 }
 
-/* figures */
+/* article components */
+.title-block {
+  margin-bottom: 2rem;
+}
+.subtitle {
+  font-style: italic;
+  @include font-weight(300);
+
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 0;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+aside {
+  @extend .note;
+  @extend .aside;
+  @extend .small-text;
+}
+
+article > :is(ul, ol) {
+  @extend .fancy-list;
+}
+
 figure {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 
   display: flex;
   flex-direction: column-reverse;
@@ -183,10 +171,34 @@ figure {
 }
 
 /* pager */
-.fancy-list {
-  margin-bottom: 1rem;
+#post-nav {
+  @extend .fullwidth;
 }
-.prev-next {
+.meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+
+  @extend .small-text;
+}
+.tags {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.5rem;
+
+  font-style: italic;
+}
+.updated {
+  margin: 0;
+}
+.menu-posts,
+.related-posts {
+  @extend .fancy-list;
+}
+.navigator {
   margin-top: 1rem;
   display: grid;
   grid-template-columns: 1fr auto auto 1fr;
@@ -201,23 +213,4 @@ figure {
   .next {
     text-align: right;
   }
-}
-.meta {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  flex-wrap: nowrap;
-
-  .date {
-    margin: 0;
-  }
-}
-.tags {
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 0.5rem;
-
-  font-style: italic;
 }

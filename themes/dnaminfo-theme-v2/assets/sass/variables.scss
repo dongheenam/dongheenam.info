@@ -27,121 +27,111 @@ $largest-desktop-width: 1280px;
 $scrollbar-width: calc(100vw - 100%);
 
 $side-gap: 1.5rem;
-$content-width: 31rem;
 $aside-width: 9rem;
 $large-aside-width: 12rem;
 
 // colors
 // https://www.radix-ui.com/
-$sand-1: hsl(50, 20%, 99%);
-$sand-2: hsl(60, 7.7%, 97.5%);
-$sand-3: hsl(59, 5.8%, 94.5%);
-$sand-4: hsl(58, 5.3%, 91.8%);
-$sand-5: hsl(57, 5.1%, 89%);
-$sand-6: hsl(56, 5%, 86%);
-$sand-7: hsl(54, 4.9%, 81.8%);
-$sand-8: hsl(51, 5%, 72.4%);
-$sand-9: hsl(60, 3%, 53.9%);
-$sand-10: hsl(60, 2.6%, 49%);
-$sand-11: hsl(50, 2.5%, 38%);
-$sand-12: hsl(50, 8%, 12%);
-$sand-dark-1: hsl(60, 6%, 9%);
-$sand-dark-2: hsl(60, 1.9%, 10.4%);
-$sand-dark-3: hsl(56, 2.4%, 15.4%);
-$sand-dark-4: hsl(53, 2.7%, 18.4%);
-$sand-dark-5: hsl(51, 2.9%, 21.2%);
-$sand-dark-6: hsl(49, 3.1%, 24.3%);
-$sand-dark-7: hsl(47, 3.3%, 28.7%);
-$sand-dark-8: hsl(43, 3.7%, 37.1%);
-$sand-dark-9: hsl(50, 4%, 41.8%);
-$sand-dark-10: hsl(48, 3.5%, 49.5%);
-$sand-dark-11: hsl(50, 5%, 68.3%);
-$sand-dark-12: hsl(56, 7%, 93%);
-$gold-1: hsl(50, 20%, 99.1%);
-$gold-2: hsl(47, 52.9%, 96.7%);
-$gold-3: hsl(46, 38.2%, 93.7%);
-$gold-4: hsl(44, 32.7%, 90.1%);
-$gold-5: hsl(43, 29.9%, 85.7%);
-$gold-6: hsl(41, 28.3%, 79.8%);
-$gold-7: hsl(39, 27.6%, 71.9%);
-$gold-8: hsl(36, 27.2%, 61.8%);
-$gold-9: hsl(36, 20%, 49.5%);
-$gold-10: hsl(36, 19.9%, 44.9%);
-$gold-11: hsl(36, 20%, 37%);
-$gold-12: hsl(36, 16%, 20%);
-$gold-dark-1: hsl(44, 9%, 8.3%);
-$gold-dark-2: hsl(45, 8%, 9.8%);
-$gold-dark-3: hsl(44, 9.5%, 13%);
-$gold-dark-4: hsl(43, 10.5%, 15.6%);
-$gold-dark-5: hsl(42, 11.2%, 18.5%);
-$gold-dark-6: hsl(41, 12.1%, 22.6%);
-$gold-dark-7: hsl(39, 13.2%, 29.8%);
-$gold-dark-8: hsl(35, 14.8%, 45.1%);
-$gold-dark-9: hsl(36, 20%, 49.5%);
-$gold-dark-10: hsl(36, 21.9%, 56.8%);
-$gold-dark-11: hsl(35, 30%, 71%);
-$gold-dark-12: hsl(35, 25%, 88%);
-$ruby-1: hsl(348, 100%, 99.5%);
-$ruby-2: hsl(345, 100%, 98.4%);
-$ruby-3: hsl(345, 89.9%, 96.7%);
-$ruby-4: hsl(346, 82.6%, 94.4%);
-$ruby-5: hsl(346, 75.8%, 91.4%);
-$ruby-6: hsl(347, 69.3%, 87.1%);
-$ruby-7: hsl(348, 64.3%, 80.9%);
-$ruby-8: hsl(348, 61.5%, 73.5%);
-$ruby-9: hsl(348, 75%, 58.5%);
-$ruby-10: hsl(347, 68.6%, 54.1%);
-$ruby-11: hsl(345, 70%, 46.5%);
-$ruby-12: hsl(344, 63%, 24%);
-$ruby-dark-1: hsl(343, 23%, 10%);
-$ruby-dark-2: hsl(349, 33.3%, 12.4%);
-$ruby-dark-3: hsl(348, 42.2%, 16.4%);
-$ruby-dark-4: hsl(348, 46.8%, 19.1%);
-$ruby-dark-5: hsl(348, 50.7%, 21.7%);
-$ruby-dark-6: hsl(348, 56%, 25.7%);
-$ruby-dark-7: hsl(348, 64.3%, 33%);
-$ruby-dark-8: hsl(348, 77%, 46.1%);
-$ruby-dark-9: hsl(348, 75%, 58.5%);
-$ruby-dark-10: hsl(349, 84.1%, 67.1%);
-$ruby-dark-11: hsl(348, 100%, 76%);
-$ruby-dark-12: hsl(340, 95%, 91%);
-
 html {
-  --background-color: #{$sand-1};
-  --text-color: #{$sand-12};
-  --hypertext-color: #{$ruby-11};
-
-  --background-gray: #{$sand-2};
-  --background-gray-deep: #{$sand-3};
-  --border-gray: #{$sand-6};
-  --text-gray: #{$sand-11};
-  --background-gold: #{$gold-2};
-  --border-gold: #{$gold-6};
-  --text-gold: #{$gold-11};
-  --background-accent: #{$ruby-2};
-  --border-accent: #{$ruby-6};
-  --text-accent: #{$ruby-11};
+  --sand-1: hsl(50, 20%, 99%);
+  --sand-2: hsl(60, 7.7%, 97.5%);
+  --sand-3: hsl(59, 5.8%, 94.5%);
+  --sand-4: hsl(58, 5.3%, 91.8%);
+  --sand-5: hsl(57, 5.1%, 89%);
+  --sand-6: hsl(56, 5%, 86%);
+  --sand-7: hsl(54, 4.9%, 81.8%);
+  --sand-8: hsl(51, 5%, 72.4%);
+  --sand-9: hsl(60, 3%, 53.9%);
+  --sand-10: hsl(60, 2.6%, 49%);
+  --sand-11: hsl(50, 2.5%, 38%);
+  --sand-12: hsl(50, 8%, 12%);
+  --gold-1: hsl(50, 20%, 99.1%);
+  --gold-2: hsl(47, 52.9%, 96.7%);
+  --gold-3: hsl(46, 38.2%, 93.7%);
+  --gold-4: hsl(44, 32.7%, 90.1%);
+  --gold-5: hsl(43, 29.9%, 85.7%);
+  --gold-6: hsl(41, 28.3%, 79.8%);
+  --gold-7: hsl(39, 27.6%, 71.9%);
+  --gold-8: hsl(36, 27.2%, 61.8%);
+  --gold-9: hsl(36, 20%, 49.5%);
+  --gold-10: hsl(36, 19.9%, 44.9%);
+  --gold-11: hsl(36, 20%, 37%);
+  --gold-12: hsl(36, 16%, 20%);
+  --ruby-1: hsl(348, 100%, 99.5%);
+  --ruby-2: hsl(345, 100%, 98.4%);
+  --ruby-3: hsl(345, 89.9%, 96.7%);
+  --ruby-4: hsl(346, 82.6%, 94.4%);
+  --ruby-5: hsl(346, 75.8%, 91.4%);
+  --ruby-6: hsl(347, 69.3%, 87.1%);
+  --ruby-7: hsl(348, 64.3%, 80.9%);
+  --ruby-8: hsl(348, 61.5%, 73.5%);
+  --ruby-9: hsl(348, 75%, 58.5%);
+  --ruby-10: hsl(347, 68.6%, 54.1%);
+  --ruby-11: hsl(345, 70%, 46.5%);
+  --ruby-12: hsl(344, 63%, 24%);
 
   &.dark-theme {
-    --background-color: #{$sand-dark-1};
-    --text-color: #{$sand-dark-12};
-    --text-alt-color: #{$sand-dark-11};
-    --hypertext-color: #{$ruby-dark-11};
+    --sand-1: hsl(60, 6%, 9%);
+    --sand-2: hsl(60, 1.9%, 10.4%);
+    --sand-3: hsl(56, 2.4%, 15.4%);
+    --sand-4: hsl(53, 2.7%, 18.4%);
+    --sand-5: hsl(51, 2.9%, 21.2%);
+    --sand-6: hsl(49, 3.1%, 24.3%);
+    --sand-7: hsl(47, 3.3%, 28.7%);
+    --sand-8: hsl(43, 3.7%, 37.1%);
+    --sand-9: hsl(50, 4%, 41.8%);
+    --sand-10: hsl(48, 3.5%, 49.5%);
+    --sand-11: hsl(50, 5%, 68.3%);
+    --sand-12: hsl(56, 7%, 93%);
+    --gold-1: hsl(44, 9%, 8.3%);
+    --gold-2: hsl(45, 8%, 9.8%);
+    --gold-3: hsl(44, 9.5%, 13%);
+    --gold-4: hsl(43, 10.5%, 15.6%);
+    --gold-5: hsl(42, 11.2%, 18.5%);
+    --gold-6: hsl(41, 12.1%, 22.6%);
+    --gold-7: hsl(39, 13.2%, 29.8%);
+    --gold-8: hsl(35, 14.8%, 45.1%);
+    --gold-9: hsl(36, 20%, 49.5%);
+    --gold-10: hsl(36, 21.9%, 56.8%);
+    --gold-11: hsl(35, 30%, 71%);
+    --gold-12: hsl(35, 25%, 88%);
+    --ruby-1: hsl(343, 23%, 10%);
+    --ruby-2: hsl(349, 33.3%, 12.4%);
+    --ruby-3: hsl(348, 42.2%, 16.4%);
+    --ruby-4: hsl(348, 46.8%, 19.1%);
+    --ruby-5: hsl(348, 50.7%, 21.7%);
+    --ruby-6: hsl(348, 56%, 25.7%);
+    --ruby-7: hsl(348, 64.3%, 33%);
+    --ruby-8: hsl(348, 77%, 46.1%);
+    --ruby-9: hsl(348, 75%, 58.5%);
+    --ruby-10: hsl(349, 84.1%, 67.1%);
+    --ruby-11: hsl(348, 100%, 76%);
+    --ruby-12: hsl(340, 95%, 91%);
+  }
 
-    --background-gray: #{$sand-dark-2};
-    --background-gray-deep: #{$sand-dark-3};
-    --border-gray: #{$sand-dark-6};
-    --text-gray: #{$sand-dark-11};
-    --background-gold: #{$gold-dark-2};
-    --border-gold: #{$gold-dark-6};
-    --text-gold: #{$gold-dark-11};
-    --background-accent: #{$ruby-dark-2};
-    --border-accent: #{$ruby-dark-6};
-    --text-accent: #{$ruby-dark-11};
+  --background: var(--sand-1);
+  --text: var(--sand-12);
 
-    img {
-      filter: brightness(0.8) contrast(1.2);
-    }
+  --background-gray: var(--sand-2);
+  --background-gray-deep: var(--sand-3);
+  --border-gray: var(--sand-6);
+  --border-gray-deep: var(--sand-7);
+  --text-gray: var(--sand-11);
+  --background-gold: var(--gold-2);
+  --background-gold-deep: var(--gold-3);
+  --border-gold: var(--gold-6);
+  --border-gold-deep: var(--gold-7);
+  --text-gold: var(--gold-11);
+  --background-accent: var(--ruby-2);
+  --background-accent-deep: var(--ruby-3);
+  --border-accent: var(--ruby-6);
+  --border-accent-deep: var(--ruby-7);
+  --text-accent: var(--ruby-11);
+}
+
+html.dark-theme {
+  img {
+    filter: brightness(0.8) contrast(1.2);
   }
 }
 
@@ -160,4 +150,17 @@ $dark-mode-correction: 0.85;
   font-style: normal;
   font-variant: small-caps;
   letter-spacing: 0.09em;
+}
+
+/* CSS components */
+.small-caps {
+  @include small-caps;
+}
+.small-text {
+  font-size: 0.85rem;
+  @include font-weight(300);
+
+  strong {
+    @include font-weight(500);
+  }
 }

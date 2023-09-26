@@ -12,9 +12,9 @@ html {
 
 /* DEFAULT STYLES */
 html {
-  font-family: "Source Serif Variable", serif;
-  color: var(--text-color);
-  background-color: var(--background-color);
+  font-family: "Source Serif Variable", Georgia, serif;
+  color: var(--text);
+  background-color: var(--background);
 }
 
 body {
@@ -54,28 +54,34 @@ p {
 }
 
 code {
-  font-family: "Iosevka Fixed SS04", monospace;
+  font-family: "Iosevka Fixed SS04", Menlo, Monaco, "Cascadia Mono",
+    "Segoe UI Mono", monospace;
   font-size: 0.91em;
   -webkit-text-size-adjust: 100%;
 
+  // styles for inline codes
   padding: 0 0.15em;
   background-color: var(--background-gray-deep);
+
   pre & {
+    // no default styles for code blocks
     padding: 0;
     background-color: initial;
   }
 }
 
+// links in UI elements
 a {
   text-decoration: none;
   &:hover {
     color: var(--text-accent);
   }
 }
+// links inside body text
 article a {
-  color: var(--hypertext-color);
+  color: var(--text-accent);
   &:hover {
-    color: var(--text-color);
+    color: var(--text);
   }
 }
 

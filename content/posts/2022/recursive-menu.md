@@ -10,7 +10,6 @@ tags:
   - Hugo
   - Python
   - recursion
-
 ---
 
 ## Introduction
@@ -34,6 +33,7 @@ This menu can be created using the following frontmatter structure:
 
 {{% tabs id="posts" %}}
 {{% tab name="posts/index.md" %}}
+
 ```yaml
 ---
 menu:
@@ -41,8 +41,10 @@ menu:
     name: "Top"
 ---
 ```
+
 {{% /tab %}}
 {{% tab name="posts/project-1.md" %}}
+
 ```yaml
 ---
 menu:
@@ -52,8 +54,10 @@ menu:
     weight: 10
 ---
 ```
+
 {{% /tab %}}
 {{% tab name="posts/example-11.md" %}}
+
 ```yaml
 ---
 menu:
@@ -63,8 +67,10 @@ menu:
     weight: 10
 ---
 ```
+
 {{% /tab %}}
 {{% tab name="posts/example-12.md" %}}
+
 ```yaml
 ---
 menu:
@@ -74,8 +80,10 @@ menu:
     weight: 20
 ---
 ```
+
 {{% /tab %}}
 {{% tab name="posts/project-2.md" %}}
+
 ```yaml
 ---
 menu:
@@ -85,9 +93,9 @@ menu:
     weight: 20
 ---
 ```
+
 {{% /tab %}}
 {{% /tabs %}}
-
 
 So, how do we render this? The Hugo [documentation](https://gohugo.io/templates/menu-templates/) shows some good examples of a menu template, but it also has a few shortcomings:
 
@@ -105,9 +113,6 @@ Inspired by this Vue [example case](https://vuejs.org/examples/#tree), I decided
 - display arbitrarily nested menus (and only the designers would stop us), and
 - show only the parents and siblings of the current page.
 
-
-
-
 ## Hugo Partials
 
 Let's start with having a look at the overall structure first. This is where the menu list sits inside `<aside>`.
@@ -120,10 +125,10 @@ Let's start with having a look at the overall structure first. This is where the
 {{ end }}
 
 <aside class="sidenav">
-{{/* ...rest of code */}}
+  {{/* ...rest of code */}}
   <div class="menu">
     <ul>
-    {{ partial "menu-item" (dict
+      {{ partial "menu-item" (dict
         "menu" $menu_id
         "list" (index .Site.Menus $menu_id)
         "current" $current_page) }}
@@ -144,25 +149,25 @@ Let's look inside what the partial looks like.
 {{ $menu_id := .menu }}
 {{ $list := .list }}
 {{ $current_page := .current }}
-
 {{ range $list }}
   {{- $is_current := $current_page.IsMenuCurrent $menu_id . -}}
   <li>
-  {{- if .URL -}}
-    <a {{ if $is_current }}class="current"{{ end }} href="{{ .URL }}">{{ .Name }}</a>
-  {{- else -}}
-    <span {{ if $is_current }}class="current"{{ end }}>{{ .Name }}</span>
-  {{- end -}}
+    {{- if .URL -}}
+      <a {{ if $is_current }}class="current" {{ end }} href="{{ .URL }}">{{ .Name }}</a>
+    {{- else -}}
+      <span {{ if $is_current }}class="current" {{ end }}>{{ .Name }}</span>
+    {{- end -}}
 
-  {{/* only render the child elements of the current page
-       and the ancestors of the current page. */}}
-  {{- if and
+    {{/* only render the child elements of the current page and
+        the ancestors of the current page. */}}
+    {{- if and
       .HasChildren
       (or
         ($current_page.IsMenuCurrent $menu_id .)
-        ($current_page.HasMenuCurrent $menu_id .)) -}}
+        ($current_page.HasMenuCurrent $menu_id .)
+      ) -}}
       <ul>
-      {{ partial "menu-item" (dict
+        {{ partial "menu-item" (dict
           "menu" $menu_id
           "list" .Children
           "current" $current_page) }}
@@ -170,7 +175,6 @@ Let's look inside what the partial looks like.
   {{- end -}}
   </li>
 {{ end }}{{/* end range $list */}}
-
 ```
 
 It definitely wasn't as tricky as it sounded!
@@ -184,8 +188,8 @@ Here would be the result of rendering `example-menu` from the Project 2 page.
     <ul>
       <li><a href="/posts/">Top</a></li>
       <ul>
-          <li><a href="/posts/project-1/">Project 1</a></li>
-          <li class="current"><a href="/posts/project-2/">Project 2</a></li>
+        <li><a href="/posts/project-1/">Project 1</a></li>
+        <li class="current"><a href="/posts/project-2/">Project 2</a></li>
       </ul>
     </ul>
   </div>
@@ -211,7 +215,8 @@ However, according to [MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/
 
 ```html {hl_lines="3-6"}
 <ul>
-  <li>Item 1
+  <li>
+    Item 1
     <ul>
       <li>Subitem 1</li>
       <li>Subitem 2</li>

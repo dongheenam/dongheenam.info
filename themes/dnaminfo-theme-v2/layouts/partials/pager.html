@@ -4,14 +4,14 @@
 {{ range $key, $value := .Params.menu }}
   {{ $menu_id = $key }}
 {{ end }}
-<nav id="post-nav" class="fullwidth">
+<nav id="post-nav">
   <div class="meta">
-    <ul class="tags small-text">
+    <ul class="tags">
       {{ range (.GetTerms "tags") }}
         <li><a href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a></li>
       {{ end }}
     </ul>
-    <p class="date small-text">
+    <p class="updated">
       {{- if not (in (slice "" $published) $updated) -}}
         Last updated on {{ $updated }}.
       {{- end -}}
@@ -20,7 +20,7 @@
   <hr />
   {{ with (index .Site.Menus $menu_id) }}
     <h3>Series: {{ title $menu_id }}</h3>
-    <ol class="fancy-list">
+    <ol class="menu-posts">
       {{ range . }}
         <li><a href="{{ .URL }}">{{ .Name | default .Title }}</a></li>
       {{ end }}
@@ -28,14 +28,14 @@
   {{ end }}
   {{ with .Site.RegularPages.Related . | first 5 }}
     <h3>Related posts</h3>
-    <ul class="fancy-list">
+    <ul class="related-posts">
       {{ range . }}
         <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
       {{ end }}
     </ul>
   {{ end }}
   <hr />
-  <div class="prev-next">
+  <div class="navigator">
     <div class="prev">
       {{- with .PrevInSection -}}
         <a href="{{ .RelPermalink }}">← {{ .Title }}</a>
