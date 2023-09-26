@@ -8,3 +8,14 @@
     <script src="{{ .RelPermalink }}"></script>
   {{ end }}
 {{ end }}
+
+{{/* tabs */}}
+{{ if ($.Scratch.Get "require-tabs-resources") }}
+  {{ $options := dict "transpiler" "dartsass" "targetPath" "css/tabs.css" }}
+  {{ with resources.Get "sass/tabs.scss" | resources.ToCSS $options | resources.Minify }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}" crossorigin="anonymous" />
+  {{ end }}
+  {{ with resources.Get "js/tabs.ts" | js.Build }}
+    <script src="{{ .RelPermalink }}"></script>
+  {{ end }}
+{{ end }}

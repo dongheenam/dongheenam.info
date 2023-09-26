@@ -57,6 +57,13 @@ code {
   font-family: "Iosevka Fixed SS04", monospace;
   font-size: 0.91em;
   -webkit-text-size-adjust: 100%;
+
+  padding: 0 0.15em;
+  background-color: var(--background-gray-deep);
+  pre & {
+    padding: 0;
+    background-color: initial;
+  }
 }
 
 a {

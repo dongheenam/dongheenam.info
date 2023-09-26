@@ -112,6 +112,7 @@ html {
   --hypertext-color: #{$ruby-11};
 
   --background-gray: #{$sand-2};
+  --background-gray-deep: #{$sand-3};
   --border-gray: #{$sand-6};
   --text-gray: #{$sand-11};
   --background-gold: #{$gold-2};
@@ -123,12 +124,12 @@ html {
 
   &.dark-theme {
     --background-color: #{$sand-dark-1};
-    --background-alt-color: #{$sand-dark-2};
     --text-color: #{$sand-dark-12};
     --text-alt-color: #{$sand-dark-11};
     --hypertext-color: #{$ruby-dark-11};
 
     --background-gray: #{$sand-dark-2};
+    --background-gray-deep: #{$sand-dark-3};
     --border-gray: #{$sand-dark-6};
     --text-gray: #{$sand-dark-11};
     --background-gold: #{$gold-dark-2};

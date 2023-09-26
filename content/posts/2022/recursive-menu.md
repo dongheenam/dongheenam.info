@@ -18,7 +18,7 @@ tags:
 Hugo lets you generate menus from the `menu` parameters of individual pages. For example, if you have a Menu `example-menu` with a top page, Projects 1 and 2 directly beneath it, two examples under Project 1, it will have the following structure:
 
 {{% aside %}}
-Made with a wonderful tool [tree.nathanfriend.io/](https://tree.nathanfriend.io/).
+Made with [tree.nathanfriend.io/](https://tree.nathanfriend.io/).
 {{% /aside %}}
 
 ```
@@ -30,17 +30,20 @@ example-menu
     └── Project 2
 ```
 
-This can be done post-by-post in the front matter and it is a little painful to set it up at first.
+This menu can be created using the following frontmatter structure:
 
-```yaml {path="posts/index.md"}
+{{% tabs id="posts" %}}
+{{% tab name="posts/index.md" %}}
+```yaml
 ---
 menu:
   example-menu:
     name: "Top"
 ---
 ```
-
-```yaml {path="posts/project-1.md"}
+{{% /tab %}}
+{{% tab name="posts/project-1.md" %}}
+```yaml
 ---
 menu:
   example-menu:
@@ -49,8 +52,9 @@ menu:
     weight: 10
 ---
 ```
-
-```yaml {path="posts/example-11.md"}
+{{% /tab %}}
+{{% tab name="posts/example-11.md" %}}
+```yaml
 ---
 menu:
   example-menu:
@@ -59,8 +63,9 @@ menu:
     weight: 10
 ---
 ```
-
-```yaml {path="posts/example-12.md"}
+{{% /tab %}}
+{{% tab name="posts/example-12.md" %}}
+```yaml
 ---
 menu:
   example-menu:
@@ -69,8 +74,9 @@ menu:
     weight: 20
 ---
 ```
-
-```yaml {path="posts/project-2.md"}
+{{% /tab %}}
+{{% tab name="posts/project-2.md" %}}
+```yaml
 ---
 menu:
   example-menu:
@@ -79,83 +85,27 @@ menu:
     weight: 20
 ---
 ```
+{{% /tab %}}
+{{% /tabs %}}
 
-[The documentation](https://gohugo.io/templates/menu-templates/) shows some good examples of a menu template, but it also has a few shortcomings:
 
-- The menu is only two levels deep. The examples in `example-menu` will never be visible.
+So, how do we render this? The Hugo [documentation](https://gohugo.io/templates/menu-templates/) shows some good examples of a menu template, but it also has a few shortcomings:
+
+{{% aside %}}
+The [template](https://gohugo.io/templates/menu-templates/#example) in the official documentation now uses recursion as well to render deeply nested lists. Well done!
+{{% /aside %}}
+
+- ~~The menu is only two levels deep. The examples in `example-menu` will never be visible.~~
 - It shows the entire menu at once. If the menu contained items with lots of children, it will be pretty difficult to navigate.
 
-You can definitely see the result of this from the official Hugo website as well, just have a look at how many pages there are in [the Functions section](https://gohugo.io/functions/)!
+You can definitely see the result of this from the official Hugo website as well, just have a look at how many pages there are in the [Functions section](https://gohugo.io/functions/)!
 
-Inspired by this [Vue example case](https://vuejs.org/examples/#tree), I decided to design a recursive menu template that can:
+Inspired by this Vue [example case](https://vuejs.org/examples/#tree), I decided to design a recursive menu template that can:
 
 - display arbitrarily nested menus (and only the designers would stop us), and
 - show only the parents and siblings of the current page.
 
-## Python Proof-of-concept
 
-Because recursive programming requires a lot of thinking and I am not proficient in Hugo yet, I decided to first build a model using Python.2
-
-```python
-class Menu:
-    """
-    mimics menu in Hugo
-    """
-    def __init__(self, title, *children):
-        self.title = title
-        self.children = children
-
-    """
-    mimics .Page.IsMenuCurrent
-    """
-    def __eq__(self, other):
-        return self.title == other.title
-
-    """
-    mimics .Page.HasMenuCurrent
-    foo.has(bar) returns True if bar is a descendant of foo
-    """
-    def has(self, other):
-        if any([child == other for child in self.children]):
-            return True
-        else:
-            return any([child.has(other) for child in self.children])
-
-    """
-    recursive menu rendering
-    """
-    def show_menu(menu, current, indent=""):
-        # puts a star sign at the end of the current menu
-        show_current = "*" if menu == current else ""
-
-        # print the title
-        print(f"{indent}{menu.title}{show_current}")
-
-        # then loop over its children
-        # if the item is related to the current page
-        if menu.has(current) or menu == current:
-            for child in menu.children:
-                show_menu(child, current, indent=indent+"  ")
-```
-
-Below is an example usage and output.
-
-```python
-example_menu = (
-    Menu("Top",
-        Menu("Project 1",
-            Menu("Example 1"),
-            Menu("Example 2")
-        ),
-        Menu("Project 2")
-    )
-)
-
-show_menu(example_menu, Menu("Top"))
-# Top*
-#   Project 1
-#   Project 2
-```
 
 
 ## Hugo Partials
@@ -186,7 +136,7 @@ You can see that the partial is called with three variables, `menu`, `list`, and
 
 - `menu` is the name of the menu. In our example it has the value `example-menu`. This is used as the first argument in [`.IsMenuCurrent`](https://gohugo.io/functions/ismenucurrent/) and [`.HasMenuCurrent`](https://gohugo.io/functions/hasmenucurrent/) function.
 - `list` contains the children pages to be displayed. The initial value, `index .Site.Menus $menu_id` will pull all the top-level pages in the menu. In our example, this will be `Top`.
-- `current` is the current page. Because of [how Hugo scopes work](https://www.regisphilibert.com/blog/2018/02/hugo-the-scope-the-context-and-the-dot/), you will find many partials and shortcodes start by first defining the current page, which is done here as well.
+- `current` is the current page. Because of how Hugo scopes [work](https://www.regisphilibert.com/blog/2018/02/hugo-the-scope-the-context-and-the-dot/), you will find many partials and shortcodes start by first saving the current page, which is done here as well.
 
 Let's look inside what the partial looks like.
 
@@ -199,9 +149,9 @@ Let's look inside what the partial looks like.
   {{- $is_current := $current_page.IsMenuCurrent $menu_id . -}}
   <li>
   {{- if .URL -}}
-    <a{{ if $is_current }} class="current"{{ end }} href="{{ .URL }}">{{ .Name }}</a>
+    <a {{ if $is_current }}class="current"{{ end }} href="{{ .URL }}">{{ .Name }}</a>
   {{- else -}}
-    <span{{ if $is_current }} class="current"{{ end }}>{{ .Name }}</span>
+    <span {{ if $is_current }}class="current"{{ end }}>{{ .Name }}</span>
   {{- end -}}
 
   {{/* only render the child elements of the current page
@@ -221,6 +171,25 @@ Let's look inside what the partial looks like.
   </li>
 {{ end }}{{/* end range $list */}}
 
+```
+
+It definitely wasn't as tricky as it sounded!
+
+Here would be the result of rendering `example-menu` from the Project 2 page.
+
+```html {path="public/posts/project-2.html"}
+<aside>
+  ...
+  <div class="sidenav-menu">
+    <ul>
+      <li><a href="/posts/">Top</a></li>
+      <ul>
+          <li><a href="/posts/project-1/">Project 1</a></li>
+          <li class="current"><a href="/posts/project-2/">Project 2</a></li>
+      </ul>
+    </ul>
+  </div>
+</aside>
 ```
 
 {{% note title="Update" %}}
@@ -252,25 +221,6 @@ However, according to [MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/
 </ul>
 ```
 
-Hence I ended up fixing the menu partial.
+Hugo documentation is now fixed as well.
 
 {{% /note %}}
-
-It definitely wasn't as tricky as it sounded!
-
-Here would be the result of rendering `example-menu` from the Project 2 page.
-
-```html {path="public/posts/project-2.html"}
-<aside>
-  ...
-  <div class="sidenav-menu">
-    <ul>
-      <li><a href="/posts/">Top</a></li>
-      <ul>
-          <li><a href="/posts/project-1/">Project 1</a></li>
-          <li class="current"><a href="/posts/project-2/">Project 2</a></li>
-      </ul>
-    </ul>
-  </div>
-</aside>
-```

@@ -120,7 +120,11 @@ aside,
 }
 
 /* lists */
-article :is(ul, ol) li,
+article > :is(ul, ol),
+.fancy-list {
+  margin-bottom: 1rem;
+}
+article > :is(ul, ol) li,
 .fancy-list li {
   margin: 0 0 0.25rem 2.5rem;
 
@@ -131,7 +135,7 @@ article :is(ul, ol) li,
   }
 }
 
-article ul,
+article > ul,
 ul.fancy-list {
   li::before {
     content: "\00BB";
@@ -141,7 +145,7 @@ ul.fancy-list {
   }
 }
 
-article ol,
+article > ol,
 ol.fancy-list {
   counter-reset: lis;
 
