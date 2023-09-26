@@ -30,8 +30,7 @@ timeout: 600000
 ignoreFiles:
   - \.tex$
 # permalinks:
-#   posts: /posts/:title/
-
+posts: /posts/:slug/
 # outputs:
 # home:
 # - HTML

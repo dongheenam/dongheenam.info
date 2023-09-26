@@ -1,20 +1,12 @@
-{{/* 
-  custom code highlighting hook for filename support 
-  Usage: 
+{{/*
+  custom code highlighting hook for filename support
+  Usage:
     ```python {path="/lib/code.py"}
     print("hello, world!")
     ```
 */}}
-{{/* css */}}
-{{- if not (.Page.Scratch.Get "chroma-resources-loaded") -}}
-  {{ $options := dict "transpiler" "dartsass" "targetPath" "css/codeblock.css" }}
-  {{ with resources.Get "sass/codeblock.scss" | resources.ToCSS $options | resources.Minify }}
-    <link rel="stylesheet" href="{{ .RelPermalink }}" crossorigin="anonymous" />
-  {{ end }}
-  {{ with resources.Get "js/copy-code.ts" | js.Build }}
-    <script src="{{ .RelPermalink }}"></script>
-  {{ end }}
-  {{ .Page.Scratch.Set "chroma-resources-loaded" "true" }}
+{{- if not (.Page.Scratch.Get "require-codeblock-resources") -}}
+  {{ .Page.Scratch.Set "require-codeblock-resources" "true" }}
 {{ end }}
 {{/* parse options */}}
 {{ $lang := .Type | default "text" }}

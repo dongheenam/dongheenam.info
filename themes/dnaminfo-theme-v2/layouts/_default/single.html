@@ -1,16 +1,4 @@
 {{- define "main" -}}
-<style>
-  .date {
-    color: var(--text-gray);
-    font-style: italic;
-  }
-  .meta-display {
-    text-align: right;
-    font-style: italic;
-    color: var(--text-gray);
-    top: 1.05rem !important; /* override default vertical alignment */
-  }
-</style>
 {{ partial "side-control" . }}
 <div class="title-block fullwidth">
   <h1>{{ .Title }}</h1>

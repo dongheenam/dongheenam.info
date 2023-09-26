@@ -1,4 +1,4 @@
-{{ $content := .Inner | $.Page.RenderString }}
+{{ $content := .Inner | safeHTML | $.Page.RenderString }}
 {{ $color := .Get "color" | default "gray" }}
 {{/* wrap the title with a <span> and append it to the first paragraph */}}
 {{ with .Get "title" }}
@@ -9,7 +9,6 @@
     {{ $content = print $title "</p>" $content }}
   {{ end }}
 {{ end }}
-
 <div class="note note-{{ $color }} small-text">
   {{- $content | safeHTML -}}
 </div>

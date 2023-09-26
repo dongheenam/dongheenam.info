@@ -25,6 +25,12 @@
     transition: opacity 1s ease-out;
     pointer-events: none;
     opacity: 0;
+
+    &.open {
+      max-height: initial;
+      pointer-events: auto;
+      opacity: 1;
+    }
   }
 }
 #control-hover-area {
@@ -44,6 +50,34 @@
 #control:focus-within {
   pointer-events: auto;
   opacity: 1;
+}
+#control-toggle {
+  position: fixed;
+  z-index: 9999;
+  inset: 0 0 auto 0;
+  height: 2rem;
+
+  color: var(--text-gray);
+  background: var(--background-gray);
+  border: 1px solid var(--border-gray);
+
+  &.open {
+    inset: 0;
+    height: auto;
+  }
+
+  animation: disappear 3s ease-out forwards;
+}
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .control-content {
@@ -89,36 +123,5 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-  }
-}
-#control-toggle {
-  position: absolute;
-  inset: 0 0 auto 0;
-  height: 3rem;
-
-  color: var(--text-gray);
-  background: transparent;
-  border: 1px solid var(--border-gray);
-
-  &.open {
-    inset: 0;
-    height: auto;
-  }
-
-  @include tablet {
-    display: none;
-  }
-
-  animation: disappear 3s ease-out forwards;
-}
-@keyframes disappear {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
   }
 }
