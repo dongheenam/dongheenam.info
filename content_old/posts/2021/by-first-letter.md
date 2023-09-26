@@ -15,7 +15,7 @@ tags:
 
 ## Introduction
 
-Hugo provides a powerful content management tool called [taxonomies](https://gohugo.io/content-management/taxonomies). In addition to default taxonomies such as categories and tags, you can define one on your own and customise as you like (see [this repo](https://github.com/guayom/hugo-taxonomies) for a cool example!). 
+Hugo provides a powerful content management tool called [taxonomies](https://gohugo.io/content-management/taxonomies). In addition to default taxonomies such as categories and tags, you can define one on your own and customise as you like (see [this repo](https://github.com/guayom/hugo-taxonomies) for a cool example!).
 
 ## The Problem
 
@@ -36,7 +36,7 @@ It looks much better than before, but you can expect this list will grow to a me
 I want to clarify that this is not the first solution to this problem. There was [a discussion](https://discourse.gohugo.io/t/lists-of-content-divided-by-posts-first-letter/8534) on this matter a while ago, and you can also find a [different solution](https://gohugohq.com/howto/hugo-create-first-letter-indexed-list/). These methods basically sort the titles alphabetically, track the first letter, and start the `<ul>` element again whenever it detects a change. I wanted to try a more conventional approach, where you first build a dictionary of tags that look like this:
 
 ```JSON
-{ 
+{
   "A": [
     "absolute value",
     "algebra"
@@ -129,7 +129,7 @@ Let's first define some useful variables. Here, `$letters` is the slice (list) o
 {{ end }}
 ```
 
-Because we need to [change the scope](https://www.regisphilibert.com/blog/2018/02/hugo-the-scope-the-context-and-the-dot/), we first need to define `$page`. Then, `$first_letter`, as the name suggests, is the (capitalised) first letter of the name of `$page`. A term can start with numbers or non-alphabetic letters, so we need to classify them separately. 
+Because we need to [change the scope](https://www.regisphilibert.com/blog/2018/02/hugo-the-scope-the-context-and-the-dot/), we first need to define `$page`. Then, `$first_letter`, as the name suggests, is the (capitalised) first letter of the name of `$page`. A term can start with numbers or non-alphabetic letters, so we need to classify them separately.
 
 ```html {hl_lines="10-16"}
 {{- $letters := split "ABCDEFGHIJKLMNOPQRSTUVWXYZ" "" -}}
@@ -207,4 +207,3 @@ Finally, we can put everything together using (S)CSS.
   }
 }
 ```
-

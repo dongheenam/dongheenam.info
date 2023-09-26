@@ -134,7 +134,6 @@ This is why I find JavaScript quite scary to work with, because a lot of other p
 ```javascript
 const polyA = new Poly([0, 3, 2]); // 2x^2 + 3x
 const polyB = new Poly([1, 1]);    // x + 1
-
 const newPoly = polyA.add(polyB);  // NaNx^2 + 4x + NaN
 ```
 
@@ -207,7 +206,6 @@ The new tricks should now handle the addition properly,
 ```javascript
 const polyA = new Poly([0, 3, 2]); // 2x^2 + 3x
 const polyB = new Poly([1, 1]);    // x + 1
-
 const newPoly = polyA.add(polyB);  // 2x^2 + 4x + 1
 ```
 
@@ -215,7 +213,6 @@ while preventing something like $(x+1) + 3t = 4x + 1$ from happening.
 
 ```javascript
 const polyT = new Poly([0, 3], "t"); // 3t
-
 const newPoly2 = polyB.add(polyT);
 /* Error: adding polynomials in different variables is not yet supported. */
 ```
@@ -333,7 +330,6 @@ Here is an example of the code in action.
 
 ```javascript
 const poly = new Poly([7, -1, 1, 2]); // 2x^3 + x^2 - x + 7
-
 const ans = poly.eval(-2);            // -3
 ```
 

@@ -180,6 +180,7 @@ figure {
   align-items: flex-end;
   flex-wrap: nowrap;
 
+  font-style: italic;
   @extend .small-text;
 }
 .tags {
@@ -188,8 +189,6 @@ figure {
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 0.5rem;
-
-  font-style: italic;
 }
 .updated {
   margin: 0;
