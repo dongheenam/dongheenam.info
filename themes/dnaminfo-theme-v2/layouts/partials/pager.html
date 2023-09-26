@@ -19,7 +19,7 @@
   </div>
   <hr />
   {{ with (index .Site.Menus $menu_id) }}
-    <h3>Series: {{ title $menu_id }}</h3>
+    <h3>Series: {{ humanize $menu_id }}</h3>
     <ol class="menu-posts">
       {{ range . }}
         <li><a href="{{ .URL }}">{{ .Name | default .Title }}</a></li>

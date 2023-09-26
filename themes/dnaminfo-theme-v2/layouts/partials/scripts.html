@@ -1,3 +1,9 @@
+{{/* internal JS files */}}
 {{ with resources.Match "js/*.ts" | resources.Concat "js/app.ts" | js.Build (dict "minify" "true") }}
   <script src="{{ .RelPermalink }}"></script>
+{{ end }}
+
+{{/* math rendering */}}
+{{ if .Params.math }}
+  {{ partial "katex" . }}
 {{ end }}
