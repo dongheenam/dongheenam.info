@@ -5,7 +5,7 @@
   <div class="subtitle">
     <p>{{ .Description }}</p>
     <p class="date small-text">
-      {{ .Date.Format "2 Jan 2006" }}. {{ .Content | countwords }} words.
+      {{ .Date.Format "2 Jan 2006" }}. {{ with .Content | countwords }}{{ . }} words.{{ end }}
     </p>
   </div>
   <hr />

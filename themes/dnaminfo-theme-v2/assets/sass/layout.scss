@@ -107,17 +107,17 @@ ul.fancy-list {
   }
 }
 ol.fancy-list {
-  counter-reset: lis;
+  counter-reset: list-item;
 
   li::before {
-    counter-increment: lis;
-    content: counter(lis) ". ";
+    counter-increment: list-item;
+    content: counter(list-item) ". ";
 
     font-variant-numeric: oldstyle-nums;
     font-style: italic;
   }
   li li::before {
-    content: counter(lis, lower-alpha) ". ";
+    content: counter(list-item, lower-alpha) ". ";
   }
 }
 
@@ -129,6 +129,8 @@ ol.fancy-list {
   font-style: italic;
   @include font-weight(300);
 
+  line-height: 1.15;
+
   @include tablet {
     display: flex;
     justify-content: space-between;
@@ -139,6 +141,9 @@ ol.fancy-list {
   p {
     margin: 0;
   }
+}
+.date {
+  flex-shrink: 0;
 }
 aside {
   @extend .note;
@@ -211,5 +216,20 @@ figure {
   }
   .next {
     text-align: right;
+  }
+}
+
+/* menu */
+.menu-posts .active {
+  color: var(--text-accent);
+}
+ol.menu-posts li.not-item {
+  color: var(--text-gray);
+  font-style: italic;
+  counter-set: list-item var(--counter-set, 0);
+
+  &::before {
+    counter-increment: unset;
+    content: unset;
   }
 }

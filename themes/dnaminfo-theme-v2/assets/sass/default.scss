@@ -32,7 +32,7 @@ h2 {
   font-size: 1.1em;
   @include font-weight(700);
 
-  margin-top: 1.4em;
+  margin-top: 2em;
   margin-bottom: 0.25em;
 }
 
@@ -41,7 +41,7 @@ h3 {
   @include small-caps;
   @include font-weight(700);
 
-  margin-top: 1.4em;
+  margin-top: 2em;
   margin-bottom: 0.25em;
 
   h2 + & {

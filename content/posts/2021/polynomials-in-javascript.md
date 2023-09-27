@@ -1,6 +1,6 @@
 ---
 title: "Polynomials in JavaScript"
-description: "How to implement polynomial algebra with JavaScript."
+description: "An (bad) attempt to reinvent polynomial algebra with JavaScript."
 
 date: 2021-01-11 14:02:29.052 +0800
 
@@ -25,8 +25,6 @@ Just like [fractions](../fractions-in-javascript), I also wrote a simple library
 
 
 ## The `Poly(nomial)` class
-
-### Data structure and constructor
 
 Since a polynomial (in $x$) has a shape of $$ a_0 + a_1x + a_2x^2 + a_3x^3 + \dots, $$ it sounds natural to associate a polynomial with its coefficients, i.e., the above polynomial is equivalent to `[a_0, a_1, a_2, a_3, ...]`. Because this approach is inefficient to represent polynomials liks $ 3x^{100} $, one can use objects instead: `{ 0: a_0, 1: a_1, 2: a_2, 3: a_3, ...}`, and $ 3x^{100}$ is just `{ 100: 3 }`.
 
@@ -99,7 +97,7 @@ You can also nominate any other variable name.
 const polyD = new Poly([5, -1, 2], "t"); // 2t^2 - t + 5
 ```
 
-### Addition
+## Addition
 
 Adding two polynomials can be done term-by-term:
 \begin{align*}
@@ -218,7 +216,7 @@ const newPoly2 = polyB.add(polyT);
 ```
 
 
-### Multiplication
+## Multiplication
 
 It is a little more difficult to visualise multiplication:
 \begin{align*}
@@ -298,7 +296,7 @@ const ansB = polyA.mult(polyB);     // 2x^3 - x^2 - 9x + 2
 ```
 
 
-### Evaluation
+## Evaluation
 
 We can evaluate the value of a polynomial when its variable equals a certain value. For example, for $P(x) = 2x^3 + x^2 - x + 7$,
 \begin{align*}
@@ -334,9 +332,9 @@ const ans = poly.eval(-2);            // -3
 ```
 
 
-### Printing as LaTeX
+## Printing as LaTeX
 
-Finally, we want to print any polynomials as a LaTeX expression. This is an easy task because we already have a code that [prints a Frac instance as a LaTeX expression](../fractions-in-javascript#printing-as-latex), but there are still a few things to consider. We first need some code that converts $x^1$ to $x$ and $x^0$ to nothing.
+Finally, we want to print any polynomials as a LaTeX expression. This is an easy task because we already have a code that [prints a Frac instance as a LaTeX expression](../latex-fractions-in-javascript), but there are still a few things to consider. We first need some code that converts $x^1$ to $x$ and $x^0$ to nothing.
 
 ```javascript
 function printTerm(coeff, x, ind, op = "") {

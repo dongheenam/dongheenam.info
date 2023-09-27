@@ -1,9 +1,5 @@
 {{ $published := .Date.Format "2 Jan 2006" }}
 {{ $updated := .Lastmod.Format "2 Jan 2006" | default "" }}
-{{ $menu_id := "" }}
-{{ range $key, $value := .Params.menu }}
-  {{ $menu_id = $key }}
-{{ end }}
 <nav id="post-nav">
   <div class="meta">
     <ul class="tags">
@@ -18,22 +14,7 @@
     </p>
   </div>
   <hr />
-  {{ with (index .Site.Menus $menu_id) }}
-    <h3>Series: {{ humanize $menu_id }}</h3>
-    <ol class="menu-posts">
-      {{ range . }}
-        <li><a href="{{ .URL }}">{{ .Name | default .Title }}</a></li>
-      {{ end }}
-    </ol>
-  {{ end }}
-  {{ with .Site.RegularPages.Related . | first 5 }}
-    <h3>Related posts</h3>
-    <ul class="related-posts">
-      {{ range . }}
-        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-      {{ end }}
-    </ul>
-  {{ end }}
+  {{ partial "menu" . }}
   <hr />
   <div class="navigator">
     <div class="prev">

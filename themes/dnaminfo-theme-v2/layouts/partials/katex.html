@@ -32,7 +32,7 @@
         output: "html",
         fleqn: true,
         strict: false,
-        ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'no-tex'],
+        ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code', 'no-tex'],
         trust: (context) => context.command === '\\htmlClass',
         macros: {
           "\\hl": "\\htmlClass{katex-highlight}",
