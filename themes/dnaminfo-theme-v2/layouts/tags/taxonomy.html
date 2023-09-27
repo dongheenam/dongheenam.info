@@ -1,0 +1,35 @@
+{{- define "main" -}}
+{{/* grouping the t */}}
+{{- $letters := split "ABCDEFGHIJKLMNOPQRSTUVWXYZ" "" -}}
+{{- $pages := .Pages.ByTitle -}}
+{{- $pages_by_letters := dict -}}
+{{ range $pages }}
+  {{- $page := . -}}
+  {{- $first_letter := upper ( substr $page.Name 0 1 ) -}}
+  {{- if not (in $letters $first_letter) }}
+    {{ $first_letter = "#" }}
+  {{ end }}
+  {{- $new_list := slice $page -}}
+  {{ with index $pages_by_letters $first_letter }}
+    {{- $new_list = union . $new_list -}}
+  {{ end }}
+  {{- $pages_by_letters = merge $pages_by_letters (dict $first_letter $new_list) -}}
+{{ end }}
+<h1>{{ .Title }}</h1>
+<article>
+  {{ .Content }}
+  <hr />
+  <div class="taxonomy">
+    {{ range $key, $value := $pages_by_letters }}
+    <span class="key">{{ $key }}</span>
+    <ul class="list">
+        {{- range $value -}}
+        <li class="item">
+            <a href="{{ .RelPermalink }}">{{ .Name }}</a><sup>{{ len .Pages }}</sup>
+        </li>
+        {{- end -}}
+    </ul>
+    {{ end }}
+  </div>
+</article>
+{{- end -}}

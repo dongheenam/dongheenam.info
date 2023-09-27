@@ -2,6 +2,7 @@
 <html lang="en" class="dark-theme">
   {{- partial "head" . -}}
   <body>
+    {{ partial "side-control" . }}
     {{- partial "header" . -}}
     <div id="content">
       {{- block "main" . }}{{- end -}}

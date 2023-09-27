@@ -15,6 +15,8 @@
   />
   <meta name="theme-color" content="#111111" />
 
+  <link rel="canonical" href="{{ .Permalink }}" />
+
   {{ if .Params.noindex }}
   <meta name="robots" content="noindex" />
   <meta name="googlebot" content="noindex" />
@@ -25,8 +27,6 @@
   {{ with resources.Get "sass/main.scss" | resources.ToCSS $options | resources.Minify }}
     <link rel="stylesheet" href="{{ .Permalink }}" crossorigin="anonymous" />
   {{ end }}
-
-  <link rel="canonical" href="{{ .Permalink }}" />
 
   {{/* Fabicon stuff - realfavicongenerator.net */}}
   {{- partial "fabicon" . -}}
