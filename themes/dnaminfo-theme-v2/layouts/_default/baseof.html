@@ -6,6 +6,7 @@
     {{- partial "header" . -}}
     <div id="content">
       {{- block "main" . }}{{- end -}}
+      {{ partial "pager" . }}
     </div>
     {{- partial "footer" . -}}
   </body>

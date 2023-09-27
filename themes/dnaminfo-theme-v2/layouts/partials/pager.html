@@ -1,39 +1,22 @@
 {{ $published := .Date.Format "2 Jan 2006" }}
 {{ $updated := .Lastmod.Format "2 Jan 2006" | default "" }}
 <nav id="post-nav">
-  <div class="meta">
-    <ul class="tags">
-      {{ range (.GetTerms "tags") }}
-        <li><a href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a></li>
-      {{ end }}
-    </ul>
-    <p class="updated">
-      {{- if not (in (slice "" $published) $updated) -}}
-        Last updated on {{ $updated }}.
-      {{- end -}}
-    </p>
-  </div>
+  {{- if eq .Kind "page" -}}
+    <div class="meta">
+      <ul class="tags">
+        {{ range (.GetTerms "tags") }}
+          <li><a href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a></li>
+        {{ end }}
+      </ul>
+      <p class="updated">
+        {{- if not (in (slice "" $published) $updated) -}}
+          Last updated on {{ $updated }}.
+        {{- end -}}
+      </p>
+    </div>
+    <hr />
+  {{- end -}}
+  {{ partial "related-pages" . }}
   <hr />
-  {{ partial "menu" . }}
-  <hr />
-  <div class="navigator">
-    <div class="prev">
-      {{- with .PrevInSection -}}
-        <a href="{{ .RelPermalink }}">← {{ .Title }}</a>
-      {{- end -}}
-    </div>
-    <div class="home">
-      <a href="/">Home</a>
-    </div>
-    <div class="all">
-      {{- with .Parent -}}
-        <a href="{{ .RelPermalink }}">Above</a>
-      {{- end -}}
-    </div>
-    <div class="next">
-      {{- with .NextInSection -}}
-        <a href="{{ .RelPermalink }}">{{ .Title }} →</a>
-      {{- end -}}
-    </div>
-  </div>
+  {{ partial "menu" (dict "context" . "atSide" false) }}
 </nav>

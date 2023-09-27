@@ -7,7 +7,6 @@ date: 2021-01-11 14:02:29.052 +0800
 toc: true
 math: true
 draft: false
-highlight: true
 
 tags:
   - JavaScript

@@ -11,36 +11,15 @@
       <input type="checkbox" id="theme-toggle" checked="true" style="display: none"/>
       <span class="toggle">Dark mode </span><span id="theme-status">is on.</span>
     </label>
-    <ul class="posts">
-      <li class="home">
-        <a href="/">Home</a>
-      </li>
-      <li class="all">
-        {{- with .Parent -}}
-          <a href="{{ .RelPermalink }}" title="{{ .Title }}">Above</a>
-        {{- end -}}
-      </li>
-    </ul>
-    <ul class="posts">
-      <li class="prev">
-        {{- with .PrevInSection -}}
-          <a href="{{ .RelPermalink }}" title="{{ .Title }}">← Prev</a>
-        {{- end -}}
-      </li>
-      <li class="next">
-        {{- with .NextInSection -}}
-          <a href="{{ .RelPermalink }}" title="{{ .Title }}">Next →</a>
-        {{- end -}}
-      </li>
-    </ul>
-    {{ with .TableOfContents }}
-    <details id="toc">
-      <summary>Table of Contents</summary>
-      <div>
-        {{ . }}
-      </div>
-    </details>
-    {{ end}}
+    {{ partial "menu" (dict "context" . "atSide" true) }}
+    {{ if .Params.toc }}
+      <details id="toc">
+        <summary>Table of Contents</summary>
+        <div>
+          {{ .TableOfContents }}
+        </div>
+      </details>
+    {{ end }}
   </div>
 </div>
 <button id="control-toggle" class="small-text" onclick="toggleControl(event)">Click here to expand controls</button>

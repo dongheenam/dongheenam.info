@@ -35,13 +35,20 @@
 .taxonomy {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 1.5rem 1rem;
+  gap: 0 0.25rem;
   align-items: baseline;
 
   .key {
-    font-size: 1.5rem;
-    @include font-weight(700);
+    font-family: "Iosevka Fixed SS04", Menlo, Monaco, "Cascadia Mono",
+    "Segoe UI Mono", monospace;
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-style: italic;
     color: var(--text-gray);
+    opacity: 0.45;
+
+    transform: scaleX(1.4);
+    transform-origin: left bottom;
   }
   .list {
     display: flex;

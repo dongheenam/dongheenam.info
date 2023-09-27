@@ -5,6 +5,7 @@ description: "Rendering a multi-level list using recursion in Hugo"
 date: 2022-06-29 08:20:06.460 +1000
 
 draft: false
+toc: true
 
 tags:
   - Hugo

@@ -1,49 +1,34 @@
-{{ $current_page := . }}
-{{ $menu_id := "" }}
-{{ range $key, $value := .Params.menu }}
-  {{ $menu_id = $key }}
-{{ end }}
-{{/*  menu items  */}}
-{{ with (index .Site.Menus $menu_id) }}
-  {{ $current_weight := (index $current_page.Params.menu $menu_id).Weight }}
-  {{ $current_name := (index $current_page.Params.menu $menu_id).Name | default $current_page.Title }}
-  {{ $prev_pages := where .ByWeight.Reverse "Weight" "<" $current_weight }}
-  {{ $prev_pages_cropped := first 2 $prev_pages }}
-  {{ $next_pages_cropped := first 2 (where .ByWeight "Weight" ">" $current_weight) }}
-  {{ $starting_index := sub (len $prev_pages) (len $prev_pages_cropped) }}
-  <h3>Series: {{ humanize $menu_id }}</h3>
-  <ol class="menu-posts">
-    {{ if ne $starting_index 0 }}
-      {{- $first_page := index . 0 -}}
-      <li><a href="{{ $first_page.URL }}">{{ $first_page.Name | default $first_page.Title }}</a></li>
-      {{ if ne $starting_index 1 }}
-        <li class="not-item" style="--counter-set: {{ $starting_index }};">⋯</li>
-      {{ end }}
-    {{ end }}
-    {{ range $prev_pages_cropped.Reverse }}
-      <li><a href="{{ .URL }}">{{ .Name | default .Title }}</a></li>
-    {{ end }}
-      <li><span class="active">{{ $current_name }}</span></li>
-    {{ range $next_pages_cropped }}
-      <li><a href="{{ .URL }}">{{ .Name | default .Title }}</a></li>
-    {{ end }}
-    {{ if gt (len .) (add $starting_index 5) }}
-      <li class="not-item">⋯</li>
-    {{ end }}
-  </ol>
-{{ end }}
-{{/*  related posts  */}}
-{{ $related_posts := .Site.RegularPages.Related . }}
-{{ if ne $menu_id "" }}
-  {{ $related_posts = where $related_posts "Params.menu" "ne" $menu_id }}
-{{ end }}
-{{ with $related_posts | first 5 }}
-  <h3>Related posts</h3>
-  <ul class="related-posts">
-    {{ range . }}
-      <li>
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-      </li>
-    {{ end }}
-  </ul>
+{{ $at_side := .atSide }}
+{{ with .context }}
+{{ $ := . }}
+<ul class='main-menu-posts {{ if eq .Kind "page" }}is-page{{ end }}'>
+  {{ if in (slice "home" "section" "taxonomy") .Kind -}}
+    {{/* has a list of pages */}}
+    {{- range site.Menus.main -}}
+      {{- if ne .URL $.RelPermalink -}}
+        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+      {{- end -}}
+    {{- end -}}
+  {{ else }}
+    {{/* single page */}}
+    <li class="home">
+      <a href="/">Home</a>
+    </li>
+    <li class="all">
+      {{- with .Parent -}}{{- if not .IsHome -}}
+        <a href="{{ .RelPermalink }}" title="{{ .Title }}">Above</a>
+      {{- end -}}{{- end -}}
+    </li>
+    <li class="prev">
+      {{- with .PrevInSection -}}
+        <a href="{{ .RelPermalink }}" title="{{ .Title }}">← {{ if $at_side }}Prev{{ else }}{{ .Title }}{{ end }}</a>
+      {{- end -}}
+    </li>
+    <li class="next">
+      {{- with .NextInSection -}}
+        <a href="{{ .RelPermalink }}" title="{{ .Title }}">{{ if $at_side }}Next{{ else }}{{ .Title }}{{ end }} →</a>
+      {{- end -}}
+    </li>
+  {{ end }}
+</ul>
 {{ end }}

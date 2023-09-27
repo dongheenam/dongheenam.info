@@ -1,8 +1,7 @@
 {{- define "main" -}}
-<h1>{{ .Title }}</h1>
+{{ partial "title" . }}
 <article>
   {{ .Content }}
-  <hr />
   <ul class="section">
     {{- range (.Paginate .Pages 20).Pages -}}
       <li class="post-item">
@@ -17,6 +16,5 @@
     {{- end -}}
   </ul>
 </article>
-<hr />
 {{ template "_internal/pagination.html" . }}
 {{- end -}}

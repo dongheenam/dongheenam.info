@@ -15,10 +15,9 @@
   {{ end }}
   {{- $pages_by_letters = merge $pages_by_letters (dict $first_letter $new_list) -}}
 {{ end }}
-<h1>{{ .Title }}</h1>
+{{ partial "title" . }}
 <article>
   {{ .Content }}
-  <hr />
   <div class="taxonomy">
     {{ range $key, $value := $pages_by_letters }}
     <span class="key">{{ $key }}</span>

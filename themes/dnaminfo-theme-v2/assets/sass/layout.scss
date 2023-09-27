@@ -198,28 +198,40 @@ figure {
 .updated {
   margin: 0;
 }
-.menu-posts,
-.related-posts {
-  @extend .fancy-list;
-}
-.navigator {
-  margin-top: 1rem;
-  display: grid;
-  grid-template-columns: 1fr auto auto 1fr;
-  gap: 1rem;
+// main menu
+.main-menu-posts {
+  text-align: center;
 
   @include small-caps;
   color: var(--text-gray);
+}
+#content .main-menu-posts {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 1rem;
+
+  &.is-page {
+    justify-content: space-between;
+  }
 
   .prev {
+    order: -1;
+    flex: 1;
     text-align: left;
   }
   .next {
+    flex: 1;
     text-align: right;
   }
 }
 
-/* menu */
+// custom menu
+.menu-posts,
+.related-posts {
+  @extend .fancy-list;
+}
 .menu-posts .active {
   color: var(--text-accent);
 }

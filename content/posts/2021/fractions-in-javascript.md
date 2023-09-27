@@ -6,6 +6,7 @@ date: 2020-12-26 15:10:03.222 +1100
 
 math: true
 draft: false
+toc: true
 
 tags:
   - JavaScript
