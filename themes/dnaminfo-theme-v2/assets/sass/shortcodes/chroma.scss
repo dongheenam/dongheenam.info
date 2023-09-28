@@ -31,23 +31,25 @@ $subtle: #6e7681;
     border-spacing: 0;
   }
   .lnt {
-    height: 1rem;
     font-size: 0.75em;
+    height: 1rem;
+  }
+  .lnt, .ln {
     font-weight: 700;
     color: $subtle;
     padding: 0 0.4em 0 0.4em;
     margin-right: 0.4em;
   }
-  .ln {
-    color: $subtle;
-    padding: 0 0.4em 0 0.4em;
-    margin-right: 0.4em;
+  .line, .hl, .lnt {
+    // line-height: 1.35
+    height: 0.9 * 1.35rem;
+    // vertical align text
+    display: flex;
+    align-items: center;
   }
   /* line highlighting */
   .hl {
-    width: 100%;
-    display: block;
-    background-color: $background-hl;
+    background: $background-hl;
   }
 
   .k {

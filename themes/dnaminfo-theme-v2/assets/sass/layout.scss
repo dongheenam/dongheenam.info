@@ -85,7 +85,6 @@ article {
   }
 }
 
-// article > :is(ul, ol),
 .fancy-list {
   margin-bottom: 1.5rem;
 
@@ -149,11 +148,17 @@ aside {
   @extend .note;
   @extend .aside;
   @extend .small-text;
+
+  li {
+    margin-bottom: 0.5rem;
+  }
 }
 
-article > :is(ul, ol) {
+:is(article) > :is(ul, ol),
+.note:not(aside) > :is(ul, ol) {
   @extend .fancy-list;
 }
+
 
 blockquote {
   padding-left: 2rem;

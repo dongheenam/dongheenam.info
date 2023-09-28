@@ -1,5 +1,8 @@
 @use "../variables.scss" as *;
 
+.tab-container {
+  margin-bottom: 1.5rem;
+}
 .tab-header {
   font-family: "Source Serif Variable", serif;
   font-size: 0.85rem;
@@ -26,9 +29,6 @@
     color: #c9d1d9;
     border-bottom-color: transparent;
   }
-}
-.tab-content {
-  margin-bottom: 1.5rem;
 }
 .tab-item {
   display: none;

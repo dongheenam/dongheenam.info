@@ -12,28 +12,6 @@
     // 	],
     // 	"description": "Log output to console"
     // }
-  
-    // FRONT MATTER
-    "Frontmatter": {
-      "prefix": ["fm", "frontmatter"],
-      "body": [
-        "---",
-        "title: $1",
-        "description: $2",
-        "date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND +1000",
-        "",
-        "toc: true",
-        "draft: true",
-        "",
-        "tags:",
-        "  - $3",
-        "",
-        "---",
-        "",
-        "$0"
-      ],
-      "description": "Default front matter for a post"
-    },
 
     // HUGO COMMANDS
     "Figure": {
@@ -41,79 +19,18 @@
       "body": ["{{< figure src=\"$1\" caption=\"$2\"$3 >}}", "$0"],
       "description": "Insert a single figure"
     },
-  
-    "Gallery": {
-      "prefix": "gal",
-      "body": [
-        "{{< gallery id=\"$1\" caption=$2 >}}",
-        "  {{< img src=\"$3\" $4 >}}$0",
-        "{{< /gallery >}}"
-      ],
-      "description": "Insert a gallery"
-    },
-  
-    "Marginnote": {
-      "prefix": "mn",
-      "body": ["{{% mn $1 %}}", "$0", "{{% /mn %}}"]
+
+    "Aside": {
+      "prefix": "aside",
+      "body": ["{{% aside %}}", "$0", "{{% /aside %}}"]
     },
 
-    "Sidenote": {
-      "prefix": "sn",
-      "body": ["{{% sn $1 %}}", "$0", "{{% /sn %}}"]
-    },
-  
-    "PDF": {
-      "prefix": "pdf",
-      "body": ["{{< pdf src=\"$1\" $2 >}}", "$0"],
-      "description": "Insert a PDF file"
-    },
-  
+
     "Note": {
       "prefix": "note",
-      "body": "{{< note $1 >}} $0",
-      "description": "Hugo note shortcode"
+      "body": ["{{% note %}}", "$0", "{{% /note %}}"]
     },
-  
-    "Enumerate": {
-      "prefix": "enum",
-      "body": "{{< enum $1 >}} $0",
-      "description": "Hugo enum shortcode"
-    },
-  
-    "Enumerated grid": {
-      "prefix": "enum-grid",
-      "body": ["{{< enum-grid $1 >}}", "$2", "{{< /enum-grid >}}"],
-      "description": "Hugo enum in grid shortcode"
-    },
-  
-    "Customised ordered list": {
-      "prefix": "custom-ol",
-      "body": ["{{< ol $1 >}}", "{{< li >}}", "$2", "{{< /li >}}", "{{< /ol >}}"],
-      "description": "Hugo shortcode for ordered list"
-    },
-  
-    "Half-Box": {
-      "prefix": "hbox",
-      "body": ["{{< hbox title=\"$1\" >}}", "$0", "{{< /hbox >}}"]
-    },
-  
-    "Details": {
-      "prefix": "details",
-      "body": ["{{% details title=\"$1\" %}}", "$0", "{{% /details %}}"],
-      "description": "Hugo details shortcode"
-    },
-  
-    "Invisible line": {
-      "prefix": "hr",
-      "body": ["{{< hr >}}", "$0"],
-      "description": "Hugo shortcode for invisible horizontal line"
-    },
-  
-    "practice questions": {
-      "prefix": "pq",
-      "body": "Try [Practice Question](#practice-questions) $1 before moving on."
-    },
-  
+
     // LATEX COMMANDS
     "align": {
       "prefix": "align",
@@ -125,7 +42,7 @@
       "body": ["\\begin{alignat*}{${1:2}}", "  $0", "\\end{alignat*}"],
       "description": "LaTeX alignat block"
     },
-  
+
     "bracket1": {
       "prefix": "bra1",
       "body": "\\left( $0 \\right)",
@@ -141,11 +58,10 @@
       "body": "\\left[ $0 \\right]",
       "description": "LaTeX bracket 3"
     },
-  
+
     "boldsymbol": {
       "prefix": "bs",
       "body": ["\\\\boldsymbol{ $1 }$0"],
       "description": "LaTeX boldsymbol block"
     }
   }
-  

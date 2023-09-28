@@ -15,16 +15,18 @@
   {{ $lang = "text" }}
 {{ end }}
 {{ $options := .Options }}
-{{ if index .Attributes "path" }}
+{{ $path := index .Attributes "path" }}
+{{ if $path }}
   {{/* if path is specified then automatically add line numbers */}}
   {{ $options = merge (dict "linenos" "table") $options }}
 {{ end }}
 {{/* render codeblock */}}
+{{ $id := index .Attributes "id" }}
 <div class="codeblock">
-  {{- with (index .Attributes "path") -}}
+  {{- with $path -}}
     <div class="code-header"><span>{{ . }}</span></div>
   {{- end -}}
-  <div class="code-body">
+  <div class="code-body" {{ with $id }}id="code-{{ . }}"{{ end }}>
     {{- highlight .Inner $lang $options -}}
     {{- $code_text := replace .Inner "\r" "" | safeJS -}}
     <button class="code-copy" title="copy code" onclick="copyText('{{ $code_text }}')">

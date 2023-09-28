@@ -1,5 +1,5 @@
 ---
-title: "Generating a Recursive Menu in Hugo"
+title: "Generating a recursive menu in Hugo"
 description: "Everyone tries recursion at least once. It was my turn."
 
 date: 2022-06-29 08:20:06.460 +1000

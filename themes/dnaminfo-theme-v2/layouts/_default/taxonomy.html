@@ -2,24 +2,24 @@
 {{/* grouping the t */}}
 {{- $letters := split "ABCDEFGHIJKLMNOPQRSTUVWXYZ" "" -}}
 {{- $pages := .Pages.ByTitle -}}
-{{- $pages_by_letters := dict -}}
+{{- $by_letter := dict -}}
 {{ range $pages }}
   {{- $page := . -}}
   {{- $first_letter := upper ( substr $page.Name 0 1 ) -}}
   {{- if not (in $letters $first_letter) }}
     {{ $first_letter = "#" }}
   {{ end }}
-  {{- $new_list := slice $page -}}
-  {{ with index $pages_by_letters $first_letter }}
-    {{- $new_list = union . $new_list -}}
+  {{ $new_list := slice $page }}
+  {{ with index $by_letter $first_letter }}
+    {{ $new_list = . | append $page }}
   {{ end }}
-  {{- $pages_by_letters = merge $pages_by_letters (dict $first_letter $new_list) -}}
+  {{- $by_letter = merge $by_letter (dict $first_letter $new_list) -}}
 {{ end }}
 {{ partial "title" . }}
 <article>
   {{ .Content }}
   <div class="taxonomy">
-    {{ range $key, $value := $pages_by_letters }}
+    {{ range $key, $value := $by_letter }}
     <span class="key">{{ $key }}</span>
     <ul class="list">
         {{- range $value -}}

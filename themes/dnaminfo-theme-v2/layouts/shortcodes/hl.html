@@ -1,0 +1,6 @@
+{{- $id := .Get "id" -}}
+{{- $from := .Get "from" | default (.Get "at") -}}
+{{- $to := .Get "to" | default "" -}}
+{{- if and $id $from -}}
+<span class="highlighter-handle" data-block-id="{{ $id }}" data-from="{{ $from }}" data-to="{{ $to }}" onpointerenter="toggleHighlight(event, true)" onpointerleave="toggleHighlight(event, false)" onpointercancel="toggleHighlight(event, false)">(#{{ $from }}{{ with $to }}-{{ . }}{{ end }})</span>
+{{- end -}}
