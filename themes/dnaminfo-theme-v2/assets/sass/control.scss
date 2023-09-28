@@ -51,22 +51,28 @@
   pointer-events: auto;
   opacity: 1;
 }
-#control-toggle {
+#control-button {
   position: fixed;
   z-index: 9999;
   inset: 0 0 auto 0;
   height: 2rem;
+  opacity: 0;
 
   color: var(--text-gray);
   background: var(--background-gray);
   border: 1px solid var(--border-gray);
 
+  cursor: pointer;
+
+  &.visible {
+    opacity: 1;
+  }
   &.open {
     inset: 0;
     height: auto;
   }
 
-  animation: disappear 3s ease-out forwards;
+  // animation: disappear 3s ease-out forwards;
 }
 @keyframes disappear {
   0% {

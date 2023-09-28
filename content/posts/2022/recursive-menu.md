@@ -1,6 +1,6 @@
 ---
 title: "Generating a Recursive Menu in Hugo"
-description: "Rendering a multi-level list using recursion in Hugo"
+description: "Everyone tries recursion at least once. It was my turn."
 
 date: 2022-06-29 08:20:06.460 +1000
 
@@ -11,9 +11,10 @@ tags:
   - Hugo
   - Python
   - recursion
+
 ---
 
-## Introduction
+## Motivation
 
 Hugo lets you generate menus from the `menu` parameters of individual pages. For example, if you have a Menu `example-menu` with a top page, Projects 1 and 2 directly beneath it, two examples under Project 1, it will have the following structure:
 
@@ -114,7 +115,7 @@ Inspired by this Vue [example case](https://vuejs.org/examples/#tree), I decided
 - display arbitrarily nested menus (and only the designers would stop us), and
 - show only the parents and siblings of the current page.
 
-## Hugo Partials
+## Partials
 
 Let's start with having a look at the overall structure first. This is where the menu list sits inside `<aside>`.
 
