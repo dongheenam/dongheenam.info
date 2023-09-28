@@ -2,7 +2,7 @@
 title: 'Breadcrumb navigation in Hugo'
 date: '2021-07-03 19:50:39.320 +1000'
 
-draft: true
+draft: false
 toc: true
 
 tags:
