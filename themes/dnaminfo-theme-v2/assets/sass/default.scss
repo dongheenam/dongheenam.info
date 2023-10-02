@@ -79,9 +79,9 @@ a, .default-a {
 }
 // links inside body text
 article a, .article-a {
-  color: var(--text-accent);
+  color: var(--text-hyperlink);
   &:hover {
-    color: var(--text);
+    color: var(--text-accent);
   }
 }
 

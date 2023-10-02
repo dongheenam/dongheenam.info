@@ -21,11 +21,11 @@
   background: transparent;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--background-gray);
     color: #c9d1d9;
   }
   &.active {
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--background-gray);
     color: #c9d1d9;
     border-bottom-color: transparent;
   }

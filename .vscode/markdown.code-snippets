@@ -14,21 +14,42 @@
     // }
 
     // HUGO COMMANDS
-    "Figure": {
-      "prefix": "fig",
-      "body": ["{{< figure src=\"$1\" caption=\"$2\"$3 >}}", "$0"],
-      "description": "Insert a single figure"
+    "Shortcode": {
+        "prefix": "{{",
+        "body": "{{% $0 %}}",
+        "description": "Insert a shortcode"
+    },
+    "Shortcode block": {
+        "prefix": "{{/",
+        "body": ["{{% $1 %}}", "$0", "{{% \\$1 %}}"],
+        "description": "Insert a blocked shortcode"
     },
 
+    "Figure": {
+      "prefix": "fig",
+      "body": ["{{% figure src=\"$1\" caption=\"$2\" %}}", "$0"],
+      "description": "Insert a single figure"
+    },
     "Aside": {
       "prefix": "aside",
       "body": ["{{% aside %}}", "$0", "{{% /aside %}}"]
     },
-
-
     "Note": {
       "prefix": "note",
-      "body": ["{{% note %}}", "$0", "{{% /note %}}"]
+      "body": ["{{% note title=\"$1\" color=\"gold\" %}}", "$0", "{{% /note %}}"]
+    },
+    "Tabs": {
+      "prefix": "tabs",
+      "body": [
+        "{{% tabs $1 %}}",
+        "{{% tab name=\"$2\" %}}",
+        "$0",
+        "{{% /tab %}}",
+        "{{% tab name=\"$3\" %}}",
+        "",
+        "{{% /tab %}}",
+        "{{% /tabs %}}"
+      ]
     },
 
     // LATEX COMMANDS
