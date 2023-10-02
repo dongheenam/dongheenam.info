@@ -51,6 +51,10 @@ $subtle: #6e7681;
   .hl {
     background: $background-hl;
   }
+  /* line anchors */
+  .lnlinks {
+    color: inherit;
+  }
 
   .k {
     color: #ff7b72;

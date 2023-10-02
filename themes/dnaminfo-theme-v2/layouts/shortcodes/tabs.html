@@ -14,9 +14,12 @@
 */}}
 {{/* trigger loader */}}
 {{ .Page.Scratch.Set "require-tabs-resources" "true" }}
-{{/* .Inner has no roles but needs to be mentioned to put tab inside */}}
+{{/* .Inner has no roles but needs to be mentioned to put {{% tab %}} inside */}}
 {{- with .Inner }}{{ end -}}
-{{- $groupId := .Get "id" | default "default" -}}
+{{- $groupId := partial "random" 6 -}}
+{{- with .Get "id" -}}
+  {{- $groupId = . -}}
+{{- end -}}
 <div class="tab-container">
   <div class="tab-header">
   {{- range $idx, $tab := .Scratch.Get "tabs" -}}
