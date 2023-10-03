@@ -1,6 +1,6 @@
 [build]
     # command = "npm run build"
-    command = "hugo --gc --minify --templateMetrics"
+    command = "npm install -g sass && hugo --gc --minify --templateMetrics"
     publish = "public"
 
 [build.environment]
