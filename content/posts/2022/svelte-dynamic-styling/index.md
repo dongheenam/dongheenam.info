@@ -14,7 +14,7 @@ tags:
 
 ---
 
-## Introduction
+## Motivation
 
 For my React hobby projects, I really loved using [Chakra UI](https://chakra-ui.com/) and [Mantine](https://mantine.dev/) for a long time because they are very intuitive to use. If you want to make a filled red button, you just write
 
@@ -44,11 +44,11 @@ Now let's have a look.
 
 ## Svelte Components with Themes
 
-We will build a component with pre-defined styles that can be toggled with two props: `variant` and `color`. For example, the following buttons can be made
+We will build a component with pre-defined styles that can be toggled with two props: `variant` and `color`. For example, to make the following buttons,
 
-{{< figure src="blogs/2022/buttons.png" alt="Example buttons" >}}
+{{% figure src="buttons.png" alt="Example buttons" %}}
 
-with this code:
+we only need the following code:
 
 ```svelte {path="App.svelte"}
 <script>
@@ -71,14 +71,9 @@ with this code:
 </div>
 ```
 
-### TL;DR
+{{% note title="Note" color="gold" %}}
 
-If you just want the code without any explanations, explore [this REPL](https://svelte.dev/repl/060d8275145246e6991003d5eac1972c?version=3.55.0).
-
-
-### Dependencies
-
-Because creating a color system is a painful task, I will use [Radix colors](https://www.radix-ui.com/colors) for the component. The library provides CSS variables for their color scheme, which essentially looks like:
+Because creating a colour system is a painful task, I will use [Radix colors](https://www.radix-ui.com/colors) for the component. The library provides CSS variables for their colour scheme, which essentially looks like:
 
 ```css {path="'@radix-ui/colors/gray.css'"}
 #root {
@@ -88,10 +83,12 @@ Because creating a color system is a painful task, I will use [Radix colors](htt
 }
 ```
 
-You can, of course, swap these with any color palettes you have.
+You can, of course, swap these with any colour palettes you have.
+
+{{% /note %}}
 
 
-### Base CSS
+## Base CSS
 
 Let's first focus on the base styles, such as typography and padding.
 
@@ -123,11 +120,12 @@ Let's first focus on the base styles, such as typography and padding.
 </style>
 ```
 
-### The "default" style
-
-We will then add a "default" style to the button, that is, how the button should look like if no props were passed on. My default style is a grey button without border or background, just like the case of [Material UI](https://mui.com/material-ui/react-button/). Don't forget to add `:hover` and `:active` selectors to make the button respond to user actions.{{% sn guide %}}
+{{% aside %}}
 I followed [this guide](https://www.radix-ui.com/docs/colors/palette-composition/understanding-the-scale) from Radix Colors.
-{{% /sn %}}
+{{% /aside %}}
+
+We will then add a "default" style to the button, that is, how the button should look like if no props were passed on. My default style is a grey button without border or background, just like the case of [Material UI](https://mui.com/material-ui/react-button/). Don't forget to add `:hover` and `:active` selectors to make the button respond to user actions.
+
 
 ```svelte {path="Button.svelte" hl_lines="25-36"}
 <script>
@@ -174,40 +172,44 @@ I followed [this guide](https://www.radix-ui.com/docs/colors/palette-composition
 Now, it's time to add different style and colour options to this component. As mentioned earlier, the component will have four different variant choices and a few colour options:
 
 ```svelte {path="Button.svelte"}
-<script>
-  /** @type {"gray" | "blue" | "green" | "yellow" | "red"} */
-  export let color = "gray";
-  /** @type {"default" | "outline" | "subtle" | "filled"} */
-  export let variant = "default";
+<script lang="ts" context="module">
+  export type Color = "gray" | "blue" | "green" | "yellow" | "red";
+  export type Variant = "default" | "outline" | "subtle" | "filled";
+</script>
+<script lang="ts">
+  export let color: Color = "gray";
+  export let variant: Variant = "default";
 </script>
 
 <!-- ... -->
 ```
 
-This looks like a painful job to code up the four variants, but it is not as tricky as it seems. Let's first summarise the text, background and border colours for the variants in a table.{{% sn guide2 %}}
+{{% aside %}}
 I followed [this guide](https://www.radix-ui.com/docs/colors/palette-composition/understanding-the-scale) from Radix Colors.
-{{% /sn %}} Note the "odd" ones are in bold.
+{{% /aside %}}
+
+This looks like a painful job to code up the four variants, but it is not as tricky as it seems. Let's first summarise the text, background and border colours for the variants in a table. Note the "odd" ones are in bold.
 
 |   | Default | Outline | Subtle | Filled |
 |---|---|---|---|---|
 | `base` | | | |
-| text | color11 | color11 | color11 | ***white*** |
-| background | transparent | transparent | ***color3*** | ***color9*** |
-| border | transparent | ***color7*** | transparent | transparent |
+| text | color11 | color11 | color11 | **white** |
+| background | transparent | transparent | **color3** | **color9** |
+| border | transparent | **color7** | transparent | transparent |
 | `:hover` | | | |
-| text | color12 | color12 | color12 | ***white*** |
-| background | color4 | color4 | color4 | ***color10*** |
-| border | transparent | ***color8*** | transparent | transparent |
+| text | color12 | color12 | color12 | **white** |
+| background | color4 | color4 | color4 | **color10** |
+| border | transparent | **color8** | transparent | transparent |
 | `:active` | | | |
-| background | color5 | color5 | color5 | ***color11*** |
+| background | color5 | color5 | color5 | **color11** |
 
 Because the variants share a fair amount of settings, we can selectively define CSS variables and provide [fallback values](https://defensivecss.dev/tip/css-variable-fallback/), instead of setting up every variable for every variant. For example, only outlined buttons have non-transparent borders, so we can do something like:
 
 ```svelte {path="Button.svelte",hl_lines="4-9 12 18"}
-<script>
-  export let variant = "default";
+<script lang="ts">
+  export let variant: Variant = "default";
 
-  let bdColor = null;
+  let bdColor: string | null = null;
   $: {
     if (variant === "outline") {
       bdColor = `var(--${color}7)`;
@@ -226,33 +228,35 @@ Because the variants share a fair amount of settings, we can selectively define 
 </style>
 ```
 
-By appling this logic to the other CSS properties as well, we have completed the `Button` component with themes!
+By applying this logic to the other CSS properties as well, we have completed the `Button` component with themes!
 
-{{% mn ex %}}
+{{% aside %}}
 You can play with this component in [this REPL](https://svelte.dev/repl/060d8275145246e6991003d5eac1972c?version=3.55.0).
-{{% /mn %}}
-```svelte {path="Button.svelte",hl_lines="18-52 57-63 83-95"}
-<script>
-  /** @type {"gray" | "blue" | "green" | "yellow" | "red"} */
-  export let color = "gray";
-  /** @type {"default" | "outline" | "subtle" | "filled"} */
-  export let variant = "default";
+{{% /aside %}}
+
+```svelte {path="Button.svelte"}
+<script lang="ts" context="module">
+  export type Color = "gray" | "blue" | "green" | "yellow" | "red";
+  export type Variant = "default" | "outline" | "subtle" | "filled";
+</script>
+<script lang="ts">
+  export let color: Color = "gray";
+  export let variant: Variant = "default";
 
   // CSS variables
-  const VARS_INIT = {
-    text: null,
-    textHover: null,
-    border: null,
-    borderHover: null,
-    background: null,
-    backgroundHover: null,
-    backgroundActive: null,
-  };
-  $: vars = {};
+  let vars: { [key: string]: string | null };
   $: {
     // flush the previous values
-    vars = VARS_INIT;
-    
+    vars = {
+      text: null,
+      textHover: null,
+      border: null,
+      borderHover: null,
+      background: null,
+      backgroundHover: null,
+      backgroundActive: null,
+    };
+
     // colors
     if (color !== "gray") {
       vars = {
