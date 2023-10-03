@@ -23,6 +23,8 @@
   {{ end }}
 
   {{/* stylesheets */}}
+  <link rel="preload" href="/fonts/SourceSerif4Variable-Roman-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/SourceSerif4Variable-Italic-latin.woff2" as="font" type="font/woff2" crossorigin>
   {{ $options := dict "transpiler" "dartsass" "targetPath" "css/main.css" }}
   {{ with resources.Get "sass/main.scss" | resources.ToCSS $options | resources.Minify }}
     <link rel="stylesheet" href="{{ .RelPermalink }}" crossorigin="anonymous" />
