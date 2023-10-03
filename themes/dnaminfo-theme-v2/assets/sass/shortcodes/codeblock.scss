@@ -1,5 +1,5 @@
 @use "../variables.scss" as *;
-@use "./chroma.scss";
+@use "./chroma.scss" as chroma;
 
 /* codeblocks */
 .codeblock {
@@ -68,14 +68,28 @@
   }
 }
 
-/* codeblock highlighters */
-.highlighter-handle {
-  white-space:nowrap;
+/* codeblock references */
+.code-ref {
+  @extend .circled;
 
-  cursor: help;
   @include font-weight(500);
+  cursor: help;
 
-  &:hover {
+  &.active {
+    color: var(--text-accent);
+  }
+}
+.chroma .code-handle {
+  margin-left: 2ch;
+  cursor: help;
+
+  @include font-weight(700);
+  color: chroma.$subtle;
+
+}
+.chroma .line.active {
+  background-color: chroma.$background-hl;
+  .code-handle {
     color: var(--text-accent);
   }
 }

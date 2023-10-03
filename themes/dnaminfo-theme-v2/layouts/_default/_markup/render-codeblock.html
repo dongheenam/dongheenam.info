@@ -5,9 +5,7 @@
     print("hello, world!")
     ```
 */}}
-{{/* trigger loader */}}
-{{ .Page.Scratch.Set "require-codeblock-resources" "true" }}
-{{/* parse options */}}
+{{/* language options */}}
 {{ $lang := .Type | default "text" }}
 {{ if eq (lower $lang) "html" }}
   {{ $lang = "go-html-template" }}
@@ -16,12 +14,15 @@
 {{ end }}
 {{ $options := .Options }}
 {{ $path := index .Attributes "path" }}
+{{ $id := index .Attributes "id" }}
+{{ $line_start := index .Options "linenostart" }}
 {{ if $path }}
-  {{/* if path is specified then automatically add line numbers */}}
   {{ $options = merge (dict "linenos" "table") $options }}
 {{ end }}
+{{ with $id }}
+  {{ $options = merge (dict "lineanchors" .) $options }}
+{{ end }}
 {{/* render codeblock */}}
-{{ $id := index .Attributes "id" }}
 <div class="codeblock">
   {{- with $path -}}
     <div class="code-header"><span>{{ . }}</span></div>

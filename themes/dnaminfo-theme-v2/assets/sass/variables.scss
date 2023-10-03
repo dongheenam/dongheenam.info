@@ -165,3 +165,27 @@ $dark-mode-correction: 0.85;
     @include font-weight(500);
   }
 }
+
+// circled numbers
+.circled {
+  position: relative;
+  display: inline-flex;
+  place-content: center;
+  width: 1.1em;
+  height: 1.1em;
+  &:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    translate: 0 0.14em;
+    border: 1.5px solid currentColor;
+    border-radius: 50%;
+  }
+
+  &.big {
+    transform: scaleX(0.707);
+    &:before {
+      transform: scaleX(1.414);
+    }
+  }
+}

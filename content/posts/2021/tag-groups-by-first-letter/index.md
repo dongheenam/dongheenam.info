@@ -111,17 +111,13 @@ We will first build the dictionary, which we call `$by_letter`, where the keys a
 
 {{% aside %}}
 
-{{< hl id="taxonomy" at="2" >}} Same as `$letters := slice "A" "B" ... "Z"`.
+{{< hl id="taxonomy" at="3" >}} Terms are sorted alphabetically, so they remain sorted after we group them.
 
-{{< hl id="taxonomy" at="3" >}} Terms are sorted alphabetically, so they will still be sorted after we group them.
-
-{{< hl id="taxonomy" at="6" >}} Check this [post](https://www.regisphilibert.com/blog/2018/02/hugo-the-scope-the-context-and-the-dot/) if you want to learn more about scopes and `.`.
-
-{{< hl id="taxonomy" at="12" >}} If the slice already exists in the `dict`, append to that slice instead.
+{{< hl id="taxonomy" at="6" >}} Check this [post](https://www.regisphilibert.com/blog/2018/02/hugo-the-scope-the-context-and-the-dot/) if you want to learn more about scopes.
 
 {{% /aside %}}
 
-```html {path="layouts/_default/taxonomy.html",id="taxonomy"}
+```html {path="layouts/_default/taxonomy.html",id="taxonomy",linenostart=114}
 {{ define "main" }}
 {{ $letters := split "ABCDEFGHIJKLMNOPQRSTUVWXYZ" "" }}
 {{ $pages := .Pages.ByTitle }}
@@ -141,6 +137,7 @@ We will first build the dictionary, which we call `$by_letter`, where the keys a
 <!-- ...rendering happens here -->
 {{ end }}
 ```
+
 
 ## Rendering
 

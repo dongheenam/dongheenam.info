@@ -23,7 +23,6 @@ markup:
   highlight:
     noClasses: false
     style: github-dark
-    linenos: true
 
 # build settings
 timeout: 600000

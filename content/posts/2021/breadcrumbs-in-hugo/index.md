@@ -44,9 +44,11 @@ A Hugo page has a `.Parent` variable, and it returns the parent section of the p
 
 Here is how the `get-items` template works:
 
-1. First, render a `<li>` element for the current page {{< hl id="get" from="11" to="13" >}}.
-2. Then, if the current page has a parent, *prepend* a `<li>` element for that page {{< hl id="get" from="6" to="7" >}}.
-3. Repeat the previous step until it reaches the homepage {{< hl id="get" from="8" to="9" >}}.
+{{< hl id="get" at="11" >}} First, render a `<li>` element for the current page.
+
+{{< hl id="get" at="6" >}} Then, if the current page has a parent, *prepend* a `<li>` element for that page.
+
+{{< hl id="get" at="8" >}} Repeat the previous step until it reaches the homepage.
 
 Adding this partial to the `<body>` of this page (`/posts/breadcrumbs-in-hugo/`)
 
