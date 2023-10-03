@@ -5,6 +5,7 @@
 
 [build.environment]
     HUGO_VERSION = "0.118.2"
+    DART_SASS_VERSION = "1.67.0"
     HUGO_ENABLEGITINFO = "true"
 
 # [[plugins]]
