@@ -1,0 +1,12 @@
+<div class="title-block fullwidth">
+  <h1>{{ if eq .Kind "term" }}#{{ end }}{{ .Title | default (title .Section) }}</h1>
+  <div class="subtitle">
+    {{ if eq .Kind "page" }}
+      <p>{{ .Description | $.RenderString }}</p>
+      <p class="date small-text">
+        {{ .Date.Format "2 Jan 2006" }}. {{ with .Content | countwords }}{{ . }} words.{{ end }}
+      </p>
+    {{ end }}
+  </div>
+  <hr />
+</div>

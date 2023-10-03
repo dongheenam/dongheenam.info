@@ -1,0 +1,95 @@
+@use "./variables.scss" as *;
+
+/* FONT SIZE */
+html {
+  font-size: 18px;
+
+  @include tablet {
+    // TODO: make font-size 2.1% of the screen width excluding the scrollbar
+    font-size: min(2.1vw, 21.5px);
+  }
+}
+
+/* DEFAULT STYLES */
+html {
+  font-family: "Source Serif Variable", Georgia, serif;
+  color: var(--text);
+  background-color: var(--background);
+}
+
+body {
+  font-size: 1rem;
+  // hyphens: auto;
+  @include font-weight(400);
+}
+
+h1 {
+  font-size: 1.8em;
+  @include font-weight(800);
+}
+
+h2 {
+  font-size: 1.1em;
+  @include font-weight(700);
+
+  margin-top: 2em;
+  margin-bottom: 0.25em;
+}
+
+h3 {
+  font-size: 1em;
+  @include small-caps;
+  @include font-weight(700);
+
+  margin-top: 2em;
+  margin-bottom: 0.25em;
+
+  h2 + & {
+    margin-top: 0;
+  }
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+code {
+  font-family: "Iosevka Fixed SS04", Menlo, Monaco, "Cascadia Mono",
+    "Segoe UI Mono", monospace;
+  font-size: 0.85em;
+  -webkit-text-size-adjust: 100%;
+
+  // styles for inline codes
+  padding: 0 0.15em;
+  background-color: var(--background-gray-deep);
+
+  pre & {
+    // no default styles for code blocks
+    padding: 0;
+    background-color: initial;
+  }
+}
+
+// links in UI elements
+a, .default-a {
+  text-decoration: none;
+  &:hover {
+    color: var(--text-accent);
+  }
+}
+// links inside body text
+article a, .article-a {
+  color: var(--text-hyperlink);
+  &:hover {
+    color: var(--text-accent);
+  }
+}
+
+// divider
+hr {
+  border: none;
+  border-top: 1px solid var(--border-gray);
+}
+article hr {
+  margin: 1.4rem 0;
+}

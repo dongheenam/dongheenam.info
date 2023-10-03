@@ -1,29 +1,29 @@
 ---
 title: "Polynomials in JavaScript"
-description: "How the implement polynomial algebra with JavaScript."
+description: "An (bad) attempt to reinvent polynomial algebra with JavaScript."
 
 date: 2021-01-11 14:02:29.052 +0800
-lastMod: 2021-01-11 14:02:29.052 +0800
 
 toc: true
 math: true
 draft: false
-highlight: true
 
 tags:
   - JavaScript
   - polynomial
 
+menu:
+  math-in-JS:
+    weight: 20
+
 ---
 
 ## Introduction
 
-Just like with the [fractions](../fractions-in-javascript), I also wrote a simple library that creates a polynomial (with a single variable). Because most of the advanced calculations will be performed with [Nerdamer](../setting-up-nerdamer-in-hugo), I will only implement basic functionalities such as adding and multiplying, and the ability to print polynomials as LaTeX expressions.
+Just like [fractions](../fractions-in-javascript), I also wrote a simple library that creates a polynomial (with a single variable). Because most of the advanced calculations will be performed with [Nerdamer](../setting-up-nerdamer-in-hugo), I will only implement basic functionalities such as adding and multiplying, and the ability to print polynomials as LaTeX expressions.
 
 
 ## The `Poly(nomial)` class
-
-### Data structure and constructor
 
 Since a polynomial (in $x$) has a shape of $$ a_0 + a_1x + a_2x^2 + a_3x^3 + \dots, $$ it sounds natural to associate a polynomial with its coefficients, i.e., the above polynomial is equivalent to `[a_0, a_1, a_2, a_3, ...]`. Because this approach is inefficient to represent polynomials liks $ 3x^{100} $, one can use objects instead: `{ 0: a_0, 1: a_1, 2: a_2, 3: a_3, ...}`, and $ 3x^{100}$ is just `{ 100: 3 }`.
 
@@ -44,7 +44,11 @@ const coeffs = {1: 4, 3: 2, 2: 0, 0: -3};
 console.log(findKeys(coeffs)); // [3, 2, 1, 0]
 ```
 
-Then, we can write the constructor function for the polynomial class:{{% sn frac %}}Check the [fractions in JavaScript](../fractions-in-javascript) post for more information on the `Frac` class.{{% /sn %}}
+Then, we can write the constructor function for the polynomial class:
+
+{{% aside %}}
+Check the [fractions in JavaScript](../fractions-in-javascript) post for more information on the `Frac` class.
+{{% /aside %}}
 
 ```javascript
 class Poly {
@@ -55,22 +59,16 @@ class Poly {
     // If the input is an array
     if (Array.isArray(coeffs)) {
       coeffs.map((e, i) => {
-        // only store non-zero coefficients
-        if (e != 0) {
-          // store coefficients as a fraction
-          this.coeffs[i] = (e instanceof Frac)? e : new Frac(e);
-        }
+        if (e === 0) return; // only store non-zero coefficients
+        this.coeffs[i] = (e instanceof Frac)? e : new Frac(e);
       });
     // if the input is an object
     } else if (typeof coeffs === "object") {
       const keys = findKeys(coeffs);
       for (let k of keys) {
-        // only store non-zero coefficients
-        if (coeffs[k] != 0) {
-          const e = coeffs[k];
-          // store coefficients as a fraction
-          this.coeffs[k] = (e instanceof Frac)? e : new Frac(e);
-        }
+        if (coeffs[k] !== 0) continue; // only store non-zero coefficients
+        const e = coeffs[k];
+        this.coeffs[k] = (e instanceof Frac)? e : new Frac(e);
       }
     }
     // order of polynomial equals order of the leading term
@@ -83,7 +81,7 @@ Note that you can either feed in an array or an object to create a polynomial in
 
 ```javascript
 const polyA = new Poly([3, 1, 2]);   // 2x^2 + x + 3
-const polyB = new Poly({5:-1, 1:7}); // -x^5 + 7x
+const polyB = new Poly({ 5: -1, 1: 7 }); // -x^5 + 7x
 ```
 
 and any zero entries are ignored.
@@ -98,9 +96,9 @@ You can also nominate any other variable name.
 const polyD = new Poly([5, -1, 2], "t"); // 2t^2 - t + 5
 ```
 
-### Adding polynomials
+## Addition
 
-Adding two polynomials can be done term-by-term: 
+Adding two polynomials can be done term-by-term:
 \begin{align*}
 & (a_0 + a_1 x + a_2 x^2 + \dots ) + (b_0 + b_1 x + b_2 x^2 + \dots ) \\\\
 &= (a_0 + b_0) + (a_1 + b_1) x + (a_2 + b_2) x^2 + \dots.
@@ -124,12 +122,15 @@ class Poly {
 }
 ```
 
-The problem is, when any of the coefficients $a_i$ or $b_i$ are zero, they are not registered in the `coeffs` object. Naively looping over all orders is not ideal here since adding a number to an `undefined` type will result in a `NaN`.{{% sn nan %}}This is why I find JavaScript quite scary to work with, because a lot of other programming languages will throw an index error instead and stop running.{{% /sn %}}
+The problem is, when any of the coefficients $a_i$ or $b_i$ are zero, they are not registered in the `coeffs` object. Naively looping over all orders is not ideal here since adding a number to an `undefined` type will result in a `NaN`.
+
+{{% aside %}}
+This is why I find JavaScript quite scary to work with, because a lot of other programming languages will throw an index error instead and stop running.
+{{% /aside %}}
 
 ```javascript
 const polyA = new Poly([0, 3, 2]); // 2x^2 + 3x
 const polyB = new Poly([1, 1]);    // x + 1
-
 const newPoly = polyA.add(polyB);  // NaNx^2 + 4x + NaN
 ```
 
@@ -143,7 +144,11 @@ function addTerms(t1, t2) {
 }
 ```
 
-Then, we can iterate over the *union* of the keys of the two coefficient objects. To do this, we need to modify `findKey()` function a little bit:{{% sn set %}} The JavaScript [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) object is useful here. {{% /sn %}}
+Then, we can iterate over the *union* of the keys of the two coefficient objects. To do this, we need to modify `findKey()` function a little bit:
+
+{{% aside %}}
+The JavaScript [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) object is useful here.
+{{% /aside %}}
 
 ```javascript
 function findKeys(coeffs1, coeffs2 = {}) {
@@ -198,21 +203,19 @@ The new tricks should now handle the addition properly,
 ```javascript
 const polyA = new Poly([0, 3, 2]); // 2x^2 + 3x
 const polyB = new Poly([1, 1]);    // x + 1
-
 const newPoly = polyA.add(polyB);  // 2x^2 + 4x + 1
 ```
 
-while preventing something like $ (x+1) + 3t = 4x + 1$ from happening.
+while preventing something like $(x+1) + 3t = 4x + 1$ from happening.
 
 ```javascript
 const polyT = new Poly([0, 3], "t"); // 3t
-
-const newPoly2 = polyB.add(polyT); 
+const newPoly2 = polyB.add(polyT);
 /* Error: adding polynomials in different variables is not yet supported. */
 ```
 
 
-### Multiplying polynomials
+## Multiplication
 
 It is a little more difficult to visualise multiplication:
 \begin{align*}
@@ -226,7 +229,10 @@ It is a little more difficult to visualise multiplication:
 \end{align*}
 
 but if you look closely into it, all the terms have a shape of $ a_i b_j x^{i+j} $, so we can simplify this using the summation notation:
-$$ (a_0 + a_1 x + a_2 x^2 + \dots ) \times (b_0 + b_1 x + b_2 x^2 + \dots ) = \sum_{i} \sum_{j} a_i b_j x^{i+j} $$
+\begin{align*}
+& (a_0 + a_1 x + a_2 x^2 + \dots ) \times (b_0 + b_1 x + b_2 x^2 + \dots ) = \\\\
+&\sum_{i} \sum_{j} a_i b_j x^{i+j}
+\end{align*}
 
 and this identity can easily be translated into JavaScript. We also need the equivalence of the `addTerms()` function to deal with the program accidently accessing non-existing values:
 
@@ -289,16 +295,16 @@ const ansB = polyA.mult(polyB);     // 2x^3 - x^2 - 9x + 2
 ```
 
 
-### Evaluating Polynomials
+## Evaluation
 
-We can evaluate the value of a polynomial when its varialbe equals a certain value. For example, for $ P(x) = 2x^3 + x^2 - x + 7 $,
+We can evaluate the value of a polynomial when its variable equals a certain value. For example, for $P(x) = 2x^3 + x^2 - x + 7$,
 \begin{align*}
   P(-2) &= 2\cdot(-2)^3 + (-2)^2 - (-2) + 7 \\\\
   &= -16 + 4 + 2 + 7 \\\\
   &= -3.
 \end{align*}
 
-This operation is fairly simple, because we just need to replace the variable with some number. We can take advantage of how `coeffs` is set up: the constant term (=the coefficient of $x^0$) is `coeffs[0]`, and the coefficient of $x^1$ is `coeffs[1]`, and so on.
+This operation is fairly simple, because we just need to replace the variable with some number. We can take advantage of how `coeffs` is set up: the constant term (the coefficient of $x^0$) is `coeffs[0]`, and the coefficient of $x^1$ is `coeffs[1]`, and so on.
 
 ```javascript
 class Poly {
@@ -321,18 +327,17 @@ Here is an example of the code in action.
 
 ```javascript
 const poly = new Poly([7, -1, 1, 2]); // 2x^3 + x^2 - x + 7
-
 const ans = poly.eval(-2);            // -3
 ```
 
 
-### Printing as LaTeX
+## Printing as LaTeX
 
-Finally, we want to print any polynomials as a LaTeX expression. This is an easy task because we already have a code that [prints a Frac instance as a LaTeX expression](../fractions-in-javascript#printing-as-latex), but there are still a few things to consider. We first need some code that converts $x^1$ to $x$ and $x^0$ to nothing.
+Finally, we want to print any polynomials as a LaTeX expression. This is an easy task because we already have a code that [prints a Frac instance as a LaTeX expression](../latex-fractions-in-javascript), but there are still a few things to consider. We first need some code that converts $x^1$ to $x$ and $x^0$ to nothing.
 
 ```javascript
 function printTerm(coeff, x, ind, op = "") {
-  let base = coeff.tex(op); 
+  let base = coeff.tex(op);
   // if the coefficient is 0
   if (coeff == 0) {
     return "";
@@ -384,4 +389,3 @@ We can print normal polynomials as LaTeX, as well as constant polynomials.
 const texA = new Poly([0]).tex();        // "0"
 const texB = new Poly([1, -3, 4]).tex(); // "4x^2-3x+1"
 ```
-

@@ -1,0 +1,34 @@
+{{ $at_side := .atSide }}
+{{ with .context }}
+{{ $ := . }}
+<ul class='main-menu-posts {{ if eq .Kind "page" }}is-page{{ end }}'>
+  {{ if in (slice "home" "section" "taxonomy") .Kind -}}
+    {{/* has a list of pages */}}
+    {{- range site.Menus.main -}}
+      {{- if ne .URL $.RelPermalink -}}
+        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+      {{- end -}}
+    {{- end -}}
+  {{ else }}
+    {{/* single page */}}
+    <li class="home">
+      <a href="/">Home</a>
+    </li>
+    <li class="all">
+      {{- with .Parent -}}{{- if not .IsHome -}}
+        <a href="{{ .RelPermalink }}" title="{{ .Title }}">List</a>
+      {{- end -}}{{- end -}}
+    </li>
+    <li class="prev">
+      {{- with .PrevInSection -}}
+        <a href="{{ .RelPermalink }}" title="{{ .Title }}">← {{ if $at_side }}Prev{{ else }}{{ .Title }}{{ end }}</a>
+      {{- end -}}
+    </li>
+    <li class="next">
+      {{- with .NextInSection -}}
+        <a href="{{ .RelPermalink }}" title="{{ .Title }}">{{ if $at_side }}Next{{ else }}{{ .Title }}{{ end }} →</a>
+      {{- end -}}
+    </li>
+  {{ end }}
+</ul>
+{{ end }}

@@ -1,0 +1,47 @@
+{{/*
+  Usage:
+  {{% tabs id="tab-group-id" %}}
+    {{% tab name="Tab 1" %}}
+      Content 1
+    {{% /tab %}}
+    {{% tab name="Tab 2" %}}
+      Content 2
+    {{% /tab %}}
+    ...
+  {{% /tabs %}}
+
+  inspired by https://github.com/matcornic/hugo-theme-learn
+*/}}
+{{/* trigger loader */}}
+{{ .Page.Scratch.Set "require-tabs-resources" "true" }}
+{{/* .Inner has no roles but needs to be mentioned to put {{% tab %}} inside */}}
+{{- with .Inner }}{{ end -}}
+{{- $groupId := partial "random" 6 -}}
+{{- with .Get "id" -}}
+  {{- $groupId = . -}}
+{{- end -}}
+<div class="tab-container">
+  <div class="tab-header">
+  {{- range $idx, $tab := .Scratch.Get "tabs" -}}
+    <button
+      data-tab-item="{{ .name }}"
+      data-tab-group="{{ $groupId }}"
+      class='tab-button {{ cond (eq $idx 0) "active" "" }}'
+      onclick="switchTab('{{ $groupId }}','{{ .name }}')"
+    >
+      {{- .name -}}
+    </button>
+  {{- end -}}
+  </div>
+  <div class="tab-content">
+  {{- range $idx, $tab := .Scratch.Get "tabs" -}}
+    <div
+      data-tab-item="{{ .name }}"
+      data-tab-group="{{ $groupId }}"
+      class='tab-item {{ cond (eq $idx 0) "active" "" }}'
+    >
+      {{- .content -}}
+    </div>
+  {{- end -}}
+  </div>
+</div>

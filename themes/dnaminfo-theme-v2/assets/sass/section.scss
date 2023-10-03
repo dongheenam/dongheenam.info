@@ -1,0 +1,83 @@
+@use "./variables.scss" as *;
+@use "./layout.scss" as *;
+
+/* lists */
+.section {
+  .post-item {
+    margin-bottom: 1.5rem;
+  }
+  .post-info {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+
+    font-size: 1.1em;
+    @include font-weight(500);
+
+    a {
+      color: var(--text);
+    }
+    a:hover {
+      color: var(--text-accent);
+    }
+  }
+  .subtitle {
+    margin-top: 0.25rem;
+    @extend .small-text;
+  }
+  .date {
+    margin-left: auto;
+
+    @extend .small-text;
+    font-style: italic;
+  }
+}
+/* taxonomy */
+.taxonomy {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0 0.25rem;
+  align-items: baseline;
+
+  .key {
+    font-family: "Iosevka Fixed SS04", Menlo, Monaco, "Cascadia Mono",
+    "Segoe UI Mono", monospace;
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--text-gray);
+    opacity: 0.45;
+
+    transform: scaleX(1.4);
+    transform-origin: left bottom;
+  }
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 0.5rem;
+
+    a {
+      color: var(--text);
+    }
+    a:hover {
+      color: var(--text-accent);
+    }
+  }
+}
+
+.pagination {
+  margin-inline: 30%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+
+  @extend .small-caps;
+
+  .disabled {
+    color: var(--border-gray-deep);
+    pointer-events: none;
+  }
+  .active {
+    color: var(--text-accent);
+  }
+}

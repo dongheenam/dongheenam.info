@@ -1,0 +1,7 @@
+{{/* Generates a random hex string of given length using sha256
+       Usage: {{ $random_hex := partial "random" 6 }}
+*/}}
+{{- $seed := now.UnixMicro -}}
+{{- $format := print "%." . "s" -}}
+{{/*  {{- return $format -}}  */}}
+{{- return (printf $format (sha256 $seed)) -}}

@@ -1,0 +1,19 @@
+{{- $id := .Get "id" -}}
+{{- $at := .Get "at" -}}
+{{- $key := print "code-" $id -}}
+{{- .Page.Scratch.Add $key 1 -}}
+{{- $ref := .Get "ref" | default (.Page.Scratch.Get $key) -}}
+{{- $ref_is_big := ge $ref 10 -}}
+{{- if and $id $at -}}
+<script>
+  window.addEventListener("DOMContentLoaded", () =>
+    appendCodeRef("{{ $id | safeJSStr }}", "{{ $at | safeJSStr }}", "{{ $ref | safeJSStr }}")
+  );
+</script>
+<span
+  class="code-ref {{ if $ref_is_big }}big{{ end }}"
+  data-at="{{ $id }}-{{ $at }}"
+  onpointerenter="toggleCodeRefs(event, true)"
+  onpointerleave="toggleCodeRefs(event, false)"
+  onpointercancel="toggleCodeRefs(event, false)">{{ $ref }}</span>
+{{- end -}}

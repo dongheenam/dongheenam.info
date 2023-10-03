@@ -1,0 +1,48 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous">
+<style>
+    .katex {
+        font-size: 1.1em;
+        display: inline-block;
+        padding: 0.25em 0;
+    }
+    .katex-highlight {
+        color: var(--text-accent);
+    }
+    .katex {
+        line-height: 1 !important;
+    }
+</style>
+
+<!-- The loading of KaTeX is deferred to speed up page rendering -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9ctzYFfFr4dgmgccOTx" crossorigin="anonymous"></script>
+
+<!-- To automatically render math in text elements, include the auto-render extension: -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const runKatex = new Promise( (resolve, reject) => {
+      renderMathInElement(document.body, {
+        delimiters: [
+          {left: "$$", right: "$$", display: true},
+          {left: "\\begin{equation}", right: "\\end{equation}", display: true},
+          {left: "\\begin{align*}", right: "\\end{align*}", display: true},
+          {left: "\\begin{alignat*}", right: "\\end{alignat*}", display: true},
+          {left: "$", right: "$", display: false}
+        ],
+        output: "html",
+        fleqn: true,
+        strict: false,
+        ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code', 'no-tex'],
+        trust: (context) => context.command === '\\htmlClass',
+        macros: {
+          "\\hl": "\\htmlClass{katex-highlight}",
+          "\\blue": "\\textcolor{dodgerblue}",
+          "\\green": "\\textcolor{#228b22}",
+          "\\tcirc": "\\text{\\large \\textcircled{\\small #1}}",
+          "\\scirc": "\\text{\\textcircled #1}"
+        }
+      });
+      resolve();
+    });
+  });
+</script>

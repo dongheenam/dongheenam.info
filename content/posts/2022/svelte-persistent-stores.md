@@ -13,19 +13,25 @@ tags:
 
 ---
 
-## Introduction
+## Motivation
 
 [Svelte stores](https://svelte.dev/docs#run-time-svelte-store) show an awesome example of how easy global state managers can be. You don't need to write any getters and setters, just add a `$` sign and you are good to go!
 
-{{% mn repl1 %}}
+{{% aside %}}
 [REPL example](https://svelte.dev/repl/4b39fa8938a64347b976a8419fc472a1?version=3.55.0)
-{{% /mn %}}
-```javascript {path="stores.js"}
+{{% /aside %}}
+
+{{% tabs  %}}
+{{% tab name="stores.js" %}}
+```javascript
 import { writable } from "svelte/store";
 
 export const teaStore = writable("black tea");
 ```
-```Svelte {path="App.svelte"}
+
+{{% /tab %}}
+{{% tab name="App.svelte" %}}
+```Svelte
 <script>
   import { teaStore } from "./stores";
 </script>
@@ -39,17 +45,20 @@ export const teaStore = writable("black tea");
   You wanted {$teaStore}!
 </p>
 ```
+{{% /tab %}}
+{{% /tabs %}}
 
-However, because it is a very lightweight implementation,{{% sn 44 %}}
-`svelte/store` is just [150 lines](https://github.com/sveltejs/svelte/blob/master/src/runtime/store/index.ts) of code if we exclude type declarations!
-{{% /sn %}}
-it lacks a few useful features that many React libraries provide out-of-the-box.
+{{% aside %}}
+`svelte/store` is just [150 lines](https://github.com/sveltejs/svelte/blob/master/src/runtime/store/index.ts) of code if we exclude type declarations.
+{{% /aside %}}
 
-For example, this is how [Zustand](https://github.com/pmndrs/zustand) and [Jotai](https://jotai.org/) offers to persist data between user sessions:
+However, because it is a very lightweight implementation, it lacks a few useful features that many React libraries provide out-of-the-box.
+
+For example, this is how [Zustand](https://github.com/pmndrs/zustand) and [Jotai](https://jotai.org/) offer to persist data between user sessions:
 
 {{% tabs id="react-persist" %}}
 {{% tab name="Jotai" %}}
-```JSX {linenos=true}
+```JSX
 import { useAtom } from "jotai";
 import { atomWithStorage } from "jotai/utils";
 
@@ -76,7 +85,7 @@ const App = () => {
 ```
 {{% /tab %}}
 {{% tab name="Zustand" %}}
-```JSX {linenos=true}
+```JSX
 import create from "zustand";
 import { persist } from "zustand/middleware";
 
@@ -113,11 +122,11 @@ const App = () => {
 
 Thankfully, Svelte stores are also highly customisable, and it was a pretty easy trick to implement a wrapper to persist the store values. Let's have a look.
 
-### Understanding Svelte stores
+## Quick Introduction
 
 Before we start, it's useful to know [Svelte stores](https://github.com/sveltejs/svelte/blob/master/src/runtime/store/index.ts#L64-L109) are just plain objects with three functions: `subscribe`, `set`, and `update`. If we have a closer look at the [Svelte documentation](https://svelte.dev/docs#component-format-script-4-prefix-stores-with-$-to-access-their-values-store-contract), we can use *any* objects as stores with the `$` syntax, as long as we correctly implement the first two. This is great because it lets us create different 'types' of stores:
 
-```javascript {linenos=true}
+```javascript
 import { writable } from "svelte/store";
 
 const betterWritable = (value) => {
@@ -131,7 +140,7 @@ export const betterTeaStore = betterWritable("Black tea");
 
 or even middleware functions without much hassle:
 
-```javascript {linenos=true}
+```javascript
 import { writable, get } from "svelte/store";
 
 const makeStoreBetter = (store) => {
@@ -155,31 +164,30 @@ export const betterTeaStore = makeStoreBetter(teaStore);
 ```
 
 
-## Let's Persist!
-
-### Approach 1: subscribing
+## Approach 1: Subscribing
 
 I found this method from [this](https://dev.to/danawoodman/svelte-quick-tip-connect-a-store-to-local-storage-4idi) dev.to post. Essentially, you check localStorage when initiating a store, and immediately subscribe to the store to listen to any changes and write the values to localStorage.
 
-```javascript {linenos=true}
+```javascript
 import { writable } from "svelte/store";
 
 // ensure client-side
 const isBrowser = typeof Storage !== "undefined";
 
-const teaStoreKey = "my-tea";
+const TEA_STORE_KEY = "my-tea";
+const TEA_DEFAULT = "Black tea";
 
 // initiate the store by try reading from localStorage
 const defaultTea =
-  isBrowser && teaStoreKey in localStorage
-    ? localStorage.getItem(teaStoreKey)
-    : "Black tea";
+  isBrowser && TEA_STORE_KEY in localStorage
+    ? localStorage.getItem(TEA_STORE_KEY)
+    : TEA_DEFAULT;
 export const teaStore = writable(defaultTea);
 
 // listen to changes and update localStorage accordingly
 if (isbrowser) {
-  defaultTea.subscribe((value) => 
-    localStorage.setItem(teaStoreKey, value)
+  defaultTea.subscribe((value) =>
+    localStorage.setItem(TEA_STORE_KEY, value)
   );
 }
 
@@ -187,25 +195,26 @@ if (isbrowser) {
 
 Because localStorages can [only store string values](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API#basic_concepts), we need to use the JSON API to help us store other JSONifiable types like numbers, arrays and objects:
 
-```javascript {linenos=true}
+```javascript
 import { writable } from "svelte/store";
 
 // ensure client-side
 const isBrowser = typeof Storage !== "undefined";
 
-const dessertStoreKey = "my-dessert";
+const DESSERT_STORE_KEY = "my-dessert";
+const DESSERT_DEFAULT = { chocolate: 1, cracker: 3 };
 
 // initiate the store by try reading from localStorage
 const defaultDessert =
-  isBrowser && dessertStoreKey in localStorage
-    ? JSON.parse(localStorage.getItem(dessertStoreKey))
-    : { chocolate: 1, cracker: 3 };
+  isBrowser && DESSERT_STORE_KEY in localStorage
+    ? JSON.parse(localStorage.getItem(DESSERT_STORE_KEY))
+    : DESSERT_DEFAULT;
 export const dessertStore = writable(defaultDessert);
 
 // listen to changes and update localStorage accordingly
 if (isbrowser) {
-  defaultDessert.subscribe((value) => 
-    localStorage.setItem(JSON.stringify(dessertStoreKey), value)
+  defaultDessert.subscribe((value) =>
+    localStorage.setItem(JSON.stringify(DESSERT_STORE_KEY), value)
   );
 }
 
@@ -213,20 +222,20 @@ if (isbrowser) {
 
 You can clearly see the lines we have to write over and over again, so let's define a new writable store instead.
 
-```javascript {linenos=true}
+```javascript
 import { writable } from "svelte/store";
 
 const isBrowser = typeof Storage !== "undefined";
 
-const persistable = (key, value) => {
+const persistable = (key, initialValue) => {
   // ensure client-side
   if (!isBrowser) return writable(store);
 
   // load saved state from previous session
   const loaded =
-    key in localStorage 
+    key in localStorage
       ? JSON.parse(localStorage.getItem(key))
-      : value;
+      : initialValue;
   const store = writable(loaded);
 
   // listen to changes and save
@@ -244,7 +253,7 @@ export const dessertStore = persistable("my-dessert",
 
 ```
 
-### Approach 2: custom contract
+### Approach 2: Custom contract
 
 The previous method lets you replicate Jotai's `atomWithStorage`, which I believe is good enough, but what if we want to mimic Zustand's `persist`?
 
@@ -252,7 +261,7 @@ The previous method lets you replicate Jotai's `atomWithStorage`, which I believ
 import { writable } from "svelte/store";
 import persist from "...";
 
-export const teaStore = persist("my-tea", 
+export const teaStore = persist("my-tea",
   writable("Black tea"),
 );
 
@@ -290,7 +299,7 @@ const persist = (key, store) => {
   };
 };
 
-export const teaStore = persist("my-tea", 
+export const teaStore = persist("my-tea",
   writable("Black tea"),
 );
 export const dessertStore = persist("my-dessert",
@@ -303,4 +312,4 @@ We now have another way to set up a persistent store!
 
 ## Conclusion
 
-You can have a look at [this REPL](https://svelte.dev/repl/5f33cfec94ef4b9d9cac29bbc2430602?version=3.55.0) to play with the codes more in detail. If you would like to see more Svelte tricks, check the [Svelte tag](/tags/svelte/)!
+You can have a look at [this REPL](https://svelte.dev/repl/5f33cfec94ef4b9d9cac29bbc2430602?version=3.55.0) to play with the codes more in detail.

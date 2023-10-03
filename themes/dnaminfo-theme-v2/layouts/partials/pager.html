@@ -1,0 +1,22 @@
+{{ $published := .Date.Format "2 Jan 2006" }}
+{{ $updated := .Lastmod.Format "2 Jan 2006" | default "" }}
+<nav id="post-nav">
+  {{- if eq .Kind "page" -}}
+    <div class="meta">
+      <ul class="tags">
+        {{ range (.GetTerms "tags") }}
+          <li><a href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a></li>
+        {{ end }}
+      </ul>
+      <p class="updated">
+        {{- if not (in (slice "" $published) $updated) -}}
+          Last updated on {{ $updated }}.
+        {{- end -}}
+      </p>
+    </div>
+    <hr />
+  {{- end -}}
+  {{ partial "related-pages" . }}
+  <hr />
+  {{ partial "menu" (dict "context" . "atSide" false) }}
+</nav>

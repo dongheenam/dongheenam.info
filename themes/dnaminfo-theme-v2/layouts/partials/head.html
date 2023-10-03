@@ -1,0 +1,33 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    {{ if not .IsHome }}{{ with .Title }}{{ . }} | {{ end }}{{ end }}{{ .Site.Title }}
+  </title>
+
+  <meta
+    name="author"
+    content="{{ with .Site.Params.author }}{{ . }}{{ end }}"
+  />
+  <meta
+    name="description"
+    content="{{if .IsHome }}{{ $.Site.Params.description }}{{ else }}{{ .Description }}{{ end }}"
+  />
+  <meta name="theme-color" content="#111111" />
+
+  <link rel="canonical" href="{{ .Permalink }}" />
+
+  {{ if .Params.noindex }}
+  <meta name="robots" content="noindex" />
+  <meta name="googlebot" content="noindex" />
+  {{ end }}
+
+  {{/* stylesheets */}}
+  {{ $options := dict "transpiler" "dartsass" "targetPath" "css/main.css" }}
+  {{ with resources.Get "sass/main.scss" | resources.ToCSS $options | resources.Minify }}
+    <link rel="stylesheet" href="{{ .Permalink }}" crossorigin="anonymous" />
+  {{ end }}
+
+  {{/* Fabicon stuff - realfavicongenerator.net */}}
+  {{- partial "fabicon" . -}}
+</head>

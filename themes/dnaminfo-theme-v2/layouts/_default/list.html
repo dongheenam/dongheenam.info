@@ -1,0 +1,20 @@
+{{- define "main" -}}
+{{ partial "title" . }}
+<article>
+  {{ .Content }}
+  <ul class="section">
+    {{- range (.Paginate .Pages 20).Pages -}}
+      <li class="post-item">
+        <div class="post-info">
+          <a class="post-title" href="{{ .Permalink }}">{{ .Title }}</a>
+          <span class="date">{{ .Date.Format "2 Jan 2006" }}</span>
+        </div>
+        <p class="subtitle">
+          {{ .Description }}
+        </p>
+      </li>
+    {{- end -}}
+  </ul>
+</article>
+{{ template "_internal/pagination.html" . }}
+{{- end -}}

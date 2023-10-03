@@ -1,0 +1,25 @@
+{{ with resources.Get "js/control.ts" | js.Build }}
+  <script src="{{ .RelPermalink }}"></script>
+{{ end }}
+{{/*  <div id="control-help" class="small-text">
+  Hover your pointer over the left edge of the screen to show the controls.
+</div>  */}}
+<div id="control-hover-area"></div>
+<div id="control">
+  <div class="control-content">
+    <label class="toggle-theme">
+      <input type="checkbox" id="theme-toggle" checked="true" style="display: none"/>
+      <span class="toggle">Dark mode </span><span id="theme-status">is on.</span>
+    </label>
+    {{ partial "menu" (dict "context" . "atSide" true) }}
+    {{ if .Params.toc }}
+      <details id="toc">
+        <summary>Table of Contents</summary>
+        <div>
+          {{ .TableOfContents }}
+        </div>
+      </details>
+    {{ end }}
+  </div>
+</div>
+<button id="control-button" class="small-text" onclick="onControlButtonClick()">Click here to expand controls</button>

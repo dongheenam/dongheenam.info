@@ -1,0 +1,24 @@
+{{ $img := .Page.Resources.Get (.Get "src") }}
+{{ $alt := (.Get "alt" | default "") }}
+{{ $bordered := (.Get "border") }}
+{{ if $img }}
+  {{/* avif is raster but is not supported by Hugo at the moment */}}
+  {{ $is_raster := not (in (slice "svg" "avif") $img.MediaType.SubType) }}
+  {{ $img_webp := "" }}
+  {{ if $is_raster }}
+    {{ $img_webp = $img.Resize (printf "%dx webp" $img.Width) }}
+  {{ end }}
+  <figure>
+    {{- with (.Get "caption") -}}
+      <figcaption class="aside small-text">{{ . | $.Page.RenderString }}</figcaption>
+    {{- end -}}
+    <picture class="{{ if $bordered }}bordered{{ end }}">
+      {{- with $img_webp -}}
+        <source loading="lazy" srcset="{{ .RelPermalink }}" type="image/webp" />
+      {{- end -}}
+      <img loading="lazy" src="{{ $img.RelPermalink }}" alt="{{ $alt }}"
+        {{- if $is_raster }}width="{{ $img.Width }}" height="{{ $img.Height }}"{{ end -}}
+        {{- with (.Get "title") }}title="{{ . }}"{{ end -}}/>
+    </picture>
+  </figure>
+{{ end }}

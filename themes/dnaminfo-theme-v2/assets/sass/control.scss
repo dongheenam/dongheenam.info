@@ -1,0 +1,131 @@
+@use "./variables.scss" as *;
+
+/* side control */
+#control {
+  position: relative;
+  z-index: 9999;
+  top: -3rem;
+
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+  overflow: hidden;
+
+  &.open {
+    max-height: 30vh;
+  }
+
+  @include tablet {
+    position: fixed;
+    top: 7.75rem;
+    left: 0;
+    max-height: fit-content;
+    width: $large-aside-width;
+    overflow: hidden;
+
+    transition: opacity 1s ease-out;
+    pointer-events: none;
+    opacity: 0;
+
+    &.open {
+      max-height: initial;
+      pointer-events: auto;
+      opacity: 1;
+    }
+  }
+}
+#control-hover-area {
+  display: none;
+
+  @include tablet {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: $large-aside-width;
+  }
+}
+#control-hover-area:hover ~ #control,
+#control:hover,
+#control:focus-within {
+  pointer-events: auto;
+  opacity: 1;
+}
+#control-button {
+  position: fixed;
+  z-index: 9999;
+  inset: 0 0 auto 0;
+  height: 2rem;
+  opacity: 0;
+
+  color: var(--text-gray);
+  background: var(--background-gray);
+  border: 1px solid var(--border-gray);
+
+  cursor: pointer;
+
+  &.visible {
+    opacity: 1;
+  }
+  &.open {
+    inset: 0;
+    height: auto;
+  }
+
+  // animation: disappear 3s ease-out forwards;
+}
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.control-content {
+  padding: 0.5rem;
+  font-size: 0.85rem;
+  background: var(--background-gray);
+  border: 1px solid var(--border-gray);
+  color: var(--text-gray);
+
+  summary,
+  .toggle-theme {
+    cursor: pointer;
+    &:hover {
+      color: var(--text-accent);
+    }
+  }
+
+  .main-menu-posts {
+    margin: 0.5rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem 0.25rem;
+  }
+
+  .prev {
+    grid-column-start: 0;
+  }
+}
+
+#toc {
+  summary {
+    @include small-caps;
+    @include font-weight(500);
+  }
+  div {
+    margin: 0.25rem 0;
+    overflow-y: auto;
+  }
+  li {
+    margin-left: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

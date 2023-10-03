@@ -1,0 +1,260 @@
+@use "./variables.scss" as *;
+
+/* blocks */
+body {
+  position: relative;
+  width: min(100%, calc($largest-tablet-width - $scrollbar-width));
+  min-height: 100vh;
+  overflow-x: hidden;
+  margin-inline: auto;
+}
+footer {
+  position: absolute;
+  bottom: 0.5rem;
+  width: 100%;
+
+  text-align: center;
+  color: var(--text-gray);
+  font-style: italic;
+}
+#content {
+  margin: 0 1.5rem;
+  padding: 3rem 0;
+
+  @include tablet {
+    position: relative;
+    margin-right: 1.5rem;
+    margin-left: $large-aside-width + $side-gap;
+  }
+}
+article {
+  padding-bottom: 25vh;
+}
+
+/* components */
+.note {
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+
+  border: 1px solid var(--border-gray);
+  border-left-width: 3px;
+  background-color: var(--background-gray);
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.aside {
+  @include tablet {
+    position: relative;
+    float: left;
+    clear: left;
+
+    width: $aside-width;
+    margin: 0;
+    margin-left: -$aside-width - $side-gap;
+    margin-bottom: 1em;
+    padding: 0;
+
+    text-align: right;
+    border: none;
+    background-color: initial;
+  }
+
+  @include desktop-large {
+    margin-left: -$large-aside-width - $side-gap;
+    width: $large-aside-width;
+  }
+}
+// matching the vertical alignment with the body paragraph
+.aside.small-text {
+  @include tablet {
+    top: 0.15rem;
+  }
+}
+
+.fullwidth {
+  @include tablet {
+    position: relative;
+    clear: both;
+    margin-left: -$aside-width - $side-gap;
+  }
+  @include desktop-large {
+    margin-left: -$large-aside-width - $side-gap;
+  }
+}
+
+.fancy-list {
+  margin-bottom: 1.5rem;
+
+  li {
+    margin: 0 0 0.25rem 2.5rem;
+  }
+  li::before {
+    position: absolute;
+    margin-left: -2.5rem;
+    @include font-weight(600);
+  }
+}
+ul.fancy-list {
+  li::before {
+    content: "\00BB";
+  }
+  li li::before {
+    content: "\203A";
+  }
+}
+ol.fancy-list {
+  counter-reset: list-item;
+
+  li::before {
+    counter-increment: list-item;
+    content: counter(list-item) ". ";
+
+    font-variant-numeric: oldstyle-nums;
+    font-style: italic;
+  }
+  li li::before {
+    content: counter(list-item, lower-alpha) ". ";
+  }
+}
+
+/* article components */
+.title-block {
+  margin-bottom: 2rem;
+}
+.subtitle {
+  font-style: italic;
+  @include font-weight(300);
+
+  line-height: 1.15;
+
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 0;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+.date {
+  flex-shrink: 0;
+}
+aside {
+  @extend .note;
+  @extend .aside;
+  @extend .small-text;
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+}
+
+:is(article) > :is(ul, ol),
+.note:not(aside) > :is(ul, ol) {
+  @extend .fancy-list;
+}
+
+
+blockquote {
+  padding-left: 2rem;
+
+  font-style: italic;
+  color: var(--text-gray);
+  border-left: 3px solid var(--border-gray);
+}
+
+figure {
+  margin-bottom: 1.5rem;
+
+  display: flex;
+  flex-direction: column-reverse;
+
+  figcaption {
+    margin-top: 0.25rem;
+  }
+
+  .bordered {
+    border: 1px solid var(--border-gray);
+    padding: 0.5rem;
+  }
+
+  @include tablet {
+    display: block;
+  }
+}
+
+/* pager */
+#post-nav {
+  @extend .fullwidth;
+}
+.meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+
+  font-style: italic;
+  @extend .small-text;
+}
+.tags {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+.updated {
+  margin: 0;
+}
+// main menu
+.main-menu-posts {
+  text-align: center;
+
+  @include small-caps;
+  color: var(--text-gray);
+}
+#content .main-menu-posts {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 1rem;
+
+  &.is-page {
+    justify-content: space-between;
+  }
+
+  .prev {
+    order: -1;
+    flex: 1;
+    text-align: left;
+  }
+  .next {
+    flex: 1;
+    text-align: right;
+  }
+}
+
+// custom menu
+.menu-posts,
+.related-posts {
+  @extend .fancy-list;
+}
+.menu-posts .active {
+  color: var(--text-accent);
+}
+ol.menu-posts li.not-item {
+  color: var(--text-gray);
+  font-style: italic;
+  counter-set: list-item var(--counter-set, 0);
+
+  &::before {
+    counter-increment: unset;
+    content: unset;
+  }
+}
