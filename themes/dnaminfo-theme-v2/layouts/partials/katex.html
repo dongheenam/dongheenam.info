@@ -21,25 +21,25 @@
 <script>
   document.addEventListener("DOMContentLoaded", () => {
     renderMathInElement(document.body, {
-      // delimiters: [
-      //   {left: "$$", right: "$$", display: true},
-      //   {left: "$", right: "$", display: false},
-      //   {left: "\\begin{equation}", right: "\\end{equation}", display: true},
-      //   {left: "\\begin{align*}", right: "\\end{align*}", display: true},
-      //   {left: "\\begin{alignat*}", right: "\\end{alignat*}", display: true},
-      // ],
-      // output: "html",
-      // fleqn: true,
-      // strict: false,
-      // ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code', 'no-tex'],
-      // trust: (context) => context.command === '\\htmlClass',
-      // macros: {
-      //   "\\hl": "\\htmlClass{katex-highlight}",
-      //   "\\blue": "\\textcolor{dodgerblue}",
-      //   "\\green": "\\textcolor{#228b22}",
-      //   "\\tcirc": "\\text{\\large \\textcircled{\\small #1}}",
-      //   "\\scirc": "\\text{\\textcircled #1}"
-      // }
+      delimiters: [
+        {left: "$$", right: "$$", display: true},
+        {left: "$", right: "$", display: false},
+        {left: "\\begin{equation}", right: "\\end{equation}", display: true},
+        {left: "\\begin{align*}", right: "\\end{align*}", display: true},
+        {left: "\\begin{alignat*}", right: "\\end{alignat*}", display: true},
+      ],
+      output: "html",
+      fleqn: true,
+      strict: false,
+      ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code', 'no-tex'],
+      trust: (context) => context.command === '\\htmlClass',
+      macros: {
+        "\\hl": "\\htmlClass{katex-highlight}",
+        "\\blue": "\\textcolor{dodgerblue}",
+        "\\green": "\\textcolor{#228b22}",
+        "\\tcirc": "\\text{\\large \\textcircled{\\small #1}}",
+        "\\scirc": "\\text{\\textcircled #1}"
+      }
     });
   });
 </script>
