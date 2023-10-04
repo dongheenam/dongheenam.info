@@ -1,7 +1,7 @@
 ---
 title: 'Rendering mathematics expressions in Hugo'
 description: ...and getting used to "excessive DOM size" errors.
-date: '2023-10-04 13:34:47.135 +1100'
+date: '2023-10-02 13:34:47.135 +1100'
 
 draft: false
 toc: true
