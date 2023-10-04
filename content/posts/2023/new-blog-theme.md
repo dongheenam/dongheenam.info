@@ -3,7 +3,7 @@ title: 'New blog theme'
 description: "Working with Hugo scripts is painful. I have done it again. Here is a record of what happened."
 date: '2023-09-28T11:36:37+10:00'
 
-draft: true
+draft: false
 toc: true
 
 tags:
@@ -13,8 +13,6 @@ menu:
     new-hugo-blog-theme:
         weight: 10
 ---
-
-## Motivation
 
 This blog was my first journey into web development. Fresh from the [FreeCodeCamp tutorials](https://www.freecodecamp.org/), I spent weeks grappling with the official Hugo documentation and naming CSS classes. I eventually managed to craft a website based on [Tufte CSS](https://edwardtufte.github.io/tufte-css/) and the [Academic](https://academic-demo.netlify.app/) theme.
 

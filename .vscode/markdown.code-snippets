@@ -15,13 +15,23 @@
 
     // HUGO COMMANDS
     "Shortcode": {
-        "prefix": "{{",
+        "prefix": "sc",
         "body": "{{% $0 %}}",
         "description": "Insert a shortcode"
     },
+    "Shortcode (raw)": {
+        "prefix": "sc<",
+        "body": "{{< $0 >}}",
+        "description": "Insert a shortcode"
+    },
     "Shortcode block": {
-        "prefix": "{{/",
-        "body": ["{{% $1 %}}", "$0", "{{% \\$1 %}}"],
+        "prefix": "scb",
+        "body": ["{{% $1 %}}", "$0", "{{% /$1 %}}"],
+        "description": "Insert a blocked shortcode"
+    },
+    "Shortcode block (raw)": {
+        "prefix": "scb<",
+        "body": ["{{< $1 >}}", "$0", "{{< /$1 >}}"],
         "description": "Insert a blocked shortcode"
     },
 

@@ -3,7 +3,7 @@
     .katex {
         font-size: 1.1em;
         display: inline-block;
-        padding: 0.25em 0;
+        padding: 0.175em 0;
     }
     .katex-highlight {
         color: var(--text-accent);
@@ -19,30 +19,27 @@
 <!-- To automatically render math in text elements, include the auto-render extension: -->
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const runKatex = new Promise( (resolve, reject) => {
-      renderMathInElement(document.body, {
-        delimiters: [
-          {left: "$$", right: "$$", display: true},
-          {left: "\\begin{equation}", right: "\\end{equation}", display: true},
-          {left: "\\begin{align*}", right: "\\end{align*}", display: true},
-          {left: "\\begin{alignat*}", right: "\\end{alignat*}", display: true},
-          {left: "$", right: "$", display: false}
-        ],
-        output: "html",
-        fleqn: true,
-        strict: false,
-        ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code', 'no-tex'],
-        trust: (context) => context.command === '\\htmlClass',
-        macros: {
-          "\\hl": "\\htmlClass{katex-highlight}",
-          "\\blue": "\\textcolor{dodgerblue}",
-          "\\green": "\\textcolor{#228b22}",
-          "\\tcirc": "\\text{\\large \\textcircled{\\small #1}}",
-          "\\scirc": "\\text{\\textcircled #1}"
-        }
-      });
-      resolve();
+  document.addEventListener("DOMContentLoaded", () => {
+    renderMathInElement(document.body, {
+      // delimiters: [
+      //   {left: "$$", right: "$$", display: true},
+      //   {left: "$", right: "$", display: false},
+      //   {left: "\\begin{equation}", right: "\\end{equation}", display: true},
+      //   {left: "\\begin{align*}", right: "\\end{align*}", display: true},
+      //   {left: "\\begin{alignat*}", right: "\\end{alignat*}", display: true},
+      // ],
+      // output: "html",
+      // fleqn: true,
+      // strict: false,
+      // ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code', 'no-tex'],
+      // trust: (context) => context.command === '\\htmlClass',
+      // macros: {
+      //   "\\hl": "\\htmlClass{katex-highlight}",
+      //   "\\blue": "\\textcolor{dodgerblue}",
+      //   "\\green": "\\textcolor{#228b22}",
+      //   "\\tcirc": "\\text{\\large \\textcircled{\\small #1}}",
+      //   "\\scirc": "\\text{\\textcircled #1}"
+      // }
     });
   });
 </script>

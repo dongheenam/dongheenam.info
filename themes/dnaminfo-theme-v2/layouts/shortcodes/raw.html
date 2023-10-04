@@ -1,0 +1,2 @@
+{{ $inline := .Get "inline" -}}
+{{- if $inline }}<span>{{ .Inner }}</span>{{ else }}<p>{{ .Inner }}</p>{{ end }}
