@@ -17,7 +17,7 @@ menu:
 This blog was my first journey into web development. Fresh from the [FreeCodeCamp tutorials](https://www.freecodecamp.org/), I spent weeks grappling with the official Hugo documentation and naming CSS classes. I eventually managed to craft a website based on [Tufte CSS](https://edwardtufte.github.io/tufte-css/) and the [Academic](https://academic-demo.netlify.app/) theme.
 
 {{% aside %}}
-I have finally settled with [KaTeX](../rendering-maths-with-katex).
+I have finally settled with [KaTeX](../rendering-maths).
 {{% /aside %}}
 
 Since then, I've dedicated a good amount of time to crafting cool shortcodes, updating CSS, and deciding which math-rendering libraries I should use. Every time I revamped its structure or worked on other web projects, frustration surged. I questioned my initial project structure and everything seemed like it needed a complete overhaul. It looked ugly and working with the spacing was painful.
