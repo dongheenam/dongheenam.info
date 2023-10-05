@@ -3,7 +3,6 @@
   {{- partial "head" . -}}
   <body>
     {{ partial "side-control" . }}
-    {{- partial "header" . -}}
     <div id="content">
       {{- block "main" . }}{{- end -}}
       {{ partial "pager" . }}

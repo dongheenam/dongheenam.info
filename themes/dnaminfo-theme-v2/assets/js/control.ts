@@ -1,7 +1,7 @@
 let button: HTMLButtonElement | null = null;
-const TTL = 43200000; // 12 hours
+const TTL = 1 * 3600000; // 1 hour
 
-// hide the button if the user has seen it in the last 12 hours
+// hide the button if the user has already seen it
 const mayHideButton = () => {
   const reminderExpiry = localStorage.getItem("dnam-reminder-expiry");
   const now = new Date();
