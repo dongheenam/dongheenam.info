@@ -97,3 +97,8 @@ hr {
 article hr {
   margin: 1.4rem 0;
 }
+
+// superscript and subscript
+sup, sub {
+  line-height: 0;
+}

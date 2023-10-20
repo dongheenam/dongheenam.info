@@ -33,16 +33,27 @@
   </ol>
 {{ end }}
 {{/*  related posts  */}}
-{{ $related_posts := .Site.RegularPages.Related . }}
-{{ if ne $menu_id "" }}
-  {{ $related_posts = where $related_posts "Params.menu" "ne" $menu_id }}
+{{ $related_posts := slice }}
+{{ range (index .Params "related-pages") }}
+  {{ $related_posts = $related_posts | append (dict "Title" .title "RelPermalink" .url) }}
 {{ end }}
-{{ with $related_posts | first 5 }}
+{{ $fetched := .Site.RegularPages.Related . }}
+{{ if ne $menu_id "" }}
+  {{ $fetched = where $fetched "Params.menu" "ne" $menu_id }}
+{{ end }}
+{{ with first 3 $fetched }}
+  {{ $related_posts = $related_posts | append . }}
+{{ end }}
+{{ with $related_posts }}
   <h3 id="related-posts">Related posts</h3>
   <ul class="related-posts">
     {{ range . }}
       <li>
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        {{- if hasPrefix .RelPermalink "http" -}}
+          <a href="{{ .RelPermalink }}" target="_blank" rel="noopener noreferrer">{{ .Title | default .RelPermalink }}<sup>↗</sup></a>
+        {{- else -}}
+          <a href="{{ .RelPermalink }}">{{ .Title | default .RelPermalink }}</a>
+        {{- end -}}
       </li>
     {{ end }}
   </ul>
