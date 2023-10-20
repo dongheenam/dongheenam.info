@@ -62,11 +62,15 @@ code {
   // styles for inline codes
   padding: 0 0.15em;
   background-color: var(--background-gray-deep);
+  // @include font-weight(400);
 
   pre & {
     // no default styles for code blocks
     padding: 0;
     background-color: initial;
+
+    // code block is always dark
+    // font-weight: 300;
   }
 }
 

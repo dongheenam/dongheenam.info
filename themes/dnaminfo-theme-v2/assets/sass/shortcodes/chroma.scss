@@ -6,6 +6,8 @@ $background-hl: #393c47;
 $error: #f85149;
 $subtle: #6e7681;
 
+$bold: 700;
+
 .chroma {
   color: $text;
   background-color: $background;
@@ -35,7 +37,7 @@ $subtle: #6e7681;
     height: 1rem;
   }
   .lnt, .ln {
-    font-weight: 700;
+    font-weight: $bold;
     color: $subtle;
     padding: 0 0.4em 0 0.4em;
     margin-right: 0.4em;
@@ -82,34 +84,34 @@ $subtle: #6e7681;
   }
   .nc {
     color: #f0883e;
-    font-weight: bold;
+    font-weight: $bold;
   }
   .no {
     color: #79c0ff;
-    font-weight: bold;
+    font-weight: $bold;
   }
   .nd {
     color: #d2a8ff;
-    font-weight: bold;
+    font-weight: $bold;
   }
   .ni {
     color: #ffa657;
   }
   .ne {
     color: #f0883e;
-    font-weight: bold;
+    font-weight: $bold;
   }
   .nf {
     color: #d2a8ff;
-    font-weight: bold;
+    font-weight: $bold;
   }
   .fm {
     color: #d2a8ff;
-    font-weight: bold;
+    font-weight: $bold;
   }
   .nl {
     color: #79c0ff;
-    font-weight: bold;
+    font-weight: $bold;
   }
   .nn {
     color: #ff7b72;
@@ -206,11 +208,11 @@ $subtle: #6e7681;
   }
   .o {
     color: #ff7b72;
-    font-weight: bold;
+    font-weight: $bold;
   }
   .ow {
     color: #58a6ff;
-    font-weight: bold;
+    font-weight: $bold;
   }
   .c {
     color: #8b949e;
@@ -218,12 +220,12 @@ $subtle: #6e7681;
   }
   .cpf {
     color: #8b949e;
-    font-weight: bold;
+    font-weight: $bold;
   }
   .cs {
     color: #8b949e;
     font-style: italic;
-    font-weight: bold;
+    font-weight: $bold;
   }
   .ch {
     color: #8b949e;
@@ -252,7 +254,7 @@ $subtle: #6e7681;
   }
   .gh {
     color: #79c0ff;
-    font-weight: bold;
+    font-weight: $bold;
   }
   .gi {
     color: #56d364;
@@ -265,7 +267,7 @@ $subtle: #6e7681;
     color: #8b949e;
   }
   .gs {
-    font-weight: bold;
+    font-weight: $bold;
   }
   .gu {
     color: #79c0ff;
@@ -308,34 +310,34 @@ $subtle: #6e7681;
   }
   .nc {
     color: #f0883e;
-    font-weight: bold;
+    font-weight: $bold;
   }
   .no {
     color: #79c0ff;
-    font-weight: bold;
+    font-weight: $bold;
   }
   .nd {
     color: #d2a8ff;
-    font-weight: bold;
+    font-weight: $bold;
   }
   .ni {
     color: #ffa657;
   }
   .ne {
     color: #f0883e;
-    font-weight: bold;
+    font-weight: $bold;
   }
   .nf {
     color: #d2a8ff;
-    font-weight: bold;
+    font-weight: $bold;
   }
   .fm {
     color: #d2a8ff;
-    font-weight: bold;
+    font-weight: $bold;
   }
   .nl {
     color: #79c0ff;
-    font-weight: bold;
+    font-weight: $bold;
   }
   .nn {
     color: #ff7b72;
@@ -432,11 +434,11 @@ $subtle: #6e7681;
   }
   .o {
     color: #ff7b72;
-    font-weight: bold;
+    font-weight: $bold;
   }
   .ow {
     color: #58a6ff;
-    font-weight: bold;
+    font-weight: $bold;
   }
   .c {
     color: #8b949e;
@@ -444,12 +446,12 @@ $subtle: #6e7681;
   }
   .cpf {
     color: #8b949e;
-    font-weight: bold;
+    font-weight: $bold;
   }
   .cs {
     color: #8b949e;
     font-style: italic;
-    font-weight: bold;
+    font-weight: $bold;
   }
   .ch {
     color: #8b949e;
@@ -478,7 +480,7 @@ $subtle: #6e7681;
   }
   .gh {
     color: #79c0ff;
-    font-weight: bold;
+    font-weight: $bold;
   }
   .gi {
     color: #56d364;
@@ -491,7 +493,7 @@ $subtle: #6e7681;
     color: #8b949e;
   }
   .gs {
-    font-weight: bold;
+    font-weight: $bold;
   }
   .gu {
     color: #79c0ff;
