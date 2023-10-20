@@ -11,7 +11,7 @@
   {{ $prev_pages_cropped := first 2 $prev_pages }}
   {{ $next_pages_cropped := first 2 (where .ByWeight "Weight" ">" $current_weight) }}
   {{ $starting_index := sub (len $prev_pages) (len $prev_pages_cropped) }}
-  <h3>Series: {{ humanize $menu_id }}</h3>
+  <h3 id="series-posts">Series: {{ humanize $menu_id }}</h3>
   <ol class="menu-posts">
     {{ if ne $starting_index 0 }}
       {{- $first_page := index . 0 -}}
@@ -38,7 +38,7 @@
   {{ $related_posts = where $related_posts "Params.menu" "ne" $menu_id }}
 {{ end }}
 {{ with $related_posts | first 5 }}
-  <h3>Related posts</h3>
+  <h3 id="related-posts">Related posts</h3>
   <ul class="related-posts">
     {{ range . }}
       <li>

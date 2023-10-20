@@ -31,7 +31,7 @@ Roughly 20 hours later, I have a new blog theme in my hands, reminding about thi
 Perhaps I could have resumed my Japanese Maths series, or wrote some notes on science, statistics, or teaching. But here I am, with a sense of joy and accomplishment. With some motivation and time I have left with, here are some tips and codes for future myself. Feel free to have a look.
 
 
-Perhaps I could have continued my Japanese Maths series, or jotted down some insights on science, statistics, or education. But here I am, full of joy and accomplishment. Unlike Fermat, I do have some time and motivation left, so I've compiled some tips for my future self. Feel free to have a look.
+Perhaps I could have continued my Japanese Maths series, or jotted down some insights on science, statistics, or education. But here I am, full of joy and accomplishment. Unlike Fermat, I do have some time and motivation left, so I've compiled some tips for my future self. Feel free to [have a look](#series-posts).
 
 
 ## Small Tips and Resources
@@ -53,4 +53,4 @@ Perhaps I could have continued my Japanese Maths series, or jotted down some ins
 - Unicode Range tool ([zachleat](https://www.zachleat.com/unicode-range-interchange/))
 
 ### Other
-- Spivak's Calculus ([Google Books](https://books.google.com.au/books?id=7JKVu_9InRUC))
+- Design inspiration: Spivak's Calculus ([Google Books](https://books.google.com.au/books?id=7JKVu_9InRUC))
