@@ -1,7 +1,7 @@
 ---
 title: 'Sidenotes in Hugo'
 description: 'Yet another sidenote implementation.'
-date: '2023-10-05T13:06:04+11:00'
+date: '2023-10-21 11:14:32.176 +1100'
 
 draft: false
 toc: true
