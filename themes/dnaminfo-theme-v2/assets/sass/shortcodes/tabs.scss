@@ -15,17 +15,17 @@
 .tab-header button {
   padding: 0 0.5rem;
 
-  border: 1px solid var(--border-gray);
+  border: 1px solid hsl(49, 3.1%, 24.3%);
   border-top-color: transparent;
 
   background: transparent;
 
   &:hover {
-    background: var(--background-gray);
+    background: hsl(60, 1.9%, 10.4%);
     color: #c9d1d9;
   }
   &.active {
-    background: var(--background-gray);
+    background: hsl(60, 1.9%, 10.4%);
     color: #c9d1d9;
     border-bottom-color: transparent;
   }

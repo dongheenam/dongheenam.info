@@ -50,7 +50,7 @@
     {{ range . }}
       <li>
         {{- if hasPrefix .RelPermalink "http" -}}
-          <a href="{{ .RelPermalink }}" target="_blank" rel="noopener noreferrer">{{ .Title | default .RelPermalink }}<sup>↗</sup></a>
+          <a href="{{ .RelPermalink }}" target="_blank" rel="noopener noreferrer">{{ .Title | default .RelPermalink }}</a><sup style="font-style: italic">external</sup>
         {{- else -}}
           <a href="{{ .RelPermalink }}">{{ .Title | default .RelPermalink }}</a>
         {{- end -}}
